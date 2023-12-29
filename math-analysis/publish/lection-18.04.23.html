@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#компактность" id="toc-компактность">Компактность</a></li>
+<li><a href="#связность" id="toc-связность">Связность</a></li>
+</ul>
+</nav>
+</details>
+<p><span
+class="math inline">\(\DeclareMathOperator*{\bigtimes}{\text{\Large
+$\times$}}\)</span></p>
+<h2 id="компактность">Компактность</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> <span
+class="math inline">\(A \subset \mathbb{R}^n\)</span> -
+<em>компакт</em>, если из любого откытого покрытия <span
+class="math inline">\(A\)</span> можно выделить конечное
+подпокрытие.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> <span
+class="math inline">\(A \subset \mathbb{R}^n\)</span> -
+<em>секвенциальный компакт</em>, если у любой последовательности из
+<span class="math inline">\(A\)</span> существует сходящаяся
+подпоследовательность.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> <span
+class="math inline">\(A\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-1">секвенциальный
+компакт</a> <span class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\(A\)</span> - замкнуто и <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-4">ограничено</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span></p>
+<p>(от противного) Пусть <span class="math inline">\(A\)</span> -
+секвенциальный компакт и <span class="math inline">\(A\)</span>
+неограничено. Тогда <span class="math inline">\(\forall k \in \mathbb{N}
+\,\,\,\, \exists x_k \in A: \,\,\,\, ||x_k|| &gt; k \Rightarrow\)</span>
+получили последовательность, у которой нет сходящейся
+подпоследовательности. Противоречие. У любой последовательности <span
+class="math inline">\(\{x_k\}\)</span> существует сходящаяся
+подпоследовательность <span class="math inline">\(\{x_{k_m}\}: \,\,\,\,
+\displaystyle \lim_{m\to \infty}x_{k_m} = x_0\)</span> - предельная
+точка <span class="math inline">\(A\)</span>.</p>
+<p><span class="math display">\[\Leftarrow\]</span> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> <span
+class="math inline">\(A \subset \mathbb{R}^n\)</span> - секвенциальный
+компакт <span class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\(A\)</span> - компакт.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span></p>
+<p>(от противного) Пусть существует открытое покрытие <span
+class="math inline">\(A \,\,\,\,
+\displaystyle\cup_{\alpha}\{U_{\alpha}\}:\)</span> не существует
+конечного подпокрытия. Рассмотрим куб (существует, так как <span
+class="math inline">\(A\)</span> <a href="#theorem-0">ограничено</a>)
+<span class="math inline">\(\displaystyle\bigtimes_{i = 1}^m[a_i, a_i +
+d]\)</span> делим куб на <span class="math inline">\(2^n\)</span>
+частей, выбираем ту, для которой нельзя выделить конечное подпокрытие из
+<span class="math inline">\(U_{\alpha}\)</span>, и продолжаем делить.
+Получаем последовательность вложенных кубов, а значит <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#theorem-1">по
+теореме</a> <span class="math inline">\(\exists ! \xi: \,\,\,\,
+\xi\)</span> принадлежит каждому кубу. А значит <span
+class="math inline">\(\exists U_{\alpha^{*}}: \,\,\,\, \xi \in
+U_{\alpha^{*}}\)</span>. <span
+class="math inline">\(U_{\alpha^{*}}\)</span> - открытое, следовательно
+<span class="math inline">\(\exists O_{\varepsilon}(\xi): \,\,\,\, \xi
+\in O_{\varepsilon}(\xi) \subset U_{\alpha^{*}}\)</span>. В этой
+окрестности содержится один из кубов, построенной последовательности, а
+значит существует покрытие этого куба, состоящее из <span
+class="math inline">\(U_{\alpha^{*}}\)</span>. Противоречие.</p>
+<p><span class="math display">\[\Leftarrow\]</span> Пусть <span
+class="math inline">\(A\)</span> - компакт, но существует ограниченная
+<span class="math inline">\(\{x_k: x_k \in A\}_{k =
+1}^{\infty}\)</span>, такая, что <span class="math inline">\(A\)</span>
+не содержит предельных точек <span class="math inline">\(\{x_k: x_k \in
+A\}_{k = 1}^{\infty}\)</span>.</p>
+<p><strong>Напоминание</strong>: Точка <span
+class="math inline">\(x_0\)</span> предельная для <span
+class="math inline">\(A\)</span> <span
+class="math inline">\(\Leftrightarrow\)</span> любая проколотая
+окрестность <span class="math inline">\(x_0\)</span> содержит
+бесконечное число элементов множества <span
+class="math inline">\(A\)</span>.</p>
+<p>То есть <span class="math inline">\(\forall y \in A \,\,\,\, \exists
+\varepsilon_y &gt; 0: \,\,\,\, O_{\varepsilon_y}(y) \cap \{x_k\}_{k =
+1}^{\infty}\)</span> содержит конечное количество элементов. <span
+class="math inline">\(\displaystyle\bigcup_{y \in
+A}O_{\varepsilon_y}(y)\)</span> - это открытое подкрытие <span
+class="math inline">\(A\)</span>, а значит из него можно выделить
+конечное подпокрытие <span
+class="math inline">\(\displaystyle\bigcup_{y_i \in
+A}O_{\varepsilon_y}(y_i)\)</span>. Получаем, что в последовательности
+<span class="math inline">\(\{x_k: x_k \in A\}_{k = 1}^{\infty}\)</span>
+конечное количество точек, а значит существует предельная точка,
+принадлежащаяя самой последовательности. Противоречие <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="связность">Связность</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-2"></a> <span
+class="math inline">\(A \subset \mathbb{R}^n\)</span> - <em>линейно
+связно</em>, если любые две точки из <span
+class="math inline">\(A\)</span> можно соединить непрерывной кривой.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Пусть <span
+class="math inline">\(A \subset \mathbb{R}^n\)</span> - линейно связно.
+<span class="math inline">\(B \subset \mathbb{R}^n\)</span>. Если <span
+class="math inline">\(A \cap B \ne \varnothing\)</span> и <span
+class="math inline">\(A \cap (\mathbb{R}^n \setminus B) \ne
+\varnothing\)</span>, то <span class="math inline">\(A \cap \partial B
+\ne \varnothing\)</span>.</p>
+<p><em>Доказательство:</em> без доказательства <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Если <span
+class="math inline">\(A \subset \mathbb{R}^n\)</span> - открыто и
+линейно связно, то <span class="math inline">\(A\)</span> -
+<em>область</em>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Замыкание
+области - <em>замкнутая область</em>.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> Если любые
+две точки множества <span class="math inline">\(A \subset
+\mathbb{R}^n\)</span> можно соединить отрезком, содержащащимся в <span
+class="math inline">\(A\)</span>, то <span
+class="math inline">\(A\)</span> - <em>выпуклое</em>.</p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

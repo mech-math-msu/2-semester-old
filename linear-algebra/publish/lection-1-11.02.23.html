@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#векторное-пространство"
+id="toc-векторное-пространство">Векторное пространство</a>
+<ul>
+<li><a href="#линейная-зависимость-векторов"
+id="toc-линейная-зависимость-векторов">Линейная зависимость
+векторов</a></li>
+<li><a href="#базис" id="toc-базис">Базис</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="векторное-пространство">Векторное пространство</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a>
+<em>Векторное пространство</em> <span class="math inline">\(V\)</span>
+над полем <span class="math inline">\(F\)</span> - это множество с
+операциями сложения <span class="math inline">\(+: \,\,\,\, V \times V
+\to V\)</span> и умножения <span class="math inline">\(\cdot: \,\,\,\, F
+\times V \to V\)</span>, удовлетворяющими аксиомам:<br></p>
+<p><span class="math inline">\(\forall a, b, c \in V, \,\,\,\, \forall
+\lambda, \mu \in F\)</span></p>
+<ol type="1">
+<li><p><span class="math inline">\(a + (b + c) = (a + b) + c\)</span>
+(ассоциативность)</p></li>
+<li><p><span class="math inline">\(a + b = b + a\)</span>
+(коммутативность)</p></li>
+<li><p><span class="math inline">\(\exists \vec{0}:\,\,\,\, a + \vec{0}
+= a\)</span> (существование <em>нулевого вектора</em>)</p></li>
+<li><p><span class="math inline">\(\exists (-a) \in V: \,\,\,\, a + (-a)
+= \vec{0}\)</span></p></li>
+<li><p><span class="math inline">\(\lambda (\mu \cdot a) = (\lambda \mu)
+\cdot a\)</span></p></li>
+<li><p><span class="math inline">\((\lambda + \mu)\cdot a = \lambda\cdot
+a + \mu\cdot a\)</span></p></li>
+<li><p><span class="math inline">\(\lambda \cdot (a + b) = \lambda \cdot
+a + \lambda\cdot b\)</span></p></li>
+<li><p><span class="math inline">\(\exists 1 \in F: \,\,\,\, 1 \cdot a =
+a\)</span></p></li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-1"></a> элементы
+векторного пространства <span class="math inline">\(V\)</span> -
+<em>векторы</em>.</p>
+<p>Примеры:</p>
+<p>!()[]</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над <span
+class="math inline">\(F\)</span> с операциями сложения <span
+class="math inline">\(+\)</span> и умножения <span
+class="math inline">\(-\)</span>. <em>Векторное подпространство</em>
+<span class="math inline">\(V\)</span> - это <span
+class="math inline">\(U \subset V\)</span>, такое что:</p>
+<ol type="1">
+<li><span class="math inline">\(\vec{0} \in U\)</span> (нулевой вектор
+<span class="math inline">\(V\)</span> принадлежит <span
+class="math inline">\(U\)</span>)</li>
+<li><span class="math inline">\(\forall u, v \in U \,\,\,\, u + v \in
+U\)</span> (замкнуто относительно сложения <span
+class="math inline">\(V\)</span>)</li>
+<li><span class="math inline">\(\forall u \in U, \lambda \in F \,\,\,\,
+\lambda \cdot u \in U\)</span> (замкнуто относительно умножения <span
+class="math inline">\(V\)</span>)</li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над <span
+class="math inline">\(F\)</span>. Векторное подпространство <span
+class="math inline">\(U\)</span> пространства <span
+class="math inline">\(V\)</span> является векторным пространством над
+полем <span class="math inline">\(F\)</span> относительно операций
+сложения и умножения, определенных для <span
+class="math inline">\(V\)</span>.</p>
+<p><em>Доказательство:</em> Проверить аксиомы <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="линейная-зависимость-векторов">Линейная зависимость
+векторов</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть в
+векторном пространстве <span class="math inline">\(V\)</span> над полем
+<span class="math inline">\(F\)</span> заданa система векторов <span
+class="math inline">\(U = (v_1, \ldots, v_n)\)</span>. Выражение <span
+class="math inline">\(\lambda_1 \cdot v_1 + \ldots + \lambda_n \cdot
+v_n, \,\,\,\, \lambda_i \in F\)</span> - это <em>линейная
+комбинация</em> системы векторов <span
+class="math inline">\(U\)</span>.<br></p>
+<p>Если <span class="math inline">\(\forall i \in \{1, \ldots, n\}
+\,\,\,\, \lambda_i = 0\)</span>, то линейная комбинация
+<em>тривиальная</em>, иначе <em>нетривиальная</em>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть в
+векторном пространстве <span class="math inline">\(V\)</span> над полем
+<span class="math inline">\(F\)</span> заданa система векторов <span
+class="math inline">\(U = (v_1, \ldots, v_n)\)</span>. Если <span
+class="math inline">\(\exists\)</span> их нетривиальная линейная
+комбинация равная <span class="math inline">\(0\)</span>, то система
+векторов <span class="math inline">\(U\)</span> <em>линейно
+зависима</em>.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> Пусть в
+векторном пространстве <span class="math inline">\(V\)</span> над полем
+<span class="math inline">\(F\)</span> заданa система векторов <span
+class="math inline">\(U = (v_1, \ldots, v_n)\)</span>. Если только
+тривиальная линейная комбинация векторов <span
+class="math inline">\(U\)</span> равна <span
+class="math inline">\(0\)</span>, то система векторов <span
+class="math inline">\(U\)</span> <em>линейно независима</em>.</p>
+<p><strong>Определение:</strong><a name="definition-6"></a> Пусть задана
+система векторов <span class="math inline">\(V = (v_1, \ldots,
+v_n)\)</span>. Множество всех линейных комбинаций векторов системы <span
+class="math inline">\(V\)</span> - это <em>линейная оболочка</em> <span
+class="math inline">\(V\)</span>. Обозначается: <span
+class="math inline">\(&lt;V&gt; = &lt;v_1, \ldots,
+v_n&gt;\)</span>.<br></p>
+<p><span class="math inline">\(V\)</span> называется <em>порождающей
+(системой)</em> линейной оболочки <span
+class="math inline">\(V\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Линейная
+оболочка <span class="math inline">\(&lt;U&gt; = &lt;u_1, \ldots,
+u_n&gt;, \,\,\,\, u_i \in V\)</span>(<span
+class="math inline">\(V\)</span> векторное пространство) - это векторное
+подпространство <span class="math inline">\(V\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Система векторов
+линейно зависима <span class="math inline">\(\Leftrightarrow\)</span>
+существует вектор этой системы линейно выражающийся через остальные.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Лемма:</strong><a name="lemma-1"></a> (Основная лемма о
+линейной зависимости) Пусть <span class="math inline">\(\{v_1, \ldots,
+v_m\} \subset &lt;u_1, \ldots, u_n&gt;, \,\,\,\, m &gt; n\)</span>.
+Тогда векторы <span class="math inline">\(v_1, \ldots, v_m\)</span>
+линейно зависимы.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="базис">Базис</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-7"></a>
+<em>Базис</em> векторного пространства <span
+class="math inline">\(V\)</span> - это:</p>
+<ol type="1">
+<li>Максимальная по включению линейно независимая система векторов <span
+class="math inline">\(V\)</span>.</li>
+<li>Система векторов, такая что любой вектор <span
+class="math inline">\(V\)</span> линейно выражается через векторы этой
+системы единственным образом.</li>
+<li>Линейно независимая система векторов, такая что любой вектор <span
+class="math inline">\(V\)</span> линейно выражается через векторы этой
+системы.</li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Все
+определения базиса эквивалентны.</p>
+<p><strong>Определение:</strong><a name="definition-8"></a> Векторное
+пространство, порождающее множество которого конечно, называется
+<em>конечномерным</em>, иначе векторное пространство
+<em>бесконечномерно</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> В любом
+конечномерном векторном пространстве существует базис.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Количество
+векторов в любом базисе конечномерного векторного пространства
+одинаково.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Любую линейно
+независимую систему векторов в векторном пространстве можно дополнить до
+базиса.</p>
+<p><em>Доказательство:</em> Будем добавлять векторы до тех пор пока
+система остается линейно независимой <span
+class="math inline">\(\Rightarrow\)</span> получим максимальную по
+включению линейно независимую систему <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> В <span
+class="math inline">\(n\)</span>-мерном векторном пространстве любые
+<span class="math inline">\(n\)</span> линейно независимых вектора
+образуют базис.</p>
+<p><em>Доказательство:</em> Любые <span class="math inline">\(n +
+1\)</span> вектора в <span class="math inline">\(n\)</span>-мерном
+пространстве линейно зависимы, так как размерность - это количество
+векторов в базисе. То есть любые <span class="math inline">\(n\)</span>
+векторов -это максимальная по включению линейно независимая система.
+Осталось доказать, что любой вектор пространства представим линейной
+комбинацией этих векторов. Но если это не так, то линейно независимы
+<span class="math inline">\(n + 1\)</span> вектор <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> Пусть <span
+class="math inline">\(U\)</span> подпространство векторного пространства
+<span class="math inline">\(V\)</span>. Тогда <span
+class="math inline">\(\dim U \le \dim V\)</span>, при этом <span
+class="math inline">\(\dim U = \dim V \Leftrightarrow U =
+V\)</span>.</p>
+<p><em>Доказательство:</em> Основная лемма о линейной зависимости <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-9"></a> Векторное
+пространство <span class="math inline">\(U\)</span> над полем <span
+class="math inline">\(F\)</span> <em>изоморфно</em> векторному
+пространству <span class="math inline">\(V\)</span> над полем <span
+class="math inline">\(F\)</span>, если существует биекция <span
+class="math inline">\(\varphi: \,\,\,\, U \to V\)</span>, такая что:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall u_1, u_2 \in U \,\,\,\,
+\varphi(u_1 + u_2) = \varphi(u_1) + \varphi(u_2)\)</span></li>
+<li><span class="math inline">\(\forall u \in U, \lambda \in F \,\,\,\,
+\varphi(\lambda u) = \lambda \varphi(u)\)</span></li>
+</ol>
+<p><span class="math inline">\(\varphi\)</span> называется
+<em>изоморфизм</em>. Обозначается <span class="math inline">\(U \cong
+V\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Пусть <span
+class="math inline">\(U\)</span> и <span
+class="math inline">\(V\)</span> конечномерные векторные пространства
+над полем <span class="math inline">\(F\)</span>. Тогда <span
+class="math display">\[U \cong V \Leftrightarrow \dim U = \dim
+V\]</span></p>
+<p><em>Доказательство:</em> Изоморфизм переводит вектор базиса одного
+пространства в соответствующий вектор базиса другого <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#линейные-функции-в-евклидовом-пространстве"
+id="toc-линейные-функции-в-евклидовом-пространстве">Линейные функции в
+евклидовом пространстве</a>
+<ul>
+<li><a
+href="#билинейные-функции-и-линейные-операторы-в-евклидовом-пространстве"
+id="toc-билинейные-функции-и-линейные-операторы-в-евклидовом-пространстве">Билинейные
+функции и линейные операторы в евклидовом пространстве</a></li>
+<li><a href="#сопряженный-линейный-оператор"
+id="toc-сопряженный-линейный-оператор">Сопряженный линейный оператор</a>
+<ul>
+<li><a href="#самосопряженный-линейный-оператор"
+id="toc-самосопряженный-линейный-оператор">Самосопряженный линейный
+оператор</a>
+<ul>
+<li><a href="#канонический-вид-самосопряженного-линейного-оператора"
+id="toc-канонический-вид-самосопряженного-линейного-оператора">Канонический
+вид самосопряженного линейного оператора</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="линейные-функции-в-евклидовом-пространстве">Линейные функции в
+евклидовом пространстве</h1>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(V\)</span> - конечномерное <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1">евклидово</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">пространство</a>.
+Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(\forall a \in V \,\,\,\,
+\exists\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0">линейная
+функция</a> <span class="math inline">\(\varphi_a: V \to V \,\,\,\,
+\varphi_a: x \mapsto (x, a)\)</span>.</li>
+<li>Отображение <span class="math inline">\(\psi: V \to V^{*} \,\,\,\,
+\psi: a \to \varphi_a\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-9">изоморфизм</a>
+пространств <span class="math inline">\(V\)</span> и <span
+class="math inline">\(V^{*}\)</span>.</li>
+<li>В ортонормированном базисе <span class="math inline">\(e\)</span>
+координаты вектора <span class="math inline">\(a\)</span> совпадают с
+коэффицентами <span class="math inline">\(\varphi_a\)</span> в
+сопряженном к <span class="math inline">\(e\)</span> базисе.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>По определению скалярного произведения.</li>
+<li>Докажем, что <span class="math inline">\(\psi\)</span> - линейно.
+<span class="math inline">\(\forall x, y, z \in V \,\,\,\, \psi(x + y) =
+\varphi_{x + y} = (z, x + y) = (z, x) + (z, y) = \varphi_x + \varphi_y =
+\psi(x) + \psi(y)\)</span>. Линейность по <span
+class="math inline">\(\lambda \in \mathbb{R}\)</span> аналогично.</li>
+</ol>
+<p>Докажем, что <span class="math inline">\(\psi\)</span> - биекция.
+Пусть <span class="math inline">\(x_1, x_2 \in V, \,\,\,\, x_1 \ne
+x_2\)</span> и <span class="math inline">\(\psi(x_1) = \psi(x_2)
+\Rightarrow \varphi_{x_1} = \varphi_{x_2} \Rightarrow \forall x \in V
+\,\,\,\, (x, x_1) = (x, x_2) \Rightarrow (x, x_1 - x_2) = 0\)</span>.
+Возьмем <span class="math inline">\(x = x_1 - x_2 \Rightarrow x_1 =
+x_2\)</span>, следовательно <span class="math inline">\(\psi\)</span> -
+инъекция.</p>
+<p>Докажем, что <span class="math inline">\(\psi\)</span> - сюръекция.
+Пусть <span class="math inline">\(\psi(x) = 0 \Rightarrow \varphi_x = 0
+\Rightarrow \forall v \in V \,\,\,\, (v, x) = 0\)</span>. Возьмем <span
+class="math inline">\(v = x \Rightarrow (x, x) = 0 \Rightarrow x =
+0\)</span>, следовательно <span class="math inline">\(\ker(\psi) =
+\{0\}\)</span>. Так как <span class="math inline">\(V\)</span> и <span
+class="math inline">\(V^{*}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#theorem-0">изоморфны</a>
+размерности <span class="math inline">\(V\)</span> и <span
+class="math inline">\(V^{*}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#theorem-2">совпадают</a>.
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#statement-1">По
+утверждению</a> <span class="math inline">\(\dim V = \dim
+\operatorname{img}\psi + \dim \ker \psi = \dim \operatorname{img}\psi
+\Rightarrow V = \operatorname{img}\psi\)</span>, следовательно <span
+class="math inline">\(\psi\)</span> - сюръекция. <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<ol start="3" type="1">
+<li><span class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<h2
+id="билинейные-функции-и-линейные-операторы-в-евклидовом-пространстве">Билинейные
+функции и линейные операторы в евклидовом пространстве</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(V\)</span> - конечномерное евклидово пространство.
+Тогда</p>
+<ol type="1">
+<li>Для любого <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейного
+оператора</a> <span class="math inline">\(\mathcal{A}\)</span>
+существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-2">билинейная
+функция</a> <span class="math inline">\(\beta_{\mathcal{A}}(x, y) = (x,
+\mathcal{A}(y))\)</span>.</li>
+<li>Для любой <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-2">билинейной
+функции</a><span class="math inline">\(\beta\)</span> существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a> <span class="math inline">\(\mathcal{A}\)</span>, такой,
+что <span class="math inline">\(\beta(x, y) = (x, \mathcal{A}(y))
+\,\,\,\, \forall x, y \in V\)</span>.</li>
+<li>В <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8">ортонормированном
+базисе</a> матрица <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-2">билинейной
+функции</a> <span class="math inline">\(\beta_{\mathcal{A}}\)</span>
+совпадает с матрицей <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейного
+оператора</a> <span class="math inline">\(\mathcal{A}\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><p>Докажем, что <span class="math inline">\(\beta\)</span>
+билинейная функция. <span class="math inline">\(\beta(x + y, z) = (x +
+y, \mathcal{A}(z)) = (x, \mathcal{A}(z)) + (y, \mathcal{A}(z)) =
+\beta(x, z) + \beta(y, z)\)</span> и т.д. <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p></li>
+<li><p>Рассмотрим линейный оператор с матрицей, совпадающей с матрицей
+<span class="math inline">\(\beta \,\,\,\,\blacksquare\)</span></p></li>
+<li><p>Пусть <span class="math inline">\(B\)</span> - матрица билинейной
+функции <span class="math inline">\(\beta_{\mathcal{A}}\)</span>, <span
+class="math inline">\(A\)</span> - матрица линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span>. <span
+class="math inline">\(x\)</span> - вектор с столбцом координат <span
+class="math inline">\(X\)</span>, <span class="math inline">\(y\)</span>
+- вектор с столбцом координат <span class="math inline">\(Y\)</span>.
+Тогда <span class="math inline">\(\beta_{\mathcal{A}}(x, y) =
+X^TBY\)</span>. И <span class="math inline">\((x, \mathcal{A}(y)) =
+X^TAY \Rightarrow B = A \,\,\,\,\blacksquare\)</span></p></li>
+</ol>
+<h2 id="сопряженный-линейный-оператор">Сопряженный линейный
+оператор</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1">евклидово</a>
+пространство, <span class="math inline">\(\mathcal{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a> на <span class="math inline">\(V\)</span>. <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">Линейный
+оператор</a> <span class="math inline">\(\mathcal{A}^{*}\)</span> -
+<em>сопряженный</em> к <span class="math inline">\(\mathcal{A}\)</span>,
+если <span class="math inline">\(\forall x, y \in V \,\,\,\,
+(\mathcal{A}(x), y) = (x, \mathcal{A}^{*}(y))\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Пусть <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1">евклидово</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">пространство</a>,
+<span class="math inline">\(\dim V = n\)</span>. Тогда у любого
+линейного оператора <span class="math inline">\(\mathcal{A}\)</span>
+существует единственный <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-0">сопряженный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a> <span class="math inline">\(\mathcal{A}^{*}\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(A\)</span>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-2">матрица
+линейного оператора</a> <span
+class="math inline">\(\mathcal{A}\)</span>. Рассмотрим <span
+class="math inline">\(\mathcal{B}\)</span> - линейный оператор с
+матрицей <span class="math inline">\(A^T\)</span>. Имеем <span
+class="math inline">\((\mathcal{A}(x), y) = (AX)^TY = X^TA^TY = (x,
+\mathcal{B}(y))\)</span>, то есть <span
+class="math inline">\(\mathcal{B}\)</span> сопряженный к <span
+class="math inline">\(\mathcal{A}\)</span> линейный оператор.
+Существование доказано.</p>
+<p>Докажем единственность. Пусть <span
+class="math inline">\(\mathcal{B}\)</span> и <span
+class="math inline">\(\mathcal{C}\)</span> сопряженные к <span
+class="math inline">\(\mathcal{A}\)</span> линейные операторы, то есть
+<span class="math inline">\((\mathcal{A}(x), y) = (x, \mathcal{B}(y)) =
+(x, \mathcal{C}(y)) \Rightarrow\)</span> матрицы <span
+class="math inline">\(\mathcal{B}\)</span> и <span
+class="math inline">\(\mathcal{C}\)</span> сопадают <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Пусть <span
+class="math inline">\(V\)</span> - конечномерное <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0">евклидово</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">пространство</a>.
+<span class="math inline">\(\mathcal{A}\)</span> - линейный оператор на
+<span class="math inline">\(V\)</span>, <span
+class="math inline">\(A\)</span> - матрица <span
+class="math inline">\(\mathcal{A}\)</span> в <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8">ортонормированном</a>
+базисе <span class="math inline">\(e\)</span>. Тогда матрица
+сопряженного к <span class="math inline">\(\mathcal{A}\)</span>
+линейного оператора <span class="math inline">\(\mathcal{A}^{*}\)</span>
+в базисе <span class="math inline">\(e\)</span> - это <span
+class="math inline">\(A^T\)</span>.</p>
+<p><em>Доказательство:</em> см. <a href="#theorem-2">утверждение</a>
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="самосопряженный-линейный-оператор">Самосопряженный линейный
+оператор</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(V\)</span> - евклидово пространство. Линейный
+оператор <span class="math inline">\(\mathcal{A}\)</span> -
+<em>самосопряженный</em>, если <span
+class="math inline">\(\mathcal{A}^{*} = \mathcal{A}\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">Линейный
+оператор</a> <span class="math inline">\(\mathcal{A}\)</span> на
+конечномерном евклидовом пространстве <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-1">самосопряженный</a>
+<span class="math inline">\(\Leftrightarrow\)</span> его матрица <span
+class="math inline">\(A\)</span> <em>симметрическая</em>, то есть <span
+class="math inline">\(A = A^T\)</span>.</p>
+<p><em>Доказательство:</em> см. <a href="#corrolary-0">утверждение</a>
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h4
+id="канонический-вид-самосопряженного-линейного-оператора">Канонический
+вид самосопряженного линейного оператора</h4>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Пусть <span
+class="math inline">\(V\)</span> - конечномерное <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1">евклидово</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">пространство</a>,
+<span class="math inline">\(\mathcal{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-1">самосопряженный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a> на <span class="math inline">\(V\)</span>, <span
+class="math inline">\(U\)</span> - инвариантное <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2">подпространство</a>
+оператора <span class="math inline">\(\mathcal{A}\)</span>. Тогда <span
+class="math inline">\(U^{\perp}\)</span> (<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-0">ортогональное
+дополнение</a> <span class="math inline">\(U\)</span>) - инвариантное <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2">подпространство</a>
+оператора <span class="math inline">\(\mathcal{A}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(U\)</span> - инвариантное пространство
+относительно оператора <span class="math inline">\(\mathcal{A}\)</span>,
+то есть <span class="math inline">\(\forall u \in U \,\,\,\,
+\mathcal{A}(u) \in U\)</span>. <span class="math inline">\(\forall
+u^{\perp} \in U^{\perp} \,\,\,\, (u^{\perp}, u) = 0\)</span> <span
+class="math inline">\(\forall u \in U \,\,\,\, (\mathcal{A}(u^{\perp}),
+u) = (u^{\perp}, \mathcal{A}(u)) = 0 \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (канонический вид
+самосопряженного линейного оператора) Пусть <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1">евклидово</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">пространство</a>,
+<span class="math inline">\(\dim V = n\)</span>. Тогда у любого <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-1">самосопряженного</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейного
+оператора</a> <span class="math inline">\(\mathcal{A}\)</span>
+существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8">ортонормированный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7">базис</a>,
+состоящий из <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-0">собственных</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-1">векторов</a>
+<span class="math inline">\(\mathcal{A}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>По индукции по размерности пространства.</p>
+<p><strong>База:</strong></p>
+<p><span class="math inline">\(n = 1\)</span> Очевидно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><span class="math inline">\(n = 2\)</span> Пусть матрица <span
+class="math inline">\(\mathcal{A}\)</span> - это <span
+class="math inline">\(A = \left(\begin{array}{cc} a &amp; c \\ c &amp; b
+\end{array}\right)\)</span>. <span
+class="math inline">\(\chi_{\mathcal{A}}(t) = \left|\begin{array}{cc} t
+- a &amp; -c \\ -c &amp; t - b \end{array}\right| = t^2 - t (a + b) + ab
+- c^2\)</span>. <span class="math inline">\(D = (a + b)^2 - 4(ab - c^2)
+= (a - b)^2 + c^2 &gt; 0 \Rightarrow\)</span> существует два
+действительных корня, то есть два собственных значения, а так как
+векторы, отвечающие различным собственным значениям самосопряженного
+линенйного оператора ортогональны <span
+class="math inline">\((\mathcal{A}(x), y) = \lambda_1 (x, y) = (x,
+\mathcal{A}(y)) = \lambda_2 (x, y)\)</span>, искомый базис найден <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Предположение индукции:</strong> Для любого <span
+class="math inline">\(k, \,\,\,\, 3 \le k &lt; n\)</span> существует
+базис из собственных векторов у самосопряженного линейного оператора на
+пространстве размерности <span class="math inline">\(k\)</span>.</p>
+<p><strong>Шаг:</strong> У любого векторного пространства над <span
+class="math inline">\(\mathbb{R}\)</span> существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-04.03.23#corollary-0">одномерное
+или двумерное инвариантное подпространство</a> <span
+class="math inline">\(U\)</span>. <span class="math inline">\(V = U
+\oplus U^{\perp}\)</span> (<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#statement-2">см.
+утверждение</a>), <span class="math inline">\(\dim U^{\perp} &lt; n
+\Rightarrow\)</span> по предположению индукции в <span
+class="math inline">\(U^{\perp}\)</span> существует ортогональный базис
+из собственных векторов <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

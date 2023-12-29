@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#деревья" id="toc-деревья">Деревья</a></li>
+</ul>
+</nav>
+</details>
+<h1 id="деревья">Деревья</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a>
+<em>Дерево</em> - это <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5">связный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">граф</a>
+без <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4">циклов</a>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(G = \{V, E\}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">граф</a>,
+<span class="math inline">\(|V| = n, \,\,\,\, |E| = m\)</span>.
+Следующие утверждения эквивалентны.</p>
+<ol type="1">
+<li><span class="math inline">\(G\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-trees#definition-0">дерево</a>.</li>
+<li><span class="math inline">\(G\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5">связный</a>
+и <span class="math inline">\(n = m + 1\)</span>.</li>
+<li><span class="math inline">\(G\)</span> не содержит циклов и <span
+class="math inline">\(n = m + 1\)</span>.</li>
+<li>В <span class="math inline">\(G\)</span> между любыми двумя
+вершинами существует единственный <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4">маршрут</a>.</li>
+<li><span class="math inline">\(G\)</span> не содержит циклов и в графе,
+содержащем <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">ребро</a>
+между двумя несмежными вершинами <span class="math inline">\(G\)</span>,
+существует ровно один <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4">цикл</a>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[1 \Rightarrow 2\]</span> Докажем
+индукцией по количеству вершин. База: <span class="math inline">\(n =
+1\)</span> тогда ребер <span class="math inline">\(0\)</span>, так как
+нет петель, то есть <span class="math inline">\(n = 1 = 0 + 1\)</span>
+что и требовалось. Пусть <span class="math inline">\(n \ge 2\)</span> и
+для деревьев с меньшим, чем <span class="math inline">\(n\)</span>
+числом вершин верно <span class="math inline">\(n = m + 1\)</span>.
+Тогда возьмем произвольное ребро <span
+class="math inline">\(e\)</span>(множество ребер непусто, так как граф
+связный) и рассмотрим <span class="math inline">\(G\setminus
+e\)</span>.</p>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Пусть <span
+class="math inline">\(G\)</span> - дерево, <span
+class="math inline">\(e\)</span> - произвольное ребро в нем. Тогда граф
+<span class="math inline">\(G\)</span> без ребра <span
+class="math inline">\(e\)</span> содержит <span
+class="math inline">\(2\)</span> компоненты связности, каждая из которых
+- дерево.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(e\)</span>
+соединяет <span class="math inline">\(v_1\)</span> и <span
+class="math inline">\(v_2\)</span>. <span
+class="math inline">\(G\)</span> - связный, значит, убрав одно ребро
+получим <span class="math inline">\(1\)</span> или <span
+class="math inline">\(2\)</span> компоненты связности. Если получим одну
+компоненту, то существует маршрут из <span
+class="math inline">\(v_1\)</span> в <span
+class="math inline">\(v_2\)</span>. Следовательно, в <span
+class="math inline">\(G\)</span> был цикл. Противоречие. Получили две
+компоненты связности, каждая из которых не содержит циклов, так как
+циклов нет в <span class="math inline">\(G
+\,\,\,\,\blacksquare\)</span></p>
+<p>Для <span class="math inline">\(2\)</span>-ух полученных компонент
+связности - деревьев верно предположение индукции. Пусть в первом и
+втором деревьях <span class="math inline">\(n_1, n_2, m_1, m_2\)</span>
+вершин и ребер соответственно. Тогда <span class="math inline">\(n_1 =
+m_1 + 1, \,\,\,\, n_2 = m_2 + 1\)</span>. <span class="math inline">\(n
+= n_1 + n_2 = m_1 + 1 + m_2 + 1 = (m_1 + m_2 + 1) + 1
+\,\,\,\,\blacksquare\)</span> (в <span class="math inline">\(G\)</span>
+<span class="math inline">\(m_1 + m_2 + 1\)</span> - ребер)</p>
+<p><span class="math display">\[2 \Rightarrow 3\]</span></p>
+<p>Пусть <span class="math inline">\(G\)</span> содержит цикл.</p>
+<p><strong>Лемма:</strong><a name="lemma-1"></a> Пусть простой граф
+<span class="math inline">\(G\)</span> содержит <span
+class="math inline">\(n\)</span> вершин, <span
+class="math inline">\(m\)</span> ребер и <span
+class="math inline">\(k\)</span> компонент связности. Тогда <span
+class="math inline">\(n - m \le k\)</span>.</p>
+<p><em>Доказательство:</em> Докажем индукцией по количеству ребер. Для
+<span class="math inline">\(m = 0 \,\,\,\, n = k\)</span>, что и
+требовалось. Пусть ребер <span class="math inline">\(m \ge 1\)</span> и
+для всех графов с меньшим числом вершин утверждение выполнено. Тогда
+выберем произвольное ребро <span class="math inline">\(e\)</span> и
+рассмотрим граф без него. Убрав ребро, получим либо <span
+class="math inline">\(k\)</span> компонент связности либо <span
+class="math inline">\(k + 1\)</span>. Для графа <span
+class="math inline">\(G \\ e\)</span> верно <span
+class="math inline">\(n’ - m’ \le k’\)</span>, <span
+class="math inline">\(m’, \,\,\,\, n’, \,\,\,\, k’\)</span> - количество
+ребер, вершин и компонент связности <span
+class="math inline">\(G\setminus e \,\,\,\,\blacksquare\)</span></p>
+<p>Рассмотри граф <span class="math inline">\(G\)</span> без
+произвольного ребра <span class="math inline">\(e\)</span>, входящего в
+цикл. <span class="math inline">\(G\setminus e\)</span> связный, так как
+<span class="math inline">\(e\)</span> входило в цикл. То есть в <span
+class="math inline">\(G\)</span> - <span
+class="math inline">\(n\)</span> вершин и <span class="math inline">\(n
+- 2\)</span> ребер, что противоречит <a href="#lemma-1">лемме</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><span class="math display">\[3 \Rightarrow 4\]</span> Единственность
+маршрута при его существовании очевидна. Маршрут существует между любыми
+двумя вершинами <span class="math inline">\(G\)</span>, так как,
+предположив, что в <span class="math inline">\(G\)</span> - <span
+class="math inline">\(k\)</span> компонент связности(которые не содержат
+циклов, а следовательно деревья) получим, что <span
+class="math inline">\(n =\)</span> сумма количества вершин в каждой
+компоненте = сумма количества ребер в каждой компоненте + <span
+class="math inline">\(k\)</span>(по <span class="math inline">\(1
+\Rightarrow 2\)</span>) <span class="math inline">\(= m + 1
+\,\,\,\,\blacksquare\)</span></p>
+<p><span class="math display">\[4 \Rightarrow 5\]</span></p>
+<p>Если в <span class="math inline">\(G\)</span> есть цикл, то
+нарушается условие о единственности маршрута. Добавив ребро, получим
+цикл, так как маршрут существует между любыми двумя вершинами. Если
+получим больше одного цикла, то они оба содержат добавленное ребро, а
+следовательно существует цикл в <span class="math inline">\(G
+\,\,\,\,\blacksquare\)</span></p>
+<p><span class="math display">\[5 \Rightarrow 1\]</span></p>
+<p><span class="math inline">\(G\)</span> - связный, так как для каждой
+пары вершин существует маршрут между ними <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

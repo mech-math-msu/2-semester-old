@@ -1,0 +1,1106 @@
+[
+    {
+        "keyword": "обобщенным инвариантом Дена многогранника",
+        "data": "Пусть $W$ - многогранник с множеством ребер $E$, и $M$ - некоторое множество вещественных чисел, содержащее длины всех ребер из $E$. Пусть $f$ - произвольная функция Дена для $W$, и $g: M \\to \\mathbb{R}$ - произвольная аддитивная функция. Тогда *обобщенным инвариантом Дена многогранника* $W$, соответствующим паре $(f, g)$, назовем число $\\displaystyle \\sum_{e \\in E}g(|e|)f(|\\alpha_e|)$, где $|e|$ и $\\alpha_e$ - длина ребра $e$ и величина двугранного угла при этом ребре соответственно.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/cool-problems#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/cool-problems#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(W\\)</span> - многогранник с\nмножеством ребер <span class=\"math inline\">\\(E\\)</span>, и <span\nclass=\"math inline\">\\(M\\)</span> - некоторое множество вещественных\nчисел, содержащее длины всех ребер из <span\nclass=\"math inline\">\\(E\\)</span>. Пусть <span\nclass=\"math inline\">\\(f\\)</span> - произвольная функция Дена для <span\nclass=\"math inline\">\\(W\\)</span>, и <span class=\"math inline\">\\(g: M \\to\n\\mathbb{R}\\)</span> - произвольная аддитивная функция. Тогда\n<em>обобщенным инвариантом Дена многогранника</em> <span\nclass=\"math inline\">\\(W\\)</span>, соответствующим паре <span\nclass=\"math inline\">\\((f, g)\\)</span>, назовем число <span\nclass=\"math inline\">\\(\\displaystyle \\sum_{e \\in\nE}g(|e|)f(|\\alpha_e|)\\)</span>, где <span\nclass=\"math inline\">\\(|e|\\)</span> и <span\nclass=\"math inline\">\\(\\alpha_e\\)</span> - длина ребра <span\nclass=\"math inline\">\\(e\\)</span> и величина двугранного угла при этом\nребре соответственно.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Базис Гамеля",
+        "data": "Пусть $V$ бесконечномерное векторное пространство. *Базис Гамеля* $V$ - это $F \\subset V$, такая, что:",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/cool-problems#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/cool-problems#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> бесконечномерное\nвекторное пространство. <em>Базис Гамеля</em> <span\nclass=\"math inline\">\\(V\\)</span> - это <span class=\"math inline\">\\(F\n\\subset V\\)</span>, такая, что:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "обобщенным инвариантом Дена многогранника",
+        "data": "Пусть $W$ - многогранник с множеством ребер $E$, и $M$ - некоторое множество вещественных чисел, содержащее длины всех ребер из $E$. Пусть $f$ - произвольная функция Дена для $W$, и $g: M \\to \\mathbb{R}$ - произвольная аддитивная функция. Тогда *обобщенным инвариантом Дена многогранника* $W$, соответствующим паре $(f, g)$, назовем число $\\displaystyle \\sum_{e \\in E}g(|e|)f(|\\alpha_e|)$, где $|e|$ и $\\alpha_e$ - длина ребра $e$ и величина двугранного угла при этом ребре соответственно.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/homework#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/homework#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(W\\)</span> - многогранник с\nмножеством ребер <span class=\"math inline\">\\(E\\)</span>, и <span\nclass=\"math inline\">\\(M\\)</span> - некоторое множество вещественных\nчисел, содержащее длины всех ребер из <span\nclass=\"math inline\">\\(E\\)</span>. Пусть <span\nclass=\"math inline\">\\(f\\)</span> - произвольная функция Дена для <span\nclass=\"math inline\">\\(W\\)</span>, и <span class=\"math inline\">\\(g: M \\to\n\\mathbb{R}\\)</span> - произвольная аддитивная функция. Тогда\n<em>обобщенным инвариантом Дена многогранника</em> <span\nclass=\"math inline\">\\(W\\)</span>, соответствующим паре <span\nclass=\"math inline\">\\((f, g)\\)</span>, назовем число <span\nclass=\"math inline\">\\(\\displaystyle \\sum_{e \\in\nE}g(|e|)f(|\\alpha_e|)\\)</span>, где <span\nclass=\"math inline\">\\(|e|\\)</span> и <span\nclass=\"math inline\">\\(\\alpha_e\\)</span> - длина ребра <span\nclass=\"math inline\">\\(e\\)</span> и величина двугранного угла при этом\nребре соответственно.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Базис Гамеля",
+        "data": "Пусть $V$ бесконечномерное векторное пространство. *Базис Гамеля* $V$ - это $F \\subset V$, такая, что:",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/homework#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/homework#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> бесконечномерное\nвекторное пространство. <em>Базис Гамеля</em> <span\nclass=\"math inline\">\\(V\\)</span> - это <span class=\"math inline\">\\(F\n\\subset V\\)</span>, такая, что:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "триангуляция треугольник триангуляция",
+        "data": "(*триангуляция*) Пусть $\\Gamma$ - [связный](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5) [простой](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2) [плоский](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-5) [граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1), и выполнены следующие условия: <br><br>1. Любое ребро входит в границу $2$-x [граней](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-6).<br>2. Любая конечная грань ограничена $3$ ребрами (такая грань - *треугольник*).<br>3. Объединение конечных граней $W$ - ограничено простой замкнутой ломаной.<br>Тогда $G$ - *триангуляция* $W$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-06.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-06.04.23#definition-0\">Определение:</a></strong><p>(<em>триангуляция</em>) Пусть <span\nclass=\"math inline\">\\(\\Gamma\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5\">связный</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2\">простой</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-5\">плоский</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">граф</a>,\nи выполнены следующие условия: <br><br>1. Любое ребро входит в границу\n<span class=\"math inline\">\\(2\\)</span>-x <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-6\">граней</a>.<br>2.\nЛюбая конечная грань ограничена <span class=\"math inline\">\\(3\\)</span>\nребрами (такая грань - <em>треугольник</em>).<br>3. Объединение конечных\nграней <span class=\"math inline\">\\(W\\)</span> - ограничено простой\nзамкнутой ломаной.<br>Тогда <span class=\"math inline\">\\(G\\)</span> -\n<em>триангуляция</em> <span class=\"math inline\">\\(W\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Связная многогранная поверхность граней",
+        "data": "*Связная многогранная поверхность* $\\mathcal{F}$ в $\\mathbb{R}^n$ - это конечное семейство $\\{F_i \\subset \\mathbb{R}^n\\}$ [пространственных многоугольников](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-1) (*граней*), для которых выполнены следующие условия:",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">Определение:</a></strong><p><em>Связная многогранная поверхность</em> <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span> в <span\nclass=\"math inline\">\\(\\mathbb{R}^n\\)</span> - это конечное семейство\n<span class=\"math inline\">\\(\\{F_i \\subset \\mathbb{R}^n\\}\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-1\">пространственных\nмногоугольников</a> (<em>граней</em>), для которых выполнены следующие\nусловия:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "вершины и ребра",
+        "data": "Пусть $\\mathcal{F} = \\{F_i\\}$ - [многогранная поверхность](#definition-0) $\\mathcal{F}$ - это *вершины и ребра* поверхности $\\mathcal{F}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F} = \\{F_i\\}\\)</span> - <a\nhref=\"#definition-0\">многогранная поверхность</a> <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span> - это <em>вершины и\nребра</em> поверхности <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "инцидентна граничное внутреннее замкнутая",
+        "data": "Пусть $\\mathcal{F} = \\{F_i\\}$ - [многогранная поверхность](#definition-1). Вершина (ребро), принадлежащая грани, *инцидентна* этой грани. Ребро инцидентное ровно одной грани - *граничное*, иначе - *внутреннее*.<br> Если у $\\mathcal{F}$ нет граничных ребер, то $\\mathcal{F}$ - *замкнутая*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F} = \\{F_i\\}\\)</span> - <a\nhref=\"#definition-1\">многогранная поверхность</a>. Вершина (ребро),\nпринадлежащая грани, <em>инцидентна</em> этой грани. Ребро инцидентное\nровно одной грани - <em>граничное</em>, иначе - <em>внутреннее</em>.<br>\nЕсли у <span class=\"math inline\">\\(\\mathcal{F}\\)</span> нет граничных\nребер, то <span class=\"math inline\">\\(\\mathcal{F}\\)</span> -\n<em>замкнутая</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "мерная",
+        "data": "[Связная многогранная поверхность](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0) в $\\mathbb{R}^n$ - $n$-*мерная*. (хотя она в $n + 1$)",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-9\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">Связная\nмногогранная поверхность</a> в <span\nclass=\"math inline\">\\(\\mathbb{R}^n\\)</span> - <span\nclass=\"math inline\">\\(n\\)</span>-<em>мерная</em>. (хотя она в <span\nclass=\"math inline\">\\(n + 1\\)</span>)</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "триангулированная",
+        "data": "Так как теперь в определении [поверхности](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0) не нужно, чтобы грани не лежали в одной плоскости, можем разбить каждую грань на треугольники. Подученная при этом поверхность - *триангулированная*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-3\">Определение:</a></strong><p>Так как теперь в определении <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">поверхности</a>\nне нужно, чтобы грани не лежали в одной плоскости, можем разбить каждую\nгрань на треугольники. Подученная при этом поверхность -\n<em>триангулированная</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "слово склейки",
+        "data": "Пусть $\\mathcal{F}$ - [связная многогранная поверхность](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0). Пометим все ребра $\\mathcal{F}$ стрелками и буквами. Будем обходить многогранник по его границе и записывать последовательно буквы ребер по правилу: если идем в направлении стрелки, то саму букву, иначе букву в степени $-1$. Полученная последовательность букв - *слово склейки* поверхности $\\mathcal{F}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">связная\nмногогранная поверхность</a>. Пометим все ребра <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span> стрелками и буквами. Будем\nобходить многогранник по его границе и записывать последовательно буквы\nребер по правилу: если идем в направлении стрелки, то саму букву, иначе\nбукву в степени <span class=\"math inline\">\\(-1\\)</span>. Полученная\nпоследовательность букв - <em>слово склейки</em> поверхности <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Элементарные операции Вырезание диска Приклеивание ручки Вклейка пленки Мёбиуса",
+        "data": "*Элементарные операции* с поверхностями - это: <br>1. *Вырезание диска*.<br>2. *Приклеивание ручки*.<br>1. *Вклейка пленки Мёбиуса*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-5\">Определение:</a></strong><p><em>Элементарные операции</em> с поверхностями - это: <br>1.\n<em>Вырезание диска</em>.<br>2. <em>Приклеивание ручки</em>.<br>1.\n<em>Вклейка пленки Мёбиуса</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Сфера с ручками",
+        "data": "*Сфера с* $g$ *ручками* - это поверхность, полученная [приклеиванием к сфере $g$ ручек](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-5).",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-6\">Определение:</a></strong><p><em>Сфера с</em> <span class=\"math inline\">\\(g\\)</span>\n<em>ручками</em> - это поверхность, полученная <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-5\">приклеиванием\nк сфере <span class=\"math inline\">\\(g\\)</span> ручек</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Сфера с пленками Мёбиуса",
+        "data": "*Сфера с* $m$ *пленками Мёбиуса* - это поверхность, полученная [вклейкой в сферу $m$ пленок Мёбиуса](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-5).",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-7\">Определение:</a></strong><p><em>Сфера с</em> <span class=\"math inline\">\\(m\\)</span> <em>пленками\nМёбиуса</em> - это поверхность, полученная <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-5\">вклейкой\nв сферу <span class=\"math inline\">\\(m\\)</span> пленок Мёбиуса</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "модельные поверхности",
+        "data": "[Сфера с $g$ ручками](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-6) и [сфера с $m$ пленками Мёбиуса](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-7) - это *модельные поверхности*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-8\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-6\">Сфера\nс <span class=\"math inline\">\\(g\\)</span> ручками</a> и <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-7\">сфера\nс <span class=\"math inline\">\\(m\\)</span> пленками Мёбиуса</a> - это\n<em>модельные поверхности</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ориентацию согласованы",
+        "data": "Пусть $\\mathcal{F}$ - [связная](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0) [замкнутая](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-2) [двумерная](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-9) [многогранная поверхность](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0). $F_1, \\ldots, F_m$ - ее грани. У каждой грани можно задать *ориентацию* (направление обхода границы или задать [ориентацию плоскости](https://analytic-geometry.github.io/chapters/#definition-26), содержащей грань).<br> Пусть $e$ - ребро $\\mathcal{F}$. Оно инцидентно двум граням $F_i$ и $F_j$, в которых задана ориентация, то есть на ребре $e$ указаны два направления. Если эти направления совпадают, то ориентации граней $F_i$ и $F_j$ - *согласованы*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-10\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">связная</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-2\">замкнутая</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-9\">двумерная</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">многогранная\nповерхность</a>. <span class=\"math inline\">\\(F_1, \\ldots, F_m\\)</span> -\nее грани. У каждой грани можно задать <em>ориентацию</em> (направление\nобхода границы или задать <a\nhref=\"https://analytic-geometry.github.io/chapters/#definition-26\">ориентацию\nплоскости</a>, содержащей грань).<br> Пусть <span\nclass=\"math inline\">\\(e\\)</span> - ребро <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span>. Оно инцидентно двум граням\n<span class=\"math inline\">\\(F_i\\)</span> и <span\nclass=\"math inline\">\\(F_j\\)</span>, в которых задана ориентация, то есть\nна ребре <span class=\"math inline\">\\(e\\)</span> указаны два направления.\nЕсли эти направления совпадают, то ориентации граней <span\nclass=\"math inline\">\\(F_i\\)</span> и <span\nclass=\"math inline\">\\(F_j\\)</span> - <em>согласованы</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ориентирована ориентация поверхности ориентируемая",
+        "data": "[Многогранная поверхность](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0) *ориентирована*, если у каждой ее грани задана [ориентация](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0) и для каждой пары смежных граней ориентации [согласованы](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0).<br> Семейство согласованных ориентаций граней - *ориентация поверхности*.<br>Если существует ориентация поверхности, то поверхность - *ориентируемая*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-11",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-11\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">Многогранная\nповерхность</a> <em>ориентирована</em>, если у каждой ее грани задана <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">ориентация</a>\nи для каждой пары смежных граней ориентации <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">согласованы</a>.<br>\nСемейство согласованных ориентаций граней - <em>ориентация\nповерхности</em>.<br>Если существует ориентация поверхности, то\nповерхность - <em>ориентируемая</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "цепочка сохраняет ориентацию цепочка обращает ориентацию",
+        "data": "Пусть $\\mathcal{F}$ - [связная](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0) [замкнутая](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-2) [двумерная](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-9) [многогранная поверхность](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0). Рассмотрим замкнутую [цепочку граней](#definition-0) $F_1, \\ldots, F_m$ (замкнутая - $F_1$ смежна с $F_m$). Зададим на каждой грани цепочки ориентацию. Если ориентации $F_1$ и $F_m$ согласованы, то *цепочка сохраняет ориентацию*, в ином случае *цепочка обращает ориентацию*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-12",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-12\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">связная</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-2\">замкнутая</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-9\">двумерная</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">многогранная\nповерхность</a>. Рассмотрим замкнутую <a href=\"#definition-0\">цепочку\nграней</a> <span class=\"math inline\">\\(F_1, \\ldots, F_m\\)</span>\n(замкнутая - <span class=\"math inline\">\\(F_1\\)</span> смежна с <span\nclass=\"math inline\">\\(F_m\\)</span>). Зададим на каждой грани цепочки\nориентацию. Если ориентации <span class=\"math inline\">\\(F_1\\)</span> и\n<span class=\"math inline\">\\(F_m\\)</span> согласованы, то <em>цепочка\nсохраняет ориентацию</em>, в ином случае <em>цепочка обращает\nориентацию</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Эйлерова характеристика",
+        "data": "*Эйлерова характеристика* [многогранной поверхности](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0) - это число $v - e + f$, где $v$ - число вершин, $e$ - число ребер и $f$ - число граней поверхности. ",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-13",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-13\">Определение:</a></strong><p><em>Эйлерова характеристика</em> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0\">многогранной\nповерхности</a> - это число <span class=\"math inline\">\\(v - e +\nf\\)</span>, где <span class=\"math inline\">\\(v\\)</span> - число вершин,\n<span class=\"math inline\">\\(e\\)</span> - число ребер и <span\nclass=\"math inline\">\\(f\\)</span> - число граней поверхности.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "цветами красками раскраска цветами из множества вершина покрашена в цвет правильная хроматическое число",
+        "data": "Пусть $\\mathcal{C} = \\{\\operatorname{Col}_i\\}$ некоторое множество, элементы которого назовем *цветами* или *красками*. Пусть $G = (V, E, \\partial)$ - [граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1). Отображение $\\nu: V \\to \\mathcal{C}$ - *раскраска* графа $G$ *цветами из множества* $\\mathcal{C}$. При этом *вершина* $v$ *покрашена в цвет* $\\nu(v)$. Раскраска графа *правильная*, если соседние вершины покрашены в различные цвета. Минимальное количество красок, необходимое для правильной раскраски графа - *хроматическое число* графа $G$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{C} =\n\\{\\operatorname{Col}_i\\}\\)</span> некоторое множество, элементы которого\nназовем <em>цветами</em> или <em>красками</em>. Пусть <span\nclass=\"math inline\">\\(G = (V, E, \\partial)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">граф</a>.\nОтображение <span class=\"math inline\">\\(\\nu: V \\to \\mathcal{C}\\)</span>\n- <em>раскраска</em> графа <span class=\"math inline\">\\(G\\)</span>\n<em>цветами из множества</em> <span\nclass=\"math inline\">\\(\\mathcal{C}\\)</span>. При этом <em>вершина</em>\n<span class=\"math inline\">\\(v\\)</span> <em>покрашена в цвет</em> <span\nclass=\"math inline\">\\(\\nu(v)\\)</span>. Раскраска графа\n<em>правильная</em>, если соседние вершины покрашены в различные цвета.\nМинимальное количество красок, необходимое для правильной раскраски\nграфа - <em>хроматическое число</em> графа <span\nclass=\"math inline\">\\(G\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линк  ",
+        "data": "Пусть $G = (V, E, \\partial)$ - граф. $v \\in V$. Подграф графа $G$, состоящий из инцидентных $v$ вершин и ребер - *линк* вершины $v$. **Обозначается:** $L(v)$. ",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(G = (V, E, \\partial)\\)</span> -\nграф. <span class=\"math inline\">\\(v \\in V\\)</span>. Подграф графа <span\nclass=\"math inline\">\\(G\\)</span>, состоящий из инцидентных <span\nclass=\"math inline\">\\(v\\)</span> вершин и ребер - <em>линк</em> вершины\n<span class=\"math inline\">\\(v\\)</span>. <strong>Обозначается:</strong>\n<span class=\"math inline\">\\(L(v)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "треугольник триангуляция",
+        "data": "Пусть $\\Gamma$ - [связный](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5) [простой](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2) [плоский](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-5) [граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1), и выполнены следующие условия: <br><br>1. Любое ребро входит в границу $2$-x [граней](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-6).<br>2. Любая конечная грань ограничена $3$ ребрами (такая грань - *треугольник*).<br>3. Объединение конечных граней $W$ - ограничено простой замкнутой ломаной.<br>Тогда $G$ - *триангуляция* $W$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\Gamma\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5\">связный</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2\">простой</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-5\">плоский</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">граф</a>,\nи выполнены следующие условия: <br><br>1. Любое ребро входит в границу\n<span class=\"math inline\">\\(2\\)</span>-x <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-6\">граней</a>.<br>2.\nЛюбая конечная грань ограничена <span class=\"math inline\">\\(3\\)</span>\nребрами (такая грань - <em>треугольник</em>).<br>3. Объединение конечных\nграней <span class=\"math inline\">\\(W\\)</span> - ограничено простой\nзамкнутой ломаной.<br>Тогда <span class=\"math inline\">\\(G\\)</span> -\n<em>триангуляция</em> <span class=\"math inline\">\\(W\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "неподвижная точка отображения",
+        "data": "Пусть $f: X \\to X$ - отображение. $x \\in X$ - *неподвижная точка отображения* $f$, если $f(x) = x$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f: X \\to X\\)</span> - отображение.\n<span class=\"math inline\">\\(x \\in X\\)</span> - <em>неподвижная точка\nотображения</em> <span class=\"math inline\">\\(f\\)</span>, если <span\nclass=\"math inline\">\\(f(x) = x\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "$V^{(k)}$ - это множество всех $k$-элементных подмножеств множества $V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-0\">Определение:</a></strong><p><span class=\"math inline\">\\(V^{(k)}\\)</span> - это множество всех\n<span class=\"math inline\">\\(k\\)</span>-элементных подмножеств множества\n<span class=\"math inline\">\\(V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Граф множество ребер ребро множество вершин вершина отношение инцидентности ребер и вершин петля смежная соседняя к инцидентна кратные ребра",
+        "data": "*Граф* - это тройка $\\{E, V, \\sigma\\}$, где<br>$E$ - *множество ребер* ($e \\in E$ - *ребро*)<br>$V$ - *множество вершин* ($v \\in V$ - *вершина*)<br>$\\sigma: \\,\\,\\,\\, E \\to V^{(1)} \\cup V^{(2)}$ - *отношение инцидентности ребер и вершин*.<br><br>Если $\\sigma(e) \\in V^{(1)}$, то $e$ - *петля*.<br>Если $\\sigma(e) \\in V^{(2)} = \\{u, v\\}$, то вершина $u$ *смежная* (*соседняя к*) вершине $v$.<br>Если $v \\in \\sigma(e)$, то вершина $v$ *инцидентна* ребру $e$.<br>Если $\\sigma(e) = \\sigma(e’)$, то $e$ и $e’$ *кратные ребра*.<br>",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">Определение:</a></strong><p><em>Граф</em> - это тройка <span class=\"math inline\">\\(\\{E, V,\n\\sigma\\}\\)</span>, где<br><span class=\"math inline\">\\(E\\)</span> -\n<em>множество ребер</em> (<span class=\"math inline\">\\(e \\in E\\)</span> -\n<em>ребро</em>)<br><span class=\"math inline\">\\(V\\)</span> -\n<em>множество вершин</em> (<span class=\"math inline\">\\(v \\in V\\)</span>\n- <em>вершина</em>)<br><span class=\"math inline\">\\(\\sigma: \\,\\,\\,\\, E\n\\to V^{(1)} \\cup V^{(2)}\\)</span> - <em>отношение инцидентности ребер и\nвершин</em>.<br><br>Если <span class=\"math inline\">\\(\\sigma(e) \\in\nV^{(1)}\\)</span>, то <span class=\"math inline\">\\(e\\)</span> -\n<em>петля</em>.<br>Если <span class=\"math inline\">\\(\\sigma(e) \\in\nV^{(2)} = \\{u, v\\}\\)</span>, то вершина <span\nclass=\"math inline\">\\(u\\)</span> <em>смежная</em> (<em>соседняя к</em>)\nвершине <span class=\"math inline\">\\(v\\)</span>.<br>Если <span\nclass=\"math inline\">\\(v \\in \\sigma(e)\\)</span>, то вершина <span\nclass=\"math inline\">\\(v\\)</span> <em>инцидентна</em> ребру <span\nclass=\"math inline\">\\(e\\)</span>.<br>Если <span\nclass=\"math inline\">\\(\\sigma(e) = \\sigma(e’)\\)</span>, то <span\nclass=\"math inline\">\\(e\\)</span> и <span\nclass=\"math inline\">\\(e’\\)</span> <em>кратные ребра</em>.<br></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "простой",
+        "data": "Граф *простой*, если в нем нет [петель](#definition-1) и [кратных ребер](#definition-1).<br>",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2\">Определение:</a></strong><p>Граф <em>простой</em>, если в нем нет <a\nhref=\"#definition-1\">петель</a> и <a href=\"#definition-1\">кратных\nребер</a>.<br></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Степень вершины",
+        "data": "*Степень вершины* $v \\in V$ графа $G = \\{E, V, \\sigma\\}$ - это сумма количества [ребер](#definition-1) [инцидентных](#definition-1) $v$ и не являющихся [петлями](#definition-1) и удвоенного количества [петель](#definition-1) инцидентных $v$.\nОбозначается: $\\operatorname{deg}v$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-3\">Определение:</a></strong><p><em>Степень вершины</em> <span class=\"math inline\">\\(v \\in V\\)</span>\nграфа <span class=\"math inline\">\\(G = \\{E, V, \\sigma\\}\\)</span> - это\nсумма количества <a href=\"#definition-1\">ребер</a> <a\nhref=\"#definition-1\">инцидентных</a> <span\nclass=\"math inline\">\\(v\\)</span> и не являющихся <a\nhref=\"#definition-1\">петлями</a> и удвоенного количества <a\nhref=\"#definition-1\">петель</a> инцидентных <span\nclass=\"math inline\">\\(v\\)</span>. Обозначается: <span\nclass=\"math inline\">\\(\\operatorname{deg}v\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Маршрут цепь замкнутый цикл путь простой цикл",
+        "data": "*Маршрут* (между вершинами $v_0$ и $v_k$) в [графе](#definition-1) $G = \\{E, V, \\sigma\\}$ - это последовательность $v_0, e_1, v_1, e_2, v_2, \\ldots, e_k, v_k$, где $v_i \\in V \\,\\,\\,\\,\\forall i \\in \\{0, \\ldots, k\\}, \\,\\,\\,\\, e_i \\in E \\,\\,\\,\\,\\forall i \\in \\{1, \\ldots, k\\}$ и [ребро](#definition-1) $e_i$ [инцидентно](#definition-1) вершинам $v_{i - 1}$ и $v_i$.<br><br>Если в маршруте $\\forall i \\ne j \\,\\,\\,\\, e_i \\ne e_j$, то маршрут - это *цепь*.<br>Если в маршруте $v_0 = v_k$, то маршрут *замкнутый*.<br>Замкнутая цепь - это *цикл*.<br>Если в маршруте $\\forall i \\ne j \\ne 0 \\ne k \\,\\,\\,\\, v_i \\ne v_j$, то маршрут - это *путь*.<br>Замкнутый путь - это *простой цикл*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4\">Определение:</a></strong><p><em>Маршрут</em> (между вершинами <span\nclass=\"math inline\">\\(v_0\\)</span> и <span\nclass=\"math inline\">\\(v_k\\)</span>) в <a href=\"#definition-1\">графе</a>\n<span class=\"math inline\">\\(G = \\{E, V, \\sigma\\}\\)</span> - это\nпоследовательность <span class=\"math inline\">\\(v_0, e_1, v_1, e_2, v_2,\n\\ldots, e_k, v_k\\)</span>, где <span class=\"math inline\">\\(v_i \\in V\n\\,\\,\\,\\,\\forall i \\in \\{0, \\ldots, k\\}, \\,\\,\\,\\, e_i \\in E\n\\,\\,\\,\\,\\forall i \\in \\{1, \\ldots, k\\}\\)</span> и <a\nhref=\"#definition-1\">ребро</a> <span class=\"math inline\">\\(e_i\\)</span>\n<a href=\"#definition-1\">инцидентно</a> вершинам <span\nclass=\"math inline\">\\(v_{i - 1}\\)</span> и <span\nclass=\"math inline\">\\(v_i\\)</span>.<br><br>Если в маршруте <span\nclass=\"math inline\">\\(\\forall i \\ne j \\,\\,\\,\\, e_i \\ne e_j\\)</span>, то\nмаршрут - это <em>цепь</em>.<br>Если в маршруте <span\nclass=\"math inline\">\\(v_0 = v_k\\)</span>, то маршрут\n<em>замкнутый</em>.<br>Замкнутая цепь - это <em>цикл</em>.<br>Если в\nмаршруте <span class=\"math inline\">\\(\\forall i \\ne j \\ne 0 \\ne k\n\\,\\,\\,\\, v_i \\ne v_j\\)</span>, то маршрут - это\n<em>путь</em>.<br>Замкнутый путь - это <em>простой цикл</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "связный",
+        "data": "[Граф](#definition-1) $G = \\{E, V , \\sigma\\}$ *связный*, если $\\forall u, v \\in V$ существует [маршрут](#definition-4) между $u$ и $v$. ",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5\">Определение:</a></strong><p><a href=\"#definition-1\">Граф</a> <span class=\"math inline\">\\(G = \\{E,\nV , \\sigma\\}\\)</span> <em>связный</em>, если <span\nclass=\"math inline\">\\(\\forall u, v \\in V\\)</span> существует <a\nhref=\"#definition-4\">маршрут</a> между <span\nclass=\"math inline\">\\(u\\)</span> и <span\nclass=\"math inline\">\\(v\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Эйлеров обход графа (эйлеров цикл)",
+        "data": "*Эйлеров обход графа (эйлеров цикл)* - это [цикл](#definition-4), содержащий все [вершины](#definition-1) графа.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-6\">Определение:</a></strong><p><em>Эйлеров обход графа (эйлеров цикл)</em> - это <a\nhref=\"#definition-4\">цикл</a>, содержащий все <a\nhref=\"#definition-1\">вершины</a> графа.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "эйлеров",
+        "data": "Если в графе существует [эйлеров цикл](#definition-6), то граф - *эйлеров*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-7\">Определение:</a></strong><p>Если в графе существует <a href=\"#definition-6\">эйлеров цикл</a>, то\nграф - <em>эйлеров</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Гамильтонов цикл",
+        "data": "*Гамильтонов цикл* - это [простой цикл](#definition-4), проходящий через все [вершины](#definition-1) графа.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-8\">Определение:</a></strong><p><em>Гамильтонов цикл</em> - это <a href=\"#definition-4\">простой\nцикл</a>, проходящий через все <a href=\"#definition-1\">вершины</a>\nграфа.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "гамильтонов",
+        "data": "Граф *гамильтонов*, если в нем есть [гамильтонов цикл](#definition-8).",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-9\">Определение:</a></strong><p>Граф <em>гамильтонов</em>, если в нем есть <a\nhref=\"#definition-8\">гамильтонов цикл</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "подграф",
+        "data": "$H = (V_H, E_H, \\sigma_H)$ *подграф* графа $G = (V_G, E_G, \\sigma_G)$, если $V_H \\subset V_G, \\,\\,\\,\\, E_H \\subset E_G, \\,\\,\\,\\, \\sigma_H = \\sigma_G |_{E_H}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-10\">Определение:</a></strong><p><span class=\"math inline\">\\(H = (V_H, E_H, \\sigma_H)\\)</span>\n<em>подграф</em> графа <span class=\"math inline\">\\(G = (V_G, E_G,\n\\sigma_G)\\)</span>, если <span class=\"math inline\">\\(V_H \\subset V_G,\n\\,\\,\\,\\, E_H \\subset E_G, \\,\\,\\,\\, \\sigma_H = \\sigma_G\n|_{E_H}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "остовный",
+        "data": "Подграф *остовный*, если содержит все вершины исходного.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-11",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-11\">Определение:</a></strong><p>Подграф <em>остовный</em>, если содержит все вершины исходного.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $M \\subset V, \\,\\,\\,\\, G = (V, E, \\sigma)$. Обозначим $G(M) = (M, E_M = \\{\\sigma^{-1}(M^{(1)} \\cup M^{(2)}), \\sigma |_{E_M}\\})$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-12",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-12\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(M \\subset V, \\,\\,\\,\\, G = (V, E,\n\\sigma)\\)</span>. Обозначим <span class=\"math inline\">\\(G(M) = (M, E_M =\n\\{\\sigma^{-1}(M^{(1)} \\cup M^{(2)}), \\sigma |_{E_M}\\})\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $G = (V, E, \\sigma), \\,\\,\\,\\, w \\in W, \\,\\,\\,\\, v \\in V$. ",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-13",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-13\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(G = (V, E, \\sigma), \\,\\,\\,\\, w \\in\nW, \\,\\,\\,\\, v \\in V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "[Класс эквивалентности](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-09.03.23#definition-2) вершины $v$ графа $G$ обозначается $[v]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-15",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-15\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-09.03.23#definition-2\">Класс\nэквивалентности</a> вершины <span class=\"math inline\">\\(v\\)</span> графа\n<span class=\"math inline\">\\(G\\)</span> обозначается <span\nclass=\"math inline\">\\([v]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Компонента связности",
+        "data": "*Компонента связности* вершины $v$ графа $G$ - это максимальный по включению [подграф](#definition-0), содержащий $v$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-14",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-14\">Определение:</a></strong><p><em>Компонента связности</em> вершины <span\nclass=\"math inline\">\\(v\\)</span> графа <span\nclass=\"math inline\">\\(G\\)</span> - это максимальный по включению <a\nhref=\"#definition-0\">подграф</a>, содержащий <span\nclass=\"math inline\">\\(v\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "замкнутая незамкнутая",
+        "data": "Пусть $X$ - [топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1). Пусть $\\gamma: [a, b] \\to X$ - [непрерывная кривая](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-3).<br> $\\gamma$ - *замкнутая*, если $\\gamma(a) = \\gamma(b)$.<br> $\\gamma$ - *незамкнутая*, если $\\gamma(a) \\ne \\gamma(b)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(X\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологическое\nпространство</a>. Пусть <span class=\"math inline\">\\(\\gamma: [a, b] \\to\nX\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-3\">непрерывная\nкривая</a>.<br> <span class=\"math inline\">\\(\\gamma\\)</span> -\n<em>замкнутая</em>, если <span class=\"math inline\">\\(\\gamma(a) =\n\\gamma(b)\\)</span>.<br> <span class=\"math inline\">\\(\\gamma\\)</span> -\n<em>незамкнутая</em>, если <span class=\"math inline\">\\(\\gamma(a) \\ne\n\\gamma(b)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "  кривая без самопересечений   кривая без самопересечений",
+        "data": "Пусть $X$ - [топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1). Пусть $\\gamma: [a, b] \\to X$ - [непрерывная кривая](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-3). <br> Пусть $\\gamma$ [**незамкнутая**](#definition-1) кривая. $\\gamma$ - *кривая без самопересечений*, если ее образ $\\gamma([a, b])$ - взаимнооднозначен с $[a, b]$. <br> Пусть $\\gamma$ [**замкнутая**](#definition-1) [кривая](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-3). $\\gamma$ - *кривая без самопересечений*, если только для $a$ и $b$ выполнено $\\gamma(a) = \\gamma(b)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(X\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологическое\nпространство</a>. Пусть <span class=\"math inline\">\\(\\gamma: [a, b] \\to\nX\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-3\">непрерывная\nкривая</a>. <br> Пусть <span class=\"math inline\">\\(\\gamma\\)</span> <a\nhref=\"#definition-1\"><strong>незамкнутая</strong></a> кривая. <span\nclass=\"math inline\">\\(\\gamma\\)</span> - <em>кривая без\nсамопересечений</em>, если ее образ <span\nclass=\"math inline\">\\(\\gamma([a, b])\\)</span> - взаимнооднозначен с\n<span class=\"math inline\">\\([a, b]\\)</span>. <br> Пусть <span\nclass=\"math inline\">\\(\\gamma\\)</span> <a\nhref=\"#definition-1\"><strong>замкнутая</strong></a> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-3\">кривая</a>.\n<span class=\"math inline\">\\(\\gamma\\)</span> - <em>кривая без\nсамопересечений</em>, если только для <span\nclass=\"math inline\">\\(a\\)</span> и <span\nclass=\"math inline\">\\(b\\)</span> выполнено <span\nclass=\"math inline\">\\(\\gamma(a) = \\gamma(b)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "отрезок",
+        "data": "Пусть $a, b \\in \\mathbb{R}^n, \\,\\,\\,\\, n > 1$. Множество $\\{a + (b - a)\\cdot t, \\,\\,\\,\\, t \\in [0, 1]\\}$ - *отрезок*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-5\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(a, b \\in \\mathbb{R}^n, \\,\\,\\,\\, n\n&gt; 1\\)</span>. Множество <span class=\"math inline\">\\(\\{a + (b -\na)\\cdot t, \\,\\,\\,\\, t \\in [0, 1]\\}\\)</span> - <em>отрезок</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Ломаная замкнутая незамкнутая",
+        "data": "*Ломаная* $L$ в $\\mathbb{R}^n$ - это последовательность точек $\\{a_i \\in \\mathbb{R}\\}_{i = 0}^m$ и последовательность отрезков $\\{[a_i, a_{i + 1}]\\}_{i = 0}^{m - 1}$.<br>Если $a_0 = a_m$, то ломаная - *замкнутая*, иначе ломаная - *незамкнутая*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-2\">Определение:</a></strong><p><em>Ломаная</em> <span class=\"math inline\">\\(L\\)</span> в <span\nclass=\"math inline\">\\(\\mathbb{R}^n\\)</span> - это последовательность\nточек <span class=\"math inline\">\\(\\{a_i \\in \\mathbb{R}\\}_{i =\n0}^m\\)</span> и последовательность отрезков <span\nclass=\"math inline\">\\(\\{[a_i, a_{i + 1}]\\}_{i = 0}^{m -\n1}\\)</span>.<br>Если <span class=\"math inline\">\\(a_0 = a_m\\)</span>, то\nломаная - <em>замкнутая</em>, иначе ломаная - <em>незамкнутая</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "  ломаная без самопересечений внутренность ломаной   ломаная без самопересечений внутренность ломаной",
+        "data": "Пусть $L$ - [**незамкнутая**](#definition-2) [ломаная](#definition-2). $L$ - *ломаная без самопересечений*, если никакие два отрезки $L$, кроме $[a_{i - 1}, a_i] \\cap [a_i, a_{i + 1}] = \\{a_i\\}, \\,\\,\\,\\, i \\in \\{1, \\ldots, m - 1\\}$, не имеют общих точек.<br> Все ребра и точки ломаной, кроме $a_0$ и $a_m$ - *внутренность ломаной*. <br><br> Пусть $L$ - [**замкнутая**](#definition-2) [ломаная](#definition-2). $L$ - *ломаная без самопересечений*, если никакие два отрезки $L$, кроме $[a_{i - 1}, a_i] \\cap [a_i, a_{i + 1}] = a_i, \\,\\,\\,\\, i \\in \\{1, \\ldots, m - 1\\}$ и $[a_{m - 1}, a_m]\\cap [a_0, a_1] = \\{a_0\\}$, не имеют общих точек.<br> Все ребра и точки ломаной - *внутренность ломаной*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(L\\)</span> - <a\nhref=\"#definition-2\"><strong>незамкнутая</strong></a> <a\nhref=\"#definition-2\">ломаная</a>. <span class=\"math inline\">\\(L\\)</span>\n- <em>ломаная без самопересечений</em>, если никакие два отрезки <span\nclass=\"math inline\">\\(L\\)</span>, кроме <span\nclass=\"math inline\">\\([a_{i - 1}, a_i] \\cap [a_i, a_{i + 1}] = \\{a_i\\},\n\\,\\,\\,\\, i \\in \\{1, \\ldots, m - 1\\}\\)</span>, не имеют общих точек.<br>\nВсе ребра и точки ломаной, кроме <span\nclass=\"math inline\">\\(a_0\\)</span> и <span\nclass=\"math inline\">\\(a_m\\)</span> - <em>внутренность ломаной</em>.\n<br><br> Пусть <span class=\"math inline\">\\(L\\)</span> - <a\nhref=\"#definition-2\"><strong>замкнутая</strong></a> <a\nhref=\"#definition-2\">ломаная</a>. <span class=\"math inline\">\\(L\\)</span>\n- <em>ломаная без самопересечений</em>, если никакие два отрезки <span\nclass=\"math inline\">\\(L\\)</span>, кроме <span\nclass=\"math inline\">\\([a_{i - 1}, a_i] \\cap [a_i, a_{i + 1}] = a_i,\n\\,\\,\\,\\, i \\in \\{1, \\ldots, m - 1\\}\\)</span> и <span\nclass=\"math inline\">\\([a_{m - 1}, a_m]\\cap [a_0, a_1] =\n\\{a_0\\}\\)</span>, не имеют общих точек.<br> Все ребра и точки ломаной -\n<em>внутренность ломаной</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Расстояние между подмножествами Расстояние от точки до подмножества",
+        "data": "Пусть $A$ и $B$ непустые подмножества $\\mathbb{R}^n$. *Расстояние между подмножествами* $A$ и $B$ - это $\\rho(A, B) = \\inf \\{\\rho(a, b): \\,\\,\\,\\, a \\in A, b \\in B\\}$.<br> *Расстояние от точки* $a$ *до подмножества* $A$ - $\\rho(\\{a\\}, A)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(A\\)</span> и <span\nclass=\"math inline\">\\(B\\)</span> непустые подмножества <span\nclass=\"math inline\">\\(\\mathbb{R}^n\\)</span>. <em>Расстояние между\nподмножествами</em> <span class=\"math inline\">\\(A\\)</span> и <span\nclass=\"math inline\">\\(B\\)</span> - это <span\nclass=\"math inline\">\\(\\rho(A, B) = \\inf \\{\\rho(a, b): \\,\\,\\,\\, a \\in A,\nb \\in B\\}\\)</span>.<br> <em>Расстояние от точки</em> <span\nclass=\"math inline\">\\(a\\)</span> <em>до подмножества</em> <span\nclass=\"math inline\">\\(A\\)</span> - <span\nclass=\"math inline\">\\(\\rho(\\{a\\}, A)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "окрестность",
+        "data": "Любое [открытое покрытие](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-6) множества - это его *окрестность*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-6\">Определение:</a></strong><p>Любое <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-6\">открытое\nпокрытие</a> множества - это его <em>окрестность</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "полный  ",
+        "data": "[Простой](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2) [граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1) с $n$ вершинами - *полный*, если любые две его вершины соединены ребром..<br>**Обозначается:** $K_n$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-7\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2\">Простой</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">граф</a>\nс <span class=\"math inline\">\\(n\\)</span> вершинами - <em>полный</em>,\nесли любые две его вершины соединены\nребром..<br><strong>Обозначается:</strong> <span\nclass=\"math inline\">\\(K_n\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "полный двудольный граф доли  ",
+        "data": "Пусть $G = (E, V, \\sigma)$ [простой](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2) [граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1), $|V| = n$. $V_1 \\subset V, \\,\\,\\,\\, V_2 \\subset V, \\,\\,\\,\\, V_1\\cap V_2 = \\varnothing, \\,\\,\\,\\, V_1\\cup V_2 = V$. $|V_1| = n_1, \\,\\,\\,\\, |V_2| = n_2$. Если любые две вершины из $V_1$ и $V_2$ соединены ребром, то граф $G$ - *полный двудольный граф*, а множества $V_1$ и $V_2$ - *доли*.<br>**Обозначается:** $K_{n_1,n_2}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-8\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(G = (E, V, \\sigma)\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2\">простой</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">граф</a>,\n<span class=\"math inline\">\\(|V| = n\\)</span>. <span\nclass=\"math inline\">\\(V_1 \\subset V, \\,\\,\\,\\, V_2 \\subset V, \\,\\,\\,\\,\nV_1\\cap V_2 = \\varnothing, \\,\\,\\,\\, V_1\\cup V_2 = V\\)</span>. <span\nclass=\"math inline\">\\(|V_1| = n_1, \\,\\,\\,\\, |V_2| = n_2\\)</span>. Если\nлюбые две вершины из <span class=\"math inline\">\\(V_1\\)</span> и <span\nclass=\"math inline\">\\(V_2\\)</span> соединены ребром, то граф <span\nclass=\"math inline\">\\(G\\)</span> - <em>полный двудольный граф</em>, а\nмножества <span class=\"math inline\">\\(V_1\\)</span> и <span\nclass=\"math inline\">\\(V_2\\)</span> -\n<em>доли</em>.<br><strong>Обозначается:</strong> <span\nclass=\"math inline\">\\(K_{n_1,n_2}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "топологический граф",
+        "data": "Пусть $G = (E, V, \\sigma)$ - [граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1). Каждому ребру $e \\in E$ поставим в соответствие отрезок $[a_e, b_e]$, так, чтобы полученные отрезки для различных ребер не пересекались. Рассмотрим [дизъюнктивное объединение](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-4) $\\displaystyle\\sqcup_{e \\in E}[a_e, b_e]$. Сопоставим каждой вершине графа точку, так чтобы для различных вершин точки не совпадали. Рассмотрим множество $(\\displaystyle\\sqcup_{v \\in V}\\{x_v\\}) \\cup (\\displaystyle\\sqcup_{e \\in E}[a_e, b_e])$. $\\forall e \\in E$, если $\\sigma^{-1}(e)$ состоит из одной вершины $v$, то [склеим концы отрезка](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-0) $[a_e, b_e]$ с вершиной $v$. Если $\\sigma^{-1}(e)$ состоит из двух вершин $v_1$ и $v_2$, то склеим $v_1$ и $a_e$, $v_2$ и $b_e$. Полученное [топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) $X_G$ - *топологический граф*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-9\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(G = (E, V, \\sigma)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">граф</a>.\nКаждому ребру <span class=\"math inline\">\\(e \\in E\\)</span> поставим в\nсоответствие отрезок <span class=\"math inline\">\\([a_e, b_e]\\)</span>,\nтак, чтобы полученные отрезки для различных ребер не пересекались.\nРассмотрим <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-4\">дизъюнктивное\nобъединение</a> <span class=\"math inline\">\\(\\displaystyle\\sqcup_{e \\in\nE}[a_e, b_e]\\)</span>. Сопоставим каждой вершине графа точку, так чтобы\nдля различных вершин точки не совпадали. Рассмотрим множество <span\nclass=\"math inline\">\\((\\displaystyle\\sqcup_{v \\in V}\\{x_v\\}) \\cup\n(\\displaystyle\\sqcup_{e \\in E}[a_e, b_e])\\)</span>. <span\nclass=\"math inline\">\\(\\forall e \\in E\\)</span>, если <span\nclass=\"math inline\">\\(\\sigma^{-1}(e)\\)</span> состоит из одной вершины\n<span class=\"math inline\">\\(v\\)</span>, то <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-0\">склеим\nконцы отрезка</a> <span class=\"math inline\">\\([a_e, b_e]\\)</span> с\nвершиной <span class=\"math inline\">\\(v\\)</span>. Если <span\nclass=\"math inline\">\\(\\sigma^{-1}(e)\\)</span> состоит из двух вершин\n<span class=\"math inline\">\\(v_1\\)</span> и <span\nclass=\"math inline\">\\(v_2\\)</span>, то склеим <span\nclass=\"math inline\">\\(v_1\\)</span> и <span\nclass=\"math inline\">\\(a_e\\)</span>, <span\nclass=\"math inline\">\\(v_2\\)</span> и <span\nclass=\"math inline\">\\(b_e\\)</span>. Полученное <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологическое\nпространство</a> <span class=\"math inline\">\\(X_G\\)</span> -\n<em>топологический граф</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "вложение графа в пространство",
+        "data": "Пусть $Y$ - [топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1). $X_G$ - [топологический граф](#definition-9). [Непрерывное](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-9) взаимнооднозначное отображение $f: X_G \\to Y$ - *вложение графа* $G$ *в пространство* $Y$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-10\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(Y\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологическое\nпространство</a>. <span class=\"math inline\">\\(X_G\\)</span> - <a\nhref=\"#definition-9\">топологический граф</a>. <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-9\">Непрерывное</a>\nвзаимнооднозначное отображение <span class=\"math inline\">\\(f: X_G \\to\nY\\)</span> - <em>вложение графа</em> <span\nclass=\"math inline\">\\(G\\)</span> <em>в пространство</em> <span\nclass=\"math inline\">\\(Y\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $A$ и $B$ подмножества множества $C$. $A \\sqcup B$ обозначает, что $A \\cap B = \\varnothing$ и $C = A \\cup B$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(A\\)</span> и <span\nclass=\"math inline\">\\(B\\)</span> подмножества множества <span\nclass=\"math inline\">\\(C\\)</span>. <span class=\"math inline\">\\(A \\sqcup\nB\\)</span> обозначает, что <span class=\"math inline\">\\(A \\cap B =\n\\varnothing\\)</span> и <span class=\"math inline\">\\(C = A \\cup\nB\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Отображение графа в граф изоморфизм изоморфные  ",
+        "data": "Пусть $G = (V, E, \\partial)$ и $G’ = (V’, E’, \\partial’)$ - [графы](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1). *Отображение графа* $G$ *в граф* $G’$ - это $f: V \\sqcup E \\to V’ \\sqcup E’$, такое, что $f(V) \\subset V’$, $f(E) \\subset E’$ и $f(\\partial(e)) = \\partial’(f(e))\\,\\,\\,\\, \\forall e \\in E$. Если отображение $f$ графов $G$ и $G’$ взаимнооднозначно, то $f$ - *изоморфизм* графов $G$ и $G’$, а графы $G$ и $G’$ - *изоморфные*.<br> **Обозначается:** $G \\cong G’$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(G = (V, E, \\partial)\\)</span> и\n<span class=\"math inline\">\\(G’ = (V’, E’, \\partial’)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">графы</a>.\n<em>Отображение графа</em> <span class=\"math inline\">\\(G\\)</span> <em>в\nграф</em> <span class=\"math inline\">\\(G’\\)</span> - это <span\nclass=\"math inline\">\\(f: V \\sqcup E \\to V’ \\sqcup E’\\)</span>, такое,\nчто <span class=\"math inline\">\\(f(V) \\subset V’\\)</span>, <span\nclass=\"math inline\">\\(f(E) \\subset E’\\)</span> и <span\nclass=\"math inline\">\\(f(\\partial(e)) = \\partial’(f(e))\\,\\,\\,\\, \\forall e\n\\in E\\)</span>. Если отображение <span class=\"math inline\">\\(f\\)</span>\nграфов <span class=\"math inline\">\\(G\\)</span> и <span\nclass=\"math inline\">\\(G’\\)</span> взаимнооднозначно, то <span\nclass=\"math inline\">\\(f\\)</span> - <em>изоморфизм</em> графов <span\nclass=\"math inline\">\\(G\\)</span> и <span\nclass=\"math inline\">\\(G’\\)</span>, а графы <span\nclass=\"math inline\">\\(G\\)</span> и <span\nclass=\"math inline\">\\(G’\\)</span> - <em>изоморфные</em>.<br>\n<strong>Обозначается:</strong> <span class=\"math inline\">\\(G \\cong\nG’\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "комбинаторным",
+        "data": "[Граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1) $G = (V, E, \\partial)$ иногда называют *комбинаторным*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-2\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">Граф</a>\n<span class=\"math inline\">\\(G = (V, E, \\partial)\\)</span> иногда\nназывают <em>комбинаторным</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "геометрическая реализация вершины и ребра геометрической реализации",
+        "data": "Пусть $f: X_G \\to Y$ - [вложение графа](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-0) $G$ в пространство $Y$. Образ $f(X_G) \\subset Y$ - *геометрическая реализация* графа $G$. $f$-образы вершин и ребер графа $X_G$ - *вершины и ребра геометрической реализации*. Существует взаимнооднозначное соответствие между вершинами и ребрами реализации и вершинами и ребрами графа, поэтому их можно отождествить и смотреть на геометрическую реализацию, как на множество точек(вершин) $Y$, соединенных непрерывными кривыми без самопересечений. В таком случае отображение инцидентности переводит кривую в множество ее концевых точек.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f: X_G \\to Y\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-0\">вложение\nграфа</a> <span class=\"math inline\">\\(G\\)</span> в пространство <span\nclass=\"math inline\">\\(Y\\)</span>. Образ <span\nclass=\"math inline\">\\(f(X_G) \\subset Y\\)</span> - <em>геометрическая\nреализация</em> графа <span class=\"math inline\">\\(G\\)</span>. <span\nclass=\"math inline\">\\(f\\)</span>-образы вершин и ребер графа <span\nclass=\"math inline\">\\(X_G\\)</span> - <em>вершины и ребра геометрической\nреализации</em>. Существует взаимнооднозначное соответствие между\nвершинами и ребрами реализации и вершинами и ребрами графа, поэтому их\nможно отождествить и смотреть на геометрическую реализацию, как на\nмножество точек(вершин) <span class=\"math inline\">\\(Y\\)</span>,\nсоединенных непрерывными кривыми без самопересечений. В таком случае\nотображение инцидентности переводит кривую в множество ее концевых\nточек.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "планарный",
+        "data": "[Граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1) - *планарный*, если существует его [вложение](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-0) в плоскость.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-4\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">Граф</a>\n- <em>планарный</em>, если существует его <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-0\">вложение</a>\nв плоскость.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "плоский граф",
+        "data": "[Геометрическая реализация](#definition-3) [планарного](#definition-4) [графа](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1) - *плоский граф*. ",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-5\">Определение:</a></strong><p><a href=\"#definition-3\">Геометрическая реализация</a> <a\nhref=\"#definition-4\">планарного</a> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">графа</a>\n- <em>плоский граф</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "грани",
+        "data": "Пусть $\\Gamma \\subset \\mathbb{R}^2$ - [плоский граф](#definition-5). [Компоненты линейной связности](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4) $\\mathbb{R}^2\\setminus \\Gamma$ - *грани* $\\Gamma$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-6\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\Gamma \\subset\n\\mathbb{R}^2\\)</span> - <a href=\"#definition-5\">плоский граф</a>. <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4\">Компоненты\nлинейной связности</a> <span class=\"math inline\">\\(\\mathbb{R}^2\\setminus\n\\Gamma\\)</span> - <em>грани</em> <span\nclass=\"math inline\">\\(\\Gamma\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "лес",
+        "data": "[Граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1) [без циклов](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4) - *лес*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-7\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">Граф</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4\">без\nциклов</a> - <em>лес</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Подразбиение ребра",
+        "data": "*Подразбиение ребра* графа $G$ - это ...",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-8\">Определение:</a></strong><p><em>Подразбиение ребра</em> графа <span\nclass=\"math inline\">\\(G\\)</span> - это …</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "гомеоморфны",
+        "data": "[Графы](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1) *гомеоморфны*, если [гомеоморфны](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9) их [топологические графы](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-9). ",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-9\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">Графы</a>\n<em>гомеоморфны</em>, если <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9\">гомеоморфны</a>\nих <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-9\">топологические\nграфы</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "многоугольник внутренность многоугольника внешность многоугольника граница многоугольника",
+        "data": "Пусть $L \\subset \\mathbb{R}^2$ - [замкнутая](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-2) [ломаная без самопересечений](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-3). $F = L \\cup \\Omega_1$ - *многоугольник*. ([$\\Omega_1$ - ограниченная компонента $\\mathbb{R}^2\\setminus L$](#statement-0)).<br><br> $\\Omega_1$ - *внутренность многоугольника* $F$ (Обозначается: $\\operatorname{Int} F$),<br> $\\Omega_0$ - *внешность многоугольника* $F$ (Обозначается: $\\operatorname{Out} F$).<br> $L$ - *граница многоугольника* $F$ (Обозначается: $\\partial F$). ",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(L \\subset \\mathbb{R}^2\\)</span> -\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-2\">замкнутая</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-3\">ломаная\nбез самопересечений</a>. <span class=\"math inline\">\\(F = L \\cup\n\\Omega_1\\)</span> - <em>многоугольник</em>. (<a\nhref=\"#statement-0\"><span class=\"math inline\">\\(\\Omega_1\\)</span> -\nограниченная компонента <span\nclass=\"math inline\">\\(\\mathbb{R}^2\\setminus L\\)</span></a>).<br><br>\n<span class=\"math inline\">\\(\\Omega_1\\)</span> - <em>внутренность\nмногоугольника</em> <span class=\"math inline\">\\(F\\)</span>\n(Обозначается: <span class=\"math inline\">\\(\\operatorname{Int}\nF\\)</span>),<br> <span class=\"math inline\">\\(\\Omega_0\\)</span> -\n<em>внешность многоугольника</em> <span class=\"math inline\">\\(F\\)</span>\n(Обозначается: <span class=\"math inline\">\\(\\operatorname{Out}\nF\\)</span>).<br> <span class=\"math inline\">\\(L\\)</span> - <em>граница\nмногоугольника</em> <span class=\"math inline\">\\(F\\)</span>\n(Обозначается: <span class=\"math inline\">\\(\\partial F\\)</span>).</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Пространственный многоугольник плокость многогранника",
+        "data": "*Пространственный многоугольник* - это [многоугольник](#definition-0), построенный в аффинной плоскости $\\pi \\subset \\mathbb{R}^3$, при этом $\\pi$ - *плокость многогранника*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-1\">Определение:</a></strong><p><em>Пространственный многоугольник</em> - это <a\nhref=\"#definition-0\">многоугольник</a>, построенный в аффинной плоскости\n<span class=\"math inline\">\\(\\pi \\subset \\mathbb{R}^3\\)</span>, при этом\n<span class=\"math inline\">\\(\\pi\\)</span> - <em>плокость\nмногогранника</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Многогранная поверхность граней",
+        "data": "*Многогранная поверхность* $\\mathcal{F}$ в $\\mathbb{R}^3$ - это конечное семейство $\\{F_i\\}$ [пространственных многоугольников](#definition-1) (*граней*), для которых выполнены следующие условия:",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-2\">Определение:</a></strong><p><em>Многогранная поверхность</em> <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span> в <span\nclass=\"math inline\">\\(\\mathbb{R}^3\\)</span> - это конечное семейство\n<span class=\"math inline\">\\(\\{F_i\\}\\)</span> <a\nhref=\"#definition-1\">пространственных многоугольников</a>\n(<em>граней</em>), для которых выполнены следующие условия:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "вершины и ребра",
+        "data": "Пусть $\\mathcal{F} = \\{F_i\\}$ - [многогранная поверхность](#definition-2). Вершины и ребра [граней](#definition-1) $\\mathcal{F}$ - это *вершины и ребра* поверхности $\\mathcal{F}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F} = \\{F_i\\}\\)</span> - <a\nhref=\"#definition-2\">многогранная поверхность</a>. Вершины и ребра <a\nhref=\"#definition-1\">граней</a> <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span> - это <em>вершины и\nребра</em> поверхности <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "инцидентна граничное внутреннее замкнутая",
+        "data": "Пусть $\\mathcal{F} = \\{F_i\\}$ - [многогранная поверхность](#definition-2). Вершина (ребро), принадлежащая грани, *инцидентна* этой грани. Ребро инцидентное ровно одной грани - *граничное*, иначе - *внутреннее*.<br> Если у $\\mathcal{F}$ нет граничных ребер, то $\\mathcal{F}$ - *замкнутая*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F} = \\{F_i\\}\\)</span> - <a\nhref=\"#definition-2\">многогранная поверхность</a>. Вершина (ребро),\nпринадлежащая грани, <em>инцидентна</em> этой грани. Ребро инцидентное\nровно одной грани - <em>граничное</em>, иначе - <em>внутреннее</em>.<br>\nЕсли у <span class=\"math inline\">\\(\\mathcal{F}\\)</span> нет граничных\nребер, то <span class=\"math inline\">\\(\\mathcal{F}\\)</span> -\n<em>замкнутая</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Многогранник",
+        "data": "*Многогранник* задается аналогично [многоугольнику](#definition-0).",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5\">Определение:</a></strong><p><em>Многогранник</em> задается аналогично <a\nhref=\"#definition-0\">многоугольнику</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "граф многогранной поверхности",
+        "data": "Пусть $\\mathcal{F}$ - [многогранная поверхность](#definition-2). Пусть $V$ - множество его вершин, $E$ - множество его ребер. Тогда $G = (V, E)$ - [простой](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2) [граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1), [вложенный](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-0) в $\\mathbb{R}^3$. $G$ - *граф многогранной поверхности* $\\mathcal{F}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-6\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F}\\)</span> - <a\nhref=\"#definition-2\">многогранная поверхность</a>. Пусть <span\nclass=\"math inline\">\\(V\\)</span> - множество его вершин, <span\nclass=\"math inline\">\\(E\\)</span> - множество его ребер. Тогда <span\nclass=\"math inline\">\\(G = (V, E)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2\">простой</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">граф</a>,\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-0\">вложенный</a>\nв <span class=\"math inline\">\\(\\mathbb{R}^3\\)</span>. <span\nclass=\"math inline\">\\(G\\)</span> - <em>граф многогранной\nповерхности</em> <span class=\"math inline\">\\(\\mathcal{F}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "двойственный граф многогранной поверхности",
+        "data": "Пусть $\\mathcal{F}$ - [многогранная поверхность](#definition-2). Пусть $V’ = \\{F_i\\}$, $E’$ совпадает с множеством ребер $\\mathcal{F}$. Пусть $\\partial’(e) = \\{F_i, F_j\\} \\Leftrightarrow e$ является пересечением граней $F_i$ и $F_j$. Полученный граф $G = (V’, E’, \\partial’)$ - *двойственный граф многогранной поверхности*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-7\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F}\\)</span> - <a\nhref=\"#definition-2\">многогранная поверхность</a>. Пусть <span\nclass=\"math inline\">\\(V’ = \\{F_i\\}\\)</span>, <span\nclass=\"math inline\">\\(E’\\)</span> совпадает с множеством ребер <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span>. Пусть <span\nclass=\"math inline\">\\(\\partial’(e) = \\{F_i, F_j\\} \\Leftrightarrow\ne\\)</span> является пересечением граней <span\nclass=\"math inline\">\\(F_i\\)</span> и <span\nclass=\"math inline\">\\(F_j\\)</span>. Полученный граф <span\nclass=\"math inline\">\\(G = (V’, E’, \\partial’)\\)</span> -\n<em>двойственный граф многогранной поверхности</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "гональность степень грани",
+        "data": "Количество ребер, ограничивающих [грань](#definition-2) [многогранной поверхности](#definition-2), - *гональность* или *степень грани*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-8\">Определение:</a></strong><p>Количество ребер, ограничивающих <a href=\"#definition-2\">грань</a> <a\nhref=\"#definition-2\">многогранной поверхности</a>, -\n<em>гональность</em> или <em>степень грани</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "выпуклое",
+        "data": "Подмножество множества $\\mathbb{R}^n$ - *выпуклое*, если вместе с любыми двумя своими точками содержит отрезок, который их соединяет.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-9\">Определение:</a></strong><p>Подмножество множества <span\nclass=\"math inline\">\\(\\mathbb{R}^n\\)</span> - <em>выпуклое</em>, если\nвместе с любыми двумя своими точками содержит отрезок, который их\nсоединяет.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "радиальная проекция",
+        "data": "(*радиальная проекция*)",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-10\">Определение:</a></strong><p>(<em>радиальная проекция</em>)</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "диаграмма Шлегеля",
+        "data": "(*диаграмма Шлегеля*)",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-11",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-11\">Определение:</a></strong><p>(<em>диаграмма Шлегеля</em>)</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "правильный",
+        "data": "[Многогранник](#definition-5) $W$ - *правильный*, если каждая его вершина [инцидентна](#definition-4) одинаковому числу ребер и все двугранные углы между [гранями](#definition-2) равные.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-12",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-12\">Определение:</a></strong><p><a href=\"#definition-5\">Многогранник</a> <span\nclass=\"math inline\">\\(W\\)</span> - <em>правильный</em>, если каждая его\nвершина <a href=\"#definition-4\">инцидентна</a> одинаковому числу ребер и\nвсе двугранные углы между <a href=\"#definition-2\">гранями</a>\nравные.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "граней флаг",
+        "data": "Пусть $\\mathcal{F} = \\{F_i\\}$ - $n$-мерный многогранник. Семейство $F = \\{F_0, \\ldots, F_{n - 1}\\}$ *граней*(вершины, ребра - это тоже грани) многогранника - *флаг*, если размерность $F_i$ равна $i$ и $F_i \\subset F_{i + 1} \\,\\,\\,\\, \\forall i$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-13",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-13\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F} = \\{F_i\\}\\)</span> -\n<span class=\"math inline\">\\(n\\)</span>-мерный многогранник. Семейство\n<span class=\"math inline\">\\(F = \\{F_0, \\ldots, F_{n - 1}\\}\\)</span>\n<em>граней</em>(вершины, ребра - это тоже грани) многогранника -\n<em>флаг</em>, если размерность <span class=\"math inline\">\\(F_i\\)</span>\nравна <span class=\"math inline\">\\(i\\)</span> и <span\nclass=\"math inline\">\\(F_i \\subset F_{i + 1} \\,\\,\\,\\, \\forall\ni\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "правильный",
+        "data": "Пусть $\\mathcal{F} = \\{F_i\\}$ - $n$-мерный [многогранник](#definition-5). $\\mathcal{F}$ - *правильный*, если для каждой пары его [флагов](#definition-3) существует движение многогранника, переводящее один из флагов в другой.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-14",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-14\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F} = \\{F_i\\}\\)</span> -\n<span class=\"math inline\">\\(n\\)</span>-мерный <a\nhref=\"#definition-5\">многогранник</a>. <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span> - <em>правильный</em>, если\nдля каждой пары его <a href=\"#definition-3\">флагов</a> существует\nдвижение многогранника, переводящее один из флагов в другой.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "вектор",
+        "data": "Пусть $\\mathcal{F} = \\{F_i\\}$ - $n$-мерный [многогранник](#definition-5). $f = (k_0, \\ldots, k_{n - 1})$, где $k_i$ - количество $i$-мерных граней многогранника - $f$-*вектор* многогранника $\\mathcal{F}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-15",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-15\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F} = \\{F_i\\}\\)</span> -\n<span class=\"math inline\">\\(n\\)</span>-мерный <a\nhref=\"#definition-5\">многогранник</a>. <span class=\"math inline\">\\(f =\n(k_0, \\ldots, k_{n - 1})\\)</span>, где <span\nclass=\"math inline\">\\(k_i\\)</span> - количество <span\nclass=\"math inline\">\\(i\\)</span>-мерных граней многогранника - <span\nclass=\"math inline\">\\(f\\)</span>-<em>вектор</em> многогранника <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ёж многогранника",
+        "data": "Пусть $\\mathcal{F} \\subset \\mathbb{R}^3$ - выпуклый многогранник. Пусть $F_1, \\ldots, F_m$ - грани $\\mathcal{F}$. Пусть $\\mathbf{n}_i$ - единичный вектор, перпендикулярный грани $F_i$, направленный наружу многогранника $\\mathcal{F}$, а $S_i$ - площадь $F_i$. $\\boldsymbol{\\xi}_i = S_i \\cdot \\mathbf{n}_i$. Семейство $\\{\\boldsymbol{\\xi}_i\\}$ - *ёж многогранника* $\\mathcal{F}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-16",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-16\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{F} \\subset\n\\mathbb{R}^3\\)</span> - выпуклый многогранник. Пусть <span\nclass=\"math inline\">\\(F_1, \\ldots, F_m\\)</span> - грани <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span>. Пусть <span\nclass=\"math inline\">\\(\\mathbf{n}_i\\)</span> - единичный вектор,\nперпендикулярный грани <span class=\"math inline\">\\(F_i\\)</span>,\nнаправленный наружу многогранника <span\nclass=\"math inline\">\\(\\mathcal{F}\\)</span>, а <span\nclass=\"math inline\">\\(S_i\\)</span> - площадь <span\nclass=\"math inline\">\\(F_i\\)</span>. <span\nclass=\"math inline\">\\(\\boldsymbol{\\xi}_i = S_i \\cdot\n\\mathbf{n}_i\\)</span>. Семейство <span\nclass=\"math inline\">\\(\\{\\boldsymbol{\\xi}_i\\}\\)</span> - <em>ёж\nмногогранника</em> <span class=\"math inline\">\\(\\mathcal{F}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "дизъюнктивное объединение несвязная сумма",
+        "data": "(*дизъюнктивное объединение*, *несвязная сумма*) Пусть заданы топологии $\\tau_x$ и $\\tau_y$ на непересекающихся множествах $X$ и $Y$. Тогда на множестве $X \\cup Y$ можно задать топологию $\\tau_x \\cup \\tau_y$, то есть множество $A \\subset X \\cup Y$ открыто тогда и только тогда, когда оно представляется в виде объединения открытых множеств в топологиях $X$ и $Y$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-24",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-24\">Определение:</a></strong><p>(<em>дизъюнктивное объединение</em>, <em>несвязная сумма</em>) Пусть\nзаданы топологии <span class=\"math inline\">\\(\\tau_x\\)</span> и <span\nclass=\"math inline\">\\(\\tau_y\\)</span> на непересекающихся множествах\n<span class=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>. Тогда на множестве <span\nclass=\"math inline\">\\(X \\cup Y\\)</span> можно задать топологию <span\nclass=\"math inline\">\\(\\tau_x \\cup \\tau_y\\)</span>, то есть множество\n<span class=\"math inline\">\\(A \\subset X \\cup Y\\)</span> открыто тогда и\nтолько тогда, когда оно представляется в виде объединения открытых\nмножеств в топологиях <span class=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "индуцированная топология",
+        "data": "(*индуцированная топология*) Пусть задана [топология](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0) $\\tau_x$ на множестве $X$. Пусть $Y \\subset X$. Тогда множество $\\tau_y = \\{Y \\cap U| \\,\\,\\,\\, U \\in \\tau_x\\}$ - топология на $Y$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-22",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-22\">Определение:</a></strong><p>(<em>индуцированная топология</em>) Пусть задана <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0\">топология</a>\n<span class=\"math inline\">\\(\\tau_x\\)</span> на множестве <span\nclass=\"math inline\">\\(X\\)</span>. Пусть <span class=\"math inline\">\\(Y\n\\subset X\\)</span>. Тогда множество <span class=\"math inline\">\\(\\tau_y =\n\\{Y \\cap U| \\,\\,\\,\\, U \\in \\tau_x\\}\\)</span> - топология на <span\nclass=\"math inline\">\\(Y\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Бинарное отношение",
+        "data": "*Бинарное отношение* на множестве $X$ - это множество $R \\subset X \\times X$. $(x_1, x_2) \\in R, \\,\\,\\,\\, x_1, x_2 \\in X$ обозначается $x_1Rx_2$ или вместо $R$ можно взять любой другой символ, например $x_1 \\sim x_2$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-0\">Определение:</a></strong><p><em>Бинарное отношение</em> на множестве <span\nclass=\"math inline\">\\(X\\)</span> - это множество <span\nclass=\"math inline\">\\(R \\subset X \\times X\\)</span>. <span\nclass=\"math inline\">\\((x_1, x_2) \\in R, \\,\\,\\,\\, x_1, x_2 \\in X\\)</span>\nобозначается <span class=\"math inline\">\\(x_1Rx_2\\)</span> или вместо\n<span class=\"math inline\">\\(R\\)</span> можно взять любой другой символ,\nнапример <span class=\"math inline\">\\(x_1 \\sim x_2\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "отношение эквивалентности",
+        "data": "Бинарное отношение $\\sim$ на множестве $X$ *отношение эквивалентности*, если <br>1. (рефлексивность) $\\forall x \\in X \\,\\,\\,\\, x \\sim x$.<br>2. (симметричность) $\\forall x, y \\in X$ если $x \\sim y$, то $y \\sim x$.<br>3. (транзитивность) $\\forall x, y, z \\in X$ если $x \\sim y$ и $x \\sim z$, то $y \\sim z$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-1\">Определение:</a></strong><p>Бинарное отношение <span class=\"math inline\">\\(\\sim\\)</span> на\nмножестве <span class=\"math inline\">\\(X\\)</span> <em>отношение\nэквивалентности</em>, если <br>1. (рефлексивность) <span\nclass=\"math inline\">\\(\\forall x \\in X \\,\\,\\,\\, x \\sim x\\)</span>.<br>2.\n(симметричность) <span class=\"math inline\">\\(\\forall x, y \\in X\\)</span>\nесли <span class=\"math inline\">\\(x \\sim y\\)</span>, то <span\nclass=\"math inline\">\\(y \\sim x\\)</span>.<br>3. (транзитивность) <span\nclass=\"math inline\">\\(\\forall x, y, z \\in X\\)</span> если <span\nclass=\"math inline\">\\(x \\sim y\\)</span> и <span class=\"math inline\">\\(x\n\\sim z\\)</span>, то <span class=\"math inline\">\\(y \\sim z\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "класс эквивалентности",
+        "data": "Пусть на множестве $X$ задано отношение эквивалентности $R$, $x \\in X$. Множество $[x]_R = \\{y \\in X: \\,\\,\\,\\, x \\sim y\\}$ - *класс эквивалентности* элемента $x$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-2\">Определение:</a></strong><p>Пусть на множестве <span class=\"math inline\">\\(X\\)</span> задано\nотношение эквивалентности <span class=\"math inline\">\\(R\\)</span>, <span\nclass=\"math inline\">\\(x \\in X\\)</span>. Множество <span\nclass=\"math inline\">\\([x]_R = \\{y \\in X: \\,\\,\\,\\, x \\sim y\\}\\)</span> -\n<em>класс эквивалентности</em> элемента <span\nclass=\"math inline\">\\(x\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Фактор-множество",
+        "data": "Пусть на множестве $X$ задано [отношение эквивалентности](#definition-1) $R$. *Фактор-множество* - это множество всех классов эквивалентности.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-3\">Определение:</a></strong><p>Пусть на множестве <span class=\"math inline\">\\(X\\)</span> задано <a\nhref=\"#definition-1\">отношение эквивалентности</a> <span\nclass=\"math inline\">\\(R\\)</span>. <em>Фактор-множество</em> - это\nмножество всех классов эквивалентности.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "каноническая проекция",
+        "data": "Пусть на множестве $X$ задано [отношение эквивалентности](#definition-1) $R$. Отображение $\\pi: X \\to X/R, \\,\\,\\,\\, \\pi: x \\mapsto [x]_R$ - *каноническая проекция* на [фактор-множество](#definition-3).",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-4\">Определение:</a></strong><p>Пусть на множестве <span class=\"math inline\">\\(X\\)</span> задано <a\nhref=\"#definition-1\">отношение эквивалентности</a> <span\nclass=\"math inline\">\\(R\\)</span>. Отображение <span\nclass=\"math inline\">\\(\\pi: X \\to X/R, \\,\\,\\,\\, \\pi: x \\mapsto\n[x]_R\\)</span> - <em>каноническая проекция</em> на <a\nhref=\"#definition-3\">фактор-множество</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "фактор-топология фактор-пространство",
+        "data": "Пусть $\\tau_x$ [топология](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0) на множестве $X$. Пусть на множестве $X$ задано [отношение эквивалентности](#definition-1) $R$. $\\tau_R = \\{[x]_R \\in X/R: \\,\\,\\,\\, \\pi^{-1}([x]_R) \\in \\tau_x\\}$ - *фактор-топология* на $X/R$.\n[Топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) $(X/R, \\tau_R)$ - *фактор-пространство*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-5\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\tau_x\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0\">топология</a>\nна множестве <span class=\"math inline\">\\(X\\)</span>. Пусть на множестве\n<span class=\"math inline\">\\(X\\)</span> задано <a\nhref=\"#definition-1\">отношение эквивалентности</a> <span\nclass=\"math inline\">\\(R\\)</span>. <span class=\"math inline\">\\(\\tau_R =\n\\{[x]_R \\in X/R: \\,\\,\\,\\, \\pi^{-1}([x]_R) \\in \\tau_x\\}\\)</span> -\n<em>фактор-топология</em> на <span class=\"math inline\">\\(X/R\\)</span>.\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">Топологическое\nпространство</a> <span class=\"math inline\">\\((X/R, \\tau_R)\\)</span> -\n<em>фактор-пространство</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "факторизацией",
+        "data": "Пусть $(X, \\tau_x)$ - [топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1). $A \\subset X$. Определим на $X$ [отношение эквивалентности](#definition-1) $R$: $\\forall x, y \\in X \\,\\,\\,\\, x \\sim y \\Leftrightarrow x, y \\in A$ или $x = y$.\nБудем обозначать [фактор-пространство](#definition-5) $(X/R, \\tau_R)$, так: $X / A$. Такое фактор-пространство получено *факторизацией* по $A$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-6\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((X, \\tau_x)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологическое\nпространство</a>. <span class=\"math inline\">\\(A \\subset X\\)</span>.\nОпределим на <span class=\"math inline\">\\(X\\)</span> <a\nhref=\"#definition-1\">отношение эквивалентности</a> <span\nclass=\"math inline\">\\(R\\)</span>: <span class=\"math inline\">\\(\\forall x,\ny \\in X \\,\\,\\,\\, x \\sim y \\Leftrightarrow x, y \\in A\\)</span> или <span\nclass=\"math inline\">\\(x = y\\)</span>. Будем обозначать <a\nhref=\"#definition-5\">фактор-пространство</a> <span\nclass=\"math inline\">\\((X/R, \\tau_R)\\)</span>, так: <span\nclass=\"math inline\">\\(X / A\\)</span>. Такое фактор-пространство получено\n<em>факторизацией</em> по <span class=\"math inline\">\\(A\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "склеиванием пары точек",
+        "data": "Пусть $(X, \\tau_x)$ - [топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1), $x, y \\in X$. [Фактор-пространство](#definition-5) $X/{x, y}$ получено *склеиванием пары точек* $x$ и $y$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-20",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-20\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((X, \\tau_x)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологическое\nпространство</a>, <span class=\"math inline\">\\(x, y \\in X\\)</span>. <a\nhref=\"#definition-5\">Фактор-пространство</a> <span\nclass=\"math inline\">\\(X/{x, y}\\)</span> получено <em>склеиванием пары\nточек</em> <span class=\"math inline\">\\(x\\)</span> и <span\nclass=\"math inline\">\\(y\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "склеиванием концов отрезка",
+        "data": "Фактор-пространство $[a, b]/\\{a, b\\}$ получено *склеиванием концов отрезка* $[a, b]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-7\">Определение:</a></strong><p>Фактор-пространство <span class=\"math inline\">\\([a, b]/\\{a,\nb\\}\\)</span> получено <em>склеиванием концов отрезка</em> <span\nclass=\"math inline\">\\([a, b]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "букет",
+        "data": "Пусть $X \\cap Y = \\varnothing$, $(X, \\tau_x), \\,\\,\\,\\, (Y, \\tau_y)$ - топологические пространства. Тогда [фактор-пространство](#definition-5), полученное [склеиванием точек](#definition-0) $x \\in X$ и $y \\in Y$ [несвязной суммы](#definition-4) $X \\sqcup Y$ ($(X \\sqcup Y) / {x, y}$) - *букет* пространств $X$ и $Y$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-8\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(X \\cap Y = \\varnothing\\)</span>,\n<span class=\"math inline\">\\((X, \\tau_x), \\,\\,\\,\\, (Y, \\tau_y)\\)</span> -\nтопологические пространства. Тогда <a\nhref=\"#definition-5\">фактор-пространство</a>, полученное <a\nhref=\"#definition-0\">склеиванием точек</a> <span class=\"math inline\">\\(x\n\\in X\\)</span> и <span class=\"math inline\">\\(y \\in Y\\)</span> <a\nhref=\"#definition-4\">несвязной суммы</a> <span class=\"math inline\">\\(X\n\\sqcup Y\\)</span> (<span class=\"math inline\">\\((X \\sqcup Y) / {x,\ny}\\)</span>) - <em>букет</em> пространств <span\nclass=\"math inline\">\\(X\\)</span> и <span\nclass=\"math inline\">\\(Y\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "факторизацией по сюръекции",
+        "data": "Пусть $X$ [топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1), $f: X \\to Y$ его сюръективное отображение в некоторое множество $Y$. Тогда множество полных [прообразов](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0) $y \\in Y$ разбивает $X$ на непересекающиеся классы, или что тоже самое, задает [отношение эквивалентности](#definition-1) $R_f$ на $X$, при котором $x \\sim y, \\,\\,\\,\\, x, y \\in X$ тогда и только тогда, когда $f(x) = f(y)$. [Фактор-пространство](#definition-5) $X/R_f$ получено *факторизацией по сюръекции* $f$. $X / R_f$ обозначается $X / f$. ",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-20",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-20\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(X\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологическое\nпространство</a>, <span class=\"math inline\">\\(f: X \\to Y\\)</span> его\nсюръективное отображение в некоторое множество <span\nclass=\"math inline\">\\(Y\\)</span>. Тогда множество полных <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0\">прообразов</a>\n<span class=\"math inline\">\\(y \\in Y\\)</span> разбивает <span\nclass=\"math inline\">\\(X\\)</span> на непересекающиеся классы, или что\nтоже самое, задает <a href=\"#definition-1\">отношение эквивалентности</a>\n<span class=\"math inline\">\\(R_f\\)</span> на <span\nclass=\"math inline\">\\(X\\)</span>, при котором <span\nclass=\"math inline\">\\(x \\sim y, \\,\\,\\,\\, x, y \\in X\\)</span> тогда и\nтолько тогда, когда <span class=\"math inline\">\\(f(x) = f(y)\\)</span>. <a\nhref=\"#definition-5\">Фактор-пространство</a> <span\nclass=\"math inline\">\\(X/R_f\\)</span> получено <em>факторизацией по\nсюръекции</em> <span class=\"math inline\">\\(f\\)</span>. <span\nclass=\"math inline\">\\(X / R_f\\)</span> обозначается <span\nclass=\"math inline\">\\(X / f\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "гомеоморфизм",
+        "data": "Пусть $(X, \\tau_x)$ и $(Y, tau_y)$ - [топологические пространства](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1). Отображение $f: X \\to Y$ - *гомеоморфизм*, если $f$ взаимнооднозначно и отображения $f$ и $f^{-1}$ [непрерывны](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-9).",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((X, \\tau_x)\\)</span> и <span\nclass=\"math inline\">\\((Y, tau_y)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологические\nпространства</a>. Отображение <span class=\"math inline\">\\(f: X \\to\nY\\)</span> - <em>гомеоморфизм</em>, если <span\nclass=\"math inline\">\\(f\\)</span> взаимнооднозначно и отображения <span\nclass=\"math inline\">\\(f\\)</span> и <span\nclass=\"math inline\">\\(f^{-1}\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-9\">непрерывны</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "связно несвязно",
+        "data": "[Топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) $(X, \\tau)$ *связно*, если $X$ нельзя представить в виде объединения двух непустых непересекающихся [открытых подмножеств](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0) $X$. Если такое представление возможно, то пространство $(X, \\tau)$ *несвязно*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-10\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">Топологическое\nпространство</a> <span class=\"math inline\">\\((X, \\tau)\\)</span>\n<em>связно</em>, если <span class=\"math inline\">\\(X\\)</span> нельзя\nпредставить в виде объединения двух непустых непересекающихся <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0\">открытых\nподмножеств</a> <span class=\"math inline\">\\(X\\)</span>. Если такое\nпредставление возможно, то пространство <span class=\"math inline\">\\((X,\n\\tau)\\)</span> <em>несвязно</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "связно",
+        "data": "Подмножество $A$ топологического пространства $(X, \\tau)$ *связно*, если связно [топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) $A$ с топологией [индуцированной](#definition-2) из $X$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-11",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-11\">Определение:</a></strong><p>Подмножество <span class=\"math inline\">\\(A\\)</span> топологического\nпространства <span class=\"math inline\">\\((X, \\tau)\\)</span>\n<em>связно</em>, если связно <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологическое\nпространство</a> <span class=\"math inline\">\\(A\\)</span> с топологией <a\nhref=\"#definition-2\">индуцированной</a> из <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "компонента связности",
+        "data": "Максимальное по включению связное подмножество топологического пространства $(X, \\tau_x)$ - *компонента связности* $X$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-12",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-12\">Определение:</a></strong><p>Максимальное по включению связное подмножество топологического\nпространства <span class=\"math inline\">\\((X, \\tau_x)\\)</span> -\n<em>компонента связности</em> <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Непрерывная кривая соединяет точки",
+        "data": "*Непрерывная кривая* - это отображение $\\gamma: [a, b] \\to X$. При этом говорят, что $\\gamma$ *соединяет точки* $\\gamma(a)$ и $\\gamma(b)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-13",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-13\">Определение:</a></strong><p><em>Непрерывная кривая</em> - это отображение <span\nclass=\"math inline\">\\(\\gamma: [a, b] \\to X\\)</span>. При этом говорят,\nчто <span class=\"math inline\">\\(\\gamma\\)</span> <em>соединяет точки</em>\n<span class=\"math inline\">\\(\\gamma(a)\\)</span> и <span\nclass=\"math inline\">\\(\\gamma(b)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линейно связно",
+        "data": "[Топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) $(X, \\tau_x)$ - *линейно связно*, если любые две его [точки](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-2) можно соединить [непрерывной кривой](#definition-3).",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-14",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-14\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">Топологическое\nпространство</a> <span class=\"math inline\">\\((X, \\tau_x)\\)</span> -\n<em>линейно связно</em>, если любые две его <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-2\">точки</a>\nможно соединить <a href=\"#definition-3\">непрерывной кривой</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линейно связно",
+        "data": "Подмножество $A$ [топологического пространства](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) $(X, \\tau_x)$ *линейно связно*, если [линейно связно](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-4) [топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) $A$ с топологией [индуцированной](#definition-2) из $X$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-26",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-26\">Определение:</a></strong><p>Подмножество <span class=\"math inline\">\\(A\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологического\nпространства</a> <span class=\"math inline\">\\((X, \\tau_x)\\)</span>\n<em>линейно связно</em>, если <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-4\">линейно\nсвязно</a> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологическое\nпространство</a> <span class=\"math inline\">\\(A\\)</span> с топологией <a\nhref=\"#definition-2\">индуцированной</a> из <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "компонента линейной связности",
+        "data": "Максимальное по включению [линейно связное подмножество](#definition-26) [топологического пространства](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) $(X, \\tau_x)$ - *компонента линейной связности* $X$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-25",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-25\">Определение:</a></strong><p>Максимальное по включению <a href=\"#definition-26\">линейно связное\nподмножество</a> <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">топологического\nпространства</a> <span class=\"math inline\">\\((X, \\tau_x)\\)</span> -\n<em>компонента линейной связности</em> <span\nclass=\"math inline\">\\(X\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "хаусдорфово",
+        "data": "[Топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) $X$ *хаусдорфово*, если для любых $x, y \\in X, \\,\\,\\,\\, x \\ne y$ существуют непересекающиеся [окрестности](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-3) $U$ и $V$, содержащие $x$ и $y$ соответственно.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-15",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-15\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">Топологическое\nпространство</a> <span class=\"math inline\">\\(X\\)</span>\n<em>хаусдорфово</em>, если для любых <span class=\"math inline\">\\(x, y\n\\in X, \\,\\,\\,\\, x \\ne y\\)</span> существуют непересекающиеся <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-3\">окрестности</a>\n<span class=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(V\\)</span>, содержащие <span\nclass=\"math inline\">\\(x\\)</span> и <span\nclass=\"math inline\">\\(y\\)</span> соответственно.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "нормальное",
+        "data": "[Топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1), обладающее свойством из [предыдущего утверждения](#statement-13) - *нормальное*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-23",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-23\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">Топологическое\nпространство</a>, обладающее свойством из <a\nhref=\"#statement-13\">предыдущего утверждения</a> -\n<em>нормальное</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Открытое покрытие Открытое покрытие Подпокрытие",
+        "data": "*Открытое покрытие* топологического пространства $X$ - это семейство $\\{U\\}_{\\alpha}$ открытых подмножеств $X$, такое что $X = \\displaystyle\\cup_{\\alpha}U_{\\alpha}$.<br>*Открытое покрытие* множества $Y \\subset X$ - это семейство $\\{U\\}_{\\alpha}$ открытых подмножеств $X$, такое что $Y \\subset \\displaystyle\\cup_{\\alpha}U_{\\alpha}$.<br> *Подпокрытие* - это подсемейство покрытия, само являющееся покрытием.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-16",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-16\">Определение:</a></strong><p><em>Открытое покрытие</em> топологического пространства <span\nclass=\"math inline\">\\(X\\)</span> - это семейство <span\nclass=\"math inline\">\\(\\{U\\}_{\\alpha}\\)</span> открытых подмножеств <span\nclass=\"math inline\">\\(X\\)</span>, такое что <span\nclass=\"math inline\">\\(X =\n\\displaystyle\\cup_{\\alpha}U_{\\alpha}\\)</span>.<br><em>Открытое\nпокрытие</em> множества <span class=\"math inline\">\\(Y \\subset X\\)</span>\n- это семейство <span class=\"math inline\">\\(\\{U\\}_{\\alpha}\\)</span>\nоткрытых подмножеств <span class=\"math inline\">\\(X\\)</span>, такое что\n<span class=\"math inline\">\\(Y \\subset\n\\displaystyle\\cup_{\\alpha}U_{\\alpha}\\)</span>.<br> <em>Подпокрытие</em>\n- это подсемейство покрытия, само являющееся покрытием.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "компактно компакт",
+        "data": "[Топологическое пространство](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) $X$ - *компактно*(*компакт*), если из любого [открытого покрытия](#definition-6) $X$ можно выделить конечное [подпокрытие](#definition-6).",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-17",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-17\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">Топологическое\nпространство</a> <span class=\"math inline\">\\(X\\)</span> -\n<em>компактно</em>(<em>компакт</em>), если из любого <a\nhref=\"#definition-6\">открытого покрытия</a> <span\nclass=\"math inline\">\\(X\\)</span> можно выделить конечное <a\nhref=\"#definition-6\">подпокрытие</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ограничено",
+        "data": "Подмножество [метрического пространства](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1) *ограничено*, если содержится в некотором [открытом шаре](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-2).",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-18",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-18\">Определение:</a></strong><p>Подмножество <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">метрического\nпространства</a> <em>ограничено</em>, если содержится в некотором <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-2\">открытом\nшаре</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "локально постоянная",
+        "data": "Функция $f: X \\to \\mathbb{R}$ *локально постоянная*, если для любой точки $x_0 \\in X$ существует окрестность $U(x_0)$, такая, что $f$ постоянна на $U(x_0)$, то есть $\\forall x \\in U(x_0) \\,\\,\\,\\, f(x) = f(x_0)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-21",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-21\">Определение:</a></strong><p>Функция <span class=\"math inline\">\\(f: X \\to \\mathbb{R}\\)</span>\n<em>локально постоянная</em>, если для любой точки <span\nclass=\"math inline\">\\(x_0 \\in X\\)</span> существует окрестность <span\nclass=\"math inline\">\\(U(x_0)\\)</span>, такая, что <span\nclass=\"math inline\">\\(f\\)</span> постоянна на <span\nclass=\"math inline\">\\(U(x_0)\\)</span>, то есть <span\nclass=\"math inline\">\\(\\forall x \\in U(x_0) \\,\\,\\,\\, f(x) =\nf(x_0)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "топология",
+        "data": "Пусть задано множество $X$ и некоторое семейство его подмножеств $\\tau$. Тогда $\\tau$ - *топология* на множестве $X$, если выполнены следующие аксиомы:",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0\">Определение:</a></strong><p>Пусть задано множество <span class=\"math inline\">\\(X\\)</span> и\nнекоторое семейство его подмножеств <span\nclass=\"math inline\">\\(\\tau\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\tau\\)</span> - <em>топология</em> на множестве\n<span class=\"math inline\">\\(X\\)</span>, если выполнены следующие\nаксиомы:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "топологическое пространство",
+        "data": "Пара $(X, \\tau)$, где $X$ - множество, а $\\tau$ - [топология](#definition-0) на нем - *топологическое пространство*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1\">Определение:</a></strong><p>Пара <span class=\"math inline\">\\((X, \\tau)\\)</span>, где <span\nclass=\"math inline\">\\(X\\)</span> - множество, а <span\nclass=\"math inline\">\\(\\tau\\)</span> - <a\nhref=\"#definition-0\">топология</a> на нем - <em>топологическое\nпространство</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "точки",
+        "data": "Пусть $(X, \\tau)$ - [топологическое пространство](#definition-1). Элементы множества $X$ - *точки*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((X, \\tau)\\)</span> - <a\nhref=\"#definition-1\">топологическое пространство</a>. Элементы множества\n<span class=\"math inline\">\\(X\\)</span> - <em>точки</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "окрестность точки",
+        "data": "Пусть $(X, \\tau)$ - [топологическое пространство](#definition-1). Множество $U \\in \\tau$ - *окрестность точки* $x \\in X$, если $x \\in U$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((X, \\tau)\\)</span> - <a\nhref=\"#definition-1\">топологическое пространство</a>. Множество <span\nclass=\"math inline\">\\(U \\in \\tau\\)</span> - <em>окрестность точки</em>\n<span class=\"math inline\">\\(x \\in X\\)</span>, если <span\nclass=\"math inline\">\\(x \\in U\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "открытые",
+        "data": "Пусть $(X, \\tau)$ - [топологическое пространство](#definition-1). Множества $U \\in \\tau$ - *открытые* в топологическом пространстве $(X, \\tau)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-10\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((X, \\tau)\\)</span> - <a\nhref=\"#definition-1\">топологическое пространство</a>. Множества <span\nclass=\"math inline\">\\(U \\in \\tau\\)</span> - <em>открытые</em> в\nтопологическом пространстве <span class=\"math inline\">\\((X,\n\\tau)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "дискретной",
+        "data": "Такая [топология](#definition-0) называется *дискретной* и обозначается $\\tau_d$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-7\">Определение:</a></strong><p>Такая <a href=\"#definition-0\">топология</a> называется\n<em>дискретной</em> и обозначается <span\nclass=\"math inline\">\\(\\tau_d\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "тривиальная",
+        "data": "[Топология](#definition-0), состоящая из самого множества $X$ и пустого множества $\\varnothing$ называется *тривиальная* и обознаяается $\\tau_0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-8\">Определение:</a></strong><p><a href=\"#definition-0\">Топология</a>, состоящая из самого множества\n<span class=\"math inline\">\\(X\\)</span> и пустого множества <span\nclass=\"math inline\">\\(\\varnothing\\)</span> называется\n<em>тривиальная</em> и обознаяается <span\nclass=\"math inline\">\\(\\tau_0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "топология Зарисского",
+        "data": "Система множеств на множестве $X$, состоящая из пустого множества, а также из всех подмножеств множества $X$, дополнения до которых конечны - *топология Зарисского*. Обозначается: $\\tau_z$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-21",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-21\">Определение:</a></strong><p>Система множеств на множестве <span class=\"math inline\">\\(X\\)</span>,\nсостоящая из пустого множества, а также из всех подмножеств множества\n<span class=\"math inline\">\\(X\\)</span>, дополнения до которых конечны -\n<em>топология Зарисского</em>. Обозначается: <span\nclass=\"math inline\">\\(\\tau_z\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "метрика",
+        "data": "Пусть $X$ - множество. Отображение $\\rho: X\\times X \\to \\mathbb{R}$ - *метрика*, если:",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-9\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(X\\)</span> - множество. Отображение\n<span class=\"math inline\">\\(\\rho: X\\times X \\to \\mathbb{R}\\)</span> -\n<em>метрика</em>, если:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "метрическое пространство точки расстояние между точками",
+        "data": "Пара $(X, \\rho)$, где $X$ - множество, а $\\rho$ - [метрика](#definition-9) на нем - *метрическое пространство*, элементы множества $X$ - *точки*, $\\forall x, y \\in X \\,\\,\\,\\, \\rho(x, y)$ - *расстояние между точками* $x$ и $y$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-11",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-11\">Определение:</a></strong><p>Пара <span class=\"math inline\">\\((X, \\rho)\\)</span>, где <span\nclass=\"math inline\">\\(X\\)</span> - множество, а <span\nclass=\"math inline\">\\(\\rho\\)</span> - <a\nhref=\"#definition-9\">метрика</a> на нем - <em>метрическое\nпространство</em>, элементы множества <span\nclass=\"math inline\">\\(X\\)</span> - <em>точки</em>, <span\nclass=\"math inline\">\\(\\forall x, y \\in X \\,\\,\\,\\, \\rho(x, y)\\)</span> -\n<em>расстояние между точками</em> <span class=\"math inline\">\\(x\\)</span>\nи <span class=\"math inline\">\\(y\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "норма",
+        "data": "Пусть $V$ - линейное пространство над полем $\\mathbb{R}$. Отображение $h: V \\to \\mathbb{R}$ - *норма*, если:",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-13",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-13\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - линейное пространство\nнад полем <span class=\"math inline\">\\(\\mathbb{R}\\)</span>. Отображение\n<span class=\"math inline\">\\(h: V \\to \\mathbb{R}\\)</span> -\n<em>норма</em>, если:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Открытый шар радиуса с центром в точке внутренняя точка внутренность открыто",
+        "data": "Пусть $(X, \\rho)$ - [метрическое пространство](#definition-1). *Открытый шар радиуса* $\\varepsilon$ *с центром в точке* $x \\in X$ - это множество $\\{y \\in X| \\,\\,\\,\\, \\rho(x, y) < \\varepsilon\\}$. Обозначается: $O_{\\varepsilon}(x)$. Пусть $A \\subset X$. Точка $x$ - *внутренняя точка* множества $A$, если $\\exists O_{\\varepsilon}(x) \\subset A$. Множество всех внутренних точек $A$ - *внутренность* $A$. Обозначается: $\\operatorname{Int} A$. Множество $A$ - *открыто* в метрическом пространстве $(X, \\rho)$, если $\\operatorname{Int} A = A$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-12",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-12\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((X, \\rho)\\)</span> - <a\nhref=\"#definition-1\">метрическое пространство</a>. <em>Открытый шар\nрадиуса</em> <span class=\"math inline\">\\(\\varepsilon\\)</span> <em>с\nцентром в точке</em> <span class=\"math inline\">\\(x \\in X\\)</span> - это\nмножество <span class=\"math inline\">\\(\\{y \\in X| \\,\\,\\,\\, \\rho(x, y)\n&lt; \\varepsilon\\}\\)</span>. Обозначается: <span\nclass=\"math inline\">\\(O_{\\varepsilon}(x)\\)</span>. Пусть <span\nclass=\"math inline\">\\(A \\subset X\\)</span>. Точка <span\nclass=\"math inline\">\\(x\\)</span> - <em>внутренняя точка</em> множества\n<span class=\"math inline\">\\(A\\)</span>, если <span\nclass=\"math inline\">\\(\\exists O_{\\varepsilon}(x) \\subset A\\)</span>.\nМножество всех внутренних точек <span class=\"math inline\">\\(A\\)</span> -\n<em>внутренность</em> <span class=\"math inline\">\\(A\\)</span>.\nОбозначается: <span class=\"math inline\">\\(\\operatorname{Int} A\\)</span>.\nМножество <span class=\"math inline\">\\(A\\)</span> - <em>открыто</em> в\nметрическом пространстве <span class=\"math inline\">\\((X, \\rho)\\)</span>,\nесли <span class=\"math inline\">\\(\\operatorname{Int} A = A\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "метрической",
+        "data": "Пусть $(X, \\rho)$ - метрическое пространство. Топология, состоящая из всех открытых в $(X, \\rho)$ множеств называется *метрической* и обозночается $\\tau_{\\rho}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-14",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-14\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((X, \\rho)\\)</span> - метрическое\nпространство. Топология, состоящая из всех открытых в <span\nclass=\"math inline\">\\((X, \\rho)\\)</span> множеств называется\n<em>метрической</em> и обозночается <span\nclass=\"math inline\">\\(\\tau_{\\rho}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "база окрестностей",
+        "data": "Пусть $X$ - множество. Тогда семейство $\\beta$ его подмножеств - *база окрестностей*, если:",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-15",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-15\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(X\\)</span> - множество. Тогда\nсемейство <span class=\"math inline\">\\(\\beta\\)</span> его подмножеств -\n<em>база окрестностей</em>, если:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "топология с базой",
+        "data": "$\\tau_{\\beta}$ - *топология с базой* $\\beta$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-16",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-16\">Определение:</a></strong><p><span class=\"math inline\">\\(\\tau_{\\beta}\\)</span> - <em>топология с\nбазой</em> <span class=\"math inline\">\\(\\beta\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "замкнуто дополнение",
+        "data": "Пусть задано [топологическое пространство](#definition-1) $(X, \\tau)$. $A \\subset X$ - *замкнуто*, если его *дополнение* $X \\setminus A$ открыто.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-17",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-17\">Определение:</a></strong><p>Пусть задано <a href=\"#definition-1\">топологическое пространство</a>\n<span class=\"math inline\">\\((X, \\tau)\\)</span>. <span\nclass=\"math inline\">\\(A \\subset X\\)</span> - <em>замкнуто</em>, если его\n<em>дополнение</em> <span class=\"math inline\">\\(X \\setminus A\\)</span>\nоткрыто.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "точка прикосновения замыкание замкнуто",
+        "data": "Пусть задано [метрическое пространство](#definition-1) $(X, \\rho)$.<br>Точка $X \\in X$ - *точка прикосновения* множества $A \\subset X$, если $\\forall O_{\\varepsilon}(x) \\,\\,\\,\\, O_{\\varepsilon}(x) \\cap A \\ne \\varnothing$.<br><br>Множество всех точек прикосновения множества $A \\subset X$ - *замыкание* $A$. Обозначается: $\\operatorname{Cl}A$.<br><br>Множество $A \\subset X$ - *замкнуто*, если $\\operatorname{Cl}A = A$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-18",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-18\">Определение:</a></strong><p>Пусть задано <a href=\"#definition-1\">метрическое пространство</a>\n<span class=\"math inline\">\\((X, \\rho)\\)</span>.<br>Точка <span\nclass=\"math inline\">\\(X \\in X\\)</span> - <em>точка прикосновения</em>\nмножества <span class=\"math inline\">\\(A \\subset X\\)</span>, если <span\nclass=\"math inline\">\\(\\forall O_{\\varepsilon}(x) \\,\\,\\,\\,\nO_{\\varepsilon}(x) \\cap A \\ne \\varnothing\\)</span>.<br><br>Множество\nвсех точек прикосновения множества <span class=\"math inline\">\\(A \\subset\nX\\)</span> - <em>замыкание</em> <span class=\"math inline\">\\(A\\)</span>.\nОбозначается: <span\nclass=\"math inline\">\\(\\operatorname{Cl}A\\)</span>.<br><br>Множество\n<span class=\"math inline\">\\(A \\subset X\\)</span> - <em>замкнуто</em>,\nесли <span class=\"math inline\">\\(\\operatorname{Cl}A = A\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "внутренняя (точка) точка  прикосновения",
+        "data": "Пусть $(X, \\tau)$ - топологическое пространство, $A \\subset X$.<br>Точка $x \\in X$ *внутренняя (точка)* множества $A$, если существует ее [окрестность](#definition-3), содержащаяся в $A$.<br>Точка $x \\in X$ *точка  прикосновения* множества $A$, если пересечение любой ее окрестности с $A$ непусто.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((X, \\tau)\\)</span> - топологическое\nпространство, <span class=\"math inline\">\\(A \\subset X\\)</span>.<br>Точка\n<span class=\"math inline\">\\(x \\in X\\)</span> <em>внутренняя (точка)</em>\nмножества <span class=\"math inline\">\\(A\\)</span>, если существует ее <a\nhref=\"#definition-3\">окрестность</a>, содержащаяся в <span\nclass=\"math inline\">\\(A\\)</span>.<br>Точка <span class=\"math inline\">\\(x\n\\in X\\)</span> <em>точка прикосновения</em> множества <span\nclass=\"math inline\">\\(A\\)</span>, если пересечение любой ее окрестности\nс <span class=\"math inline\">\\(A\\)</span> непусто.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "внутренность замыкание",
+        "data": "Пусть $(X, \\tau)$ - топологическое пространство, $A \\subset X$. <br>Множество всех внутренних точек $A$ - *внутренность* $A$.<br>Обозначается: $\\operatorname{Int} A$.<br><br>Множество всех точек прикосновения $A$ - *замыкание* $A$.<br>Обозначается: $\\operatorname{Cl} A$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-5\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((X, \\tau)\\)</span> - топологическое\nпространство, <span class=\"math inline\">\\(A \\subset X\\)</span>.\n<br>Множество всех внутренних точек <span\nclass=\"math inline\">\\(A\\)</span> - <em>внутренность</em> <span\nclass=\"math inline\">\\(A\\)</span>.<br>Обозначается: <span\nclass=\"math inline\">\\(\\operatorname{Int} A\\)</span>.<br><br>Множество\nвсех точек прикосновения <span class=\"math inline\">\\(A\\)</span> -\n<em>замыкание</em> <span\nclass=\"math inline\">\\(A\\)</span>.<br>Обозначается: <span\nclass=\"math inline\">\\(\\operatorname{Cl} A\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "граница",
+        "data": "Топологическая *граница* множества $A \\subset X$ - это $\\operatorname{Cl}A \\setminus \\operatorname{Int}A$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-18",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-18\">Определение:</a></strong><p>Топологическая <em>граница</em> множества <span\nclass=\"math inline\">\\(A \\subset X\\)</span> - это <span\nclass=\"math inline\">\\(\\operatorname{Cl}A \\setminus\n\\operatorname{Int}A\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "непрерывно в точке",
+        "data": "Пусть заданы [топологические пространства](#definition-1) $(X, \\tau_x)$ и $(Y, \\tau_y)$. Отображение $f: X \\to Y$ *непрерывно в точке* $x_0 \\in X$, если для каждой окрестности $V$ точки $f(x_0)$ в $Y$ существует [окрестность](#definition-3) $U$ точки $x_0$ в $X$, такая что $f(U) \\subset V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19\">Определение:</a></strong><p>Пусть заданы <a href=\"#definition-1\">топологические пространства</a>\n<span class=\"math inline\">\\((X, \\tau_x)\\)</span> и <span\nclass=\"math inline\">\\((Y, \\tau_y)\\)</span>. Отображение <span\nclass=\"math inline\">\\(f: X \\to Y\\)</span> <em>непрерывно в точке</em>\n<span class=\"math inline\">\\(x_0 \\in X\\)</span>, если для каждой\nокрестности <span class=\"math inline\">\\(V\\)</span> точки <span\nclass=\"math inline\">\\(f(x_0)\\)</span> в <span\nclass=\"math inline\">\\(Y\\)</span> существует <a\nhref=\"#definition-3\">окрестность</a> <span\nclass=\"math inline\">\\(U\\)</span> точки <span\nclass=\"math inline\">\\(x_0\\)</span> в <span\nclass=\"math inline\">\\(X\\)</span>, такая что <span\nclass=\"math inline\">\\(f(U) \\subset V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "прообраз полный прообраз прообраз множества",
+        "data": "Пусть заданы топологические пространства $(X, \\tau_x)$ и $(Y, \\tau_y)$, [непрерывное](#definition-9) отображение $f: X \\to Y$. <br>$x \\in X$ *прообраз* точки $y \\in Y$, если $f(x) = y$.<br>$f^{-1}(y) = \\{x \\in X: \\,\\,\\,\\, f(x) = y\\}$ - *полный прообраз* точки $y in Y$.<br>$A \\subset Y, \\,\\,\\,\\, f^{-1}(A) = \\{x \\in X: \\,\\,\\,\\, f(x) \\in A\\}$ - *прообраз множества* $A$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-20",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-20\">Определение:</a></strong><p>Пусть заданы топологические пространства <span\nclass=\"math inline\">\\((X, \\tau_x)\\)</span> и <span\nclass=\"math inline\">\\((Y, \\tau_y)\\)</span>, <a\nhref=\"#definition-9\">непрерывное</a> отображение <span\nclass=\"math inline\">\\(f: X \\to Y\\)</span>. <br><span\nclass=\"math inline\">\\(x \\in X\\)</span> <em>прообраз</em> точки <span\nclass=\"math inline\">\\(y \\in Y\\)</span>, если <span\nclass=\"math inline\">\\(f(x) = y\\)</span>.<br><span\nclass=\"math inline\">\\(f^{-1}(y) = \\{x \\in X: \\,\\,\\,\\, f(x) =\ny\\}\\)</span> - <em>полный прообраз</em> точки <span\nclass=\"math inline\">\\(y in Y\\)</span>.<br><span class=\"math inline\">\\(A\n\\subset Y, \\,\\,\\,\\, f^{-1}(A) = \\{x \\in X: \\,\\,\\,\\, f(x) \\in\nA\\}\\)</span> - <em>прообраз множества</em> <span\nclass=\"math inline\">\\(A\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Дерево",
+        "data": "*Дерево* - это [связный](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5) [граф](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1) без [циклов](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4).",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-trees#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-trees#definition-0\">Определение:</a></strong><p><em>Дерево</em> - это <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5\">связный</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1\">граф</a>\nбез <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4\">циклов</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "разрезан на многоугольники",
+        "data": "Пусть $F$ и $F_1, \\ldots, F_m$ - многоугольники, для которых выполнено:<br> $\\forall i \\ne j \\,\\,\\,\\, F_i \\cap F_j = \\varnothing$.<br> $F = \\cup_{i = 1}^m F_i$.<br> Тогда многоугольник $F$ *разрезан на многоугольники* $F_i$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(F_1, \\ldots, F_m\\)</span> - многоугольники, для\nкоторых выполнено:<br> <span class=\"math inline\">\\(\\forall i \\ne j\n\\,\\,\\,\\, F_i \\cap F_j = \\varnothing\\)</span>.<br> <span\nclass=\"math inline\">\\(F = \\cup_{i = 1}^m F_i\\)</span>.<br> Тогда\nмногоугольник <span class=\"math inline\">\\(F\\)</span> <em>разрезан на\nмногоугольники</em> <span class=\"math inline\">\\(F_i\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "равносоставлены",
+        "data": "Пусть $F$ и $G$ - [многоугольники](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-0). Пусть $F$ [разрезан на многоугольники](#definition-0) $F_1, \\ldots, F_s$ и $G$ [разрезан на многоугольники](#definition-0) $G_1, \\ldots, G_s$. Если $\\forall i \\in \\{1, \\ldots, s\\} \\,\\,\\,\\, G_i = F_i$, то многоугольники $F$ и $G$ - *равносоставлены*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(G\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-0\">многоугольники</a>.\nПусть <span class=\"math inline\">\\(F\\)</span> <a\nhref=\"#definition-0\">разрезан на многоугольники</a> <span\nclass=\"math inline\">\\(F_1, \\ldots, F_s\\)</span> и <span\nclass=\"math inline\">\\(G\\)</span> <a href=\"#definition-0\">разрезан на\nмногоугольники</a> <span class=\"math inline\">\\(G_1, \\ldots,\nG_s\\)</span>. Если <span class=\"math inline\">\\(\\forall i \\in \\{1,\n\\ldots, s\\} \\,\\,\\,\\, G_i = F_i\\)</span>, то многоугольники <span\nclass=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(G\\)</span> - <em>равносоставлены</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "равновеликие",
+        "data": "[Многоугольники](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-0) *равновеликие*, если они имеют одинаковую площадь.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-2\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-0\">Многоугольники</a>\n<em>равновеликие</em>, если они имеют одинаковую площадь.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "разрезан на многогранники",
+        "data": "Пусть $F$ и $F_1, \\ldots, F_m$ - многогранники, для которых выполнено:<br> $\\forall i \\ne j \\,\\,\\,\\, F_i \\cap F_j = \\varnothing$.<br> $F = \\cup_{i = 1}^m F_i$.<br> Тогда многоугольник $F$ *разрезан на многогранники* $F_i$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(F_1, \\ldots, F_m\\)</span> - многогранники, для\nкоторых выполнено:<br> <span class=\"math inline\">\\(\\forall i \\ne j\n\\,\\,\\,\\, F_i \\cap F_j = \\varnothing\\)</span>.<br> <span\nclass=\"math inline\">\\(F = \\cup_{i = 1}^m F_i\\)</span>.<br> Тогда\nмногоугольник <span class=\"math inline\">\\(F\\)</span> <em>разрезан на\nмногогранники</em> <span class=\"math inline\">\\(F_i\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "равносоставлены",
+        "data": "Пусть $F$ и $G$ - [многогранники](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5). Пусть $F$ [разрезан на многогранники](#definition-3) $F_1, \\ldots, F_s$ и $G$ [разрезан на многогранники](#definition-3) $G_1, \\ldots, G_s$. Если $\\forall i \\in \\{1, \\ldots, s\\} \\,\\,\\,\\, G_i = F_i$, то многогранники $F$ и $G$ - *равносоставлены*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(G\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5\">многогранники</a>.\nПусть <span class=\"math inline\">\\(F\\)</span> <a\nhref=\"#definition-3\">разрезан на многогранники</a> <span\nclass=\"math inline\">\\(F_1, \\ldots, F_s\\)</span> и <span\nclass=\"math inline\">\\(G\\)</span> <a href=\"#definition-3\">разрезан на\nмногогранники</a> <span class=\"math inline\">\\(G_1, \\ldots, G_s\\)</span>.\nЕсли <span class=\"math inline\">\\(\\forall i \\in \\{1, \\ldots, s\\} \\,\\,\\,\\,\nG_i = F_i\\)</span>, то многогранники <span\nclass=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(G\\)</span> - <em>равносоставлены</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "равновеликие",
+        "data": "Многогранники *равновеликие*, если их объемы равны.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-5\">Определение:</a></strong><p>Многогранники <em>равновеликие</em>, если их объемы равны.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Рассмотрим множество вещественных чисел $\\mathbb{R}$, как векторное пространство над полем $\\mathbb{Q}$. Обозначим полученное пространство $\\mathbb{R}_{Q}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-6\">Определение:</a></strong><p>Рассмотрим множество вещественных чисел <span\nclass=\"math inline\">\\(\\mathbb{R}\\)</span>, как векторное пространство\nнад полем <span class=\"math inline\">\\(\\mathbb{Q}\\)</span>. Обозначим\nполученное пространство <span\nclass=\"math inline\">\\(\\mathbb{R}_{Q}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "функция Дена многогранника инвариант Дена многогранника",
+        "data": "Пусть $W$ - многогранник. Пусть $E$ множество ребер $W$. Обозначим длину ребра $e \\in E$, как $|e|$, а двугранный угол при ребре $e$, как $\\alpha_e$. Пусть $\\alpha(W) = \\{\\alpha_e: \\,\\,\\,\\, e \\in E\\}$. Пусть $X \\subset \\mathbb{R}$ конечное множество вещественных чисел, содержащее $\\alpha(W)$ и $\\pi$. Обозначим $L(X)$ - линейную оболочку $X$.<br>Линейная функция $f: L(X) \\to \\mathbb{R}$, для которой $f(\\pi) = 0$ - *функция Дена многогранника* $W$, а число $\\Delta_f(W) = \\displaystyle \\sum_{e \\in E}|e|\\cdot f(\\alpha_e)$ - *инвариант Дена многогранника* $W$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-7\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(W\\)</span> - многогранник. Пусть\n<span class=\"math inline\">\\(E\\)</span> множество ребер <span\nclass=\"math inline\">\\(W\\)</span>. Обозначим длину ребра <span\nclass=\"math inline\">\\(e \\in E\\)</span>, как <span\nclass=\"math inline\">\\(|e|\\)</span>, а двугранный угол при ребре <span\nclass=\"math inline\">\\(e\\)</span>, как <span\nclass=\"math inline\">\\(\\alpha_e\\)</span>. Пусть <span\nclass=\"math inline\">\\(\\alpha(W) = \\{\\alpha_e: \\,\\,\\,\\, e \\in\nE\\}\\)</span>. Пусть <span class=\"math inline\">\\(X \\subset\n\\mathbb{R}\\)</span> конечное множество вещественных чисел, содержащее\n<span class=\"math inline\">\\(\\alpha(W)\\)</span> и <span\nclass=\"math inline\">\\(\\pi\\)</span>. Обозначим <span\nclass=\"math inline\">\\(L(X)\\)</span> - линейную оболочку <span\nclass=\"math inline\">\\(X\\)</span>.<br>Линейная функция <span\nclass=\"math inline\">\\(f: L(X) \\to \\mathbb{R}\\)</span>, для которой <span\nclass=\"math inline\">\\(f(\\pi) = 0\\)</span> - <em>функция Дена\nмногогранника</em> <span class=\"math inline\">\\(W\\)</span>, а число <span\nclass=\"math inline\">\\(\\Delta_f(W) = \\displaystyle \\sum_{e \\in E}|e|\\cdot\nf(\\alpha_e)\\)</span> - <em>инвариант Дена многогранника</em> <span\nclass=\"math inline\">\\(W\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "равнодополняемые",
+        "data": "[Многогранники](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5) $A$ и $B$ - *равнодополняемые*, если существуют [многогранники](https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5) $W^A$ и $W^B$, которые можно можно [разрезать на многогранники](#definition-3) $W^A_0, \\ldots W^A_n$ и $W^B_0, \\ldots W^B_n$ соответственно, так, чтобы $W^A_0 = A, \\,\\,\\,\\, W^B_0 = B$ и $W^A_i = W^B_i \\,\\,\\,\\, \\forall i \\in \\{1, \\ldots, n\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-8\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5\">Многогранники</a>\n<span class=\"math inline\">\\(A\\)</span> и <span\nclass=\"math inline\">\\(B\\)</span> - <em>равнодополняемые</em>, если\nсуществуют <a\nhref=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5\">многогранники</a>\n<span class=\"math inline\">\\(W^A\\)</span> и <span\nclass=\"math inline\">\\(W^B\\)</span>, которые можно можно <a\nhref=\"#definition-3\">разрезать на многогранники</a> <span\nclass=\"math inline\">\\(W^A_0, \\ldots W^A_n\\)</span> и <span\nclass=\"math inline\">\\(W^B_0, \\ldots W^B_n\\)</span> соответственно, так,\nчтобы <span class=\"math inline\">\\(W^A_0 = A, \\,\\,\\,\\, W^B_0 = B\\)</span>\nи <span class=\"math inline\">\\(W^A_i = W^B_i \\,\\,\\,\\, \\forall i \\in \\{1,\n\\ldots, n\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "тетраэдр Хилла",
+        "data": "Тетраэдр, в основании которого расположен равнобедренный прямоугольный треугольник, высота которого падает на один из концов гипотенузы и равна длине катета основания - *тетраэдр Хилла*.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-9\">Определение:</a></strong><p>Тетраэдр, в основании которого расположен равнобедренный\nпрямоугольный треугольник, высота которого падает на один из концов\nгипотенузы и равна длине катета основания - <em>тетраэдр Хилла</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Координатный тетраэдр",
+        "data": "*Координатный тетраэдр* - тетраэдр, координаты которого в прямоугольной системе координат равны: $(0, 0, 0, 0), \\,\\,\\,\\, (1, 0, 0, 0), \\,\\,\\,\\, (0, 1, 0, 0), \\,\\,\\,\\, (0, 0, 0, 1)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-volume-denh#definition-10\">Определение:</a></strong><p><em>Координатный тетраэдр</em> - тетраэдр, координаты которого в\nпрямоугольной системе координат равны: <span class=\"math inline\">\\((0,\n0, 0, 0), \\,\\,\\,\\, (1, 0, 0, 0), \\,\\,\\,\\, (0, 1, 0, 0), \\,\\,\\,\\, (0, 0,\n0, 1)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    }
+]

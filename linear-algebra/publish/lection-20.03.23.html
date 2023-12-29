@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#квадратичные-формы-над-полями-действительных-и-комплексных-чисел"
+id="toc-квадратичные-формы-над-полями-действительных-и-комплексных-чисел">Квадратичные
+формы над полями действительных и комплексных чисел</a>
+<ul>
+<li><a href="#индексы-инерции" id="toc-индексы-инерции">Индексы
+инерции</a></li>
+<li><a href="#положительно-определенные-квадратичные-функции"
+id="toc-положительно-определенные-квадратичные-функции">Положительно
+определенные квадратичные функции</a>
+<ul>
+<li><a href="#критерий-сильвестра" id="toc-критерий-сильвестра">Критерий
+Сильвестра</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1
+id="квадратичные-формы-над-полями-действительных-и-комплексных-чисел">Квадратичные
+формы над полями действительных и комплексных чисел</h1>
+<hr />
+<p>Пусть <span class="math inline">\(q: V \to F\)</span> - квадратичная
+функция, <span class="math inline">\(F\)</span> - это <span
+class="math inline">\(\mathbb{R}\)</span> или <span
+class="math inline">\(\mathbb{C}\)</span>. Тогда сущесвтует базис, в
+котором <span class="math inline">\(q\)</span> имеет канонический вид:
+<span class="math inline">\(q(x) = \lambda_1 x_1^2 + \ldots + \lambda_n
+x_n^2\)</span>. Считаем, что <span class="math inline">\(\lambda_1 \ne
+0, \ldots, \lambda_r \ne 0\)</span> и <span
+class="math inline">\(\lambda_{r + 1} = 0, \ldots, \lambda_{n} =
+0\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Над <span
+class="math inline">\(\mathbb{C}\)</span> в <span
+class="math inline">\(V\)</span> существует базис, в котором</p>
+<p><span class="math inline">\(q(x) = x_1^2 + \ldots +
+x_r^2\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Над <span
+class="math inline">\(\mathbb{R}\)</span> в <span
+class="math inline">\(V\)</span> существует базис, в котором <span
+class="math inline">\(q(x) = x_1^2 + \ldots + x_k^2 - x_{k + 1}^2 -
+\ldots - x_{k + l}^2\)</span>, <span class="math inline">\(k + l =
+0\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\lambda_i =
+\frac{1}{\sqrt{|\lambda_i|}} \,\,\,\,\blacksquare\)</span></p>
+<h3 id="индексы-инерции">Индексы инерции</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a>
+<br><br><span class="math inline">\(k\)</span> - <em>положительный
+индекс инерции</em>.<br><br><span class="math inline">\(l\)</span> -
+<em>отрицательный индекс инерции</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Положительный и
+отрицательный индексы инерции инварианты вещественной квадратичной
+функции <span class="math inline">\(q: V \to \mathbb{R}\)</span>, то
+есть, если в базисах <span class="math inline">\(e = \{e_1, \ldots,
+e_n\}\)</span> и <span class="math inline">\(f = \{f_1, \ldots,
+f_n\}\,\,\,\, q\)</span> имеет вид:</p>
+<p><span
+class="math display">\[q(x)=x_1^2+\ldots+x_k^2-x_{k+1}^2-\ldots-x_{k+l}^2\]</span>
+<span
+class="math display">\[q(x)=\tilde{x}_1^2+\ldots+\tilde{x}_s^2-\tilde{x}_{s+1}^2-\ldots-\tilde{x}_{s+t}^2\]</span>
+соответственно, то <span class="math inline">\(k = s\)</span> и <span
+class="math inline">\(l = t\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(k + l = s + t =
+r\)</span>, то есть достаточно доказать, что <span
+class="math inline">\(k = s\)</span>. Пусть <span
+class="math inline">\(k \ne s\)</span>. Без ограничения общности
+считаем, что <span class="math inline">\(s &gt; k\)</span>. Рассмотрим
+подпространства <span class="math inline">\(U = &lt;f_1, \ldots,
+f_s&gt;\)</span> и <span class="math inline">\(W = &lt;e_{k + 1},
+\ldots, e_{k + l}, \ldots, e_n&gt;\)</span>. Докажем, что <span
+class="math inline">\(U \cap W \ne \varnothing\)</span>. По формуле
+Грассмана: <span class="math inline">\(\dim U \cap W = \dim U + \dim W -
+\dim U \cup W = s + n - k - \dim U \cup W &gt; 0\)</span>. То есть <span
+class="math inline">\(\exists x \in U \cap W\)</span>. Тогда <span
+class="math inline">\(q(x) = \tilde{x}_1^2+\ldots+\tilde{x}_s^2 &gt;
+0\)</span> и <span class="math inline">\(q(x) =
+-x_{k+1}^2-\ldots-x_{k+l}^2 &lt; 0\)</span>. Противоречие <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="положительно-определенные-квадратичные-функции">Положительно
+определенные квадратичные функции</h2>
+<hr />
+<p><span class="math inline">\(V\)</span> - векторное пространство над
+<span class="math inline">\(\mathbb{R}\)</span>. <span
+class="math inline">\(q: V \to \mathbb{R}\)</span> - квадратичная
+функция.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> <span
+class="math inline">\(q\)</span> <em>положительно определена</em>, если
+<span class="math inline">\(\forall x \in V,\,\,\,\, x \ne 0 \,\,\,\,
+q(x) &gt; 0\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> <span
+class="math inline">\(q\)</span> <em>отрицательно определена</em>, если
+<span class="math inline">\(\forall x \in V,\,\,\,\, x \ne 0 \,\,\,\,
+q(x) &lt; 0\)</span>.</p>
+<h3 id="критерий-сильвестра">Критерий Сильвестра</h3>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (критерий
+Сильвестра) Вещественная симметричекая билинейная функция <span
+class="math inline">\(\beta: V\times V \to \mathbb{R}\)</span>
+положительно определена <span
+class="math inline">\(\Leftrightarrow\)</span> все угловые миноры
+матрицы <span class="math inline">\(B\)</span> функции <span
+class="math inline">\(\beta\)</span> положительны.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Leftarrow\]</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#statement-3">По
+теореме</a> существует базис, в котором <span
+class="math inline">\(\beta(x, x) = q(x) =
+\frac{\Delta_1}{\Delta_0}x_1^2 + \ldots \frac{\Delta_n}{\Delta_{n -
+1}}x_n^2 &gt; 0 \,\,\,\, \forall x \ne 0\)</span>. <span
+class="math display">\[\Rightarrow\]</span> Индукция по <span
+class="math inline">\(n\)</span>. Рассмотрим попространство <span
+class="math inline">\(U = &lt;e_1, \ldots, e_{n - 1}&gt;\)</span> по
+предположению индукции в матрице ограничения <span
+class="math inline">\(q\)</span> на <span
+class="math inline">\(U\)</span> все угловые миноры положительны, то
+есть <span class="math inline">\(\Delta_1 &gt; 0, \ldots, \Delta_{n - 1}
+&gt; 0\)</span>. Докажем, что <span class="math inline">\(\Delta_n &gt;
+0\)</span>. Существует базис <span class="math inline">\(f\)</span>, в
+котором матрица <span class="math inline">\(D\)</span> функции <span
+class="math inline">\(\beta\)</span> диагональная с положительными
+числами на диагонали, так как <span class="math inline">\(b_{ii} =
+\beta(f_i, f_i) &gt; 0 \,\,\,\, \forall i \in \{1, \ldots, n\}\)</span>,
+то есть <span class="math inline">\(\det(D) &gt; 0\)</span>. <span
+class="math inline">\(\Delta_n = \det(B) = \det(C_{f \to e}^T D C_{f \to
+e}) = \det(C_{f \to e})^2\det(D) &gt; 0
+\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

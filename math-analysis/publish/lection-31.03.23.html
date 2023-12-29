@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#норма-метрика" id="toc-норма-метрика">Норма,
+метрика</a></li>
+<li><a href="#пределы" id="toc-пределы">Пределы</a>
+<ul>
+<li><a href="#теорема-больцано-вейерштрасса"
+id="toc-теорема-больцано-вейерштрасса">Теорема
+Больцано-Вейерштрасса</a></li>
+</ul></li>
+<li><a href="#прицип-полноты-кантора"
+id="toc-прицип-полноты-кантора">“Прицип полноты Кантора”</a></li>
+<li><a href="#расстояние-между-подмножествами"
+id="toc-расстояние-между-подмножествами">Расстояние между
+подмножествами</a></li>
+</ul>
+</nav>
+</details>
+<h2 id="норма-метрика">Норма, метрика</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Функция
+<span class="math inline">\(f: \mathbb{R}^n \to \mathbb{R}\)</span> -
+<em>норма</em>, если:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall x \in \mathbb{R}^n \,\,\,\, f(x)
+\ge 0\)</span></li>
+<li><span class="math inline">\(f(x) = 0 \Leftrightarrow x =
+0\)</span></li>
+<li><span class="math inline">\(\forall x \in \mathbb{R}^n, \,\,\,\,
+\lambda \in \mathbb{R} \,\,\,\, |\lambda|\cdot f(x) = f(\lambda
+x)\)</span></li>
+<li><span class="math inline">\(\forall x, y \in \mathbb{R}^n \,\,\,\,
+f(x + y) \le f(x) + f(y)\)</span></li>
+</ol>
+<p><span class="math inline">\(f(x)\)</span> обозначается <span
+class="math inline">\(||x||\)</span></p>
+<p>Скалярное произведение на <span
+class="math inline">\(\mathbb{R}^n\)</span> - это попарное произведение
+координат векторов (точек). (нет)</p>
+<p>Скалярное произведение векторов (точек) <span class="math inline">\(x
+\in \mathbb{R}^n\)</span> и <span class="math inline">\(y \in
+\mathbb{R}^n\)</span> обозначается <span class="math inline">\((x,
+y)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Норма на
+<span class="math inline">\(\mathbb{R}^n\)</span> задается так: <span
+class="math inline">\(||x|| = \sqrt{(x, x)}\)</span>.</p>
+<p><strong>Замечание:</strong> Норм много, и это не единственный способ
+задать норму.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Функция
+<span class="math inline">\(\rho: \mathbb{R}^n \times \mathbb{R}^n \to
+\mathbb{R}\)</span> - <em>метрика (функция расстояния)</em>, если:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall x, y \in \mathbb{R}^n \,\,\,\,
+\rho(x, y) \ge 0\)</span></li>
+<li><span class="math inline">\(\rho(x, y) = 0 \Leftrightarrow x =
+y\)</span></li>
+<li><span class="math inline">\(\forall x, y \in \mathbb{R}^n \,\,\,\,
+\rho(x, y) = \rho(y, x)\)</span></li>
+<li><span class="math inline">\(\forall x, y, z \in \mathbb{R}^n
+\,\,\,\, \rho(x, y) \le \rho(x, z) + \rho(y, z)\)</span></li>
+</ol>
+<p>На <span class="math inline">\(\mathbb{R}^n\)</span> зададим функцию
+расстояния так: <span class="math inline">\(\rho(x, y) = ||x -
+y||\)</span>.</p>
+<p><strong>Замечание:</strong> Если хотите строгости, то посмотрите
+линал и топологию.</p>
+<h2 id="пределы">Пределы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a>
+Последовательность <span class="math inline">\(\{x\}_{k =
+1}^{\infty}\)</span> - <em>сходящаяся (имеет предел)</em> равный <span
+class="math inline">\(a \in \mathbb{R}^n\)</span>, если <span
+class="math inline">\(\forall \varepsilon &gt; 0 \,\,\,\, \exists K \in
+N: \,\,\,\, \forall k &gt; K \,\,\,\, \rho(x_k, a) &lt;
+\varepsilon\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> <span
+class="math inline">\(\exists \displaystyle\lim_{k \to \infty}\{x_k\} =
+a \Leftrightarrow \forall i \in \{1, \ldots, n\} \,\,\,\,\exists
+\displaystyle\lim_{k \to \infty}\{x_{k_i}\} = a_i\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span> <span
+class="math inline">\(\forall \varepsilon &gt; 0 \,\,\,\, \exists K \in
+\mathbb{N}: \,\,\,\, \forall k &gt; K \,\,\,\, \sqrt{\displaystyle
+\sum_{i = 1}^{n}(x_{k_i} - a_i)^2} &lt; \varepsilon \Rightarrow \forall
+\in \{1, \ldots, n\} \,\,\,\, |x_{k_i} - a_i| &lt; \varepsilon\)</span>
+<span class="math display">\[\Leftarrow\]</span> <span
+class="math inline">\(\forall \in \{1, \ldots, n\} \,\,\,\, |x_{k_i} -
+a_i| &lt; \varepsilon \Rightarrow \sqrt{\displaystyle \sum_{i =
+1}^{n}(x_{k_i} - a_i)^2} &lt; \sqrt{n}\varepsilon
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Множество
+<span class="math inline">\(A \subset \mathbb{R}^n\)</span> -
+<em>ограничено</em>, если содержится в некотором открытом шаре.</p>
+<h3 id="теорема-больцано-вейерштрасса">Теорема
+Больцано-Вейерштрасса</h3>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a>
+(Больцано-Вейерштрасса) Пусть последовательность <span
+class="math inline">\(\{x_k\}_{k = 1}^{\infty}\)</span> - ограниченное
+множество. Тогда у <span class="math inline">\(\{x_k\}\)</span>
+существует сходящаяся подпоследовательность <span
+class="math inline">\(\{x_{k_m}\}_{m = 1}^{\infty}\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\{x_k\}_{k =
+1}^{\infty}\)</span> - ограничена, а значит каждая из
+“последовательностей-координат” <span
+class="math inline">\(\{x_{ik}\}_{k = 1}^{\infty}\)</span> (<span
+class="math inline">\(i \in \{1, \ldots, n\}\)</span> - индекс
+координаты, <span class="math inline">\(k\)</span> - номер элемента
+последовательности) ограничена, а значит из <span
+class="math inline">\(\{x_{1k}\}_{k = 1}^{\infty}\)</span> можно
+выделить сходящуюся подпоследовательность <span
+class="math inline">\(\{x_{1k_m}\}_{m = 1}^{\infty}\)</span>. Далее
+возьмем в последовательности <span class="math inline">\(\{x_{2k}\}_{k =
+1}^{\infty}\)</span> элементы с индексами <span
+class="math inline">\(k_m\)</span> и выберем в полученной
+последовательности сходящуюся подпоследовательность <span
+class="math inline">\(\{x_{2{k_m}_l}\}_{l = 1}^{\infty}\)</span>
+(существует, т.к. каждая “последовательность-координата” ограничена).
+Подпоследовательность <span class="math inline">\(\{x_{1k}\}_{k =
+1}^{\infty}\)</span> c индексами <span
+class="math inline">\({k_m}_l\)</span> также сходится. Продолжая
+выбирать сходящиеся подпоследовательности, получим ответ <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="прицип-полноты-кантора">“Прицип полноты Кантора”</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-5"></a> Множество
+<span class="math inline">\(\Pi_{[a, b]} = \{x \in \mathbb{R}^n:
+\,\,\,\, a_i \le x_i \le b_i\}\)</span> - <em>параллелепипед</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(\{a_k\}\)</span> и <span
+class="math inline">\(\{b_k\}\)</span>, таковы, что <span
+class="math inline">\(\Pi_{[a_{k+1}, b_{k+1}]} \subset \Pi_{[a_k,
+b_k]}\)</span> и <span class="math inline">\(\forall i \in \{1, \ldots,
+n\} \,\,\,\, |a_{k_i} - b_{k_i}| \to 0, \,\,\,\, k \to \infty\)</span>.
+Тогда <span class="math inline">\(\exists ! \xi: \,\,\,\, \xi \in
+\Pi_{[a_k, b_k]} \,\,\,\, \forall k\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall i \in
+\{1, \ldots, n\} \,\,\,\, [a_{k+1}, b_{k +1}] \subset [a_k,
+b_k]\)</span> и <span class="math inline">\(|b_{k_i} - a_{k_i}| \to 0,
+\,\,\,\, k \to \infty\)</span>, значит по принципу поноты Кантора <span
+class="math inline">\(\exists ! \xi_i: \,\,\,\, \xi_i \in [a_{k_i},
+b_{k_i}] \forall k\)</span>. Рассмотрим <span class="math inline">\(\xi
+= (\xi_1, \ldots, \xi_n)\)</span>, удовлетворяющий условиям теоремы
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="расстояние-между-подмножествами">Расстояние между
+подмножествами</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-6"></a> Пусть <span
+class="math inline">\(A, B \subset \mathbb{R}^n\)</span>. Тогда <span
+class="math inline">\(\rho(A, B) = \displaystyle\inf_{a \in A, b \in
+B}\rho(a, b)\)</span> - <em>расстояние между множествами</em> <span
+class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Пусть <span
+class="math inline">\(A, B \subset \mathbb{R}^n\)</span> - замкнутые,
+<span class="math inline">\(A\)</span> - ограничено. Если <span
+class="math inline">\(A \cap B = \varnothing\)</span>, то <span
+class="math inline">\(\rho(A, B) &gt; 0\)</span>.</p>
+<p><em>Доказательство:</em> (от противного) Пусть <span
+class="math inline">\(\displaystyle\inf_{x \in A, y \in B}\rho(x, y) =
+0\)</span>. Тогда <span class="math inline">\(\forall k \in \mathbb{N}
+\,\,\,\, \exists x_k \in A, y_k \in B: \,\,\,\, \rho(x_k, y_k) &lt;
+\frac{1}{k} \Rightarrow \{x_k\}_{k = 1}^{\infty}\)</span> - ограничена,
+а значит существует сходящаяся подпоследовательность <span
+class="math inline">\(\{x_{k_m}\}_{m = 1}^{\infty}\)</span> и <span
+class="math inline">\(\displaystyle \lim_{m\to \infty} x_{k_m} = x_0 \in
+A\)</span>, но <span class="math inline">\(\rho(x_0, y_{k_m}) \le
+\rho(x_0, x_{k_m}) + \rho(x_{k_m}, y_{k_m}) &lt; \varepsilon +
+\frac{1}{k} \Rightarrow \exists \displaystyle \lim_{m\to \infty}y_{k_m}
+= x_0 \in B\)</span> противоречие <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> <span
+class="math inline">\(A \subset \mathbb{R}^n\)</span> - замкнуто, <span
+class="math inline">\(x \not\in A\)</span>. Тогда <span
+class="math inline">\(\exists y \in A: \,\,\,\, \rho(x, y) = \rho(x,
+A)\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall k \in
+\mathbb{N} \,\,\,\, \exists y_k \in A: \,\,\,\, \rho(x, y_k) &lt;
+\rho(x, A) + \frac{1}{k}\)</span>.</p>
+<p><span class="math inline">\(\forall k \in \mathbb{N} \,\,\,\, \rho(x,
+y_k) \le \rho(x, A) + 1 \Rightarrow \{y_k\}\)</span> - ограничена, а
+значит существует сходящаяся подпоследовательность <span
+class="math inline">\(\{y_{k_m}\}\)</span> и <span
+class="math inline">\(\displaystyle \lim_{m\to \infty}\{y_{k_m}\} = y_0
+\in A\)</span>, т.к. <span class="math inline">\(A\)</span> -
+замкнуто.</p>
+<p><span class="math display">\[\rho(x, y_{k_m}) &lt; \rho(x, A) +
+\frac{1}{k}\]</span> <span class="math display">\[\Downarrow\]</span>
+<span class="math display">\[\rho(x, y_0) \le \rho(x, A)\]</span> и, так
+как <span class="math inline">\(\rho(x, A)\)</span> точная нижняя грань,
+<span class="math inline">\(\rho(x, y_0) \ge \rho(x, A) \Rightarrow
+\exists y = y_0\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

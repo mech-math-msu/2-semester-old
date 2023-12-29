@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#свойства-плоскостей" id="toc-свойства-плоскостей">Свойства
+плоскостей</a>
+<ul>
+<li><a href="#аффинные-линейные-функции"
+id="toc-аффинные-линейные-функции">Аффинные линейные функции</a>
+<ul>
+<li><a href="#координатная-запись-аффинных-линейных-функций"
+id="toc-координатная-запись-аффинных-линейных-функций">Координатная
+запись аффинных линейных функций</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="свойства-плоскостей">Свойства плоскостей</h1>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>, <span class="math inline">\(\pi = a + U\)</span> и
+<span class="math inline">\(\tau = b + W\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскости</a>.
+Тогда <span class="math inline">\(\pi \cap \tau = \varnothing\)</span>
+или <span class="math inline">\(\pi \cap \tau = c + U \cap W\)</span>,
+где <span class="math inline">\(c \in \pi \cap \tau\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(\pi \cap \tau \ne \varnothing
+\Rightarrow \exists c \in \pi \cap \tau \Rightarrow\)</span></p>
+<p><span class="math inline">\(\pi = c + U\)</span> и <span
+class="math inline">\(\tau = c + W \Rightarrow\)</span></p>
+<p><span class="math inline">\(\forall d \in \tau \cap \pi \,\,\,\, d =
+c + u = c + w \Rightarrow u = w \Rightarrow \pi \cap \tau = c + U \cap
+W\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-0"></a> <em>Аффинная
+оболочка</em> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">точек</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинного
+пространства</a> - это <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскость</a>
+наименьшей <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5">размерности</a>,
+содержащая эти точки. Обозначается: <span
+class="math inline">\(&lt;...&gt;_A\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>, <span class="math inline">\(\pi = a + U\)</span> и
+<span class="math inline">\(\tau = b + W\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскости</a>.
+Тогда <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-0">аффинная
+оболочка</a> <span class="math inline">\(&lt;\pi, \tau&gt;_A = a +
+&lt;\overline{ab}, U + W&gt;\)</span>.</p>
+<p><em>Доказательство:</em> туда обратно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>, <span class="math inline">\(\dim \mathbb{A} =
+n\)</span>, <span class="math inline">\(\pi = a + U\)</span> и <span
+class="math inline">\(\tau = b + W\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскости</a>.</p>
+<ol type="1">
+<li>Если <span class="math inline">\(\pi \cap \tau =
+\varnothing\)</span>, то <span class="math inline">\(\dim &lt;\pi,
+\tau&gt; = \dim \pi + \dim \tau - \dim U \cap W\)</span></li>
+<li>Если <span class="math inline">\(\pi \cap \tau \ne
+\varnothing\)</span>, то <span class="math inline">\(\dim &lt;\pi,
+\tau&gt; = \dim \pi + \dim \tau - \dim U \cap W + 1\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(\overline{ab} \in U + W\)</span>.
+По формуле Грассмана имеем <span class="math inline">\(\dim&lt;\pi,
+\tau&gt;_A = \dim(U + W) = \dim U + \dim W - \dim(U \cap W)\)</span>.
+Иначе, <span class="math inline">\(\dim &lt;\pi, \tau&gt;_A = \dim (U +
+W) + 1\)</span> и далее опять по формуле Грассмана <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>, <span class="math inline">\(\dim \mathbb{A} =
+n\)</span>, <span class="math inline">\(\pi = a + U\)</span> и <span
+class="math inline">\(\tau = b + W\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскости</a>.
+<span class="math inline">\(\pi\)</span> <em>параллельна</em> <span
+class="math inline">\(\tau\)</span> (<span class="math inline">\(\pi
+\parallel \tau\)</span>), если <span class="math inline">\(U \subset
+W\)</span> или <span class="math inline">\(W \subset U\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>, <span class="math inline">\(\dim \mathbb{A} =
+n\)</span>, <span class="math inline">\(\pi = a + U\)</span> и <span
+class="math inline">\(\tau = b + W\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскости</a>,
+<span class="math inline">\(\pi \parallel \tau\)</span>. Тогда <span
+class="math inline">\(\pi \cap \tau = \varnothing\)</span>, или <span
+class="math inline">\(\tau \subset \pi\)</span>, или <span
+class="math inline">\(\pi \subset \tau\)</span>.</p>
+<p><em>Доказательство:</em> <a href="#statement-0">см. здесь</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>, <span class="math inline">\(\dim \mathbb{A} =
+n\)</span>, <span class="math inline">\(\pi = a + U\)</span> и <span
+class="math inline">\(\tau = b + W\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскости</a>.
+<span class="math inline">\(\pi\)</span> и <span
+class="math inline">\(\tau\)</span> <em>скрещиваются</em>, если <span
+class="math inline">\(\pi \cap \tau \ne \varnothing\)</span> и <span
+class="math inline">\(\pi \nparallel \tau\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>, <span class="math inline">\(\pi\)</span> и <span
+class="math inline">\(\tau\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5">гиперплоскости</a>.
+Если <span class="math inline">\(\pi \cap \tau = \varnothing\)</span>,
+то <span class="math inline">\(\pi \parallel \tau\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<h2 id="аффинные-линейные-функции">Аффинные линейные функции</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a> <span
+class="math inline">\(f: \mathbb{A} \to F\)</span> - <em>аффинная
+линейная функция</em>, если существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0">линейная
+функция</a> <span class="math inline">\(\varphi\)</span> на V, такая,
+что <span class="math inline">\(\forall a, b \in \mathbb{A} \,\,\,\,
+\overline{f(a)f(b)} = \varphi(\overline{ab})\)</span>. <span
+class="math inline">\(F\)</span> рассматривается как одномерное <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">векторное
+пространство</a> (<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7">базис</a>
+в <span class="math inline">\(F\)</span> - <span
+class="math inline">\(1\)</span>).</p>
+<h3 id="координатная-запись-аффинных-линейных-функций">Координатная
+запись аффинных линейных функций</h3>
+<hr />
+<p>Пусть <span class="math inline">\((O, e)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3">аффинная
+система координат</a>, <span class="math inline">\(f\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-3">аффинная
+линейная функция</a>, <span class="math inline">\(e = \{e_1, \ldots,
+e_n\}\)</span>. <span class="math inline">\(\forall a \in \mathbb{A}
+\,\,\,\, a = O + \overline{Oa}\)</span>. Пусть <span
+class="math inline">\(x_1, \ldots, x_n\)</span> координаты <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">точки</a>
+<span class="math inline">\(a\)</span> в <span class="math inline">\((O,
+e)\)</span>. <span class="math inline">\(f(a) = f(O) +
+\varphi(\overline{Oe}) = \alpha + \varphi(x_1 e_1 +\ldots + x_n e_n) =
+\alpha + \alpha_1 x_1 + \ldots + \alpha_n x_n\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(f\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-3">аффинная
+линейная функция</a>. <em>Ядро</em> <span
+class="math inline">\(f\)</span> - это <span class="math inline">\(\ker
+f = \{a \in \mathbb{A}: \,\,\,\, f(a) = 0\}\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Пусть <span
+class="math inline">\(f\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-3">аффинная
+линейная функция</a>. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(\ker f\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-6">аффинное
+подпространство</a> или <span class="math inline">\(\ker f =
+\varnothing\)</span>.</li>
+<li>Если <span class="math inline">\(\ker f \ne \varnothing\)</span>, то
+<span class="math inline">\(ker f = c + \ker \varphi\)</span>, где <span
+class="math inline">\(f(c) = 0\)</span> и <span
+class="math inline">\(\varphi\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-3">линейная
+часть аффинной функции</a> <span class="math inline">\(f\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<p>1-2. Пусть <span class="math inline">\(\ker f \ne \varnothing
+\Rightarrow \exists a \in \mathbb{A}: \,\,\,\, f(a) = 0\)</span>. <span
+class="math inline">\(f(a + v) = f(a) + \varphi(v) \Rightarrow \forall v
+\in \ker \varphi \,\,\,\, f(a + v) = 0 \,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#плоскость-в-аффинном-пространстве-как-множество-решений-совместной-системы-линейных-уравнений"
+id="toc-плоскость-в-аффинном-пространстве-как-множество-решений-совместной-системы-линейных-уравнений">Плоскость
+в аффинном пространстве, как множество решений совместной системы
+линейных уравнений</a>
+<ul>
+<li><a href="#аффинные-отображения"
+id="toc-аффинные-отображения">Аффинные отображения</a></li>
+<li><a href="#какая-то-муть-про-матрицы"
+id="toc-какая-то-муть-про-матрицы">Какая-то муть про матрицы</a></li>
+<li><a href="#аффинные-операторы" id="toc-аффинные-операторы">Аффинные
+операторы</a></li>
+<li><a href="#аффинно-независимая-система-точек"
+id="toc-аффинно-независимая-система-точек">Аффинно независимая система
+точек</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1
+id="плоскость-в-аффинном-пространстве-как-множество-решений-совместной-системы-линейных-уравнений">Плоскость
+в аффинном пространстве, как множество решений совместной системы
+линейных уравнений</h1>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a> <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>, <span class="math inline">\(\dim \mathbb{A} =
+n\)</span>.</p>
+<ol type="1">
+<li><p>Пусть дана совместная система линейных уравнений <span
+class="math inline">\((*)\)</span> с матрицей коэффицентов <span
+class="math inline">\(A\)</span>. Тогда множество ее решений совпадает с
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3">координатами</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">точек</a>
+некоторой <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскости</a>
+<span class="math inline">\(\pi \subset \mathbb{A}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5">размерности</a>
+<span class="math inline">\(n - \operatorname{rk} A\)</span>.</p></li>
+<li><p>Пусть дана <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскость</a>
+<span class="math inline">\(\pi \subset \mathbb{A}\)</span>. Тогда
+существует совместная система линейных уравнений, такая, что множество
+ее решений совпадает с <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3">координатами</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">точек</a>
+<span class="math inline">\(\pi\)</span>.</p></li>
+</ol>
+<p><em>Доказательство:</em> ну, просто порассуждать <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="аффинные-отображения">Аффинные отображения</h2>
+<hr />
+<details>
+<summary>
+Хм
+</summary>
+Кажется, что это уже было
+</details>
+<p>Пусть <span class="math inline">\((\mathbb{A}, U)\)</span> и <span
+class="math inline">\((\mathbb{B}, W)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинные
+пространства</a>.</p>
+<p><strong>Определение:</strong><a name="definition-0"></a> <span
+class="math inline">\(f: \mathbb{A} \to \mathbb{B}\)</span> -
+<em>аффинное отображение</em>, если существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-1">линейное
+отображение</a> <span class="math inline">\(\varphi: U \to W\)</span>,
+такое, что <span class="math inline">\(\overline{f(x)f(y)} =
+\varphi(\overline{xy})\)</span>, при этом <span
+class="math inline">\(\varphi\)</span> - <em>линейная часть</em>
+(<em>дифференциал</em>) аффинного отображения <span
+class="math inline">\(f\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Композиция <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1">аффинных
+отображений</a> - аффинное отображение, <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0">линейная
+часть</a> которого является композицией линейных частей исходных
+отображений.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1">Аффинное
+отображение</a> <span class="math inline">\(\Phi\)</span> - биекция
+<span class="math inline">\(\Leftrightarrow\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0">дифференциал</a>
+<span class="math inline">\(\Phi\)</span> является биекцией
+соответствующих векторных пространств.</p>
+<p><em>Доказательство:</em> было <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="какая-то-муть-про-матрицы">Какая-то муть про матрицы</h2>
+<hr />
+<h2 id="аффинные-операторы">Аффинные операторы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> <em>Аффинный
+оператор</em> - это <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1">аффинное
+отображение</a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинного
+пространства</a> <span class="math inline">\(\mathbb{A}\)</span> в
+себя.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(\Phi\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1">аффинное
+отображение</a>. <em>Ранг</em> <span class="math inline">\(\Phi
+(\operatorname{rk}\Phi)\)</span> - это ранг матрицы <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0">линейной
+части</a> <span class="math inline">\(\Phi\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1">Аффинный
+оператор</a> <span class="math inline">\(\Phi\)</span>
+<em>невырожден</em>, если <span
+class="math inline">\(\operatorname{rk}\Phi =
+\operatorname{rk}\mathbb{A}\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Множество
+всех <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-3">невырожденных</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1">операторов</a>
+аффинного пространства <span class="math inline">\(\mathbb{A}\)</span>
+образует группу относительно композиции.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-5"></a> Эта группа
+обозначается <span
+class="math inline">\(\operatorname{Aff}(\mathbb{A})\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\((\mathbb{A}, V)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>. <em>Сдвиг на вектор</em> <span class="math inline">\(v
+\in V\)</span> - это отображение <span class="math inline">\(f_v:
+\mathbb{A} \to \mathbb{A} \,\,\,\, f_v: a \mapsto a + v\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a></p>
+<ol type="1">
+<li><a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-4">Сдвиг
+на вектор</a> - это <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1">аффинный
+оператор</a> с <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-1">тождественной</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0">линейной
+частью</a>.</li>
+<li>Любой <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1">аффинный
+оператор</a> с <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-1">тождественной</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0">линейной
+частью</a> является сдвигом на вектор.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><span class="math inline">\(f_v(a) = a + v
+\,\,\,\,\blacksquare\)</span></li>
+<li>Пусть <span class="math inline">\(v = \overline{a\Phi(a)}
+\Rightarrow a + v = \Phi(a)\)</span>. Тогда <span
+class="math inline">\(\forall b \in \mathbb{A} \,\,\,\, \Phi(b) =
+\Phi(a) + \overline{ab} = a + v + \overline{ab} = b + v
+\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-6"></a> Множество
+всех <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-4">сдвигов
+на вектор</a> обозначается <span
+class="math inline">\(\operatorname{tran}\mathbb{A}\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> <span
+class="math inline">\(\operatorname{tran}\mathbb{A}\)</span> подгруппа в
+группе <span
+class="math inline">\(\operatorname{Aff}(\mathbb{A})\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-7"></a> Пусть <span
+class="math inline">\(a\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">точка</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинного
+пространства</a> <span class="math inline">\(\mathbb{A}\)</span>.
+Множество всех <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-3">невырожденных</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1">аффинных
+операторов</a> <span class="math inline">\(\Phi\)</span>, таких, что
+<span class="math inline">\(\Phi(a) = a\)</span> обозначается <span
+class="math inline">\(G_a\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a>(представление
+аффинного преобразование в виде композиции поворота и движения) Пусть
+<span class="math inline">\((\mathbb{A}, V)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>. <span class="math inline">\(a \in \mathbb{A}\)</span>.
+<span class="math inline">\(\Phi\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1">аффинное
+отображение</a>. Тогда <span class="math inline">\(\exists ! \Psi_a \in
+G_a, t_v \in \operatorname{tran}\mathbb{A}, t_w \in
+\operatorname{tran}\mathbb{A}: \,\,\,\, \Phi = t_v \circ \Psi_a = \Psi_a
+\circ t_w\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(v = \overline{a\Phi(a)} \Rightarrow
+\Phi(a) = a + v\)</span>. Пусть <span class="math inline">\(\Psi =
+(t_{v})^{-1}\circ\Phi = t_{-v}\circ\Phi\)</span>(почему?)</p>
+<p>Докажем, что <span class="math inline">\(\Psi \in G_a \,\,\,\,
+\Psi(a) = t_{-v}(\Phi(a)) = \Phi(a) - v = a\)</span>.</p>
+<p>Имеем <span class="math inline">\(\Phi = t_v\circ \Psi\)</span></p>
+<p><span class="math inline">\(\Phi = \Psi \circ \Psi^{-1} \circ t_v
+\circ \Psi\)</span>.</p>
+<p>Докажем, что <span class="math inline">\(t_w = \Psi^{-1} \circ t_v
+\circ \Psi\)</span> - сдвиг на вектор. Дифференциал <span
+class="math inline">\(t_w\)</span> равен <a
+href="#statement-1">композиции дифференциалов</a> <span
+class="math inline">\(\varphi^{-1}\varphi\)</span>, то есть
+тождественной линейной функции <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="аффинно-независимая-система-точек">Аффинно независимая система
+точек</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-8"></a> Система
+точек <span class="math inline">\(a_0, a_1, \ldots, a_s\)</span>
+<em>аффинно независима</em>, если <span class="math inline">\(\dim
+&lt;a_0, a_1, \ldots, a_s&gt;_A = s\)</span> (точек <span
+class="math inline">\(s + 1\)</span> штука).</p>
+<p><strong>Утверждение:</strong><a name="statement-7"></a> Система точек
+<span class="math inline">\(a_0, a_1, \ldots, a_s\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-8">аффинно
+независима</a> <span class="math inline">\(\Leftrightarrow\)</span>
+векторы <span class="math inline">\(a_1 - a_0, \ldots, a_s -
+a_0\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-5">линейно
+независимы</a>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\Leftarrow\]</span> <span
+class="math inline">\(&lt;a_0, a_1, \ldots, a_s&gt;_A = a_0 + &lt;a_1 -
+a_0, \ldots, a_s - a_0&gt; \Rightarrow \dim &lt;a_0, a_1, \ldots,
+a_s&gt;_A = s \,\,\,\,\blacksquare\)</span></p>
+<p><span class="math display">\[\Rightarrow\]</span> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-8"></a> Пусть <span
+class="math inline">\((O, e)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3">аффинная
+система координат</a>. Тогда <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">точки</a>
+<span class="math inline">\(a_0, a_1, \ldots, a_s\)</span> с <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3">координатами</a>
+<span class="math inline">\((x_1^0, \ldots, x_n^0), (x_1^1, \ldots,
+x_n^1), \ldots, (x_1^s, \ldots, x_n^s)\)</span> в <span
+class="math inline">\((O, e)\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-8">аффинно
+независимы</a> <span class="math inline">\(\Leftrightarrow\)</span>
+<span
+class="math inline">\(\operatorname{rk}\left(\begin{array}{ccc}x_1^0
+&amp; \ldots &amp; x_n^0\\x_1^1 &amp; \ldots &amp; x_n^1\\ &amp; \vdots
+&amp; \\x_1^s &amp; \ldots &amp; x_n^s\end{array}\right) =
+s\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span
+class="math inline">\(\operatorname{rk}\left(\begin{array}{ccc}x_1^0
+&amp; \ldots &amp; x_n^0\\x_1^1 &amp; \ldots &amp; x_n^1\\ &amp; \vdots
+&amp; \\x_1^s &amp; \ldots &amp; x_n^s\end{array}\right)\)</span> - это
+количество линейно независимых векторов среди <span
+class="math inline">\(\overline{Oa_0}, \ldots, \overline{Oa_s}\)</span>.
+<span class="math inline">\(a_1 - a_0 = Oa_1 - Oa_0
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-9"></a> Пусть <span
+class="math inline">\(a_0, \ldots, a_n\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-8">аффинно
+независимая</a> система <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">точек</a>,
+<span class="math inline">\(b_0, \ldots, b_n \in \mathbb{A}\)</span>.
+Тогда <span class="math inline">\(\exists !\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1">аффинный
+оператор</a> <span class="math inline">\(\Phi: \mathbb{A} \to
+\mathbb{A}: \,\,\,\, \Phi(a_i) = b_i \,\,\,\, \forall i \in \{1, \ldots,
+n\}\)</span>, причем, если <span class="math inline">\(b_i\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-8">аффинно
+независимы</a>, <span class="math inline">\(\Phi\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-3">невырожден</a>.</p>
+<p><em>Доказательство:</em> Существует единственный линейный оператор,
+переводящий базисные векторы <span class="math inline">\(a_1 - a_0,
+\ldots, a_n - a_0\)</span> в векторы <span class="math inline">\(b_1 -
+b_0, \ldots, b_n - b_0 \,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#конструкции-как-получить-новую-топологию-из-уже-существующих"
+id="toc-конструкции-как-получить-новую-топологию-из-уже-существующих">Конструкции
+(как получить новую топологию из уже существующих)</a>
+<ul>
+<li><a href="#дизъюнктивное-объединение"
+id="toc-дизъюнктивное-объединение">Дизъюнктивное объединение</a></li>
+<li><a href="#индуцированная-топология"
+id="toc-индуцированная-топология">Индуцированная топология</a></li>
+<li><a href="#фактор-топология"
+id="toc-фактор-топология">Фактор-топология</a>
+<ul>
+<li><a href="#факторизация-по-подмножеству"
+id="toc-факторизация-по-подмножеству">Факторизация по
+подмножеству</a></li>
+<li><a href="#склеивание-пары-точек"
+id="toc-склеивание-пары-точек">Склеивание пары точек</a></li>
+<li><a href="#склеивание-концов-отрезка"
+id="toc-склеивание-концов-отрезка">Склеивание концов отрезка</a></li>
+<li><a href="#букет" id="toc-букет">Букет</a></li>
+<li><a href="#фактор-по-сюръекции" id="toc-фактор-по-сюръекции">Фактор
+по сюръекции</a></li>
+</ul></li>
+<li><a href="#гомеоморфизм" id="toc-гомеоморфизм">Гомеоморфизм</a></li>
+<li><a href="#связность-и-линейная-связность-компоненты-связности"
+id="toc-связность-и-линейная-связность-компоненты-связности">Связность и
+линейная связность, компоненты связности</a>
+<ul>
+<li><a href="#достаточное-условие-связности"
+id="toc-достаточное-условие-связности">Достаточное условие
+связности</a></li>
+<li><a href="#линейная-связность" id="toc-линейная-связность">Линейная
+связность</a></li>
+</ul></li>
+<li><a href="#хаусдорфовость"
+id="toc-хаусдорфовость">Хаусдорфовость</a></li>
+<li><a href="#компактность" id="toc-компактность">Компактность</a>
+<ul>
+<li><a href="#способы-доказательства-гомеоморфности"
+id="toc-способы-доказательства-гомеоморфности">Способы доказательства
+гомеоморфности</a></li>
+</ul></li>
+<li><a href="#локально-постоянные-функции"
+id="toc-локально-постоянные-функции">Локально постоянные
+функции</a></li>
+<li><a href="#пределы" id="toc-пределы">Пределы</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<p><span class="math display">\[\heartsuit \,\,\,\,\mathcal{I}
+\,\,\,\,\mathcal{L}\mathcal{o}\mathcal{v}\mathcal{e}
+\,\,\,\,\mathcal{T}\mathcal{o}\mathcal{p}\mathcal{o}\mathcal{l}\mathcal{o}\mathcal{g}\mathcal{y}
+\,\,\,\,\heartsuit\]</span></p>
+<h1
+id="конструкции-как-получить-новую-топологию-из-уже-существующих">Конструкции
+(как получить новую топологию из уже существующих)</h1>
+<hr />
+<h3 id="дизъюнктивное-объединение">Дизъюнктивное объединение</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-24"></a>
+(<em>дизъюнктивное объединение</em>, <em>несвязная сумма</em>) Пусть
+заданы топологии <span class="math inline">\(\tau_x\)</span> и <span
+class="math inline">\(\tau_y\)</span> на непересекающихся множествах
+<span class="math inline">\(X\)</span> и <span
+class="math inline">\(Y\)</span>. Тогда на множестве <span
+class="math inline">\(X \cup Y\)</span> можно задать топологию <span
+class="math inline">\(\tau_x \cup \tau_y\)</span>, то есть множество
+<span class="math inline">\(A \subset X \cup Y\)</span> открыто тогда и
+только тогда, когда оно представляется в виде объединения открытых
+множеств в топологиях <span class="math inline">\(X\)</span> и <span
+class="math inline">\(Y\)</span>.</p>
+<p>Обозначается: <span class="math inline">\(X \sqcup Y\)</span>.</p>
+<h3 id="индуцированная-топология">Индуцированная топология</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-22"></a>
+(<em>индуцированная топология</em>) Пусть задана <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0">топология</a>
+<span class="math inline">\(\tau_x\)</span> на множестве <span
+class="math inline">\(X\)</span>. Пусть <span class="math inline">\(Y
+\subset X\)</span>. Тогда множество <span class="math inline">\(\tau_y =
+\{Y \cap U| \,\,\,\, U \in \tau_x\}\)</span> - топология на <span
+class="math inline">\(Y\)</span>.</p>
+<p><strong>Пример:</strong> Отрезок с индуцированной топологией <span
+class="math inline">\(\mathbb{R}\)</span>.</p>
+<h3 id="фактор-топология">Фактор-топология</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> <em>Бинарное
+отношение</em> на множестве <span class="math inline">\(X\)</span> - это
+множество <span class="math inline">\(R \subset X \times X\)</span>.
+<span class="math inline">\((x_1, x_2) \in R, \,\,\,\, x_1, x_2 \in
+X\)</span> обозначается <span class="math inline">\(x_1Rx_2\)</span> или
+вместо <span class="math inline">\(R\)</span> можно взять любой другой
+символ, например <span class="math inline">\(x_1 \sim x_2\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Бинарное
+отношение <span class="math inline">\(\sim\)</span> на множестве <span
+class="math inline">\(X\)</span> <em>отношение эквивалентности</em>,
+если <br>1. (рефлексивность) <span class="math inline">\(\forall x \in X
+\,\,\,\, x \sim x\)</span>.<br>2. (симметричность) <span
+class="math inline">\(\forall x, y \in X\)</span> если <span
+class="math inline">\(x \sim y\)</span>, то <span
+class="math inline">\(y \sim x\)</span>.<br>3. (транзитивность) <span
+class="math inline">\(\forall x, y, z \in X\)</span> если <span
+class="math inline">\(x \sim y\)</span> и <span class="math inline">\(x
+\sim z\)</span>, то <span class="math inline">\(y \sim z\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть на
+множестве <span class="math inline">\(X\)</span> задано отношение
+эквивалентности <span class="math inline">\(R\)</span>, <span
+class="math inline">\(x \in X\)</span>. Множество <span
+class="math inline">\([x]_R = \{y \in X: \,\,\,\, x \sim y\}\)</span> -
+<em>класс эквивалентности</em> элемента <span
+class="math inline">\(x\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть на
+множестве <span class="math inline">\(X\)</span> задано <a
+href="#definition-1">отношение эквивалентности</a> <span
+class="math inline">\(R\)</span>. <em>Фактор-множество</em> - это
+множество всех классов эквивалентности.</p>
+<p>Обозначается: <span class="math inline">\(X / R\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть на
+множестве <span class="math inline">\(X\)</span> задано <a
+href="#definition-1">отношение эквивалентности</a> <span
+class="math inline">\(R\)</span>. Тогда</p>
+<ol type="1">
+<li>Классы эквивалентности элементов множества <span
+class="math inline">\(X\)</span> попарно не пересекаются.</li>
+<li>Объединение всех классов эквивалентности совпадает с <span
+class="math inline">\(X\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Пусть <span class="math inline">\([x]_R \cap [y]_R \ne
+\varnothing\)</span>. Тогда <span class="math inline">\(\exists z \in
+[x]_R \cap [y]_R \Rightarrow z \sim x\)</span> и <span
+class="math inline">\(z \sim y \Rightarrow x \sim y \Rightarrow [x]_R =
+[y]_R\)</span>.</li>
+<li><span class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть на
+множестве <span class="math inline">\(X\)</span> задано <a
+href="#definition-1">отношение эквивалентности</a> <span
+class="math inline">\(R\)</span>. Отображение <span
+class="math inline">\(\pi: X \to X/R, \,\,\,\, \pi: x \mapsto
+[x]_R\)</span> - <em>каноническая проекция</em> на <a
+href="#definition-3">фактор-множество</a>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(\tau_x\)</span> <a
+href="#definition-5">топология</a> на множестве <span
+class="math inline">\(X\)</span>. Пусть на множестве <span
+class="math inline">\(X\)</span> задано <a
+href="#definition-1">отношение эквивалентности</a> <span
+class="math inline">\(R\)</span>. Тогда множество <span
+class="math inline">\(\tau_R = \{[x]_R \in X/R: \,\,\,\, \pi^{-1}([x]_R)
+\in \tau_x\}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0">топология</a>
+на <span class="math inline">\(X/R\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-5"></a> Пусть <span
+class="math inline">\(\tau_x\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0">топология</a>
+на множестве <span class="math inline">\(X\)</span>. Пусть на множестве
+<span class="math inline">\(X\)</span> задано <a
+href="#definition-1">отношение эквивалентности</a> <span
+class="math inline">\(R\)</span>. <span class="math inline">\(\tau_R =
+\{[x]_R \in X/R: \,\,\,\, \pi^{-1}([x]_R) \in \tau_x\}\)</span> -
+<em>фактор-топология</em> на <span class="math inline">\(X/R\)</span>.
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">Топологическое
+пространство</a> <span class="math inline">\((X/R, \tau_R)\)</span> -
+<em>фактор-пространство</em>.</p>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Пусть <span
+class="math inline">\((X/R, \tau_R)\)</span> - <a
+href="#definition-5">фактор-пространство</a>. Тогда каноническая
+проекция <span class="math inline">\(\pi: x \mapsto [x]_R\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывное</a>
+отображение.</p>
+<p><em>Доказательство:</em> Полный прообраз открыт в <span
+class="math inline">\(X \,\,\,\,\blacksquare\)</span></p>
+<h4 id="факторизация-по-подмножеству">Факторизация по подмножеству</h4>
+<hr />
+<p><strong>Определение:</strong><a name="definition-6"></a> Пусть <span
+class="math inline">\((X, \tau_x)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a>. <span class="math inline">\(A \subset X\)</span>.
+Определим на <span class="math inline">\(X\)</span> <a
+href="#definition-1">отношение эквивалентности</a> <span
+class="math inline">\(R\)</span>: <span class="math inline">\(\forall x,
+y \in X \,\,\,\, x \sim y \Leftrightarrow x, y \in A\)</span> или <span
+class="math inline">\(x = y\)</span>. Будем обозначать <a
+href="#definition-5">фактор-пространство</a> <span
+class="math inline">\((X/R, \tau_R)\)</span>, так: <span
+class="math inline">\(X / A\)</span>. Такое фактор-пространство получено
+<em>факторизацией</em> по <span class="math inline">\(A\)</span>.</p>
+<h4 id="склеивание-пары-точек">Склеивание пары точек</h4>
+<hr />
+<p><strong>Определение:</strong><a name="definition-20"></a> Пусть <span
+class="math inline">\((X, \tau_x)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a>, <span class="math inline">\(x, y \in X\)</span>. <a
+href="#definition-5">Фактор-пространство</a> <span
+class="math inline">\(X/{x, y}\)</span> получено <em>склеиванием пары
+точек</em> <span class="math inline">\(x\)</span> и <span
+class="math inline">\(y\)</span>.</p>
+<h4 id="склеивание-концов-отрезка">Склеивание концов отрезка</h4>
+<hr />
+<p><strong>Определение:</strong><a name="definition-7"></a>
+Фактор-пространство <span class="math inline">\([a, b]/\{a, b\}\)</span>
+получено <em>склеиванием концов отрезка</em> <span
+class="math inline">\([a, b]\)</span>.</p>
+<h4 id="букет">Букет</h4>
+<hr />
+<p><strong>Определение:</strong><a name="definition-8"></a> Пусть <span
+class="math inline">\(X \cap Y = \varnothing\)</span>, <span
+class="math inline">\((X, \tau_x), \,\,\,\, (Y, \tau_y)\)</span> -
+топологические пространства. Тогда <a
+href="#definition-5">фактор-пространство</a>, полученное <a
+href="#definition-20">склеиванием точек</a> <span
+class="math inline">\(x \in X\)</span> и <span class="math inline">\(y
+\in Y\)</span> <a href="#definition-24">несвязной суммы</a> <span
+class="math inline">\(X \sqcup Y\)</span> (<span
+class="math inline">\((X \sqcup Y) / {x, y}\)</span>) - <em>букет</em>
+пространств <span class="math inline">\(X\)</span> и <span
+class="math inline">\(Y\)</span>.</p>
+<h4 id="фактор-по-сюръекции">Фактор по сюръекции</h4>
+<hr />
+<p><strong>Определение:</strong><a name="definition-20"></a> Пусть <span
+class="math inline">\(X\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a>, <span class="math inline">\(f: X \to Y\)</span> его
+сюръективное отображение в некоторое множество <span
+class="math inline">\(Y\)</span>. Тогда множество полных <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-20">прообразов</a>
+<span class="math inline">\(y \in Y\)</span> разбивает <span
+class="math inline">\(X\)</span> на непересекающиеся классы, или что
+тоже самое, задает <a href="#definition-1">отношение эквивалентности</a>
+<span class="math inline">\(R_f\)</span> на <span
+class="math inline">\(X\)</span>, при котором <span
+class="math inline">\(x \sim y, \,\,\,\, x, y \in X\)</span> тогда и
+только тогда, когда <span class="math inline">\(f(x) = f(y)\)</span>. <a
+href="#definition-5">Фактор-пространство</a> <span
+class="math inline">\(X/R_f\)</span> получено <em>факторизацией по
+сюръекции</em> <span class="math inline">\(f\)</span>. <span
+class="math inline">\(X / R_f\)</span> обозначается <span
+class="math inline">\(X / f\)</span>.</p>
+<h2 id="гомеоморфизм">Гомеоморфизм</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-9"></a> Пусть <span
+class="math inline">\((X, \tau_x)\)</span> и <span
+class="math inline">\((Y, tau_y)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологические
+пространства</a>. Отображение <span class="math inline">\(f: X \to
+Y\)</span> - <em>гомеоморфизм</em>, если <span
+class="math inline">\(f\)</span> взаимнооднозначно и отображения <span
+class="math inline">\(f\)</span> и <span
+class="math inline">\(f^{-1}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывны</a>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Отношение
+гомеоморфности на всех топологических пространствах - это отношение
+эквивалентности.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="связность-и-линейная-связность-компоненты-связности">Связность и
+линейная связность, компоненты связности</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-10"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">Топологическое
+пространство</a> <span class="math inline">\((X, \tau)\)</span>
+<em>связно</em>, если <span class="math inline">\(X\)</span> нельзя
+представить в виде объединения двух непустых непересекающихся <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-10">открытых
+подмножеств</a> <span class="math inline">\(X\)</span>. Если такое
+представление возможно, то пространство <span class="math inline">\((X,
+\tau)\)</span> <em>несвязно</em>.</p>
+<p><strong>Определение:</strong><a name="definition-11"></a>
+Подмножество <span class="math inline">\(A\)</span> топологического
+пространства <span class="math inline">\((X, \tau)\)</span>
+<em>связно</em>, если связно <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a> <span class="math inline">\(A\)</span> с топологией <a
+href="#definition-22">индуцированной</a> из <span
+class="math inline">\(X\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> <span
+class="math inline">\([a, b] \subset \mathbb{R}^1\)</span> - <a
+href="#definition-10">связен</a>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\([a, b] = A
+\cup B\)</span>. Рассмотрим <span class="math inline">\(\varepsilon \ge
+0\)</span>, такие, что <span class="math inline">\([a, a + \varepsilon)
+\subset A\)</span>. Пусть <span class="math inline">\(\varepsilon_0 =
+\displaystyle \sup \{\varepsilon: [a, a + \varepsilon) \subset
+A\}\)</span>. <span class="math inline">\(\varepsilon_0 &gt; 0\)</span>,
+так как <span class="math inline">\(A\)</span> - открыто. <span
+class="math inline">\(a + \varepsilon_0 \in A\)</span>, так как <span
+class="math inline">\(A\)</span> - замкнуто. Пусть <span
+class="math inline">\(a + \varepsilon_0 \ne b\)</span>. Тогда, так как
+<span class="math inline">\(A\)</span> - открыто, <span
+class="math inline">\(\exists \delta &gt; 0: \,\,\,\, (a + \varepsilon_0
+- \delta, a + \varepsilon_0 + \delta) \subset A\)</span>. Противоречие
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-12"></a>
+Максимальное по включению связное подмножество топологического
+пространства <span class="math inline">\((X, \tau_x)\)</span> -
+<em>компонента связности</em> <span
+class="math inline">\(X\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> <a
+href="#definition-12">Связные компоненты</a> топологического
+пространства <span class="math inline">\((X, \tau_x)\)</span> попарно
+непересекаются и являются замкнутыми подмножествами в <span
+class="math inline">\(X\)</span>.</p>
+<p><em>Доказательство:</em> <a href="#statement-0">см. утверждение</a>
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="достаточное-условие-связности">Достаточное условие
+связности</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-22"></a> Пусть <span
+class="math inline">\((X, \tau)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a>. Если <span class="math inline">\(\forall x, y \in X
+\,\,\,\, \exists C_{xy} \subset X\)</span>, <span
+class="math inline">\(x, y \in C_{xy}\)</span> и <span
+class="math inline">\(C_{xy}\)</span> - <a
+href="#definition-11">связно</a>. Тогда <span
+class="math inline">\(X\)</span> - <a
+href="#definition-10">связно</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0">Образ</a>
+<a href="#definition-11">связного подмножества</a> <span
+class="math inline">\(U\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологического
+пространства</a> <span class="math inline">\((X, \tau)\)</span> при <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывном
+отображении</a> <span class="math inline">\(f: X \to Y\)</span> <a
+href="#definition-11">связен</a>.</p>
+<p><em>Доказательство:</em> Пусть это не так, то есть <span
+class="math inline">\(f(U) = A \cup B\)</span>, где <span
+class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span> непустые открытые подмножества <span
+class="math inline">\(Y\)</span>. <span
+class="math inline">\(f^{-1}(A)\)</span> и <span
+class="math inline">\(f^{-1}(B)\)</span> - открытые подмножества <span
+class="math inline">\(X\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#theorem-0">по
+утверждению</a>. Пусть <span class="math inline">\(f^{-1}(A) \cap
+f^{-1}(B) \ne \varnothing\)</span>. Тогда <span class="math inline">\(A
+\cap B \ne \varnothing\)</span>. Значит <span class="math inline">\(U =
+f^{-1}(A) \cup f^{-1}(B)\)</span>, то есть оно несвязно. Противоречие
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> (Теорема
+Больцано-Коши) <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-9">Непрерывная</a>
+функция <span class="math inline">\(f: X \to \mathbb{R}\)</span>,
+заданная на <a href="#definition-0">связном</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическом
+пространстве</a> <span class="math inline">\((X, \tau)\)</span>,
+принимает все промежуточные значения.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(f\)</span>
+принимает значения <span class="math inline">\(a\)</span> и <span
+class="math inline">\(b\)</span>, и не принимает значение <span
+class="math inline">\(c: \,\,\,\, a &lt; c &lt; b\)</span>. Тогда образ
+связного пространства <span class="math inline">\(X\)</span> представим
+в виде объединения <span class="math inline">\((-\infty, c) \cap
+f(X)\)</span> и <span class="math inline">\(f(X) \cap (c, +\infty)
+\,\,\,\,\blacksquare\)</span></p>
+<h3 id="линейная-связность">Линейная связность</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-13"></a>
+<em>Непрерывная кривая</em> - это отображение <span
+class="math inline">\(\gamma: [a, b] \to X\)</span>. При этом говорят,
+что <span class="math inline">\(\gamma\)</span> <em>соединяет точки</em>
+<span class="math inline">\(\gamma(a)\)</span> и <span
+class="math inline">\(\gamma(b)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-14"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">Топологическое
+пространство</a> <span class="math inline">\((X, \tau_x)\)</span> -
+<em>линейно связно</em>, если любые две его <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-2">точки</a>
+можно соединить <a href="#definition-3">непрерывной кривой</a>.</p>
+<p><strong>Определение:</strong><a name="definition-26"></a>
+Подмножество <span class="math inline">\(A\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологического
+пространства</a> <span class="math inline">\((X, \tau_x)\)</span>
+<em>линейно связно</em>, если <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-14">линейно
+связно</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a> <span class="math inline">\(A\)</span> с топологией <a
+href="#definition-2">индуцированной</a> из <span
+class="math inline">\(X\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-25"></a>
+Максимальное по включению <a href="#definition-26">линейно связное
+подмножество</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологического
+пространства</a> <span class="math inline">\((X, \tau_x)\)</span> -
+<em>компонента линейной связности</em> <span
+class="math inline">\(X\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a> Образ <a
+href="#definition-4">линейно связного</a> топологического пространства
+при <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывном
+отображении</a> <a href="#definition-4">линейно связен</a>.</p>
+<p><em>Доказательство:</em> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#corollary-1">Композиция
+непрерывных отображений непрерывна</a>, а следовательно будем иметь
+композицию <span class="math inline">\(\gamma: [a, b] \to X\)</span> и
+<span class="math inline">\(f: X \to Y \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-7"></a> <a
+href="#definition-4">Линейно связное</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a> <a href="#definition-0">связно</a>.</p>
+<p><em>Доказательство:</em> <a href="#statement-3">Отрезок связен</a>, а
+<a href="#statement-5">образ связного пространства при непрерывном
+отображении связен</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-8"></a> <span
+class="math inline">\(\gamma, \gamma’, \gamma(b) = \gamma’(b)
+\Rightarrow \gamma + \gamma’\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-9"></a></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Зафиксируем в <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическом
+пространстве</a> <span class="math inline">\(X\)</span> точку <span
+class="math inline">\(x_0\)</span>. Тогда <span
+class="math inline">\(X\)</span> <a href="#definition-4">линейно
+связно</a> тогда и только тогда, когда любую точку пространства можно
+соединить <a href="#definition-3">непрерывной кривой</a> с <span
+class="math inline">\(x_0\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="хаусдорфовость">Хаусдорфовость</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-15"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">Топологическое
+пространство</a> <span class="math inline">\(X\)</span>
+<em>хаусдорфово</em>, если для любых <span class="math inline">\(x, y
+\in X, \,\,\,\, x \ne y\)</span> существуют непересекающиеся <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-3">окрестности</a>
+<span class="math inline">\(U\)</span> и <span
+class="math inline">\(V\)</span>, содержащие <span
+class="math inline">\(x\)</span> и <span
+class="math inline">\(y\)</span> соответственно.</p>
+<p><strong>Утверждение:</strong><a name="statement-10"></a> Любая <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-14">метрическая</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0">топология</a>
+<a href="#definition-5">хаусдорфова</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-1"></a> Нехаусдорфова
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0">топология</a>
+не является метрической.</p>
+<p><em>Доказательство:</em> Мощное следствие, ничего не скажешь <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-11"></a> Пусть <span
+class="math inline">\(X\)</span> <a href="#definition-5">хаусдорфово</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a>. Тогда <span class="math inline">\(\forall x \in
+X\)</span> множество <span class="math inline">\(\{x\} \subset
+X\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-17">замкнуто</a>
+в <span class="math inline">\(X\)</span>.</p>
+<p><em>Доказательство:</em> Докажем, что дополнение <span
+class="math inline">\(\{x\}\)</span> открыто <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-12"></a> Пусть <span
+class="math inline">\(X\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-11">метрическое
+пространство</a>. Тогда <span class="math inline">\(\forall x \in
+X\)</span> и любого замкнутого множества <span class="math inline">\(F
+\subset X: \,\,\,\, x \not\in F\)</span> существуют непересекающиеся
+окрестности, содержащие <span class="math inline">\(x\)</span> и <span
+class="math inline">\(F\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Утверждение:</strong><a name="statement-13"></a> У любых двух
+замкнутых непересекающихся подмножеств метричекого топологического
+пространства существуют непересекающиеся окрестности.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-23"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">Топологическое
+пространство</a>, обладающее свойством из <a
+href="#statement-13">предыдущего утверждения</a> -
+<em>нормальное</em>.</p>
+<h2 id="компактность">Компактность</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-16"></a>
+<em>Открытое покрытие</em> топологического пространства <span
+class="math inline">\(X\)</span> - это семейство <span
+class="math inline">\(\{U\}_{\alpha}\)</span> открытых подмножеств <span
+class="math inline">\(X\)</span>, такое что <span
+class="math inline">\(X =
+\displaystyle\cup_{\alpha}U_{\alpha}\)</span>.<br><em>Открытое
+покрытие</em> множества <span class="math inline">\(Y \subset X\)</span>
+- это семейство <span class="math inline">\(\{U\}_{\alpha}\)</span>
+открытых подмножеств <span class="math inline">\(X\)</span>, такое что
+<span class="math inline">\(Y \subset
+\displaystyle\cup_{\alpha}U_{\alpha}\)</span>.<br> <em>Подпокрытие</em>
+- это подсемейство покрытия, само являющееся покрытием.</p>
+<p><strong>Определение:</strong><a name="definition-17"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">Топологическое
+пространство</a> <span class="math inline">\(X\)</span> -
+<em>компактно</em>(<em>компакт</em>), если из любого <a
+href="#definition-6">открытого покрытия</a> <span
+class="math inline">\(X\)</span> можно выделить конечное <a
+href="#definition-6">подпокрытие</a>.</p>
+<p><strong>Утверждение:</strong><a name="statement-14"></a> (теорема
+Бореля) <span class="math inline">\([a, b] \subset \mathbb{R}\)</span>
+<a href="#definition-7">компакт</a>.</p>
+<p><em>Доказательство:</em> кажись, Подольскому было лень доказывать
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-18"></a>
+Подмножество <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-11">метрического
+пространства</a> <em>ограничено</em>, если содержится в некотором <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-12">открытом
+шаре</a>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Множество <span
+class="math inline">\(A \subset \mathbb{R}^n\)</span> <a
+href="#definition-7">компактно</a> <span
+class="math inline">\(\Leftrightarrow A\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-17">замкнуто</a>
+и <a href="#definition-8">ограничено</a>.</p>
+<p><em>Доказательство:</em> см. <a
+href="#https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#theorem-0"><span
+class="math inline">\(1\)</span></a> и <a
+href="#https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#theorem-1"><span
+class="math inline">\(2\)</span></a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-15"></a> Пусть <span
+class="math inline">\(f: X \to Y\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывное
+отображение</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологических
+пространств</a> <span class="math inline">\(X\)</span> и <span
+class="math inline">\(Y\)</span>. Пусть <span
+class="math inline">\(X\)</span> <a href="#definition-7">компактно</a>.
+Тогда <span class="math inline">\(f(X)\)</span> <a
+href="#definition-7">компактно</a>.</p>
+<p><em>Доказательство:</em> Взять образ конечного подпокрытия прообраза
+покрытия <span
+class="math inline">\(f(X)\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-2"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0">Образ</a>
+<a href="#definition-3">непрерывной кривой</a> <span
+class="math inline">\(\gamma: [a, b] \to \mathbb{R}^n\)</span> <a
+href="#definition-7">компакт</a>, а следовательно <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-17">замкнут</a>
+и <a href="#definition-8">ограничен</a>.</p>
+<p>Откуда следствие? :)</p>
+<p><strong>Утверждение:</strong><a name="statement-16"></a>
+(Вейерштрасс) Пусть <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a> <span class="math inline">\(X\)</span> <a
+href="#definition-7">компактно</a>. Тогда <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывная
+функция</a> <span class="math inline">\(f: X \to \mathbb{R}\)</span>.
+Тогда <span class="math inline">\(f\)</span> ограничена и принимает свое
+наибольшее и наименьшее значение.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(X\)</span> -
+компактно, значит <a href="#statement-15">по утверждению</a> <span
+class="math inline">\(f(X)\)</span> - компакто, то есть замкнуто и
+ограничено (<a href="#theorem-1">см. теорему</a>). То есть <span
+class="math inline">\(f\)</span> ограничена, а так как <span
+class="math inline">\(f(X)\)</span> - замкнуто, <span
+class="math inline">\(\inf f(X)\)</span> и <span
+class="math inline">\(\sup f(X)\)</span> лежат в <span
+class="math inline">\(f(X) \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-17"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-7">Замкнутое</a>
+подмножество <span class="math inline">\(A \subset X\)</span> <a
+href="#definition-7">компактного</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">пространства</a>
+<span class="math inline">\(X\)</span> <a
+href="#definition-7">компактно</a>.</p>
+<p><em>Доказательство:</em> Пусть <span
+class="math inline">\(\{U_{\alpha}\}\)</span> открытое покрытие <span
+class="math inline">\(A\)</span>. Так как <span
+class="math inline">\(A\)</span> замкнуто <span class="math inline">\(X
+\setminus A\)</span> - открыто, то есть <span
+class="math inline">\(\{U_{\alpha}\} \cup \{X \setminus A\}\)</span> -
+открытое покрытие <span class="math inline">\(X\)</span>. <span
+class="math inline">\(X\)</span> - компактно, а следовательно сущесвует
+конечное подпокрытие <span class="math inline">\(\{X \setminus A,
+U_{\alpha_1}, \ldots, U_{\alpha_k}\} \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-18"></a> <a
+href="#definition-7">Компактное</a> подмножество <span
+class="math inline">\(A\)</span> <a href="#definition-5">хаусдорфова</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">пространства</a>
+<span class="math inline">\(X\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-17">замкнуто</a>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(x \in X
+\setminus A\)</span>. Докажем, что <span
+class="math inline">\(x\)</span> не является точкой прикосновения <span
+class="math inline">\(A\)</span>. В силу компактности <span
+class="math inline">\(A\)</span> выберем конечное покрытие <span
+class="math inline">\(A\)</span> окрестностями точек <span
+class="math inline">\(\{V(y_i)\}_{i = 1}^k\)</span>. Так как <span
+class="math inline">\(X\)</span> хаусдорфово, <span
+class="math inline">\(\forall y_i, \,\,\,\, i \in \{1, \ldots,
+k\}\,\,\,\, \exists\)</span> окерстность точки <span
+class="math inline">\(x \,\,\,\, U(x, y_i)\)</span>, такая, что <span
+class="math inline">\(U(x, y_i) \cap V(y_i) = \varnothing\)</span>.
+Пересечение окрестностей <span class="math inline">\(\displaytyle\cap_{i
+= 1}^k U(x, y_i)\)</span> - это окрестность точки <span
+class="math inline">\(x\)</span>, целиком лежащая в <span
+class="math inline">\(X \setminus A \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Упражнение:</strong><a name="exercise-0"></a> Пусть <span
+class="math inline">\(A\)</span> содержит все свои точки прикосновения.
+Докажите, что <span class="math inline">\(A\)</span> замкнуто.</p>
+<h3 id="способы-доказательства-гомеоморфности">Способы доказательства
+гомеоморфности</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-19"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-9">Непрерывное</a>
+взаимнооднозначное отображение <span class="math inline">\(f: X \to
+Y\)</span> из <a href="#definition-7">компактного</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">пространства</a>
+<span class="math inline">\(X\)</span> в <a
+href="#definition-5">хаусдорфово</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">пространство</a>
+<span class="math inline">\(Y\)</span> - <a
+href="#definition-9">гомеоморфизм</a>.</p>
+<p><em>Доказательство:</em> Необходимо доказать, что обратное
+отображение <span class="math inline">\(f^{-1}: Y \to
+X\)</span>(определено в силу взаимной однозначности) непрерывно.
+Докажем, что прообраз замкнутого множества замкнут. Тогда <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#theorem-0">по
+утверждению</a> отображение непрерывно. Пусть <span
+class="math inline">\(V\)</span> замкнутое множество в <span
+class="math inline">\(X\)</span>. Тогда <span
+class="math inline">\(V\)</span> - компакт <a href="#statement-17">по
+утверждению</a>. <span class="math inline">\((f^{-1})^{-1}(V) =
+f(V)\)</span> компактно <a href="#statement-15">по утверждению</a>. А <a
+href="#statement-18">по утверждению</a> компактное подмножество
+хаусдорфова пространства замкнуто <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Пусть <span
+class="math inline">\(f: X \to Y\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывное</a>
+сюръективное отображение <a href="#definition-17">компактного</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">пространства</a>
+<span class="math inline">\(X\)</span> в <a
+href="#definition-15">хаусдорфово</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">пространство</a>
+<span class="math inline">\(Y\)</span>. Тогда <span
+class="math inline">\(Y\)</span> <a href="#definition-9">гомеоморфно</a>
+<a href="#definition-20">фактор-пространству</a> <span
+class="math inline">\(X/f\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\pi: X \to
+X/f\)</span> - <a href="#definition-4">каноническая проекция</a>. Пусть
+<span class="math inline">\(g: X/f \to Y\)</span> переводит <span
+class="math inline">\(f^{-1}(y)\)</span> в <span
+class="math inline">\(y\)</span>. Это биекция и <span
+class="math inline">\(g\circ \pi = f\)</span>. Докажем, что <span
+class="math inline">\(g\)</span> и <span
+class="math inline">\(g^{-1}\)</span> непрерывны.</p>
+<p>Докажем, что прообраз открытого множества при отображении <span
+class="math inline">\(g\)</span> открыт. Тогда <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#theorem-0">по
+утверждению</a> отображение <span class="math inline">\(g\)</span>
+непрерывно. Пусть <span class="math inline">\(V\)</span> открытое
+множество в <span class="math inline">\(Y\)</span>. <span
+class="math inline">\(\pi^{-1}(g^{-1}(V)) = f^{-1}(V)\)</span>, а <span
+class="math inline">\(f^{-1}(V)\)</span> открыто в <span
+class="math inline">\(X\)</span>, так как <span
+class="math inline">\(f\)</span> непрерывно (<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#theorem-0">см.
+утверждение</a>), а значит <span
+class="math inline">\(\pi^{-1}(g^{-1}(V))\)</span> открыт в <span
+class="math inline">\(X\)</span>, то есть <span
+class="math inline">\(g^{-1}(V)\)</span> принадлежит <a
+href="#definition-5">фактор-пространству</a> <span
+class="math inline">\(X/f\)</span>, то есть открыто.</p>
+<p>Докажем, что прообраз замкнутого множества при отображении <span
+class="math inline">\(g^{-1}\)</span> замкнут. Тогда <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#theorem-0">по
+утверждению</a> отображение <span class="math inline">\(g^{-1}\)</span>
+непрерывно. Пусть <span class="math inline">\(V\)</span> замкнутое
+множество в <span class="math inline">\(X/f\)</span>. <span
+class="math inline">\((g^{-1})^{-1}(V) = g(V) = f(\pi^{-1}(V))\)</span>.
+<span class="math inline">\(\pi^{-1}(V)\)</span> замкнуто, так как <span
+class="math inline">\(\pi\)</span> - <a href="#lemma-0">непрерывно</a>,
+а <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#theorem-0">при
+непрерывном отображении полный прообраз замкнутого - замкнут</a>. Так
+как <a href="#statement-17"><span class="math inline">\(X\)</span> -
+компакт и <span class="math inline">\(\pi^{-1}(V)\)</span> замкнуто,
+<span class="math inline">\(\pi^{-1}(V)\)</span> - компакт</a>. <a
+href="#statement-15">При непрерывном отображении образ компактного
+множества - компактен</a>, а значит <span
+class="math inline">\(f(\pi^{-1}(V))\)</span> - компакт. <a
+href="#statement-18">Так как компактное подмножество хаусдорфова
+пространства замкнуто</a>, <span class="math inline">\(f(\pi^{-1}(V)) =
+(g^{-1})^{-1}(V)\)</span> - замкнуто <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="локально-постоянные-функции">Локально постоянные функции</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-21"></a> Функция
+<span class="math inline">\(f: X \to \mathbb{R}\)</span> <em>локально
+постоянная</em>, если для любой точки <span class="math inline">\(x_0
+\in X\)</span> существует окрестность <span
+class="math inline">\(U(x_0)\)</span>, такая, что <span
+class="math inline">\(f\)</span> постоянна на <span
+class="math inline">\(U(x_0)\)</span>, то есть <span
+class="math inline">\(\forall x \in U(x_0) \,\,\,\, f(x) =
+f(x_0)\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-20"></a> <a
+href="#definition-21">Локально постоянная</a> функция <span
+class="math inline">\(f: X \to \mathbb{R}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывна</a>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall x_0 \in
+X \,\,\,\, \exists U(x_0)\)</span>, на которой <span
+class="math inline">\(f\)</span> постоянна, то есть <span
+class="math inline">\(f(U(x_0)) = \{f(x_0)\}\)</span>. Тогда <span
+class="math inline">\(\forall \varepsilon &gt; 0 \,\,\,\, \exists
+U(x_0): \,\,\,\, f(U(x_0)) \subset (f(x_0) - \varepsilon, f(x_0) +
+\varepsilon) \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-21"></a> <a
+href="#definition-21">Локально постоянная</a> функция <span
+class="math inline">\(f: X \to \mathbb{R}\)</span> постоянна на каждой
+<a href="#definition-25">компоненте линейной связности</a> проcтранства
+<span class="math inline">\(X\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(x,
+y\)</span> две точки из компоненты линейной связности, <span
+class="math inline">\(\gamma: [a, b] \to X\)</span> - <a
+href="#definition-13">непрерывная кривая</a>, соединяющая <span
+class="math inline">\(x\)</span> и <span
+class="math inline">\(y\)</span>. <a href="#corollary-2">По
+следствию</a> образ <span class="math inline">\(\Gamma = \gamma([a,
+b])\)</span> - компакт. <span class="math inline">\(\forall x \in \Gamma
+\,\,\,\, \exists U(x_0)\)</span>, на которой <span
+class="math inline">\(f\)</span> постоянна. Множество всех таких
+окрестностей открытое покрытие <span
+class="math inline">\(\Gamma\)</span>, а в силу компактности <span
+class="math inline">\(\Gamma\)</span>, из него можно выделить конечное
+подпокрытие, то есть <span class="math inline">\(f\)</span> принимает на
+<span class="math inline">\(\Gamma\)</span> конечное число значений.
+Пусть <span class="math inline">\(f\)</span> принимает хотя бы <span
+class="math inline">\(2\)</span> различных значения. Тогда <span
+class="math inline">\(f\)</span> должна <a href="#corollary-0">принимать
+все промежуточные значения</a>, которых континуум. Следовательно <span
+class="math inline">\(f\)</span> принимает одно значение на компоненте
+связности <span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="пределы">Пределы</h2>
+<hr />
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

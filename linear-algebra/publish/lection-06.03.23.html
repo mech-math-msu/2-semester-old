@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#аннулирующй-и-минимальный-многочлены"
+id="toc-аннулирующй-и-минимальный-многочлены">Аннулирующй и минимальный
+многочлены</a>
+<ul>
+<li><a href="#простейшие-свойства-аннулирующего-многочлена"
+id="toc-простейшие-свойства-аннулирующего-многочлена">Простейшие
+свойства аннулирующего многочлена</a></li>
+<li><a href="#жорданова-нормальная-форма"
+id="toc-жорданова-нормальная-форма">Жорданова нормальная форма</a>
+<ul>
+<li><a href="#определения" id="toc-определения">Определения</a></li>
+<li><a href="#простейшие-свойства"
+id="toc-простейшие-свойства">Простейшие свойства</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="аннулирующй-и-минимальный-многочлены">Аннулирующй и минимальный
+многочлены</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(V\)</span> векторное пространство над полем <span
+class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. <span class="math inline">\(f \in
+F[t]\)</span> - <em>аннулирующий многочлен</em> для <span
+class="math inline">\(\mathcal{A}\)</span>, если <span
+class="math inline">\(f(\mathcal{A}) = 0\)</span>.</p>
+<p>По теореме Гамильтона-Кэли характеристический многочлен является
+аннулирующим.</p>
+<p>Для <span class="math inline">\(\mathcal{A} = \mathcal{I}\)</span>
+аннулирющим многочленом является <span class="math inline">\(t -
+1\)</span>, т.к. <span class="math inline">\(\mathcal{A} - 1 \mathcal{I}
+= 0\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(V\)</span> векторное пространство над полем <span
+class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Аннулирующий многочлен <span
+class="math inline">\(\mathcal{A}\)</span> минимальной степени со
+старшим коэффицентом равным <span class="math inline">\(1\)</span> -
+<em>минимальный многочлен</em> для <span
+class="math inline">\(\mathcal{A}\)</span>.</p>
+<p>Обозначается: <span
+class="math inline">\(\mu_{\mathcal{A}}(t)\)</span>.</p>
+<h3 id="простейшие-свойства-аннулирующего-многочлена">Простейшие
+свойства аннулирующего многочлена</h3>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(V\)</span> векторное пространство над полем <span
+class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Тогда</p>
+<ol type="1">
+<li>Минимальный многочлен делит любой аннулирующий.</li>
+<li><span class="math inline">\(\mu_{\mathcal{A}}\)</span> -
+единственный.</li>
+<li>Множество корней <span
+class="math inline">\(\mu_{\mathcal{A}}\)</span> совпадает с множеством
+корней характеристического многочлена.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Пусть <span class="math inline">\(\zeta(t)\)</span> - аннулирующий
+многочлен оператора <span class="math inline">\(\mathcal{A}\)</span>.
+Разделим с остатком <span class="math inline">\(\zeta(t)\)</span> на
+<span class="math inline">\(\mu_{\mathcal{A}}(t) \Rightarrow \zeta(t) =
+\xi(t)\mu_{\mathcal{A}}(t) + r(t)\)</span>, где степень <span
+class="math inline">\(r(t)\)</span> меньше степени <span
+class="math inline">\(\mu_{\mathcal{A}}(t)\)</span>, если <span
+class="math inline">\(r(t) \ne 0\)</span>, то получим противоречие с
+минимальностью степени <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li>Пусть <span class="math inline">\(\mu_{\mathcal{A}}(t)\)</span> и
+<span class="math inline">\(\tilde{\mu}_{\mathcal{A}}(t)\)</span> -
+минимальные многочлены <span class="math inline">\(\mathcal{A}\)</span>.
+Тогда по <span class="math inline">\(1\)</span>-му свойству <span
+class="math inline">\(\mu_{\mathcal{A}}(t)\)</span> делит <span
+class="math inline">\(\tilde{\mu}_{\mathcal{A}}(t)\)</span>. То есть
+<span class="math inline">\(\mu_{\mathcal{A}}(t) =
+\lambda\tilde{\mu}_{\mathcal{A}}(t)\)</span>, а следовательно эти
+многочлены совпадают, так как коэффицент при старшем члене о
+минимального многочлена <span class="math inline">\(1
+\,\,\,\,\blacksquare\)</span></li>
+<li>По свойству <span class="math inline">\(1\)</span> множество корней
+минимального многочлена является подмножеством корней
+характеристического. Пусть <span class="math inline">\(\lambda\)</span>
+корень <span class="math inline">\(\chi_{\mathcal{A}}(t)\)</span>.
+Значит существует собственный вектор <span
+class="math inline">\(e\)</span> оператора <span
+class="math inline">\(\mathcal{A}\)</span>, отвечающий значению <span
+class="math inline">\(\lambda\)</span>. Для любого <span
+class="math inline">\(f(t) \in F[t] \,\,\,\, f(\mathcal{A})(e) =
+f(\lambda)e \Rightarrow 0 = \mu_{\mathcal{A}}(\mathcal{A})(e) =
+\mu_{\mathcal{A}}(\lambda)e \Rightarrow (e \ne 0) \,\,\,\,
+\mu_{\mathcal{A}}(\lambda) = 0 \,\,\,\,\blacksquare\)</span></li>
+</ol>
+<h2 id="жорданова-нормальная-форма">Жорданова нормальная форма</h2>
+<hr />
+<h3 id="определения">Определения</h3>
+<p><strong>Определение:</strong><a name="definition-2"></a> Квадратная
+матрица вида <span class="math inline">\(\operatorname{J}_k(\lambda) =
+\left(\begin{array}{ccccc} \lambda &amp; 1 &amp; 0 &amp; \dots &amp; 0\\
+0 &amp; \lambda &amp; 1 &amp; \dots &amp; 0\\ \vdots &amp; \ddots &amp;
+\ddots &amp; \ddots &amp; \vdots\\ 0 &amp; \dots &amp; 0 &amp; \lambda
+&amp; 1\\ 0 &amp; \dots &amp; 0 &amp; 0 &amp; \lambda\\
+\end{array}\right)\)</span> - <em>жорданова клетка</em> с <span
+class="math inline">\(\lambda\)</span> на диагонали размера <span
+class="math inline">\(k\)</span>.</p>
+<p>Обозначение: <span
+class="math inline">\(\operatorname{J}_k(\lambda)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Квадратная
+матрица размера <span class="math inline">\(n \times n\)</span>,
+состоящая из жордановых клеток на диагонали и нулей на остальных местах
+- это <em>жорданова матрица</em> размера <span class="math inline">\(n
+\times n\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Если существует базис, в котором
+матрица <span class="math inline">\(\mathcal{A}\)</span> жорданова, то
+такой базис - <em>жорданов</em>, а сама матрица <em>жорданова нормальная
+форма</em> линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span>.</p>
+<h3 id="простейшие-свойства">Простейшие свойства</h3>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть матрица
+линейного оператора <span class="math inline">\(\mathcal{A}\)</span>
+имеет жорданову нормальную форму размера <span class="math inline">\(n
+\times n\)</span> и состоит из жордановых клеток <span
+class="math inline">\(\operatorname{J}_{k_1}(\lambda_1), \ldots,
+\operatorname{J}_{k_s}(\lambda_s)\)</span>. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(\chi_{\mathcal{A}}(t) = (-1)^n
+\displaystyle \prod_{i = 1}^{s}(t - \lambda_i)^k_i\)</span>.</li>
+<li>Жорданов базис <span class="math inline">\(\mathcal{A}\)</span>
+состоит из объединения жордановых базисов клеток <span
+class="math inline">\(\operatorname{J}_{k_1}(\lambda_1), \ldots,
+\operatorname{J}_{k_s}(\lambda_s)\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>очев <span class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li>не очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-2"></a></p>
+<ol type="1">
+<li><span class="math inline">\(\operatorname{J}_{k}(0)^m =
+\begin{cases}  m,\,\,\,\, m &lt; k\\  0,\,\,\,\, m \ge k
+\end{cases}\)</span></li>
+<li><span class="math inline">\(\mu_{\operatorname{J}_{k}(\lambda)}(t) =
+(t - \lambda)^k\)</span></li>
+<li><span class="math inline">\(\mu_{\operatorname{J}_n}\)</span> - это
+наименьшее общее кратное всех минимальных многочленов ее жордановых
+клеток.</li>
+<li><span
+class="math inline">\(\operatorname{rk}(\operatorname{J}_k(\lambda) -
+\alpha E)^m = \begin{cases}  k,\,\,\,\, \lambda \ne \alpha\\  k -
+m,\,\,\,\, \lambda = \alpha, k \ge m\\  0,\,\,\,\, \lambda = \alpha, k
+&lt; m \end{cases}\)</span></li>
+</ol>
+<p><em>Доказательство:</em> все кроме <span
+class="math inline">\(3\)</span> очевидно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span> 3.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство размерности
+<span class="math inline">\(n\)</span>. Пусть матрица линейного
+оператора <span class="math inline">\(\mathcal{A}\)</span> в некотором
+базисе имеет жорданову нормальную форму <span
+class="math inline">\(\operatorname{J}_n\)</span>. Тогда <span
+class="math inline">\(\dim V_{\lambda}\)</span> равно количеству
+жордановых клеток в матрице <span
+class="math inline">\(\mathcal{A}\)</span> с <span
+class="math inline">\(\lambda\)</span> на диагонали.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(V_{\lambda} =
+\{v \in V: \,\,\,\, \mathcal{A}(v) = \lambda v\}\)</span>, а это
+множество решений <span class="math inline">\(\mathcal{A} - \lambda
+\mathcal{I} = 0\)</span> или <span
+class="math inline">\(\operatorname{J}_n - \lambda E = 0\)</span>.
+Следовательно, <span class="math inline">\(\dim V_{\lambda} = n -
+\operatorname{rk}\operatorname{J}_n\)</span>. Ранг жордановой матрицы -
+это сумма рангов составляющих ее клеток <span
+class="math inline">\(J_{k_1}(\lambda_1), \ldots,
+J_{k_s}(\lambda_s)\)</span>, а ранг жордановой клетки <span
+class="math inline">\(\operatorname{J}_k(\lambda) = \begin{cases}  k,
+\lambda \ne 0\\  k - 1, \lambda = 0 \end{cases}\)</span>. То есть <span
+class="math inline">\(n - \operatorname{rk}\operatorname{J}_n =
+\displaystyle \sum_{i = 1}^{s}k_i - \displaystyle \sum_{i =
+1}^{s}\operatorname{rk}J_{k_i}(\lambda_i)\)</span> значение этого
+выражения равно <span class="math inline">\(1\)</span> на всех клетках с
+<span class="math inline">\(\lambda\)</span> на диагонали и <span
+class="math inline">\(0\)</span> на остальных <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

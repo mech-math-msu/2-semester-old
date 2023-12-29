@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#свойства-самосопряженного-линейного-оператора"
+id="toc-свойства-самосопряженного-линейного-оператора">Свойства
+самосопряженного линейного оператора</a>
+<ul>
+<li><a
+href="#одновременное-приведение-пары-квадратичных-форм-к-сумме-квадратов"
+id="toc-одновременное-приведение-пары-квадратичных-форм-к-сумме-квадратов">Одновременное
+приведение пары квадратичных форм к сумме квадратов</a></li>
+<li><a href="#ортогональный-линейный-оператор"
+id="toc-ортогональный-линейный-оператор">Ортогональный линейный
+оператор</a></li>
+<li><a href="#свойства-ортогонального-линейного-оператора"
+id="toc-свойства-ортогонального-линейного-оператора">Свойства
+ортогонального линейного оператора</a>
+<ul>
+<li><a href="#канонический-вид-ортогонального-линейного-оператора"
+id="toc-канонический-вид-ортогонального-линейного-оператора">Канонический
+вид ортогонального линейного оператора</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="свойства-самосопряженного-линейного-оператора">Свойства
+самосопряженного линейного оператора</h1>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a> (свойства)
+Пусть <span class="math inline">\(\mathcal{A}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-1">самосопряженный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a>.</p>
+<ol type="1">
+<li><span class="math inline">\(\chi_{\mathcal{A}}(t)\)</span> - имеет
+только действительные корни.</li>
+<li>Для любого собственного значения <span class="math inline">\(\lambda
+\,\,\,\, \dim V_{\lambda} = k\)</span>, где <span
+class="math inline">\(k\)</span> - кратность <span
+class="math inline">\(\lambda\)</span>.</li>
+<li>Собственные вектора, отвечающие различным собственным значениям,
+ортогональны.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#theorem-3">По
+теореме</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li><a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#theorem-3">По
+теореме</a> <span class="math inline">\(\mathcal{A}\)</span>
+диагонализируем, а следовательно <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#theorem-0">по
+теореме</a> утверждение выполнено <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li><span class="math inline">\((\mathcal{A}(x), y) = \lambda_1 (x, y) =
+(x, \mathcal{A}(y)) = \lambda_2 (x, y)
+\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-2"></a> Матрица
+<span class="math inline">\(A \in M_n(\mathbb{R})\)</span> -
+<em>симметрическая</em>, если <span class="math inline">\(A =
+A^T\)</span>.</p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Пусть <span
+class="math inline">\(A\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-2">симметрическая</a>
+вещественная матрица. Тогда <span class="math inline">\(\exists D, C \in
+M_n(\mathbb{R}): \,\,\,\, D\)</span> - диагональна, <span
+class="math inline">\(C\)</span> - ортогональна и <span
+class="math inline">\(A = C^{-1}DC\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(A\)</span> - симметрическая матрица, а
+значит ей соответствует самосопряженный линейный оператор. <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#theorem-3">По
+теореме</a> существует ортонормированный базис, в котором матрица <span
+class="math inline">\(\mathcal{A}\)</span> диагональна, то есть <span
+class="math inline">\(A = C^{-1}DC\)</span>, где <span
+class="math inline">\(C\)</span> - ортогональна (так как матрица
+перехода от ортогонального базиса к ортогональному), а <span
+class="math inline">\(D\)</span> - диагональна <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="corollary-1"></a> Для любой
+симметрической <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-2">билинейной
+функции</a> существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8">ортонормированный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7">базис</a>,
+такой, что в этом базисе матрица билинейной функции диагональна и <span
+class="math inline">\(\beta(x, y) = \lambda_1 x_1 y_1 + \ldots +
+\lambda_n x_n y_n\)</span>, а <span class="math inline">\(\lambda_1,
+\ldots, \lambda_n\)</span> - корни <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-2">характеристического
+многочлена</a>.</p>
+<p><em>Доказательство:</em> Рассмотрим самосопряженный линейный оператор
+с матрицей билинейной функции <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Для любой
+квадратичной функции <span class="math inline">\(q: V\times V \to
+\mathbb{R}\)</span> существует ортонормированный базис <span
+class="math inline">\(e\)</span>, в котором <span
+class="math inline">\(q(x) = \lambda_1 x_1^2 + \ldots + \lambda_n
+x_n^2\)</span>, а <span class="math inline">\(\lambda_1, \ldots,
+\lambda_n\)</span> - корни характеристического многочлена в некотором
+данном базисе.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-0"></a> Нахождение
+ортонормированного базиса, в котором квадратичная функция равна сумме
+квадратов - <em>приведение к главным осям</em>.</p>
+<p><strong>Например:</strong> Нахождение канонического базиса для кривой
+второго порядка - это приведение к главным осям.</p>
+<h4
+id="одновременное-приведение-пары-квадратичных-форм-к-сумме-квадратов">Одновременное
+приведение пары квадратичных форм к сумме квадратов</h4>
+<strong>Теорема:</strong><a name="theorem-1"></a>
+<details>
+<summary>
+</summary>
+а что нет чего-то что нельзя описать
+</details>
+<p>Пусть <span class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">векторное
+пространство</a>. <span class="math inline">\(\dim V = n\)</span>. <span
+class="math inline">\(q\)</span> и <span
+class="math inline">\(h\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3">квадратичные
+функции</a>, <span class="math inline">\(h\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-1">положительно
+определена</a>. Тогда существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7">базис</a>,
+в котором: <span class="math display">\[q(x) = \lambda_1 x_1^2 + \ldots
++ \lambda_n x_n^2\]</span> <span class="math display">\[h(x) = x_1^2 +
+\ldots + x_n^2\]</span></p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(h\)</span> - положительно определена.
+Пусть <span class="math inline">\(h\)</span> - скалярное произведение.
+Тогда <a href="#theorem-0">по теореме</a> существует ортонормированный
+базис, в котором <span class="math inline">\(q\)</span> имеет нужный
+вид, а <span class="math inline">\(h(x)\)</span> в любом
+ортонормированном базисе имеет нужный вид (так как скалярное
+произведение) <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="ортогональный-линейный-оператор">Ортогональный линейный
+оператор</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1">евклидово</a>
+пространство. <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">Линейный
+оператор</a> <span class="math inline">\(\mathcal{A}\)</span> -
+<em>ортогональный</em>, если он сохраняет <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-0">скалярное
+произведение</a>, то есть <span class="math inline">\((\mathcal{A}(x),
+\mathcal{A}(y)) = (x, y)\)</span>.</p>
+<h2 id="свойства-ортогонального-линейного-оператора">Свойства
+ортогонального линейного оператора</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-1"></a> <span
+class="math inline">\(\mathcal{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-1">ортогональный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a> <span class="math inline">\(\Leftrightarrow\)</span> в <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8">ортонормированном
+базисе</a> матрица <span class="math inline">\(A\)</span> линейного
+оператора <span class="math inline">\(\mathcal{A}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-9">ортогональна</a>,
+то есть <span class="math inline">\(A^TA = E\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(A\)</span>
+матрица <span class="math inline">\(\mathcal{A}\)</span> в
+ортонормированном базисе. Тогда <span class="math inline">\(X^TY = (x,
+y) = (\mathcal{A}(x), \mathcal{A}(y)) = (AX)^TAY = X^TA^TAY \Rightarrow
+A^TA = E \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> <span
+class="math inline">\(\mathcal{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-1">ортогональный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a> <span class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\(\mathcal{A}\mathcal{A}^{*} =
+\mathcal{I}\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a></p>
+<p>Пусть <span class="math inline">\(\mathcal{A}\)</span> -
+ортогональный линейный оператор. <span class="math inline">\(A\)</span>
+- его матрица. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(\mathcal{A}\)</span> сохраняет <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-2">длины</a>
+векторов.</li>
+<li><span class="math inline">\(\mathcal{A}\)</span> сохраняет <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-3">углы</a>
+между векторами.</li>
+<li><span class="math inline">\(\mathcal{A}\)</span> переводит <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-7">ортогональный</a>
+базис в ортогональный.</li>
+<li><span class="math inline">\(\det(A) = \pm 1\)</span></li>
+<li>Если существуют собственные значения <span
+class="math inline">\(\mathcal{A}\)</span>, они равны <span
+class="math inline">\(\pm 1\)</span>.</li>
+<li><span class="math inline">\(\mathcal{A}\)</span> невырожден.</li>
+</ol>
+<h3
+id="канонический-вид-ортогонального-линейного-оператора">Канонический
+вид ортогонального линейного оператора</h3>
+<hr />
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Пусть <span
+class="math inline">\(\mathcal{A}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-1">ортогональный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a> на <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1">евклидовом</a>
+пространстве <span class="math inline">\(V\)</span>, <span
+class="math inline">\(\dim V = n\)</span>, <span
+class="math inline">\(U\)</span> - инвариантное подпространство
+оператора <span class="math inline">\(\mathcal{A}\)</span>. Тогда <span
+class="math inline">\(U^{\perp}\)</span> - инвариантное подпространство
+<span class="math inline">\(\mathcal{A}\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Пусть <span
+class="math inline">\(\mathcal{A}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-1">ортогональный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a> на <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1">евклидовом</a>
+пространстве <span class="math inline">\(V\)</span>, <span
+class="math inline">\(\dim V = n\)</span>. Тогда существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8">ортонормированный</a>
+базис, в котором матрица <span
+class="math inline">\(\mathcal{A}\)</span> блочно-диагональная и состоит
+из матриц вида <span class="math inline">\(\left(\begin{array}{cc}
+\cos(\varphi) &amp; \sin(\varphi)\\ -\sin(\varphi) &amp; \cos(\varphi)
+\end{array}\right)\)</span> и не более, чем одного блока <span
+class="math inline">\(1\)</span>, и не более, чем одного блока <span
+class="math inline">\(-1\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

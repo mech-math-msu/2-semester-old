@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#липшицевы-и-гёльдеровы-функции"
+id="toc-липшицевы-и-гёльдеровы-функции">Липшицевы и Гёльдеровы
+функции</a>
+<ul>
+<li><a href="#липшицева-функция-является-функцией-ограниченной-вариации"
+id="toc-липшицева-функция-является-функцией-ограниченной-вариации">Липшицева
+функция является функцией ограниченной вариации</a></li>
+</ul></li>
+<li><a href="#связь-интеграла-стилтьеса-и-интеграла-римана"
+id="toc-связь-интеграла-стилтьеса-и-интеграла-римана">Связь интеграла
+Стилтьеса и интеграла Римана</a></li>
+<li><a href="#первая-и-вторая-теоремы-о-средних-для-интеграла-стилтьеса"
+id="toc-первая-и-вторая-теоремы-о-средних-для-интеграла-стилтьеса">Первая
+и вторая теоремы о средних для интеграла Стилтьеса</a></li>
+<li><a
+href="#вторая-теорема-о-среднем-для-интеграла-римана-усиленная-версия"
+id="toc-вторая-теорема-о-среднем-для-интеграла-римана-усиленная-версия">Вторая
+теорема о среднем для интеграла Римана (усиленная версия)</a></li>
+</ul>
+</nav>
+</details>
+<h2 id="липшицевы-и-гёльдеровы-функции">Липшицевы и Гёльдеровы
+функции</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(f(x)\)</span> определена на <span
+class="math inline">\([a, b]\)</span>. Если <span
+class="math inline">\(\exists M &gt; 0\)</span>, такое что <span
+class="math inline">\(\forall x, y \in [a, b] \,\,\,\, |f(x) - f(y)|
+&lt; M \cdot |x - y|\)</span>, то <span
+class="math inline">\(f(x)\)</span> - <em>липшицева</em> функция.</p>
+<p>Множество всех липшицевых функций на отрезке <span
+class="math inline">\([a, b]\)</span> обозначается: <span
+class="math inline">\(\operatorname{Lip}[a, b]\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(f(x)\)</span> определена на <span
+class="math inline">\([a, b]\)</span>. Если <span
+class="math inline">\(\exists M &gt; 0\)</span> и <span
+class="math inline">\(\exists \alpha \in (0, 1)\)</span>, такие что
+<span class="math inline">\(\forall x, y \in [a, b] \,\,\,\, |f(x) -
+f(y)| &lt; M \cdot |x - y|^{\alpha}\)</span>, то <span
+class="math inline">\(f(x)\)</span> - <em>гёльдерова</em> функция.</p>
+<p>Множество всех гёльдеровых функций на отрезке <span
+class="math inline">\([a, b]\)</span> с заданной <span
+class="math inline">\(\alpha\)</span> обозначается: <span
+class="math inline">\(\operatorname{Gel}^{\alpha}[a, b]\)</span>.</p>
+<h3
+id="липшицева-функция-является-функцией-ограниченной-вариации">Липшицева
+функция является функцией ограниченной вариации</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(f(x) \in \operatorname{Lip}[a, b]\)</span>. Тогда
+<span class="math inline">\(f(x) \in \operatorname{V}[a,
+b]\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(f(x) \in
+\operatorname{Lip}[a, b] \Rightarrow \exists M: \,\,\,\, \forall
+\mathcal{T}_{[a, b]} \,\,\,\, \displaystyle \sum_{i = 1}^{n}(f(x_i) -
+f(x_{i - 1})) \le \displaystyle \sum_{i = 1}^{n} M \cdot |x_i - x_{i -
+1}| \le M |b - a| \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(f(x) \in \mathcal{D}[a, b]\)</span> и <span
+class="math inline">\(\exists M &gt; 0: \,\,\,\, |f’(x)| &lt; M \,\,\,\,
+\forall x \in [a, b]\)</span>. Тогда <span class="math inline">\(f(x)
+\in \operatorname{Lip}[a, b]\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall x, y \in
+[a, b] \,\,\,\, |f(x) - f(y)| = |f’(\xi) \cdot (x_i - x_{i - 1})| \le M
+\cdot |x - y|\,\,\,\,\blacksquare\)</span></p>
+<h2 id="связь-интеграла-стилтьеса-и-интеграла-римана">Связь интеграла
+Стилтьеса и интеграла Римана</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(f(x) \in C[a, b], \,\,\,\, g(x) \in \mathcal{D}[a,
+b], \,\,\,\, g’(x) \in R[a, b]\)</span>. Тогда существует интеграл
+Стилтьеса <span class="math inline">\(\displaystyle\int\limits_a^b
+f(x)dg(x)\)</span>, существует интеграл Римана <span
+class="math inline">\(\displaystyle\int\limits_a^b f(x)g’(x)dx\)</span>
+и <span class="math display">\[\displaystyle\int\limits_a^b f(x)dg(x) =
+\displaystyle\int\limits_a^b f(x)g’(x)dx\]</span></p>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Существование <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li>Так как эти интегралы существуют, достаточно доказать равенство
+интегральных сумм Римана и Ститьеса для конкретной разметки. <span
+class="math inline">\(\forall \mathcal{T}\,\,\,\, \exists \{\xi_i\}:
+\,\,\,\, g(x_i) - g(x_{i - 1}) = g’(\xi_i)(x_i - x_{i - 1})\)</span> <a
+href="https://calculus-with-cats.github.io/lections/#theorem-34">по
+теореме Лагранжа</a>. Возьмем в качестве разметки <span
+class="math inline">\(\xi = \{\xi_i\}_{i = 1}^{n - 1}\)</span>. Имеем
+<span class="math inline">\(\sigma_f(g, \mathcal{T}(\xi)) =
+f(\xi_i)(g(x_i) - g(x_{i - 1})) = f(\xi_i)g’(\xi_i)(x_i - x_{i - 1}) =
+\sigma_{f\cdot g’}(\mathcal{T}(\xi)) \,\,\,\,\blacksquare\)</span></li>
+</ol>
+<h2
+id="первая-и-вторая-теоремы-о-средних-для-интеграла-стилтьеса">Первая и
+вторая теоремы о средних для интеграла Стилтьеса</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (первая теорема о
+среднем) Пусть <span class="math inline">\(g(x)\)</span> монотонно
+возрастает на <span class="math inline">\([a, b]\)</span>, <span
+class="math inline">\(f(x) \in C[a, b]\)</span>. Тогда <span
+class="math inline">\(\exists c \in [a, b]: \,\,\,\,
+\displaystyle\int\limits_a^b f(x)dg(x) = f(c)(g(b) - g(a))\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(m =
+\displaystyle\min_{[a, b]}f(x) \,\,\,\, M = \displaystyle\max_{[a,
+b]}f(x)\)</span> Существуют по <a
+href="https://calculus-with-cats.github.io/lections/#theorem-17">теоремам
+Вейерштрасса</a>.</p>
+<p><span class="math inline">\(g(x)\)</span> - монотонно возрастает на
+<span class="math inline">\([a, b]\)</span>, следовательно <span
+class="math inline">\(g(x)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-17.03.23#statement-1">функция
+ограниченной вариации</a> на <span class="math inline">\([a,
+b]\)</span>. А значит <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.03.23#theorem-3">по
+теореме</a> интеграл <span
+class="math inline">\(\displaystyle\int\limits_a^b f(x)dg(x)\)</span>
+существует.</p>
+<p><span class="math display">\[m \cdot(g(b) - g(a)) \le \sigma_f(g,
+\mathcal{T}) \le M \cdot (g(b) - g(a))\]</span></p>
+<p>Если <span class="math inline">\(g(b) - g(a) \ne 0\)</span>, то <span
+class="math inline">\(\frac{\displaystyle\int\limits_a^b f(x)dg(x)}{g(b)
+- g(a)}\)</span> - это значение <span
+class="math inline">\(f(x)\)</span> в некоторой точке <span
+class="math inline">\(c \in [a, b]\)</span> <a
+href="https://calculus-with-cats.github.io/lections/#theorem-19">по
+теореме</a>.</p>
+<p>Если <span class="math inline">\(f(a) = f(b) = 0\)</span>, то возьмем
+в качестве <span class="math inline">\(c\)</span> любую точку из <span
+class="math inline">\([a, b] \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (вторая теорема о
+средних) Пусть <span class="math inline">\(g(x)\)</span> монотонно
+возрастает на <span class="math inline">\([a, b]\)</span>, <span
+class="math inline">\(f(x) \in C[a, b]\)</span>. Тогда <span
+class="math inline">\(\exists c \in [a, b]: \,\,\,\,
+\displaystyle\int\limits_a^b f(x)dg(x) = g(a)(f(c) - f(a)) + g(b)(f(b) -
+f(c))\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\displaystyle\int\limits_a^b f(x)dg(x) =
+f(x)g(x)|^b_a - \displaystyle\int\limits_a^b f(x)dg(x) =\)</span> <a
+href="#theorem-1">по первой теореме о среднем</a> <span
+class="math inline">\(= f(b)g(b) - f(a)g(a) - f(c)(g(b) - g(a)) =
+g(a)(f(c) - f(a)) + g(b)(f(b) - f(c)) \,\,\,\,\blacksquare\)</span></p>
+<h2
+id="вторая-теорема-о-среднем-для-интеграла-римана-усиленная-версия">Вторая
+теорема о среднем для интеграла Римана (усиленная версия)</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-3"></a> Пусть <span
+class="math inline">\(g(x)\)</span> монотонно возрастает на <span
+class="math inline">\([a, b]\)</span>, <span class="math inline">\(f(x)
+\in C[a, b]\)</span>. Тогда <span class="math inline">\(\exists c \in
+[a, b]: \,\,\,\, \displaystyle\int\limits_a^b f(x)g(x)dx =
+g(a)\displaystyle\int\limits_a^c f(x)dx + g(b)
+\displaystyle\int\limits_c^b f(x)dx\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(g(x) \in R[a,
+b]\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-17.02.23#theorem-1">по
+теореме</a>, следовательно <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.02.23#statement-4">по
+свойству интеграла</a> интеграл <span
+class="math inline">\(\displaystyle\int\limits_a^b f(x)g(x)dx\)</span>
+существует.</p>
+<p><span class="math inline">\(F(x) = \displaystyle\int\limits_a^x
+f(t)dt \in \operatorname{Lip}[a, b]\)</span>, так как <span
+class="math inline">\(|F(x) - F(y)| = \left|\displaystyle\int\limits_y^x
+f(t)dt\right| \le \left|M\cdot \displaystyle\int\limits_y^x 1 dx\right|
+= M \cdot |x - y|\)</span>.</p>
+<p>Значит <span class="math inline">\(F(x) \in \operatorname{V}[a,
+b]\)</span>.</p>
+<p><span class="math display">\[\displaystyle\int\limits_a^b f(x)g(x)dx
+= \displaystyle\int\limits_a^b g(x)dF(x)=\]</span> рассмотрим этот
+интеграл, как интеграл Стилтьеса (можем, так как <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.03.23#theorem-3">теорема</a>)
+и применим <a href="#theorem-2">вторую теорему о среднем</a> <span
+class="math display">\[=g(a)(F(c) - F(a)) + g(b)(F(b) - F(c))=
+g(a)\displaystyle\int\limits_a^c f(x)dx +
+g(b)\displaystyle\int\limits_c^b f(x)dx
+\,\,\,\,\blacksquare\]</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Теория дискретных функций</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Теория дискретных функций</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#булевы-функции" id="toc-булевы-функции">Булевы функции</a>
+<ul>
+<li><a href="#эквивалентные-формулы"
+id="toc-эквивалентные-формулы">Эквивалентные формулы</a></li>
+<li><a
+href="#основные-тождества-для-элементарных-функций-алгебры-логики"
+id="toc-основные-тождества-для-элементарных-функций-алгебры-логики">Основные
+тождества для элементарных функций алгебры логики</a></li>
+<li><a href="#двойственность-и-самодвойственность"
+id="toc-двойственность-и-самодвойственность">Двойственность и
+самодвойственность</a></li>
+<li><a href="#принцип-двойственности"
+id="toc-принцип-двойственности">Принцип двойственности</a></li>
+<li><a href="#совершенная-дизъюнктивная-нормальная-форма"
+id="toc-совершенная-дизъюнктивная-нормальная-форма">Совершенная
+дизъюнктивная нормальная форма</a></li>
+<li><a href="#полная-система-функций-алгебры-логики"
+id="toc-полная-система-функций-алгебры-логики">Полная система функций
+алгебры логики</a></li>
+<li><a href="#полином-жегалкина" id="toc-полином-жегалкина">Полином
+Жегалкина</a></li>
+<li><a href="#замыкание-множества-булевых-функций"
+id="toc-замыкание-множества-булевых-функций">Замыкание множества булевых
+функций</a>
+<ul>
+<li><a href="#простейшие-свойства-замыкания"
+id="toc-простейшие-свойства-замыкания">Простейшие свойства
+замыкания</a></li>
+</ul></li>
+<li><a href="#замкнутость-классов-t_0-и-t_1"
+id="toc-замкнутость-классов-t_0-и-t_1">Замкнутость классов <span
+class="math inline">\(T_0\)</span> и <span
+class="math inline">\(T_1\)</span></a></li>
+<li><a href="#замкнутость-класса-самодвойственных-функций"
+id="toc-замкнутость-класса-самодвойственных-функций">Замкнутость класса
+самодвойственных функций</a>
+<ul>
+<li><a href="#лемма-о-несамодвойственной-функции"
+id="toc-лемма-о-несамодвойственной-функции">Лемма о несамодвойственной
+функции</a></li>
+</ul></li>
+<li><a href="#замкнутость-класса-монотонных-функций"
+id="toc-замкнутость-класса-монотонных-функций">Замкнутость класса
+монотонных функций</a></li>
+<li><a href="#лемма-о-немонотонной-функции"
+id="toc-лемма-о-немонотонной-функции">Лемма о немонотонной
+функции</a></li>
+<li><a href="#замкнутость-класса-линейных-функций"
+id="toc-замкнутость-класса-линейных-функций">Замкнутость класса линейных
+функций</a></li>
+<li><a href="#лемма-о-нелинейной-функции"
+id="toc-лемма-о-нелинейной-функции">Лемма о нелинейной функции</a></li>
+<li><a href="#различие-классов-t_0-t_1-s-m-l"
+id="toc-различие-классов-t_0-t_1-s-m-l">Различие классов <span
+class="math inline">\(T_0, T_1, S, M, L\)</span></a></li>
+<li><a href="#теорема-о-полноте-систем-булевых-функций"
+id="toc-теорема-о-полноте-систем-булевых-функций">Теорема о полноте
+систем булевых функций</a></li>
+<li><a
+href="#из-любой-полной-системы-булевых-функций-можно-выделить-полную-систему-из-четырех-функций"
+id="toc-из-любой-полной-системы-булевых-функций-можно-выделить-полную-систему-из-четырех-функций">Из
+любой полной системы булевых функций можно выделить полную систему из
+четырех функций</a></li>
+<li><a href="#предполные-классы" id="toc-предполные-классы">Предполные
+классы</a></li>
+<li><a href="#полнота-относительно-замкнутого-класса"
+id="toc-полнота-относительно-замкнутого-класса">Полнота относительно
+замкнутого класса</a></li>
+<li><a href="#базис-замкнутого-класса"
+id="toc-базис-замкнутого-класса">Базис замкнутого класса</a></li>
+<li><a href="#теоремы-поста-о-базисе"
+id="toc-теоремы-поста-о-базисе">Теоремы Поста о базисе</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="булевы-функции">Булевы функции</h1>
+<h2 id="эквивалентные-формулы">Эквивалентные формулы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Формулы
+<span class="math inline">\(\Phi_1\)</span> и <span
+class="math inline">\(\Phi_2\)</span>, заданные в <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-10">сигнатуре</a>
+<span class="math inline">\(\Sigma\)</span> <em>эквивалентны</em>, если
+они <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-13">задают</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-6">равные
+функции</a> относительно объединения своих переменных.</p>
+<h2
+id="основные-тождества-для-элементарных-функций-алгебры-логики">Основные
+тождества для элементарных функций алгебры логики</h2>
+<hr />
+<h2 id="двойственность-и-самодвойственность">Двойственность и
+самодвойственность</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4">Булева
+функция</a> <span class="math inline">\(f^{*} =
+\overline{f(\overline{x}_1, \ldots, \overline{x}_n)}\)</span> -
+<em>двойственная</em> к функции <span
+class="math inline">\(f\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Функция
+<span class="math inline">\(f\)</span> <em>самодвойственная</em>, если
+<span class="math inline">\(f^{*} = f\)</span>.</p>
+<h2 id="принцип-двойственности">Принцип двойственности</h2>
+<hr />
+<p>дичь какая-то</p>
+<h2 id="совершенная-дизъюнктивная-нормальная-форма">Совершенная
+дизъюнктивная нормальная форма</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a></p>
+<p><span class="math display">\[x^{\sigma} = \begin{cases}
+    x,\,\,\,\, \sigma = 1\\
+    \overline{x},\,\,\,\, \sigma = 0
+\end{cases} \,\,\,\,\,\,\,\, \sigma \in \{0, 1\}\]</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (ДНФ) Пусть <span
+class="math inline">\(f\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4">булева
+функция</a> от <span class="math inline">\(n\)</span> переменных. Тогда
+<span class="math display">\[f(x_1, \ldots, x_n) =
+\displaystyle\bigvee_{(\sigma_1, \ldots,
+\sigma_m)}x_1^{\sigma_1}\cdot\ldots\cdot x_n^{\sigma_m}f(\sigma_1,
+\ldots, \sigma_m, x_{m + 1}, \ldots, x_n)\]</span></p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\((\alpha_1,
+\ldots, \alpha_n)\)</span> произвольный двоичный набор. Если <span
+class="math inline">\(\exists i: \,\,\,\, (\alpha_1, \ldots, \alpha_n)
+\ne (\sigma_1, \ldots, \sigma_n)\)</span>, то <span
+class="math inline">\(x_1^{\sigma_1}\cdot\ldots\cdot
+x_n^{\sigma_m}f(\sigma_1, \ldots, \sigma_m, x_{m + 1}, \ldots,
+x_n)\)</span> на этом наборе <span class="math inline">\(0\)</span>. То
+есть нужно рассматривать только наборы <span
+class="math inline">\((\alpha_1, \ldots, \alpha_n) = (\sigma_1, \ldots,
+\sigma_n)\)</span>, для которых <span
+class="math inline">\(\alpha_1^{\alpha_1}\cdot\ldots\cdot
+\alpha_n^{\alpha_m}f(\alpha_1, \ldots, \alpha_m, \alpha_{m + 1}, \ldots,
+\alpha_n) = f(\alpha_1, \ldots, \alpha_n)
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-1"></a>
+<em>Совершенная дизъюнктивная нормальная форма</em> - это правая часть
+равентва <a href="#theorem-0">из теоремы</a> при <span
+class="math inline">\(m = n\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a>
+<em>Совершенная конъюнктивная нормальная форма</em> получается из <a
+href="#definition-1">СДНФ</a> для двойственной функции по принципу
+двойственности (принцип двойственности - это, конечно, дичь).</p>
+<h2 id="полная-система-функций-алгебры-логики">Полная система функций
+алгебры логики</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a> Система
+<span class="math inline">\(\{f_1, \ldots, f_n\}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4">булевых
+функций</a> <em>полна</em>, если с помощью суперпозиций из нее можно
+получить любую функцию алгебры логики.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Система <span
+class="math inline">\(\{\overline{x}, x \vee y, x \wedge y\}\)</span>
+полна.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть система
+<span class="math inline">\(M\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-3">полна</a>.
+Если любую функцию из <span class="math inline">\(M\)</span> можно
+выразить суперпозициями функций из <span
+class="math inline">\(M’\)</span>, то <span
+class="math inline">\(M’\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-3">полна</a>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Следующие
+системы <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-3">полны</a>:</p>
+<ol type="1">
+<li><span class="math inline">\(\{\overline{x}, x \vee y\}\)</span></li>
+<li><span class="math inline">\(\{x | y\}\)</span></li>
+<li><span class="math inline">\(\{x \downarrow y\}\)</span></li>
+<li><span class="math inline">\(\{0, 1, x\cdot y, x + y\}\)</span></li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="полином-жегалкина">Полином Жегалкина</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Любая булева
+функция представима в виде полинома по модулю <span
+class="math inline">\(2\)</span> единственным образом.</p>
+<p><em>Доказательство:</em> Система <span class="math inline">\(\{0, 1,
+x\cdot y, x + y\}\)</span> <a href="#statement-2">полна</a>, а значит
+любая функция представима полиномом.</p>
+<p>Докажем единственность. Посчитаем количество различных полиномов.
+Количество мономов (произведение некоторых <span class="math inline">\(k
+&lt; n\)</span> переменных) равно количеству подмножеств множества из
+<span class="math inline">\(n\)</span> элементов, то есть <span
+class="math inline">\(2^n\)</span>. У каждого монома свободный член либо
+<span class="math inline">\(0\)</span> либо <span
+class="math inline">\(1\)</span>, то есть получаем <span
+class="math inline">\(2^{2^n} \,\,\,\,\blacksquare\)</span></p>
+<h2 id="замыкание-множества-булевых-функций">Замыкание множества булевых
+функций</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-21"></a>
+<em>Операции суперпозиции</em> - это подстановка переменных, подстановка
+функции, добавление либо удаление несущественных переменных. Функция,
+полученная из исходной с помощью операций суперпозиции, получена
+<em>суперпозициями</em>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(M = \{f_1, \ldots, f_n\}, \,\,\,\, f_i\)</span> -
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4">булева
+функция</a>. <em>Замыкание</em> <span class="math inline">\(M\)</span> -
+это множество всех булевых функций, которые можно получить из <span
+class="math inline">\(M\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-21">суперпозициями</a>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\([M]\)</span></p>
+<p><strong>Определение:</strong><a name="definition-5"></a> Система <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-3">полна</a>,
+если ее замыкание совпадает с <span
+class="math inline">\(P_2\)</span>.</p>
+<h3 id="простейшие-свойства-замыкания">Простейшие свойства
+замыкания</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Пусть <span
+class="math inline">\(M, M_1, M_2\)</span> системы <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4">булевых
+функций</a>. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(M \subset [M]\)</span></li>
+<li><span class="math inline">\([\ldots[[[M]]]\ldots] =
+[M]\)</span></li>
+<li>Если <span class="math inline">\(M_1 \subset M_2\)</span>, то <span
+class="math inline">\([M_1] \subset [M_2]\)</span></li>
+<li><span class="math inline">\([M_1] \cup [M_2] \subset [M_1 \cup
+M_2]\)</span></li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-6"></a> Система
+<span class="math inline">\(M\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4">булевых
+функций</a> <em>замкнута</em>, если <span class="math inline">\([M] =
+M\)</span>.</p>
+<p><strong>Пример:</strong> Замыкание любой системы - замкнутое
+множество.</p>
+<h2 id="замкнутость-классов-t_0-и-t_1">Замкнутость классов <span
+class="math inline">\(T_0\)</span> и <span
+class="math inline">\(T_1\)</span></h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-7"></a>
+(<em>функции, сохраняющие</em> <span class="math inline">\(0\)</span>)
+<span class="math inline">\(T_0 = \{f \in P_2: \,\,\,\, f(0, \ldots, 0)
+= 0\}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-8"></a>
+(<em>функции, сохраняющие</em> <span class="math inline">\(1\)</span>)
+<span class="math inline">\(T_1 = \{f \in P_2: \,\,\,\, f(1, \ldots, 1)
+= 1\}\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> <span
+class="math inline">\(T_0\)</span> и <span
+class="math inline">\(T_1\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6">замкнуты</a>.</p>
+<p><em>Доказательство:</em> проверка по пунктам каждой операции
+суперпозиции <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="замкнутость-класса-самодвойственных-функций">Замкнутость класса
+самодвойственных функций</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-9"></a> Множество
+всех <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-2#definition-2">самодвойственных</a>
+функций обозначается <span class="math inline">\(S\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a> <span
+class="math inline">\(S\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6">замкнут</a>.</p>
+<p><em>Доказательство:</em></p>
+<h3 id="лемма-о-несамодвойственной-функции">Лемма о несамодвойственной
+функции</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-7"></a> Пусть <span
+class="math inline">\(f\)</span> не является <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-2#definition-2">самодвойственной</a>.
+Тогда суперпозициями из <span class="math inline">\(f\)</span> и <span
+class="math inline">\(\overline{x}\)</span> можно получить
+константу.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(f \not\in S
+\Rightarrow \exists (\alpha_1, \ldots, \alpha_n): \,\,\,\, f(\alpha_1,
+\ldots, \alpha_n) = f(\overline{\alpha}_1, \ldots,
+\overline{\alpha}_n)\)</span>. Пусть <span class="math inline">\(g(x) =
+f(x^{\alpha_1}, \ldots, x^{\alpha_n})\)</span>. Тогда <span
+class="math inline">\(g(0) = f(0^{\alpha_1}, \ldots, 0^{\alpha_n}) =
+f(\overline{\alpha}_1, \ldots, \overline{\alpha}_n) = f(\alpha_1,
+\ldots, \alpha_n) = f(1^{\alpha_1}, \ldots, 1^{\alpha_n}) = g(1)
+\,\,\,\,\blacksquare\)</span></p>
+<h2 id="замкнутость-класса-монотонных-функций">Замкнутость класса
+монотонных функций</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-10"></a> Пусть даны
+два двоичных набора <span class="math inline">\(\tilde{\alpha} =
+(\alpha_1, \ldots, \alpha_n)\)</span> и <span
+class="math inline">\(\tilde{\beta} = (\beta_1, \ldots,
+\beta_n)\)</span>. <span class="math inline">\(\tilde{\alpha} \le
+\tilde{\beta}\)</span>, если <span class="math inline">\(\forall i \in
+\{1, \ldots, n\}\,\,\,\, \alpha_i \le \beta_i\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-11"></a> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4">Булева
+функция</a> <span class="math inline">\(f\)</span> <em>монотонна</em>,
+если для любых <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0">наборов</a>
+<span class="math inline">\(\tilde{\alpha}\)</span> и <span
+class="math inline">\(\tilde{\beta}\)</span>, таких, что <span
+class="math inline">\(\tilde{\alpha} \le \tilde{\beta} \,\,\,\,
+f(\tilde{\alpha}) \le f(\tilde{\beta})\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-12"></a> Множество
+всех <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-11">монотонных</a>
+булевых функций обозначается <span class="math inline">\(M\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-8"></a> Класс <span
+class="math inline">\(M\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6">замкнут</a>.</p>
+<p><em>Доказательство:</em></p>
+<h2 id="лемма-о-немонотонной-функции">Лемма о немонотонной функции</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-9"></a> Если <span
+class="math inline">\(f \not\in M\)</span>, то суперпозициями из <span
+class="math inline">\(f\)</span>, <span class="math inline">\(0\)</span>
+и <span class="math inline">\(1\)</span> можно получить <span
+class="math inline">\(\overline{x}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><img src="img/img.png" /></p>
+<h2 id="замкнутость-класса-линейных-функций">Замкнутость класса линейных
+функций</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-13"></a> Булева
+функция <span class="math inline">\(f\)</span> <em>линейна</em>, если
+она представима в виде <span class="math inline">\(c_0 + c_1 x_1 + c_2
+x_2 + \ldots + c_n x_n, \,\,\,\, c_i \in \{0, 1\}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-14"></a> Множество
+всех линейных функций обозначается <span
+class="math inline">\(L\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-10"></a> Класс <span
+class="math inline">\(L\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6">замкнут</a>.</p>
+<p><em>Доказательство:</em></p>
+<h2 id="лемма-о-нелинейной-функции">Лемма о нелинейной функции</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-11"></a> Пусть <span
+class="math inline">\(f \not\in L\)</span>. Тогда из <span
+class="math inline">\(f\)</span>, <span
+class="math inline">\(\overline{x}\)</span>, <span
+class="math inline">\(0\)</span>, <span class="math inline">\(1\)</span>
+суперпозициями можно получить <span class="math inline">\(x_1 \wedge
+x_2\)</span>.</p>
+<p><em>Доказательство:</em> Запишем <span
+class="math inline">\(f\)</span> полиномом Жегалкина, так как <span
+class="math inline">\(f \not\in L\)</span> в полиноме есть член степени
+большей <span class="math inline">\(1\)</span>. Пусть он содержит <span
+class="math inline">\(x_1\)</span> и <span
+class="math inline">\(x_2\)</span>. Тогда <span class="math display">\[f
+= x_1 x_2 f_1(x_3, \ldots, x_n) + x_1 f_2(x_3, \ldots, x_n) + x_2
+f_3(x_3, \ldots, x_n) + f_4(x_3, \ldots, x_n)\]</span></p>
+<p><span class="math inline">\(f_1\)</span> не тождественный ноль, так
+как иначе нарушается единственность представления в виде полинома.
+Значит существует <span class="math inline">\((\alpha_3, \ldots,
+\alpha_n): \,\,\,\, f_1(\alpha_3, \ldots, \alpha_n) = 1\)</span>.</p>
+<p>Рассмотрим <span class="math inline">\(g(x_1, x_2) = f(x_1, x_2,
+\alpha_3, \ldots, \alpha_n) = x_1 x_2 + \alpha x_1 + \beta x_2 +
+\gamma\)</span>.</p>
+<p><span class="math inline">\(g(x_1 + \beta, x_2 + \alpha) = x_1 x_2 +
+\beta x_2 + \alpha x_1 + \beta \alpha + \alpha x_1 + \beta x_2 + \gamma
+= x_1 x_2 + \beta \alpha + \gamma\)</span></p>
+<p><span class="math inline">\(g(x_1 + \beta, x_2 + \alpha) + \beta
+\alpha + \gamma = x_1 x_2 \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Замечание:</strong> <span class="math inline">\(x + 0 = x
+\,\,\,\, \overline{x} = x + 1\)</span>.</p>
+<h2 id="различие-классов-t_0-t_1-s-m-l">Различие классов <span
+class="math inline">\(T_0, T_1, S, M, L\)</span></h2>
+<hr />
+<p><span class="math display">\[\begin{array}{c|ccccc}
+&amp; T_0 &amp; T_1 &amp; S &amp; M &amp; L\\
+\hline
+0 &amp; + &amp; - &amp; - &amp; + &amp; +\\
+1 &amp; - &amp; + &amp; - &amp; + &amp; +\\
+\overline{x} &amp; - &amp; - &amp; + &amp; - &amp; +\\
+x_1 \wedge x_2 &amp; + &amp; + &amp; - &amp; + &amp; -\\
+x_1 + x_2 &amp; + &amp; - &amp; - &amp; - &amp; +\\
+x_1 + x_2 + x_3 &amp; + &amp; + &amp; + &amp; - &amp; +\\
+x_1 x_2 \vee x_1 x_3 \vee x_2 x_3 &amp; + &amp; + &amp; + &amp; + &amp;
+-\\
+\end{array}\]</span></p>
+<h2 id="теорема-о-полноте-систем-булевых-функций">Теорема о полноте
+систем булевых функций</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-12"></a> Система <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4">булевых
+функций</a> <span class="math inline">\(F\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-3">полна</a>
+<span class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\(F\)</span> не содержится ни в одном из классов
+<span class="math inline">\(T_0, T_1, S, M, L\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span></p>
+<p>Ни один из классов <span class="math inline">\([T_0], [T_1], [S],
+[M], [L]\)</span> не является полным, то есть, если <span
+class="math inline">\(F\)</span> содержится в одном из них, система
+<span class="math inline">\(F\)</span> неполна.</p>
+<p><span class="math display">\[\Leftarrow\]</span></p>
+<p><span class="math inline">\(\exists f_{T_0} \not\in T_0, \,\,\,\,
+f_{T_1} \not\in T_1, \,\,\,\, f_S \not\in S, \,\,\,\, f_M \not\in M,
+\,\,\,\, f_L \not\in L\)</span>.</p>
+<p>Докажем существование констант <span class="math inline">\(1\)</span>
+и <span class="math inline">\(0\)</span>.</p>
+<p><span class="math inline">\(f_{T_0}(0, \ldots, 0) = 1\)</span>, если
+<span class="math inline">\(f_{T_0}(1, \ldots, 1) = 1\)</span>, то <span
+class="math inline">\(1 = f_{T_0}(x, \ldots, x)\)</span>. Иначе <span
+class="math inline">\(f_{T_0}(1, \ldots, 1) = 0\)</span>, тогда <span
+class="math inline">\(f_{T_0}(x, \ldots, x) = \overline{x}\)</span>, <a
+href="#statement-7">по лемме о несамодвойственной функции</a> из <span
+class="math inline">\(f_S\)</span> и <span
+class="math inline">\(\overline{x}\)</span> можно получить константу,
+если это не <span class="math inline">\(1\)</span>, то получим <span
+class="math inline">\(1\)</span> отрицанием.</p>
+<p>Имея <span class="math inline">\(1\)</span>, <span
+class="math inline">\(0\)</span> и <span
+class="math inline">\(f_M\)</span> получим <span
+class="math inline">\(\overline{x}\)</span> <a href="#statement-9">по
+лемме</a>. Имея <span class="math inline">\(\overline{x}\)</span>, <span
+class="math inline">\(0\)</span>, <span class="math inline">\(1\)</span>
+и <span class="math inline">\(f_L\)</span> получим <span
+class="math inline">\(x_1 \cdot x_2\)</span> <a href="#statement-11">по
+лемме</a>. Значит имеем <a href="#statement-2">полную систему</a> <span
+class="math inline">\(\{x_1\cdot x_2, \overline{x}\}
+\,\,\,\,\blacksquare\)</span></p>
+<h2
+id="из-любой-полной-системы-булевых-функций-можно-выделить-полную-систему-из-четырех-функций">Из
+любой полной системы булевых функций можно выделить полную систему из
+четырех функций</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-14"></a> Из любой
+полной системы булевых функций можно выделить полную систему из четырех
+функций.</p>
+<p><em>Доказательство:</em> Рассмотрим <span
+class="math inline">\(f_{T_0} \not\in T_0, \,\,\,\, f_{T_1} \not\in T_1,
+\,\,\,\, f_S \not\in S, \,\,\,\, f_M \not\in M, \,\,\,\, f_L \not\in
+L\)</span>. Это полная система <a href="#statement-12">по теореме</a>.
+Если <span class="math inline">\(f_{T_0}(1, \ldots, 1) = 1\)</span>, то
+<span class="math inline">\(f_{T_0}\)</span> несамодвойственная, т.к.
+<span class="math inline">\(f_{T_0}(0, \ldots, 0) = 1\)</span>, и значит
+можем взять ее в качестве <span class="math inline">\(f_S\)</span>. Если
+<span class="math inline">\(f_{T_0}(1, \ldots, 1) = 0\)</span>, то <span
+class="math inline">\(f_{T_0}\)</span> немонотонна, и значит возьмем ее
+в качестве <span class="math inline">\(f_M
+\,\,\,\,\blacksquare\)</span></p>
+<h2 id="предполные-классы">Предполные классы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-15"></a> Класс <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-3">булевых
+функций</a> <span class="math inline">\(F\)</span> <em>предполный</em>,
+если <span class="math inline">\([F] \ne P_2\)</span> и <span
+class="math inline">\(\forall f \in P_2 \setminus F \,\,\,\, [F \cup
+\{f\}] = P_2\)</span>.</p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Любой
+несовпадающий с <span class="math inline">\(P_2\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6">замкнутый</a>
+класс булевых функций содержится в одном из классов <span
+class="math inline">\(T_0, T_1, S, M, L\)</span>.</p>
+<p><em>Доказательство:</em> Если бы не содержался ни в одном, то <a
+href="#statement-12">был бы полной системой</a>, а так как замкнут
+совпадал бы с <span class="math inline">\(P_2
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-13"></a> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-5">Предполный</a>
+класс <span class="math inline">\(F\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6">замкнут</a>.</p>
+<p><em>Доказательство:</em> Пусть не так. Тогда возьмем <span
+class="math inline">\(f \in [F] \setminus F\)</span>. Имеем <span
+class="math inline">\([F \cup \{f\}] = P_2\)</span> и <span
+class="math inline">\([F \cup \{f\}] \subset [[F]] = [F] \ne P_2
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-1"></a> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-5">Предполными</a>
+классами в <span class="math inline">\(P_2\)</span> являются только
+классы <span class="math inline">\(T_0, T_1, S, M, L\)</span>.</p>
+<p><em>Доказательство:</em> Если класс <span
+class="math inline">\(F\)</span> предполный, то <a
+href="#corollary-0">он содержится в одном из классов</a> <span
+class="math inline">\(T_0, T_1, S, M, L\)</span>. Обозначим этот класс
+<span class="math inline">\(Q\)</span>. Пусть <span
+class="math inline">\(F \ne Q\)</span>. Возьмем <span
+class="math inline">\(f \in Q \setminus F \,\,\,\, [F \cup \{f\}]
+\subset [F] \ne P_2\)</span>. Противоречие.</p>
+<p>Докажем, что каждый из классов <span class="math inline">\(T_0, T_1,
+S, M, L\)</span> предполный. Если это не так, то такой класс содержится
+в одном из других, а как было показано ни один из классов <span
+class="math inline">\(T_0, T_1, S, M, L\)</span> в другом не содрежится
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="полнота-относительно-замкнутого-класса">Полнота относительно
+замкнутого класса</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-16"></a> Пусть класс
+<span class="math inline">\(F\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6">замкнут</a>.
+Система <span class="math inline">\(K\)</span> функций из <span
+class="math inline">\(F\)</span> <em>полна в</em> <span
+class="math inline">\(F\)</span>, если <span class="math inline">\([K] =
+F\)</span>.</p>
+<h2 id="базис-замкнутого-класса">Базис замкнутого класса</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-17"></a> Пусть класс
+<span class="math inline">\(F\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6">замкнут</a>.
+Система <span class="math inline">\(K \subset F\)</span> -
+<em>базис</em> в <span class="math inline">\(F\)</span>, если <span
+class="math inline">\(K\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-16">полна
+в</a> <span class="math inline">\(F\)</span> и <span
+class="math inline">\(\forall f \in K \,\,\,\, K \setminus f\)</span>
+неполна в <span class="math inline">\(F\)</span>.</p>
+<h2 id="теоремы-поста-о-базисе">Теоремы Поста о базисе</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> В каждом замкнутом
+классе существует конечный базис.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Существует счетное
+число замкнутых классов.</p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

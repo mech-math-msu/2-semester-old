@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#симметрические-билинейные-функции"
+id="toc-симметрические-билинейные-функции">Симметрические билинейные
+функции</a>
+<ul>
+<li><a href="#квадратичные-функции"
+id="toc-квадратичные-функции">Квадратичные функции</a>
+<ul>
+<li><a
+href="#алгоритм-лагранжа-приведения-квадратичной-формы-к-каноничекому-виду"
+id="toc-алгоритм-лагранжа-приведения-квадратичной-формы-к-каноничекому-виду">Алгоритм
+Лагранжа приведения квадратичной формы к каноничекому виду</a></li>
+<li><a
+href="#приведение-квадратичной-формы-к-каноничекому-виду-унитреугольными-преобразованиями"
+id="toc-приведение-квадратичной-формы-к-каноничекому-виду-унитреугольными-преобразованиями">Приведение
+квадратичной формы к каноничекому виду унитреугольными
+преобразованиями</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="симметрические-билинейные-функции">Симметрические билинейные
+функции</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span>, <span
+class="math inline">\(\beta: V\times V \to F\)</span> - билинейная
+функция на <span class="math inline">\(V\)</span>.</p>
+<p>Функция <span class="math inline">\(\beta\)</span>
+<em>симметрическая</em>, если <span class="math inline">\(\forall x, y
+\in V \,\,\,\, \beta(x, y) = \beta(y, x)\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span>.</p>
+<p><span class="math inline">\(\beta: V\times V \to F\)</span> -
+симметрическая билинейная функция на <span class="math inline">\(V
+\Leftrightarrow\)</span> матрица <span class="math inline">\(B\)</span>
+функции <span class="math inline">\(\beta\)</span> симметричекая, то
+есть <span class="math inline">\(B^T = B\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span> <span
+class="math inline">\(B = (b_{ij})\)</span>. <span
+class="math inline">\(b_{ij} = \beta(e_i, e_j) = \beta(e_j, e_i) =
+b_{ji} \Rightarrow B = B^T\)</span></p>
+<p><span class="math display">\[\Leftarrow\]</span> <span
+class="math inline">\(B = B^T \,\,\,\, \forall x, y \in V \,\,\,\,
+\beta(x, y) = X^TBY =\)</span>(так как это число)<span
+class="math inline">\(=(X^TBY)^T = Y^TB^TX = Y^TBX = \beta(y, x)
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Если в
+базисе <span class="math inline">\(e = \{e_1, \ldots, e_n\}\)</span>
+матрица <span class="math inline">\(B\)</span> билинейной функции <span
+class="math inline">\(\beta\)</span> диагональная, то <span
+class="math inline">\(\beta(x, y) = b_{11}x_1y_1 + \ldots + b_{nn}x_n
+y_n\)</span> и такой вид называется <em>каноническим видом билинейной
+функции</em> <span class="math inline">\(\beta\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(S \subset V\)</span>, <span
+class="math inline">\(V\)</span> - векторное пространство. <span
+class="math inline">\(S^{\perp} = \{x \in V: \,\,\,\, \beta(x, s) = 0
+\,\,\,\, \forall s \in S\}\)</span> - <em>ортогональное дополнение
+множества</em> <span class="math inline">\(S\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F, \,\,\,\, \operatorname{char} F \ne
+2\)</span> размерности <span class="math inline">\(n\)</span>. <span
+class="math inline">\(\beta: V\times V \to F\)</span> - симметрическая
+билинейная функция на <span class="math inline">\(V\)</span>. Тогда
+существует базис <span class="math inline">\(\{e_1, \ldots,
+e_n\}\)</span>, в котором матрица <span class="math inline">\(B\)</span>
+функции <span class="math inline">\(\beta\)</span> диагональная.</p>
+<p><em>Доказательство:</em> (индукция по <span
+class="math inline">\(n\)</span>) Для <span class="math inline">\(n =
+1\)</span> очевидно. Докажем, что из <span class="math inline">\(n -
+1\)</span> следует <span class="math inline">\(n\)</span>.</p>
+<ol type="1">
+<li><span class="math inline">\(\beta\)</span> тождественный ноль, тогда
+в любом базисе матрица <span class="math inline">\(B\)</span>
+диагональна, так как она нулевая.</li>
+<li><span class="math inline">\(\beta\)</span> не тождественный ноль,
+тогда существует вектор <span class="math inline">\(e_1\)</span>, такой
+что <span class="math inline">\(\beta(e_1, e_1) \ne 0\)</span>. Докажем,
+предположим противное, а именно <span class="math inline">\(\forall x, y
+\in V \,\,\,\, \beta(x, x) = 0\)</span>, <span
+class="math inline">\(\beta(y, y) = 0\)</span> и <span
+class="math inline">\(\beta(x + y, x + y) = 0 = \beta(x, x) + 2\beta(x,
+y) + \beta(y, y) \Rightarrow \beta(x, y) = 0\)</span> противоречие с
+тем, что <span class="math inline">\(\beta\)</span> не тождественный
+ноль. Рассмотрим ортогональное дополнение вектора <span
+class="math inline">\(e_1\)</span>. <span class="math inline">\(U =
+\{e_1\}^{\perp}\)</span>. Для произвольного базиса <span
+class="math inline">\(f = \{f_1, \ldots, f_n\}\)</span>. <span
+class="math inline">\(\forall x \in U \,\,\,\, \beta(x, e_1) = \beta(x_1
+f_1 + \ldots, x_n f_n, \lambda_1 f_1 + \ldots + \lambda_n f_n) = 0 =
+\displaystyle \sum_{i, j = 1}^{n}x_i \lambda_j \tilde{b}_{ij}\)</span>,
+а это система однородных линейных уравнений относительно <span
+class="math inline">\(x_1, \ldots, x_n\)</span>, состоящая из одного
+уравнения. Размерность фундаментальной системы решений равна <span
+class="math inline">\(n -\)</span> ранг матрицы системы. То есть <span
+class="math inline">\(\dim U = n\)</span> или <span
+class="math inline">\(\dim U = n - 1\)</span>. Докажем, что <span
+class="math inline">\(\dim U \ne n\)</span>. Вектор <span
+class="math inline">\(e_1 \not\in U\)</span>, так как <span
+class="math inline">\(\beta(e_1, e_1) \ne 0 \Rightarrow \dim U \ne n
+\Rightarrow \dim U = n - 1 \Rightarrow\)</span> по предположению
+индукции существует такой базис <span class="math inline">\(\{e_2,
+\ldots, e_n\}\)</span>, что матрица <span
+class="math inline">\(\beta\)</span> в нем диагональна. Базис <span
+class="math inline">\(\{e_1, \ldots, e_n\}\)</span> будет искомым <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>(почему матрица в нем
+диагональна и почему это базис?)</li>
+</ol>
+<h2 id="квадратичные-функции">Квадратичные функции</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span>, <span
+class="math inline">\(\beta: V \times V \to F\)</span> - симметрическая
+билинейная функция на <span class="math inline">\(V\)</span>.<br><span
+class="math inline">\(q: V \to F\)</span> - <em>квадратичная
+функция</em>, если <span class="math inline">\(\forall x \in V \,\,\,\,
+q(x) = \beta(x, x)\)</span>.<br>Матрица <span
+class="math inline">\(B\)</span> билинейной функции <span
+class="math inline">\(\beta\)</span> - <em>матрица квадратичной
+функции</em>.<br><span class="math inline">\(q(x) = \beta(x, x) = X^TBX
+= \displaystyle \sum_{i, j = 1}^{n}x_i x_j b_{ij}\)</span> такая запись
+- <em>квадратичная форма</em> <span
+class="math inline">\(q\)</span>.<br>Если в каком-то базисе <span
+class="math inline">\(B\)</span> - диагональна, то <span
+class="math inline">\(q(x) = \beta(x, x) = X^TBX = \displaystyle \sum_{i
+= 1}^{n}x_i^2 b_{ii}\)</span> и такая запись называется <em>каноническим
+видом</em> квадратичной функции <span
+class="math inline">\(q\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a></p>
+<ol type="1">
+<li>Для любой квадратичной функции <span class="math inline">\(q: V \to
+F\)</span> существует базис, в котором <span
+class="math inline">\(q\)</span> имеет канонический вид.</li>
+<li>Любая квадратичная форма может быть некоторой невырожденной линейной
+заменой переменных приведена у каноническому виду.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Следует <a href="#statement-1">отсюда</a></li>
+<li>способы такого приведения рассматриваются далее.</li>
+</ol>
+<h3
+id="алгоритм-лагранжа-приведения-квадратичной-формы-к-каноничекому-виду">Алгоритм
+Лагранжа приведения квадратичной формы к каноничекому виду</h3>
+<hr />
+<p>потом</p>
+<h3
+id="приведение-квадратичной-формы-к-каноничекому-виду-унитреугольными-преобразованиями">Приведение
+квадратичной формы к каноничекому виду унитреугольными
+преобразованиями</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Матрица
+<span class="math inline">\(S \in M_n(F)\)</span> -
+<em>унитреугольная</em>, если она верхнетреугольная с <span
+class="math inline">\(1\)</span> на главной диагонали.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> Пусть <span
+class="math inline">\(B = \left(\begin{array}{ccc} b_{11} &amp; \dots
+&amp; b_{1n}\\ \vdots &amp; \ddots &amp; \vdots\\ b_{n1} &amp; \dots
+&amp; b_{nn} \end{array}\right)\)</span></p>
+<p><span class="math inline">\(\Delta_0 = 1\)</span> <span
+class="math inline">\(\Delta_1 = |b_{11}|\)</span> <span
+class="math inline">\(\Delta_2 = \left|\begin{array}{cc} b_{11} &amp;
+b_{12}\\ b_{21} &amp; b_{22} \end{array}\right|\)</span> <span
+class="math inline">\(\vdots\)</span> <span
+class="math inline">\(\Delta_k = \left|\begin{array}{ccc} b_{11} &amp;
+\dots &amp; b_{1k}\\ \vdots &amp; \ddots &amp; \vdots\\ b_{k1} &amp;
+\dots &amp; b_{kk} \end{array}\right|\)</span> <span
+class="math inline">\(\vdots\)</span> - <em>(главные) угловые миноры
+матрицы</em> <span class="math inline">\(B\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство размерности
+<span class="math inline">\(n\)</span> над полем <span
+class="math inline">\(F\)</span>, <span class="math inline">\(\Delta_i
+\ne 0 \,\,\,\, \forall i\)</span>. Для любой квадратичной формы
+квадратичной функции <span class="math inline">\(q: V \to F\)</span>
+существует базис <span class="math inline">\(f = \{f_1, \ldots,
+f_n\}\)</span>, в котором <span class="math inline">\(q\)</span> имеет
+канонический вид: <span
+class="math inline">\(\frac{\Delta_1}{\Delta_0}x_1^2 + \ldots
+\frac{\Delta_n}{\Delta_{n - 1}}x_n^2\)</span>, где <span
+class="math inline">\(\Delta_0, \ldots, \Delta_n\)</span> - угловые
+миноры матрицы <span class="math inline">\(B\)</span> функции <span
+class="math inline">\(q\)</span> в некотором базисе <span
+class="math inline">\(e\)</span> и матрица перехода от <span
+class="math inline">\(e\)</span> к <span
+class="math inline">\(f\)</span> унитреугольная.</p>
+<p><em>Доказательство:</em> (индукция по <span
+class="math inline">\(n\)</span>) <span class="math inline">\(n =
+1\)</span> очевидно. Докажем, что из <span class="math inline">\(n -
+1\)</span> следует <span class="math inline">\(n\)</span>. Пусть <span
+class="math inline">\(e = \{e_1, \ldots, e_n\}\)</span> - базис <span
+class="math inline">\(V\)</span>. Рассмотрим <span
+class="math inline">\(U = &lt;e_1, \ldots, e_{n - 1}&gt;\)</span> - это
+подпространство <span class="math inline">\(V\)</span> размерности <span
+class="math inline">\(n - 1\)</span>, а следовательно по предположению
+индукции существует базис <span class="math inline">\(f_1, \ldots, f_{n
+- 1}\)</span>, в котором <span class="math display">\[q(x_1f_1 + \ldots
++ x_{n - 1}f_{n - 1}) = \frac{\Delta_1}{\Delta_0}x_1^2 + \ldots
++\frac{\Delta_{n - 1}}{\Delta_{n - 2}}x_n^2\]</span></p>
+<p>Будем искать <span class="math inline">\(f_n\)</span> в виде <span
+class="math inline">\(f_n = e_n + \mu_1 f_1 + \ldots + \mu_{n - 1}f_{n -
+1}\)</span>, <span class="math inline">\(e_n \not\in U
+\Rightarrow\)</span> любой вектор такого вида будет дополнять <span
+class="math inline">\(f_1, \ldots, f_{n - 1}\)</span> до базиса.</p>
+<p>Хотим, чтобы в базисе <span class="math inline">\(f_1, \ldots, f_n
+\,\,\,\,\)</span> <span class="math inline">\(q\)</span> имела
+канонический вид, то есть <span class="math inline">\(\forall i \in \{1,
+\ldots, n - 1\} \,\,\,\, \beta(f_n, f_i) = 0 = \beta(e_n + \mu_1 f_1 +
+\ldots + \mu_{n - 1}f_{n - 1}, f_i)\)</span> <span
+class="math inline">\(= \beta(e_n, f_i) + \beta(f_i, f_i)\mu_i
+\Rightarrow \mu_i = -\frac{\beta(e_n, f_i)}{\beta(f_i, f_i)}\)</span>,
+<span class="math inline">\(\beta(f_i, f_i) = \frac{\Delta_i}{\Delta_{i
+- 1}} \ne 0\)</span> следовательно нашли такие коэффиценты, что вид
+канонический. Нужно доказать, что <span class="math inline">\(\beta(f_n,
+f_n) = \frac{\Delta_n}{\Delta_{n - 1}}\)</span>.</p>
+<p>Матрица перехода от <span class="math inline">\(e\)</span> к <span
+class="math inline">\(f\)</span>: <span class="math display">\[C_{e \to
+f} = \left(\begin{array}{ccc}
+1 &amp; &amp; \star\\
+&amp; \ddots &amp; \\
+0 &amp; &amp; 1
+\end{array}\right)\]</span></p>
+<p>Матрица <span class="math inline">\(q\)</span> в базисе <span
+class="math inline">\(f\)</span>: <span class="math display">\[C =
+\left(\begin{array}{cccc}
+\frac{\Delta_1}{\Delta_0} &amp; \dots &amp; 0 &amp; 0\\
+\vdots &amp; \ddots &amp; \vdots &amp; \vdots\\
+0 &amp; \dots &amp; \frac{\Delta_{n - 1}}{\Delta_{n - 2}} &amp; 0\\
+0 &amp; \dots &amp; 0 &amp; c
+\end{array}\right)\]</span></p>
+<p><span class="math display">\[\det(C) = \frac{\Delta_1}{\Delta_0}
+\cdot \ldots \cdot \frac{\Delta_{n - 1}}{\Delta_{n - 2}}\cdot c =
+\Delta_{n - 1}c = \det(C_{e \to f}^T B C_{e \to f}) = \det(B) = \Delta_n
+\,\,\,\,\blacksquare\]</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

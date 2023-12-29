@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#евклидовы-пространства"
+id="toc-евклидовы-пространства">Евклидовы пространства</a>
+<ul>
+<li><a href="#длина-вектора-и-угол-между-векторами"
+id="toc-длина-вектора-и-угол-между-векторами">Длина вектора и угол между
+векторами</a></li>
+<li><a href="#матрица-грама-и-объем"
+id="toc-матрица-грама-и-объем">Матрица Грама и объем</a></li>
+<li><a href="#ортогональные-и-ортонормированные-базисы"
+id="toc-ортогональные-и-ортонормированные-базисы">Ортогональные и
+ортонормированные базисы</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="евклидовы-пространства">Евклидовы пространства</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">векторное
+пространство</a> над <span class="math inline">\(\mathbb{R}\)</span>.
+Симметрическая <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-1">положительно</a>
+определенная <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-2">билинейная
+функция</a> <span class="math inline">\(\beta: V \times V \to
+\mathbb{R}\)</span> - это <em>скалярное произведение</em> на <span
+class="math inline">\(V\)</span>.</p>
+<p><strong>Обозначение:</strong> <span class="math inline">\(\beta(u,
+v)\)</span> обозначается, как <span class="math inline">\((u,
+v)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">Векторное
+пространство</a> <span class="math inline">\(V\)</span> над полем <span
+class="math inline">\(R\)</span> - <em>евклидово</em>, если существует
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-0">скалярное
+произведение</a> на <span class="math inline">\(V\)</span>.</p>
+<h2 id="длина-вектора-и-угол-между-векторами">Длина вектора и угол между
+векторами</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(V\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1">евклидово</a>
+пространство. <em>Длина вектора</em> <span class="math inline">\(v \in
+V\)</span> - это число <span class="math inline">\(|x| = \sqrt{(x,
+x)}\)</span>.</p>
+<p>Определение корректно, так как скалярное произведение положительно
+определеннная функция.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(V\)</span> евклидово пространство. <em>Косинус
+угла</em> <span class="math inline">\(\alpha\)</span> <em>между
+векторами</em> <span class="math inline">\(u, v \in V\)</span> - это
+число <span class="math inline">\(\cos{\alpha} = \frac{(u,
+v)}{|u|\cdot|v|}\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> (Неравенство
+Коши-Буняковского) Пусть <span class="math inline">\(V\)</span>
+евклидово пространство. Тогда <span class="math inline">\(\forall x, y
+\in V\)</span>: <span class="math display">\[(x, y)^2 \le (x, x)\cdot(y,
+y)\]</span> Равенство достигается только в случае <span
+class="math inline">\(x\)</span> пропорционально <span
+class="math inline">\(y\)</span>.</p>
+<p><em>Доказательство:</em> Рассмотрим вектор <span
+class="math inline">\(x + ty, \,\,\,\, t \in \mathbb{R}, x, y \in
+V\)</span>. Из того, что скалярное произведение положительно определено,
+получаем: <span class="math inline">\((x + ty, x + ty) \ge 0\)</span>,
+причем равенство выполняется в случае <span class="math inline">\(x + ty
+= 0\)</span>, то есть <span class="math inline">\(x\)</span>
+пропорционально <span class="math inline">\(y\)</span>.</p>
+<p><span class="math inline">\((x + ty, x + ty) = (x, x) + 2t(x, y) +
+t^2(y, y) \ge 0\)</span> - это квадратное уравнение относительно <span
+class="math inline">\(t\)</span>, чтобы выполнялось неравенство нужна
+неположительность дискриминанта (😁): <span class="math inline">\(D = 4
+(x, y)^2 - 4 (x, x)(y, y) \le 0 \Rightarrow (x, y)^2 \le (x, x)\cdot(y,
+y) \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Пусть <span
+class="math inline">\(V\)</span> - евклидово пространство. Тогда:</p>
+<ol type="1">
+<li><span class="math inline">\(|x + y| \le |x| + |y|\)</span>
+(неравенство треугольника)</li>
+<li><span class="math inline">\(-1 \le \cos{\alpha} \le 1\)</span>, где
+<span class="math inline">\(\cos{\alpha}\)</span> угол между ненулевыми
+векторами <span class="math inline">\(x, y \in V\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em> неравенство Коши-Буняковского <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="матрица-грама-и-объем">Матрица Грама и объем</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Квадратная
+матрица <span class="math display">\[G(v_1, \ldots, v_m) =
+\left(\begin{array}{cccc}
+(v_1, v_1) &amp; (v_1, v_2) &amp; \dots &amp; (v_1, v_m)\\
+(v_2, v_1) &amp; (v_2, v_2) &amp; \dots &amp; (v_2, v_m)\\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
+(v_m, v_1) &amp; (v_m, v_2) &amp; \dots &amp; (v_m, v_m)
+\end{array}\right)\]</span> - <em>матрица Грама</em> векторов <span
+class="math inline">\(v_1, \ldots, v_m\)</span> евклидова пространства
+<span class="math inline">\(V\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Матрица Грама
+симметрическая, то есть <span class="math inline">\(G(v_1, \ldots, v_m)
+= G^T(v_1, \ldots, v_m)\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Если <span
+class="math inline">\(e = \{e_1, \ldots, e_n\}\)</span> - базис
+евклидова пространства <span class="math inline">\(V\)</span>, то <span
+class="math inline">\(\forall x, y \in V \,\,\,\, (x, y) =
+\left(\begin{array}{ccc}x_1 \dots x_n\end{array}\right)G(e_1, \ldots,
+e_n)\left(\begin{array}{c}y_1\\\vdots\\y_n\end{array}\right)\)</span>,
+<span class="math inline">\(x = \displaystyle \sum_{i = 1}^{n}x_ie_i,
+\,\,\,\, y = \displaystyle \sum_{i = 1}^{n}y_ie_i\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Векторы <span
+class="math inline">\(e_1, \ldots, e_m\)</span> евклидова пространства
+<span class="math inline">\(V\)</span> линейно независимы <span
+class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\(\det G(v_1, \ldots, v_m) &gt; 0\)</span>. Иначе
+<span class="math inline">\(\det G(v_1, \ldots, v_m) = 0\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span> Дополним векторы <span
+class="math inline">\(v_1, \ldots, v_m\)</span> до базиса <span
+class="math inline">\(V\)</span>: <span class="math inline">\(e = \{v_1,
+\ldots, v_m, v_{m + 1}, \ldots, v_n\}\)</span>. <span
+class="math inline">\(G(v_1, \ldots, v_m, v_{m + 1}, \ldots,
+v_n)\)</span> - матрица скалярного произведения, которое является
+симметрической положительно определенной билинейной функцией, а
+следовательно по <a
+href="#https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#theorem-1">критерию
+Сильвестра</a> все миноры <span class="math inline">\(G(v_1, \ldots,
+v_m, v_{m + 1}, \ldots, v_n)\)</span> положительны, то есть <span
+class="math inline">\(\Delta_m = \det G(v_1, \ldots, v_m) &gt;
+0\)</span>. <span class="math display">\[\Leftarrow\]</span> Пусть <span
+class="math inline">\(\det G(v_1, \ldots, v_m) &gt; 0\)</span>.
+предположим, что <span class="math inline">\(v_1, \ldots, v_m\)</span> -
+линейно зависимы. Тогда существует нетривиальная линейная комбинация
+равная <span class="math inline">\(0\)</span>: <span
+class="math inline">\(\lambda_1 v_1 + \ldots + \lambda_n v_n =
+0\)</span>. Без ограничения общности считаем, что <span
+class="math inline">\(\lambda_1 \ne 0\)</span>. Рассмотрим скалярное
+произведение векторов <span class="math inline">\(\lambda_1 v_1 + \ldots
++ \lambda_n v_n\)</span> и <span class="math inline">\(v_i\)</span>.
+Имеем <span class="math inline">\(\lambda_1(v_1, v_i) + \ldots +
+\lambda_n (v_n, v_i) = (0, v_i) = 0 \,\,\,\, \forall i \in \{1, \ldots,
+m\} \Rightarrow\)</span> <span class="math inline">\(\exists\)</span>
+линейная зависимость строк матрицы <span class="math inline">\(G(v_1,
+\ldots, v_m) \Rightarrow \det G(v_1, \ldots, v_m) = 0\)</span>.
+Противоречие <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-5"></a> <em>Объем
+параллелепипеда, натянутого на векторы</em> <span
+class="math inline">\(v_1, \ldots, v_m\)</span> - это число <span
+class="math inline">\(V(v_1, \ldots, v_m) = \sqrt{\det G(v_1, \ldots,
+v_m)}\)</span>.</p>
+<h2 id="ортогональные-и-ортонормированные-базисы">Ортогональные и
+ортонормированные базисы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-6"></a> Пусть <span
+class="math inline">\(V\)</span> - евклидово пространство. Векторы <span
+class="math inline">\(x, y \in V\)</span> - <em>ортогональны</em>, если
+<span class="math inline">\((x, y) = 0\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Если <span
+class="math inline">\(v_1, \ldots, v_m\)</span> - ненулевые попарно
+ортогональные векторы евклидова пространства <span
+class="math inline">\(V\)</span>, то <span class="math inline">\(v_1,
+\ldots, v_m\)</span> - линейно независимы.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-7"></a> Базис
+евклидова пространства <span class="math inline">\(V\)</span>, состоящий
+из ортогональных векторов - <em>ортогональный</em>.</p>
+<p><strong>Определение:</strong><a name="definition-8"></a>
+Отртогональный базис евклидова пространства <span
+class="math inline">\(V\)</span>, состоящий из единичных векторов -
+<em>ортонормированный</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> Пусть <span
+class="math inline">\(e = \{e_1, \ldots, e_n\}\)</span> -
+ортонормированный базис евклидова пространства <span
+class="math inline">\(V\)</span>. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(G(e_1, \ldots, e_n) = E\)</span></li>
+<li><span class="math inline">\((x, y) = x_1y_1 + \ldots + x_ny_n,
+\,\,\,\, x = \displaystyle \sum_{i = 1}^{n}x_i e_i, \,\,\,\, y =
+\displaystyle \sum_{i = 1}^{n}y_i e_i\)</span></li>
+<li><span class="math inline">\((x, e_i) = x_i, \,\,\,\, x =
+\displaystyle \sum_{i = 1}^{n}x_i e_i\)</span></li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-9"></a> Квадратная
+матрица <span class="math inline">\(C\)</span> <em>ортогональна</em>,
+если <span class="math inline">\(C^T\cdot C = E\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a></p>
+<ol type="1">
+<li><p>Пусть <span class="math inline">\(e = \{e_1, \ldots,
+e_n\}\)</span> и <span class="math inline">\(\tilde{e} = \{\tilde{e}_1,
+\ldots, \tilde{e}_n\}\)</span> - ортонормированные базисы евклидова
+пространства <span class="math inline">\(V\)</span>. Тогда <span
+class="math inline">\(C_{e \to \tilde{e}}\)</span> -
+ортогональна.</p></li>
+<li><p>Пусть <span class="math inline">\(e = \{e_1, \ldots,
+e_n\}\)</span> - ортонормированный базис евклидова пространства <span
+class="math inline">\(V\)</span>, <span class="math inline">\(\tilde{e}
+= \{\tilde{e}_1, \ldots, \tilde{e}_n\}\)</span> - базис <span
+class="math inline">\(V\)</span> и <span class="math inline">\(C_{e \to
+\tilde{e}}\)</span> - ортогональна. Тогда базис <span
+class="math inline">\(\tilde{e}\)</span> ортонормированный.</p></li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><p><span class="math display">\[C_{e \to \tilde{e}} =
+(c_{ij})\]</span> <span class="math display">\[\begin{cases}
+0, i \ne j\\
+1, i = j
+\end{cases} = \delta^k_j = (\tilde{e}_k, \tilde{e}_j) =
+\left(\displaystyle \sum_{i = 1}^{n}c_{ij}e_i, \displaystyle \sum_{l =
+1}^{n}c_{lk}e_l\right)=\]</span> <span class="math display">\[=
+\displaystyle \sum_{i = 1}^{n}\displaystyle \sum_{l =
+1}^{n}c_{ij}c_{lk}(e_i, e_l) = \displaystyle \sum_{i =
+1}^{n}c_{ij}c_{ik} \Rightarrow C_{e\to \tilde{e}}^TC_{e\to \tilde{e}} =
+E \,\,\,\,\blacksquare\]</span></p></li>
+<li><p>что-то интересное</p></li>
+</ol>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

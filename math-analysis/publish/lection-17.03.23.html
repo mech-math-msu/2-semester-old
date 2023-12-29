@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#главное-значение-интеграла-в-смысле-коши"
+id="toc-главное-значение-интеграла-в-смысле-коши">Главное значение
+интеграла в смысле Коши</a></li>
+<li><a href="#функции-ограниченной-вариации"
+id="toc-функции-ограниченной-вариации">Функции ограниченной вариации</a>
+<ul>
+<li><a href="#свойства-функций-ограниченной-вариации"
+id="toc-свойства-функций-ограниченной-вариации">Свойства функций
+ограниченной вариации</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h2 id="главное-значение-интеграла-в-смысле-коши">Главное значение
+интеграла в смысле Коши</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(f(x)\)</span> определена на <span
+class="math inline">\([a, b]\)</span> и не ограничена в точке <span
+class="math inline">\(c \in (a, b)\)</span>. Если <span
+class="math inline">\(\exists \displaystyle\lim_{\varepsilon \to
+0+0}\left(\displaystyle\int\limits_a^{c - \varepsilon} f(x)dx +
+\displaystyle\int\limits_{c + \varepsilon}^b f(x)dx \right)\)</span>, то
+он обозначается <span
+class="math inline">\(v.p.\displaystyle\int\limits_a^b f(x)dx\)</span> и
+называется <em>главное значение интеграла</em> <span
+class="math inline">\(\displaystyle\int\limits_a^b f(x)dx\)</span> <em>в
+смысле Коши</em>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(f(x)\)</span> определена на <span
+class="math inline">\(\mathbb{R}\)</span> и не ограничена. Если <span
+class="math inline">\(\exists \displaystyle\lim_{a \to
++\infty}\displaystyle\int\limits_{-a}^{a} f(x)dx\)</span>, то он
+обозначается <span
+class="math inline">\(v.p.\displaystyle\int\limits_{-\infty}^{+\infty}
+f(x)dx\)</span> и называется <em>главное значение интеграла</em> <span
+class="math inline">\(\displaystyle\int\limits_{-\infty}^{+\infty}
+f(x)dx\)</span> <em>в смысле Коши</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> <span
+class="math display">\[\exists
+v.p.\displaystyle\int\limits_{-\infty}^{+\infty} f(x)dx \Leftrightarrow
+\exists \displaystyle\int\limits_0^{+\infty} (f(x) -
+f(-x))dx\]</span></p>
+<p><em>Доказательство:</em> <span class="math inline">\(f(x) =
+\frac{f(x) - f(-x)}{2} + \frac{f(x) + f(-x)}{2}\)</span>, где одна из
+дробей четная функция, а другая нечетная, интеграл от нечетной - ноль
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="функции-ограниченной-вариации">Функции ограниченной
+вариации</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(\mathcal{T} = \{x_i\}_{i = 0}^n\)</span> разбиение
+отрезка <span class="math inline">\([a, b]\)</span>. <span
+class="math inline">\(f(x)\)</span> определена на <span
+class="math inline">\([a, b]\)</span>.</p>
+<p>Величина <span class="math inline">\(\operatorname{V}(f, \mathcal{T})
+= \displaystyle \sum_{i = 1}^{n}|f(x_i) - f(x_{i - 1})|\)</span> -
+<em>вариация функции</em> <span class="math inline">\(f(x)\)</span>
+<em>на разбиении</em> <span
+class="math inline">\(\mathcal{T}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(f(x)\)</span> определена на <span
+class="math inline">\([a, b]\)</span>.</p>
+<p>Если множество вариаций функции <span
+class="math inline">\(f(x)\)</span> по всем разбиениям ограничено, то
+<span class="math inline">\(f(x)\)</span> - <em>функция ограниченной
+вариации</em>.</p>
+<p>Величина <span class="math inline">\(\operatorname{V}_a^b f(x) =
+\displaystyle\sup_{\mathcal{T}_{[a,b]}}\operatorname{V}(f,
+\mathcal{T}_{[a,b]})\)</span> - <em>(полная) вариация функции</em> <span
+class="math inline">\(f(x)\)</span> на <span class="math inline">\([a,
+b]\)</span>.</p>
+<p><span class="math inline">\(\operatorname{V}[a, b]\)</span> -
+множество всех функций ограниченной вариации на <span
+class="math inline">\([a, b]\)</span>.</p>
+<h3 id="свойства-функций-ограниченной-вариации">Свойства функций
+ограниченной вариации</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-1"></a></p>
+<ol type="1">
+<li><p>Пусть <span class="math inline">\(f(x) \in \operatorname{V}[a,
+b]\)</span>. Тогда <span class="math inline">\(f(x)\)</span> ограничена
+на <span class="math inline">\([a, b]\)</span>.</p></li>
+<li><p>Пусть <span class="math inline">\(\mathcal{T}_{[a,
+b]}^{*}\)</span> измельчение <span
+class="math inline">\(\mathcal{T}_{[a, b]}\)</span>. Тогда <span
+class="math inline">\(\operatorname{V}(f, \mathcal{T}) \le
+\operatorname{V}(f, \mathcal{T}^{*})\)</span>.</p></li>
+<li><p>Пусть <span class="math inline">\(f(x) \in \operatorname{V}[a,
+b]\)</span>. Если <span class="math inline">\(c \in (a, b)\)</span>, то
+<span class="math inline">\(f(x) \in \operatorname{V}[a, c]\)</span>,
+<span class="math inline">\(f(x) \in \operatorname{V}[c, d]\)</span> и
+<span class="math inline">\(\operatorname{V}_a^b f(x) =
+\operatorname{V}_a^c f(x) + \operatorname{V}_c^d f(x)\)</span>.</p></li>
+<li><p>Пусть <span class="math inline">\(f(x), g(x) \in
+\operatorname{V}[a, b]\)</span>. Тогда</p></li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(\forall \alpha, \beta \in \mathbb{R}
+\,\,\,\, \alpha f(x) + \beta g(x) \in \operatorname{V}[a,
+b]\)</span>.</li>
+<li><span class="math inline">\(f(x) \circ g(x) \in \operatorname{V}[a,
+b]\)</span>.</li>
+</ol>
+<ol start="5" type="1">
+<li>Если <span class="math inline">\(f(x)\)</span> монотонна на <span
+class="math inline">\([a, b]\)</span>, то <span
+class="math inline">\(f(x) \in V[a, b]\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

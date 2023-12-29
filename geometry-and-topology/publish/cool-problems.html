@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#решения-избранных-задач"
+id="toc-решения-избранных-задач">Решения избранных задач</a>
+<ul>
+<li><a href="#элементы-теории-графов"
+id="toc-элементы-теории-графов">Элементы теории графов</a></li>
+<li><a href="#элементы-топологии" id="toc-элементы-топологии">Элементы
+топологии</a></li>
+<li><a href="#теорема-жордана" id="toc-теорема-жордана">Теорема
+Жордана</a></li>
+<li><a href="#планарные-графы" id="toc-планарные-графы">Планарные
+графы</a></li>
+<li><a href="#многогранники"
+id="toc-многогранники">Многогранники</a></li>
+<li><a href="#замкнутые-двумерные-поверхности"
+id="toc-замкнутые-двумерные-поверхности">Замкнутые двумерные
+поверхности</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="решения-избранных-задач">Решения избранных задач</h1>
+<h2 id="элементы-теории-графов">Элементы теории графов</h2>
+<hr />
+<p>ну, я уже ничего не помню</p>
+<h2 id="элементы-топологии">Элементы топологии</h2>
+<hr />
+<p><strong>Упражнение:</strong><a name="exercise-0"></a> Описать все <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывные</a>
+отображения из произвольного <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологического</a>
+пространства <span class="math inline">\(X\)</span> в пространство с <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-8">тривиальной</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0">топологией</a>.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Пусть <span class="math inline">\((X, \tau)\)</span> - произвольная
+топология. <span class="math inline">\((Y, \tau_0)\)</span> -
+тривиальная топология. <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#statement-10">По
+утверждению</a> <span class="math inline">\(\forall f: X \to Y \,\,\,\,
+f^{-1}(Y) = X\)</span> и <span class="math inline">\(f^{-1}(\varnothing)
+= \varnothing\)</span>. <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#theorem-0">По
+теореме</a>, если прообраз любого открытого в <span
+class="math inline">\(Y\)</span> множества открыт в <span
+class="math inline">\(X\)</span>, то отображение <span
+class="math inline">\(f\)</span> непрерывно. <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-0">По
+определению топологии</a> <span class="math inline">\(X\)</span> и <span
+class="math inline">\(\varnothing\)</span> открыты, а значит любое
+отображение в пространство с тривиальной топологией непрерывно 😉 <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-1"></a> Описать все <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывные</a>
+отображения из пространства с <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-7">дискретной</a>
+топологией в произвольное <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a>.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Пусть <span class="math inline">\((X, \tau_d)\)</span> - дискретная
+топология. <span class="math inline">\((Y, \tau)\)</span> - произвольная
+топология. <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#theorem-0">По
+теореме</a>, если прообраз любого открытого в <span
+class="math inline">\(Y\)</span> множества открыт в <span
+class="math inline">\(X\)</span>, то отображение <span
+class="math inline">\(f\)</span> непрерывно. А любое подмножество <span
+class="math inline">\(X\)</span> открыто в <span
+class="math inline">\(X\)</span>, а значит любое отображение в
+пространство с тривиальной топологией непрерывно 😉 <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-2"></a> Описать все <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывные</a>
+функции на бесконечном пространстве с <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологией
+Зарисского</a>.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Пусть <span class="math inline">\((X, \tau_z)\)</span> - топология
+Зарисского. <span class="math inline">\((Y, \tau)\)</span> -
+произвольная топология.
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-3"></a> (Если склеить
+концы отрезка, то получится окружность (счастье)) Пусть <span
+class="math inline">\([a, b] \subset \mathbb{R}\)</span> — стандартный
+отрезок. Покажите, что <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-5">фактор-пространство</a>
+<span class="math inline">\([a, b] / \{a, b\}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9">гомеоморфно</a>
+окружности.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Пусть <span class="math inline">\(Y = \{(x, y): \,\,\,\, x^2 + y^2 =
+1\}\)</span> - с индуцированной топологией на <span
+class="math inline">\(\mathbb{R}^2\)</span>. Рассмотрим отображение
+<span class="math inline">\(f: [0, 1] \to Y \,\,\,\, f: t \mapsto
+(\cos(t), \sin(t))\)</span>. <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#theorem-2">По
+теореме</a> получаем, что фактор пространство <span
+class="math inline">\(Y / f\)</span> совпадающее с фактор пространством
+<span class="math inline">\([0, 1] /\{0, 1\}\)</span> (т.к. <span
+class="math inline">\(f(t_1) = f(t_2) \Leftrightarrow t_1 = t_2\)</span>
+или <span class="math inline">\(t_1 = 0, \,\,\,\, t_2 = 1\)</span>)
+гомеоморфно <span class="math inline">\([0, 1]\)</span> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-4"></a> Пусть в
+пространстве <span class="math inline">\(\mathbb{R}^n\)</span> задана <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-19">непрерывная</a>
+функция <span class="math inline">\(f(x_1, \ldots , x_n)\)</span>. Пусть
+<span class="math inline">\(\Gamma\)</span> - множество нулей функции
+<span class="math inline">\(f\)</span>, т.е. <span
+class="math inline">\(\Gamma = \{(x_1, \ldots , x_n): \,\,\,\, f(x_1,
+\ldots, x_n) = 0\}\)</span>. Положим <span class="math inline">\(\Omega
+= \mathbb{R}^n \\ \Gamma\)</span>. Докажите, что точки <span
+class="math inline">\(P, Q \in \Omega\)</span>, в одной из которых
+функция <span class="math inline">\(f\)</span> положительна, а в другой
+- отрицательна, лежат в разных компонентах <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-14">линейной
+связности</a> множества <span class="math inline">\(\Omega\)</span>,
+т.е. их нельзя соединить непрерывной кривой, лежащей в <span
+class="math inline">\(\Omega\)</span>.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Рассмотрим функцию <span class="math inline">\(g(x_1, \ldots, x_n) =
+\begin{cases} 1, \,\,\,\, f(x_1, \ldots, x_n) &gt; 0 \\ 0, \,\,\,\,
+f(x_1, \ldots, x_n) &lt; 0 \end{cases}\)</span>. Докажем, что <span
+class="math inline">\(g\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-21">локально
+постоянна</a> на <span class="math inline">\(\Omega\)</span>. (…). Эта
+функция принимает <span class="math inline">\(2\)</span> значения и <a
+href="">по утверждению</a> постоянна на каждой компоненте линейной
+связности множества <span class="math inline">\(\Omega\)</span>, а
+значит точки <span class="math inline">\(P\)</span> и <span
+class="math inline">\(Q\)</span> лежат в разных компонентах <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<h2 id="теорема-жордана">Теорема Жордана</h2>
+<hr />
+<p><strong>Упражнение:</strong><a name="exercise-5"></a> Пусть <span
+class="math inline">\(f(x)\)</span> и <span
+class="math inline">\(g(x)\)</span> - непрерывные функции, заданные на
+топологическом пространстве <span class="math inline">\(X\)</span>.
+Докажите, что функция $h(x) = {f(x), g(x)} также непрерывна.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<span class="math inline">\(\max \{f(x), g(x)\} = \frac{g(x) + f(x)}{2}
++ \frac{|g(x) - f(x)|}{2}\)</span>, и, так как сумма, модуль, <span
+class="math inline">\(f(x)\)</span> и <span
+class="math inline">\(g(x)\)</span> непрерывны, получаем, что <span
+class="math inline">\(\max\{f(x), g(x)\}\)</span> - непрерывна <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-6"></a> Докажите, не
+используя теорему Жордана, что квадрат (стороны квадрата) разбивает
+плоскость на <span class="math inline">\(2\)</span> компоненты.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Рассмотрим <span class="math inline">\(f(x) = |x| + |y| - 1\)</span> и
+далее <a href="#exercise-4">по задаче</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-7"></a> Пусть <span
+class="math inline">\(L \subset \mathbb{R}^2\)</span> - замкнутая
+ломаная без самопересечений такая, что для каждого ее ребра ломаная
+<span class="math inline">\(L\)</span> лежит в замкнутой полуплоскости,
+ограниченной прямой, проходящей через это ребро (такие ломаные иногда
+называют выпуклыми). Не используя теорему Жордана, докажите, что <span
+class="math inline">\(L\)</span> разбивает плоскость на <span
+class="math inline">\(2\)</span> компоненты.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<center>
+<object data="img/poly1.svg" width="300" height="300">
+</object>
+</center>
+Пусть <span class="math inline">\(f_i(x, y) = a_i x + b_i y +
+c_i\)</span>, где <span class="math inline">\(a_i x + b_i y +
+c_i\)</span> уравнение прямой, проходящей через <span
+class="math inline">\(i\)</span>-ю сторону ломаной. Тогда <span
+class="math inline">\(f(x, y) = \max\{f_1, \ldots, f_i\} = 0\)</span>
+только если <span class="math inline">\((x, y) \in L\)</span>. Далее
+используем <a href="#exercise-4">упражнение</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<h2 id="планарные-графы">Планарные графы</h2>
+<hr />
+<p>Основные факты:</p>
+<p><strong>Формула Эйлера:</strong> <span class="math inline">\(v - e +
+f = k + 1\)</span>, где <span class="math inline">\(v\)</span> -
+количество вершин, <span class="math inline">\(e\)</span> - количество
+ребер, <span class="math inline">\(f\)</span> - количество граней, <span
+class="math inline">\(k\)</span> - количество <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-14">компонент
+связности</a> графа.</p>
+<p><strong>Сакраментальные формулы:</strong> <span
+class="math inline">\(2e = \displaystyle \sum_{i = 1}^{f}e_i =
+\displaystyle \sum_{i = 1}^{v}\operatorname{deg} v_i\)</span>, где <span
+class="math inline">\(e_i\)</span> - количество ребер, ограничивающих
+<span class="math inline">\(i\)</span>-ю грань, а <span
+class="math inline">\(\operatorname{deg} v_i\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-3">степень
+вершины</a> <span class="math inline">\(v_i\)</span>.</p>
+<p><strong>Упражнение:</strong><a name="exercise-8"></a> (Платоновы
+тела) Опишите все плоские <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5">связные</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2">простые</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">графы</a>,
+вершины которых имеют одну и ту же <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-3">степень</a>
+<span class="math inline">\(d \ge 3\)</span>, каждая грань ограничена
+одним и тем же числом <span class="math inline">\(k \ge 3\)</span> ребер
+и каждое ребро лежит ровно в двух гранях.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<span class="math display">\[2e = \displaystyle \sum_{i = 1}^{f}e_i =
+\displaystyle \sum_{i = 1}^{v}\operatorname{deg} v_i = kf = dv
+\Rightarrow\]</span> <span class="math display">\[f = \frac{2e}{k}
+\,\,\,\, \,\,\,\, v = \frac{2e}{d}\]</span> По формуле Эйлера <span
+class="math inline">\(\frac{2e}{k} - e + v = 2\)</span>. Так как ребер
+положительное количество, имеем <span class="math inline">\(\frac2d +
+\frac2k - 1 &gt; 0 \Rightarrow \frac2d &gt; 1 - \frac2k &gt;
+\frac13\)</span>, так как <span class="math inline">\(k \ge 3
+\Rightarrow d &lt; 6 \Rightarrow 3 \le d \le 5\)</span> и, аналогично,
+<span class="math inline">\(3 \le k \le 5\)</span>. Дальше перебор <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-9"></a> Можно ли
+построить диагональную <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-0">триангуляцию</a>
+произвольного (в том числе, невыпуклого) плоского многоугольника?</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Да, можно. Гроб.
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-10"></a> Пусть <span
+class="math inline">\(n\)</span> - количество вершин <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-0">триангуляцию</a>
+<span class="math inline">\(\Gamma\)</span>. Оцените сверху количество
+ребер и граней графа <span class="math inline">\(\Gamma\)</span>
+подходящими линейными функциями от <span
+class="math inline">\(n\)</span>.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Сакраментальные формулы <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<h2 id="многогранники">Многогранники</h2>
+<hr />
+<p><strong>Упражнение:</strong><a name="exercise-11"></a> Нарисуйте
+диаграммы Шлегеля для треугольной призмы в треугольной и в
+четырехугольной гранях.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<center>
+<object data="img/shl1.svg" width="300" height="300">
+</object>
+</center>
+<center>
+<object data="img/shlegelprism.svg" width="300" height="300">
+</object>
+</center>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-12"></a> Нарисуйте
+диаграмму Шлегеля для <span class="math inline">\(4\)</span>-мерного
+куба.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<center>
+<object data="img/cube4.svg" width="300" height="300">
+</object>
+</center>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-13"></a> Пусть <span
+class="math inline">\(W\)</span> - многоугольник, разрезанный двумя
+способами, а именно, на многоугольники <span class="math inline">\(F_1,
+\ldots, F_n\)</span>, а также на многоугольники <span
+class="math inline">\(G_1, \ldots, G_m\)</span>. Докажите следующее
+утверждение: многоугольник <span class="math inline">\(W\)</span> можно
+разрезать на многоугольники <span class="math inline">\(W_i\)</span>
+так, что каждый <span class="math inline">\(W_i\)</span> лежит в
+некотором <span class="math inline">\(F_j\)</span> и <span
+class="math inline">\(G_k\)</span>. В частности, каждый <span
+class="math inline">\(F_j\)</span> и <span
+class="math inline">\(G_k\)</span> разрезается на некоторые из
+многоугольников <span class="math inline">\(W_i\)</span>.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<center>
+<object data="img/poly2.svg" width="300" height="300">
+</object>
+</center>
+Проведем прямые через все стороны всех <span
+class="math inline">\(G_i\)</span> и <span
+class="math inline">\(F_i\)</span>. Рассмотрим произвольную точку <span
+class="math inline">\(P\)</span> многоугольника <span
+class="math inline">\(W\)</span>. Скажем, что <span
+class="math inline">\(P\)</span> принадлежит многоугольнику,
+совпадающему с пересечением полуплоскостей, на которые разбивают
+плоскость прямые, таких что <span class="math inline">\(P\)</span> лежит
+в этой полуплоскости <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-14"></a> Докажите, что
+из равносоставленности многоугольников <span
+class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span>, а также многоугольников <span
+class="math inline">\(B\)</span> и <span
+class="math inline">\(C\)</span>, вытекает равносоставленность
+многоугольников <span class="math inline">\(A\)</span> и <span
+class="math inline">\(C\)</span>. Покажите, что отношение
+равносоставленности на плоских многоугольниках является
+эквивалентностью.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<a href="#exercise-13">По упражнению</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-15"></a> Докажите, что
+любой треугольник равносоставлен с некоторым параллелограммом.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<center>
+<object data="mp/triang1.svg" width="300" height="300">
+</object>
+</center>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-16"></a> Докажите, что
+два параллелограмма, у которых соответственно одинаковы основания и
+проведенные к ним высоты, равносоставлены.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<center>
+<object data="mp/poly41.svg" width="400" height="400">
+</object>
+</center>
+Разрезаем как показано на рисунке (восстанавливаем высоту до
+пересечения, если пересечение не со вторым основание, то продолжаем
+восстанавливать высоты). Получаем, что оба параллелограмма
+равносоставлены однуму и тому же прямоугольнику. Далее <a
+href="#exercise-13">по упражнению</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-17"></a> Докажите, что
+любые два прямоугольника равных площадей равносоставлены.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<center>
+<object data="mp/ran1.svg" width="300" height="300">
+</object>
+</center>
+Пусть даны прямоугольники <span style="color:#5CD0B3">такой</span> и
+<span style="color:#C55F73">такой</span>. Построим <span
+style="color:#9A72AC">такой</span> параллелограмм, так, чтобы <span
+class="math inline">\(AB = CD\)</span>. Получили <span
+style="color:#9A72AC">параллелограмм</span> и <span
+style="color:#C55F73">параллелограмм(прямоугольник)</span>, у которых
+равны основания (<span class="math inline">\(AB = CD\)</span>) и высоты,
+так как площади исходных прямоугольников равны. Далее <a
+href="#exercise-16">по упражнению</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-18"></a> Докажите, что
+конечный набор прямоугольников равносоставлен с любым прямоугольником
+суммарной площади.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Пусть суммарная площадь <span class="math inline">\(S\)</span>, конечный
+набор прямоугольников <span class="math inline">\(P_1, \ldots,
+P_n\)</span>. Каждый <span class="math inline">\(P_i\)</span>
+равносоставлен некоторому прямоугольнику <span
+class="math inline">\(L_i\)</span> со стороной <span
+class="math inline">\(\sqrt{S}\)</span> <a href="#exercise-17">по
+предыдущему упражнению</a>. А так суммарная площадь <span
+class="math inline">\(S\)</span> сумма высот <span
+class="math inline">\(L_i\)</span> равна <span
+class="math inline">\(\sqrt{S}\)</span>. Значит конечный набор
+прямоугольников равносоставлен с квадратом суммарной площади, а <a
+href="#exercise-17">квадрат равносоставлен с любым прямоугольником такой
+же площади</a> <span class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-19"></a> Докажите
+теорему Бойяи–Валласа–Гервина, а именно: любые два многоугольника
+одинаковой площади равносоставлены.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Любой многоугольник триангулируем. <a href="#exercise-15">Любой
+треугольник равносоставлен с некоторым прямоугольником</a>. <a
+href="#exercise-18">Любой конечный набор прямоугольников равносоставлен
+с квадратом суммарной площади</a>. Значит по <a
+href="#exercise-14">транзитивности</a> любые два многоугольника
+одинаковой площади равносоставлены <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(W\)</span> - многогранник с множеством ребер <span
+class="math inline">\(E\)</span>, и <span
+class="math inline">\(M\)</span> - некоторое множество вещественных
+чисел, содержащее длины всех ребер из <span
+class="math inline">\(E\)</span>. Пусть <span
+class="math inline">\(f\)</span> - произвольная функция Дена для <span
+class="math inline">\(W\)</span>, и <span class="math inline">\(g: M \to
+\mathbb{R}\)</span> - произвольная аддитивная функция. Тогда
+<em>обобщенным инвариантом Дена многогранника</em> <span
+class="math inline">\(W\)</span>, соответствующим паре <span
+class="math inline">\((f, g)\)</span>, назовем число <span
+class="math inline">\(\displaystyle \sum_{e \in
+E}g(|e|)f(|\alpha_e|)\)</span>, где <span
+class="math inline">\(|e|\)</span> и <span
+class="math inline">\(\alpha_e\)</span> - длина ребра <span
+class="math inline">\(e\)</span> и величина двугранного угла при этом
+ребре соответственно.</p>
+<p><strong>Упражнение:</strong><a name="exercise-20"></a> Докажите, что
+у равносоставленных многогранников обобщенные инварианты Дена равны.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+Когда-нибудь я докажу это в лекциях 😎
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-21"></a> Докажите, не
+пользуясь иррациональностью конкретных чисел, что среди правильных
+пирамид (основание - правильный многоугольник, а высота попадает в центр
+основания) имеются неравносоставленные с равновеликим кубом.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<center>
+<object data="mp/pyr1.svg" width="400" height="400">
+</object>
+</center>
+<p>Пусть длина ребер основания пирамиды <span
+class="math inline">\(1\)</span>, длина боковых ребер <span
+class="math inline">\(l_h\)</span>, двугранный угол между боковыми
+гранями <span class="math inline">\(\beta_h\)</span>, двугранный угол
+между боковой гранью и основанием <span
+class="math inline">\(\alpha_h\)</span>. Запишем инвариант Дена для
+такой пирамиды <span class="math inline">\(n \cdot 1 \cdot f(\alpha_h) +
+l_h \cdot n \cdot f(\beta_h)\)</span>. Пусть <span
+class="math inline">\(g\)</span> - аддитивная функция, такая, что <span
+class="math inline">\(g(0) = 1\)</span> (почему существует?). Запишем
+обобщенный инвариант Дена для пирамиды: <span
+class="math inline">\(g(l_h) \cdot n \cdot f(\beta_h)\)</span>. Так как
+инвариант Дена для куба равен <span class="math inline">\(0\)</span>,
+хотим доказать, что существую <span class="math inline">\(l_h\)</span> и
+<span class="math inline">\(\beta_h\)</span>, такие, что <span
+class="math inline">\(g(l_h) \cdot f(\beta_h) \ne 0\)</span><br> Будем
+рассматривать <span class="math inline">\(\mathbb{R}\)</span>, как
+векторное протсранство над <span
+class="math inline">\(\mathbb{Q}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(V\)</span> бесконечномерное векторное
+пространство. <em>Базис Гамеля</em> <span
+class="math inline">\(V\)</span> - это <span class="math inline">\(F
+\subset V\)</span>, такая, что:</p>
+<ol type="1">
+<li><span class="math inline">\(F\)</span> - линейно независима, то есть
+<span class="math inline">\(\forall \displaystyle \sum_{i =
+1}^{m}\lambda_i f_i \Rightarrow \lambda_i = 0\)</span> (любая конечная
+линейная комбинация линейно независима)</li>
+<li><span class="math inline">\(F\)</span> - полна, то есть любой <span
+class="math inline">\(v \in V\)</span> представим в виде линейной
+комбинации <span class="math inline">\(f_i\)</span>.</li>
+</ol>
+<p><strong>Факт 1:</strong> Для любого векторного пространства
+существует базис Гамеля.</p>
+<p><strong>Факт 2:</strong> Любая линейно независимая система
+дополняется до базиса.</p>
+Возьмем <span class="math inline">\(\{1\} \in \mathbb{R}\)</span>,
+дополним до базиса <span class="math inline">\(F\)</span>. Определим
+<span class="math inline">\(g(1) = 0, g(f_1) = f_1, \ldots\)</span>.
+Тогда <span class="math inline">\(\ker g = \mathbb{Q}\)</span>. Пусть
+<span class="math inline">\(f = \pi \cdot g\)</span>. Тогда <span
+class="math inline">\(f\)</span> - функция Дена и <span
+class="math inline">\(\ker f = \pi \mathbb{Q}\)</span>.<br> Какова
+мощность множества <span class="math inline">\(\{(l_h, \beta_h):
+\,\,\,\, g(l_n) \cdot f(\beta_n) = 0\}\)</span>? Счетная, так как и
+мощность ядра <span class="math inline">\(f\)</span>, и мощность ядра
+<span class="math inline">\(g\)</span> счетная. А всего пар <span
+class="math inline">\((l_h, \beta_h)\)</span> континнум, а значит
+существует правильная пирамида неравносоставленная с равновеликим кубом
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span>
+</details>
+<h2 id="замкнутые-двумерные-поверхности">Замкнутые двумерные
+поверхности</h2>
+<hr />
+<p><strong>Упражнение:</strong><a name="exercise-22"></a> Пусть на
+поверхности нарисован граф, причем каждая из областей, на которые он
+делит поверхность, гомеоморфна диску. <em>Эйлеровой характеристикой</em>
+такой карты называется число <span class="math inline">\(v - e +
+f\)</span>, где <span class="math inline">\(v\)</span> - число вершин,
+<span class="math inline">\(e\)</span> - число ребер и <span
+class="math inline">\(f\)</span> - число областей. Докажите, что
+эйлеровы характеристики любых двух карт на поверхности совпадают.
+Указание: рассмотрите карту, получающуюся “наложением” двух карт, т.е.
+объединением их границ.</p>
+<p><strong>Упражнение:</strong><a name="exercise-23"></a> Эйлеровой
+характеристикой поверхности называется число <span
+class="math inline">\(\chi = v - e + f\)</span>, где <span
+class="math inline">\(v\)</span>, <span class="math inline">\(e\)</span>
+и <span class="math inline">\(f\)</span> - числа вершин, ребер и
+областей любой карты, нарисованной на поверхности (согласно утверждению
+из <a href="#exercise-22">упражнения</a>, это число не зависит от карты
+и, тем самым, характеризует саму поверхность). Вычислите эйлеровы
+характеристики цилиндра, тора и ленты Мебиуса.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<span class="math display">\[\chi(цилиндра) = 2 - 3 + 1 = 0\]</span>
+<span class="math display">\[\chi(T^2) = 1 - 2 + 1 = 0\]</span> <span
+class="math display">\[\chi(ленты Мёбиуса) = 4 - 6 + 2 = 0\]</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-24"></a> Поверхность
+<span class="math inline">\(M\)</span> получается из поверхности <span
+class="math inline">\(N\)</span> вырезанием <span
+class="math inline">\(k\)</span> дисков. Выразите <span
+class="math inline">\(\chi(M)\)</span> через <span
+class="math inline">\(\chi(N)\)</span>.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<span class="math display">\[e_M = e_N\]</span> <span
+class="math display">\[v_M = v_N\]</span> <span
+class="math display">\[f_M = f_N - k\]</span> <span
+class="math display">\[\chi(M) = v_M - e_M + f_M = v_N - e_N + f_N - k =
+\chi(N) - k \,\,\,\,\blacksquare\]</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-25"></a> Каждая из двух
+поверхностей <span class="math inline">\(M\)</span> и <span
+class="math inline">\(N\)</span> имеет край, представляющий собой
+замкнутую кривую, состоящую из одного куска. Поверхность <span
+class="math inline">\(Q\)</span> получается из поверхностей <span
+class="math inline">\(M\)</span> и <span
+class="math inline">\(N\)</span> склеиванием краев. Выразите <span
+class="math inline">\(\chi(Q)\)</span> через <span
+class="math inline">\(\chi(M)\)</span> и <span
+class="math inline">\(\chi(N)\)</span>.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<span class="math display">\[\chi(Q) = \chi(M\#N) = \chi(M) + \chi(N) -
+2 \,\,\,\,\blacksquare\]</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-26"></a> Вычислите
+эйлерову характеристику</p>
+<ol type="1">
+<li>поверхности <span class="math inline">\(M^m_g\)</span>, полученной
+из сферы с <span class="math inline">\(g\)</span> ручками вырезанием
+<span class="math inline">\(m\)</span> дырок;</li>
+<li>поверхности <span class="math inline">\(N^m_h\)</span>, полученной
+из сферы с <span class="math inline">\(h\)</span> пленками Мёбиуса
+вырезанием <span class="math inline">\(m\)</span> дырок.</li>
+</ol>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<p>Приклеивание ручки = вырезание двух дырок</p>
+<ol type="1">
+<li><span class="math display">\[\chi(M_{g + 1}) = \chi(M_g\#T) =
+\chi(M_g) + 0 - 2 = 2 - 2g - 2 = 2 - 2(g + 1)\]</span></li>
+</ol>
+<p><span class="math display">\[\chi(M^m_g) = \chi(M_g) - m = 2 - 2g -
+m\]</span></p>
+<ol start="2" type="1">
+<li><span class="math display">\[\chi(T\#\mathbb{R}P^2) = N_3 =
+\chi(\mathbb{R}P^2\#\mathbb{R}P^2\#\mathbb{R}P^2) \Rightarrow
+\chi(\mathbb{R}P^2) = 1\]</span></li>
+</ol>
+<p><span class="math display">\[\chi(N_{h + 1}) =
+\chi(N_h\#\mathbb{R}P^2) = \chi(N_h) + 1 - 2 = 2 - h + 1 - 2 = 2 - (h +
+1)\]</span></p>
+<p><span class="math display">\[\chi(N^m_h) = 2 - h - m
+\,\,\,\,\blacksquare\]</span></p>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-27"></a> Сторонам
+многоугольника приписаны буквы <span class="math inline">\(a, b, c,
+\ldots\)</span> в следующем порядке: <span class="math inline">\(a, b,
+a, b, c, d, c, d, \ldots\)</span> Затем стороны, помеченные одноименными
+буквами, склеиваются, причем стрелка на каждой стороне направлена по
+направлению обхода, когда соответствующая буква встречается первый раз,
+и против направления обхода, когда буква встречается второй раз.
+Докажите, что, если число разных букв равно <span
+class="math inline">\(2g\)</span>, то полученная поверхность гомеоморфна
+сфере с <span class="math inline">\(g\)</span> ручками.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<span class="math display">\[aba^{-1}b^{-1}cdc^{-1}d^{-1}\ldots \cong
+M_g \,\,\,\,\blacksquare\]</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-28"></a> Сторонам
+многоугольника приписаны буквы <span class="math inline">\(a, b, c,
+\ldots\)</span> в следующем порядке: <span class="math inline">\(a, a,
+b, b, c, c, d, d, \ldots\)</span> Затем стороны, помеченные одноименными
+буквами, склеиваются, причем стрелка на каждой стороне направлена по
+направлению обхода. Докажите, что, если число разных букв равно <span
+class="math inline">\(h\)</span>, то полученная поверхность гомеоморфна
+сфере с <span class="math inline">\(h\)</span> пленками Мебиуса.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<span class="math display">\[a^2b^2\ldots \cong N_h
+\,\,\,\,\blacksquare\]</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-29"></a> На замкнутой
+ориентируемой поверхности нарисована карта, причем каждая сторона
+представляет собой некоторый <span
+class="math inline">\(n\)</span>-угольник, и в каждой вершине сходится
+по <span class="math inline">\(k\)</span> ребер. Докажите, что <span
+class="math display">\[\frac1n + \frac1k = \frac12 +
+\frac{\chi}{2e}\]</span>, где <span class="math inline">\(\chi\)</span>
+эйлерова характеристика поверхности, а <span
+class="math inline">\(e\)</span> - число ребер карты. Приведите пример
+такой карты на сфере при <span class="math inline">\(n = 2\)</span>,
+<span class="math inline">\(k = 4\)</span>.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<p>Пример: мяч.</p>
+Пусть поверхность <span class="math inline">\(M\)</span>, карта <span
+class="math inline">\(S\)</span>. <span
+class="math display">\[\displaystyle \sum_{i = 1}^{v}k = 2e \Rightarrow
+2e = vk\]</span> <span class="math display">\[2e = nf\]</span> <span
+class="math display">\[\chi(M) = v - e + f \Rightarrow \frac{2e}k - e +
+\frac{2e}n = \chi \,\,\,\,\blacksquare\]</span>
+</details>
+<p><strong>Упражнение:</strong><a name="exercise-30"></a> Вычислите
+эйлеровы характеристики бутылки Клейна и проективной плоскости.</p>
+<details>
+<summary>
+Как известно, лучше сначала решать самостоятельно
+</summary>
+<ol type="1">
+<li><span class="math inline">\(\chi(KL) = \chi(abab^{-1}) =
+\chi(a^2(b^{-1})^2) = 2 - 2 = 0\)</span></li>
+<li><span class="math inline">\(\chi(T\#\mathbb{R}P^2) = N_3 =
+\chi(\mathbb{R}P^2\#\mathbb{R}P^2\#\mathbb{R}P^2) \Rightarrow
+\chi(\mathbb{R}P^2) = 1 \,\,\,\,\blacksquare\)</span></li>
+</ol>
+</details>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

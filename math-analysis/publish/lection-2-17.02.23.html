@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#интегрируемость-непрерывных-и-монотонных-функций"
+id="toc-интегрируемость-непрерывных-и-монотонных-функций">Интегрируемость
+непрерывных и монотонных функций</a></li>
+<li><a href="#основные-свойства-интегрируемых-по-риману-функций"
+id="toc-основные-свойства-интегрируемых-по-риману-функций">Основные
+свойства интегрируемых по Риману функций</a></li>
+</ul>
+</nav>
+</details>
+<h2
+id="интегрируемость-непрерывных-и-монотонных-функций">Интегрируемость
+непрерывных и монотонных функций</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(f(x) \in C[a, b]\)</span>, тогда <span
+class="math inline">\(f(x) \in R[a, b]\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall
+\varepsilon &gt; 0\)</span> возьмем <span class="math inline">\(\delta =
+\varepsilon\)</span>, тогда <span class="math inline">\(\forall
+\mathcal{T}(\xi) (d(\mathcal{T}) &lt; \delta = \varepsilon) \,\,\,\,
+S(\mathcal{T}) - s(\mathcal{T}) = \displaystyle \sum_{i =
+1}^{n}(\sup_{\Delta x_i}(f(x)) - \inf_{\Delta x_i}(f(x)))(x_{i} - x_{i -
+1})\)</span> <span class="math display">\[= \displaystyle \sum_{i =
+1}^{n}(\max_{\Delta x_i}(f(x)) - \min_{\Delta x_i}(f(x)))(x_{i} - x_{i -
+1})\]</span> <span class="math display">\[= \displaystyle \sum_{i =
+1}^{n}(f(x_{max_i}) - f(x_{min_i}))(x_{i} - x_{i - 1}) \le \displaystyle
+\sum_{i = 1}^{n}\varepsilon (x_{i} - x_{i - 1}) = \varepsilon (b - a)
+&lt; \varepsilon \,\,\,\,\blacksquare\]</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(f(x)\)</span> монотонна на <span
+class="math inline">\([a, b]\)</span>, тогда <span
+class="math inline">\(f(x) \in R[a, b]\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span
+class="math inline">\(f(x)\)</span> монотонно возрастает. <span
+class="math inline">\(\forall \varepsilon &gt; 0\)</span> возьмем <span
+class="math inline">\(\delta = \varepsilon\)</span>, тогда <span
+class="math inline">\(\forall \mathcal{T}(\xi) (d(\mathcal{T}) &lt;
+\delta = \varepsilon) \,\,\,\, S(\mathcal{T}) - s(\mathcal{T}) =
+\displaystyle \sum_{i = 1}^{n}(\sup_{\Delta x_i}(f(x)) - \inf_{\Delta
+x_i}(f(x)))(x_{i} - x_{i - 1}) =\)</span> <span
+class="math display">\[=\displaystyle \sum_{i = 1}^{n}(f(x_i) - f(x_{i -
+1}))(x_{i} - x_{i - 1})\le\]</span> <span class="math display">\[\le
+\displaystyle \sum_{i = 1}^{n}(f(x_i) - f(x_{i - 1}))\varepsilon =
+\varepsilon (f(b) - f(a)) &lt;
+\varepsilon\,\,\,\,\blacksquare\]</span></p>
+<p><strong>Определение:</strong><a name="definition-0"></a> Множество
+<span class="math inline">\(A \subset \mathbb{R}\)</span> <em>имеет
+лебегову меру</em> <span class="math inline">\(0\)</span>, если <span
+class="math inline">\(\forall \varepsilon \,\,\,\, \exists \{(a_i,
+b_i)\}_i: \,\,\,\, A \subset \displaystyle\cup_i (a_i, b_i) \,\,\,\,
+\displaystyle\sup_{N &lt; \infty}\displaystyle \sum_{i = 1}^{N}|b_i -
+a_i| &lt; \varepsilon\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> <span
+class="math inline">\(f(x) \in R[a, b] \Leftrightarrow\)</span>
+множество предельных точек <span class="math inline">\(f(x)\)</span> на
+<span class="math inline">\([a, b]\)</span> имеет лебегову меру <span
+class="math inline">\(0\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="основные-свойства-интегрируемых-по-риману-функций">Основные
+свойства интегрируемых по Риману функций</h2>
+<hr />
+<ol type="1">
+<li>(Интегрируемость на подотрезках)</li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(f(x) \in R[a, b]\)</span>, тогда <span
+class="math inline">\(f(x) \in R[a^{*}, b^{*}]\)</span>, если <span
+class="math inline">\([a^{*}, b^{*}] \subset [a, b]\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span
+class="math inline">\(\mathcal{T}_{[a, b]}\)</span> некоторое разбиение
+<span class="math inline">\([a, b]\)</span>, <span
+class="math inline">\(\mathcal{T}_{[a, b]}^{*} = \mathcal{T}_{[a, b]}
+\cup \{a^{*}, b^{*}\}\)</span>.</p>
+<p>Тогда <span class="math inline">\(\varepsilon &gt; S(\mathcal{T}_{[a,
+b]}) - s(\mathcal{T}_{[a, b]}) \ge S(\mathcal{T}_{[a, b]}^{*}) -
+s(\mathcal{T}_{[a, b]}^{*})=\)</span> <span class="math display">\[=
+S(\mathcal{T}_{[a, a^{*}]}^{*}) + S(\mathcal{T}_{[a^{*}, b^{*}]}^{*}) +
+S(\mathcal{T}_{[b^{*}, b]}^{*}) - s(\mathcal{T}_{[a, a^{*}]}^{*}) -
+s(\mathcal{T}_{[a^{*}, b^{*}]}^{*}) - s(\mathcal{T}_{[b^{*},
+b]}^{*})\ge\]</span> <span class="math display">\[\ge
+S(\mathcal{T}_{[a^{*}, b^{*}]}^{*}) - s(\mathcal{T}_{[a^{*},
+b^{*}]}^{*}) \,\,\,\,\blacksquare\]</span></p>
+<ol start="2" type="1">
+<li>(Аддитивность)</li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(f(x) \in R[a, b]\)</span> и <span
+class="math inline">\(f(x) \in R[b, c]\)</span>, тогда <span
+class="math inline">\(f(x) \in R[a, c]\)</span> и <span
+class="math display">\[\displaystyle\int\limits_a^c f(x)dx =
+\displaystyle\int\limits_a^b f(x)dx + \displaystyle\int\limits_b^c
+f(x)dx\]</span></p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(b \in
+\Delta x_j = [x_{j - 1}, x_j]\)</span>. <span
+class="math display">\[S(\mathcal{T}_{[a, c]}) - s(\mathcal{T}_{[a, c]})
+= S(\mathcal{T}_{[a, c]} \cup \{b\}) - s(\mathcal{T}_{[a, c]} \cup
+\{b\})+\]</span> <span class="math display">\[+
+\displaystyle\sup_{\Delta_j}f(x)(x_j - x_{j - 1}) -
+\displaystyle\inf_{\Delta_j}f(x)(x_j - x_{j - 1}) -
+\displaystyle\sup_{[x_{j - 1}, b]}f(x)(b - x_{j - 1}) -
+\displaystyle\sup_{[b, x_j]}f(x)(x_j - b)+\]</span> <span
+class="math display">\[+ \displaystyle\inf_{[x_{j - 1}, b]}f(x)(b - x_{j
+- 1}) + \displaystyle\inf_{[b, x_j]}f(x)(x_j - b) &lt; 7 \varepsilon
+\,\,\,\,\blacksquare\]</span></p>
+<ol start="3" type="1">
+<li>(Линейность)</li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
+class="math inline">\(f(x), g(x) \in R[a, b], \,\,\,\, \lambda, \mu \in
+\mathbb{R}\)</span>, тогда <span class="math display">\[\lambda f(x) +
+\mu g(x) \in R[a, b]\]</span></p>
+<p><em>Доказательство:</em> <span class="math display">\[S_{\lambda f(x)
++ \mu g(x)}(\mathcal{T}) - s_{\lambda f(x) + \mu
+g(x)}(\mathcal{T})=\]</span> <span class="math display">\[=\lambda
+S_{f(x)}(\mathcal{T}) + \mu S_{g(x)}(\mathcal{T}) - \lambda
+s_{f(x)}(\mathcal{T}) - \mu s_{g(x)}(\mathcal{T})=\]</span> <span
+class="math display">\[= \lambda (S_{f(x)}(\mathcal{T}) -
+s_{f(x)}(\mathcal{T})) + \mu (S_{g(x)}(\mathcal{T}) -
+s_{g(x)}(\mathcal{T})) &lt; (\lambda + \mu) \varepsilon
+\,\,\,\,\blacksquare\]</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

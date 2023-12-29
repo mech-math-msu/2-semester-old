@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#собственные-векторы"
+id="toc-собственные-векторы">Собственные векторы</a>
+<ul>
+<li><a href="#характеристическое-уравнение-и-многочлен"
+id="toc-характеристическое-уравнение-и-многочлен">Характеристическое
+уравнение и многочлен</a></li>
+<li><a href="#собственные-подпространства"
+id="toc-собственные-подпространства">Собственные
+подпространства</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="собственные-векторы">Собственные векторы</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. <span class="math inline">\(v \ne 0
+\in V\)</span> - <em>собственный вектор</em> линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span>, если <span
+class="math inline">\(\exists \lambda \in F: \,\,\,\, \mathcal{A}(v) =
+\lambda v\)</span>.</p>
+<p><span class="math inline">\(\lambda\)</span> - <em>собственное
+значение</em> оператора <span
+class="math inline">\(\mathcal{A}\)</span>.(вектор <span
+class="math inline">\(v\)</span> <em>отвечает</em> собственному значению
+<span class="math inline">\(\lambda\)</span>).</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Если в <span
+class="math inline">\(V\)</span> существует базис из собственных
+векторов <span class="math inline">\(\{e_1, \ldots, e_n\}\)</span>
+оператора <span class="math inline">\(\mathcal{A}\)</span>, отвечающих
+собственным значениям <span class="math inline">\(\lambda_1, \ldots,
+\lambda_n\)</span>, то матрица <span class="math inline">\(A\)</span>
+линейного оператора <span class="math inline">\(\mathcal{A}\)</span> в
+этом базисе имеет вид: <span class="math display">\[A =
+\left(\begin{array}{cccc}
+    \lambda_1 &amp; 0 &amp; \dots &amp; 0\\
+    0 &amp; \lambda_2 &amp; \ldots &amp; 0\\
+    \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
+    0 &amp; 0 &amp; \dots &amp; \lambda_n
+\end{array}\right)\]</span></p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="характеристическое-уравнение-и-многочлен">Характеристическое
+уравнение и многочлен</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> <span
+class="math inline">\(\mathcal{I}\)</span> - <em>тождественный линейный
+оператор</em>, то есть <span class="math inline">\(\forall v \in V:
+\,\,\,\, \mathcal{I}(v) = v\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>, <span class="math inline">\(A\)</span>
+- матрица <span class="math inline">\(\mathcal{A}\)</span> в некотором
+базисе.<br><span class="math inline">\(\chi(t) = \det \left(\mathcal{A}
+- t E\right)\)</span> - <em>характеристический многочлен</em> линейного
+оператора <span class="math inline">\(\mathcal{A}\)</span>.<br>Уравнение
+<span class="math inline">\(\chi(t) = 0\)</span> -
+<em>характеристическое уравнение</em> линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> (определение
+корректно) <a href="#definition-2">Определение</a> корректно, то есть
+характеристический многочлен и характеристическое уравнение не зависят
+от выбора базиса.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(V\)</span>
+- векторное пространство над полем <span
+class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>, <span class="math inline">\(A\)</span>
+- матрица <span class="math inline">\(\mathcal{A}\)</span> в базисе
+<span class="math inline">\(B\)</span>, <span
+class="math inline">\(\tilde{A}\)</span> - матрица <span
+class="math inline">\(\mathcal{A}\)</span> в базисе <span
+class="math inline">\(\tilde{B}\)</span>.</p>
+<p><span class="math display">\[|\tilde{A} - t E| = |C_{B \to
+\tilde{B}}^{-1}A C_{B \to \tilde{B}} - t C_{B \to \tilde{B}}^{-1}C_{B
+\to \tilde{B}}| = |A - t E| \,\,\,\,\blacksquare\]</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Тогда <span
+class="math inline">\(\lambda \in F\)</span> - собственное значение
+<span class="math inline">\(\mathcal{A} \Leftrightarrow \lambda\)</span>
+- корень характеристического уравнения <span
+class="math inline">\(\mathcal{A}\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Leftarrow\]</span> <span
+class="math inline">\(\lambda\)</span> - корень <span
+class="math inline">\(\chi(t) \Rightarrow \det(A - \lambda E) = 0
+\Rightarrow\)</span> <span class="math display">\[\Rightarrow \exists x
+= \left(\begin{array}{c}
+x_1^0\\
+\vdots\\
+x_n^0
+\end{array} \right) \in V: \,\,\,\, (A - \lambda
+E)\left(\begin{array}{c}
+x_1^0\\
+\vdots\\
+x_n^0
+\end{array} \right) = 0 \Rightarrow\]</span> <span
+class="math display">\[\Rightarrow (\mathcal{A} - \lambda
+\mathcal{I})(x) = 0 \Rightarrow \mathcal{A}(x) = \lambda x\]</span>
+<span class="math display">\[\Rightarrow\]</span> Те же рассуждения в
+обратную сторону <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="собственные-подпространства">Собственные подпространства</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>, <span
+class="math inline">\(\lambda\)</span> - собственное значение <span
+class="math inline">\(\mathcal{A}\)</span>. <span
+class="math inline">\(V_{\lambda}\)</span> - это множество собственных
+векторов, отвечающих значению <span
+class="math inline">\(\lambda\)</span> и нулевой вектор.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> <span
+class="math inline">\(V_{\lambda}\)</span> - подпространство векторного
+пространства <span class="math inline">\(V\)</span>.</p>
+<p><em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-5"></a> <span
+class="math inline">\(V_{\lambda}\)</span> - <em>собственное
+подпространство</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>, <span
+class="math inline">\(\lambda\)</span> - собственное значение <span
+class="math inline">\(\mathcal{A}\)</span>. Тогда <span
+class="math display">\[V_{\lambda} = \ker (\mathcal{A} - \lambda
+\mathcal{I})\]</span></p>
+<p><em>Доказательство:</em> <span class="math inline">\(V_{\lambda} =
+\{v \in V: \,\,\,\, \mathcal{A}(v) = \lambda v\}
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span> размерности <span
+class="math inline">\(n\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>, <span
+class="math inline">\(\lambda\)</span> - собственное значение <span
+class="math inline">\(\mathcal{A}\)</span>. <span
+class="math inline">\(\dim V_{\lambda} = \dim \ker (\mathcal{A} -
+\lambda \mathcal{I}) = n - \dim \operatorname{img} (\mathcal{A} -
+\lambda \mathcal{I})\)</span>.</p>
+<p><em>Доказательство:</em> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#statement-1">следует
+отсюда</a> <span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span> размерности <span
+class="math inline">\(n\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>, <span
+class="math inline">\(\lambda\)</span> - корень кратности <span
+class="math inline">\(k\)</span> характеристического многочлена <span
+class="math inline">\(\chi(t) = |\mathcal{A} - t E|\)</span>. Тогда
+<span class="math inline">\(\dim V_{\lambda} \le k\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a> Пусть <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>, <span class="math inline">\(\lambda_1,
+\ldots, \lambda_s\)</span> - его различные собственные значения. Тогда
+векторы <span class="math inline">\(v_1, \ldots, v_s\)</span>,
+отвечающие собственным значениям <span class="math inline">\(\lambda_1,
+\ldots, \lambda_s\)</span> - линейно независимы.</p>
+<p><em>Доказательство:</em> (индукция по <span
+class="math inline">\(s\)</span>) <span class="math display">\[\alpha_1
+v_1 + \ldots + \alpha_s v_s = 0 \,\,\,\, (1)\]</span> <span
+class="math display">\[\alpha_1 \lambda_1 v_1 + \ldots + \alpha_s
+\lambda_s v_s = 0 \,\,\,\, (2)\]</span> Пусть <span
+class="math inline">\(\lambda_1 \ne 0\)</span> <span
+class="math display">\[(2) - \lambda * (1):\,\,\,\,\,\,\,\, \alpha_2
+(\lambda_2 - \lambda_1) v_2 + \ldots + \alpha_s (\lambda_s - \lambda_1)
+v_s = 0\]</span> По предположению индукции <span
+class="math inline">\(v_2, \ldots, v_s\)</span> линейно независимы <span
+class="math inline">\(\Rightarrow\)</span> <span
+class="math display">\[\begin{cases}
+    \alpha_2 (\lambda_2 - \lambda_1) = 0\\
+    \vdots\\
+    \alpha_s (\lambda_s - \lambda_1) = 0
+\end{cases} \Rightarrow \begin{cases}
+    \alpha_2 = 0\\
+    \vdots\\
+    \alpha_s = 0
+\end{cases} \Rightarrow \alpha_1 v_1 = 0\]</span> Противоречие <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Сумма
+собственных подпространств отвечающих различным значениям <span
+class="math inline">\(\lambda\)</span> - прямая.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Следствие:</strong><a name="corollary-1"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span> размерности <span
+class="math inline">\(n\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Если <span
+class="math inline">\(\chi(t) = 0\)</span> имеет <span
+class="math inline">\(n\)</span> различных корней, то в <span
+class="math inline">\(V\)</span> существует базис, состоящий из
+собственных векторов.</p>
+<p><em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (критерий
+диагонализируемости линейного оператора) Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span> размерности <span
+class="math inline">\(n\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Тогда существование базиса <span
+class="math inline">\(V\)</span>, состоящего из собственных векторов
+<span class="math inline">\(\mathcal{A} \Leftrightarrow \chi(t)\)</span>
+- разлагается на линейные множители над полем <span
+class="math inline">\(F\)</span> и <span class="math inline">\(\dim
+V_{\lambda} = k\)</span>, где <span class="math inline">\(k\)</span> -
+кратность <span class="math inline">\(\lambda\)</span> для любого корня
+<span class="math inline">\(\lambda\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(\lambda_1,
+\ldots, \lambda_s\)</span> - все корни характеристического многочлена
+<span class="math inline">\(\chi(t)\)</span>, <span
+class="math inline">\(k_1, \ldots, k_s\)</span> - кратности этих
+корней.</p>
+<p><span class="math display">\[\Rightarrow\]</span> В <span
+class="math inline">\(V\)</span> существует базис <span
+class="math inline">\(B = \{e_1, \ldots, e_n\}\)</span> из собственных
+векторов линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span>. Рассмотрим множество <span
+class="math inline">\(V_1\)</span> из всех векторов <span
+class="math inline">\(B\)</span>, отвечающих собственному значению <span
+class="math inline">\(\lambda_1\)</span>, оно является подмножеством
+собственного подпространства <span class="math inline">\(V\)</span>,
+отвечающего значению <span class="math inline">\(\lambda_1 \,\,\,\, V_1
+\subset V_{\lambda_1}\)</span>. Аналогично для <span
+class="math inline">\(V_1, \ldots, V_s\)</span>. Тогда <span
+class="math inline">\(V = V_1 \oplus \ldots \oplus V_s \subset
+V_{\lambda_1} \oplus \ldots \oplus V_{\lambda_s} \subset V \Rightarrow V
+= V_{\lambda_1} \oplus \ldots \oplus V_{\lambda_s}\)</span>. <span
+class="math inline">\(\dim V = \displaystyle \sum_{i = 1}^{s}\dim
+V_{\lambda_i} \le \displaystyle \sum_{i = 1}^{s}k_i \le n \Rightarrow
+\dim V_{\lambda_i} = k_i \,\,\,\, \forall i \in \{1, \ldots,
+s\}\)</span>. (что-то непонятно)</p>
+<p><span class="math display">\[\Leftarrow\]</span> <span
+class="math inline">\(\dim V_{\lambda_1} \oplus \ldots \oplus \dim
+V_{\lambda_s} = \displaystyle \sum_{i = 1}^{s}\dim V_{\lambda_i} =
+\displaystyle \sum_{i = 1}^{s}k_i = n = \dim V \Rightarrow\)</span>
+можем взять базис, состоящий из базисов <span
+class="math inline">\(V_{\lambda_i} \,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

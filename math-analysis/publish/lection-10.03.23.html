@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#фигуры" id="toc-фигуры">Фигуры</a></li>
+<li><a href="#верхняя-и-нижняя-площади"
+id="toc-верхняя-и-нижняя-площади">Верхняя и нижняя площади</a></li>
+<li><a
+href="#равенство-определенного-интеграла-площади-под-графиком-функции"
+id="toc-равенство-определенного-интеграла-площади-под-графиком-функции">Равенство
+определенного интеграла площади под графиком функции</a></li>
+</ul>
+</nav>
+</details>
+<h2 id="фигуры">Фигуры</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> <span
+class="math inline">\(A \subset \mathbb{R}^2\)</span> - <em>плоская
+фигура</em>.</p>
+<p><span class="math inline">\((x, y) \in A\)</span> - <em>точка</em>
+фигуры.</p>
+<p><span class="math inline">\(B_{\varepsilon}(x_0, y_0) = \{(x, y) \in
+A: \,\,\,\, (x - x_0)^2 + (y - y_0)^2 &lt; \varepsilon^2\}\)</span> -
+<span class="math inline">\(\varepsilon\)</span>-<em>окрестность</em>
+точки <span class="math inline">\((x_0, y_0) \in A\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(\{A_{\alpha}\}_{\alpha}\)</span> - множество
+плоских фигур. Отображение <span class="math inline">\(\mu: \,\,\,\,
+\{A_{\alpha}\}_{\alpha} \to \mathbb{R}\)</span> - <em>площадь</em>
+фигуры, если:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall A \,\,\,\, \mu(A_{\alpha}) \ge
+0\)</span>.</li>
+<li><span class="math inline">\(\forall A_1, A_2: \,\,\,\, A_1 \cap A_2
+= \varnothing \,\,\,\, \mu(A_1) + \mu(A_2) = \mu(A_1 \cup
+A_2)\)</span>.</li>
+<li><span class="math inline">\(\forall A_1, A_2: \,\,\,\, A_1 \subset
+A_2 \,\,\,\, \mu(A_1) \le \mu(A_2)\)</span>.</li>
+<li>Площадь фигур, которые можно совместить движением, одинакова.</li>
+<li>Площадь прямоугольника со сторонами <span class="math inline">\(a
+\ge 0\)</span> и <span class="math inline">\(b \ge 0\)</span> равна
+<span class="math inline">\(a\cdot b\)</span>.</li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Площадь
+открытого и замкнутого прямоугольников равны.</p>
+<p><em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Площадь
+прямоугольного треугольника с катетами <span
+class="math inline">\(a\)</span> и <span
+class="math inline">\(b\)</span> равна <span
+class="math inline">\(\frac{1}{2}ab\)</span>.</p>
+<p><em>Доказательство:</em> половина прямоугольника <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Площадь
+треугольника с основанием <span class="math inline">\(a\)</span> и
+высотой <span class="math inline">\(h\)</span> равна <span
+class="math inline">\(\frac12 ah\)</span>.</p>
+<p><em>Доказательство:</em> сумма двух прямоугольных треугольников <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Плоская
+фигура, состоящая из непересекающихся треугольников - <em>многоугольная
+фигура</em>. Пустое множество является многоугольной фигурой по
+определению.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Площадь
+многоугольной фигуры равна сумме площадей составляющих ее треугольников
+и не зависит от разбиения на треугольники.</p>
+<p><em>Доказательство:</em> определение площади <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="верхняя-и-нижняя-площади">Верхняя и нижняя площади</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(A \subset \mathbb{R}^2\)</span> - плоская
+фигура.</p>
+<p>Любое замкнутое множество <span class="math inline">\(P\)</span>,
+такое что <span class="math inline">\(A \subset P\)</span> -
+<em>описанная</em> около <span class="math inline">\(A\)</span>
+фигура.</p>
+<p>Любое открытое множество <span class="math inline">\(Q\)</span>,
+такое что <span class="math inline">\(Q \subset A\)</span> -
+<em>вписанная</em> в <span class="math inline">\(A\)</span> фигура.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Пусть <span
+class="math inline">\(A\)</span> - ограниченная плоская фигура. Тогда
+множество площадей описанных около нее фигур ограничено снизу, а
+множество площадей вписанных в нее фигур ограничено сверху.</p>
+<p><em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(A\)</span> - ограниченная плоская фигура, <span
+class="math inline">\(\{P\}\)</span> - множество всех описанных около
+нее фигур, <span class="math inline">\(\{Q\}\)</span> - множество всех
+вписанных в нее фигур.</p>
+<p><span class="math inline">\(\mu^{*}(A) =
+\displaystyle\inf_{P}\mu(P)\)</span> - <em>верхняя площадь</em> фигуры
+<span class="math inline">\(A\)</span>.</p>
+<p><span class="math inline">\(\mu_{*}(A) =
+\displaystyle\sup_{Q}\mu(Q)\)</span> - <em>нижняя площадь</em> фигуры
+<span class="math inline">\(A\)</span>.</p>
+<p>Если <span class="math inline">\(\mu(A) = \mu^{*}(A) =
+\mu_{*}(A)\)</span>, то <span class="math inline">\(A\)</span> -
+<em>квадрируема</em> (имеет площадь по-русски).</p>
+<h2
+id="равенство-определенного-интеграла-площади-под-графиком-функции">Равенство
+определенного интеграла площади под графиком функции</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-5"></a> (первый
+критерий квадрируемости) Пусть <span class="math inline">\(A\)</span> -
+ограниченная плоская фигура. Тогда <span
+class="math inline">\(A\)</span> - квадрируема <span
+class="math inline">\(\Leftrightarrow \,\,\,\, \forall \varepsilon &gt;
+0 \,\,\,\, \exists P, Q: \,\,\,\, \mu(P) - \mu(Q) &lt;
+\varepsilon\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span> <span
+class="math inline">\(A\)</span> -квадрируема, следовательно <span
+class="math inline">\(\mu^{*}(A) = \mu_{*}(A)\)</span>. <span
+class="math display">\[\left.\begin{array}{c}
+\forall \varepsilon &gt; 0 \,\,\,\, \exists P: \,\,\,\, \mu(P) -
+\mu^{*}(A) &lt; \frac{\varepsilon}{2}\\
+\forall \varepsilon &gt; 0 \,\,\,\, \exists Q: \,\,\,\, \mu_{*}(A) -
+\mu(Q) &lt; \frac{\varepsilon}{2}
+\end{array}\right\} \Rightarrow \mu(P) - \mu(Q) &lt;
+\varepsilon\]</span> <span class="math display">\[\Leftarrow\]</span>
+<span class="math display">\[\forall \varepsilon &gt; 0 \,\,\,\, \exists
+P, Q: \,\,\,\, \mu^{*}(A) - \mu_{*}(A) \le \mu(P) - \mu(Q) &lt;
+\varepsilon \Rightarrow \mu^{*}(A) = \mu_{*}(A)
+\,\,\,\,\blacksquare\]</span></p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a>
+(геометричекий смысл интеграла Римана) Пусть <span
+class="math inline">\(f(x) \in R[a, b], \,\,\,\, f(x) \ge 0 \,\,\,\,
+\forall x \in [a, b]\)</span>.</p>
+<p>Тогда фигура <span class="math inline">\(A = \{(x, y): \,\,\,\, a \le
+x \le b, 0 \le y \le f(x)\}\)</span> - квадрируема и ее площадь равна
+<span class="math inline">\(\displaystyle\int\limits_a^b
+f(x)dx\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(f(x)\)</span> -
+интегрируема на <span class="math inline">\([a, b]\)</span>,
+следовательно <span class="math inline">\(\forall \varepsilon &gt; 0
+\,\,\,\, \exists \delta &gt; 0: \,\,\,\, \forall \mathcal{T}
+(d(\mathcal{T}) &lt; \delta) \,\,\,\, S(\mathcal{T}) - s(\mathcal{T})
+&lt; \varepsilon\)</span>. Для любой разметки <span
+class="math inline">\(S(\mathcal{T})\)</span> - это площадь описанной
+около <span class="math inline">\(A\)</span> фигуры, а <span
+class="math inline">\(s(\mathcal{T})\)</span> - площадь вписанной в
+<span class="math inline">\(A\)</span> фигуры <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (второй критерий
+квадрируемости) Плоская фигура <span class="math inline">\(A\)</span>
+квадрируема <span class="math inline">\(\Leftrightarrow \,\,\,\,
+\mu^{*}(\partial A) = 0\)</span>. (<span class="math inline">\(\partial
+A\)</span> - множество граничных точек <span
+class="math inline">\(A\)</span>)</p>
+<p><em>Доказательство:</em> запомните, что нужно получить <span
+class="math inline">\(32 \varepsilon\)</span> и вперед <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

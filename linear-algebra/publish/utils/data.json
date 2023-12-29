@@ -1,0 +1,1234 @@
+[
+    {
+        "keyword": "сопряженный",
+        "data": "Пусть $V$ - [евклидово](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1) пространство, $\\mathcal{A}$ - [линейный оператор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1) на $V$. [Линейный оператор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1) $\\mathcal{A}^{*}$ - *сопряженный* к $\\mathcal{A}$, если $\\forall x, y \\in V \\,\\,\\,\\, (\\mathcal{A}(x), y) = (x, \\mathcal{A}^{*}(y))$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1\">евклидово</a>\nпространство, <span class=\"math inline\">\\(\\mathcal{A}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1\">линейный\nоператор</a> на <span class=\"math inline\">\\(V\\)</span>. <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1\">Линейный\nоператор</a> <span class=\"math inline\">\\(\\mathcal{A}^{*}\\)</span> -\n<em>сопряженный</em> к <span class=\"math inline\">\\(\\mathcal{A}\\)</span>,\nесли <span class=\"math inline\">\\(\\forall x, y \\in V \\,\\,\\,\\,\n(\\mathcal{A}(x), y) = (x, \\mathcal{A}^{*}(y))\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "самосопряженный",
+        "data": "Пусть $V$ - евклидово пространство. Линейный оператор $\\mathcal{A}$ - *самосопряженный*, если $\\mathcal{A}^{*} = \\mathcal{A}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - евклидово\nпространство. Линейный оператор <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span> - <em>самосопряженный</em>,\nесли <span class=\"math inline\">\\(\\mathcal{A}^{*} =\n\\mathcal{A}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "симметрическая",
+        "data": "Матрица $A \\in M_n(\\mathbb{R})$ - *симметрическая*, если $A = A^T$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-2\">Определение:</a></strong><p>Матрица <span class=\"math inline\">\\(A \\in M_n(\\mathbb{R})\\)</span> -\n<em>симметрическая</em>, если <span class=\"math inline\">\\(A =\nA^T\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "приведение к главным осям",
+        "data": "Нахождение ортонормированного базиса, в котором квадратичная функция равна сумме квадратов - *приведение к главным осям*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-0\">Определение:</a></strong><p>Нахождение ортонормированного базиса, в котором квадратичная функция\nравна сумме квадратов - <em>приведение к главным осям</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортогональный",
+        "data": "$V$ - [евклидово](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1) пространство. [Линейный оператор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1) $\\mathcal{A}$ - *ортогональный*, если он сохраняет [скалярное произведение](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-0), то есть $(\\mathcal{A}(x), \\mathcal{A}(y)) = (x, y)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-1\">Определение:</a></strong><p><span class=\"math inline\">\\(V\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1\">евклидово</a>\nпространство. <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1\">Линейный\nоператор</a> <span class=\"math inline\">\\(\\mathcal{A}\\)</span> -\n<em>ортогональный</em>, если он сохраняет <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-0\">скалярное\nпроизведение</a>, то есть <span class=\"math inline\">\\((\\mathcal{A}(x),\n\\mathcal{A}(y)) = (x, y)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $V$ - векторное пространство над $\\mathbb{R}$. Рассмотрим множество $V(\\mathbb{C}) = \\{(v_1, v_2)| v_1, v_2 \\in V\\}$. Определим ",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-04.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-04.03.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - векторное пространство\nнад <span class=\"math inline\">\\(\\mathbb{R}\\)</span>. Рассмотрим\nмножество <span class=\"math inline\">\\(V(\\mathbb{C}) = \\{(v_1, v_2)| v_1,\nv_2 \\in V\\}\\)</span>. Определим</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "алгебраически замкнуто",
+        "data": "Поле $F$ *алгебраически замкнуто*, если любой многочлен над $F$ имеет хотя бы один корень.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-04.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-04.03.23#definition-1\">Определение:</a></strong><p>Поле <span class=\"math inline\">\\(F\\)</span> <em>алгебраически\nзамкнуто</em>, если любой многочлен над <span\nclass=\"math inline\">\\(F\\)</span> имеет хотя бы один корень.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "аннулирующий многочлен",
+        "data": "Пусть $V$ векторное пространство над полем $F$, $\\mathcal{A}$ - линейный оператор на $V$. $f \\in F[t]$ - *аннулирующий многочлен* для $\\mathcal{A}$, если $f(\\mathcal{A}) = 0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-06.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-06.03.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> векторное пространство\nнад полем <span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span> - линейный оператор на <span\nclass=\"math inline\">\\(V\\)</span>. <span class=\"math inline\">\\(f \\in\nF[t]\\)</span> - <em>аннулирующий многочлен</em> для <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span>, если <span\nclass=\"math inline\">\\(f(\\mathcal{A}) = 0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "минимальный многочлен",
+        "data": "Пусть $V$ векторное пространство над полем $F$, $\\mathcal{A}$ - линейный оператор на $V$. Аннулирующий многочлен $\\mathcal{A}$ минимальной степени со старшим коэффицентом равным $1$ - *минимальный многочлен* для $\\mathcal{A}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-06.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-06.03.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> векторное пространство\nнад полем <span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span> - линейный оператор на <span\nclass=\"math inline\">\\(V\\)</span>. Аннулирующий многочлен <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span> минимальной степени со\nстаршим коэффицентом равным <span class=\"math inline\">\\(1\\)</span> -\n<em>минимальный многочлен</em> для <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Квадратная матрица вида $\\operatorname{J}_k(\\lambda) = \\left(\\begin{array}{ccccc}\n\\lambda & 1 & 0 & \\dots & 0\\\\",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-06.03.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-06.03.23#definition-2\">Определение:</a></strong><p>Квадратная матрица вида $_k() = (\\begin{array}{ccccc} &amp; 1 &amp; 0\n&amp; &amp; 0\\</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "жорданова матрица",
+        "data": "Квадратная матрица размера $n \\times n$, состоящая из жордановых клеток на диагонали и нулей на остальных местах - это *жорданова матрица* размера $n \\times n$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-06.03.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-06.03.23#definition-3\">Определение:</a></strong><p>Квадратная матрица размера <span class=\"math inline\">\\(n \\times\nn\\)</span>, состоящая из жордановых клеток на диагонали и нулей на\nостальных местах - это <em>жорданова матрица</em> размера <span\nclass=\"math inline\">\\(n \\times n\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "жорданов жорданова нормальная форма",
+        "data": "Пусть $V$ - векторное пространство, $\\mathcal{A}$ - линейный оператор на $V$. Если существует базис, в котором матрица $\\mathcal{A}$ жорданова, то такой базис - *жорданов*, а сама матрица *жорданова нормальная форма* линейного оператора $\\mathcal{A}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-06.03.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-06.03.23#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - векторное\nпространство, <span class=\"math inline\">\\(\\mathcal{A}\\)</span> -\nлинейный оператор на <span class=\"math inline\">\\(V\\)</span>. Если\nсуществует базис, в котором матрица <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span> жорданова, то такой базис -\n<em>жорданов</em>, а сама матрица <em>жорданова нормальная форма</em>\nлинейного оператора <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "положительно определен",
+        "data": "Линейный оператор $\\mathcal{A}$ *положительно определен*, если он [самосопряженный](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-1) и $\\forall x \\in V \\,\\,\\,\\, (x, \\mathcal{A}(x)) > 0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-0\">Определение:</a></strong><p>Линейный оператор <span class=\"math inline\">\\(\\mathcal{A}\\)</span>\n<em>положительно определен</em>, если он <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-01.04.23#definition-1\">самосопряженный</a>\nи <span class=\"math inline\">\\(\\forall x \\in V \\,\\,\\,\\, (x,\n\\mathcal{A}(x)) &gt; 0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "полуторалинейная",
+        "data": "Пусть $V$ - [векторное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0) над $\\mathbb{C}$. Функция $\\beta: V \\times V \\to \\mathbb{C}$ - *полуторалинейная*, если $\\forall x, y, z \\in V, \\,\\,\\,\\, \\lambda \\in \\mathbb{C}$:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">векторное\nпространство</a> над <span class=\"math inline\">\\(\\mathbb{C}\\)</span>.\nФункция <span class=\"math inline\">\\(\\beta: V \\times V \\to\n\\mathbb{C}\\)</span> - <em>полуторалинейная</em>, если <span\nclass=\"math inline\">\\(\\forall x, y, z \\in V, \\,\\,\\,\\, \\lambda \\in\n\\mathbb{C}\\)</span>:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "матрица полуторалинейной функции",
+        "data": "Пусть $V$ - [векторное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0) над $\\mathbb{C}$, $\\{e_1, \\ldots, e_n\\}$ - [базис](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7) $V$, $\\beta$ - [полуторалинейная](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1) функция. $\\left(\\begin{array}{ccc}b_{11} & \\dots & b_{1n}\\\\\\vdots & \\ddots & \\vdots\\\\b_{n1} & \\dots & b_{nn}\\end{array}\\right) = B$, где $b_{ij} = \\beta(e_i, e_j)$ - *матрица полуторалинейной функции* $\\beta$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">векторное\nпространство</a> над <span class=\"math inline\">\\(\\mathbb{C}\\)</span>,\n<span class=\"math inline\">\\(\\{e_1, \\ldots, e_n\\}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7\">базис</a>\n<span class=\"math inline\">\\(V\\)</span>, <span\nclass=\"math inline\">\\(\\beta\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1\">полуторалинейная</a>\nфункция. <span class=\"math inline\">\\(\\left(\\begin{array}{ccc}b_{11}\n&amp; \\dots &amp; b_{1n}\\\\\\vdots &amp; \\ddots &amp; \\vdots\\\\b_{n1} &amp;\n\\dots &amp; b_{nn}\\end{array}\\right) = B\\)</span>, где <span\nclass=\"math inline\">\\(b_{ij} = \\beta(e_i, e_j)\\)</span> - <em>матрица\nполуторалинейной функции</em> <span\nclass=\"math inline\">\\(\\beta\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "эрмитова",
+        "data": "[Полуторалинейная](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1) функция $\\beta$ - *эрмитова*, если $\\forall x, y \\in V \\,\\,\\,\\, \\beta(x, y) = \\overline{\\beta(y, x)}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-3\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1\">Полуторалинейная</a>\nфункция <span class=\"math inline\">\\(\\beta\\)</span> - <em>эрмитова</em>,\nесли <span class=\"math inline\">\\(\\forall x, y \\in V \\,\\,\\,\\, \\beta(x, y)\n= \\overline{\\beta(y, x)}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "эрмитова",
+        "data": "Матрица $n$ на $n$ - *эрмитова*, если $B^T = \\overline{B}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-4\">Определение:</a></strong><p>Матрица <span class=\"math inline\">\\(n\\)</span> на <span\nclass=\"math inline\">\\(n\\)</span> - <em>эрмитова</em>, если <span\nclass=\"math inline\">\\(B^T = \\overline{B}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "эрмитова квадратичная форма",
+        "data": "$q: V \\to \\mathbb{C}$ - *эрмитова квадратичная форма*, если $\\forall x \\in V \\,\\,\\,\\, q(x) = \\beta(x, x)$, где $\\beta$ - [эрмитова](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-3) функция.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-5\">Определение:</a></strong><p><span class=\"math inline\">\\(q: V \\to \\mathbb{C}\\)</span> -\n<em>эрмитова квадратичная форма</em>, если <span\nclass=\"math inline\">\\(\\forall x \\in V \\,\\,\\,\\, q(x) = \\beta(x,\nx)\\)</span>, где <span class=\"math inline\">\\(\\beta\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-3\">эрмитова</a>\nфункция.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "положительный индекс инерции отрицательный индекс инерции",
+        "data": "<br>$k$ - *положительный индекс инерции*.<br><br>$l$ - *отрицательный индекс инерции*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-0\">Определение:</a></strong><p><br><span class=\"math inline\">\\(k\\)</span> - <em>положительный индекс\nинерции</em>.<br><br><span class=\"math inline\">\\(l\\)</span> -\n<em>отрицательный индекс инерции</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "положительно определенная положительно определена",
+        "data": "[Эрмитова квадратичная форма](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-5) $q$ *положительно определенная*, если $\\forall x \\in V \\,\\,\\,\\, q(x) > 0$. Cоответствующая $q$ [эрмитова](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-3) [полуторалинейная](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1) функция $\\beta$ - *положительно определена*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-8\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-5\">Эрмитова\nквадратичная форма</a> <span class=\"math inline\">\\(q\\)</span>\n<em>положительно определенная</em>, если <span\nclass=\"math inline\">\\(\\forall x \\in V \\,\\,\\,\\, q(x) &gt; 0\\)</span>.\nCоответствующая <span class=\"math inline\">\\(q\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-3\">эрмитова</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1\">полуторалинейная</a>\nфункция <span class=\"math inline\">\\(\\beta\\)</span> - <em>положительно\nопределена</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "унитарное скалярное произведение",
+        "data": "[Векторное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0), на котором фиксирована [положительно определенная](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-8) [эрмитова](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-3) [полуторалинейная](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1) функция $\\beta$ - *унитарное*. $\\beta$ называется *скалярное произведение*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">Векторное\nпространство</a>, на котором фиксирована <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-8\">положительно\nопределенная</a> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-3\">эрмитова</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1\">полуторалинейная</a>\nфункция <span class=\"math inline\">\\(\\beta\\)</span> - <em>унитарное</em>.\n<span class=\"math inline\">\\(\\beta\\)</span> называется <em>скалярное\nпроизведение</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Длина вектора",
+        "data": "*Длина вектора* в унитарном пространстве со скалярным произведением $(x, y)$ - это $|x| = \\sqrt{(x, x)}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-9\">Определение:</a></strong><p><em>Длина вектора</em> в унитарном пространстве со скалярным\nпроизведением <span class=\"math inline\">\\((x, y)\\)</span> - это <span\nclass=\"math inline\">\\(|x| = \\sqrt{(x, x)}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Векторное пространство",
+        "data": "*Векторное пространство* $V$ над полем $F$ - это множество с операциями сложения $+: \\,\\,\\,\\, V \\times V \\to V$ и умножения $\\cdot: \\,\\,\\,\\, F \\times V \\to V$, удовлетворяющими аксиомам:<br>",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">Определение:</a></strong><p><em>Векторное пространство</em> <span\nclass=\"math inline\">\\(V\\)</span> над полем <span\nclass=\"math inline\">\\(F\\)</span> - это множество с операциями сложения\n<span class=\"math inline\">\\(+: \\,\\,\\,\\, V \\times V \\to V\\)</span> и\nумножения <span class=\"math inline\">\\(\\cdot: \\,\\,\\,\\, F \\times V \\to\nV\\)</span>, удовлетворяющими аксиомам:<br></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "векторы",
+        "data": "элементы векторного пространства $V$ - *векторы*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-1\">Определение:</a></strong><p>элементы векторного пространства <span\nclass=\"math inline\">\\(V\\)</span> - <em>векторы</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Векторное подпространство",
+        "data": "Пусть $V$ - векторное пространство над $F$ с операциями сложения $+$ и умножения $-$. *Векторное подпространство* $V$ - это $U \\subset V$, такое что:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - векторное пространство\nнад <span class=\"math inline\">\\(F\\)</span> с операциями сложения <span\nclass=\"math inline\">\\(+\\)</span> и умножения <span\nclass=\"math inline\">\\(-\\)</span>. <em>Векторное подпространство</em>\n<span class=\"math inline\">\\(V\\)</span> - это <span\nclass=\"math inline\">\\(U \\subset V\\)</span>, такое что:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линейная комбинация",
+        "data": "Пусть в векторном пространстве $V$ над полем $F$ заданa система векторов $U = (v_1, \\ldots, v_n)$. Выражение $\\lambda_1 \\cdot v_1 + \\ldots + \\lambda_n \\cdot v_n, \\,\\,\\,\\, \\lambda_i \\in F$ - это *линейная комбинация* системы векторов $U$.<br>",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-3\">Определение:</a></strong><p>Пусть в векторном пространстве <span class=\"math inline\">\\(V\\)</span>\nнад полем <span class=\"math inline\">\\(F\\)</span> заданa система векторов\n<span class=\"math inline\">\\(U = (v_1, \\ldots, v_n)\\)</span>. Выражение\n<span class=\"math inline\">\\(\\lambda_1 \\cdot v_1 + \\ldots + \\lambda_n\n\\cdot v_n, \\,\\,\\,\\, \\lambda_i \\in F\\)</span> - это <em>линейная\nкомбинация</em> системы векторов <span\nclass=\"math inline\">\\(U\\)</span>.<br></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линейно зависима",
+        "data": "Пусть в векторном пространстве $V$ над полем $F$ заданa система векторов $U = (v_1, \\ldots, v_n)$. Если $\\exists$ их нетривиальная линейная комбинация равная $0$, то система векторов $U$ *линейно зависима*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-4\">Определение:</a></strong><p>Пусть в векторном пространстве <span class=\"math inline\">\\(V\\)</span>\nнад полем <span class=\"math inline\">\\(F\\)</span> заданa система векторов\n<span class=\"math inline\">\\(U = (v_1, \\ldots, v_n)\\)</span>. Если <span\nclass=\"math inline\">\\(\\exists\\)</span> их нетривиальная линейная\nкомбинация равная <span class=\"math inline\">\\(0\\)</span>, то система\nвекторов <span class=\"math inline\">\\(U\\)</span> <em>линейно\nзависима</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линейно независима",
+        "data": "Пусть в векторном пространстве $V$ над полем $F$ заданa система векторов $U = (v_1, \\ldots, v_n)$. Если только тривиальная линейная комбинация векторов $U$ равна $0$, то система векторов $U$ *линейно независима*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-5\">Определение:</a></strong><p>Пусть в векторном пространстве <span class=\"math inline\">\\(V\\)</span>\nнад полем <span class=\"math inline\">\\(F\\)</span> заданa система векторов\n<span class=\"math inline\">\\(U = (v_1, \\ldots, v_n)\\)</span>. Если только\nтривиальная линейная комбинация векторов <span\nclass=\"math inline\">\\(U\\)</span> равна <span\nclass=\"math inline\">\\(0\\)</span>, то система векторов <span\nclass=\"math inline\">\\(U\\)</span> <em>линейно независима</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линейная оболочка",
+        "data": "Пусть задана система векторов $V = (v_1, \\ldots, v_n)$. Множество всех линейных комбинаций векторов системы $V$ - это *линейная оболочка* $V$. Обозначается: $<V> = <v_1, \\ldots, v_n>$.<br>",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-6\">Определение:</a></strong><p>Пусть задана система векторов <span class=\"math inline\">\\(V = (v_1,\n\\ldots, v_n)\\)</span>. Множество всех линейных комбинаций векторов\nсистемы <span class=\"math inline\">\\(V\\)</span> - это <em>линейная\nоболочка</em> <span class=\"math inline\">\\(V\\)</span>. Обозначается:\n<span class=\"math inline\">\\(&lt;V&gt; = &lt;v_1, \\ldots,\nv_n&gt;\\)</span>.<br></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Базис",
+        "data": "*Базис* векторного пространства $V$ - это:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7\">Определение:</a></strong><p><em>Базис</em> векторного пространства <span\nclass=\"math inline\">\\(V\\)</span> - это:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "конечномерным бесконечномерно",
+        "data": "Векторное пространство, порождающее множество которого конечно, называется *конечномерным*, иначе векторное пространство *бесконечномерно*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-8\">Определение:</a></strong><p>Векторное пространство, порождающее множество которого конечно,\nназывается <em>конечномерным</em>, иначе векторное пространство\n<em>бесконечномерно</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфно",
+        "data": "Векторное пространство $U$ над полем $F$ *изоморфно* векторному пространству $V$ над полем $F$, если существует биекция $\\varphi: \\,\\,\\,\\, U \\to V$, такая что:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-9\">Определение:</a></strong><p>Векторное пространство <span class=\"math inline\">\\(U\\)</span> над\nполем <span class=\"math inline\">\\(F\\)</span> <em>изоморфно</em>\nвекторному пространству <span class=\"math inline\">\\(V\\)</span> над полем\n<span class=\"math inline\">\\(F\\)</span>, если существует биекция <span\nclass=\"math inline\">\\(\\varphi: \\,\\,\\,\\, U \\to V\\)</span>, такая что:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "сумма",
+        "data": "Пусть $U, \\,\\,\\,\\, W$ подпространства векторного пространства $V$. *сумма* $U + W$ подпространств $U$ и $W$ - это $U + W = \\{u + w: \\,\\,\\,\\, u \\in U, \\,\\,\\,\\, w \\in W\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-13.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-13.02.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(U, \\,\\,\\,\\, W\\)</span>\nподпространства векторного пространства <span\nclass=\"math inline\">\\(V\\)</span>. <em>сумма</em> <span\nclass=\"math inline\">\\(U + W\\)</span> подпространств <span\nclass=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(W\\)</span> - это <span class=\"math inline\">\\(U + W\n= \\{u + w: \\,\\,\\,\\, u \\in U, \\,\\,\\,\\, w \\in W\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "прямая",
+        "data": "Пусть $U, \\,\\,\\,\\, W$ подпространства векторного пространства $V$. Сумма $U + W$ *прямая*, если $\\forall x \\in U + W \\,\\,\\,\\, \\exists! \\,\\,u \\in U, w \\in W: \\,\\,\\,\\, u + w = x$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-13.02.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-13.02.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(U, \\,\\,\\,\\, W\\)</span>\nподпространства векторного пространства <span\nclass=\"math inline\">\\(V\\)</span>. Сумма <span class=\"math inline\">\\(U +\nW\\)</span> <em>прямая</em>, если <span class=\"math inline\">\\(\\forall x\n\\in U + W \\,\\,\\,\\, \\exists! \\,\\,u \\in U, w \\in W: \\,\\,\\,\\, u + w =\nx\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Линейная функция",
+        "data": "*Линейная функция* на векторном пространстве $V$ - это отображение $\\varphi: \\,\\,\\,\\, V \\to F$, где $V$ векторное пространство над полем $F$, такое что:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0\">Определение:</a></strong><p><em>Линейная функция</em> на векторном пространстве <span\nclass=\"math inline\">\\(V\\)</span> - это отображение <span\nclass=\"math inline\">\\(\\varphi: \\,\\,\\,\\, V \\to F\\)</span>, где <span\nclass=\"math inline\">\\(V\\)</span> векторное пространство над полем <span\nclass=\"math inline\">\\(F\\)</span>, такое что:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "сопряженное",
+        "data": "$V^{*}$ *сопряженное* к $V$ векторное пространство.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-1\">Определение:</a></strong><p><span class=\"math inline\">\\(V^{*}\\)</span> <em>сопряженное</em> к\n<span class=\"math inline\">\\(V\\)</span> векторное пространство.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "сопряженный",
+        "data": "Базис $\\{\\varepsilon^1, \\ldots, \\varepsilon^n\\}$ в $V^{*}$ *сопряженный* к базису $e_1, \\ldots, e_n$ в $V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-2\">Определение:</a></strong><p>Базис <span class=\"math inline\">\\(\\{\\varepsilon^1, \\ldots,\n\\varepsilon^n\\}\\)</span> в <span class=\"math inline\">\\(V^{*}\\)</span>\n<em>сопряженный</em> к базису <span class=\"math inline\">\\(e_1, \\ldots,\ne_n\\)</span> в <span class=\"math inline\">\\(V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": " второе сопряженное к",
+        "data": "$V^{**}$ - это $(V^{*})^{*}$, то есть сопряженное к $V^{*}$ и *второе сопряженное к* $V$ векторное пространство ($V^{*}$ сопряжено векторному пространству $V$ 🙄).",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-3\">Определение:</a></strong><p><span class=\"math inline\">\\(V^{**}\\)</span> - это <span\nclass=\"math inline\">\\((V^{*})^{*}\\)</span>, то есть сопряженное к <span\nclass=\"math inline\">\\(V^{*}\\)</span> и <em>второе сопряженное к</em>\n<span class=\"math inline\">\\(V\\)</span> векторное пространство (<span\nclass=\"math inline\">\\(V^{*}\\)</span> сопряжено векторному пространству\n<span class=\"math inline\">\\(V\\)</span> 🙄).</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортогональны",
+        "data": "Пусть $V$ - [унитарное](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7) пространство. Векторы $x, y \\in V, \\,\\,\\,\\, x \\ne 0, \\,\\,\\,\\, y \\ne 0$ - *ортогональны*, если $(x, y) = 0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7\">унитарное</a>\nпространство. Векторы <span class=\"math inline\">\\(x, y \\in V, \\,\\,\\,\\, x\n\\ne 0, \\,\\,\\,\\, y \\ne 0\\)</span> - <em>ортогональны</em>, если <span\nclass=\"math inline\">\\((x, y) = 0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортогональный",
+        "data": "Базис [унитарного](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7) пространства, состоящий из ортогональных векторов - *ортогональный*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-1\">Определение:</a></strong><p>Базис <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7\">унитарного</a>\nпространства, состоящий из ортогональных векторов -\n<em>ортогональный</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортонормированный",
+        "data": "[Ортогональный](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-1) базис [унитарного](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7) пространства, состоящий из единичных векторов - *ортонормированный*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-2\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-1\">Ортогональный</a>\nбазис <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7\">унитарного</a>\nпространства, состоящий из единичных векторов -\n<em>ортонормированный</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "унитарная",
+        "data": "Квадратная матрица $A$ - *унитарная*, если $A^T\\overline{A} = E$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-4\">Определение:</a></strong><p>Квадратная матрица <span class=\"math inline\">\\(A\\)</span> -\n<em>унитарная</em>, если <span class=\"math inline\">\\(A^T\\overline{A} =\nE\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфны",
+        "data": "Унитарные пространства $U$ и $W$ *изоморфны*, если $\\exists \\varphi: U \\to W$:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-3\">Определение:</a></strong><p>Унитарные пространства <span class=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(W\\)</span> <em>изоморфны</em>, если <span\nclass=\"math inline\">\\(\\exists \\varphi: U \\to W\\)</span>:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортогональное дополнение",
+        "data": "Пусть $U$ [подпространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2) [унитарного](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7) пространства $V$. $U^{\\perp} = \\{x \\in V: \\,\\,\\,\\, (x, u) = 0 \\,\\,\\,\\, \\forall u \\in U\\}$ - *ортогональное дополнение* $U$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-5\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(U\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2\">подпространство</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7\">унитарного</a>\nпространства <span class=\"math inline\">\\(V\\)</span>. <span\nclass=\"math inline\">\\(U^{\\perp} = \\{x \\in V: \\,\\,\\,\\, (x, u) = 0\n\\,\\,\\,\\, \\forall u \\in U\\}\\)</span> - <em>ортогональное дополнение</em>\n<span class=\"math inline\">\\(U\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "эрмитов",
+        "data": "Линейный оператор $\\mathcal{A}$ на унитарном пространстве - *эрмитов*, если $\\forall x, y \\in V \\,\\,\\,\\, (\\mathcal{A}(x), y) = (x, \\mathcal{A}(y))$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-6\">Определение:</a></strong><p>Линейный оператор <span class=\"math inline\">\\(\\mathcal{A}\\)</span> на\nунитарном пространстве - <em>эрмитов</em>, если <span\nclass=\"math inline\">\\(\\forall x, y \\in V \\,\\,\\,\\, (\\mathcal{A}(x), y) =\n(x, \\mathcal{A}(y))\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "унитарный",
+        "data": "[Линейный оператор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1) $\\mathcal{A}$ на унитарном пространстве - *унитарный*, если $\\forall x, y \\in V \\,\\,\\,\\, (\\mathcal{A}(x), \\mathcal{A}(y)) = (x, y)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-7\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1\">Линейный\nоператор</a> <span class=\"math inline\">\\(\\mathcal{A}\\)</span> на\nунитарном пространстве - <em>унитарный</em>, если <span\nclass=\"math inline\">\\(\\forall x, y \\in V \\,\\,\\,\\, (\\mathcal{A}(x),\n\\mathcal{A}(y)) = (x, y)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "положительно определен",
+        "data": "[Линейный оператор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1) $\\mathcal{A}$ на [унитарном](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7) пространстве *положительно определен*, если он [эрмитов](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-6) и $(x, \\mathcal{A}(x)) > 0 \\,\\,\\,\\, \\forall x \\in V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-8\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1\">Линейный\nоператор</a> <span class=\"math inline\">\\(\\mathcal{A}\\)</span> на <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7\">унитарном</a>\nпространстве <em>положительно определен</em>, если он <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-6\">эрмитов</a>\nи <span class=\"math inline\">\\((x, \\mathcal{A}(x)) &gt; 0 \\,\\,\\,\\,\n\\forall x \\in V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "подобна",
+        "data": "Матрица $A \\in M_n(F)$ *подобна* матрице $B \\in M_n(F)$, если $\\exists C \\in M_n(F): \\,\\,\\,\\, A = C^{-1}BC$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.03.23#definition-0\">Определение:</a></strong><p>Матрица <span class=\"math inline\">\\(A \\in M_n(F)\\)</span>\n<em>подобна</em> матрице <span class=\"math inline\">\\(B \\in\nM_n(F)\\)</span>, если <span class=\"math inline\">\\(\\exists C \\in M_n(F):\n\\,\\,\\,\\, A = C^{-1}BC\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "точки аффинное пространство",
+        "data": "Пусть $\\mathbb{A}$ - множество, элементы которого называются *точки*, $V$ - [векторное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0). Пара $(\\mathbb{A}, V)$ (обозначается $\\mathbb{A}$) - *аффинное пространство*, если существует отображение $f: (a, b) \\mapsto v = \\overline{ab}$ из множества упорядоченных пар точек из $\\mathbb{A}$ в множество векторов из $V$, такое, что:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathbb{A}\\)</span> - множество,\nэлементы которого называются <em>точки</em>, <span\nclass=\"math inline\">\\(V\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">векторное\nпространство</a>. Пара <span class=\"math inline\">\\((\\mathbb{A},\nV)\\)</span> (обозначается <span\nclass=\"math inline\">\\(\\mathbb{A}\\)</span>) - <em>аффинное\nпространство</em>, если существует отображение <span\nclass=\"math inline\">\\(f: (a, b) \\mapsto v = \\overline{ab}\\)</span> из\nмножества упорядоченных пар точек из <span\nclass=\"math inline\">\\(\\mathbb{A}\\)</span> в множество векторов из <span\nclass=\"math inline\">\\(V\\)</span>, такое, что:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "аффинное отображение",
+        "data": "Пусть $(\\mathbb{A}_1, V_1)$ и $(\\mathbb{A}_2, V_2)$ - [аффинные пространства](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0), причем $V_1$ и $V_2$ - [векторные пространства](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0) над одним и тем же полем $F$. $\\Phi: \\mathbb{A}_1 \\to \\mathbb{A}_2$ - *аффинное отображение*, если существует [линейное отображение](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-1) $\\varphi: V_1 \\to V_2$:\n$$\\overline{\\Phi(a)\\Phi(b)} = \\varphi(\\overline{ab})$$",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((\\mathbb{A}_1, V_1)\\)</span> и\n<span class=\"math inline\">\\((\\mathbb{A}_2, V_2)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинные\nпространства</a>, причем <span class=\"math inline\">\\(V_1\\)</span> и\n<span class=\"math inline\">\\(V_2\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">векторные\nпространства</a> над одним и тем же полем <span\nclass=\"math inline\">\\(F\\)</span>. <span class=\"math inline\">\\(\\Phi:\n\\mathbb{A}_1 \\to \\mathbb{A}_2\\)</span> - <em>аффинное отображение</em>,\nесли существует <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-1\">линейное\nотображение</a> <span class=\"math inline\">\\(\\varphi: V_1 \\to\nV_2\\)</span>: <span class=\"math display\">\\[\\overline{\\Phi(a)\\Phi(b)} =\n\\varphi(\\overline{ab})\\]</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфны",
+        "data": "Пусть $(\\mathbb{A}_1, V_1)$ и $(\\mathbb{A}_2, V_2)$ - [аффинные пространства](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0), причем $V_1$ и $V_2$ - [векторные пространства](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0) над одним и тем же полем $F$. Аффинные пространства $\\mathbb{A}_1$ и $\\mathbb{A}_2$ - *изоморфны*, если существует биективное [аффинное отображение](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1) $\\Phi: \\mathbb{A}_1 \\to \\mathbb{A}_2$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((\\mathbb{A}_1, V_1)\\)</span> и\n<span class=\"math inline\">\\((\\mathbb{A}_2, V_2)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинные\nпространства</a>, причем <span class=\"math inline\">\\(V_1\\)</span> и\n<span class=\"math inline\">\\(V_2\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">векторные\nпространства</a> над одним и тем же полем <span\nclass=\"math inline\">\\(F\\)</span>. Аффинные пространства <span\nclass=\"math inline\">\\(\\mathbb{A}_1\\)</span> и <span\nclass=\"math inline\">\\(\\mathbb{A}_2\\)</span> - <em>изоморфны</em>, если\nсуществует биективное <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1\">аффинное\nотображение</a> <span class=\"math inline\">\\(\\Phi: \\mathbb{A}_1 \\to\n\\mathbb{A}_2\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Аффинная система координат начало координат Координаты точки",
+        "data": "Пусть $(\\mathbb{A}, V)$ - [аффинное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0). *Аффинная система координат* - это пара $(O, e)$, где $O \\in \\mathbb{A}$(*начало координат*), $e$ - [базис](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7) в $V$.<br> *Координаты точки* $a \\in \\mathbb{A}$ в системе координат $(O, e)$ - это координаты вектора $\\overline{Oa}$ в [базисе](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7) $e$ю",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((\\mathbb{A}, V)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинное\nпространство</a>. <em>Аффинная система координат</em> - это пара <span\nclass=\"math inline\">\\((O, e)\\)</span>, где <span class=\"math inline\">\\(O\n\\in \\mathbb{A}\\)</span>(<em>начало координат</em>), <span\nclass=\"math inline\">\\(e\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7\">базис</a>\nв <span class=\"math inline\">\\(V\\)</span>.<br> <em>Координаты точки</em>\n<span class=\"math inline\">\\(a \\in \\mathbb{A}\\)</span> в системе\nкоординат <span class=\"math inline\">\\((O, e)\\)</span> - это координаты\nвектора <span class=\"math inline\">\\(\\overline{Oa}\\)</span> в <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7\">базисе</a>\n<span class=\"math inline\">\\(e\\)</span>ю</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "плоскость направляющее подпространство",
+        "data": "Пусть $(\\mathbb{A}, V)$ - [аффинное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0), $a \\in \\mathbb{A}$, $U$ - [подпространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2) $V$. Множество $\\pi = a + U = \\{a + v| \\,\\,\\,\\, v \\in U\\}$ - *плоскость*. $U$ - *направляющее подпространство* плоскости $\\pi$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((\\mathbb{A}, V)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинное\nпространство</a>, <span class=\"math inline\">\\(a \\in \\mathbb{A}\\)</span>,\n<span class=\"math inline\">\\(U\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2\">подпространство</a>\n<span class=\"math inline\">\\(V\\)</span>. Множество <span\nclass=\"math inline\">\\(\\pi = a + U = \\{a + v| \\,\\,\\,\\, v \\in U\\}\\)</span>\n- <em>плоскость</em>. <span class=\"math inline\">\\(U\\)</span> -\n<em>направляющее подпространство</em> плоскости <span\nclass=\"math inline\">\\(\\pi\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "размерность плоскости точка прямая гиперплоскость",
+        "data": "(*размерность плоскости*) $\\dim \\pi = \\dim U$. Нульмерная [плоскость](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4) - *точка*, одномерная [плоскость](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4) - *прямая*, $n - 1$ - мерная [плоскость](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4) - *гиперплоскость*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5\">Определение:</a></strong><p>(<em>размерность плоскости</em>) <span class=\"math inline\">\\(\\dim \\pi\n= \\dim U\\)</span>. Нульмерная <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4\">плоскость</a>\n- <em>точка</em>, одномерная <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4\">плоскость</a>\n- <em>прямая</em>, <span class=\"math inline\">\\(n - 1\\)</span> - мерная\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4\">плоскость</a>\n- <em>гиперплоскость</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "аффинное подпространство",
+        "data": "Пусть $(\\mathbb{A}, V)$ - [аффинное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0). Непустое $B \\subset \\mathbb{A}$ - *аффинное подпространство*, если $\\{\\overline{pq}\\,\\,\\,\\, p, q \\in B$ - [подпространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2) $V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-6\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((\\mathbb{A}, V)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинное\nпространство</a>. Непустое <span class=\"math inline\">\\(B \\subset\n\\mathbb{A}\\)</span> - <em>аффинное подпространство</em>, если <span\nclass=\"math inline\">\\(\\{\\overline{pq}\\,\\,\\,\\, p, q \\in B\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2\">подпространство</a>\n<span class=\"math inline\">\\(V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "корневой вектор отвечающий",
+        "data": "Пусть $V$ - конечномерное векторное пространство, $\\mathcal{A}$ - линейный оператор на $V$. $v \\in V$ - *корневой вектор* линейного оператора $\\mathcal{A}$, *отвечающий* собственному значению $\\lambda$, если $\\exists m \\in \\mathbb{N}: \\,\\,\\,\\, (\\mathcal{A} - \\lambda \\mathcal{I})^m(v) = 0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - конечномерное\nвекторное пространство, <span class=\"math inline\">\\(\\mathcal{A}\\)</span>\n- линейный оператор на <span class=\"math inline\">\\(V\\)</span>. <span\nclass=\"math inline\">\\(v \\in V\\)</span> - <em>корневой вектор</em>\nлинейного оператора <span class=\"math inline\">\\(\\mathcal{A}\\)</span>,\n<em>отвечающий</em> собственному значению <span\nclass=\"math inline\">\\(\\lambda\\)</span>, если <span\nclass=\"math inline\">\\(\\exists m \\in \\mathbb{N}: \\,\\,\\,\\, (\\mathcal{A} -\n\\lambda \\mathcal{I})^m(v) = 0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "корневое",
+        "data": "$V(\\lambda)$ - *корневое* подпространство $V$, отвечающее собственному значению $\\lambda$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-1\">Определение:</a></strong><p><span class=\"math inline\">\\(V(\\lambda)\\)</span> - <em>корневое</em>\nподпространство <span class=\"math inline\">\\(V\\)</span>, отвечающее\nсобственному значению <span class=\"math inline\">\\(\\lambda\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "билинейная функция",
+        "data": "Пусть $V$ - векторное пространство над полем $F$. Отображение $\\beta: \\,\\,\\,\\, V \\times V \\to F$ - *билинейная функция*, если:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - векторное пространство\nнад полем <span class=\"math inline\">\\(F\\)</span>. Отображение <span\nclass=\"math inline\">\\(\\beta: \\,\\,\\,\\, V \\times V \\to F\\)</span> -\n<em>билинейная функция</em>, если:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "$B = \\left(\\begin{array}{ccc}b_{11} & \\dots & b_{1n}\\\\\n\\vdots & \\ddots & \\vdots\\\\",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-3\">Определение:</a></strong><p>$B = (\\begin{array}{ccc}b_{11} &amp; &amp; b_{1n}\\ &amp; &amp; \\</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Аффинная оболочка",
+        "data": "*Аффинная оболочка* [точек](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0) [аффинного пространства](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0) - это [плоскость](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4) наименьшей [размерности](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5), содержащая эти точки. Обозначается: $<...>_A$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-0\">Определение:</a></strong><p><em>Аффинная оболочка</em> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">точек</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинного\nпространства</a> - это <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4\">плоскость</a>\nнаименьшей <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5\">размерности</a>,\nсодержащая эти точки. Обозначается: <span\nclass=\"math inline\">\\(&lt;...&gt;_A\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "параллельна",
+        "data": "Пусть $\\mathbb{A}$ - [аффинное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0), $\\dim \\mathbb{A} = n$, $\\pi = a + U$ и $\\tau = b + W$ - [плоскости](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4). $\\pi$ *параллельна* $\\tau$ ($\\pi \\parallel \\tau$), если $U \\subset W$ или $W \\subset U$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathbb{A}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинное\nпространство</a>, <span class=\"math inline\">\\(\\dim \\mathbb{A} =\nn\\)</span>, <span class=\"math inline\">\\(\\pi = a + U\\)</span> и <span\nclass=\"math inline\">\\(\\tau = b + W\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4\">плоскости</a>.\n<span class=\"math inline\">\\(\\pi\\)</span> <em>параллельна</em> <span\nclass=\"math inline\">\\(\\tau\\)</span> (<span class=\"math inline\">\\(\\pi\n\\parallel \\tau\\)</span>), если <span class=\"math inline\">\\(U \\subset\nW\\)</span> или <span class=\"math inline\">\\(W \\subset U\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "скрещиваются",
+        "data": "Пусть $\\mathbb{A}$ - [аффинное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0), $\\dim \\mathbb{A} = n$, $\\pi = a + U$ и $\\tau = b + W$ - [плоскости](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4). $\\pi$ и $\\tau$ *скрещиваются*, если $\\pi \\cap \\tau \\ne \\varnothing$ и $\\pi \\nparallel \\tau$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathbb{A}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинное\nпространство</a>, <span class=\"math inline\">\\(\\dim \\mathbb{A} =\nn\\)</span>, <span class=\"math inline\">\\(\\pi = a + U\\)</span> и <span\nclass=\"math inline\">\\(\\tau = b + W\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4\">плоскости</a>.\n<span class=\"math inline\">\\(\\pi\\)</span> и <span\nclass=\"math inline\">\\(\\tau\\)</span> <em>скрещиваются</em>, если <span\nclass=\"math inline\">\\(\\pi \\cap \\tau \\ne \\varnothing\\)</span> и <span\nclass=\"math inline\">\\(\\pi \\nparallel \\tau\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "аффинная линейная функция",
+        "data": "$f: \\mathbb{A} \\to F$ - *аффинная линейная функция*, если существует [линейная функция](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0) $\\varphi$ на V, такая, что $\\forall a, b \\in \\mathbb{A} \\,\\,\\,\\, \\overline{f(a)f(b)} = \\varphi(\\overline{ab})$. $F$ рассматривается как одномерное [векторное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0) ([базис](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7) в $F$ - $1$).",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-3\">Определение:</a></strong><p><span class=\"math inline\">\\(f: \\mathbb{A} \\to F\\)</span> -\n<em>аффинная линейная функция</em>, если существует <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0\">линейная\nфункция</a> <span class=\"math inline\">\\(\\varphi\\)</span> на V, такая,\nчто <span class=\"math inline\">\\(\\forall a, b \\in \\mathbb{A} \\,\\,\\,\\,\n\\overline{f(a)f(b)} = \\varphi(\\overline{ab})\\)</span>. <span\nclass=\"math inline\">\\(F\\)</span> рассматривается как одномерное <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">векторное\nпространство</a> (<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7\">базис</a>\nв <span class=\"math inline\">\\(F\\)</span> - <span\nclass=\"math inline\">\\(1\\)</span>).</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Ядро",
+        "data": "Пусть $f$ - [аффинная линейная функция](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-3). *Ядро* $f$ - это $\\ker f = \\{a \\in \\mathbb{A}: \\,\\,\\,\\, f(a) = 0\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-15.04.23#definition-3\">аффинная\nлинейная функция</a>. <em>Ядро</em> <span\nclass=\"math inline\">\\(f\\)</span> - это <span class=\"math inline\">\\(\\ker\nf = \\{a \\in \\mathbb{A}: \\,\\,\\,\\, f(a) = 0\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "аффинное отображение линейная часть дифференциал",
+        "data": "$f: \\mathbb{A} \\to \\mathbb{B}$ - *аффинное отображение*, если существует [линейное отображение](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-1) $\\varphi: U \\to W$, такое, что $\\overline{f(x)f(y)} = \\varphi(\\overline{xy})$, при этом $\\varphi$ - *линейная часть* (*дифференциал*) аффинного отображения $f$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0\">Определение:</a></strong><p><span class=\"math inline\">\\(f: \\mathbb{A} \\to \\mathbb{B}\\)</span> -\n<em>аффинное отображение</em>, если существует <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-1\">линейное\nотображение</a> <span class=\"math inline\">\\(\\varphi: U \\to W\\)</span>,\nтакое, что <span class=\"math inline\">\\(\\overline{f(x)f(y)} =\n\\varphi(\\overline{xy})\\)</span>, при этом <span\nclass=\"math inline\">\\(\\varphi\\)</span> - <em>линейная часть</em>\n(<em>дифференциал</em>) аффинного отображения <span\nclass=\"math inline\">\\(f\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Аффинный оператор",
+        "data": "*Аффинный оператор* - это [аффинное отображение](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1) [аффинного пространства](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0) $\\mathbb{A}$ в себя.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1\">Определение:</a></strong><p><em>Аффинный оператор</em> - это <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1\">аффинное\nотображение</a> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинного\nпространства</a> <span class=\"math inline\">\\(\\mathbb{A}\\)</span> в\nсебя.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Ранг",
+        "data": "Пусть $\\Phi$ - [аффинное отображение](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1). *Ранг* $\\Phi (\\operatorname{rk}\\Phi)$ - это ранг матрицы [линейной части](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0) $\\Phi$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\Phi\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1\">аффинное\nотображение</a>. <em>Ранг</em> <span class=\"math inline\">\\(\\Phi\n(\\operatorname{rk}\\Phi)\\)</span> - это ранг матрицы <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0\">линейной\nчасти</a> <span class=\"math inline\">\\(\\Phi\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "невырожден",
+        "data": "[Аффинный оператор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1) $\\Phi$ *невырожден*, если $\\operatorname{rk}\\Phi = \\operatorname{rk}\\mathbb{A}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-3\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1\">Аффинный\nоператор</a> <span class=\"math inline\">\\(\\Phi\\)</span>\n<em>невырожден</em>, если <span\nclass=\"math inline\">\\(\\operatorname{rk}\\Phi =\n\\operatorname{rk}\\mathbb{A}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Эта группа обозначается $\\operatorname{Aff}(\\mathbb{A})$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-5\">Определение:</a></strong><p>Эта группа обозначается <span\nclass=\"math inline\">\\(\\operatorname{Aff}(\\mathbb{A})\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Сдвиг на вектор",
+        "data": "Пусть $(\\mathbb{A}, V)$ - [аффинное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0). *Сдвиг на вектор* $v \\in V$ - это отображение $f_v: \\mathbb{A} \\to \\mathbb{A} \\,\\,\\,\\, f_v: a \\mapsto a + v$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((\\mathbb{A}, V)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинное\nпространство</a>. <em>Сдвиг на вектор</em> <span class=\"math inline\">\\(v\n\\in V\\)</span> - это отображение <span class=\"math inline\">\\(f_v:\n\\mathbb{A} \\to \\mathbb{A} \\,\\,\\,\\, f_v: a \\mapsto a + v\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех [сдвигов на вектор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-4) обозначается $\\operatorname{tran}\\mathbb{A}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-6\">Определение:</a></strong><p>Множество всех <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-4\">сдвигов\nна вектор</a> обозначается <span\nclass=\"math inline\">\\(\\operatorname{tran}\\mathbb{A}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $a$ [точка](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0) [аффинного пространства](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0) $\\mathbb{A}$. Множество всех [невырожденных](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-3) [аффинных операторов](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1) $\\Phi$, таких, что $\\Phi(a) = a$ обозначается $G_a$. ",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-7\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(a\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">точка</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинного\nпространства</a> <span class=\"math inline\">\\(\\mathbb{A}\\)</span>.\nМножество всех <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-3\">невырожденных</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1\">аффинных\nоператоров</a> <span class=\"math inline\">\\(\\Phi\\)</span>, таких, что\n<span class=\"math inline\">\\(\\Phi(a) = a\\)</span> обозначается <span\nclass=\"math inline\">\\(G_a\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "аффинно независима",
+        "data": "Система точек $a_0, a_1, \\ldots, a_s$ *аффинно независима*, если $\\dim <a_0, a_1, \\ldots, a_s>_A = s$ (точек $s + 1$ штука).",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-8\">Определение:</a></strong><p>Система точек <span class=\"math inline\">\\(a_0, a_1, \\ldots,\na_s\\)</span> <em>аффинно независима</em>, если <span\nclass=\"math inline\">\\(\\dim &lt;a_0, a_1, \\ldots, a_s&gt;_A = s\\)</span>\n(точек <span class=\"math inline\">\\(s + 1\\)</span> штука).</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $V$ - векторное пространство над полем $F$, $\\beta: V\\times V \\to F$ - билинейная функция на $V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - векторное пространство\nнад полем <span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\beta: V\\times V \\to F\\)</span> - билинейная\nфункция на <span class=\"math inline\">\\(V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "каноническим видом билинейной функции",
+        "data": "Если в базисе $e = \\{e_1, \\ldots, e_n\\}$ матрица $B$ билинейной функции $\\beta$ диагональная, то $\\beta(x, y) = b_{11}x_1y_1 + \\ldots + b_{nn}x_n y_n$ и такой вид называется *каноническим видом билинейной функции* $\\beta$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-1\">Определение:</a></strong><p>Если в базисе <span class=\"math inline\">\\(e = \\{e_1, \\ldots,\ne_n\\}\\)</span> матрица <span class=\"math inline\">\\(B\\)</span> билинейной\nфункции <span class=\"math inline\">\\(\\beta\\)</span> диагональная, то\n<span class=\"math inline\">\\(\\beta(x, y) = b_{11}x_1y_1 + \\ldots +\nb_{nn}x_n y_n\\)</span> и такой вид называется <em>каноническим видом\nбилинейной функции</em> <span class=\"math inline\">\\(\\beta\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортогональное дополнение множества",
+        "data": "Пусть $S \\subset V$, $V$ - векторное пространство. $S^{\\perp} = \\{x \\in V: \\,\\,\\,\\, \\beta(x, s) = 0 \\,\\,\\,\\, \\forall s \\in S\\}$ - *ортогональное дополнение множества* $S$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(S \\subset V\\)</span>, <span\nclass=\"math inline\">\\(V\\)</span> - векторное пространство. <span\nclass=\"math inline\">\\(S^{\\perp} = \\{x \\in V: \\,\\,\\,\\, \\beta(x, s) = 0\n\\,\\,\\,\\, \\forall s \\in S\\}\\)</span> - <em>ортогональное дополнение\nмножества</em> <span class=\"math inline\">\\(S\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "квадратичная функция матрица квадратичной функции квадратичная форма каноническим видом",
+        "data": "Пусть $V$ - векторное пространство над полем $F$, $\\beta: V \\times V \\to F$ - симметрическая билинейная функция на $V$.<br>$q: V \\to F$ - *квадратичная функция*, если $\\forall x \\in V \\,\\,\\,\\, q(x) = \\beta(x, x)$.<br>Матрица $B$ билинейной функции $\\beta$ - *матрица квадратичной функции*.<br>$q(x) = \\beta(x, x) = X^TBX = \\displaystyle \\sum_{i, j = 1}^{n}x_i x_j b_{ij}$ такая запись - *квадратичная форма* $q$.<br>Если в каком-то базисе $B$ - диагональна, то $q(x) = \\beta(x, x) = X^TBX = \\displaystyle \\sum_{i = 1}^{n}x_i^2 b_{ii}$ и такая запись называется *каноническим видом* квадратичной функции $q$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - векторное пространство\nнад полем <span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\beta: V \\times V \\to F\\)</span> - симметрическая\nбилинейная функция на <span class=\"math inline\">\\(V\\)</span>.<br><span\nclass=\"math inline\">\\(q: V \\to F\\)</span> - <em>квадратичная\nфункция</em>, если <span class=\"math inline\">\\(\\forall x \\in V \\,\\,\\,\\,\nq(x) = \\beta(x, x)\\)</span>.<br>Матрица <span\nclass=\"math inline\">\\(B\\)</span> билинейной функции <span\nclass=\"math inline\">\\(\\beta\\)</span> - <em>матрица квадратичной\nфункции</em>.<br><span class=\"math inline\">\\(q(x) = \\beta(x, x) = X^TBX\n= \\displaystyle \\sum_{i, j = 1}^{n}x_i x_j b_{ij}\\)</span> такая запись\n- <em>квадратичная форма</em> <span\nclass=\"math inline\">\\(q\\)</span>.<br>Если в каком-то базисе <span\nclass=\"math inline\">\\(B\\)</span> - диагональна, то <span\nclass=\"math inline\">\\(q(x) = \\beta(x, x) = X^TBX = \\displaystyle \\sum_{i\n= 1}^{n}x_i^2 b_{ii}\\)</span> и такая запись называется <em>каноническим\nвидом</em> квадратичной функции <span\nclass=\"math inline\">\\(q\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "унитреугольная",
+        "data": "Матрица $S \\in M_n(F)$ - *унитреугольная*, если она верхнетреугольная с $1$ на главной диагонали.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-4\">Определение:</a></strong><p>Матрица <span class=\"math inline\">\\(S \\in M_n(F)\\)</span> -\n<em>унитреугольная</em>, если она верхнетреугольная с <span\nclass=\"math inline\">\\(1\\)</span> на главной диагонали.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $B = \\left(\\begin{array}{ccc}\nb_{11} & \\dots & b_{1n}\\\\",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-5\">Определение:</a></strong><p>Пусть $B = (\\begin{array}{ccc} b_{11} &amp; &amp; b_{1n}\\</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ядро",
+        "data": "Пусть $\\varphi$ - линейная функция на  векторном пространстве $V$. Тогда *ядро* $\\varphi$ - это $\\ker \\varphi = \\{v \\in V: \\,\\,\\,\\, \\varphi(v) = 0\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\varphi\\)</span> - линейная функция\nна векторном пространстве <span class=\"math inline\">\\(V\\)</span>. Тогда\n<em>ядро</em> <span class=\"math inline\">\\(\\varphi\\)</span> - это <span\nclass=\"math inline\">\\(\\ker \\varphi = \\{v \\in V: \\,\\,\\,\\, \\varphi(v) =\n0\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линейное отображение",
+        "data": "Пусть $U$ и $W$ - векторные пространства над полем $F$. $\\varphi: \\,\\,\\,\\, V \\to W$ - *линейное отображение*, если:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(W\\)</span> - векторные пространства над полем\n<span class=\"math inline\">\\(F\\)</span>. <span\nclass=\"math inline\">\\(\\varphi: \\,\\,\\,\\, V \\to W\\)</span> - <em>линейное\nотображение</em>, если:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $U$ и $W$ - векторные пространства над полем $F$, $\\varphi: U \\to W$ - линейное отображение. Пусть $B = \\{e_1, \\ldots, e_n\\}$ - базис $U$, $B’ = \\{f_1, \\ldots, f_m\\}$ - базис $W$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(W\\)</span> - векторные пространства над полем\n<span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\varphi: U \\to W\\)</span> - линейное отображение.\nПусть <span class=\"math inline\">\\(B = \\{e_1, \\ldots, e_n\\}\\)</span> -\nбазис <span class=\"math inline\">\\(U\\)</span>, <span\nclass=\"math inline\">\\(B’ = \\{f_1, \\ldots, f_m\\}\\)</span> - базис <span\nclass=\"math inline\">\\(W\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Ядро",
+        "data": "Пусть $U$ и $W$ - векторные пространства над полем $F$, $\\varphi: U \\to W$ - линейное отображение. *Ядро* $\\varphi$ - это $\\ker \\varphi = \\{u \\in U: \\,\\,\\,\\, \\varphi(u) = 0\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(W\\)</span> - векторные пространства над полем\n<span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\varphi: U \\to W\\)</span> - линейное отображение.\n<em>Ядро</em> <span class=\"math inline\">\\(\\varphi\\)</span> - это <span\nclass=\"math inline\">\\(\\ker \\varphi = \\{u \\in U: \\,\\,\\,\\, \\varphi(u) =\n0\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Образ",
+        "data": "Пусть $U$ и $W$ - векторные пространства над полем $F$, $\\varphi: U \\to W$ - линейное отображение. *Образ* $\\varphi$ - это $\\operatorname{Img} \\varphi = \\{w \\in W: \\,\\,\\,\\,\\exists u \\in U \\,\\,\\,\\, \\varphi(u) = w\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(W\\)</span> - векторные пространства над полем\n<span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\varphi: U \\to W\\)</span> - линейное отображение.\n<em>Образ</em> <span class=\"math inline\">\\(\\varphi\\)</span> - это <span\nclass=\"math inline\">\\(\\operatorname{Img} \\varphi = \\{w \\in W:\n\\,\\,\\,\\,\\exists u \\in U \\,\\,\\,\\, \\varphi(u) = w\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "положительный индекс инерции отрицательный индекс инерции",
+        "data": "<br><br>$k$ - *положительный индекс инерции*.<br><br>$l$ - *отрицательный индекс инерции*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-0\">Определение:</a></strong><p><br><br><span class=\"math inline\">\\(k\\)</span> - <em>положительный\nиндекс инерции</em>.<br><br><span class=\"math inline\">\\(l\\)</span> -\n<em>отрицательный индекс инерции</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "положительно определена",
+        "data": "$q$ *положительно определена*, если $\\forall x \\in V,\\,\\,\\,\\, x \\ne 0 \\,\\,\\,\\, q(x) > 0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-1\">Определение:</a></strong><p><span class=\"math inline\">\\(q\\)</span> <em>положительно\nопределена</em>, если <span class=\"math inline\">\\(\\forall x \\in\nV,\\,\\,\\,\\, x \\ne 0 \\,\\,\\,\\, q(x) &gt; 0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "отрицательно определена",
+        "data": "$q$ *отрицательно определена*, если $\\forall x \\in V,\\,\\,\\,\\, x \\ne 0 \\,\\,\\,\\, q(x) < 0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-1\">Определение:</a></strong><p><span class=\"math inline\">\\(q\\)</span> <em>отрицательно\nопределена</em>, если <span class=\"math inline\">\\(\\forall x \\in\nV,\\,\\,\\,\\, x \\ne 0 \\,\\,\\,\\, q(x) &lt; 0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "аффинно-евклидово",
+        "data": "[Аффинное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0) $\\mathbb{A}$ над [евклидовым пространстом](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1) $V$ - *аффинно-евклидово*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">Аффинное\nпространство</a> <span class=\"math inline\">\\(\\mathbb{A}\\)</span> над <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1\">евклидовым\nпространстом</a> <span class=\"math inline\">\\(V\\)</span> -\n<em>аффинно-евклидово</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Расстояние",
+        "data": "$\\mathbb{A}$ - [аффинно-евклидово](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0) пространство. $a, b \\in \\mathbb{A}$. *Расстояние* от $a$ до $b$ - это $\\rho(a, b) = |\\overline{ab}|$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-2\">Определение:</a></strong><p><span class=\"math inline\">\\(\\mathbb{A}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0\">аффинно-евклидово</a>\nпространство. <span class=\"math inline\">\\(a, b \\in \\mathbb{A}\\)</span>.\n<em>Расстояние</em> от <span class=\"math inline\">\\(a\\)</span> до <span\nclass=\"math inline\">\\(b\\)</span> - это <span\nclass=\"math inline\">\\(\\rho(a, b) = |\\overline{ab}|\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфно",
+        "data": "Пусть $(\\mathbb{A}, U)$ и $(\\mathbb{B}, W)$ [аффинно-евклидовы](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0) пространства. $\\mathbb{A}$ *изоморфно* $\\mathbb{B}$, если существует биективное [аффинное отображение](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1) $\\Phi: \\mathbb{A} \\to \\mathbb{B}: \\,\\,\\,\\, \\forall a, b \\in \\mathbb{A} \\,\\,\\,\\, \\rho_{\\mathbb{A}}(a, b) = \\rho_{\\mathbb{B}}(\\Phi(a), \\Phi(b))$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((\\mathbb{A}, U)\\)</span> и <span\nclass=\"math inline\">\\((\\mathbb{B}, W)\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0\">аффинно-евклидовы</a>\nпространства. <span class=\"math inline\">\\(\\mathbb{A}\\)</span>\n<em>изоморфно</em> <span class=\"math inline\">\\(\\mathbb{B}\\)</span>, если\nсуществует биективное <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1\">аффинное\nотображение</a> <span class=\"math inline\">\\(\\Phi: \\mathbb{A} \\to\n\\mathbb{B}: \\,\\,\\,\\, \\forall a, b \\in \\mathbb{A} \\,\\,\\,\\,\n\\rho_{\\mathbb{A}}(a, b) = \\rho_{\\mathbb{B}}(\\Phi(a),\n\\Phi(b))\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Расстояние между плоскостями",
+        "data": "Пусть $\\mathbb{A}$ [аффинно-евклидово](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0) пространство. $\\pi$ и $\\tau$ - [плоскости](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4). *Расстояние между плоскостями* $\\pi$ и $\\tau$ - это $\\rho(\\pi, \\tau) = \\inf\\{\\rho(a, b): \\,\\,\\,\\, a \\in \\pi, \\,\\,\\,\\, b \\in \\tau\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathbb{A}\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0\">аффинно-евклидово</a>\nпространство. <span class=\"math inline\">\\(\\pi\\)</span> и <span\nclass=\"math inline\">\\(\\tau\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4\">плоскости</a>.\n<em>Расстояние между плоскостями</em> <span\nclass=\"math inline\">\\(\\pi\\)</span> и <span\nclass=\"math inline\">\\(\\tau\\)</span> - это <span\nclass=\"math inline\">\\(\\rho(\\pi, \\tau) = \\inf\\{\\rho(a, b): \\,\\,\\,\\, a \\in\n\\pi, \\,\\,\\,\\, b \\in \\tau\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "движение",
+        "data": "Пусть $\\mathbb{A}$ [аффинное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0). Отображение $f: \\mathbb{A} \\to \\mathbb{A}$ - *движение*, если $\\rho(a, b) = \\rho(f(a), f(b)), \\,\\,\\,\\, \\forall a, b \\in \\mathbb{A}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathbb{A}\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинное\nпространство</a>. Отображение <span class=\"math inline\">\\(f: \\mathbb{A}\n\\to \\mathbb{A}\\)</span> - <em>движение</em>, если <span\nclass=\"math inline\">\\(\\rho(a, b) = \\rho(f(a), f(b)), \\,\\,\\,\\, \\forall a,\nb \\in \\mathbb{A}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортогональный",
+        "data": "[Аффинный оператор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1) $\\Phi$ *ортогональный*, если его [дифференциал](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0) - [ортогональный](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-1) [линейный оператор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1).",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-1\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1\">Аффинный\nоператор</a> <span class=\"math inline\">\\(\\Phi\\)</span>\n<em>ортогональный</em>, если его <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0\">дифференциал</a>\n- <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-1\">ортогональный</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1\">линейный\nоператор</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-2\">Определение:</a></strong>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ранг линейного отображения",
+        "data": "Пусть $\\varphi$ - линейное отображение векторных пространств $U$ и $W$. $\\dim \\operatorname{img} \\varphi$ - это *ранг линейного отображения* $\\varphi$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\varphi\\)</span> - линейное\nотображение векторных пространств <span class=\"math inline\">\\(U\\)</span>\nи <span class=\"math inline\">\\(W\\)</span>. <span\nclass=\"math inline\">\\(\\dim \\operatorname{img} \\varphi\\)</span> - это\n<em>ранг линейного отображения</em> <span\nclass=\"math inline\">\\(\\varphi\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линейный оператор",
+        "data": "Пусть $\\varphi$ - линейное отображение векторного пространства $V$ в себя. Тогда $\\varphi$ - это *линейный оператор* пространства $V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\varphi\\)</span> - линейное\nотображение векторного пространства <span\nclass=\"math inline\">\\(V\\)</span> в себя. Тогда <span\nclass=\"math inline\">\\(\\varphi\\)</span> - это <em>линейный оператор</em>\nпространства <span class=\"math inline\">\\(V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "матрица линейного оператора",
+        "data": "$A$ - *матрица линейного оператора* $\\varphi$ относительно базиса $e_1, \\ldots, e_n$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-2\">Определение:</a></strong><p><span class=\"math inline\">\\(A\\)</span> - <em>матрица линейного\nоператора</em> <span class=\"math inline\">\\(\\varphi\\)</span> относительно\nбазиса <span class=\"math inline\">\\(e_1, \\ldots, e_n\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Алгебра",
+        "data": "*Алгебра* над полем $F$ - это множество $\\mathfrak{A}$ с операциями сложения $+: \\mathfrak{A}\\times \\mathfrak{A} \\to \\mathfrak{A}$, умножения $\\cdot: \\mathfrak{A}\\times \\mathfrak{A} \\to \\mathfrak{A}$ и умножения на числа из поля $F$ $\\cdot: F\\times \\mathfrak{A} \\to \\mathfrak{A}$, удовлетворяющих:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-3\">Определение:</a></strong><p><em>Алгебра</em> над полем <span class=\"math inline\">\\(F\\)</span> -\nэто множество <span class=\"math inline\">\\(\\mathfrak{A}\\)</span> с\nоперациями сложения <span class=\"math inline\">\\(+: \\mathfrak{A}\\times\n\\mathfrak{A} \\to \\mathfrak{A}\\)</span>, умножения <span\nclass=\"math inline\">\\(\\cdot: \\mathfrak{A}\\times \\mathfrak{A} \\to\n\\mathfrak{A}\\)</span> и умножения на числа из поля <span\nclass=\"math inline\">\\(F\\)</span> <span class=\"math inline\">\\(\\cdot:\nF\\times \\mathfrak{A} \\to \\mathfrak{A}\\)</span>, удовлетворяющих:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех линейных операторов на векторном пространстве $V$ обозначается $\\operatorname{end} V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-4\">Определение:</a></strong><p>Множество всех линейных операторов на векторном пространстве <span\nclass=\"math inline\">\\(V\\)</span> обозначается <span\nclass=\"math inline\">\\(\\operatorname{end} V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфна",
+        "data": "Алгебра $\\mathfrak{C}$ над $F$ *изоморфна* алгебре $\\mathfrak{B}$ над $F$, если $\\mathfrak{C}$ изоморфно $\\mathfrak{B}$, как кольцо и как векторное пространство над $F$. Обозначается $\\mathfrak{C} \\cong \\mathfrak{B}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-5\">Определение:</a></strong><p>Алгебра <span class=\"math inline\">\\(\\mathfrak{C}\\)</span> над <span\nclass=\"math inline\">\\(F\\)</span> <em>изоморфна</em> алгебре <span\nclass=\"math inline\">\\(\\mathfrak{B}\\)</span> над <span\nclass=\"math inline\">\\(F\\)</span>, если <span\nclass=\"math inline\">\\(\\mathfrak{C}\\)</span> изоморфно <span\nclass=\"math inline\">\\(\\mathfrak{B}\\)</span>, как кольцо и как векторное\nпространство над <span class=\"math inline\">\\(F\\)</span>. Обозначается\n<span class=\"math inline\">\\(\\mathfrak{C} \\cong\n\\mathfrak{B}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех матриц $n \\times n$ с элементами из поля $F$ обозначается $\\mathbf{M}_{n}(F)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-6\">Определение:</a></strong><p>Множество всех матриц <span class=\"math inline\">\\(n \\times n\\)</span>\nс элементами из поля <span class=\"math inline\">\\(F\\)</span> обозначается\n<span class=\"math inline\">\\(\\mathbf{M}_{n}(F)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "инвариантное (пространство)",
+        "data": "Пусть $U$ подпространство векторного пространства $V$ над полем $F$, $\\mathcal{A}$ - линейный оператор на $V$. $U$ *инвариантное (пространство)* остносительно $\\mathcal{A}$, если $\\forall u \\in U \\,\\,\\,\\, \\mathcal{A}(u) \\in U$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-7\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(U\\)</span> подпространство\nвекторного пространства <span class=\"math inline\">\\(V\\)</span> над полем\n<span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span> - линейный оператор на <span\nclass=\"math inline\">\\(V\\)</span>. <span class=\"math inline\">\\(U\\)</span>\n<em>инвариантное (пространство)</em> остносительно <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span>, если <span\nclass=\"math inline\">\\(\\forall u \\in U \\,\\,\\,\\, \\mathcal{A}(u) \\in\nU\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Если $U$ инвариантное пространство относительно линейного оператора $\\mathcal{A}$, то ограничение $\\mathcal{A}$ на $U$ обозначается $\\mathcal{A}_{\\vert U}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-8\">Определение:</a></strong><p>Если <span class=\"math inline\">\\(U\\)</span> инвариантное пространство\nотносительно линейного оператора <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span>, то ограничение <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span> на <span\nclass=\"math inline\">\\(U\\)</span> обозначается <span\nclass=\"math inline\">\\(\\mathcal{A}_{\\vert U}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "скалярное произведение",
+        "data": "Пусть $V$ - [векторное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0) над $\\mathbb{R}$. Симметрическая [положительно](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-1) определенная [билинейная функция](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-2) $\\beta: V \\times V \\to \\mathbb{R}$ - это *скалярное произведение* на $V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">векторное\nпространство</a> над <span class=\"math inline\">\\(\\mathbb{R}\\)</span>.\nСимметрическая <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-1\">положительно</a>\nопределенная <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-13.03.23#definition-2\">билинейная\nфункция</a> <span class=\"math inline\">\\(\\beta: V \\times V \\to\n\\mathbb{R}\\)</span> - это <em>скалярное произведение</em> на <span\nclass=\"math inline\">\\(V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "евклидово",
+        "data": "[Векторное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0) $V$ над полем $R$ - *евклидово*, если существует [скалярное произведение](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-0) на $V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">Векторное\nпространство</a> <span class=\"math inline\">\\(V\\)</span> над полем <span\nclass=\"math inline\">\\(R\\)</span> - <em>евклидово</em>, если существует\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-0\">скалярное\nпроизведение</a> на <span class=\"math inline\">\\(V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Длина вектора",
+        "data": "Пусть $V$ [евклидово](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1) пространство. *Длина вектора* $v \\in V$ - это число $|x| = \\sqrt{(x, x)}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1\">евклидово</a>\nпространство. <em>Длина вектора</em> <span class=\"math inline\">\\(v \\in\nV\\)</span> - это число <span class=\"math inline\">\\(|x| = \\sqrt{(x,\nx)}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Косинус угла между векторами",
+        "data": "Пусть $V$ евклидово пространство. *Косинус угла* $\\alpha$ *между векторами* $u, v \\in V$ - это число $\\cos{\\alpha} = \\frac{(u, v)}{|u|\\cdot|v|}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> евклидово пространство.\n<em>Косинус угла</em> <span class=\"math inline\">\\(\\alpha\\)</span>\n<em>между векторами</em> <span class=\"math inline\">\\(u, v \\in V\\)</span>\n- это число <span class=\"math inline\">\\(\\cos{\\alpha} = \\frac{(u,\nv)}{|u|\\cdot|v|}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Квадратная матрица $$G(v_1, \\ldots, v_m) = \\left(\\begin{array}{cccc}\n(v_1, v_1) & (v_1, v_2) & \\dots & (v_1, v_m)\\\\",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-4\">Определение:</a></strong><p>Квадратная матрица $$G(v_1, , v_m) = (\\begin{array}{cccc} (v_1, v_1)\n&amp; (v_1, v_2) &amp; &amp; (v_1, v_m)\\</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Объем параллелепипеда, натянутого на векторы",
+        "data": "*Объем параллелепипеда, натянутого на векторы* $v_1, \\ldots, v_m$ - это число $V(v_1, \\ldots, v_m) = \\sqrt{\\det G(v_1, \\ldots, v_m)}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-5\">Определение:</a></strong><p><em>Объем параллелепипеда, натянутого на векторы</em> <span\nclass=\"math inline\">\\(v_1, \\ldots, v_m\\)</span> - это число <span\nclass=\"math inline\">\\(V(v_1, \\ldots, v_m) = \\sqrt{\\det G(v_1, \\ldots,\nv_m)}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортогональны",
+        "data": "Пусть $V$ - евклидово пространство. Векторы $x, y \\in V$ - *ортогональны*, если $(x, y) = 0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-6\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - евклидово\nпространство. Векторы <span class=\"math inline\">\\(x, y \\in V\\)</span> -\n<em>ортогональны</em>, если <span class=\"math inline\">\\((x, y) =\n0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортогональный",
+        "data": "Базис евклидова пространства $V$, состоящий из ортогональных векторов - *ортогональный*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-7\">Определение:</a></strong><p>Базис евклидова пространства <span class=\"math inline\">\\(V\\)</span>,\nсостоящий из ортогональных векторов - <em>ортогональный</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортонормированный",
+        "data": "Отртогональный базис евклидова пространства $V$, состоящий из единичных векторов - *ортонормированный*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8\">Определение:</a></strong><p>Отртогональный базис евклидова пространства <span\nclass=\"math inline\">\\(V\\)</span>, состоящий из единичных векторов -\n<em>ортонормированный</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортогональна",
+        "data": "Квадратная матрица $C$ *ортогональна*, если $C^T\\cdot C = E$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-9\">Определение:</a></strong><p>Квадратная матрица <span class=\"math inline\">\\(C\\)</span>\n<em>ортогональна</em>, если <span class=\"math inline\">\\(C^T\\cdot C =\nE\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "прямоугольная",
+        "data": "Пусть $\\mathbb{A}$ - [аффинно-евклидово](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0) пространство. [Аффинная система координат](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3) $(O, e)$ *прямоугольная*, если [базис](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7) $e$ - [ортонормирован](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8).",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathbb{A}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0\">аффинно-евклидово</a>\nпространство. <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3\">Аффинная\nсистема координат</a> <span class=\"math inline\">\\((O, e)\\)</span>\n<em>прямоугольная</em>, если <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7\">базис</a>\n<span class=\"math inline\">\\(e\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8\">ортонормирован</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "главные оси",
+        "data": "Пусть $\\mathbb{A}$ - [аффинно-евклидово](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0) пространство. $Q$ - [аффинно-квадратичная функция](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1), $q$ - [квадратичная форма](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3) функции $Q$. Если [матрица](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3) $B$ формы $q$ - диагональна в [прямоугольной системе координат](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-0)  $(O, e)$, то $(O, e)$ - *главные оси*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathbb{A}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0\">аффинно-евклидово</a>\nпространство. <span class=\"math inline\">\\(Q\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1\">аффинно-квадратичная\nфункция</a>, <span class=\"math inline\">\\(q\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3\">квадратичная\nформа</a> функции <span class=\"math inline\">\\(Q\\)</span>. Если <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3\">матрица</a>\n<span class=\"math inline\">\\(B\\)</span> формы <span\nclass=\"math inline\">\\(q\\)</span> - диагональна в <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-0\">прямоугольной\nсистеме координат</a> <span class=\"math inline\">\\((O, e)\\)</span>, то\n<span class=\"math inline\">\\((O, e)\\)</span> - <em>главные оси</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "квадрика гиперповерхность второго порядка",
+        "data": "Пусть $\\mathbb{A}$ - [аффинное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0) ассоциированное с [векторным пространством](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0) $V$ над полем $F$ и $\\operatorname{char}F \\ne 2$, $Q$ - [аффинно-квадратичная функция](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1). Множество $\\Gamma(Q) = \\{a \\in \\mathbb{A}: \\,\\,\\,\\, Q(a) = 0\\}$, если оно не пустое и не является плоскостью - *квадрика* или *гиперповерхность второго порядка*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathbb{A}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинное\nпространство</a> ассоциированное с <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">векторным\nпространством</a> <span class=\"math inline\">\\(V\\)</span> над полем <span\nclass=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(\\operatorname{char}F \\ne 2\\)</span>, <span\nclass=\"math inline\">\\(Q\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1\">аффинно-квадратичная\nфункция</a>. Множество <span class=\"math inline\">\\(\\Gamma(Q) = \\{a \\in\n\\mathbb{A}: \\,\\,\\,\\, Q(a) = 0\\}\\)</span>, если оно не пустое и не\nявляется плоскостью - <em>квадрика</em> или <em>гиперповерхность второго\nпорядка</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "центр",
+        "data": " [Точка](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5) $O$ *центр* [квадрики](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2) $\\Gamma(Q)$, если $\\forall v: \\,\\,\\,\\, O + v \\in \\Gamma(Q) \\,\\,\\,\\, O - v \\in \\Gamma(Q)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-3\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5\">Точка</a>\n<span class=\"math inline\">\\(O\\)</span> <em>центр</em> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2\">квадрики</a>\n<span class=\"math inline\">\\(\\Gamma(Q)\\)</span>, если <span\nclass=\"math inline\">\\(\\forall v: \\,\\,\\,\\, O + v \\in \\Gamma(Q) \\,\\,\\,\\, O\n- v \\in \\Gamma(Q)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "вершина",
+        "data": "Пусть $O$ [центр](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-3) [квадрики](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2) $\\Gamma(Q)$. Если $O \\in \\Gamma(Q)$, то $O$ - *вершина* $\\Gamma(Q)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(O\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-3\">центр</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2\">квадрики</a>\n<span class=\"math inline\">\\(\\Gamma(Q)\\)</span>. Если <span\nclass=\"math inline\">\\(O \\in \\Gamma(Q)\\)</span>, то <span\nclass=\"math inline\">\\(O\\)</span> - <em>вершина</em> <span\nclass=\"math inline\">\\(\\Gamma(Q)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "аффинно-эквивалентны эквивалентны",
+        "data": "[Квадрики](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2) $\\Gamma_1$ и $\\Gamma_2$ *аффинно-эквивалентны* ($\\operatorname{GA}$-*эквивалентны*), если существует [аффинный оператор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1) $\\Phi$, такой, что $\\Phi(\\Gamma_1) = \\Gamma_2$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-5\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2\">Квадрики</a>\n<span class=\"math inline\">\\(\\Gamma_1\\)</span> и <span\nclass=\"math inline\">\\(\\Gamma_2\\)</span> <em>аффинно-эквивалентны</em>\n(<span\nclass=\"math inline\">\\(\\operatorname{GA}\\)</span>-<em>эквивалентны</em>),\nесли существует <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1\">аффинный\nоператор</a> <span class=\"math inline\">\\(\\Phi\\)</span>, такой, что <span\nclass=\"math inline\">\\(\\Phi(\\Gamma_1) = \\Gamma_2\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изометрически эквивалентны эквивалентны",
+        "data": "[Квадрики](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2) $\\Gamma_1$ и $\\Gamma_2$ *изометрически эквивалентны* ($\\operatorname{Isom}$-*эквивалентны*), если существует [ортогональный аффинный оператор](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-1) $\\Phi$, такой, что $\\Phi(\\Gamma_1) = \\Gamma_2$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-6\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2\">Квадрики</a>\n<span class=\"math inline\">\\(\\Gamma_1\\)</span> и <span\nclass=\"math inline\">\\(\\Gamma_2\\)</span> <em>изометрически\nэквивалентны</em> (<span\nclass=\"math inline\">\\(\\operatorname{Isom}\\)</span>-<em>эквивалентны</em>),\nесли существует <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-1\">ортогональный\nаффинный оператор</a> <span class=\"math inline\">\\(\\Phi\\)</span>, такой,\nчто <span class=\"math inline\">\\(\\Phi(\\Gamma_1) = \\Gamma_2\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "полилинейная",
+        "data": "Функция от нескольких переменных *полилинейная*, если она линейна по каждому аргументу при фиксированном значении остальных.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-1\">Определение:</a></strong><p>Функция от нескольких переменных <em>полилинейная</em>, если она\nлинейна по каждому аргументу при фиксированном значении остальных.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "тензор на типа валентности",
+        "data": "Пусть $V$ - [векторное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0), $V^{*}$ - [сопряженное](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-1) к $V$ пространство. [Полилинейная](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-1) функция $$f: \\underbrace{V\\times \\ldots \\times V}_p \\times \\underbrace{V^{*}\\times \\ldots \\times V^{*}}_q \\to F$$ - *тензор на* $V$ *типа* $(p, q)$ *валентности* $p + q$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">векторное\nпространство</a>, <span class=\"math inline\">\\(V^{*}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-1\">сопряженное</a>\nк <span class=\"math inline\">\\(V\\)</span> пространство. <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-1\">Полилинейная</a>\nфункция <span class=\"math display\">\\[f: \\underbrace{V\\times \\ldots\n\\times V}_p \\times \\underbrace{V^{*}\\times \\ldots \\times V^{*}}_q \\to\nF\\]</span> - <em>тензор на</em> <span class=\"math inline\">\\(V\\)</span>\n<em>типа</em> <span class=\"math inline\">\\((p, q)\\)</span>\n<em>валентности</em> <span class=\"math inline\">\\(p + q\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех [тензоров типа](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-0) $(p, q)$ обозначается $\\mathbb{T}^q_p$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-4\">Определение:</a></strong><p>Множество всех <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-0\">тензоров\nтипа</a> <span class=\"math inline\">\\((p, q)\\)</span> обозначается <span\nclass=\"math inline\">\\(\\mathbb{T}^q_p\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "координаты тензора",
+        "data": "Числа $t^{k \\ldots l}_{i \\ldots j} = t(e_i, \\ldots, e_j, \\varepsilon^k, \\ldots, \\varepsilon^l)$ - *координаты тензора* $t$ в базисе $e$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-2\">Определение:</a></strong><p>Числа <span class=\"math inline\">\\(t^{k \\ldots l}_{i \\ldots j} =\nt(e_i, \\ldots, e_j, \\varepsilon^k, \\ldots, \\varepsilon^l)\\)</span> -\n<em>координаты тензора</em> <span class=\"math inline\">\\(t\\)</span> в\nбазисе <span class=\"math inline\">\\(e\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "сложение тензоров",
+        "data": "(*сложение тензоров*) Пусть $t_1, t_2 \\in \\mathbb{T}^q_p$. $(t_1 + t_2)(v_1, \\ldots, v_p, f_1, \\ldots, f_q) = t_1(v_1, \\ldots, v_p, f_1, \\ldots, f_q) + t_2(v_1, \\ldots, v_p, f_1, \\ldots, f_q)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-3\">Определение:</a></strong><p>(<em>сложение тензоров</em>) Пусть <span class=\"math inline\">\\(t_1,\nt_2 \\in \\mathbb{T}^q_p\\)</span>. <span class=\"math inline\">\\((t_1 +\nt_2)(v_1, \\ldots, v_p, f_1, \\ldots, f_q) = t_1(v_1, \\ldots, v_p, f_1,\n\\ldots, f_q) + t_2(v_1, \\ldots, v_p, f_1, \\ldots, f_q)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "умножение тензора на число",
+        "data": "(*умножение тензора на число*) Пусть $t \\in \\mathbb{T}^q_p, \\,\\,\\,\\, \\lambda \\in F$. $(\\lambda t)(v_1, \\ldots, v_p, f_1, \\ldots, f_q) = \\lambda (t(v_1, \\ldots, v_p, f_1, \\ldots, f_q))$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-5\">Определение:</a></strong><p>(<em>умножение тензора на число</em>) Пусть <span\nclass=\"math inline\">\\(t \\in \\mathbb{T}^q_p, \\,\\,\\,\\, \\lambda \\in\nF\\)</span>. <span class=\"math inline\">\\((\\lambda t)(v_1, \\ldots, v_p,\nf_1, \\ldots, f_q) = \\lambda (t(v_1, \\ldots, v_p, f_1, \\ldots,\nf_q))\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Тензорное произведение",
+        "data": "Пусть $t \\in \\mathbb{T}^q_p, \\,\\,\\,\\, \\hat{t} \\in \\mathbb{T}^{\\hat{q}}_{\\hat{p}}$. *Тензорное произведение* $t \\otimes \\hat{t}$ - это отображение $$t \\otimes \\hat{t}: \\underbrace{V\\times \\ldots \\times V}_p \\times \\underbrace{V\\times \\ldots \\times V}_{\\hat{p}} \\times \\underbrace{V^{*}\\times \\ldots \\times V^{*}}_q \\times \\underbrace{V^{*}\\times \\ldots \\times V^{*}}_{\\hat{q}} \\to F$$ $$(t \\otimes \\hat{t})(v_1, \\ldots, v_p, u_1, \\ldots, u_{\\hat{p}}, f_1, \\ldots, f_q, g_1, \\ldots, g_{\\hat{q}})=$$$$= t(v_1, \\ldots, v_p, f_1, \\ldots, f_q)\\cdot \\hat{t}(u_1, \\ldots, u_{\\hat{p}}, g_1, \\ldots, g_{\\hat{q}})$$",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-6\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(t \\in \\mathbb{T}^q_p, \\,\\,\\,\\,\n\\hat{t} \\in \\mathbb{T}^{\\hat{q}}_{\\hat{p}}\\)</span>. <em>Тензорное\nпроизведение</em> <span class=\"math inline\">\\(t \\otimes \\hat{t}\\)</span>\n- это отображение <span class=\"math display\">\\[t \\otimes \\hat{t}:\n\\underbrace{V\\times \\ldots \\times V}_p \\times \\underbrace{V\\times \\ldots\n\\times V}_{\\hat{p}} \\times \\underbrace{V^{*}\\times \\ldots \\times\nV^{*}}_q \\times \\underbrace{V^{*}\\times \\ldots \\times V^{*}}_{\\hat{q}}\n\\to F\\]</span> <span class=\"math display\">\\[(t \\otimes \\hat{t})(v_1,\n\\ldots, v_p, u_1, \\ldots, u_{\\hat{p}}, f_1, \\ldots, f_q, g_1, \\ldots,\ng_{\\hat{q}})=\\]</span><span class=\"math display\">\\[= t(v_1, \\ldots, v_p,\nf_1, \\ldots, f_q)\\cdot \\hat{t}(u_1, \\ldots, u_{\\hat{p}}, g_1, \\ldots,\ng_{\\hat{q}})\\]</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "свертка",
+        "data": "Пусть $t \\in \\mathbb{T}^q_p$. Тензор $\\bar{t}$ типа $(p - 1, q - 1)$, полученный по формуле: $$\\bar{t} = \\displaystyle \\sum_{i = 1}^{n}t(v_1, \\ldots, v_{r - 1}, e_i, v_{r + 1}, \\ldots, v_p, f_1, \\ldots, f_{s - 1}, \\varepsilon^i, f_{s + 1}, \\ldots, f_q)$$ - *свертка* тензора $t$ по $r$-ому ковариантному индексу и $s$-ому контравариантному.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-7\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(t \\in \\mathbb{T}^q_p\\)</span>.\nТензор <span class=\"math inline\">\\(\\bar{t}\\)</span> типа <span\nclass=\"math inline\">\\((p - 1, q - 1)\\)</span>, полученный по формуле:\n<span class=\"math display\">\\[\\bar{t} = \\displaystyle \\sum_{i =\n1}^{n}t(v_1, \\ldots, v_{r - 1}, e_i, v_{r + 1}, \\ldots, v_p, f_1,\n\\ldots, f_{s - 1}, \\varepsilon^i, f_{s + 1}, \\ldots, f_q)\\]</span> -\n<em>свертка</em> тензора <span class=\"math inline\">\\(t\\)</span> по <span\nclass=\"math inline\">\\(r\\)</span>-ому ковариантному индексу и <span\nclass=\"math inline\">\\(s\\)</span>-ому контравариантному.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "симметричный",
+        "data": "Тензор $t$ типа $(p, 0)$ - *симметричный*, если $\\forall \\pi \\in S_p$ (группа перестановок) $\\forall v_1, \\ldots, v_p \\in V \\,\\,\\,\\, t(v_1, \\ldots, v_p) = t(v_{\\pi(1)}, \\ldots, v_{\\pi(p)})$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-8\">Определение:</a></strong><p>Тензор <span class=\"math inline\">\\(t\\)</span> типа <span\nclass=\"math inline\">\\((p, 0)\\)</span> - <em>симметричный</em>, если\n<span class=\"math inline\">\\(\\forall \\pi \\in S_p\\)</span> (группа\nперестановок) <span class=\"math inline\">\\(\\forall v_1, \\ldots, v_p \\in V\n\\,\\,\\,\\, t(v_1, \\ldots, v_p) = t(v_{\\pi(1)}, \\ldots,\nv_{\\pi(p)})\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество [симметричных](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-8) тензоров типа $(p, 0)$ обозначается $\\mathbb{T}^{+}_p$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-9\">Определение:</a></strong><p>Множество <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-8\">симметричных</a>\nтензоров типа <span class=\"math inline\">\\((p, 0)\\)</span> обозначается\n<span class=\"math inline\">\\(\\mathbb{T}^{+}_p\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "кососимметричный",
+        "data": "Тензор $t$ типа $(p, 0)$ - *кососимметричный*, если $\\forall \\pi \\in S_p$ (группа перестановок) $\\forall v_1, \\ldots, v_p \\in V^{*} \\,\\,\\,\\, t(v_1, \\ldots, v_p) = \\operatorname{sgn} (\\pi) t(v_{\\pi(1)}, \\ldots, v_{\\pi(p)})$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-10\">Определение:</a></strong><p>Тензор <span class=\"math inline\">\\(t\\)</span> типа <span\nclass=\"math inline\">\\((p, 0)\\)</span> - <em>кососимметричный</em>, если\n<span class=\"math inline\">\\(\\forall \\pi \\in S_p\\)</span> (группа\nперестановок) <span class=\"math inline\">\\(\\forall v_1, \\ldots, v_p \\in\nV^{*} \\,\\,\\,\\, t(v_1, \\ldots, v_p) = \\operatorname{sgn} (\\pi)\nt(v_{\\pi(1)}, \\ldots, v_{\\pi(p)})\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество [кососимметричных](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-0) тензоров типа $(p, 0)$ обозначается $\\Lambda^p(V^{*})$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-11",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-11\">Определение:</a></strong><p>Множество <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-0\">кососимметричных</a>\nтензоров типа <span class=\"math inline\">\\((p, 0)\\)</span> обозначается\n<span class=\"math inline\">\\(\\Lambda^p(V^{*})\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $t \\in \\mathbb{T}^0_p$, $\\sigma \\in S_n$. Определим отображение $\\vartheta_{\\sigma}: \\mathbb{T}^0_p \\to \\mathbb{T}^0_p \\,\\,\\,\\, \\,\\,\\,\\, (\\vartheta_{\\sigma}(t))(v_1, \\ldots, v_p) = t(v_{\\sigma(1)}, \\ldots, v_{\\sigma(p)}) \\,\\,\\,\\, \\forall v_1, \\ldots, v_p \\in V$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-12",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-12\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(t \\in \\mathbb{T}^0_p\\)</span>,\n<span class=\"math inline\">\\(\\sigma \\in S_n\\)</span>. Определим\nотображение <span class=\"math inline\">\\(\\vartheta_{\\sigma}:\n\\mathbb{T}^0_p \\to \\mathbb{T}^0_p \\,\\,\\,\\, \\,\\,\\,\\,\n(\\vartheta_{\\sigma}(t))(v_1, \\ldots, v_p) = t(v_{\\sigma(1)}, \\ldots,\nv_{\\sigma(p)}) \\,\\,\\,\\, \\forall v_1, \\ldots, v_p \\in V\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Симметрирование",
+        "data": "*Симметрирование* тензора $t \\in \\mathbb{T}^0_p$ - это результат применения к нему оператора $\\operatorname{Sym}: t \\mapsto \\frac1{p!}\\displaystyle \\sum_{\\sigma \\in S_p}\\vartheta_{\\sigma}(t)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-13",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-13\">Определение:</a></strong><p><em>Симметрирование</em> тензора <span class=\"math inline\">\\(t \\in\n\\mathbb{T}^0_p\\)</span> - это результат применения к нему оператора\n<span class=\"math inline\">\\(\\operatorname{Sym}: t \\mapsto\n\\frac1{p!}\\displaystyle \\sum_{\\sigma \\in\nS_p}\\vartheta_{\\sigma}(t)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Альтернирование",
+        "data": "*Альтернирование* тензора $t \\in \\mathbb{T}^0_p$ - это результат применения к нему оператора $\\operatorname{Alt}: t \\mapsto \\frac1{p!}\\displaystyle \\sum_{\\sigma \\in S_p}\\operatorname{sgn}(\\sigma)\\vartheta_{\\sigma}(t)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-14",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-14\">Определение:</a></strong><p><em>Альтернирование</em> тензора <span class=\"math inline\">\\(t \\in\n\\mathbb{T}^0_p\\)</span> - это результат применения к нему оператора\n<span class=\"math inline\">\\(\\operatorname{Alt}: t \\mapsto\n\\frac1{p!}\\displaystyle \\sum_{\\sigma \\in\nS_p}\\operatorname{sgn}(\\sigma)\\vartheta_{\\sigma}(t)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "внешняя прямая сумма",
+        "data": "Пусть $U$ и $W$ векторные пространства над полем $F$. Рассмотрим $V = U \\times W = \\{(u, w): \\,\\,\\,\\, u \\in U, w \\in W\\}$. Определим операции сложения $(u, w) + (u’, w’) = (u + u’, w + w’)$ и умножения на числа из $F \\,\\,\\,\\, \\lambda (u, w) = (\\lambda u, \\lambda w)$\n. Относительно этих операций $V$ - векторное пространство. $V$ - *внешняя прямая сумма* $U$ и $W$. Обозначается $U \\oplus W$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-15",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-26#definition-15\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(W\\)</span> векторные пространства над полем <span\nclass=\"math inline\">\\(F\\)</span>. Рассмотрим <span\nclass=\"math inline\">\\(V = U \\times W = \\{(u, w): \\,\\,\\,\\, u \\in U, w \\in\nW\\}\\)</span>. Определим операции сложения <span\nclass=\"math inline\">\\((u, w) + (u’, w’) = (u + u’, w + w’)\\)</span> и\nумножения на числа из <span class=\"math inline\">\\(F \\,\\,\\,\\, \\lambda (u,\nw) = (\\lambda u, \\lambda w)\\)</span> . Относительно этих операций <span\nclass=\"math inline\">\\(V\\)</span> - векторное пространство. <span\nclass=\"math inline\">\\(V\\)</span> - <em>внешняя прямая сумма</em> <span\nclass=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(W\\)</span>. Обозначается <span\nclass=\"math inline\">\\(U \\oplus W\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "собственный вектор",
+        "data": "Пусть $V$ - векторное пространство над полем $F$, $\\mathcal{A}$ - линейный оператор на $V$. $v \\ne 0 \\in V$ - *собственный вектор* линейного оператора $\\mathcal{A}$, если $\\exists \\lambda \\in F: \\,\\,\\,\\, \\mathcal{A}(v) = \\lambda v$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - векторное пространство\nнад полем <span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span> - линейный оператор на <span\nclass=\"math inline\">\\(V\\)</span>. <span class=\"math inline\">\\(v \\ne 0\n\\in V\\)</span> - <em>собственный вектор</em> линейного оператора <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span>, если <span\nclass=\"math inline\">\\(\\exists \\lambda \\in F: \\,\\,\\,\\, \\mathcal{A}(v) =\n\\lambda v\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "тождественный линейный оператор",
+        "data": "$\\mathcal{I}$ - *тождественный линейный оператор*, то есть $\\forall v \\in V: \\,\\,\\,\\, \\mathcal{I}(v) = v$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-1\">Определение:</a></strong><p><span class=\"math inline\">\\(\\mathcal{I}\\)</span> - <em>тождественный\nлинейный оператор</em>, то есть <span class=\"math inline\">\\(\\forall v\n\\in V: \\,\\,\\,\\, \\mathcal{I}(v) = v\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "характеристический многочлен характеристическое уравнение",
+        "data": "Пусть $V$ - векторное пространство над полем $F$, $\\mathcal{A}$ - линейный оператор на $V$, $A$ - матрица $\\mathcal{A}$ в некотором базисе.<br>$\\chi(t) = \\det \\left(\\mathcal{A} - t E\\right)$ - *характеристический многочлен* линейного оператора $\\mathcal{A}$.<br>Уравнение $\\chi(t) = 0$ - *характеристическое уравнение* линейного оператора $\\mathcal{A}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - векторное пространство\nнад полем <span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span> - линейный оператор на <span\nclass=\"math inline\">\\(V\\)</span>, <span class=\"math inline\">\\(A\\)</span>\n- матрица <span class=\"math inline\">\\(\\mathcal{A}\\)</span> в некотором\nбазисе.<br><span class=\"math inline\">\\(\\chi(t) = \\det \\left(\\mathcal{A}\n- t E\\right)\\)</span> - <em>характеристический многочлен</em> линейного\nоператора <span class=\"math inline\">\\(\\mathcal{A}\\)</span>.<br>Уравнение\n<span class=\"math inline\">\\(\\chi(t) = 0\\)</span> -\n<em>характеристическое уравнение</em> линейного оператора <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "(определение корректно) [Определение](#definition-2) корректно, то есть характеристический многочлен и характеристическое уравнение не зависят от выбора базиса.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-3\">Определение:</a></strong><p>(определение корректно) <a href=\"#definition-2\">Определение</a>\nкорректно, то есть характеристический многочлен и характеристическое\nуравнение не зависят от выбора базиса.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $V$ - векторное пространство над полем $F$, $\\mathcal{A}$ - линейный оператор на $V$, $\\lambda$ - собственное значение $\\mathcal{A}$. $V_{\\lambda}$ - это множество собственных векторов, отвечающих значению $\\lambda$ и нулевой вектор.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - векторное пространство\nнад полем <span class=\"math inline\">\\(F\\)</span>, <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span> - линейный оператор на <span\nclass=\"math inline\">\\(V\\)</span>, <span\nclass=\"math inline\">\\(\\lambda\\)</span> - собственное значение <span\nclass=\"math inline\">\\(\\mathcal{A}\\)</span>. <span\nclass=\"math inline\">\\(V_{\\lambda}\\)</span> - это множество собственных\nвекторов, отвечающих значению <span\nclass=\"math inline\">\\(\\lambda\\)</span> и нулевой вектор.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "собственное подпространство",
+        "data": "$V_{\\lambda}$ - *собственное подпространство*.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-5\">Определение:</a></strong><p><span class=\"math inline\">\\(V_{\\lambda}\\)</span> - <em>собственное\nподпространство</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ортогональное дополнение",
+        "data": "$V$ - евклидово пространство, $U$ - его подпространство. Множество $U^{\\perp} = \\{x \\in V: \\,\\,\\,\\, (x, u) = 0 \\,\\,\\,\\, \\forall u \\in U\\}$ - *ортогональное дополнение* подпространства $U$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-0\">Определение:</a></strong><p><span class=\"math inline\">\\(V\\)</span> - евклидово пространство,\n<span class=\"math inline\">\\(U\\)</span> - его подпространство. Множество\n<span class=\"math inline\">\\(U^{\\perp} = \\{x \\in V: \\,\\,\\,\\, (x, u) = 0\n\\,\\,\\,\\, \\forall u \\in U\\}\\)</span> - <em>ортогональное дополнение</em>\nподпространства <span class=\"math inline\">\\(U\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-1\">Определение:</a></strong>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $V$ - евклидово пространство.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - евклидово\nпространство.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $V$ - евклидово пространство.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - евклидово\nпространство.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $V$ - евклидово пространство.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V\\)</span> - евклидово\nпространство.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфны",
+        "data": "Евклидовы пространства $U$ и $W$ *изоморфны*, если существует отображение $\\varphi: U \\to W$:",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.03.23#definition-5\">Определение:</a></strong><p>Евклидовы пространства <span class=\"math inline\">\\(U\\)</span> и <span\nclass=\"math inline\">\\(W\\)</span> <em>изоморфны</em>, если существует\nотображение <span class=\"math inline\">\\(\\varphi: U \\to W\\)</span>:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "аффинно-линейное",
+        "data": "Пусть $(\\mathbb{A}, V)$ - [аффинное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0), $V$ - [векторное пространство](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0) над полем $F$. Отображение $L: \\mathbb{A} \\to F$ - *аффинно-линейное*, если существует [линейная функция](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0) $l: V \\to F$, такая, что $L(a) = L(b) + l(\\overline{ba})\\,\\,\\,\\, \\forall a, b \\in \\mathbb{A}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((\\mathbb{A}, V)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0\">аффинное\nпространство</a>, <span class=\"math inline\">\\(V\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0\">векторное\nпространство</a> над полем <span class=\"math inline\">\\(F\\)</span>.\nОтображение <span class=\"math inline\">\\(L: \\mathbb{A} \\to F\\)</span> -\n<em>аффинно-линейное</em>, если существует <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0\">линейная\nфункция</a> <span class=\"math inline\">\\(l: V \\to F\\)</span>, такая, что\n<span class=\"math inline\">\\(L(a) = L(b) + l(\\overline{ba})\\,\\,\\,\\,\n\\forall a, b \\in \\mathbb{A}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "аффинно-квадратичная функция",
+        "data": "Отображение $Q: \\mathbb{A} \\to F$ - *аффинно-квадратичная функция*, если существует [линейная функция](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0) $l: V \\to F$ и [квадратичная форма](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3) $q: V \\to F$, такие, что $\\forall a, b \\in \\mathbb{A} \\,\\,\\,\\, Q(b) = Q(a) + q(\\overline{ab}) + 2l(\\overline{ab})$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1\">Определение:</a></strong><p>Отображение <span class=\"math inline\">\\(Q: \\mathbb{A} \\to F\\)</span>\n- <em>аффинно-квадратичная функция</em>, если существует <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0\">линейная\nфункция</a> <span class=\"math inline\">\\(l: V \\to F\\)</span> и <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3\">квадратичная\nформа</a> <span class=\"math inline\">\\(q: V \\to F\\)</span>, такие, что\n<span class=\"math inline\">\\(\\forall a, b \\in \\mathbb{A} \\,\\,\\,\\, Q(b) =\nQ(a) + q(\\overline{ab}) + 2l(\\overline{ab})\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "матрица аффинно-квадратичной функции",
+        "data": "$\\tilde{B} = \\left(\\begin{array}{c|c} B & S \\\\\\hline S^T & Q(O)\\end{array}\\right)$ - *матрица аффинно-квадратичной функции* $Q$ в базисе $(O, e)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-2\">Определение:</a></strong><p><span class=\"math inline\">\\(\\tilde{B} = \\left(\\begin{array}{c|c} B\n&amp; S \\\\\\hline S^T &amp; Q(O)\\end{array}\\right)\\)</span> - <em>матрица\nаффинно-квадратичной функции</em> <span class=\"math inline\">\\(Q\\)</span>\nв базисе <span class=\"math inline\">\\((O, e)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "матрица перехода от аффинной системы координат к аффинной системе координат",
+        "data": "$\\tilde{C} = \\left(\\begin{array}{ccc|c} & & & v_1\\\\ & C_{e \\to e’} & & \\vdots\\\\& & & v_n \\\\\\hline 0 & \\dots & 0 & 1\\end{array}\\right)$ - *матрица перехода от аффинной системы координат* $(O, e)$ *к аффинной системе координат* $(O’, e’)$, $w_1, \\ldots, w_n$ координаты $\\overline{OO’}$ в [базисе](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7) $e$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-3\">Определение:</a></strong><p><span class=\"math inline\">\\(\\tilde{C} = \\left(\\begin{array}{ccc|c}\n&amp; &amp; &amp; v_1\\\\ &amp; C_{e \\to e’} &amp; &amp; \\vdots\\\\&amp;\n&amp; &amp; v_n \\\\\\hline 0 &amp; \\dots &amp; 0 &amp;\n1\\end{array}\\right)\\)</span> - <em>матрица перехода от аффинной системы\nкоординат</em> <span class=\"math inline\">\\((O, e)\\)</span> <em>к\nаффинной системе координат</em> <span class=\"math inline\">\\((O’,\ne’)\\)</span>, <span class=\"math inline\">\\(w_1, \\ldots, w_n\\)</span>\nкоординаты <span class=\"math inline\">\\(\\overline{OO’}\\)</span> в <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7\">базисе</a>\n<span class=\"math inline\">\\(e\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "центр аффинно-квадратичной функции",
+        "data": "Пусть $W$ - столбец координат вектора $\\overline{OO’}$, таков, что $B W + S = 0$. Тогда $S’ = 0$ и $Q(O’ + v) = q(v) + Q(O’) = Q(O’ - v) \\,\\,\\,\\, \\forall v \\in V$. Точка $O’$ - *центр аффинно-квадратичной функции* $Q$.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(W\\)</span> - столбец координат\nвектора <span class=\"math inline\">\\(\\overline{OO’}\\)</span>, таков, что\n<span class=\"math inline\">\\(B W + S = 0\\)</span>. Тогда <span\nclass=\"math inline\">\\(S’ = 0\\)</span> и <span class=\"math inline\">\\(Q(O’\n+ v) = q(v) + Q(O’) = Q(O’ - v) \\,\\,\\,\\, \\forall v \\in V\\)</span>. Точка\n<span class=\"math inline\">\\(O’\\)</span> - <em>центр аффинно-квадратичной\nфункции</em> <span class=\"math inline\">\\(Q\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "невырождена",
+        "data": "[Аффинно-квадратичная функция](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1) $Q$ *невырождена*, если существует [аффинная система координат](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3) $(O, e)$, в которой [матрица](https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-2) $\\tilde{B}$ невырождена.",
+        "url": "https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-5\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1\">Аффинно-квадратичная\nфункция</a> <span class=\"math inline\">\\(Q\\)</span> <em>невырождена</em>,\nесли существует <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3\">аффинная\nсистема координат</a> <span class=\"math inline\">\\((O, e)\\)</span>, в\nкоторой <a\nhref=\"https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-2\">матрица</a>\n<span class=\"math inline\">\\(\\tilde{B}\\)</span> невырождена.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    }
+]

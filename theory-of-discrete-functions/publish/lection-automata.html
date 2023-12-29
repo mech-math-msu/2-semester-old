@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Теория дискретных функций</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Теория дискретных функций</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#абстрактный-конечный-автомат"
+id="toc-абстрактный-конечный-автомат">Абстрактный конечный автомат</a>
+<ul>
+<li><a href="#способы-задания" id="toc-способы-задания">Способы
+задания</a>
+<ul>
+<li><a href="#диаграмма-мура" id="toc-диаграмма-мура">Диаграмма
+Мура</a></li>
+</ul></li>
+<li><a href="#вспомогательные-функции-для-автомата"
+id="toc-вспомогательные-функции-для-автомата">Вспомогательные функции
+для автомата</a>
+<ul>
+<li><a href="#доопределение-функций-входа-и-состояний"
+id="toc-доопределение-функций-входа-и-состояний">Доопределение функций
+входа и состояний</a></li>
+<li><a href="#канонические-уравнения-инициального-автомата"
+id="toc-канонические-уравнения-инициального-автомата">Канонические
+уравнения инициального автомата</a></li>
+</ul></li>
+<li><a href="#автоматы-в-p_2" id="toc-автоматы-в-p_2">Автоматы в <span
+class="math inline">\(P_2\)</span></a></li>
+<li><a href="#автоматы-и-бесконечные-слова"
+id="toc-автоматы-и-бесконечные-слова">Автоматы и бесконечные
+слова</a></li>
+<li><a href="#одинаковость-автоматов"
+id="toc-одинаковость-автоматов">«Одинаковость» автоматов</a></li>
+<li><a href="#распознавание-событий-конечными-автоматами"
+id="toc-распознавание-событий-конечными-автоматами">Распознавание
+событий конечными автоматами</a>
+<ul>
+<li><a href="#простейшие-свойства-итерации-и-произведения-событий"
+id="toc-простейшие-свойства-итерации-и-произведения-событий">Простейшие
+свойства итерации и произведения событий</a></li>
+<li><a href="#регулярные-события" id="toc-регулярные-события">Регулярные
+события</a></li>
+</ul></li>
+<li><a href="#обобщенные-источники"
+id="toc-обобщенные-источники">Обобщенные источники</a></li>
+<li><a href="#структурные-автоматы"
+id="toc-структурные-автоматы">Структурные автоматы</a>
+<ul>
+<li><a href="#пример-полной-относительно-композиций-системы"
+id="toc-пример-полной-относительно-композиций-системы">Пример полной
+относительно композиций системы</a></li>
+</ul></li>
+<li><a href="#однородные-структуры"
+id="toc-однородные-структуры">Однородные структуры</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="абстрактный-конечный-автомат">Абстрактный конечный автомат</h1>
+<hr />
+<h2 id="способы-задания">Способы задания</h2>
+<center>
+<button id="state_button" class="icon-button">
+<img id="iconImage" src="img/red_heart.png" alt="Icon">
+</button>
+</center>
+<center>
+<canvas id="main-canvas">
+</canvas>
+</center>
+<center>
+<div id="slider-div">
+<input type="range" id="slider" min="1" max="20" value="1">
+</div>
+</center>
+<p>Пускай есть машина, которая получает <span
+class="math inline">\(a\)</span> на вход и выдает <span
+class="math inline">\(b\)</span>. Скучно. Пускай теперь есть много машин
+(ну или разные состояния одной) и известно в какой момент времени какая
+машина работает (в каком состоянии находится машина), причем, что очень
+важно, состояние в следующий момент времени определяется состоянием в
+текущий и (возможно) входом <span class="math inline">\(a\)</span>
+(слайдер отвечает за время).</p>
+<p><strong>Определение:</strong><a name="definition-0"></a>
+<em>(Конечный абстрактный детерминированный) автомат</em> - это <span
+class="math inline">\((A, Q, B, \varphi, \psi)\)</span>, где<br><br>
+<span class="math inline">\(A\)</span> - <em>алфавит(множество)
+входов</em>.<br><br> <span class="math inline">\(Q\)</span> -
+<em>алфавит(множество) состояний</em>.<br><br> <span
+class="math inline">\(B\)</span> - <em>алфавит(множество)
+выходов</em>.<br><br>Множества <span class="math inline">\(A, Q,
+B\)</span> - конечны.<br><br> <span class="math inline">\(\varphi:
+Q\times A \to Q\)</span> - <em>функция переходов</em>.<br><br> <span
+class="math inline">\(\psi: Q \times A \to B\)</span> - <em>функция
+выходов</em>.<br><br></p>
+<center>
+<strong>Алфавит входов</strong>
+</center>
+<center>
+<canvas id="heart-table-canvas">
+</canvas>
+</center>
+<center>
+<strong>Алфавит состояний</strong>
+</center>
+<center>
+<canvas id="table-canvas">
+</canvas>
+</center>
+<center>
+<strong>Алфавит выходов</strong>
+</center>
+<center>
+<canvas id="diam-table-canvas">
+</canvas>
+</center>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\((A, Q, B, \varphi, \psi)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомат</a>.
+Если <span class="math inline">\(\varphi\)</span> зависит от <span
+class="math inline">\(a \in A\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-5">фиктивно</a>,
+то <span class="math inline">\((A, Q, B, \varphi, \psi)\)</span> -
+<em>автомат Мура</em>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\((A, Q, B, \varphi, \psi)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомат</a>.
+Если <span class="math inline">\(A = A_1 \times \ldots \times
+A_m\)</span>, то <span class="math inline">\((A, Q, B, \varphi,
+\psi)\)</span> <em>имеет</em> <span class="math inline">\(m\)</span>
+<em>входов</em>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\((A, Q, B, \varphi, \psi)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомат</a>.
+Если <span class="math inline">\(B = B_1 \times \ldots \times
+B_m\)</span>, то <span class="math inline">\((A, Q, B, \varphi,
+\psi)\)</span> <em>имеет</em> <span class="math inline">\(m\)</span>
+<em>выходов</em>.</p>
+<h3 id="диаграмма-мура">Диаграмма Мура</h3>
+<hr />
+<center>
+<canvas id="diagram-canvas">
+</canvas>
+</center>
+<h2 id="вспомогательные-функции-для-автомата">Вспомогательные функции
+для автомата</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\((A, Q, B, \varphi, \psi)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомат</a>.<br><br>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8">Слова</a>
+в алфавите <span class="math inline">\(A\)</span> - <em>входные
+слова</em>. <br><br> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8">Слова</a>
+в алфавите <span class="math inline">\(B\)</span> - <em>выходные
+слова</em>.</p>
+<p>Пусть <span class="math inline">\(\alpha\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8">слово</a>.
+<span class="math inline">\(A\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7">алфавит</a>.</p>
+<p><strong>Обозначения:</strong></p>
+<p><span class="math inline">\(|\alpha|\)</span> - длина слова.</p>
+<p><span class="math inline">\([\alpha]_l\)</span> - первые <span
+class="math inline">\(l\)</span> букв слова <span
+class="math inline">\(\alpha\)</span>.</p>
+<p><span class="math inline">\(\Lambda\)</span> - пустое слово.</p>
+<p><span class="math inline">\(A^{*}\)</span> - множество всех слов в
+алфавите <span class="math inline">\(A\)</span>.</p>
+<p><span class="math inline">\(\alpha^k\)</span> - это слово,
+составленное из записанного <span class="math inline">\(k\)</span> раз
+слова <span class="math inline">\(\alpha\)</span>.</p>
+<h3 id="доопределение-функций-входа-и-состояний">Доопределение функций
+входа и состояний</h3>
+<hr />
+<p>Пусть <span class="math inline">\((A, Q, B, \varphi, \psi)\)</span> -
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомат</a>.
+<span class="math inline">\(q \in Q\)</span>, <span
+class="math inline">\(a \in A\)</span>, <span
+class="math inline">\(\alpha\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8">слово</a>
+в алфавите <span class="math inline">\(A\)</span>. Доопределим функции
+<span class="math inline">\(\varphi\)</span> и <span
+class="math inline">\(\psi\)</span>, так чтобы они могли принимать на
+вход целые слова.</p>
+<p><span class="math inline">\(\begin{array}{c}  \varphi(q, \Lambda) =
+q\\  \varphi(q, \alpha a) = \varphi(\varphi(q, \alpha), a)
+\end{array}\)</span></p>
+<p><span class="math inline">\(\psi(q, \alpha a) = \psi(\varphi(q,
+\alpha), a)\)</span> (Только непустое входное слово, так как для выхода
+нужен вход)</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> <span
+class="math display">\[\varphi(q, \alpha_1 \alpha_2) =
+\varphi(\varphi(q, \alpha_1), \alpha_2)\]</span> <span
+class="math display">\[\psi(q, \alpha_1 \alpha_2) = \psi(\varphi(q,
+\alpha_1), \alpha_2)\]</span></p>
+<p><em>Доказательство:</em> индукция <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-5"></a> Пусть <span
+class="math inline">\((A, Q, B, \varphi, \psi)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомат</a>.
+<span class="math inline">\(q \in Q\)</span>, <span
+class="math inline">\(\alpha\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8">слово</a>
+в алфавите <span class="math inline">\(A\)</span>.<br><br><span
+class="math inline">\(\overline{\varphi}(q, \alpha) = \varphi(q,
+[\alpha]_0)\varphi(q, [\alpha]_1)\ldots \varphi(q, \alpha)\)</span> -
+<em>слово состояний</em>.<br><br><span
+class="math inline">\(\overline{\psi}(q, \alpha) = \psi(q,
+[\alpha]_0)\psi(q, [\alpha]_1)\ldots \psi(q, \alpha)\)</span> -
+<em>слово выходов</em>.</p>
+<p><strong>Определение:</strong><a name="definition-6"></a> Пусть <span
+class="math inline">\((A, Q, B, \varphi, \psi)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомат</a>.
+Зафиксируем <span class="math inline">\(q_1 \in Q\)</span>. Тогда <span
+class="math inline">\(\psi: A^{*} \to B^{*}\)</span>. <span
+class="math inline">\(V_{q_1} = (A, Q, B, \varphi, \psi, q_1)\)</span> -
+<em>инициальный конечный автомат</em>. <br><br> Отображение <span
+class="math inline">\(f(\alpha) = \overline{\psi}(q_1, \alpha)\)</span>
+- <em>ограниченно-детерминированная функция</em>.</p>
+<h3 id="канонические-уравнения-инициального-автомата">Канонические
+уравнения инициального автомата</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-7"></a> Пусть <span
+class="math inline">\(V_{q_1} = (A, Q, B, \varphi, \psi, q_1)\)</span> -
+инициальный атомат. <span class="math inline">\(\alpha\)</span> - слово
+в алфавите <span class="math inline">\(A\)</span>. <br><br><span
+class="math inline">\(\mathcal{Q} = \overline{\varphi}(q_1,
+\alpha)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5">слово
+состояний</a>.<br><br><span class="math inline">\(\beta =
+\overline{\psi}(q_1, \alpha)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5">слово
+выходов</a>. <br><br> <span
+class="math inline">\(\begin{cases}  \mathcal{Q}(1) =
+q_1\\  \mathcal{Q}(t + 1) = \varphi(\mathcal{Q}(t),
+\alpha(t))\\  \beta(t) = \psi(\mathcal{Q}(t), \alpha(t))
+\end{cases}\)</span> - <em>канонические уравнения инициального
+автомата</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a></p>
+<p><span class="math display">\[\overline{\psi}(q, \alpha_1 \alpha_2) =
+\overline{\psi}(q, \alpha_1)\overline{\psi}(\varphi(q, \alpha_1),
+\alpha_2)\]</span></p>
+<p><em>Доказательство:</em> индукция <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="автоматы-в-p_2">Автоматы в <span
+class="math inline">\(P_2\)</span></h2>
+<hr />
+<p>Пусть <span class="math inline">\(A = \underbrace{E_2 \times \ldots
+\times E_2}_{m}\)</span>,</p>
+<p><span class="math inline">\(Q = \underbrace{E_2 \times \ldots \times
+E_2}_{n}\)</span>,</p>
+<p><span class="math inline">\(B = \underbrace{E_2 \times \ldots \times
+E_2}_{p}\)</span>.</p>
+<p>Пусть <span class="math inline">\(\alpha\)</span> - слово в <span
+class="math inline">\(A\)</span>. Тогда <span
+class="math inline">\(\alpha\)</span> можно записать, как <span
+class="math inline">\(\alpha(t) = (a_1(t), \ldots, a_m(t))\)</span>.</p>
+<p><span class="math inline">\(\mathcal{Q}(t) = (q_1(t), \ldots,
+q_n(t))\)</span>.</p>
+<p><span class="math inline">\(\beta(t) = (b_1(t), \ldots,
+b_p(t))\)</span>.</p>
+<p><span class="math inline">\(q_1 = (q_{11}, \ldots,
+q_{1n})\)</span>.</p>
+<p>Запишем канонические уравнения<a name="canon-p2"></a>:</p>
+<p><span class="math display">\[\begin{cases}
+  q_i(1) = q_{1i}\\
+  q_i(t + 1) = \varphi_i(q_1(t), \ldots, q_n(t), a_1(t), \ldots,
+a_m(t))\\
+  b_j(t) = \psi_j(q_1(t), \ldots, q_n(t), a_1(t), \ldots, a_m(t))
+\end{cases}\]</span></p>
+<h2 id="автоматы-и-бесконечные-слова">Автоматы и бесконечные слова</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-8"></a> Пусть <span
+class="math inline">\(A\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7">алфавит</a>.
+Пусть дано отображение <span class="math inline">\(\alpha: \mathbb{N}
+\to A\)</span>. <span
+class="math inline">\(\alpha(1)\alpha(3)\ldots\)</span> -
+<em>бесконечное слово</em>.<br><br>Множество всех бесконечных слов
+обозначается <span class="math inline">\(A^{\infty}\)</span>.</p>
+<p>Пусть <span class="math inline">\(V_q = (A, Q, B, \varphi, \psi,
+q)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6">инициальный</a>
+автомат. <span class="math inline">\(\alpha\)</span> - бесконечное слово
+в <span class="math inline">\(A\)</span>.</p>
+<p><span class="math inline">\(\beta = \overline{\psi}(q, \alpha):
+\mathbb{N} \to B\)</span></p>
+<p><span class="math inline">\(\beta(i) = \psi(q, \alpha(1)\ldots
+\alpha(i))\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-9"></a> Пусть <span
+class="math inline">\(\alpha(1)\alpha(3)\ldots\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-8">бесконечное
+слово</a>. Если существуют <span class="math inline">\(\tau, \tau’ \in
+\mathbb{N}\)</span>, такие, что <span class="math inline">\(\alpha(i +
+\tau) = \alpha(i) \,\,\,\, \forall i &gt; \tau’ + 1\)</span>, то <span
+class="math inline">\(\tau\)</span> - <em>период</em> <span
+class="math inline">\(\alpha\)</span>, <span
+class="math inline">\(\tau’\)</span> - <em>предпериод</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Конечный
+инициальный автомат, имеющий <span class="math inline">\(n\)</span>
+состояний, преобразует последовательность (бесконечное слово) <span
+class="math inline">\(\alpha\)</span> с наименьшим периодом <span
+class="math inline">\(\tau\)</span> в последовательность <span
+class="math inline">\(\beta\)</span> с наименьшим периодом вида <span
+class="math inline">\(\theta \cdot m\)</span>, где <span
+class="math inline">\(\theta \,\,|\,\, \tau\)</span> и <span
+class="math inline">\(m \in \{1, \ldots, n\}\)</span>. Если <span
+class="math inline">\(|A| \ge 3\)</span> и <span
+class="math inline">\(|B| \ge 2\)</span>, то каждое такое значение
+периода достигается при нектором автомате <span
+class="math inline">\(V_q\)</span> и некторой последовательности <span
+class="math inline">\(\alpha\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(\alpha_1 = \alpha(1)\ldots
+\alpha(\tau’)\)</span> и <span class="math inline">\(\alpha_2 =
+\alpha(\tau’ + 1)\ldots \alpha(\tau’ + \tau)\)</span>. Тогда <span
+class="math inline">\(\alpha = \alpha_1 \alpha_2 \alpha_2
+\ldots\)</span></p>
+<p>У автомата <span class="math inline">\(n\)</span> состояний,
+следовательно в последовательности <span
+class="math inline">\(\varphi(q_1, \alpha_1 \alpha_2), \ldots,
+\varphi(q_1, \alpha_1 \alpha_2^{n + 1})\)</span> существуют одинаковые
+состояния. Пусть <span class="math inline">\(\varphi(q_1, \alpha_1
+\alpha_2^{i_1}) = \varphi(q_1, \alpha_1 \alpha_2^{i_2}) = q, \,\,\,\,
+i_1 &lt; i_2\)</span>. Далее возьмем <span
+class="math inline">\(\alpha_3 = \alpha_2^{i_2 - i_1}\)</span>. <span
+class="math inline">\(q = \varphi(q_1, \alpha_1 \alpha_2^{i_1}) =
+\varphi(q_1, \alpha_1 \alpha_2^{i_1} \alpha_3) = \varphi(\varphi(q_1,
+\alpha_1 \alpha_2^{i_1}), \alpha_3) = \varphi(q, \alpha_3)\)</span>.</p>
+<p><span class="math inline">\(\alpha = \alpha_1 \alpha_2^{i_1} \alpha_3
+\alpha_3 \ldots\)</span></p>
+<p><span class="math display">\[\beta = \overline{\psi}(q_1, \alpha) =
+\overline{\psi}(q_1, \alpha_1 \alpha_3 \alpha_3 \ldots) =
+\overline{\psi}(q_1, \alpha_1\alpha_2^{i_1})\overline{\psi}(\varphi(q_1,
+\alpha_1\alpha_2^{i_1}), \alpha_3 \alpha_3 \ldots)=\]</span> <span
+class="math display">\[= \overline{\psi}(q_1,
+\alpha_1\alpha_2^{i_1})\overline{\psi}(q, \alpha_3 \alpha_3 \ldots) =
+\overline{\psi}(q_1, \alpha_1\alpha_2^{i_1})\overline{\psi}(q,
+\alpha_3)\overline{\psi}(\varphi(q, \alpha_3), \alpha_3 \alpha_3
+\ldots)=\]</span></p>
+<p>Получаем, что <span class="math inline">\(\overline{\psi}(q_1,
+\alpha)\)</span> периодическая последовательность с длиной периода <span
+class="math inline">\(|\alpha_3| = (i_2 - i_1)\cdot \tau\)</span>, то
+есть минимальный период <span class="math inline">\(\beta\)</span> равен
+<span class="math inline">\(\theta \cdot m\)</span>, где <span
+class="math inline">\(\theta \,\,|\,\, \tau\)</span> и <span
+class="math inline">\(m \in \{1, \ldots, n\}\)</span>.</p>
+<h2 id="одинаковость-автоматов">«Одинаковость» автоматов</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-10"></a> Пусть <span
+class="math inline">\(V = (A, Q, B, \varphi, \psi)\)</span> и <span
+class="math inline">\(V’ = (A, Q’, B, \varphi’, \psi’)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">конечные
+автоматы</a>, <span class="math inline">\(q \in Q\)</span>, <span
+class="math inline">\(q’ \in Q’\)</span>. Если <span
+class="math inline">\(\forall \alpha \in A^{*} \,\,\,\,
+\overline{\psi}(q, \alpha) = \overline{\psi’}(q’, \alpha)\)</span>, то
+состояния <span class="math inline">\(q\)</span> и <span
+class="math inline">\(q’\)</span> <em>неотличимы</em> друг от
+друга.<br><br>Если <span class="math inline">\(\exists \alpha \in A^{*}:
+\,\,\,\, \overline{\psi}(q, \alpha) \ne \overline{\psi’}(q’,
+\alpha)\)</span>, то состояния <span class="math inline">\(q\)</span> и
+<span class="math inline">\(q’\)</span> <em>отличимы</em> друг от друга
+<em>словом</em> <span class="math inline">\(\alpha\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-11"></a> Если любые
+два состояния <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомата</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-10">отличимы</a>,
+то <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомат</a>
+<em>приведенного типа</em>.</p>
+<p><strong>Определение:</strong><a name="definition-12"></a> Пусть <span
+class="math inline">\(V = (A, Q, B, \varphi, \psi)\)</span> и <span
+class="math inline">\(V’ = (A, Q’, B, \varphi’, \psi’)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">конечные
+автоматы</a>. Если <span class="math inline">\(\forall q \in Q \,\,\,\,
+\exists q’ \in Q’\)</span>, такое, что <span
+class="math inline">\(q\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-10">неотличимо</a>
+от <span class="math inline">\(q’\)</span> и <span
+class="math inline">\(\forall q’ \in Q’ \,\,\,\, \exists q \in
+Q\)</span>, такое, что <span class="math inline">\(q\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-10">неотличимо</a>
+от <span class="math inline">\(q’\)</span>, то автоматы <span
+class="math inline">\(V\)</span> и <span
+class="math inline">\(V’\)</span> <em>неотличимы</em>.</p>
+<p><strong>Определение:</strong><a name="definition-13"></a> Пусть <span
+class="math inline">\(V = (A, Q, B, \varphi, \psi)\)</span> и <span
+class="math inline">\(V’ = (A, Q’, B, \varphi’, \psi’)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">конечные
+автоматы</a>. Если существует биективное отображение <span
+class="math inline">\(\xi: Q \to Q’\)</span>, такое, что <span
+class="math inline">\(\forall a \in A, q \in Q\)</span> <span
+class="math display">\[\xi(\varphi(q, a)) = \varphi’(\xi(q), a)\]</span>
+<span class="math display">\[\psi(q, a) = \psi’(\xi(q), a),\]</span> то
+автоматы <span class="math inline">\(V\)</span> и <span
+class="math inline">\(V’\)</span> <em>изоморфны</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> У любого конечного
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомата</a>
+<span class="math inline">\(V\)</span> существует единственный с
+точностью до <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-13">изоморфизма</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">автомат</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-11">приведенного
+типа</a> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-12">неотличимый</a>
+от <span class="math inline">\(V\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Разбиваем <span class="math inline">\(Q\)</span> на <span
+class="math inline">\(Q_1, \ldots, Q_n\)</span> попарно неотличимых
+состояний. Доказываем, что для <span class="math inline">\(q, q’ \in Q_j
+\,\,\,\, \varphi(q, a) = \varphi(q’, a) \Rightarrow Q_j = \varphi(Q_i,
+a)\)</span>, следовательно получили отображение <span
+class="math inline">\(\varphi’: \{Q_1, \ldots, Q_n\}\times A \to \{Q_1,
+\ldots, Q_n\}\)</span>.</p>
+<p><span class="math inline">\(b = \psi(Q_i, a)\)</span>, следовательно
+получили отображение <span class="math inline">\(\psi’: \{Q_1, \ldots,
+Q_n\}\times A \to B\)</span>.</p>
+<p>Далее проверяем, что автомат <span class="math inline">\((A, \{Q_1,
+\ldots, Q_n\}, B, \varphi ’, \psi’)\)</span> неотличим от <span
+class="math inline">\(V\)</span> и приведенный.</p>
+<p>Единственность с точностью до изоморфизма. Доказываем, что количество
+состояний <span class="math inline">\(V\)</span> и <span
+class="math inline">\(V’\)</span> одинаковы, и говорим, что <span
+class="math inline">\(\xi: q_i \mapsto q_i’\)</span> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (Мур #1) Если два
+состояния автомата <span class="math inline">\(V = (A, Q, B, \varphi,
+\psi)\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0">отличимы</a>,
+то существует отличающее их слово длины <span class="math inline">\(|Q|
+- 1\)</span> и эта оценка неулучшаема.</p>
+<p><em>Доказательство:</em> Рассмотрим отношение эквивалентности <span
+class="math inline">\(\rho_k\)</span> на <span
+class="math inline">\(Q\)</span>. <span class="math inline">\(q_1 \rho_k
+q_2 \Leftrightarrow \forall \alpha \in A^{*}: \,\,\,\, |\alpha| = k
+\,\,\,\, \varphi(q_1, \alpha) = \varphi(q_2, \alpha)\)</span>.</p>
+<p><span class="math inline">\(Q\)</span> разбивается на классы
+эквивалентности <span class="math inline">\(R_1, \ldots,
+R_n\)</span>.</p>
+<p>Докажем, что в <span class="math inline">\(R_1\)</span> не менее двух
+состояний. Пусть <span class="math inline">\(q\)</span> и <span
+class="math inline">\(q’\)</span> неотличимые состояния автомата <span
+class="math inline">\(V\)</span>, то есть существует непустое слово
+(возьмем такое слово минимальной длины) <span
+class="math inline">\(\alpha’ a, \,\,\,\, \alpha ’ \in A^{*}, \,\,\,\,a
+\in A\)</span>, которое отличает <span class="math inline">\(q\)</span>
+и <span class="math inline">\(q’\)</span>. Так как длина наименьшая
+слово <span class="math inline">\(\alpha’ a\)</span> отличает <span
+class="math inline">\(q\)</span> и <span
+class="math inline">\(q’\)</span> последней буквой, то есть <span
+class="math inline">\(\varphi(\varphi(q, \alpha’), a) = \varphi(q,
+\alpha’ a) \ne \varphi(q’, \alpha’ a) = \varphi(\varphi(q’, \alpha’),
+a)\)</span>. По индукции доказывается, что <span
+class="math inline">\(|R_i| \le i + 1\)</span>.</p>
+<p>Очевидно, что <span class="math inline">\(R_k \subset R_{k + 1}
+\,\,\,\, \forall k\)</span>, но, так как состояний конечное количество,
+в какой-то момент <span class="math inline">\(R_k = R_{k + 1} = \ldots =
+R\)</span></p>
+<p>Получаем, что <span class="math inline">\(|Q| \ge |R_k| \ge k + 1
+\Rightarrow k \le |Q| - 1 \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Пример</strong>, показывающий неулучшаемость оценки…</p>
+<h2 id="распознавание-событий-конечными-автоматами">Распознавание
+событий конечными автоматами</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-15"></a> Пусть <span
+class="math inline">\(V = (A, Q, B , \varphi, \psi, q)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6">инициальный
+конечный автомат</a>. Любое подмножество <span
+class="math inline">\(A^{*} \setminus \Lambda\)</span> -
+<em>событие</em>.</p>
+<p><strong>Определение:</strong><a name="definition-14"></a> Пусть <span
+class="math inline">\(V = (A, Q, B , \varphi, \psi, q)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6">инициальный
+конечный автомат</a>, <span class="math inline">\(B’ \subset B\)</span>.
+Множество <span class="math inline">\(M = \{\alpha \in A^{*} \setminus
+\Lambda: \,\,\,\,\psi(q, \alpha) \in B’\}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-15">событие</a>,
+<em>представимое</em> автоматом <span class="math inline">\(V\)</span>
+посредством <span class="math inline">\(B’\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-16"></a> Пусть <span
+class="math inline">\(M_1\)</span> и <span
+class="math inline">\(M_2\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-15">события</a>.
+Множество <span class="math inline">\(M_1\cdot M_2 = \{\alpha_1
+\alpha_2: \,\,\,\, \alpha_1 \in M_1, \alpha_2 \in M_2\}\)</span> -
+<em>произведение событий</em> <span class="math inline">\(M_1\)</span> и
+<span class="math inline">\(M_2\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-17"></a> Пусть <span
+class="math inline">\(M\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-15">событие</a>.
+Множество <span class="math inline">\(&lt;M&gt; = \{\alpha_1\ldots
+\alpha_k: \,\,\,\, \alpha_i \in M\}\)</span> - <em>итерация события</em>
+<span class="math inline">\(M\)</span>.</p>
+<h3 id="простейшие-свойства-итерации-и-произведения-событий">Простейшие
+свойства итерации и произведения событий</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
+class="math inline">\(M\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-15">событие</a>.
+Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(M \cdot \varnothing = \varnothing \cdot
+M\)</span></li>
+<li><span class="math inline">\(&lt;\varnothing&gt; =
+\varnothing\)</span></li>
+<li><span class="math inline">\(&lt;M&gt; = M \cdot &lt;M&gt; \cup
+M\)</span></li>
+<li><span class="math inline">\(&lt;M&gt;\cdot M = M \cdot
+&lt;M&gt;\)</span></li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(X, C, D\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-15">события</a>.
+Тогда <span class="math inline">\(X = XC \cup D \,\,\,\, \Leftrightarrow
+\,\,\,\, X = D &lt;C&gt; \cup D\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\not\subset\)</span></p>
+<h3 id="регулярные-события">Регулярные события</h3>
+<p><strong>Определение:</strong><a name="definition-18"></a> <br><br>1.
+События <span class="math inline">\(\varnothing\)</span> и <span
+class="math inline">\(a \in A\)</span> - <em>регулярные</em>.<br>2. Если
+<span class="math inline">\(R_1\)</span> и <span
+class="math inline">\(R_2\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-18">регулярные</a>
+события, то <span class="math inline">\(R_1 \cdot R_2\)</span>, <span
+class="math inline">\(R_1 \cup R_2\)</span> и <span
+class="math inline">\(&lt;R_1&gt;\)</span> - <em>регулярные</em>
+события.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Пусть <span
+class="math inline">\(R_{ij}, \,\,\,\, i \in \{0, \ldots, n\}, \,\,\,\,
+j \in \{1, \ldots, n\}\)</span> и <span class="math inline">\(X_1,
+\ldots, X_n\)</span> удовлетворяют системе уравнений: <span
+class="math display">\[X_1 = X_1 \cdot R_{11} \cup \ldots \cup X_n \cdot
+R_{n1} \cup R_{01}\]</span> <span class="math display">\[X_2 = X_1 \cdot
+R_{12} \cup \ldots \cup X_n \cdot R_{n2} \cup R_{02}\]</span> <span
+class="math display">\[\vdots\]</span> <span class="math display">\[X_n
+= X_1 \cdot R_{1n} \cup \ldots \cup X_n \cdot R_{nn} \cup
+R_{0n}\]</span> Тогда <span class="math inline">\(X_1, \ldots,
+X_n\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-18">регулярные</a>
+события.</p>
+<p><em>Доказательство:</em> Индукция по <span
+class="math inline">\(n\)</span>.</p>
+<p><strong>База:</strong> <span class="math inline">\(n = 1 \Rightarrow
+X_1 = X_1 \cdot R_{11}\cup R_{01}\)</span> следует <a
+href="#statement-3">из утверждения</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Шаг:</strong> ну, пооочти очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5">События</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-14">представимые</a>
+в <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6">инициальном
+конечном автомате</a> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-18">регулярные</a>.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(V = (A, Q, B, \varphi, \psi,
+q_1)\)</span>, <span class="math inline">\(Q = \{q_1, \ldots,
+q_n\}\)</span>, <span class="math inline">\(M\)</span> - событие,
+представимое посредством <span class="math inline">\(B’\)</span>.</p>
+<p><span class="math display">\[M_i = \{\alpha \in A^{*}\setminus
+\Lambda: \,\,\,\, \varphi(q_1, \alpha) = q_i\}\]</span></p>
+<p><span class="math display">\[M_i’ = \{a \in A^{*} (|a| = 1): \,\,\,\,
+\psi(q_i, a) \in B’\}\]</span></p>
+<p><span class="math display">\[\Downarrow\]</span></p>
+<p><span class="math display">\[M = M_1 M_1’ \cup \ldots \cup M_n
+M_n’\]</span></p>
+<p><span class="math inline">\(M_i’\)</span> - регулярно.</p>
+<p><span class="math display">\[R_{ij} = \{a \in A^{*} (|a| = 1):
+\,\,\,\, \varphi(q_i, a) = q_j\}, \,\,\,\, i, j \in \{1, \ldots,
+n\}\]</span></p>
+<p><span class="math inline">\(R_{ij}\)</span> - регулярно.</p>
+<p><span class="math display">\[M_1 = M_1 R_{11} \cup \ldots \cup M_n
+R_{n1} \cup R_{11}\]</span> <span class="math display">\[\vdots\]</span>
+<span class="math display">\[M_n = M_n R_{1n} \cup \ldots \cup M_n
+R_{nn} \cup R_{1n}\]</span></p>
+<p><span class="math display">\[\Downarrow\]</span></p>
+<p><span class="math inline">\(M_i\)</span> - регулярно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="обобщенные-источники">Обобщенные источники</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-19"></a> Пусть <span
+class="math inline">\(A\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7">алфавит</a>.
+<em>Обобщенный источник (в алфавите)</em> <span
+class="math inline">\(A\)</span> - это конечный ориентированный граф,
+каждому ребру которого сопоставлен символ <span class="math inline">\(a
+\in A\)</span> или пустое <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5">слово</a>
+<span class="math inline">\(\Lambda\)</span>, и в котором выбраны
+начальная вершина <span class="math inline">\(v\)</span> и финальная
+вершина <span class="math inline">\(w\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-20"></a> Пусть <span
+class="math inline">\(G\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-19">обобщенный
+источник</a>. <span class="math inline">\(v_1\)</span> и <span
+class="math inline">\(v_{n + 1}\)</span> вершины <span
+class="math inline">\(G\)</span>. Последовательность <span
+class="math inline">\(\pi_{v_1 \to v_{n + 1}}: \,\,\,\, v_1, e_1,
+\ldots, v_n, e_n, v_{n + 1}\)</span> - <em>путь</em> от вершины <span
+class="math inline">\(v_1\)</span> к вершине <span
+class="math inline">\(v_{n + 1}\)</span>.<br><span
+class="math inline">\([\pi]\)</span> - это слово составленное из
+символов ребер, входящих в путь <span
+class="math inline">\(\pi\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-21"></a> Пусть <span
+class="math inline">\(A\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7">алфавит</a>,
+<span class="math inline">\(G\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-19">обобщенный
+источник</a>, <span class="math inline">\(\alpha \in A^{*}\)</span>,
+<span class="math inline">\(u\)</span> - вершина <span
+class="math inline">\(G\)</span>. <span class="math inline">\(\theta(u,
+\alpha) = \{v \in G: \,\,\,\, \exists \pi_{u \to v}: \,\,\,\, [\pi] =
+\alpha\}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-22"></a> Пусть <span
+class="math inline">\(A\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7">алфавит</a>,
+<span class="math inline">\(G\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-19">обобщенный
+источник</a> с начальной вершиной <span class="math inline">\(v\)</span>
+и финальной вершиной <span class="math inline">\(w\)</span>.
+<em>Событие</em> <span class="math inline">\(|G|\)</span>,
+<em>определяемое источником</em> <span class="math inline">\(G\)</span>
+- это <span class="math inline">\(|G| = \{\alpha \in A^{*}: \,\,\,\, w
+\in \theta(v, \alpha)\}\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a> Если <span
+class="math inline">\(R\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-8">регулярное</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-15">событие</a>,
+то существует <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-19">обобщенный
+источник</a> <span class="math inline">\(G\)</span>, такой, что <span
+class="math inline">\(|G| = R\)</span>.</p>
+<p><em>Доказательство:</em> индукция по определению регулярного события
+с помощью картинок <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-7"></a> Пусть <span
+class="math inline">\(G\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-19">обобщенный
+источник</a>. Тогда <span class="math inline">\(|G|\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-14">представимо</a>.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(M = \{v_1, \ldots, v_n\}\)</span> -
+множество вершин <span class="math inline">\(G\)</span>, <span
+class="math inline">\(v_1\)</span> - начальная вершина, <span
+class="math inline">\(v_n\)</span> - финальная вершина. Пусть <span
+class="math inline">\(Q = 2^M\)</span> и <span
+class="math inline">\(\varphi: Q\times A \to Q\)</span> определена
+так:</p>
+<p><span class="math display">\[\varphi(q, a) = \displaystyle\cup_{v \in
+q}\theta(v, a)\]</span> <span class="math display">\[\psi(q, a) =
+\begin{cases}
+1, v_n \in \varphi(q, a)\\
+0,
+\end{cases}\]</span></p>
+<p><span class="math display">\[\forall \alpha \in A^{*}\setminus
+\Lambda \,\,\,\, \psi(q, \alpha) = 1 \Leftrightarrow v_n \in \varphi(q,
+\alpha)\]</span></p>
+<p>Докажем по индукции по длине слова, что <span
+class="math inline">\(\forall \alpha \in A^{*}\setminus \Lambda\)</span>
+выполнено:</p>
+<p><span class="math display">\[\varphi(\{v_1\}, \alpha) = \theta(v_1,
+\alpha)\]</span></p>
+<p><strong>База:</strong> <span class="math inline">\(|\alpha| =
+1\)</span> выполнено по определению <span
+class="math inline">\(\varphi\)</span>.</p>
+<p><strong>Шаг:</strong></p>
+<p><span class="math display">\[\varphi(\{v_1\}, \alpha) =
+\varphi(\varphi(\{v_1\}, \alpha’), a) = \varphi(\theta(v_1, \alpha’), a)
+= \displaystyle\bigcup_{v \in \theta(v_1, \alpha’)}\theta(v,
+a)\]</span></p>
+<p><span class="math display">\[\theta(\{v_1\}, \alpha) =
+\displaystyle\bigcup_{v \in \theta(v_1, \alpha’)}\theta(v, a)
+\,\,\,\,\blacksquare\]</span></p>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (Клини) Событие
+представимо тогда и только тогда, когда оно регулярно.</p>
+<p><em>Доказательство:</em> см. <a href="#statement-6"><span
+class="math inline">\(1\)</span></a> и <a href="#statement-7"><span
+class="math inline">\(2\)</span></a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-8"></a> Существуют
+непредставимые события.</p>
+<p><em>Доказательство:</em> Множество всех событий континуально,
+множество представимых событий счетно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-9"></a> Событие <span
+class="math inline">\(M\)</span> в алфавите <span
+class="math inline">\(\{0, 1\}\)</span>, состоящее из
+последовательностей с одинаковым количеством нулей и единиц
+непредставимо.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="структурные-автоматы">Структурные автоматы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-23"></a> Пусть <span
+class="math inline">\(V_q = (\{0, 1\}^n, Q, \{0, 1\}^m, \varphi, \psi,
+q)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6">инициальный
+конечный автомат</a>. Множество всех <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6">автоматных
+функций</a> <span class="math inline">\(f(\alpha) = \overline{\psi}(q,
+\alpha)\)</span>, задаваемых автоматами вида <span
+class="math inline">\(V_q\)</span> обозначается <span
+class="math inline">\(P_{\operatorname{авт}}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-24"></a> Пусть <span
+class="math inline">\(f \in P_{\operatorname{авт}}\)</span>, <span
+class="math inline">\(\alpha \in (\{0, 1\}^n)^{*}\)</span>(слово, буквы
+которого - это последовательности нулей и единиц), <span
+class="math inline">\(\alpha = \alpha(1)\ldots \alpha(l)\)</span>, <span
+class="math inline">\(\alpha(i) = (\alpha_1(i), \ldots,
+\alpha_n(i))\)</span> (функция <span
+class="math inline">\(\alpha_j\)</span> - это <span
+class="math inline">\(j\)</span>-й элемент буквы). Пусть <span
+class="math inline">\(\alpha_j = (\alpha_j(1), \ldots,
+\alpha_j(l))\)</span> (взяли <span class="math inline">\(j\)</span>-й
+элемент каждой буквы слова <span class="math inline">\(\alpha\)</span>).
+Определим функцию <span class="math inline">\(g(\alpha_1, \ldots,
+\alpha_n) = f(\alpha)\)</span>.<br><br> Если <span
+class="math inline">\(i\)</span>-я переменная функции <span
+class="math inline">\(g\)</span> существенная, то <span
+class="math inline">\(i\)</span>-й вход автомата
+<em>существенный</em>.<br><br>Если функция <span
+class="math inline">\(\psi_j\)</span>(<a href="#canon-p2">см.
+канонические уравнения</a>) зависит от <span
+class="math inline">\(a_i(t)\)</span> фиктивно, то <span
+class="math inline">\(j\)</span>-й выход автомата <em>зависит</em> от
+<span class="math inline">\(i\)</span>-ого <em>с задержкой</em>.</p>
+<strong>Определение:</strong><a name="definition-25"></a>
+<details>
+<summary>
+</summary>
+Тут будет лажа
+</details>
+<p>Пусть <span class="math inline">\(E\)</span> - это множество
+схем-компонент (квадратиков с пометкой). Пусть <span
+class="math inline">\(\Sigma: E \to \{f_1, \ldots, f_p\} \subset
+P_{\operatorname{авт}}\)</span> (<em>сигнатура</em>).</p>
+<p>Схему <span class="math inline">\(E_i\)</span>, которой соответствует
+<span class="math inline">\(f_i = \Sigma(E_i)\)</span>, будем обозначать
+квадратом, в который входит <span class="math inline">\(n \ge 0\)</span>
+стрелок (количество входов автомата, задаваемого <span
+class="math inline">\(f_i\)</span>) и выходит <span
+class="math inline">\(m \ge 1\)</span> стрелок (количество выходов
+автомата, задаваемого <span class="math inline">\(f_i\)</span>).</p>
+<p><strong>Определение:</strong><a name="definition-26"></a></p>
+<ol type="1">
+<li><p>Элемент <span class="math inline">\(E_i \subset E\)</span> -
+<em>схема</em>.</p></li>
+<li><p>Схема - это штука, полученная при помощи операций:</p></li>
+</ol>
+<ol type="a">
+<li>Переподключения входов и выходов схемы (при переподключении входов
+важно, чтобы все существенные входы сохранились)</li>
+<li>Объединения непересекающихся схем.</li>
+<li>Операции обратной связи (вклеивание стрелки ведущей от выхода,
+зависящего от некоторого входа с задержкой, в этот вход)</li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-27"></a> Операции
+<span class="math inline">\(a, b, c\)</span> - это операции
+<em>композиции</em>.</p>
+<p><strong>Определение:</strong><a name="definition-28"></a> Множество
+всех функций, полученных операциями композиции из <span
+class="math inline">\(F \subset P_{\operatorname{авт}}\)</span>,
+обозначается <span class="math inline">\([F]\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-29"></a> <span
+class="math inline">\(F \subset P_{\operatorname{авт}}\)</span>
+<em>полная</em>, если <span class="math inline">\([F] =
+P_{\operatorname{авт}}\)</span></p>
+<h3 id="пример-полной-относительно-композиций-системы">Пример полной
+относительно композиций системы</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-30"></a> Если
+функция <span class="math inline">\(f \in
+P_{\operatorname{авт}}\)</span> pеализуется схемой в сигнатуре,
+построенной только при помощи операций переобозначения входов и выходов,
+объединения схем и их последовательного соединения, то <span
+class="math inline">\(f\)</span> получена <em>суперпозициями</em> из
+функций <span class="math inline">\(\{f_1,\ldots, f_p\}\)</span> данной
+сигнатуры. Множество всех функций, полученных операциями суперпозиции из
+функций множества <span class="math inline">\(F \subset
+P_{\operatorname{авт}}\)</span>, обозначается <span
+class="math inline">\([F]_c\)</span>. Система <span
+class="math inline">\(F \subset P_{\operatorname{авт}}\)</span>
+<em>полна</em> относительно суперпозиций, если <span
+class="math inline">\([F]_c = P_{\operatorname{авт}}\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-4"></a> В <span
+class="math inline">\(P_{\operatorname{авт}}\)</span> не существует
+конечной полной относительно суперпозиций системы функций.</p>
+<p><em>Доказательство:</em></p>
+<h2 id="однородные-структуры">Однородные структуры</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-31"></a>
+<em>Однородная структура</em> - это <span class="math inline">\(\sigma =
+(\mathbb{Z}^k, E_n, V, \varphi)\)</span>, где <br><br> <span
+class="math inline">\(\mathbb{Z}^k\)</span> - множество <span
+class="math inline">\(k\)</span>-мерных целочисленных векторов
+(координаты клеток дискретного пространства (все нормальные люди
+используют <span class="math inline">\(\mathbb{Z}^2\)</span>, но
+математик должен быть ненормальным, особенно, в 01:00))<br><br> <span
+class="math inline">\(E_n = \{0, \ldots, n - 1\}\)</span> - множество
+кодов состояний (каждая клетка в каждый момент времени находится в
+каком-то состоянии) <br><br> <span class="math inline">\(V = \{\alpha_1,
+\ldots, \alpha_{h - 1}: \,\,\,\, \alpha_i \in \mathbb{Z}^k, \,\,\,\,
+\alpha_i \ne \alpha_j, \,\,\,\, i \ne j\}\)</span> - <em>шаблон
+соседства клетки</em> (кого видит клетка)<br><br> <span
+class="math inline">\(\varphi: (E_n)^h \to E_n\)</span> - <em>функция
+изменения состояния клетки</em>(<em>локальная функция переходов</em>)
+(зависит от <span class="math inline">\(h\)</span> переменных -
+состояний соседей клетки) и <span class="math inline">\(\varphi(0,
+\ldots, 0) = 0\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-32"></a> Пусть <span
+class="math inline">\(\sigma\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-31">однородная
+структура</a>. <em>Состояние однородной структуры</em> <span
+class="math inline">\(\sigma\)</span> - это функция <span
+class="math inline">\(f: \mathbb{Z}^k \to E_n\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-33"></a> Пусть <span
+class="math inline">\(\sigma\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-31">однородная
+структура</a> и задано некоторое множество ее состояний <span
+class="math inline">\(F\)</span>. <em>Основная (глобальная) функция
+переходов однородной структуры</em> - это <span
+class="math inline">\(\Phi: F \to F\)</span>, такая, что <span
+class="math display">\[\Phi(f)(\alpha) = \varphi(f(\alpha), f(\alpha +
+\alpha_1), \ldots, f(\alpha + \alpha_{h - 1})), \,\,\,\, f \in F,
+\,\,\,\, \alpha \in \mathbb{Z}^k\]</span></p>
+<p><strong>Определение:</strong><a name="definition-34"></a>
+<em>Поведение однородной структуры</em> - это последовательность ее <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-32">состояний</a>
+<span class="math inline">\(f_0, f_1, f_2, \ldots\)</span>, такая, что
+<span class="math inline">\(f_{i + 1} = \Phi(f_i)\,\,\,\, \forall
+i\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-35"></a>
+<em>Конфигурация однородной структуры</em> - это такое ее <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-2">состояние</a>,
+при котором только конечное число клеток имеют ненулевое значение.</p>
+<p><strong>Утверждение:</strong><a name="statement-10"></a> При <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-33">переходе</a>
+к новому <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-32">состоянию</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-35">конфигурация</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-31">однородной
+структуры</a> остается <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-35">конфигурацией</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<center>
+<canvas id="life-canvas">
+</canvas>
+</center>
+<p><strong>Определение:</strong><a name="definition-36"></a> Однородная
+структура <span class="math inline">\(\sigma = (\mathbb{Z}^2, E_k, V,
+\varphi)\)</span>, у которой <span
+class="math inline">\(V(\alpha)\)</span> квадрат со стороной <span
+class="math inline">\(2\cdot m + 1\)</span> с центром в <span
+class="math inline">\(\alpha, \,\,\,\, \alpha \in \mathbb{Z}^2\)</span>
+- <em>квадратная</em>.</p>
+<p><strong>Определение:</strong><a name="definition-37"></a> Пусть <span
+class="math inline">\(K \subset \mathbb{Z}^2\)</span> - квадрат. <span
+class="math inline">\(V(K) = \displaystyle\bigcup_{\alpha \in
+K}V(\alpha)\)</span> - <em>окрестность квадрата</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-11"></a> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-7">Окрестность
+квадрата</a> - квадрат.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-38"></a>
+<em>Состояние окрестности квадрата</em> - это функция <span
+class="math inline">\(f: V(K) \to E_k\)</span>. Функция <span
+class="math inline">\(g = \Phi_K(f)\)</span> - это ограничение
+глобальной функции переходов, определенной на состояниях окрестности
+квадрата на сам квадрат.<br><br>Состояние квадрата -
+<em>конфигурация</em>.<br><br>Если конфигурация квадрата не принадлежит
+множеству значений <span class="math inline">\(\Phi_K\)</span>, то она
+<em>неконструируемая</em>.</p>
+<p><strong>Определение:</strong><a name="definition-39"></a> Пусть <span
+class="math inline">\(f_1\)</span> и <span
+class="math inline">\(f_2\)</span> - конфигурации квадрата <span
+class="math inline">\(V(V(K))\)</span>. Если <br><br>1. <span
+class="math inline">\({f_1}_{|K} \ne {f_2}_{|K}\)</span><br>2. <span
+class="math inline">\({f_1}_{|V(V(K))\setminus K} =
+{f_2}_{|V(V(K))\setminus K}\)</span><br>3. <span
+class="math inline">\(\Phi_{V(K)}(f_1)_{|K} =
+\Phi_{V(K)}(f_2)_{|K}\)</span>, то конфигурации <span
+class="math inline">\(f_1\)</span> и <span
+class="math inline">\(f_2\)</span> - <em>взаимностираемые</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-5"></a> (Мур #100500) Пусть
+<span class="math inline">\(\sigma = (\mathbb{Z}^2, E_k, V,
+\varphi)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-36">квадратная</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-31">однородная
+структура</a>, где <span class="math inline">\(V(\alpha)\)</span> -
+квадрат со стороной <span class="math inline">\(2\cdot m + 1\)</span>.
+Тогда существование в <span class="math inline">\(\sigma\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-39">взаимностираемых</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-38">конфигураций</a>
+<span class="math inline">\(\Leftrightarrow\)</span> существуют <a
+href="https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-38">неконструируемые
+конфигурации</a>.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть <span class="math inline">\(f_1\)</span> и <span
+class="math inline">\(f_2\)</span> взаимностираемые конфигурации на
+квадрате <span class="math inline">\(K\)</span>.</p>
+<p>Пусть <span class="math inline">\(K’ = V(V(K))\)</span>. Определим на
+<span class="math inline">\(K’\)</span> отношение эквивалентности
+состояний. <span class="math inline">\(f_1 \sim f_2 \Leftrightarrow
+f_1\)</span> и <span class="math inline">\(f_2\)</span> взаимностираемые
+на квадрате <span class="math inline">\(K\)</span> или <span
+class="math inline">\(f_1\)</span> и <span
+class="math inline">\(f_2\)</span> совпадают.</p>
+<p>Пусть длина стороны <span class="math inline">\(K’\)</span> - это
+<span class="math inline">\(l\)</span>. Тогда множество состояний <span
+class="math inline">\(K’\)</span> равно <span
+class="math inline">\(k^{l^2}\)</span>. Но по условию существует хотя бы
+один класс эквивалентности, в котором <span class="math inline">\(\ge
+2\)</span> элемента, следовательно мощность множества классов
+эквивалентности не превосходит <span class="math inline">\(k^{l^2} -
+1\)</span>.</p>
+<p>Пусть <span class="math inline">\(N \in \mathbb{N}\)</span>.
+Рассмотрим квадрат <span class="math inline">\(\tilde{K}\)</span> с
+длиной стороны <span class="math inline">\(l N\)</span>, то есть решетку
+<span class="math inline">\(N\)</span> на <span
+class="math inline">\(N\)</span> из квадратов <span
+class="math inline">\(K’\)</span>.</p>
+<p><span class="math inline">\(\tilde{K}\)</span> окрестность некторого
+квадата <span class="math inline">\(\hat{K}\)</span> с длиной стороны -
+<span class="math inline">\(l M - 2 m\)</span>.</p>
+<p>Пусть <span class="math inline">\(\tilde{f}_1\)</span> и <span
+class="math inline">\(\tilde{f}_2\)</span> состояния квадрата <span
+class="math inline">\(\tilde{K}\)</span>, такие, что их сужения на
+каждый из подквадратов <span class="math inline">\(K’\)</span>
+эквивалентны. Докажем, что <span
+class="math inline">\(\Phi_{\hat{K}}(\tilde{f}_1) =
+\Phi_{\hat{K}}(\tilde{f}_2)\)</span>. Положим, что очевидно.</p>
+<p>Следовательно, число состояний <span
+class="math inline">\(\Phi_{\hat{K}}\)</span> не превосходит <span
+class="math inline">\(\left(k^{l^2} - 1\right)^{N^2}\)</span>, а общее
+число состояний <span class="math inline">\(\hat{K}\)</span> - это <span
+class="math inline">\(k^{(l N - 2 m)^2}\)</span>.</p>
+<p>Рассмотрим отношение числа состояний, которые могут быть получены, к
+числу возможных состояний <span class="math display">\[\eta =
+\frac{\left(k^{l^2} - 1\right)^{N^2}}{k^{(l N - 2 m)^2}} =
+\left(\frac{k^{l^2} - 1}{k^{\frac{(l N - 2
+m)^2}{N^2}}}\right)^{N^2}\]</span></p>
+<p>Существует <span class="math inline">\(N\)</span>, такое, что <span
+class="math inline">\(\eta &lt; 1 \,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

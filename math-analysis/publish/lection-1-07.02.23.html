@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#неопределенный-интеграл"
+id="toc-неопределенный-интеграл">Неопределенный интеграл</a>
+<ul>
+<li><a href="#свойства-неопределенного-интеграла"
+id="toc-свойства-неопределенного-интеграла">Свойства неопределенного
+интеграла</a></li>
+<li><a href="#таблица-неопределенных-интегралов"
+id="toc-таблица-неопределенных-интегралов">Таблица неопределенных
+интегралов</a></li>
+<li><a href="#интегрирование-рациональных-функций"
+id="toc-интегрирование-рациональных-функций">Интегрирование рациональных
+функций</a></li>
+<li><a href="#метод-остроградского" id="toc-метод-остроградского">Метод
+Остроградского</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h2 id="неопределенный-интеграл">Неопределенный интеграл</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(f(x)\)</span> определена на <span
+class="math inline">\((a, b)\)</span>. Пусть <span
+class="math inline">\(F(x)\)</span>, такова что <span
+class="math inline">\(F’(x) = f(x) \,\,\,\, \forall x \in (a,
+b)\)</span>. Тогда <span class="math inline">\(F(x)\)</span>
+<em>первообразная</em> <span class="math inline">\(f(x)\)</span> на
+<span class="math inline">\((a, b)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a>
+<em>Неопределенный интеграл</em> <span
+class="math inline">\(f(x)\)</span> на <span class="math inline">\((a,
+b)\)</span> - это множество всех первообразных <span
+class="math inline">\(f(x)\)</span> на <span class="math inline">\((a,
+b)\)</span>. Обозначается <span class="math inline">\(\displaystyle \int
+f(x)dx\)</span>.</p>
+<p>Замечание: <span class="math inline">\(f(x)dx = F’(x)dx =
+dF(x)\)</span>. То есть интеграл - это множество всех функций,
+дифференциал которых равен некоторой заданной функции <span
+class="math inline">\(f(x)\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(F(x)\)</span> первообразная <span
+class="math inline">\(f(x)\)</span> на <span class="math inline">\((a,
+b)\)</span>. Тогда <span class="math display">\[\displaystyle \int
+f(x)dx = \{F(x) + g(x), \,\,\,\, g(x) = C, \,\,\,\, C \in
+\mathbb{R}\}\]</span></p>
+<p><em>Доказательство:</em> Докажем, что <span
+class="math inline">\(F(x) + C\)</span> - это первообразная <span
+class="math inline">\(f(x)\)</span> на <span class="math inline">\((a,
+b)\)</span>. <span class="math inline">\((F(x) + C)’ = F’(x) + C’ =
+f(x)\)</span>.<br> Докажем, что любая первообразная представима в виде
+<span class="math inline">\(F(x) + g(x), \,\,\,\, g(x) = C \,\,\,\, C
+\in \mathbb{R}\)</span>. Пусть <span class="math inline">\(G(x)\)</span>
+первообразная <span class="math inline">\(f(x)\)</span> на <span
+class="math inline">\((a, b)\)</span>. Рассмотрим <span
+class="math inline">\(F(x) - G(x)\)</span>. <span
+class="math inline">\((F(x) - G(x))’ = F’(x) - G’(x) = f(x) - f(x) =
+0\)</span>. Следовательно <a
+href="https://calculus-with-cats.github.io/lections/#corollary-4">по
+следствию из теоремы Лагранжа</a> <span class="math inline">\(F(x) -
+G(x) = const \Rightarrow G(x) = F(x) + C
+\,\,\,\,\blacksquare\)</span></p>
+<p>Далее пишем <span class="math inline">\(\displaystyle \int f(x) dx =
+F(x) + C\)</span>, подразумевая множество всех первообразных.</p>
+<h3 id="свойства-неопределенного-интеграла">Свойства неопределенного
+интеграла</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a> (Свойства
+неопределенного интеграла)</p>
+<ol type="1">
+<li><p><span class="math inline">\(\displaystyle \int k \cdot f(x) dx =
+k \cdot \displaystyle \int f(x) dx\)</span> (Множество умножить на число
+- это каждый элемент множества умножить на число)</p></li>
+<li><p><span class="math inline">\(\displaystyle \int (f(x) + g(x)) dx =
+\displaystyle \int f(x) dx + \displaystyle \int g(x)
+dx\)</span></p></li>
+<li><p><span class="math inline">\(\displaystyle \int f(\varphi(x))
+\varphi’(x) dx = F(\varphi(x)) + C\)</span>, если <span
+class="math inline">\(F(x)\)</span> первообразная <span
+class="math inline">\(f(x)\)</span>.</p></li>
+<li><p><span class="math inline">\(\displaystyle \int f’(x) g(x) dx =
+f(x)g(x) - \displaystyle \int f(x) g’(x) dx\)</span></p></li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>– 3. очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li>Проинтегрировать производную суммы функций <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<h3 id="таблица-неопределенных-интегралов">Таблица неопределенных
+интегралов</h3>
+<hr />
+<p>Смэрть</p>
+<h3 id="интегрирование-рациональных-функций">Интегрирование рациональных
+функций</h3>
+<hr />
+<p>Хотим интегрировать функции вида: <span
+class="math inline">\(\frac{P(x)}{Q(x)}\)</span>, где <span
+class="math inline">\(P(x), Q(x) \in \mathbb{R}[x]\)</span>, то есть
+многочлены от одной пременной над полем <span
+class="math inline">\(\mathbb{R}\)</span>.</p>
+<p>Из алгебры любая такая дробь представима в виде:</p>
+<p><span class="math display">\[\frac{P(x)}{Q(x)} = S(x) + \displaystyle
+\sum_{i = 0}^{n} \frac{A_i}{(x - a_i)^{\alpha_i}} + \displaystyle
+\sum_{j = 0}^{m}\frac{B_j + C_jx}{(x^2 + p_jx +
+q_j)^{\beta_j}},\]</span> где <span class="math inline">\(x^2 + p_jx +
+q_j = 0\)</span> не имеет действительных корней, а <span
+class="math inline">\(S(x)\)</span> многочлен.</p>
+<p>То есть нужно уметь искать интегралы трех видов:</p>
+<ol type="1">
+<li><span class="math inline">\(S(x) = a_0 + a_1x + a_2x^2 + \ldots +
+a_nx^n\)</span></li>
+<li><span class="math inline">\(\frac{A}{(x - a)^{\alpha}}\)</span></li>
+<li><span class="math inline">\(\frac{B + Cx}{(x^2 + px +
+q)^{\beta}}\)</span></li>
+</ol>
+<p>Найдем эти интегралы:</p>
+<ol type="1">
+<li><p><span class="math inline">\(\displaystyle \int S(x)dx =
+\displaystyle \int (a_0 + a_1x + a_2x^2 + \ldots + a_nx^n)dx=\)</span>
+<span class="math inline">\(= \displaystyle \int a_0 dx + \displaystyle
+\int a_1x dx + \ldots + \displaystyle \int a_nx^n dx= a_0 x + a_1
+\frac{x^2}{2} + \ldots + a_n \frac{x^{n + 1}}{n + 1}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{A}{(x - a)^{\alpha}}\)</span>
+Пусть <span class="math inline">\(\alpha \ne 1\)</span>. Тогда <span
+class="math display">\[\displaystyle \int \frac{A}{(x - a)^{\alpha}}dx =
+\displaystyle \int A(x - a)^{-\alpha}dx = A\frac{(x - a)^{-\alpha +
+1}}{-\alpha + 1} + C.\]</span> Пусть <span class="math inline">\(\alpha
+= 1\)</span>. Тогда <span class="math display">\[\displaystyle \int
+\frac{A}{(x - a)}dx = \displaystyle \int \frac{A}{(x - a)}d(x - a) =
+A\ln|x - a| + C.\]</span></p></li>
+<li><p><span class="math display">\[\frac{B + Cx}{(x^2 + px +
+q)^{\beta}} =
+\frac{C(x + \frac{p}{2}) + s}{((x + \frac{p}{2})^2 + e^2)^{\beta}} =
+\frac{C t}{(t^2 + e^2)^{\beta}} + \frac{s}{(t^2 + e^2)^{\beta}}\]</span>
+То есть <span class="math inline">\(\displaystyle\int \frac{B + Cx}{(x^2
++ px + q)^{\beta}} dx = \displaystyle\int \frac{C t}{(t^2 +
+e^2)^{\beta}} dt + \displaystyle\int \frac{s}{(t^2 + e^2)^{\beta}}
+dt\)</span></p></li>
+</ol>
+<ol type="a">
+<li><p><span class="math display">\[\displaystyle\int \frac{C t}{(t^2 +
+e^2)^{\beta}} dt = \frac{C}{2}\displaystyle\int \frac{d(t^2 + e^2)}{(t^2
++ e^2)^{\beta}} = \ldots\]</span></p></li>
+<li><p><span class="math display">\[I_{\beta} = \displaystyle\int
+\frac{dt}{(t^2 + e^2)^{\beta}} = \frac{t}{(t^2 + e^2)^{\beta}} +
+\displaystyle\int \frac{2t^2\beta}{(t^2 + e^2)^{\beta + 1}} dt
+=\]</span> <span class="math display">\[= \frac{t}{(t^2 + e^2)^{\beta}}
++ 2\beta\displaystyle\int \frac{(t^2 + e^2) - e^2}{(t^2 + e^2)^{\beta +
+1}} dt = \frac{t}{(t^2 + e^2)^{\beta}} + 2\beta I_{\beta} - 2\beta e^2
+I_{\beta + 1}\]</span> Получили рекуррентную формулу для вычисления
+интеграла: <span class="math display">\[I_{\beta + 1} = \frac{t}{2\beta
+e^2 (t^2 + e^2)^{\beta}} + \frac{2\beta - 1}{2\beta
+e^2}I_{\beta}\]</span></p></li>
+</ol>
+<p>При <span class="math inline">\(\beta = 1\)</span> имеем <span
+class="math display">\[\displaystyle\int \frac{dt}{t^2 + e^2} =
+\frac{1}{e}\displaystyle\int \frac{d(\frac{t}{e})}{(\frac{t}{e})^2 + 1}
+= \frac{1}{e}\tan^{-1}\frac{t}{e} + C\]</span></p>
+<h3 id="метод-остроградского">Метод Остроградского</h3>
+<hr />
+<p><img src="img/blah-blah.png" /></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

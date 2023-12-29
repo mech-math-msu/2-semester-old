@@ -1,0 +1,770 @@
+[
+    {
+        "keyword": "Конечный упорядоченный набор",
+        "data": "*Конечный упорядоченный набор* - это $(a_1, \\ldots, a_n), \\,\\,\\,\\, a_i \\in A_i \\,\\,\\,\\, \\forall i \\in \\{1, \\ldots, n\\}, \\,\\,\\,\\, A_1, \\ldots, A_n$ - некоторые множества.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0\">Определение:</a></strong><p><em>Конечный упорядоченный набор</em> - это <span\nclass=\"math inline\">\\((a_1, \\ldots, a_n), \\,\\,\\,\\, a_i \\in A_i \\,\\,\\,\\,\n\\forall i \\in \\{1, \\ldots, n\\}, \\,\\,\\,\\, A_1, \\ldots, A_n\\)</span> -\nнекоторые множества.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Прямое произведение",
+        "data": "*Прямое произведение* множеств $A_1\\times A_2\\times\\ldots\\times A_n = \\{(a_1, \\ldots, a_n): \\,\\,\\,\\, a_i \\in A_i\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-1\">Определение:</a></strong><p><em>Прямое произведение</em> множеств <span\nclass=\"math inline\">\\(A_1\\times A_2\\times\\ldots\\times A_n = \\{(a_1,\n\\ldots, a_n): \\,\\,\\,\\, a_i \\in A_i\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Значение -ой переменной",
+        "data": "*Значение* $i$*-ой переменной* - это $i$-й элемент [упорядоченного набора](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0).",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-2\">Определение:</a></strong><p><em>Значение</em> <span class=\"math inline\">\\(i\\)</span><em>-ой\nпеременной</em> - это <span class=\"math inline\">\\(i\\)</span>-й элемент\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0\">упорядоченного\nнабора</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "- мерный булев куб",
+        "data": "$n$*- мерный булев куб* $B_n = \\{0, 1\\} \\times \\ldots \\times \\{0, 1\\} = \\{0, 1\\}^n = \\{(x_1, \\ldots, x_n): \\,\\,\\,\\, x_i \\in \\{0, 1\\}\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-3\">Определение:</a></strong><p><span class=\"math inline\">\\(n\\)</span><em>- мерный булев куб</em>\n<span class=\"math inline\">\\(B_n = \\{0, 1\\} \\times \\ldots \\times \\{0, 1\\}\n= \\{0, 1\\}^n = \\{(x_1, \\ldots, x_n): \\,\\,\\,\\, x_i \\in \\{0,\n1\\}\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Булева функция",
+        "data": "*Булева функция* от $n$ переменных - это $f: \\,\\,\\,\\, B_n \\to \\{0, 1\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4\">Определение:</a></strong><p><em>Булева функция</em> от <span class=\"math inline\">\\(n\\)</span>\nпеременных - это <span class=\"math inline\">\\(f: \\,\\,\\,\\, B_n \\to \\{0,\n1\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "существенная переменная фиктивная",
+        "data": "Переменная $x_i$ - *существенная переменная* булевой функции $f$, если $$f(x_1, \\ldots, x_{i - 1}, 0, x_{i + 1}, \\ldots, x_n) \\ne f(x_1, \\ldots, x_{i - 1}, 1, x_{i + 1}, \\ldots, x_n),$$\nиначе переменная $x_i$ - *фиктивная*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-5\">Определение:</a></strong><p>Переменная <span class=\"math inline\">\\(x_i\\)</span> -\n<em>существенная переменная</em> булевой функции <span\nclass=\"math inline\">\\(f\\)</span>, если <span\nclass=\"math display\">\\[f(x_1, \\ldots, x_{i - 1}, 0, x_{i + 1}, \\ldots,\nx_n) \\ne f(x_1, \\ldots, x_{i - 1}, 1, x_{i + 1}, \\ldots, x_n),\\]</span>\nиначе переменная <span class=\"math inline\">\\(x_i\\)</span> -\n<em>фиктивная</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "равные функции",
+        "data": "(*равные функции*) $f \\sim g$, если $\\exists$ цепочка добавлений и удалений [фиктивных переменных](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-5), переводящая $f$ в $g$ (может быть $0$ добавлений и удалений).",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-6\">Определение:</a></strong><p>(<em>равные функции</em>) <span class=\"math inline\">\\(f \\sim\ng\\)</span>, если <span class=\"math inline\">\\(\\exists\\)</span> цепочка\nдобавлений и удалений <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-5\">фиктивных\nпеременных</a>, переводящая <span class=\"math inline\">\\(f\\)</span> в\n<span class=\"math inline\">\\(g\\)</span> (может быть <span\nclass=\"math inline\">\\(0\\)</span> добавлений и удалений).</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Алфавит",
+        "data": "*Алфавит* - это некоторое множество.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7\">Определение:</a></strong><p><em>Алфавит</em> - это некоторое множество.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Слово длины первая буква",
+        "data": "*Слово* *длины* $n \\in \\mathbb{N}$ в некотором [алфавите](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7) $A$ - это $\\alpha: \\,\\,\\,\\, \\{0, \\ldots, n\\} \\to A$. При этом $\\alpha(1)$ - *первая буква* ...",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8\">Определение:</a></strong><p><em>Слово</em> <em>длины</em> <span class=\"math inline\">\\(n \\in\n\\mathbb{N}\\)</span> в некотором <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7\">алфавите</a>\n<span class=\"math inline\">\\(A\\)</span> - это <span\nclass=\"math inline\">\\(\\alpha: \\,\\,\\,\\, \\{0, \\ldots, n\\} \\to A\\)</span>.\nПри этом <span class=\"math inline\">\\(\\alpha(1)\\)</span> - <em>первая\nбуква</em> …</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Алфавит для функций",
+        "data": "*Алфавит для функций* - это $(X, S, \\{(, , , )\\})$, где",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-9\">Определение:</a></strong><p><em>Алфавит для функций</em> - это <span class=\"math inline\">\\((X, S,\n\\{(, , , )\\})\\)</span>, где</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Сигнатура",
+        "data": "*Сигнатура* [алфавита для функций](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-9) - это отображение $\\Sigma: \\,\\,\\,\\, S \\to P_2$(множество всех [булевых функций](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4)).",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-10\">Определение:</a></strong><p><em>Сигнатура</em> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-9\">алфавита\nдля функций</a> - это отображение <span class=\"math inline\">\\(\\Sigma:\n\\,\\,\\,\\, S \\to P_2\\)</span>(множество всех <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4\">булевых\nфункций</a>).</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "(Синтаксис - что является формулой)",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-11",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-11\">Определение:</a></strong><p>(Синтаксис - что является формулой)</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "(Семантика - какое значение у формулы)",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-12",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-12\">Определение:</a></strong><p>(Семантика - какое значение у формулы)</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "задает",
+        "data": "Формула $\\Phi$ *задает* функцию $f$ относительно $P$, если $\\forall \\alpha \\in \\{0, 1\\}^t \\,\\,\\,\\, f(\\alpha) = \\Phi[\\overline{x}, \\alpha]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-13",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-13\">Определение:</a></strong><p>Формула <span class=\"math inline\">\\(\\Phi\\)</span> <em>задает</em>\nфункцию <span class=\"math inline\">\\(f\\)</span> относительно <span\nclass=\"math inline\">\\(P\\)</span>, если <span\nclass=\"math inline\">\\(\\forall \\alpha \\in \\{0, 1\\}^t \\,\\,\\,\\, f(\\alpha) =\n\\Phi[\\overline{x}, \\alpha]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "эквивалентны",
+        "data": "Формулы $\\Phi_1$ и $\\Phi_2$, заданные в [сигнатуре](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0) $\\Sigma$ *эквивалентны*, если они [задают](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-3) [равные функции](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-6) относительно объединения своих переменных.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-0\">Определение:</a></strong><p>Формулы <span class=\"math inline\">\\(\\Phi_1\\)</span> и <span\nclass=\"math inline\">\\(\\Phi_2\\)</span>, заданные в <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0\">сигнатуре</a>\n<span class=\"math inline\">\\(\\Sigma\\)</span> <em>эквивалентны</em>, если\nони <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-3\">задают</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-6\">равные\nфункции</a> относительно объединения своих переменных.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "двойственная",
+        "data": "[Булева функция](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4) $f^{*} = \\overline{f(\\overline{x}_1, \\ldots, \\overline{x}_n)}$ - *двойственная* к функции $f$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-1\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4\">Булева\nфункция</a> <span class=\"math inline\">\\(f^{*} =\n\\overline{f(\\overline{x}_1, \\ldots, \\overline{x}_n)}\\)</span> -\n<em>двойственная</em> к функции <span\nclass=\"math inline\">\\(f\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "самодвойственная",
+        "data": "Функция $f$ *самодвойственная*, если $f^{*} = f$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-2\">Определение:</a></strong><p>Функция <span class=\"math inline\">\\(f\\)</span>\n<em>самодвойственная</em>, если <span class=\"math inline\">\\(f^{*} =\nf\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-0\">Определение:</a></strong>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Совершенная дизъюнктивная нормальная форма",
+        "data": "*Совершенная дизъюнктивная нормальная форма* - это правая часть равентва [из теоремы](#theorem-0) при $m = n$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-1\">Определение:</a></strong><p><em>Совершенная дизъюнктивная нормальная форма</em> - это правая\nчасть равентва <a href=\"#theorem-0\">из теоремы</a> при <span\nclass=\"math inline\">\\(m = n\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Совершенная конъюнктивная нормальная форма",
+        "data": "*Совершенная конъюнктивная нормальная форма* получается из [СДНФ](#definition-2) для двойственной функции по принципу двойственности (принцип двойственности - это, конечно, дичь).",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-2\">Определение:</a></strong><p><em>Совершенная конъюнктивная нормальная форма</em> получается из <a\nhref=\"#definition-2\">СДНФ</a> для двойственной функции по принципу\nдвойственности (принцип двойственности - это, конечно, дичь).</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "полна",
+        "data": "Система $\\{f_1, \\ldots, f_n\\}$ [булевых функций](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4) *полна*, если с помощью суперпозиций из нее можно получить любую функцию алгебры логики.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-3\">Определение:</a></strong><p>Система <span class=\"math inline\">\\(\\{f_1, \\ldots, f_n\\}\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4\">булевых\nфункций</a> <em>полна</em>, если с помощью суперпозиций из нее можно\nполучить любую функцию алгебры логики.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Операции суперпозиции суперпозициями",
+        "data": "*Операции суперпозиции* - это подстановка переменных, подстановка функции, добавление либо удаление несущественных переменных. Функция, полученная из исходной с помощью операций суперпозиции, получена *суперпозициями*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-21",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-21\">Определение:</a></strong><p><em>Операции суперпозиции</em> - это подстановка переменных,\nподстановка функции, добавление либо удаление несущественных переменных.\nФункция, полученная из исходной с помощью операций суперпозиции,\nполучена <em>суперпозициями</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Замыкание",
+        "data": "Пусть $M = \\{f_1, \\ldots, f_n\\}, \\,\\,\\,\\, f_i$ - [булева функция](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4). *Замыкание* $M$ - это множество всех булевых функций, которые можно получить из $M$ [суперпозициями](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-1). ",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(M = \\{f_1, \\ldots, f_n\\}, \\,\\,\\,\\,\nf_i\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4\">булева\nфункция</a>. <em>Замыкание</em> <span class=\"math inline\">\\(M\\)</span> -\nэто множество всех булевых функций, которые можно получить из <span\nclass=\"math inline\">\\(M\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-1\">суперпозициями</a>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Система [полна](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-3), если ее замыкание совпадает с $P_2$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-5\">Определение:</a></strong><p>Система <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-3\">полна</a>,\nесли ее замыкание совпадает с <span\nclass=\"math inline\">\\(P_2\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "замкнута",
+        "data": "Система $M$ [булевых функций](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4) *замкнута*, если $[M] = M$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6\">Определение:</a></strong><p>Система <span class=\"math inline\">\\(M\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4\">булевых\nфункций</a> <em>замкнута</em>, если <span class=\"math inline\">\\([M] =\nM\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "функции, сохраняющие",
+        "data": "(*функции, сохраняющие* $0$) $T_0 = \\{f \\in P_2: \\,\\,\\,\\, f(0, \\ldots, 0) = 0\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-7\">Определение:</a></strong><p>(<em>функции, сохраняющие</em> <span\nclass=\"math inline\">\\(0\\)</span>) <span class=\"math inline\">\\(T_0 = \\{f\n\\in P_2: \\,\\,\\,\\, f(0, \\ldots, 0) = 0\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "функции, сохраняющие",
+        "data": "(*функции, сохраняющие* $1$) $T_1 = \\{f \\in P_2: \\,\\,\\,\\, f(1, \\ldots, 1) = 1\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-8\">Определение:</a></strong><p>(<em>функции, сохраняющие</em> <span\nclass=\"math inline\">\\(1\\)</span>) <span class=\"math inline\">\\(T_1 = \\{f\n\\in P_2: \\,\\,\\,\\, f(1, \\ldots, 1) = 1\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех [самодвойственных](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-2#definition-2) функций обозначается $S$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-9\">Определение:</a></strong><p>Множество всех <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-2#definition-2\">самодвойственных</a>\nфункций обозначается <span class=\"math inline\">\\(S\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть даны два двоичных набора $\\tilde{\\alpha} = (\\alpha_1, \\ldots, \\alpha_n)$ и $\\tilde{\\beta} = (\\beta_1, \\ldots, \\beta_n)$. $\\tilde{\\alpha} \\le \\tilde{\\beta}$, если $\\forall i \\in \\{1, \\ldots, n\\}\\,\\,\\,\\, \\alpha_i \\le \\beta_i$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-10\">Определение:</a></strong><p>Пусть даны два двоичных набора <span\nclass=\"math inline\">\\(\\tilde{\\alpha} = (\\alpha_1, \\ldots,\n\\alpha_n)\\)</span> и <span class=\"math inline\">\\(\\tilde{\\beta} =\n(\\beta_1, \\ldots, \\beta_n)\\)</span>. <span\nclass=\"math inline\">\\(\\tilde{\\alpha} \\le \\tilde{\\beta}\\)</span>, если\n<span class=\"math inline\">\\(\\forall i \\in \\{1, \\ldots, n\\}\\,\\,\\,\\,\n\\alpha_i \\le \\beta_i\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "монотонна",
+        "data": "[Булева функция](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4) $f$ *монотонна*, если для любых [наборов](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0) $\\tilde{\\alpha}$ и $\\tilde{\\beta}$, таких, что $\\tilde{\\alpha} \\le \\tilde{\\beta} \\,\\,\\,\\, f(\\tilde{\\alpha}) \\le f(\\tilde{\\beta})$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-11",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-11\">Определение:</a></strong><p><a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-4\">Булева\nфункция</a> <span class=\"math inline\">\\(f\\)</span> <em>монотонна</em>,\nесли для любых <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0\">наборов</a>\n<span class=\"math inline\">\\(\\tilde{\\alpha}\\)</span> и <span\nclass=\"math inline\">\\(\\tilde{\\beta}\\)</span>, таких, что <span\nclass=\"math inline\">\\(\\tilde{\\alpha} \\le \\tilde{\\beta} \\,\\,\\,\\,\nf(\\tilde{\\alpha}) \\le f(\\tilde{\\beta})\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех [монотонных](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-1) булевых функций обозначается $M$. ",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-12",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-12\">Определение:</a></strong><p>Множество всех <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-1\">монотонных</a>\nбулевых функций обозначается <span class=\"math inline\">\\(M\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линейна",
+        "data": "Булева функция $f$ *линейна*, если она представима в виде $c_0 + c_1 x_1 + c_2 x_2 + \\ldots + c_n x_n, \\,\\,\\,\\, c_i \\in \\{0, 1\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-13",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-13\">Определение:</a></strong><p>Булева функция <span class=\"math inline\">\\(f\\)</span>\n<em>линейна</em>, если она представима в виде <span\nclass=\"math inline\">\\(c_0 + c_1 x_1 + c_2 x_2 + \\ldots + c_n x_n,\n\\,\\,\\,\\, c_i \\in \\{0, 1\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех линейных функций обозначается $L$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-14",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-14\">Определение:</a></strong><p>Множество всех линейных функций обозначается <span\nclass=\"math inline\">\\(L\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "предполный",
+        "data": "Класс [булевых функций](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-3) $F$ *предполный*, если $[F] \\ne P_2$ и $\\forall f \\in P_2 \\setminus F \\,\\,\\,\\, [F \\cup \\{f\\}] = P_2$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-15",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-15\">Определение:</a></strong><p>Класс <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-3\">булевых\nфункций</a> <span class=\"math inline\">\\(F\\)</span> <em>предполный</em>,\nесли <span class=\"math inline\">\\([F] \\ne P_2\\)</span> и <span\nclass=\"math inline\">\\(\\forall f \\in P_2 \\setminus F \\,\\,\\,\\, [F \\cup\n\\{f\\}] = P_2\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "полна в",
+        "data": "Пусть класс $F$ [замкнут](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6). Система $K$ функций из $F$ *полна в* $F$, если $[K] = F$.  ",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-16",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-16\">Определение:</a></strong><p>Пусть класс <span class=\"math inline\">\\(F\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6\">замкнут</a>.\nСистема <span class=\"math inline\">\\(K\\)</span> функций из <span\nclass=\"math inline\">\\(F\\)</span> <em>полна в</em> <span\nclass=\"math inline\">\\(F\\)</span>, если <span class=\"math inline\">\\([K] =\nF\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "базис",
+        "data": "Пусть класс $F$ [замкнут](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6). Система $K \\subset F$ - *базис* в $F$, если $K$ [полна в](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6) $F$ и $\\forall f \\in K \\,\\,\\,\\, K \\setminus f$ неполна в $F$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-17",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-17\">Определение:</a></strong><p>Пусть класс <span class=\"math inline\">\\(F\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6\">замкнут</a>.\nСистема <span class=\"math inline\">\\(K \\subset F\\)</span> -\n<em>базис</em> в <span class=\"math inline\">\\(F\\)</span>, если <span\nclass=\"math inline\">\\(K\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-6\">полна\nв</a> <span class=\"math inline\">\\(F\\)</span> и <span\nclass=\"math inline\">\\(\\forall f \\in K \\,\\,\\,\\, K \\setminus f\\)</span>\nнеполна в <span class=\"math inline\">\\(F\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "(Конечный абстрактный детерминированный) автомат алфавит(множество) входов алфавит(множество) состояний алфавит(множество) выходов функция переходов функция выходов",
+        "data": "*(Конечный абстрактный детерминированный) автомат* - это $(A, Q, B, \\varphi, \\psi)$, где<br><br> $A$ - *алфавит(множество) входов*.<br><br> $Q$ - *алфавит(множество) состояний*.<br><br> $B$ - *алфавит(множество) выходов*.<br><br>Множества $A, Q, B$ - конечны.<br><br> $\\varphi: Q\\times A \\to Q$ - *функция переходов*.<br><br> $\\psi: Q \\times A \\to B$ - *функция выходов*.<br><br>",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">Определение:</a></strong><p><em>(Конечный абстрактный детерминированный) автомат</em> - это <span\nclass=\"math inline\">\\((A, Q, B, \\varphi, \\psi)\\)</span>, где<br><br>\n<span class=\"math inline\">\\(A\\)</span> - <em>алфавит(множество)\nвходов</em>.<br><br> <span class=\"math inline\">\\(Q\\)</span> -\n<em>алфавит(множество) состояний</em>.<br><br> <span\nclass=\"math inline\">\\(B\\)</span> - <em>алфавит(множество)\nвыходов</em>.<br><br>Множества <span class=\"math inline\">\\(A, Q,\nB\\)</span> - конечны.<br><br> <span class=\"math inline\">\\(\\varphi:\nQ\\times A \\to Q\\)</span> - <em>функция переходов</em>.<br><br> <span\nclass=\"math inline\">\\(\\psi: Q \\times A \\to B\\)</span> - <em>функция\nвыходов</em>.<br><br></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "автомат Мура",
+        "data": "Пусть $(A, Q, B, \\varphi, \\psi)$ - [автомат](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0). Если $\\varphi$ зависит от $a \\in A$ [фиктивно](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-5), то $(A, Q, B, \\varphi, \\psi)$ - *автомат Мура*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((A, Q, B, \\varphi, \\psi)\\)</span> -\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">автомат</a>.\nЕсли <span class=\"math inline\">\\(\\varphi\\)</span> зависит от <span\nclass=\"math inline\">\\(a \\in A\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-5\">фиктивно</a>,\nто <span class=\"math inline\">\\((A, Q, B, \\varphi, \\psi)\\)</span> -\n<em>автомат Мура</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "имеет входов",
+        "data": "Пусть $(A, Q, B, \\varphi, \\psi)$ - [автомат](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0). Если $A = A_1 \\times \\ldots \\times A_m$, то $(A, Q, B, \\varphi, \\psi)$ *имеет* $m$ *входов*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((A, Q, B, \\varphi, \\psi)\\)</span> -\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">автомат</a>.\nЕсли <span class=\"math inline\">\\(A = A_1 \\times \\ldots \\times\nA_m\\)</span>, то <span class=\"math inline\">\\((A, Q, B, \\varphi,\n\\psi)\\)</span> <em>имеет</em> <span class=\"math inline\">\\(m\\)</span>\n<em>входов</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "имеет выходов",
+        "data": "Пусть $(A, Q, B, \\varphi, \\psi)$ - [автомат](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0). Если $B = B_1 \\times \\ldots \\times B_m$, то $(A, Q, B, \\varphi, \\psi)$ *имеет* $m$ *выходов*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((A, Q, B, \\varphi, \\psi)\\)</span> -\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">автомат</a>.\nЕсли <span class=\"math inline\">\\(B = B_1 \\times \\ldots \\times\nB_m\\)</span>, то <span class=\"math inline\">\\((A, Q, B, \\varphi,\n\\psi)\\)</span> <em>имеет</em> <span class=\"math inline\">\\(m\\)</span>\n<em>выходов</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "входные слова выходные слова",
+        "data": "Пусть $(A, Q, B, \\varphi, \\psi)$ - [автомат](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0).<br><br> [Слова](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8) в алфавите $A$ - *входные слова*. <br><br> [Слова](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8) в алфавите $B$ - *выходные слова*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((A, Q, B, \\varphi, \\psi)\\)</span> -\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">автомат</a>.<br><br>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8\">Слова</a>\nв алфавите <span class=\"math inline\">\\(A\\)</span> - <em>входные\nслова</em>. <br><br> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8\">Слова</a>\nв алфавите <span class=\"math inline\">\\(B\\)</span> - <em>выходные\nслова</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "слово состояний слово выходов",
+        "data": "Пусть $(A, Q, B, \\varphi, \\psi)$ - [автомат](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0). $q \\in Q$, $\\alpha$ - [слово](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8) в алфавите $A$.<br><br>$\\overline{\\varphi}(q, \\alpha) = \\varphi(q, [\\alpha]_0)\\varphi(q, [\\alpha]_1)\\ldots \\varphi(q, \\alpha)$ - *слово состояний*.<br><br>$\\overline{\\psi}(q, \\alpha) = \\psi(q, [\\alpha]_0)\\psi(q, [\\alpha]_1)\\ldots \\psi(q, \\alpha)$ - *слово выходов*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((A, Q, B, \\varphi, \\psi)\\)</span> -\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">автомат</a>.\n<span class=\"math inline\">\\(q \\in Q\\)</span>, <span\nclass=\"math inline\">\\(\\alpha\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-8\">слово</a>\nв алфавите <span class=\"math inline\">\\(A\\)</span>.<br><br><span\nclass=\"math inline\">\\(\\overline{\\varphi}(q, \\alpha) = \\varphi(q,\n[\\alpha]_0)\\varphi(q, [\\alpha]_1)\\ldots \\varphi(q, \\alpha)\\)</span> -\n<em>слово состояний</em>.<br><br><span\nclass=\"math inline\">\\(\\overline{\\psi}(q, \\alpha) = \\psi(q,\n[\\alpha]_0)\\psi(q, [\\alpha]_1)\\ldots \\psi(q, \\alpha)\\)</span> -\n<em>слово выходов</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "инициальный конечный автомат ограниченно-детерминированная функция",
+        "data": "Пусть $(A, Q, B, \\varphi, \\psi)$ - [автомат](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0). Зафиксируем $q_1 \\in Q$. Тогда $\\psi: A^{*} \\to B^{*}$. $V_{q_1} = (A, Q, B, \\varphi, \\psi, q_1)$ - *инициальный конечный автомат*. <br><br> Отображение $f(\\alpha) = \\overline{\\psi}(q_1, \\alpha)$ - *ограниченно-детерминированная функция*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\((A, Q, B, \\varphi, \\psi)\\)</span> -\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">автомат</a>.\nЗафиксируем <span class=\"math inline\">\\(q_1 \\in Q\\)</span>. Тогда <span\nclass=\"math inline\">\\(\\psi: A^{*} \\to B^{*}\\)</span>. <span\nclass=\"math inline\">\\(V_{q_1} = (A, Q, B, \\varphi, \\psi, q_1)\\)</span> -\n<em>инициальный конечный автомат</em>. <br><br> Отображение <span\nclass=\"math inline\">\\(f(\\alpha) = \\overline{\\psi}(q_1, \\alpha)\\)</span>\n- <em>ограниченно-детерминированная функция</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $V_{q_1} = (A, Q, B, \\varphi, \\psi, q_1)$ - инициальный атомат. $\\alpha$ - слово в алфавите $A$. <br><br>$\\mathcal{Q} = \\overline{\\varphi}(q_1, \\alpha)$ - [слово состояний](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5).<br><br>$\\beta = \\overline{\\psi}(q_1, \\alpha)$ - [слово выходов](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5). <br><br> $\\begin{cases}\n  \\mathcal{Q}(1) = q_1\\\\",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-7\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V_{q_1} = (A, Q, B, \\varphi, \\psi,\nq_1)\\)</span> - инициальный атомат. <span\nclass=\"math inline\">\\(\\alpha\\)</span> - слово в алфавите <span\nclass=\"math inline\">\\(A\\)</span>. <br><br><span\nclass=\"math inline\">\\(\\mathcal{Q} = \\overline{\\varphi}(q_1,\n\\alpha)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5\">слово\nсостояний</a>.<br><br><span class=\"math inline\">\\(\\beta =\n\\overline{\\psi}(q_1, \\alpha)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5\">слово\nвыходов</a>. <br><br> $\\begin{cases} (1) = q_1\\</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "бесконечное слово",
+        "data": "Пусть $A$ - [алфавит](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7). Пусть дано отображение $\\alpha: \\mathbb{N} \\to A$. $\\alpha(1)\\alpha(3)\\ldots$ - *бесконечное слово*.<br><br>Множество всех бесконечных слов обозначается $A^{\\infty}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-8\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(A\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7\">алфавит</a>.\nПусть дано отображение <span class=\"math inline\">\\(\\alpha: \\mathbb{N}\n\\to A\\)</span>. <span\nclass=\"math inline\">\\(\\alpha(1)\\alpha(3)\\ldots\\)</span> -\n<em>бесконечное слово</em>.<br><br>Множество всех бесконечных слов\nобозначается <span class=\"math inline\">\\(A^{\\infty}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "период предпериод",
+        "data": "Пусть $\\alpha(1)\\alpha(3)\\ldots$ - [бесконечное слово](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-8). Если существуют $\\tau, \\tau’ \\in \\mathbb{N}$, такие, что $\\alpha(i + \\tau) = \\alpha(i) \\,\\,\\,\\, \\forall i > \\tau’ + 1$, то $\\tau$ - *период* $\\alpha$, $\\tau’$ - *предпериод*. ",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-9\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\alpha(1)\\alpha(3)\\ldots\\)</span> -\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-8\">бесконечное\nслово</a>. Если существуют <span class=\"math inline\">\\(\\tau, \\tau’ \\in\n\\mathbb{N}\\)</span>, такие, что <span class=\"math inline\">\\(\\alpha(i +\n\\tau) = \\alpha(i) \\,\\,\\,\\, \\forall i &gt; \\tau’ + 1\\)</span>, то <span\nclass=\"math inline\">\\(\\tau\\)</span> - <em>период</em> <span\nclass=\"math inline\">\\(\\alpha\\)</span>, <span\nclass=\"math inline\">\\(\\tau’\\)</span> - <em>предпериод</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "неотличимы отличимы словом",
+        "data": "Пусть $V = (A, Q, B, \\varphi, \\psi)$ и $V’ = (A, Q’, B, \\varphi’, \\psi’)$ - [конечные автоматы](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0), $q \\in Q$, $q’ \\in Q’$. Если $\\forall \\alpha \\in A^{*} \\,\\,\\,\\, \\overline{\\psi}(q, \\alpha) = \\overline{\\psi’}(q’, \\alpha)$, то состояния $q$ и $q’$ *неотличимы* друг от друга.<br><br>Если $\\exists \\alpha \\in A^{*}: \\,\\,\\,\\, \\overline{\\psi}(q, \\alpha) \\ne \\overline{\\psi’}(q’, \\alpha)$, то состояния $q$ и $q’$ *отличимы* друг от друга *словом* $\\alpha$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-10\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V = (A, Q, B, \\varphi,\n\\psi)\\)</span> и <span class=\"math inline\">\\(V’ = (A, Q’, B, \\varphi’,\n\\psi’)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">конечные\nавтоматы</a>, <span class=\"math inline\">\\(q \\in Q\\)</span>, <span\nclass=\"math inline\">\\(q’ \\in Q’\\)</span>. Если <span\nclass=\"math inline\">\\(\\forall \\alpha \\in A^{*} \\,\\,\\,\\,\n\\overline{\\psi}(q, \\alpha) = \\overline{\\psi’}(q’, \\alpha)\\)</span>, то\nсостояния <span class=\"math inline\">\\(q\\)</span> и <span\nclass=\"math inline\">\\(q’\\)</span> <em>неотличимы</em> друг от\nдруга.<br><br>Если <span class=\"math inline\">\\(\\exists \\alpha \\in A^{*}:\n\\,\\,\\,\\, \\overline{\\psi}(q, \\alpha) \\ne \\overline{\\psi’}(q’,\n\\alpha)\\)</span>, то состояния <span class=\"math inline\">\\(q\\)</span> и\n<span class=\"math inline\">\\(q’\\)</span> <em>отличимы</em> друг от друга\n<em>словом</em> <span class=\"math inline\">\\(\\alpha\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "приведенного типа",
+        "data": "Если любые два состояния [автомата](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0) [отличимы](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0), то [автомат](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0) *приведенного типа*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-11",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-11\">Определение:</a></strong><p>Если любые два состояния <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">автомата</a>\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">отличимы</a>,\nто <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">автомат</a>\n<em>приведенного типа</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "неотличимы",
+        "data": "Пусть $V = (A, Q, B, \\varphi, \\psi)$ и $V’ = (A, Q’, B, \\varphi’, \\psi’)$ - [конечные автоматы](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0). Если $\\forall q \\in Q \\,\\,\\,\\, \\exists q’ \\in Q’$, такое, что $q$ [неотличимо](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0) от $q’$ и $\\forall q’ \\in Q’ \\,\\,\\,\\, \\exists q \\in Q$, такое, что $q$ [неотличимо](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0) от $q’$, то автоматы $V$ и $V’$ *неотличимы*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-12",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-12\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V = (A, Q, B, \\varphi,\n\\psi)\\)</span> и <span class=\"math inline\">\\(V’ = (A, Q’, B, \\varphi’,\n\\psi’)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">конечные\nавтоматы</a>. Если <span class=\"math inline\">\\(\\forall q \\in Q \\,\\,\\,\\,\n\\exists q’ \\in Q’\\)</span>, такое, что <span\nclass=\"math inline\">\\(q\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">неотличимо</a>\nот <span class=\"math inline\">\\(q’\\)</span> и <span\nclass=\"math inline\">\\(\\forall q’ \\in Q’ \\,\\,\\,\\, \\exists q \\in\nQ\\)</span>, такое, что <span class=\"math inline\">\\(q\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">неотличимо</a>\nот <span class=\"math inline\">\\(q’\\)</span>, то автоматы <span\nclass=\"math inline\">\\(V\\)</span> и <span\nclass=\"math inline\">\\(V’\\)</span> <em>неотличимы</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "изоморфны",
+        "data": "Пусть $V = (A, Q, B, \\varphi, \\psi)$ и $V’ = (A, Q’, B, \\varphi’, \\psi’)$ - [конечные автоматы](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0). Если существует биективное отображение $\\xi: Q \\to Q’$, такое, что $\\forall a \\in A, q \\in Q$ $$\\xi(\\varphi(q, a)) = \\varphi’(\\xi(q), a)$$ $$\\psi(q, a) = \\psi’(\\xi(q), a),$$ то автоматы $V$ и $V’$ *изоморфны*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-13",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-13\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V = (A, Q, B, \\varphi,\n\\psi)\\)</span> и <span class=\"math inline\">\\(V’ = (A, Q’, B, \\varphi’,\n\\psi’)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-0\">конечные\nавтоматы</a>. Если существует биективное отображение <span\nclass=\"math inline\">\\(\\xi: Q \\to Q’\\)</span>, такое, что <span\nclass=\"math inline\">\\(\\forall a \\in A, q \\in Q\\)</span> <span\nclass=\"math display\">\\[\\xi(\\varphi(q, a)) = \\varphi’(\\xi(q), a)\\]</span>\n<span class=\"math display\">\\[\\psi(q, a) = \\psi’(\\xi(q), a),\\]</span> то\nавтоматы <span class=\"math inline\">\\(V\\)</span> и <span\nclass=\"math inline\">\\(V’\\)</span> <em>изоморфны</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "событие",
+        "data": "Пусть $V = (A, Q, B , \\varphi, \\psi, q)$ - [инициальный конечный автомат](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6). Любое подмножество $A^{*} \\setminus \\Lambda$ - *событие*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-15",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-15\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V = (A, Q, B , \\varphi, \\psi,\nq)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6\">инициальный\nконечный автомат</a>. Любое подмножество <span\nclass=\"math inline\">\\(A^{*} \\setminus \\Lambda\\)</span> -\n<em>событие</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "представимое",
+        "data": "Пусть $V = (A, Q, B , \\varphi, \\psi, q)$ - [инициальный конечный автомат](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6), $B’ \\subset B$. Множество $M = \\{\\alpha \\in A^{*} \\setminus \\Lambda: \\,\\,\\,\\,\\psi(q, \\alpha) \\in B’\\}$ - [событие](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5), *представимое* автоматом $V$ посредством $B’$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-14",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-14\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V = (A, Q, B , \\varphi, \\psi,\nq)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6\">инициальный\nконечный автомат</a>, <span class=\"math inline\">\\(B’ \\subset B\\)</span>.\nМножество <span class=\"math inline\">\\(M = \\{\\alpha \\in A^{*} \\setminus\n\\Lambda: \\,\\,\\,\\,\\psi(q, \\alpha) \\in B’\\}\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5\">событие</a>,\n<em>представимое</em> автоматом <span class=\"math inline\">\\(V\\)</span>\nпосредством <span class=\"math inline\">\\(B’\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "произведение событий",
+        "data": "Пусть $M_1$ и $M_2$ [события](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5). Множество $M_1\\cdot M_2 = \\{\\alpha_1 \\alpha_2: \\,\\,\\,\\, \\alpha_1 \\in M_1, \\alpha_2 \\in M_2\\}$ - *произведение событий* $M_1$ и $M_2$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-16",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-16\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(M_1\\)</span> и <span\nclass=\"math inline\">\\(M_2\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5\">события</a>.\nМножество <span class=\"math inline\">\\(M_1\\cdot M_2 = \\{\\alpha_1\n\\alpha_2: \\,\\,\\,\\, \\alpha_1 \\in M_1, \\alpha_2 \\in M_2\\}\\)</span> -\n<em>произведение событий</em> <span class=\"math inline\">\\(M_1\\)</span> и\n<span class=\"math inline\">\\(M_2\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "итерация события",
+        "data": "Пусть $M$ - [событие](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5). Множество $<M> = \\{\\alpha_1\\ldots \\alpha_k: \\,\\,\\,\\, \\alpha_i \\in M\\}$ - *итерация события* $M$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-17",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-17\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(M\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5\">событие</a>.\nМножество <span class=\"math inline\">\\(&lt;M&gt; = \\{\\alpha_1\\ldots\n\\alpha_k: \\,\\,\\,\\, \\alpha_i \\in M\\}\\)</span> - <em>итерация события</em>\n<span class=\"math inline\">\\(M\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "регулярные регулярные",
+        "data": "<br><br>1. События $\\varnothing$ и $a \\in A$ - *регулярные*.<br>2. Если $R_1$ и $R_2$ [регулярные](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-8) события, то $R_1 \\cdot R_2$, $R_1 \\cup R_2$ и $<R_1>$ - *регулярные* события.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-18",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-18\">Определение:</a></strong><p><br><br>1. События <span class=\"math inline\">\\(\\varnothing\\)</span> и\n<span class=\"math inline\">\\(a \\in A\\)</span> -\n<em>регулярные</em>.<br>2. Если <span class=\"math inline\">\\(R_1\\)</span>\nи <span class=\"math inline\">\\(R_2\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-8\">регулярные</a>\nсобытия, то <span class=\"math inline\">\\(R_1 \\cdot R_2\\)</span>, <span\nclass=\"math inline\">\\(R_1 \\cup R_2\\)</span> и <span\nclass=\"math inline\">\\(&lt;R_1&gt;\\)</span> - <em>регулярные</em>\nсобытия.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Обобщенный источник (в алфавите)",
+        "data": "Пусть $A$ - [алфавит](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7). *Обобщенный источник (в алфавите)* $A$ - это конечный ориентированный граф, каждому ребру которого сопоставлен символ $a \\in A$ или пустое [слово](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5) $\\Lambda$, и в котором выбраны начальная вершина $v$ и финальная вершина $w$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-19",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-19\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(A\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7\">алфавит</a>.\n<em>Обобщенный источник (в алфавите)</em> <span\nclass=\"math inline\">\\(A\\)</span> - это конечный ориентированный граф,\nкаждому ребру которого сопоставлен символ <span class=\"math inline\">\\(a\n\\in A\\)</span> или пустое <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-5\">слово</a>\n<span class=\"math inline\">\\(\\Lambda\\)</span>, и в котором выбраны\nначальная вершина <span class=\"math inline\">\\(v\\)</span> и финальная\nвершина <span class=\"math inline\">\\(w\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "путь",
+        "data": "Пусть $G$ - [обобщенный источник](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-9). $v_1$ и $v_{n + 1}$ вершины $G$. Последовательность $\\pi_{v_1 \\to v_{n + 1}}: \\,\\,\\,\\, v_1, e_1, \\ldots, v_n, e_n, v_{n + 1}$ - *путь* от вершины $v_1$ к вершине $v_{n + 1}$.<br>$[\\pi]$ - это слово составленное из символов ребер, входящих в путь $\\pi$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-20",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-20\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(G\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-9\">обобщенный\nисточник</a>. <span class=\"math inline\">\\(v_1\\)</span> и <span\nclass=\"math inline\">\\(v_{n + 1}\\)</span> вершины <span\nclass=\"math inline\">\\(G\\)</span>. Последовательность <span\nclass=\"math inline\">\\(\\pi_{v_1 \\to v_{n + 1}}: \\,\\,\\,\\, v_1, e_1,\n\\ldots, v_n, e_n, v_{n + 1}\\)</span> - <em>путь</em> от вершины <span\nclass=\"math inline\">\\(v_1\\)</span> к вершине <span\nclass=\"math inline\">\\(v_{n + 1}\\)</span>.<br><span\nclass=\"math inline\">\\([\\pi]\\)</span> - это слово составленное из\nсимволов ребер, входящих в путь <span\nclass=\"math inline\">\\(\\pi\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $A$ - [алфавит](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7), $G$ - [обобщенный источник](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-9), $\\alpha \\in A^{*}$, $u$ - вершина $G$. $\\theta(u, \\alpha) = \\{v \\in G: \\,\\,\\,\\, \\exists \\pi_{u \\to v}: \\,\\,\\,\\, [\\pi] = \\alpha\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-21",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-21\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(A\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7\">алфавит</a>,\n<span class=\"math inline\">\\(G\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-9\">обобщенный\nисточник</a>, <span class=\"math inline\">\\(\\alpha \\in A^{*}\\)</span>,\n<span class=\"math inline\">\\(u\\)</span> - вершина <span\nclass=\"math inline\">\\(G\\)</span>. <span class=\"math inline\">\\(\\theta(u,\n\\alpha) = \\{v \\in G: \\,\\,\\,\\, \\exists \\pi_{u \\to v}: \\,\\,\\,\\, [\\pi] =\n\\alpha\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Событие определяемое источником",
+        "data": "Пусть $A$ - [алфавит](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7), $G$ - [обобщенный источник](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-9) с начальной вершиной $v$ и финальной вершиной $w$. *Событие* $|G|$, *определяемое источником* $G$ - это $|G| = \\{\\alpha \\in A^{*}: \\,\\,\\,\\, w \\in \\theta(v, \\alpha)\\}$. ",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-22",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-22\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(A\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7\">алфавит</a>,\n<span class=\"math inline\">\\(G\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-9\">обобщенный\nисточник</a> с начальной вершиной <span class=\"math inline\">\\(v\\)</span>\nи финальной вершиной <span class=\"math inline\">\\(w\\)</span>.\n<em>Событие</em> <span class=\"math inline\">\\(|G|\\)</span>,\n<em>определяемое источником</em> <span class=\"math inline\">\\(G\\)</span>\n- это <span class=\"math inline\">\\(|G| = \\{\\alpha \\in A^{*}: \\,\\,\\,\\, w\n\\in \\theta(v, \\alpha)\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $V_q = (\\{0, 1\\}^n, Q, \\{0, 1\\}^m, \\varphi, \\psi, q)$ - [инициальный конечный автомат](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6). Множество всех [автоматных функций](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6) $f(\\alpha) = \\overline{\\psi}(q, \\alpha)$, задаваемых автоматами вида $V_q$ обозначается $P_{\\operatorname{авт}}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-23",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-23\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(V_q = (\\{0, 1\\}^n, Q, \\{0, 1\\}^m,\n\\varphi, \\psi, q)\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6\">инициальный\nконечный автомат</a>. Множество всех <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-6\">автоматных\nфункций</a> <span class=\"math inline\">\\(f(\\alpha) = \\overline{\\psi}(q,\n\\alpha)\\)</span>, задаваемых автоматами вида <span\nclass=\"math inline\">\\(V_q\\)</span> обозначается <span\nclass=\"math inline\">\\(P_{\\operatorname{авт}}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "существенный зависит с задержкой",
+        "data": "Пусть $f \\in P_{\\operatorname{авт}}$, $\\alpha \\in (\\{0, 1\\}^n)^{*}$(слово, буквы которого - это последовательности нулей и единиц), $\\alpha = \\alpha(1)\\ldots \\alpha(l)$, $\\alpha(i) = (\\alpha_1(i), \\ldots, \\alpha_n(i))$ (функция $\\alpha_j$ - это $j$-й элемент буквы). Пусть $\\alpha_j = (\\alpha_j(1), \\ldots, \\alpha_j(l))$ (взяли $j$-й элемент каждой буквы слова $\\alpha$). Определим функцию $g(\\alpha_1, \\ldots, \\alpha_n) = f(\\alpha)$.<br><br> Если $i$-я переменная функции $g$ существенная, то $i$-й вход автомата *существенный*.<br><br>Если функция $\\psi_j$([см. канонические уравнения](#canon-p2)) зависит от $a_i(t)$ фиктивно, то $j$-й выход автомата *зависит* от $i$-ого *с задержкой*. ",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-24",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-24\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f \\in\nP_{\\operatorname{авт}}\\)</span>, <span class=\"math inline\">\\(\\alpha \\in\n(\\{0, 1\\}^n)^{*}\\)</span>(слово, буквы которого - это последовательности\nнулей и единиц), <span class=\"math inline\">\\(\\alpha = \\alpha(1)\\ldots\n\\alpha(l)\\)</span>, <span class=\"math inline\">\\(\\alpha(i) =\n(\\alpha_1(i), \\ldots, \\alpha_n(i))\\)</span> (функция <span\nclass=\"math inline\">\\(\\alpha_j\\)</span> - это <span\nclass=\"math inline\">\\(j\\)</span>-й элемент буквы). Пусть <span\nclass=\"math inline\">\\(\\alpha_j = (\\alpha_j(1), \\ldots,\n\\alpha_j(l))\\)</span> (взяли <span class=\"math inline\">\\(j\\)</span>-й\nэлемент каждой буквы слова <span class=\"math inline\">\\(\\alpha\\)</span>).\nОпределим функцию <span class=\"math inline\">\\(g(\\alpha_1, \\ldots,\n\\alpha_n) = f(\\alpha)\\)</span>.<br><br> Если <span\nclass=\"math inline\">\\(i\\)</span>-я переменная функции <span\nclass=\"math inline\">\\(g\\)</span> существенная, то <span\nclass=\"math inline\">\\(i\\)</span>-й вход автомата\n<em>существенный</em>.<br><br>Если функция <span\nclass=\"math inline\">\\(\\psi_j\\)</span>(<a href=\"#canon-p2\">см.\nканонические уравнения</a>) зависит от <span\nclass=\"math inline\">\\(a_i(t)\\)</span> фиктивно, то <span\nclass=\"math inline\">\\(j\\)</span>-й выход автомата <em>зависит</em> от\n<span class=\"math inline\">\\(i\\)</span>-ого <em>с задержкой</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "<details>\n<summary></summary>",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-25",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-25\">Определение:</a></strong><details>\n<summary>\n</summary>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-26",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-26\">Определение:</a></strong>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "композиции",
+        "data": "Операции $a, b, c$ - это операции *композиции*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-27",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-27\">Определение:</a></strong><p>Операции <span class=\"math inline\">\\(a, b, c\\)</span> - это операции\n<em>композиции</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех функций, полученных операциями композиции из $F \\subset P_{\\operatorname{авт}}$, обозначается $[F]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-28",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-28\">Определение:</a></strong><p>Множество всех функций, полученных операциями композиции из <span\nclass=\"math inline\">\\(F \\subset P_{\\operatorname{авт}}\\)</span>,\nобозначается <span class=\"math inline\">\\([F]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "полная",
+        "data": "$F \\subset P_{\\operatorname{авт}}$ *полная*, если $[F] = P_{\\operatorname{авт}}$",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-29",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-29\">Определение:</a></strong><p><span class=\"math inline\">\\(F \\subset P_{\\operatorname{авт}}\\)</span>\n<em>полная</em>, если <span class=\"math inline\">\\([F] =\nP_{\\operatorname{авт}}\\)</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "суперпозициями полна",
+        "data": "Если функция $f \\in P_{\\operatorname{авт}}$ pеализуется схемой в сигнатуре, построенной только при помощи операций переобозначения входов и выходов, объединения схем и их последовательного соединения, то $f$ получена *суперпозициями* из функций $\\{f_1,\\ldots, f_p\\}$ данной сигнатуры. Множество всех функций, полученных операциями суперпозиции из функций множества $F \\subset P_{\\operatorname{авт}}$, обозначается $[F]_c$. Система $F \\subset P_{\\operatorname{авт}}$ *полна* относительно суперпозиций, если $[F]_c = P_{\\operatorname{авт}}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-30",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-30\">Определение:</a></strong><p>Если функция <span class=\"math inline\">\\(f \\in\nP_{\\operatorname{авт}}\\)</span> pеализуется схемой в сигнатуре,\nпостроенной только при помощи операций переобозначения входов и выходов,\nобъединения схем и их последовательного соединения, то <span\nclass=\"math inline\">\\(f\\)</span> получена <em>суперпозициями</em> из\nфункций <span class=\"math inline\">\\(\\{f_1,\\ldots, f_p\\}\\)</span> данной\nсигнатуры. Множество всех функций, полученных операциями суперпозиции из\nфункций множества <span class=\"math inline\">\\(F \\subset\nP_{\\operatorname{авт}}\\)</span>, обозначается <span\nclass=\"math inline\">\\([F]_c\\)</span>. Система <span\nclass=\"math inline\">\\(F \\subset P_{\\operatorname{авт}}\\)</span>\n<em>полна</em> относительно суперпозиций, если <span\nclass=\"math inline\">\\([F]_c = P_{\\operatorname{авт}}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Однородная структура шаблон соседства клетки функция изменения состояния клетки локальная функция переходов",
+        "data": "*Однородная структура* - это $\\sigma = (\\mathbb{Z}^k, E_n, V, \\varphi)$, где <br><br> $\\mathbb{Z}^k$ - множество $k$-мерных целочисленных векторов (координаты клеток дискретного пространства (все нормальные люди используют $\\mathbb{Z}^2$, но математик должен быть ненормальным, особенно, в 01:00))<br><br> $E_n = \\{0, \\ldots, n - 1\\}$ - множество кодов состояний (каждая клетка в каждый момент времени находится в каком-то состоянии) <br><br> $V = \\{\\alpha_1, \\ldots, \\alpha_{h - 1}: \\,\\,\\,\\, \\alpha_i \\in \\mathbb{Z}^k, \\,\\,\\,\\, \\alpha_i \\ne \\alpha_j, \\,\\,\\,\\, i \\ne j\\}$ - *шаблон соседства клетки* (кого видит клетка)<br><br> $\\varphi: (E_n)^h \\to E_n$ - *функция изменения состояния клетки*(*локальная функция переходов*) (зависит от $h$ переменных - состояний соседей клетки) и $\\varphi(0, \\ldots, 0) = 0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-31",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-31\">Определение:</a></strong><p><em>Однородная структура</em> - это <span\nclass=\"math inline\">\\(\\sigma = (\\mathbb{Z}^k, E_n, V, \\varphi)\\)</span>,\nгде <br><br> <span class=\"math inline\">\\(\\mathbb{Z}^k\\)</span> -\nмножество <span class=\"math inline\">\\(k\\)</span>-мерных целочисленных\nвекторов (координаты клеток дискретного пространства (все нормальные\nлюди используют <span class=\"math inline\">\\(\\mathbb{Z}^2\\)</span>, но\nматематик должен быть ненормальным, особенно, в 01:00))<br><br> <span\nclass=\"math inline\">\\(E_n = \\{0, \\ldots, n - 1\\}\\)</span> - множество\nкодов состояний (каждая клетка в каждый момент времени находится в\nкаком-то состоянии) <br><br> <span class=\"math inline\">\\(V = \\{\\alpha_1,\n\\ldots, \\alpha_{h - 1}: \\,\\,\\,\\, \\alpha_i \\in \\mathbb{Z}^k, \\,\\,\\,\\,\n\\alpha_i \\ne \\alpha_j, \\,\\,\\,\\, i \\ne j\\}\\)</span> - <em>шаблон\nсоседства клетки</em> (кого видит клетка)<br><br> <span\nclass=\"math inline\">\\(\\varphi: (E_n)^h \\to E_n\\)</span> - <em>функция\nизменения состояния клетки</em>(<em>локальная функция переходов</em>)\n(зависит от <span class=\"math inline\">\\(h\\)</span> переменных -\nсостояний соседей клетки) и <span class=\"math inline\">\\(\\varphi(0,\n\\ldots, 0) = 0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Состояние однородной структуры",
+        "data": "Пусть $\\sigma$ - [однородная структура](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-1). *Состояние однородной структуры* $\\sigma$ - это функция $f: \\mathbb{Z}^k \\to E_n$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-32",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-32\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\sigma\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-1\">однородная\nструктура</a>. <em>Состояние однородной структуры</em> <span\nclass=\"math inline\">\\(\\sigma\\)</span> - это функция <span\nclass=\"math inline\">\\(f: \\mathbb{Z}^k \\to E_n\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Основная (глобальная) функция переходов однородной структуры",
+        "data": "Пусть $\\sigma$ - [однородная структура](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-1) и задано некоторое множество ее состояний $F$. *Основная (глобальная) функция переходов однородной структуры* - это $\\Phi: F \\to F$, такая, что $$\\Phi(f)(\\alpha) = \\varphi(f(\\alpha), f(\\alpha + \\alpha_1), \\ldots, f(\\alpha + \\alpha_{h - 1})), \\,\\,\\,\\, f \\in F, \\,\\,\\,\\, \\alpha \\in \\mathbb{Z}^k$$",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-33",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-33\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\sigma\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-1\">однородная\nструктура</a> и задано некоторое множество ее состояний <span\nclass=\"math inline\">\\(F\\)</span>. <em>Основная (глобальная) функция\nпереходов однородной структуры</em> - это <span\nclass=\"math inline\">\\(\\Phi: F \\to F\\)</span>, такая, что <span\nclass=\"math display\">\\[\\Phi(f)(\\alpha) = \\varphi(f(\\alpha), f(\\alpha +\n\\alpha_1), \\ldots, f(\\alpha + \\alpha_{h - 1})), \\,\\,\\,\\, f \\in F,\n\\,\\,\\,\\, \\alpha \\in \\mathbb{Z}^k\\]</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Поведение однородной структуры",
+        "data": "*Поведение однородной структуры* - это последовательность ее [состояний](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-2) $f_0, f_1, f_2, \\ldots$, такая, что $f_{i + 1} = \\Phi(f_i)\\,\\,\\,\\, \\forall i$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-34",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-34\">Определение:</a></strong><p><em>Поведение однородной структуры</em> - это последовательность ее\n<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-2\">состояний</a>\n<span class=\"math inline\">\\(f_0, f_1, f_2, \\ldots\\)</span>, такая, что\n<span class=\"math inline\">\\(f_{i + 1} = \\Phi(f_i)\\,\\,\\,\\, \\forall\ni\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Конфигурация однородной структуры",
+        "data": "*Конфигурация однородной структуры* - это такое ее [состояние](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-2), при котором только конечное число клеток имеют ненулевое значение.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-35",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-35\">Определение:</a></strong><p><em>Конфигурация однородной структуры</em> - это такое ее <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-2\">состояние</a>,\nпри котором только конечное число клеток имеют ненулевое значение.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "квадратная",
+        "data": "Однородная структура $\\sigma = (\\mathbb{Z}^2, E_k, V, \\varphi)$, у которой $V(\\alpha)$ квадрат со стороной $2\\cdot m + 1$ с центром в $\\alpha, \\,\\,\\,\\, \\alpha \\in \\mathbb{Z}^2$ - *квадратная*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-36",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-36\">Определение:</a></strong><p>Однородная структура <span class=\"math inline\">\\(\\sigma =\n(\\mathbb{Z}^2, E_k, V, \\varphi)\\)</span>, у которой <span\nclass=\"math inline\">\\(V(\\alpha)\\)</span> квадрат со стороной <span\nclass=\"math inline\">\\(2\\cdot m + 1\\)</span> с центром в <span\nclass=\"math inline\">\\(\\alpha, \\,\\,\\,\\, \\alpha \\in \\mathbb{Z}^2\\)</span>\n- <em>квадратная</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "окрестность квадрата",
+        "data": "Пусть $K \\subset \\mathbb{Z}^2$ - квадрат. $V(K) = \\displaystyle\\bigcup_{\\alpha \\in K}V(\\alpha)$ - *окрестность квадрата*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-37",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-37\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(K \\subset \\mathbb{Z}^2\\)</span> -\nквадрат. <span class=\"math inline\">\\(V(K) = \\displaystyle\\bigcup_{\\alpha\n\\in K}V(\\alpha)\\)</span> - <em>окрестность квадрата</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Состояние окрестности квадрата конфигурация неконструируемая",
+        "data": "*Состояние окрестности квадрата* - это функция $f: V(K) \\to E_k$. Функция $g = \\Phi_K(f)$ - это ограничение глобальной функции переходов, определенной на состояниях окрестности квадрата на сам квадрат.<br><br>Состояние квадрата - *конфигурация*.<br><br>Если конфигурация квадрата не принадлежит множеству значений $\\Phi_K$, то она *неконструируемая*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-38",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-38\">Определение:</a></strong><p><em>Состояние окрестности квадрата</em> - это функция <span\nclass=\"math inline\">\\(f: V(K) \\to E_k\\)</span>. Функция <span\nclass=\"math inline\">\\(g = \\Phi_K(f)\\)</span> - это ограничение\nглобальной функции переходов, определенной на состояниях окрестности\nквадрата на сам квадрат.<br><br>Состояние квадрата -\n<em>конфигурация</em>.<br><br>Если конфигурация квадрата не принадлежит\nмножеству значений <span class=\"math inline\">\\(\\Phi_K\\)</span>, то она\n<em>неконструируемая</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "взаимностираемые",
+        "data": "Пусть $f_1$ и $f_2$ - конфигурации квадрата $V(V(K))$. Если <br><br>1. ${f_1}_{|K} \\ne {f_2}_{|K}$<br>2. ${f_1}_{|V(V(K))\\setminus K} = {f_2}_{|V(V(K))\\setminus K}$<br>3. $\\Phi_{V(K)}(f_1)_{|K} = \\Phi_{V(K)}(f_2)_{|K}$, то конфигурации $f_1$ и $f_2$ - *взаимностираемые*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-39",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-automata#definition-39\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f_1\\)</span> и <span\nclass=\"math inline\">\\(f_2\\)</span> - конфигурации квадрата <span\nclass=\"math inline\">\\(V(V(K))\\)</span>. Если <br><br>1. <span\nclass=\"math inline\">\\({f_1}_{|K} \\ne {f_2}_{|K}\\)</span><br>2. <span\nclass=\"math inline\">\\({f_1}_{|V(V(K))\\setminus K} =\n{f_2}_{|V(V(K))\\setminus K}\\)</span><br>3. <span\nclass=\"math inline\">\\(\\Phi_{V(K)}(f_1)_{|K} =\n\\Phi_{V(K)}(f_2)_{|K}\\)</span>, то конфигурации <span\nclass=\"math inline\">\\(f_1\\)</span> и <span\nclass=\"math inline\">\\(f_2\\)</span> - <em>взаимностираемые</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "$E_k = \\{0, 1, \\ldots, k - 1\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-0\">Определение:</a></strong><p><span class=\"math inline\">\\(E_k = \\{0, 1, \\ldots, k -\n1\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "$E_k^n = E_k \\times \\ldots \\times E_k$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-1\">Определение:</a></strong><p><span class=\"math inline\">\\(E_k^n = E_k \\times \\ldots \\times\nE_k\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "функция значной логики",
+        "data": "$f: E_k \\times \\ldots \\times E_k \\to E_k$ - *функция* $k$ - *значной логики*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">Определение:</a></strong><p><span class=\"math inline\">\\(f: E_k \\times \\ldots \\times E_k \\to\nE_k\\)</span> - <em>функция</em> <span class=\"math inline\">\\(k\\)</span> -\n<em>значной логики</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех функций $k$ - [значной логики](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2) обозначается $P_k$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-3\">Определение:</a></strong><p>Множество всех функций <span class=\"math inline\">\\(k\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">значной\nлогики</a> обозначается <span class=\"math inline\">\\(P_k\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "большая индикаторная функция",
+        "data": "(*большая индикаторная функция*) $J_{i}(x) = \\begin{cases}k - 1, x = i\\\\0, x \\ne i\\end{cases}$",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-19",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-19\">Определение:</a></strong><p>(<em>большая индикаторная функция</em>) <span\nclass=\"math inline\">\\(J_{i}(x) = \\begin{cases}k - 1, x = i\\\\0, x \\ne\ni\\end{cases}\\)</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "полна",
+        "data": "Система функций $k$ - [значной логики](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2) *полна*, если с помощью [суперпозиций](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-1) из нее можно получить любую функцию $P_k$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-4\">Определение:</a></strong><p>Система функций <span class=\"math inline\">\\(k\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">значной\nлогики</a> <em>полна</em>, если с помощью <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-4#definition-1\">суперпозиций</a>\nиз нее можно получить любую функцию <span\nclass=\"math inline\">\\(P_k\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "функция Вебба",
+        "data": "$V(x, y) = \\max(x, y) + 1$ - *функция Вебба*.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-5\">Определение:</a></strong><p><span class=\"math inline\">\\(V(x, y) = \\max(x, y) + 1\\)</span> -\n<em>функция Вебба</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "замыкание",
+        "data": "Пусть $F$ система функций $k$-[значной логики](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2). *замыкание* $F$ - это множество всех функций из $P_k$, которые можно получить суперпозициями из функций $F$. Обозначается: $[F]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-6\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(F\\)</span> система функций <span\nclass=\"math inline\">\\(k\\)</span>-<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">значной\nлогики</a>. <em>замыкание</em> <span class=\"math inline\">\\(F\\)</span> -\nэто множество всех функций из <span class=\"math inline\">\\(P_k\\)</span>,\nкоторые можно получить суперпозициями из функций <span\nclass=\"math inline\">\\(F\\)</span>. Обозначается: <span\nclass=\"math inline\">\\([F]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "замкнута",
+        "data": "Система $F$ функций $k$-[значной логики](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2) *замкнута*, если $[F] = F$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-7\">Определение:</a></strong><p>Система <span class=\"math inline\">\\(F\\)</span> функций <span\nclass=\"math inline\">\\(k\\)</span>-<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">значной\nлогики</a> <em>замкнута</em>, если <span class=\"math inline\">\\([F] =\nF\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "сохраняет множество",
+        "data": "Функция $k$-[значной логики](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2) $f$ *сохраняет множество* $U \\subset E_k$, если $\\forall \\alpha_1, \\ldots, \\alpha_n \\in U \\,\\,\\,\\, f(\\alpha_1, \\ldots, \\alpha_n) \\in U$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-8",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-8\">Определение:</a></strong><p>Функция <span class=\"math inline\">\\(k\\)</span>-<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">значной\nлогики</a> <span class=\"math inline\">\\(f\\)</span> <em>сохраняет\nмножество</em> <span class=\"math inline\">\\(U \\subset E_k\\)</span>, если\n<span class=\"math inline\">\\(\\forall \\alpha_1, \\ldots, \\alpha_n \\in U\n\\,\\,\\,\\, f(\\alpha_1, \\ldots, \\alpha_n) \\in U\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Глубина формулы",
+        "data": "Пусть задан [алфавит](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7) $(X, S)$ с [сигнатурой](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0) $\\Sigma$. *Глубина формулы* $\\Phi \\,\\,\\,\\, \\operatorname{depth}(\\Phi)$ равна",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-9",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-9\">Определение:</a></strong><p>Пусть задан <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-7\">алфавит</a>\n<span class=\"math inline\">\\((X, S)\\)</span> с <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-1-09.02.23#definition-0\">сигнатурой</a>\n<span class=\"math inline\">\\(\\Sigma\\)</span>. <em>Глубина формулы</em>\n<span class=\"math inline\">\\(\\Phi \\,\\,\\,\\,\n\\operatorname{depth}(\\Phi)\\)</span> равна</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Последовательность Кузнецова",
+        "data": "Пусть дано множество функций $k$-значной логики $F$. *Последовательность Кузнецова* системы $F$ - это последовательность классов $G_0, G_1, \\ldots$, где $G_i$ состоит из всех функций $k$-[значной логики](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2) от двух переменных, таких, что [глубина](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-9) соответствующих им формул не превосходит $i$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-10",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-10\">Определение:</a></strong><p>Пусть дано множество функций <span\nclass=\"math inline\">\\(k\\)</span>-значной логики <span\nclass=\"math inline\">\\(F\\)</span>. <em>Последовательность Кузнецова</em>\nсистемы <span class=\"math inline\">\\(F\\)</span> - это последовательность\nклассов <span class=\"math inline\">\\(G_0, G_1, \\ldots\\)</span>, где <span\nclass=\"math inline\">\\(G_i\\)</span> состоит из всех функций <span\nclass=\"math inline\">\\(k\\)</span>-<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">значной\nлогики</a> от двух переменных, таких, что <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-9\">глубина</a>\nсоответствующих им формул не превосходит <span\nclass=\"math inline\">\\(i\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Предел последовательности Кузнецова",
+        "data": "*Предел последовательности Кузнецова* - это $G$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-11",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-11\">Определение:</a></strong><p><em>Предел последовательности Кузнецова</em> - это <span\nclass=\"math inline\">\\(G\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "селекторная функция",
+        "data": "$g^p_i(x_1, \\ldots, x_p) \\,\\,\\,\\, g^p_i(\\alpha_1, \\ldots, \\alpha_p) = \\alpha_i$ - *селекторная функция* от $p$ переменных.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-12",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-12\">Определение:</a></strong><p><span class=\"math inline\">\\(g^p_i(x_1, \\ldots, x_p) \\,\\,\\,\\,\ng^p_i(\\alpha_1, \\ldots, \\alpha_p) = \\alpha_i\\)</span> - <em>селекторная\nфункция</em> от <span class=\"math inline\">\\(p\\)</span> переменных.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "сохраняет",
+        "data": "Пусть $K$ содержит все [селекторные функции](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2) от $p$ переменных и некоторый набор функций от $p$ переменных. Функция $f(x_1, \\ldots, x_n)$ *сохраняет* $K$, если $\\forall h_1, \\ldots, h_n, \\,\\,\\,\\, h_i \\in K \\,\\,\\,\\, f(h_1(x_1, \\ldots, x_p), \\ldots, h_n(x_1, \\ldots, x_p)) \\in K$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-13",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-13\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(K\\)</span> содержит все <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">селекторные\nфункции</a> от <span class=\"math inline\">\\(p\\)</span> переменных и\nнекоторый набор функций от <span class=\"math inline\">\\(p\\)</span>\nпеременных. Функция <span class=\"math inline\">\\(f(x_1, \\ldots,\nx_n)\\)</span> <em>сохраняет</em> <span class=\"math inline\">\\(K\\)</span>,\nесли <span class=\"math inline\">\\(\\forall h_1, \\ldots, h_n, \\,\\,\\,\\, h_i\n\\in K \\,\\,\\,\\, f(h_1(x_1, \\ldots, x_p), \\ldots, h_n(x_1, \\ldots, x_p))\n\\in K\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $K$ содержит все [селекторные функции](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2) от $p$ переменных и некоторый набор функций от $p$ переменных. Множество всех функций, [сохраняющих](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-3) $K$, обозначается $U[K]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-14",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-14\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(K\\)</span> содержит все <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">селекторные\nфункции</a> от <span class=\"math inline\">\\(p\\)</span> переменных и\nнекоторый набор функций от <span class=\"math inline\">\\(p\\)</span>\nпеременных. Множество всех функций, <a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-3\">сохраняющих</a>\n<span class=\"math inline\">\\(K\\)</span>, обозначается <span\nclass=\"math inline\">\\(U[K]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "существенная",
+        "data": "Функция $f$ $k$-[значной логики](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2) *существенная*, если она существенно зависит более чем от одной переменной.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-15",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-15\">Определение:</a></strong><p>Функция <span class=\"math inline\">\\(f\\)</span> <span\nclass=\"math inline\">\\(k\\)</span>-<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">значной\nлогики</a> <em>существенная</em>, если она существенно зависит более чем\nот одной переменной.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Квадрат",
+        "data": "*Квадрат* в $k$-значной логике - это $4$ набора $(\\alpha_1, \\ldots, \\alpha_{i - 1}, x, \\alpha_{i + 1}, \\ldots, \\alpha_{j - 1}, y, \\alpha_{j + 1}, \\ldots, \\alpha_n), \\,\\,\\,\\, x \\in \\{p_1, p_2\\}, \\,\\,\\,\\, y \\in \\{q_1, q_2\\}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-16",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-16\">Определение:</a></strong><p><em>Квадрат</em> в <span class=\"math inline\">\\(k\\)</span>-значной\nлогике - это <span class=\"math inline\">\\(4\\)</span> набора <span\nclass=\"math inline\">\\((\\alpha_1, \\ldots, \\alpha_{i - 1}, x, \\alpha_{i +\n1}, \\ldots, \\alpha_{j - 1}, y, \\alpha_{j + 1}, \\ldots, \\alpha_n),\n\\,\\,\\,\\, x \\in \\{p_1, p_2\\}, \\,\\,\\,\\, y \\in \\{q_1, q_2\\}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "шефферова",
+        "data": "Функция $f$ $k$-[значной логики](https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2) *шефферова*, если $[\\{f\\}] = P_k$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-17",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-17\">Определение:</a></strong><p>Функция <span class=\"math inline\">\\(f\\)</span> <span\nclass=\"math inline\">\\(k\\)</span>-<a\nhref=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-2\">значной\nлогики</a> <em>шефферова</em>, если <span class=\"math inline\">\\([\\{f\\}]\n= P_k\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Базис системы функций $F$ $k$-значной логики - это подмножество $U \\subset F$, такое, что $[U] = F$ и $\\forall f \\in U \\,\\,\\,\\, [U \\\\ \\{f\\}] \\ne F$.",
+        "url": "https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-18",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/theory-of-discrete-functions/publish/lection-k#definition-18\">Определение:</a></strong><p>Базис системы функций <span class=\"math inline\">\\(F\\)</span> <span\nclass=\"math inline\">\\(k\\)</span>-значной логики - это подмножество <span\nclass=\"math inline\">\\(U \\subset F\\)</span>, такое, что <span\nclass=\"math inline\">\\([U] = F\\)</span> и <span\nclass=\"math inline\">\\(\\forall f \\in U \\,\\,\\,\\, [U \\\\ \\{f\\}] \\ne\nF\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    }
+]

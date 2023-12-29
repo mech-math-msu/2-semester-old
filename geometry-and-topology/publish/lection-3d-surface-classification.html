@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#топологическая-классификация-многогранных-поверхностей"
+id="toc-топологическая-классификация-многогранных-поверхностей">Топологическая
+классификация многогранных поверхностей</a>
+<ul>
+<li><a href="#модельные-поверхности"
+id="toc-модельные-поверхности">Модельные поверхности</a></li>
+<li><a href="#ориентация-многогранных-поверхностей"
+id="toc-ориентация-многогранных-поверхностей">Ориентация многогранных
+поверхностей</a></li>
+<li><a href="#эйлерова-характеристика"
+id="toc-эйлерова-характеристика">Эйлерова характеристика</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1
+id="топологическая-классификация-многогранных-поверхностей">Топологическая
+классификация многогранных поверхностей</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> <em>Связная
+многогранная поверхность</em> <span
+class="math inline">\(\mathcal{F}\)</span> в <span
+class="math inline">\(\mathbb{R}^n\)</span> - это конечное семейство
+<span class="math inline">\(\{F_i \subset \mathbb{R}^n\}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-1">пространственных
+многоугольников</a> (<em>граней</em>), для которых выполнены следующие
+условия:</p>
+<ol type="1">
+<li><p><span class="math inline">\(\forall i \ne j \,\,\,\, F_i \cap
+F_j\)</span> или пусто, или состоит из одной общей для <span
+class="math inline">\(F_i\)</span> и <span
+class="math inline">\(F_j\)</span> вершины, или состоит из одного общего
+для <span class="math inline">\(F_i\)</span> и <span
+class="math inline">\(F_j\)</span> ребра <span
+class="math inline">\(e\)</span> (в этом случае грани <span
+class="math inline">\(F_i\)</span> и <span
+class="math inline">\(F_j\)</span> <em>смежны по ребру</em> <span
+class="math inline">\(e\)</span>).</p></li>
+<li><p>Для каждого ребра <span class="math inline">\(e \in F_i\)</span>
+существует не более одного многоугольника <span
+class="math inline">\(F_j \,\,\,\, j \ne i\)</span> смежного с <span
+class="math inline">\(F_i\)</span> по ребру <span
+class="math inline">\(e\)</span>.</p></li>
+<li><p>Для любых многогранников <span class="math inline">\(F_i\)</span>
+и <span class="math inline">\(F_j, \,\,\,\, i \ne j\)</span> существует
+последовательность многоугольников <span class="math inline">\(F_i =
+F_{i1}, F_{i2}, \ldots, F_{is} = F_j\)</span>, такие что <span
+class="math inline">\(\forall j \in \{1, \ldots s - 1\} \,\,\,\,
+F_{ij}\)</span> смежен с <span class="math inline">\(F_{ij+1}\)</span>
+по некоторому ребру. Такая последовательность - <em>цепочка
+многоугольников, соединяющая</em> <span
+class="math inline">\(F_i\)</span> и <span
+class="math inline">\(F_j\)</span>.</p></li>
+<li><p>Для любых двух многогранников, пересекающихся по вершине
+существует цепочка, соединяющая их, такая, что каждый из
+многоугольников, входящих в цепочку, содержит эту вершину.</p></li>
+</ol>
+<p>(Убрали требование «никакие две грани не лежат в одной
+плоскости»)</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(\mathcal{F} = \{F_i\}\)</span> - <a
+href="#definition-0">многогранная поверхность</a> <span
+class="math inline">\(\mathcal{F}\)</span> - это <em>вершины и
+ребра</em> поверхности <span
+class="math inline">\(\mathcal{F}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(\mathcal{F} = \{F_i\}\)</span> - <a
+href="#definition-1">многогранная поверхность</a>. Вершина (ребро),
+принадлежащая грани, <em>инцидентна</em> этой грани. Ребро инцидентное
+ровно одной грани - <em>граничное</em>, иначе - <em>внутреннее</em>.<br>
+Если у <span class="math inline">\(\mathcal{F}\)</span> нет граничных
+ребер, то <span class="math inline">\(\mathcal{F}\)</span> -
+<em>замкнутая</em>.</p>
+<p><strong>Определение:</strong><a name="definition-9"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">Связная
+многогранная поверхность</a> в <span
+class="math inline">\(\mathbb{R}^n\)</span> - <span
+class="math inline">\(n\)</span>-<em>мерная</em>. (хотя она в <span
+class="math inline">\(n + 1\)</span>)</p>
+<p>Поверхность <span class="math inline">\(\mathcal{F}\)</span>
+подмножество <span class="math inline">\(\mathbb{R}^3\)</span>, поэтому
+на нем можно задать <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-22">индуцированную</a>
+из <span class="math inline">\(\mathbb{R}^3\)</span> топологию.</p>
+<p>Можно задать топологию на <span
+class="math inline">\(\mathcal{F}\)</span>, склеив по ребрам несвязную
+сумму индуцированных из плоскости топологий на гранях.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Так как
+теперь в определении <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">поверхности</a>
+не нужно, чтобы грани не лежали в одной плоскости, можем разбить каждую
+грань на треугольники. Подученная при этом поверхность -
+<em>триангулированная</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Любая <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">связная</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-2">замкнутая</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">многогранная
+поверхность</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9">гомеоморфна</a>
+некоторой поверхности, полученной из многоугольника <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-20">склейкой</a>
+его сторон.</p>
+<p><em>Доказательство:</em></p>
+<center>
+<object data="img/surface.svg" width="300" height="300">
+</object>
+</center>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(\mathcal{F}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">связная
+многогранная поверхность</a>. Пометим все ребра <span
+class="math inline">\(\mathcal{F}\)</span> стрелками и буквами. Будем
+обходить многогранник по его границе и записывать последовательно буквы
+ребер по правилу: если идем в направлении стрелки, то саму букву, иначе
+букву в степени <span class="math inline">\(-1\)</span>. Полученная
+последовательность букв - <em>слово склейки</em> поверхности <span
+class="math inline">\(\mathcal{F}\)</span>.</p>
+<h2 id="модельные-поверхности">Модельные поверхности</h2>
+<hr />
+<p><strong>Обозначения:</strong></p>
+<p><span class="math inline">\(S^2\)</span> - сфера.</p>
+<p><span class="math inline">\(\mu\)</span> - пленка Мёбиуса.</p>
+<p><span class="math inline">\(D^2\)</span> - диск (круг).</p>
+<p><strong>Определение:</strong><a name="definition-5"></a>
+<em>Элементарные операции</em> с поверхностями - это: <br>1.
+<em>Вырезание диска</em>.<br>2. <em>Приклеивание ручки</em>.<br>1.
+<em>Вклейка пленки Мёбиуса</em>.</p>
+<p><strong>Определение:</strong><a name="definition-6"></a> <em>Сфера
+с</em> <span class="math inline">\(g\)</span> <em>ручками</em> - это
+поверхность, полученная <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-5">приклеиванием
+к сфере <span class="math inline">\(g\)</span> ручек</a>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(M_g\)</span></p>
+<p><strong>Определение:</strong><a name="definition-7"></a> <em>Сфера
+с</em> <span class="math inline">\(m\)</span> <em>пленками Мёбиуса</em>
+- это поверхность, полученная <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-5">вклейкой
+в сферу <span class="math inline">\(m\)</span> пленок Мёбиуса</a>.</p>
+<p><strong>Обозначается:</strong> <span
+class="math inline">\(N_m\)</span></p>
+<p><strong>Замечание:</strong> Сфера с <span
+class="math inline">\(0\)</span> ручками - это просто сфера. Сферы с
+пленками Мёбиуса рассматриваются для <span class="math inline">\(m \ge
+1\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-4">Слово
+склейки</a> для <span class="math inline">\(M_g\)</span> имеет вид <span
+class="math inline">\(a_1b_1a_1^{-1}b_1^{-1}\ldots
+a_kb_ka_k^{-1}b_k^{-1}\)</span>, <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-4">слово
+склейки</a> для <span class="math inline">\(N_m\)</span> имеет вид <span
+class="math inline">\(a_1^2\ldots a_m^2\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-8"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-6">Сфера
+с <span class="math inline">\(g\)</span> ручками</a> и <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-7">сфера
+с <span class="math inline">\(m\)</span> пленками Мёбиуса</a> - это
+<em>модельные поверхности</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Каждая <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">связная</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-9">двумерная</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-2">замкнутая</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">многогранная
+поверхность</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9">гомеоморфна</a>
+одной из <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-8">модельных
+поверхностей</a>.</p>
+<p><em>Доказательство:</em> куча картинок <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="ориентация-многогранных-поверхностей">Ориентация многогранных
+поверхностей</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-10"></a> Пусть <span
+class="math inline">\(\mathcal{F}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">связная</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-2">замкнутая</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-9">двумерная</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">многогранная
+поверхность</a>. <span class="math inline">\(F_1, \ldots, F_m\)</span> -
+ее грани. У каждой грани можно задать <em>ориентацию</em> (направление
+обхода границы или задать <a
+href="https://analytic-geometry.github.io/chapters/#definition-26">ориентацию
+плоскости</a>, содержащей грань).<br> Пусть <span
+class="math inline">\(e\)</span> - ребро <span
+class="math inline">\(\mathcal{F}\)</span>. Оно инцидентно двум граням
+<span class="math inline">\(F_i\)</span> и <span
+class="math inline">\(F_j\)</span>, в которых задана ориентация, то есть
+на ребре <span class="math inline">\(e\)</span> указаны два направления.
+Если эти направления совпадают, то ориентации граней <span
+class="math inline">\(F_i\)</span> и <span
+class="math inline">\(F_j\)</span> - <em>согласованы</em>.</p>
+<p><strong>Определение:</strong><a name="definition-11"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">Многогранная
+поверхность</a> <em>ориентирована</em>, если у каждой ее грани задана <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-10">ориентация</a>
+и для каждой пары смежных граней ориентации <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-10">согласованы</a>.<br>
+Семейство согласованных ориентаций граней - <em>ориентация
+поверхности</em>.<br>Если существует ориентация поверхности, то
+поверхность - <em>ориентируемая</em>.</p>
+<p><strong>Определение:</strong><a name="definition-12"></a> Пусть <span
+class="math inline">\(\mathcal{F}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">связная</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-2">замкнутая</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-9">двумерная</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">многогранная
+поверхность</a>. Рассмотрим замкнутую <a href="#definition-0">цепочку
+граней</a> <span class="math inline">\(F_1, \ldots, F_m\)</span>
+(замкнутая - <span class="math inline">\(F_1\)</span> смежна с <span
+class="math inline">\(F_m\)</span>). Зададим на каждой грани цепочки
+ориентацию. Если ориентации <span class="math inline">\(F_1\)</span> и
+<span class="math inline">\(F_m\)</span> согласованы, то <em>цепочка
+сохраняет ориентацию</em>, в ином случае <em>цепочка обращает
+ориентацию</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">Связная</a>
+двумерная <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">многогранная
+поверхность</a> <span class="math inline">\(\mathcal{F}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-11">ориентируема</a>
+<span class="math inline">\(\Leftrightarrow\)</span> в <span
+class="math inline">\(\mathcal{F}\)</span> нет <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-12">цепочек
+обращающих ориентацию</a>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">Поверхность</a>,
+содержащая лист Мёбиуса, <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-1">неориентируема</a>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9">Гомеоморфные</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">многогранные
+поверхности</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-11">ориентируемы
+или неориентируемы</a> одновременно.</p>
+<h2 id="эйлерова-характеристика">Эйлерова характеристика</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-13"></a>
+<em>Эйлерова характеристика</em> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">многогранной
+поверхности</a> - это число <span class="math inline">\(v - e +
+f\)</span>, где <span class="math inline">\(v\)</span> - число вершин,
+<span class="math inline">\(e\)</span> - число ребер и <span
+class="math inline">\(f\)</span> - число граней поверхности.</p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-3">Эйлерова
+характеристика</a> любых поверхности не зависит от разбиения на грани и
+не меняется при <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9">гомеоморфизмах</a>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Если <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-0">многогранные
+поверхности</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9">гомеоморфны</a>
+разным <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-3d-surface-classification#definition-8">модельным
+поверхностям</a>, то они не <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9">гомеоморфны</a>.</p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

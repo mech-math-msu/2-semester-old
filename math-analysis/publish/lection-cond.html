@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#условный-экстремум" id="toc-условный-экстремум">Условный
+экстремум</a>
+<ul>
+<li><a href="#необходимое-условие-условного-экстремума"
+id="toc-необходимое-условие-условного-экстремума">Необходимое условие
+условного экстремума</a></li>
+</ul></li>
+<li><a
+href="#метод-множителей-лагранжа-для-нахождения-условного-экстремума"
+id="toc-метод-множителей-лагранжа-для-нахождения-условного-экстремума">Метод
+множителей Лагранжа для нахождения условного экстремума</a></li>
+</ul>
+</nav>
+</details>
+<h2 id="условный-экстремум">Условный экстремум</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(f, f_1, \ldots, f_m\)</span> определены в <span
+class="math inline">\(B(\mathbf{x_0}), \,\,\,\, \mathbf{x_0} \in
+\mathbb{R}^n\)</span>. Если <span class="math inline">\(\forall
+\mathbf{x} \in \{\mathbf{x} \in {B}(\mathbf{x_0}): \,\,\,\,
+f_i(\mathbf{x}) = 0, \forall i \in \{1, \ldots, m\}\} \,\,\,\,
+f(\mathbf{x_0}) &gt; f(\mathbf{x})\)</span>, то <span
+class="math inline">\(\mathbf{x_0}\)</span> - <em>условный максимум
+функции</em> <span class="math inline">\(f\)</span>. Система уравнений
+<span class="math inline">\(f_i(\mathbf{x}) = 0\)</span> - это
+<em>уравнения связи</em>.</p>
+<p>Пусть <span class="math inline">\(f, f_1, \ldots, f_m \in
+C^1(B(\mathbf{x_0}))\)</span>, <span class="math inline">\(m \le
+n\)</span> и <span class="math inline">\(\operatorname{rk}
+\left(\begin{array}{ccc} \frac{\partial f_1}{\partial x_1} &amp; \dots
+&amp; \frac{\partial f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp;
+\vdots \\ \frac{\partial f_m}{\partial x_1} &amp; \dots &amp;
+\frac{\partial f_m}{\partial x_n} \end{array}\right) = m \,\,\,\,
+\forall \mathbf{x} \in B(\mathbf{x_0})\)</span>.</p>
+<p><a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-dependency#corollary-0">По
+утверждению</a> система <span class="math inline">\(f_1, \ldots,
+f_m\)</span> - функционально независима. Так как ранг в каждой точке
+окрестности равен <span class="math inline">\(m\)</span>, существует
+матрица <span class="math inline">\(mxm\)</span>, состоящая из <span
+class="math inline">\(m\)</span> столбцов матрицы Якоби, такая, что ее
+определитель не <span class="math inline">\(0\)</span>. Без ограничения
+общности, считаем, что <span class="math inline">\(\det
+\left(\begin{array}{ccc} \frac{\partial f_1}{\partial x_{n - m + 1}}
+&amp; \dots &amp; \frac{\partial f_1}{\partial x_n} \\ \vdots &amp;
+\ddots &amp; \vdots \\ \frac{\partial f_m}{\partial x_{n - m + 1}} &amp;
+\dots &amp; \frac{\partial f_m}{\partial x_n} \end{array}\right) \ne
+0\)</span>.</p>
+<p>По теореме <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-implicit#theorem-1">о
+неявном отображении</a> существуют <span
+class="math inline">\(\varphi_1, \ldots, \varphi_m\)</span>, такие, что
+в некоторой окрестности точки <span
+class="math inline">\(\mathbf{x_0}\)</span></p>
+<p><span class="math display">\[x_{n - m + 1} = \varphi_1(x_1, \ldots,
+x_{x - m})\]</span> <span class="math display">\[\vdots\]</span> <span
+class="math display">\[x_{n} = \varphi_m(x_1, \ldots, x_{x -
+m})\]</span></p>
+<p>Подставим <span class="math inline">\(\varphi_i\)</span> в <span
+class="math inline">\(f\)</span>. Имеем</p>
+<p><span class="math display">\[g(x_1, \ldots, x_{n - m}) = f(x_1,
+\ldots, x_{n - m}, \varphi_1, \ldots, \varphi_m)\]</span></p>
+<p>То есть <span class="math inline">\(\mathbf{x_0}\)</span> точка
+условного экстремума <span class="math inline">\(f\)</span>, если <span
+class="math inline">\(\mathbf{x_0}\)</span> точка экстремума функции
+<span class="math inline">\(g\)</span>.</p>
+<h3 id="необходимое-условие-условного-экстремума">Необходимое условие
+условного экстремума</h3>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(f, f_1, \ldots, f_m \in
+C^1(B(\mathbf{x_0}))\)</span>, <span class="math inline">\(m \le
+n\)</span>, <span class="math inline">\(\operatorname{rk}
+\left(\begin{array}{ccc} \frac{\partial f_1}{\partial x_1} &amp; \dots
+&amp; \frac{\partial f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp;
+\vdots \\ \frac{\partial f_m}{\partial x_1} &amp; \dots &amp;
+\frac{\partial f_m}{\partial x_n} \end{array}\right) = m \,\,\,\,
+\forall \mathbf{x} \in B(\mathbf{x_0})\)</span> и <span
+class="math inline">\(f\)</span> имеет в точке <span
+class="math inline">\(\mathbf{x_0}\)</span> условный экстремум при
+условиях связи <span class="math inline">\(f_i(\mathbf{x}) = 0\)</span>.
+Тогда <span class="math inline">\(\operatorname{grad} f(\mathbf{x_0}),
+\operatorname{grad} f_1(\mathbf{x_0}),\ldots, \operatorname{grad}
+f_m(\mathbf{x_0})\)</span> - линейно зависимы.</p>
+<h2
+id="метод-множителей-лагранжа-для-нахождения-условного-экстремума">Метод
+множителей Лагранжа для нахождения условного экстремума</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(f, f_1, \ldots, f_m\)</span> определены в <span
+class="math inline">\(B(\mathbf{x_0})\)</span>. Функция <span
+class="math inline">\(\mathcal{L}(\lambda_1, \ldots, \lambda_m, x_1,
+\ldots, x_n) = f(\mathbf{x}) + \displaystyle \sum_{i = 1}^{m}\lambda_i
+\cdot f_i(\mathbf{x})\)</span> - <em>функция Лагранжа</em> системы <span
+class="math inline">\(f, f_1, \ldots, f_m\)</span>. <span
+class="math inline">\(\boldsymbol{\lambda} = (\lambda_1, \ldots,
+\lambda_n)\)</span> - <em>множители Лагранжа</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(f, f_1, \ldots, f_m \in
+C^1(B(\mathbf{x_0}))\)</span>, <span class="math inline">\(m \le
+n\)</span>, <span class="math inline">\(\operatorname{rk}
+\left(\begin{array}{ccc} \frac{\partial f_1}{\partial x_1} &amp; \dots
+&amp; \frac{\partial f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp;
+\vdots \\ \frac{\partial f_m}{\partial x_1} &amp; \dots &amp;
+\frac{\partial f_m}{\partial x_n} \end{array}\right) = m \,\,\,\,
+\forall \mathbf{x} \in B(\mathbf{x_0})\)</span> и <span
+class="math inline">\(f\)</span> имеет в точке <span
+class="math inline">\(\mathbf{x_0}\)</span> условный экстремум при
+условиях связи <span class="math inline">\(f_i(\mathbf{x}) = 0\)</span>.
+Тогда <span class="math inline">\(\exists \boldsymbol{\lambda}: \,\,\,\,
+d\mathcal{L}(\boldsymbol{\lambda}, \mathbf{x_0}) = 0\)</span>.</p>
+<p><em>Доказательство:</em> <a href="#theorem-0">Из теоремы</a> имеем
+<span class="math inline">\(\operatorname{grad} f(\mathbf{x_0}),
+\operatorname{grad} f_1(\mathbf{x_0}),\ldots, \operatorname{grad}
+f_m(\mathbf{x_0})\)</span> - линейно зависимы. Так как <span
+class="math inline">\(\operatorname{rk} J = m\)</span>, <span
+class="math inline">\(\operatorname{grad} f_1(\mathbf{x_0}),\ldots,
+\operatorname{grad} f_m(\mathbf{x_0})\)</span> - линейно независимы. А
+следовательно <span class="math inline">\(\exists \boldsymbol{\lambda}:
+\,\,\,\, \operatorname{grad}f = - \displaystyle \sum_{i =
+1}^{m}\lambda_i f_i\)</span>. Запишем дифференциал <span
+class="math inline">\(\mathcal{L}\)</span> в <span
+class="math inline">\((\boldsymbol{\lambda}, \mathbf{x_0})\)</span>:</p>
+<p><span class="math display">\[d\mathcal{L}(\boldsymbol{\lambda},
+\mathbf{x_0}) = d f(\mathbf{x_0}) + \displaystyle \sum_{i =
+1}^{m}\lambda_i df_i + \displaystyle \sum_{i =
+1}^{m}f_i(\mathbf{x})d\lambda_i \,\,\,\,\blacksquare\]</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (Достаточное
+условие условного экстремума) Пусть <span class="math inline">\(f, f_1,
+\ldots, f_m \in C^1(B(\mathbf{x_0}))\)</span>, <span
+class="math inline">\(m \le n\)</span>, <span
+class="math inline">\(\operatorname{rk} \left(\begin{array}{ccc}
+\frac{\partial f_1}{\partial x_1} &amp; \dots &amp; \frac{\partial
+f_1}{\partial x_n} \\ \vdots &amp; \ddots &amp; \vdots \\ \frac{\partial
+f_m}{\partial x_1} &amp; \dots &amp; \frac{\partial f_m}{\partial x_n}
+\end{array}\right) = m \,\,\,\, \forall \mathbf{x} \in
+B(\mathbf{x_0})\)</span>, <span
+class="math inline">\(d\mathcal{L}(\boldsymbol{\lambda}, \mathbf{x_0}) =
+0\)</span>. Тогда <span class="math inline">\(f\)</span> имеет в точке
+<span class="math inline">\(\mathbf{x_0}\)</span> условный экстремум при
+условиях связи <span class="math inline">\(f_i(\mathbf{x}) = 0\)</span>,
+если <span class="math inline">\(\exists \boldsymbol{\lambda}: \,\,\,\,
+d^2\mathcal{L}(\boldsymbol{\lambda}, если \mathbf{x_0})\)</span>
+положительно или отрицательно определена, иначе экстремума нет.</p>
+<p><em>Доказательство:</em></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

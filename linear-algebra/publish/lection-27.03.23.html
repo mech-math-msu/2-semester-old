@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#процесс-ортогонализации-грама-шмидтасуществование-ортогонального-базиса"
+id="toc-процесс-ортогонализации-грама-шмидтасуществование-ортогонального-базиса">Процесс
+ортогонализации Грама-Шмидта(существование ортогонального базиса)</a>
+<ul>
+<li><a href="#ортогональное-дополнение"
+id="toc-ортогональное-дополнение">Ортогональное дополнение</a></li>
+<li><a href="#расстояния-в-евклидовом-пространстве"
+id="toc-расстояния-в-евклидовом-пространстве">Расстояния в евклидовом
+пространстве</a></li>
+<li><a href="#изоморфизм-евклидовых-пространств"
+id="toc-изоморфизм-евклидовых-пространств">Изоморфизм евклидовых
+пространств</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1
+id="процесс-ортогонализации-грама-шмидтасуществование-ортогонального-базиса">Процесс
+ортогонализации Грама-Шмидта(существование ортогонального базиса)</h1>
+<hr />
+<p>Пусть Пусть <span class="math inline">\(V\)</span> - евклидово
+пространство. Векторы <span class="math inline">\(\{f_1, \ldots,
+f_m\}\)</span> - базис <span class="math inline">\(V\)</span>.</p>
+<p>Построим ортогональный базис <span class="math inline">\(\{e_1,
+\ldots, e_m\}\)</span>.</p>
+<p><span class="math inline">\(e_1 = f_1\)</span> <span
+class="math inline">\(e_2 = f_2 + \lambda e_1\)</span>, причем <span
+class="math inline">\((e_2, e_1) = 0 = (f_2, e_1) + \lambda (e_1, e_1)
+\Rightarrow \lambda = -\frac{(f_2, e_1)}{(e_1, e_1)}\)</span>, можем
+делить на <span class="math inline">\((e_1, e_1)\)</span>, так как <span
+class="math inline">\(e_1 \ne 0\)</span> <span
+class="math inline">\(\vdots\)</span> <span class="math inline">\(e_n =
+f_n - \lambda_1 e_1 - \lambda_2 e_2 - \ldots - \lambda_{n - 1} e_{n -
+1}\)</span>, <span class="math inline">\(\forall i \in \{1, \ldots, n -
+1\} \,\,\,\, (e_n, e_i) = 0 = (f_n, e_i) - \lambda_i (e_i,
+e_i)\)</span>, все остальные коэффиценты равны нулю, так как <span
+class="math inline">\(e_1, \ldots, e_{n - 1}\)</span> - ортогональны, а
+следовательно <span class="math inline">\(\lambda_i = \frac{(f_n,
+e_i)}{(e_i, e_i)}\)</span>, <span class="math inline">\(e_i \ne
+0\)</span>, так как …</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> В любом <span
+class="math inline">\(n\)</span>-мерном евклидовом пространстве
+существоет ортогональный базис.</p>
+<p><em>Доказательство:</em> см. выше <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Пусть <span
+class="math inline">\(f = \{f_1, \ldots, f_n\}\)</span> - базис
+евклидова пространства <span class="math inline">\(V\)</span>. <span
+class="math inline">\(e = \{e_1, \ldots, e_n\}\)</span> - ортогональный
+базис <span class="math inline">\(V\)</span>, полученный
+ортогонализацией Грама-Шмидта. Тогда матрица перехода от <span
+class="math inline">\(f\)</span> к <span
+class="math inline">\(e\)</span> унитреугольная.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> (о <span
+class="math inline">\(QR\)</span>- разложении) Любая невырожденная
+квадратная матрица <span class="math inline">\(A\)</span> представима в
+виде произведения <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-4">унитреугольной</a>
+матрицы <span class="math inline">\(Q\)</span> и <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-9">ортогональной</a>
+матрицы <span class="math inline">\(R\)</span>.</p>
+<p><em>Доказательство:</em> Невырожденная матрица - это матрица перехода
+между базисами <span class="math inline">\(e\)</span> и <span
+class="math inline">\(f\)</span> некоторого евклидова пространства, то
+есть <span class="math inline">\(A = C_{e \to f}\)</span>. Найдем
+ортогональный базис <span class="math inline">\(e’\)</span> процессом
+ортогонализации Грама-Шмидта. Матрица перехода от <span
+class="math inline">\(e\)</span> к <span
+class="math inline">\(e’\)</span> унитреугольная, а матрица перехода от
+<span class="math inline">\(e’\)</span> к <span
+class="math inline">\(f\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#statement-6">ортогональная</a>.
+<span class="math inline">\(C_{e \to f} = C_{e \to e’} \cdot C_{e’ \to
+f} \,\,\,\,\blacksquare\)</span></p>
+<h2 id="ортогональное-дополнение">Ортогональное дополнение</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> <span
+class="math inline">\(V\)</span> - евклидово пространство, <span
+class="math inline">\(U\)</span> - его подпространство. Множество <span
+class="math inline">\(U^{\perp} = \{x \in V: \,\,\,\, (x, u) = 0
+\,\,\,\, \forall u \in U\}\)</span> - <em>ортогональное дополнение</em>
+подпространства <span class="math inline">\(U\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> <span
+class="math inline">\(V\)</span> - евклидово пространство, <span
+class="math inline">\(U\)</span> - его подпространство. Тогда <span
+class="math inline">\(U^{\perp}\)</span> - подпространство <span
+class="math inline">\(V\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> <span
+class="math inline">\(V\)</span> - евклидово пространство, <span
+class="math inline">\(U\)</span> - его подпространство. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(U \oplus U^{\perp}\)</span>, в частности
+<span class="math inline">\(U \cap U^{\perp} = \{0\}\)</span></li>
+<li><span class="math inline">\(V = U \oplus U^{\perp}\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Пусть <span class="math inline">\(\exists x \in U \cap U^{\perp}
+\Rightarrow (x, x) = 0 \Rightarrow x = 0
+\,\,\,\,\blacksquare\)</span></li>
+<li>Пусть <span class="math inline">\(\{e_1, \ldots, e_m\}\)</span>
+ортогональный базис в <span class="math inline">\(U\)</span>. Дополним
+его до базиса <span class="math inline">\(V\)</span> векторами <span
+class="math inline">\(\{f_{m + 1}, \ldots, f_n\}\)</span>. Процессом
+ортогонализации Грама-Шмидта получим ортогональный базис <span
+class="math inline">\(\{e_1, \ldots, e_n\}\)</span> (векторы <span
+class="math inline">\(e_1, \ldots, e_m\)</span> при ортогонализации не
+изменятся, так как ортогональны). Рассмотрим вектор <span
+class="math inline">\(x \in U^{\perp}\)</span>. <span
+class="math inline">\(x \in V \Rightarrow x = x_1 e_1 + \ldots + x_n
+e_n\)</span>, <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#statement-5">где</a>
+<span class="math inline">\(x_i = (x, e_i)\)</span>. <span
+class="math inline">\(\forall u \in U \,\,\,\, (x, u) = 0 \Rightarrow
+\forall i \in \{1, \ldots, m\} \,\,\,\, (x, e_i) = 0 \Rightarrow \forall
+x \in U^{\perp} \,\,\,\, x \in &lt;e_{m + 1}, \ldots, e_n&gt;
+\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p><strong>Следствие:</strong><a name="corollary-1"></a> <span
+class="math inline">\(V\)</span> - евклидово пространство, <span
+class="math inline">\(U\)</span> - его подпространство. Тогда любой
+вектор <span class="math inline">\(x\)</span> из <span
+class="math inline">\(V\)</span> единственным образом представляется в
+виде суммы <span class="math inline">\(u + u^{\perp}\)</span>, где <span
+class="math inline">\(u \in U\)</span> и <span
+class="math inline">\(u^{\perp} \in U^{\perp}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a></p>
+<p><span class="math inline">\(u\)</span> - <em>ортогональная проекция
+вектора</em> <span class="math inline">\(x\)</span> <em>на</em> <span
+class="math inline">\(U\)</span>. Обозначается: <span
+class="math inline">\(\operatorname{пр}_{U}x\)</span>. <span
+class="math inline">\(u^{\perp}\)</span> - <em>ортогональная
+составляющая вектора</em> <span class="math inline">\(x\)</span>.
+Обозначается: <span
+class="math inline">\(\operatorname{ort}_{U}x\)</span>.</p>
+<h2 id="расстояния-в-евклидовом-пространстве">Расстояния в евклидовом
+пространстве</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(V\)</span> - евклидово пространство.</p>
+<p><em>Расстояние между векторами</em> <span class="math inline">\(x, y
+\in V\)</span> - это <span class="math inline">\(\rho(x, y) = |x -
+y|\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(V\)</span> - евклидово пространство.</p>
+<p><em>Расстояние между подпространствами</em> <span
+class="math inline">\(X, Y \subset V\)</span> - это <span
+class="math inline">\(\inf\{\rho(x, y): \,\,\,\, x \in X, \,\,\,\, y \in
+Y\}\)</span>.</p>
+<p><em>Расстояние между вектором</em> <span class="math inline">\(x \in
+V\)</span> <em>и подпространством</em> <span class="math inline">\(U
+\subset V\)</span> - это <span class="math inline">\(\rho(x, U) =
+\inf\{\rho(x, u): \,\,\,\, u \in U\}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(V\)</span> - евклидово пространство.</p>
+<p><em>Угол между вектором</em> <span class="math inline">\(x \in
+V\)</span> <em>и подпространством</em> <span class="math inline">\(U
+\subset V\)</span> - это наименьший из всех углов между <span
+class="math inline">\(x\)</span> и вектором из <span
+class="math inline">\(U\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(V\)</span> - евклидово пространство, <span
+class="math inline">\(U\)</span> - попространство <span
+class="math inline">\(V\)</span>, <span class="math inline">\(x \in
+V\)</span>. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(\rho(x, U) =
+|\operatorname{ort}_Ux|\)</span></li>
+<li>Угол между <span class="math inline">\(x\)</span> и <span
+class="math inline">\(U\)</span> равен углу между <span
+class="math inline">\(x\)</span> и <span
+class="math inline">\(\operatorname{пр}_{U}x\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em> неприятно.</p>
+<h2 id="изоморфизм-евклидовых-пространств">Изоморфизм евклидовых
+пространств</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-5"></a> Евклидовы
+пространства <span class="math inline">\(U\)</span> и <span
+class="math inline">\(W\)</span> <em>изоморфны</em>, если существует
+отображение <span class="math inline">\(\varphi: U \to W\)</span>:</p>
+<ol type="1">
+<li><span class="math inline">\(\varphi\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-9">изоморфизм</a>
+<span class="math inline">\(U\)</span> и <span
+class="math inline">\(W\)</span>, как векторных пространств.</li>
+<li><span class="math inline">\(\forall x, y \in U \,\,\,\, (x, y) =
+(\varphi(x), \varphi(y))\)</span></li>
+</ol>
+<p>Обозначается: <span class="math inline">\(U \cong W\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(U\)</span> и <span
+class="math inline">\(W\)</span> - конечномерные евклидовы пространства.
+Тогда <span class="math inline">\(U \cong W \Leftrightarrow \dim U =
+\dim V\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span></p>
+<p><span class="math inline">\(U \cong W \Rightarrow U\)</span>
+изоморфно <span class="math inline">\(W\)</span>, как векторное
+пространство, а следовательно <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#theorem-2">по
+теореме</a> размерности <span class="math inline">\(U\)</span> и <span
+class="math inline">\(W\)</span> совпадают.</p>
+<p><span class="math display">\[\Leftarrow\]</span> Возьмем
+ортогональные базисы <span class="math inline">\(\{e_1, \ldots,
+e_n\}\)</span> в <span class="math inline">\(U\)</span> и <span
+class="math inline">\(\{f_1, \ldots, f_n\}\)</span> в <span
+class="math inline">\(W\)</span>. Рассмотрим <span
+class="math inline">\(\varphi: e_i \mapsto f_i
+\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

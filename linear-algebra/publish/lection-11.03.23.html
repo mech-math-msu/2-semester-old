@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#существование-жорданова-базиса-у-линейного-оператора-над-алгебраически-замкнутым-полем"
+id="toc-существование-жорданова-базиса-у-линейного-оператора-над-алгебраически-замкнутым-полем">Существование
+жорданова базиса у линейного оператора над алгебраически замкнутым
+полем</a>
+<ul>
+<li><a href="#единственность-жордановой-нормальной-формы"
+id="toc-единственность-жордановой-нормальной-формы">Единственность
+жордановой нормальной формы</a></li>
+<li><a
+href="#критерий-диагонализируемости-в-терминах-минимального-многочлена"
+id="toc-критерий-диагонализируемости-в-терминах-минимального-многочлена">Критерий
+диагонализируемости в терминах минимального многочлена</a></li>
+<li><a href="#подобная-матрица" id="toc-подобная-матрица">Подобная
+матрица</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1
+id="существование-жорданова-базиса-у-линейного-оператора-над-алгебраически-замкнутым-полем">Существование
+жорданова базиса у линейного оператора над алгебраически замкнутым
+полем</h1>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство размерности
+<span class="math inline">\(n\)</span> над алгебраически замкнутым полем
+<span class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Тогда существует базис, в котором
+матрица оператора <span class="math inline">\(\mathcal{A}\)</span>
+является жордановой.</p>
+<p><em>Доказательство:</em></p>
+<p><img src="img/jordan-basis-exists.png" /></p>
+<p>Если <span class="math inline">\(\mathcal{A}\)</span> невырожден(его
+матрица невырождена), то можем рассматривать вырожденный линейный
+оператор <span class="math inline">\(\mathcal{A} - \lambda
+\mathcal{I}\)</span>, где <span class="math inline">\(\lambda\)</span> -
+собственное значение <span class="math inline">\(\mathcal{A}\)</span>
+(сущесвует, так как поле алгебраически замкнуто). Почему можно
+рассматривать такой оператор? И почему <span
+class="math inline">\(\mathcal{A} - \lambda \mathcal{I}\)</span> -
+вырожден?</p>
+<p>Если <span class="math inline">\(\ker \mathcal{A} = V\)</span>, то
+жорданова нормальная форма - нулевая матрица, и жордановым является
+любой базис. <span class="math inline">\(\mathcal{A}\)</span> -
+вырожден, а значит <span class="math inline">\(\ker \mathcal{A} \ne
+\{0\}\)</span>.(Почему?)</p>
+<p>Индукция по <span class="math inline">\(n\)</span>:</p>
+<p>Далее <span class="math inline">\(0 &lt; \dim \ker \mathcal{A} &lt;
+n\)</span>, тогда из <span class="math inline">\(\dim \ker \mathcal{A} +
+\dim \operatorname{img} \mathcal{A} = n\)</span> следует, что <span
+class="math inline">\(0 &lt; \dim \operatorname{img} \mathcal{A} &lt;
+n\)</span>, а значит по предположению индукции 🕵️‍ у <span
+class="math inline">\(\mathcal{A}_{|\operatorname{img}
+\mathcal{A}}\)</span> существует жорданова нормальная форма <span
+class="math inline">\(\operatorname{J}_{\operatorname{img}\mathcal{A}}\)</span>
+и в ней есть жордановы клетки с <span class="math inline">\(0\)</span>
+на диагонали, так как <span class="math inline">\(\mathcal{A}\)</span> -
+вырожден. (И что с того?) Пусть клеток с <span
+class="math inline">\(0\)</span> на диагонали <span
+class="math inline">\(s\)</span>. Жорданов базис матрицы <span
+class="math inline">\(\operatorname{J}_{\operatorname{img}\mathcal{A}}\)</span>
+- это объединение жордановых базисов ее клеток. Запишем жорданов базис
+для <span class="math inline">\(\mathcal{A}_{|\operatorname{img}
+\mathcal{A}}\)</span> <span class="math inline">\(e = \{e_{11}, \ldots,
+e_{1k_1}, \ldots, e_{s1}, \ldots, e_{sk_s}, \ldots, e_{s+1 1}, \ldots,
+e_{s + 1 k_{s + 1}}, e_{m1}, \ldots, e_{mk_m}\}\)</span>, где <span
+class="math inline">\(k_1, \ldots, k_m\)</span> - размеры жордановых
+клеток, <span class="math inline">\(\lambda_1 = \ldots = \lambda_s =
+0\)</span>, <span class="math inline">\(m\)</span> - количество
+жордановых клеток. Пусть <span class="math inline">\(V_0\)</span>
+подпространство в <span class="math inline">\(\operatorname{img}
+\mathcal{A}\)</span> с собственным значением ноль, имеем: <span
+class="math inline">\(V_0 = \{v \in V: \,\,\,\, \mathcal{A}(v) = 0 \cdot
+v\} = \ker \mathcal{A}\)</span>. То есть <span
+class="math inline">\(\operatorname{img} \mathcal{A} \cap \ker
+\mathcal{A} = V_0\)</span>. Размерность <span
+class="math inline">\(V_0\)</span> равна количеству клеток с <span
+class="math inline">\(0\)</span> на диагонали, то есть <span
+class="math inline">\(s\)</span>. Векторы <span
+class="math inline">\(e_{12}, \ldots, e_{s2}\)</span> линейно
+независимы, а следовательно являются базисом <span
+class="math inline">\(V_0\)</span>. Дополним <span
+class="math inline">\(e_{12}, \ldots, e_{s2}\)</span> векторами <span
+class="math inline">\(f_1, \ldots, f_q\)</span> до базиса <span
+class="math inline">\(f\)</span> подпространства <span
+class="math inline">\(\ker \mathcal{A}\)</span>. <span
+class="math display">\[\dim (\operatorname{img} \mathcal{A} \cap \ker
+\mathcal{A}) + \dim(\operatorname{img} \mathcal{A} + \ker \mathcal{A}) =
+\dim \operatorname{img} \mathcal{A} + \dim \ker \mathcal{A}\]</span>
+<span class="math display">\[\dim \operatorname{img} \mathcal{A} + \dim
+\ker \mathcal{A} = n\]</span> <span
+class="math display">\[\Downarrow\]</span> <span
+class="math display">\[\dim (\operatorname{img} \mathcal{A} + \ker
+\mathcal{A}) = n - s\]</span> Так как <span
+class="math inline">\(\operatorname{img} \mathcal{A} + \ker
+\mathcal{A}\)</span> - это линейная оболочка векторов из <span
+class="math inline">\(f\)</span> и <span
+class="math inline">\(e\)</span>, которые являются линейно независимыми,
+а следовательно базисом <span class="math inline">\(\operatorname{img}
+\mathcal{A} + \ker \mathcal{A}\)</span>, получаем, что нужно добавить
+<span class="math inline">\(s\)</span> векторов к <span
+class="math inline">\(f \cup e\)</span>, чтобы получить базис <span
+class="math inline">\(V\)</span>. Добавим векторы <span
+class="math inline">\(g = \{g_1, \ldots, g_s\}\)</span>: <span
+class="math display">\[\mathcal{A}(g_1) = e_{1k_1}\]</span> <span
+class="math display">\[\mathcal{A}(g_2) = e_{2k_2}\]</span> <span
+class="math display">\[\vdots\]</span> <span
+class="math display">\[\mathcal{A}(g_s) = e_{sk_s}\]</span> Такие
+векторы существуют, потому что <span class="math inline">\(e_{1k_1},
+\ldots, e_{sk_s}\)</span> принадлежат <span
+class="math inline">\(\operatorname{img}\mathcal{A}\)</span>.</p>
+<p>Докажем, что <span class="math inline">\(g \cup f \cup e\)</span> -
+базис в <span class="math inline">\(V\)</span>. Количество векторов
+верное, осталось доказать линейную независимость. Рассмотрим линейную
+комбинацию равную <span class="math inline">\(0\)</span>:</p>
+<p><span class="math display">\[\displaystyle \sum_{i = 1}^{s}\alpha_i
+g_i + \displaystyle \sum_{i = 1}^{q}\beta_i f_i + \displaystyle \sum_{i
+= 1}^{s}\displaystyle \sum_{j = 1}^{k_i}\gamma_{ij} e_{ij} +
+\displaystyle \sum_{i = s}^{n}\displaystyle \sum_{j =
+1}^{k_i}\gamma_{ij} e_{ij} = 0\]</span></p>
+<p>Применим к этой линейной комбинации <span
+class="math inline">\(\mathcal{A}\)</span>: <span
+class="math inline">\(0 + \displaystyle \sum_{i = 1}^{s}\alpha_i
+e_{ik_i} +\)</span> комбинация векторов <span
+class="math inline">\(e_{ij} = 0\)</span>, а так как все <span
+class="math inline">\(e_{ij}\)</span> линейно независимы, все
+коэффиценты равны <span class="math inline">\(0\)</span>.</p>
+<p>Если увеличить разверы всех клеток с <span
+class="math inline">\(0\)</span> на диагонали на <span
+class="math inline">\(1\)</span>(векторы <span
+class="math inline">\(g_1, \ldots, g_s\)</span>, дополняют базис каждой
+клетки до базиса клетки с размером на <span
+class="math inline">\(1\)</span> больше) и добавить <span
+class="math inline">\(q\)</span> клеток с <span
+class="math inline">\(0\)</span> на диагонали, то получим искомую
+жорданову нормальную форму <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="единственность-жордановой-нормальной-формы">Единственность
+жордановой нормальной формы</h2>
+<hr />
+<p>все так сложно</p>
+<h2
+id="критерий-диагонализируемости-в-терминах-минимального-многочлена">Критерий
+диагонализируемости в терминах минимального многочлена</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(V\)</span> - конечномерное векторное пространство
+над алгебраически замкнутым полем <span
+class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Тогда <span
+class="math inline">\(\mathcal{A}\)</span> диагонализируем <span
+class="math inline">\(\Leftrightarrow\)</span> минимальный многочлен
+<span class="math inline">\(\mu_{\mathcal{A}}(t)\)</span> не имеет
+кратных корней.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span> Поле алгебраически замкнуто,
+следовательно существует базис, в котором матрица <span
+class="math inline">\(\mathcal{A}\)</span> жорданова. <span
+class="math inline">\(\mu_{\mathcal{A}}(t) = \displaystyle \prod_{i =
+1}^{s}(t - \lambda_i)^k_i\)</span>, где <span
+class="math inline">\(k_i\)</span> размер жордановой клетки с <span
+class="math inline">\(\lambda_i\)</span> на диагонали. Оператор <span
+class="math inline">\(\mathcal{A}\)</span> диагонализируем,
+следовательно все клетки в жордановой нормальной форме размера <span
+class="math inline">\(1\)</span>, а значит <span
+class="math inline">\(\mu_{\mathcal{A}}\)</span> не имеет кратных
+корней. <span class="math display">\[\Leftarrow\]</span> В обратную
+сторону <span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="подобная-матрица">Подобная матрица</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Матрица
+<span class="math inline">\(A \in M_n(F)\)</span> <em>подобна</em>
+матрице <span class="math inline">\(B \in M_n(F)\)</span>, если <span
+class="math inline">\(\exists C \in M_n(F): \,\,\,\, A =
+C^{-1}BC\)</span>.</p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Любая матрица
+<span class="math inline">\(A\)</span> над алгебраически замкнутым полем
+подобна некоторой жордановой матрице.</p>
+<p><em>Доказательство:</em> <a href="#theorem-1">По теореме</a>
+существует базис в векторном пространстве строк, в котором матрица
+линейного оператора, заданного матрицей <span
+class="math inline">\(A\)</span>, жорданова. Далее по формуле перехода
+от одного базиса к другому получаем утверждение следствия <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

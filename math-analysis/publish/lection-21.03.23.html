@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#представление-функции-ограниченной-вариации-в-виде-разности-монотонных"
+id="toc-представление-функции-ограниченной-вариации-в-виде-разности-монотонных">Представление
+функции ограниченной вариации в виде разности монотонных</a></li>
+<li><a href="#интеграл-римана-стилтьеса"
+id="toc-интеграл-римана-стилтьеса">Интеграл Римана-Стилтьеса</a></li>
+<li><a href="#свойства-интеграла-стилтьеса"
+id="toc-свойства-интеграла-стилтьеса">Свойства интеграла
+Стилтьеса</a></li>
+<li><a
+href="#обязательный-пример-показывающий-что-интеграл-римана-стилтьеса-не-аддитивен"
+id="toc-обязательный-пример-показывающий-что-интеграл-римана-стилтьеса-не-аддитивен">Обязательный
+пример, показывающий, что интеграл Римана-Стилтьеса не
+аддитивен</a></li>
+</ul>
+</nav>
+</details>
+<h2
+id="представление-функции-ограниченной-вариации-в-виде-разности-монотонных">Представление
+функции ограниченной вариации в виде разности монотонных</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(f(x) \in \operatorname{V}[a, b]\)</span>. Тогда
+существуют монотонные на <span class="math inline">\([a, b]\)</span>
+функции <span class="math inline">\(v(x)\)</span> и <span
+class="math inline">\(w(x)\)</span>, такие что <span
+class="math inline">\(f(x) = v(x) - w(x)\)</span>.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(v(x) =
+\operatorname{V}_a^x f(x)\)</span> - монотонно возрастает, так как
+аддитивна.</p>
+<p>Рассмотрим <span class="math inline">\(w(x) = v(x) - f(x)\)</span>.
+Докажем, что <span class="math inline">\(w(x)\)</span> монотонно
+возрастает. Пусть <span class="math inline">\(x_2 &gt; x_1\)</span>.
+<span class="math inline">\(w(x_2) - w(x_1) = v(x_2) - v(x_1) - (f(x_2)
+- f(x_1)) =\)</span> <span class="math inline">\(=
+\operatorname{V}_{x_2}^{x_1}f(x) - (f(x_2) - f(x_1)) \ge 0\)</span>, так
+как <span class="math inline">\(\operatorname{V}_{x_2}^{x_1}f(x) \ge
+|f(x_2) - f(x_1)|\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Если <span
+class="math inline">\(f(x) \in C^{1}[a, b]\)</span>, то <span
+class="math inline">\(f(x) \in \operatorname{V}[a, b]\)</span> и <span
+class="math display">\[\operatorname{V}_a^b f(x) =
+\displaystyle\int\limits_a^b |f’(x)|dx\]</span></p>
+<p><em>Доказательство:</em> <span class="math display">\[V(f,
+\mathcal{T}) = \displaystyle \sum_{i = 1}^{n}|f(x_i) - f(x_{i - 1})| =
+\displaystyle \sum_{i = 1}^{n}|f’(\xi_i)|(x_i - x_{i - 1}) \le M\cdot(b
+- a)\]</span> <span class="math display">\[M = \displaystyle\max_{[a,
+b]}|f’(x)| \Rightarrow f(x) \in V[a, b]\]</span></p>
+<p><span class="math display">\[I = \displaystyle\int\limits_a^b
+|f’(x)|dx\]</span></p>
+<p><span class="math display">\[\forall \varepsilon &gt; 0 \,\,\,\,
+\exists \delta &gt; 0: \forall \mathcal{T} (d(\mathcal{T}) &lt; \delta)
+\,\,\,\, |\operatorname{V}(f, \mathcal{T}) - I| = \left|\displaystyle
+\sum_{i = 1}^{n}|f(x_i) - f(x_{i - 1})| - I\right|=\]</span> <span
+class="math display">\[= \left|\displaystyle \sum_{i =
+1}^{n}|f’(\xi_i)(x_i - x_{i - 1})| - I\right| =
+\left|\sigma_{|f’|}(\mathcal{T}(\{\xi_i\}))\right| &lt;
+\varepsilon\]</span></p>
+<p>Достаточно доказать для конкретной разметки, получающейся при
+применении формулы Лагранжа, потому что интеграл уже существует(функция
+непрерывна), то есть нужно доказать равенство.</p>
+<p><span class="math display">\[\forall \varepsilon &gt; 0 \,\,\,\,
+\exists \mathcal{T}_{\varepsilon}^{*}: \,\,\,\, |\operatorname{V}_a^b
+f(x) - \operatorname{V}(f, \mathcal{T}_{\varepsilon}^{*})| &lt;
+\varepsilon\]</span></p>
+<p>Измельчаем <span class="math inline">\(\mathcal{T}^{*}\)</span> до
+<span class="math inline">\(\mathcal{T}^{**}\)</span>, так чтобы <span
+class="math inline">\(d(\mathcal{T}^{**}) &lt; \delta\)</span>.</p>
+<p><span class="math display">\[\begin{cases}
+|\operatorname{V}_a^b f(x) - \operatorname{V}(f,
+\mathcal{T}_{\varepsilon}^{**})| &lt; \varepsilon\\
+|\operatorname{V}(f, \mathcal{T}_{\varepsilon}^{**}) - I| &lt;
+\varepsilon    
+\end{cases} \Rightarrow |\operatorname{V}_a^b f(x) - I| &lt; 2
+\varepsilon \Rightarrow \operatorname{V}_a^b f(x) = I
+\,\,\,\,\blacksquare\]</span></p>
+<h2 id="интеграл-римана-стилтьеса">Интеграл Римана-Стилтьеса</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(f(x)\)</span> и <span
+class="math inline">\(g(x)\)</span> определена на <span
+class="math inline">\([a, b]\)</span>. Для <span
+class="math inline">\(\mathcal{T}_{[a, b]}(\xi)\)</span> сумма: <span
+class="math display">\[\sigma_f(g, \mathcal{T}(\xi)) = \displaystyle
+\sum_{i  = 1}^{n}f(\xi_i)(g(x_i) - g(x_{i - 1}))\]</span>
+<em>интегральная сумма Стилтьеса</em> для <span
+class="math inline">\(f(x)\)</span> по <span
+class="math inline">\(g(x)\)</span> на <span class="math inline">\([a,
+b]\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Если <span
+class="math inline">\(\forall \varepsilon &gt; 0 \,\,\,\, \exists \delta
+&gt; 0: \,\,\,\, \forall \mathcal{T}(\xi) (d(\mathcal{T}(\xi)) &lt;
+\delta)\)</span> <span class="math inline">\(|\sigma_f(g,
+\mathcal{T}(\xi)) - I| &lt; \varepsilon\)</span>, то <span
+class="math inline">\(f(x)\)</span> <em>интегрируема по</em> <span
+class="math inline">\(g(x)\)</span> на <span class="math inline">\([a,
+b]\)</span>.</p>
+<p>Обозначается: <span
+class="math inline">\(\displaystyle\int\limits_a^b
+f(x)dg(x)\)</span></p>
+<h2 id="свойства-интеграла-стилтьеса">Свойства интеграла Стилтьеса</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a></p>
+<ol type="1">
+<li><p>Если <span class="math inline">\(\exists
+\displaystyle\int\limits_a^b f_1(x)dg(x)\)</span> и <span
+class="math inline">\(\exists \displaystyle\int\limits_a^b
+f_2(x)dg(x)\)</span>, то <span class="math inline">\(\exists
+\displaystyle\int\limits_a^b (\alpha f_1(x) + \beta f_2(x))dg(x) =
+\alpha \displaystyle\int\limits_a^b f_1(x)dg(x) + \beta
+\displaystyle\int\limits_a^b f_2(x)dg(x)\)</span>.
+<em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p></li>
+<li><p>Если <span class="math inline">\(\exists
+\displaystyle\int\limits_a^b f(x)dg_1(x)\)</span> и <span
+class="math inline">\(\exists \displaystyle\int\limits_a^b
+f(x)dg_2(x)\)</span>, то <span class="math inline">\(\exists
+\displaystyle\int\limits_a^b f(x)d(\alpha g_1(x) + \beta g_2(x)) =
+\alpha \displaystyle\int\limits_a^b f(x)dg_1(x) + \beta
+\displaystyle\int\limits_a^b f(x)dg_2(x)\)</span>.</p></li>
+</ol>
+<p><em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<ol start="3" type="1">
+<li>Если <span class="math inline">\(\exists
+\displaystyle\int\limits_a^b f(x)dg(x)\)</span>, <span
+class="math inline">\(\exists \displaystyle\int\limits_a^c
+f(x)dg(x)\)</span> и <span class="math inline">\(\exists
+\displaystyle\int\limits_c^b f(x)dg(x)\)</span> для <span
+class="math inline">\(c \in (a, b)\)</span>, то <span
+class="math display">\[\displaystyle\int\limits_a^b f(x)dg(x) = \exists
+\displaystyle\int\limits_a^c f(x)dg(x) + \exists
+\displaystyle\int\limits_c^b f(x)dg(x)\]</span></li>
+</ol>
+<p><em>Доказательство:</em> записать определение <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Если <span
+class="math inline">\(\exists \displaystyle\int\limits_a^b
+f(x)dg(x)\)</span>, то <span class="math inline">\(\forall c \in (a, b)
+\,\,\,\, \exists \displaystyle\int\limits_a^c f(x)dg(x)\)</span> и <span
+class="math inline">\(\exists \displaystyle\int\limits_c^b
+f(x)dg(x)\)</span>.</p>
+<p><em>Доказательство:</em> без доказательства <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2
+id="обязательный-пример-показывающий-что-интеграл-римана-стилтьеса-не-аддитивен">Обязательный
+пример, показывающий, что интеграл Римана-Стилтьеса не аддитивен</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Если <span
+class="math inline">\(\exists \displaystyle\int\limits_a^b
+f(x)dg(x)\)</span>, то <span class="math inline">\(\exists
+\displaystyle\int\limits_a^b g(x)df(x)\)</span> и <span
+class="math display">\[\displaystyle\int\limits_a^b f(x)dg(x) =
+f(x)g(x){|^b_a} - \displaystyle\int\limits_a^b g(x)df(x)\]</span></p>
+<p><em>Доказательство:</em> <span class="math display">\[\sigma_f(g,
+\mathcal{T}(\xi)) = \displaystyle \sum_{i = 1}^{n}g(\xi_i)(f(x_i) -
+f(x_{i - 1}))=\]</span> <span class="math display">\[= g(\xi_1)(f(x_1) -
+f(a)) + g(\xi_2)(f(x_2) - f(x_1)) + \ldots + g(\xi_{n - 1})(f(x_{n - 1})
+- f(x_{n - 2})) + g(\xi_n)(f(b) - f(x_{n - 1}))=\]</span> <span
+class="math display">\[=-g(\xi_1)f(a) - f(x_1)(g(\xi_2) - g(\xi_1)) -
+\ldots - f(x_{n - 1})(g(\xi_n) - g(\xi_{n - 1})) + g(\xi_n)f(b) +
+f(a)g(a) + f(b)g(b) - f(a)g(a) - f(b)g(b)=\]</span> <span
+class="math display">\[=-f(a)(g(\xi_1) - g(a)) - f(x_1)(g(\xi_2) -
+g(\xi_1)) - \ldots - f(x_{n - 1})(g(\xi_n) - g(\xi_{n - 1})) - f(b)(g(b)
+- g(\xi_n)) + f(x)g(x){|^b_a}\Rightarrow\]</span> <span
+class="math display">\[\Rightarrow \sigma_g(f, \mathcal{T}) =
+-\sigma_f(g, \mathcal{T}) + f(x)g(x){|^b_a}
+\,\,\,\,\blacksquare\]</span></p>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> Если <span
+class="math inline">\(f(x) \in C[a, b], \,\,\,\, g(x) \in
+\operatorname{V}[a, b]\)</span>, то <span class="math inline">\(\exists
+\displaystyle\int\limits_a^b f(x)dg(x)\)</span></p>
+<p><em>Доказательство:</em> Достаточно доказать для <span
+class="math inline">\(g(x)\)</span> возрастающей. <span
+class="math display">\[\mathcal{T}_{[a, b]}(\xi) \,\,\,\, m_i =
+\displaystyle\min_{\Delta x_i}f(x) \,\,\,\, M_i =
+\displaystyle\max_{\Delta x_i}f(x)\]</span></p>
+<p>Пусть <span class="math display">\[s(\mathcal{T}) = \displaystyle
+\sum_{i = 1}^{n}m_i(g(x_i) - g(x_{i - 1})) \le \sigma_f(g,
+\mathcal{T}(\xi)) \le\]</span> <span class="math display">\[\le
+\displaystyle \sum_{i = 1}^{n} M_i(g(x_i) - g(x_{i - 1})) =
+S(\mathcal{T})\]</span></p>
+<p>Так как <span class="math inline">\(f(x) \in C[a, b]\)</span>, то
+<span class="math inline">\(f(x)\)</span> равномерно непрерывно на <span
+class="math inline">\([a, b]\)</span>, то есть <span
+class="math display">\[\forall \varepsilon &gt; 0 \,\,\,\, \exists
+\delta &gt; 0: \,\,\,\, \forall x_1, x_2 (|x_1 - x_2| &lt; \delta)
+\,\,\,\, |f(x_1) - f(x_2)| &lt; \varepsilon \Rightarrow\]</span> <span
+class="math inline">\(\Rightarrow\)</span> если <span
+class="math inline">\(d(\mathcal{T}) &lt; \delta\)</span>, то <span
+class="math inline">\(\forall i \,\,\,\, M_i - m_i &lt;
+\varepsilon\)</span>, т.к. максимум и минимум - это значения <span
+class="math inline">\(f(x)\)</span>.</p>
+<p>При <span class="math inline">\(d(\mathcal{T}) &lt; \delta \,\,\,\, S
+- s &lt; \varepsilon (g(b) - g(a))\)</span>, берем разность и все <span
+class="math inline">\(M_i - m_i &lt; \varepsilon\)</span>, выносим <span
+class="math inline">\(\varepsilon\)</span> за знак суммы, далее всё
+сокращается, кроме <span class="math inline">\(g(b) - g(a)
+\Rightarrow\)</span> <span class="math inline">\(\Rightarrow
+\displaystyle\sup_{\mathcal{T}}s = \displaystyle\inf_{\mathcal{T}}S = I
+\Rightarrow |\sigma_f(g, \mathcal{T}) - I| &lt; \varepsilon(g(b) - g(a))
+\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

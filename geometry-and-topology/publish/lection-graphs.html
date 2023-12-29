@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#граф-определения" id="toc-граф-определения">Граф:
+определения</a>
+<ul>
+<li><a href="#эйлеров-граф" id="toc-эйлеров-граф">Эйлеров граф</a></li>
+<li><a href="#гамильтонов-граф" id="toc-гамильтонов-граф">Гамильтонов
+граф</a></li>
+<li><a href="#подграфы" id="toc-подграфы">Подграфы</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="граф-определения">Граф: определения</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> <span
+class="math inline">\(V^{(k)}\)</span> - это множество всех <span
+class="math inline">\(k\)</span>-элементных подмножеств множества <span
+class="math inline">\(V\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a>
+<em>Граф</em> - это тройка <span class="math inline">\(\{E, V,
+\sigma\}\)</span>, где<br><span class="math inline">\(E\)</span> -
+<em>множество ребер</em> (<span class="math inline">\(e \in E\)</span> -
+<em>ребро</em>)<br><span class="math inline">\(V\)</span> -
+<em>множество вершин</em> (<span class="math inline">\(v \in V\)</span>
+- <em>вершина</em>)<br><span class="math inline">\(\sigma: \,\,\,\, E
+\to V^{(1)} \cup V^{(2)}\)</span> - <em>отношение инцидентности ребер и
+вершин</em>.<br><br>Если <span class="math inline">\(\sigma(e) \in
+V^{(1)}\)</span>, то <span class="math inline">\(e\)</span> -
+<em>петля</em>.<br>Если <span class="math inline">\(\sigma(e) \in
+V^{(2)} = \{u, v\}\)</span>, то вершина <span
+class="math inline">\(u\)</span> <em>смежная</em> (<em>соседняя к</em>)
+вершине <span class="math inline">\(v\)</span>.<br>Если <span
+class="math inline">\(v \in \sigma(e)\)</span>, то вершина <span
+class="math inline">\(v\)</span> <em>инцидентна</em> ребру <span
+class="math inline">\(e\)</span>.<br>Если <span
+class="math inline">\(\sigma(e) = \sigma(e’)\)</span>, то <span
+class="math inline">\(e\)</span> и <span
+class="math inline">\(e’\)</span> <em>кратные ребра</em>.<br></p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Граф
+<em>простой</em>, если в нем нет <a href="#definition-1">петель</a> и <a
+href="#definition-1">кратных ребер</a>.<br></p>
+<p>Часто записывается <span class="math inline">\(G = \{E, V\}\)</span>,
+вместо <span class="math inline">\(\{E, V, \sigma\}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> <em>Степень
+вершины</em> <span class="math inline">\(v \in V\)</span> графа <span
+class="math inline">\(G = \{E, V, \sigma\}\)</span> - это сумма
+количества <a href="#definition-1">ребер</a> <a
+href="#definition-1">инцидентных</a> <span
+class="math inline">\(v\)</span> и не являющихся <a
+href="#definition-1">петлями</a> и удвоенного количества <a
+href="#definition-1">петель</a> инцидентных <span
+class="math inline">\(v\)</span>. Обозначается: <span
+class="math inline">\(\operatorname{deg}v\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> <span
+class="math display">\[\displaystyle \sum_{v \in V}\operatorname{deg}v =
+2|E|\]</span></p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-4"></a>
+<em>Маршрут</em> (между вершинами <span
+class="math inline">\(v_0\)</span> и <span
+class="math inline">\(v_k\)</span>) в <a href="#definition-1">графе</a>
+<span class="math inline">\(G = \{E, V, \sigma\}\)</span> - это
+последовательность <span class="math inline">\(v_0, e_1, v_1, e_2, v_2,
+\ldots, e_k, v_k\)</span>, где <span class="math inline">\(v_i \in V
+\,\,\,\,\forall i \in \{0, \ldots, k\}, \,\,\,\, e_i \in E
+\,\,\,\,\forall i \in \{1, \ldots, k\}\)</span> и <a
+href="#definition-1">ребро</a> <span class="math inline">\(e_i\)</span>
+<a href="#definition-1">инцидентно</a> вершинам <span
+class="math inline">\(v_{i - 1}\)</span> и <span
+class="math inline">\(v_i\)</span>.<br><br>Если в маршруте <span
+class="math inline">\(\forall i \ne j \,\,\,\, e_i \ne e_j\)</span>, то
+маршрут - это <em>цепь</em>.<br>Если в маршруте <span
+class="math inline">\(v_0 = v_k\)</span>, то маршрут
+<em>замкнутый</em>.<br>Замкнутая цепь - это <em>цикл</em>.<br>Если в
+маршруте <span class="math inline">\(\forall i \ne j \ne 0 \ne k
+\,\,\,\, v_i \ne v_j\)</span>, то маршрут - это
+<em>путь</em>.<br>Замкнутый путь - это <em>простой цикл</em>.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> <a
+href="#definition-1">Граф</a> <span class="math inline">\(G = \{E, V ,
+\sigma\}\)</span> <em>связный</em>, если <span
+class="math inline">\(\forall u, v \in V\)</span> существует <a
+href="#definition-4">маршрут</a> между <span
+class="math inline">\(u\)</span> и <span
+class="math inline">\(v\)</span>.</p>
+<h2 id="эйлеров-граф">Эйлеров граф</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-6"></a> <em>Эйлеров
+обход графа (эйлеров цикл)</em> - это <a href="#definition-4">цикл</a>,
+содержащий все <a href="#definition-1">вершины</a> графа.</p>
+<p><strong>Определение:</strong><a name="definition-7"></a> Если в графе
+существует <a href="#definition-6">эйлеров цикл</a>, то граф -
+<em>эйлеров</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Граф <a
+href="#definition-7">эйлеров</a> <span
+class="math inline">\(\Leftrightarrow\)</span> <a
+href="#definition-1">граф</a> <a href="#definition-5">связный</a> и <a
+href="#definition-3">степени всех вершин</a> графа четны.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span> Граф эйлеров, значит
+существует цикл, содержащий все вершины графа. Идя по этому циклу, в
+каждую вершину нужно зайти и выйти, то есть степень любой вершины
+четна.</p>
+<p><span class="math display">\[\Leftarrow\]</span></p>
+<p>Степени всех вершин четны, граф конечный и связный. Начнем в
+какой-нибудь вершине и будем строить цикл, выбирая каждый раз следующей
+непосещенную вершину, так как граф конечный этот процесс завершится и
+будет получен искомый цикл <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span> (Плохо)</p>
+<h2 id="гамильтонов-граф">Гамильтонов граф</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-8"></a>
+<em>Гамильтонов цикл</em> - это <a href="#definition-4">простой
+цикл</a>, проходящий через все <a href="#definition-1">вершины</a>
+графа.</p>
+<p><strong>Определение:</strong><a name="definition-9"></a> Граф
+<em>гамильтонов</em>, если в нем есть <a
+href="#definition-8">гамильтонов цикл</a>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(G = \{E, V, \sigma\}\)</span> <a
+href="#definition-9">гамильтонов</a> <a href="#definition-1">граф</a>.
+Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(G\)</span> <a
+href="#definition-5">связный</a>.</li>
+<li>Если <span class="math inline">\(|V| &gt; 1\)</span>, то в <span
+class="math inline">\(G\)</span> нет <a
+href="#definition-1">петель</a>.</li>
+<li>Если <span class="math inline">\(|V| &gt; 2\)</span>, то в <span
+class="math inline">\(G\)</span> нет <a href="#definition-1">кратных
+ребер</a>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Гамильтонов цикл проходит через все вершины.</li>
+<li>Гамильтонов цикл проходит через вершину ровно один раз.</li>
+<li>см 2. <span class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<p>То есть для определения гамильтоновости графа достаточно
+рассматривать простые графы.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (Дирака) Пусть
+<span class="math inline">\(G = \{E, V, \sigma\}\)</span> - <a
+href="#definition-2">простой</a> граф, <span class="math inline">\(|V| =
+n, \,\,\,\, n \ge 3, \,\,\,\, \forall v \,\,\,\, \operatorname{deg}v \ge
+\frac{n}{2}\)</span>. Тогда <span class="math inline">\(G\)</span> <a
+href="#definition-9">гамильтонов</a>.</p>
+<p><em>Доказательство:</em></p>
+<p>Идея: Построить самый длинный путь в графе <span
+class="math inline">\(G\)</span>. Пусть его длина <span
+class="math inline">\(l\)</span>. Доказать, что можно получить цикл
+длины <span class="math inline">\(l + 1\)</span>. Предположить, что
+полученный цикл не гамильтонов. Прийти к противоречию. Всё! <img
+src="img/gamilton.png" /></p>
+<p>Пусть <span class="math inline">\(\gamma = v_0v_1\ldots
+v_{l-1}v_l\)</span> самый длинный путь в графе. Докажем существование
+цикла длины <span class="math inline">\(l + 1\)</span>. Если <span
+class="math inline">\(v_0\)</span> и <span
+class="math inline">\(v_l\)</span> смежны, то таким циклом является
+последовательность <span class="math inline">\(v_0v_1\ldots
+v_{l-1}v_lv_0\)</span>. Иначе хотим найти вершину <span
+class="math inline">\(v_k \in \gamma\)</span>, такую чтобы следующая за
+ней в пути вершина была смежна с <span
+class="math inline">\(v_0\)</span>, а сама <span
+class="math inline">\(v_k\)</span> была смежна с <span
+class="math inline">\(v_l\)</span> (см. рисунок). Если доказать
+существование такой вершины, то искомым циклом будет <span
+class="math inline">\(v_0\ldots v_kv_l\ldots v_{k + 1}v_0\)</span> (на
+рисунке черный путь + оранжевое ребро - это <span
+class="math inline">\(\gamma\)</span>, а черные ребра + зеленые - это
+искомый цикл).</p>
+<p>Рассмотрим множества: <span class="math inline">\(X = \{v_i: \,\,\,\,
+v_iv_l \in E\}\)</span> и <span class="math inline">\(Y = \{v_i:
+\,\,\,\, v_{i + 1}v_0 \in E\}\)</span>. Все вершины смежные с <span
+class="math inline">\(v_0\)</span> принадлежат пути, потому что иначе
+можно было бы увелечить длину пути. <span class="math inline">\(|X| =
+\operatorname{deg}v_l \ge \frac{n}{2}, \,\,\,\, |Y| =
+\operatorname{deg}v_0 \ge \frac{n}{2} \Rightarrow |X| + |Y| \ge
+n\)</span>. Пусть <span class="math inline">\(X \cap Y =
+\varnothing\)</span>. Тогда <span class="math inline">\(|X \cup Y| = |X|
++ |Y| \ge n\)</span>, но вершина <span class="math inline">\(v_l \not
+\in X\)</span> и <span class="math inline">\(v_l \not \in Y
+\Rightarrow\)</span> в графе больше <span
+class="math inline">\(n\)</span> вершин. Противоречие, а значит <span
+class="math inline">\(\exists v_k: \,\,\,\, v_k \in X \cap
+Y\)</span>.</p>
+<p><img src="img/gamilton2.png" /></p>
+<p>Докажем, что полученный цикл <span class="math inline">\(C\)</span>
+гамильтонов. Предположим обратное, тогда <span
+class="math inline">\(\exists v \in V: \,\,\,\, v \not\in
+\gamma\)</span>. Пусть <span class="math inline">\(v\)</span> смежна с
+вершиной <span class="math inline">\(v_s\)</span> из цикла <span
+class="math inline">\(C\)</span>. Тогда выбросив любое из смежных с
+<span class="math inline">\(v_s\)</span> ребер, принадлежащих <span
+class="math inline">\(C\)</span> получим путь длины <span
+class="math inline">\(l + 1\)</span>. Противоречие. Значит <span
+class="math inline">\(v\)</span> не смежна ни с одной вершиной <span
+class="math inline">\(C\)</span>. Вершин смежных с <span
+class="math inline">\(v \ge \frac{n}{2}\)</span>. Вершин смежных с <span
+class="math inline">\(v_0 \ge \frac{n}{2}\)</span> и все они принадлежат
+<span class="math inline">\(C\)</span>. Значит в графе больше, чем <span
+class="math inline">\(n\)</span> вершин. Противоречие. Следовательно,
+<span class="math inline">\(C\)</span> гамильтонов цикл <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="подграфы">Подграфы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-10"></a> <span
+class="math inline">\(H = (V_H, E_H, \sigma_H)\)</span> <em>подграф</em>
+графа <span class="math inline">\(G = (V_G, E_G, \sigma_G)\)</span>,
+если <span class="math inline">\(V_H \subset V_G, \,\,\,\, E_H \subset
+E_G, \,\,\,\, \sigma_H = \sigma_G |_{E_H}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-11"></a> Подграф
+<em>остовный</em>, если содержит все вершины исходного.</p>
+<p><strong>Определение:</strong><a name="definition-12"></a> Пусть <span
+class="math inline">\(M \subset V, \,\,\,\, G = (V, E, \sigma)\)</span>.
+Обозначим <span class="math inline">\(G(M) = (M, E_M =
+\{\sigma^{-1}(M^{(1)} \cup M^{(2)}), \sigma |_{E_M}\})\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
+class="math inline">\(M \subset V, \,\,\,\, G = (V, E, \sigma)\)</span>.
+Тогда <span class="math inline">\(G(M)\)</span> - <a
+href="#definition-0">подграф</a> <span
+class="math inline">\(G\)</span>.</p>
+<p><em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-13"></a> Пусть <span
+class="math inline">\(G = (V, E, \sigma), \,\,\,\, w \in W, \,\,\,\, v
+\in V\)</span>.</p>
+<p><span class="math inline">\(w \sim v\)</span>
+(<em>эквивалентно</em>), если существует <a
+href="#definition-4">маршрут</a> из <span
+class="math inline">\(w\)</span> в <span
+class="math inline">\(v\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Введенная
+выше “<span class="math inline">\(\sim\)</span>” является <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-1">отношением
+эквивалентности</a> на множестве <a href="#definition-1">вершин</a>
+графа.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-15"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-2">Класс
+эквивалентности</a> вершины <span class="math inline">\(v\)</span> графа
+<span class="math inline">\(G\)</span> обозначается <span
+class="math inline">\([v]\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-14"></a>
+<em>Компонента связности</em> вершины <span
+class="math inline">\(v\)</span> графа <span
+class="math inline">\(G\)</span> - это максимальный по включению <a
+href="#definition-0">подграф</a>, содержащий <span
+class="math inline">\(v\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> <span
+class="math inline">\(G([v])\)</span> - это <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-12">компонента
+связности</a> вершины <span class="math inline">\(v\)</span>.</p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

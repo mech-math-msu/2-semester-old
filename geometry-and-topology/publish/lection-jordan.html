@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#теорема-жордана" id="toc-теорема-жордана">Теорема
+Жордана</a>
+<ul>
+<li><a href="#доказательство-теоремы-жордана-для-замкнутых-ломаных"
+id="toc-доказательство-теоремы-жордана-для-замкнутых-ломаных">Доказательство
+теоремы Жордана для замкнутых ломаных</a></li>
+<li><a href="#доказательство-теоремы-жордана-для-незамкнутых-ломаных"
+id="toc-доказательство-теоремы-жордана-для-незамкнутых-ломаных">Доказательство
+теоремы Жордана для незамкнутых ломаных</a></li>
+<li><a href="#следствие-про-четыре-точки-на-ломаной"
+id="toc-следствие-про-четыре-точки-на-ломаной">Следствие про четыре
+точки на ломаной</a>
+<ul>
+<li><a href="#топологичекий-граф"
+id="toc-топологичекий-граф">Топологичекий граф</a></li>
+</ul></li>
+<li><a href="#теорема-жордана-для-кривых-компонент-не-меньше-двух"
+id="toc-теорема-жордана-для-кривых-компонент-не-меньше-двух">Теорема
+Жордана для кривых: компонент не меньше двух</a></li>
+<li><a href="#теорема-жордана-для-ломаных-компонент-ровно-две"
+id="toc-теорема-жордана-для-ломаных-компонент-ровно-две">Теорема Жордана
+для ломаных: компонент ровно две</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="теорема-жордана">Теорема Жордана</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(X\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a>. Пусть <span class="math inline">\(\gamma: [a, b] \to
+X\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-13">непрерывная
+кривая</a>.<br> <span class="math inline">\(\gamma\)</span> -
+<em>замкнутая</em>, если <span class="math inline">\(\gamma(a) =
+\gamma(b)\)</span>.<br> <span class="math inline">\(\gamma\)</span> -
+<em>незамкнутая</em>, если <span class="math inline">\(\gamma(a) \ne
+\gamma(b)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(X\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a>. Пусть <span class="math inline">\(\gamma: [a, b] \to
+X\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-13">непрерывная
+кривая</a>. <br> Пусть <span class="math inline">\(\gamma\)</span> <a
+href="#definition-1"><strong>незамкнутая</strong></a> кривая. <span
+class="math inline">\(\gamma\)</span> - <em>кривая без
+самопересечений</em>, если ее образ <span
+class="math inline">\(\gamma([a, b])\)</span> - взаимнооднозначен с
+<span class="math inline">\([a, b]\)</span>. <br> Пусть <span
+class="math inline">\(\gamma\)</span> <a
+href="#definition-1"><strong>замкнутая</strong></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-13">кривая</a>.
+<span class="math inline">\(\gamma\)</span> - <em>кривая без
+самопересечений</em>, если только для <span
+class="math inline">\(a\)</span> и <span
+class="math inline">\(b\)</span> выполнено <span
+class="math inline">\(\gamma(a) = \gamma(b)\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (теорема Жордана)
+Пусть <span class="math inline">\(\gamma: [a, b] \to
+\mathbb{R}^2\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-13">непрерывная</a>
+<a href="#definition-1">кривая без самопересечений</a>. Пусть <span
+class="math inline">\(\Gamma = \gamma([a, b])\)</span> - образ
+отображения <span class="math inline">\(\gamma\)</span> и <span
+class="math inline">\(\Omega = \mathbb{R}^2 \setminus \Gamma\)</span>.
+Тогда</p>
+<ol type="1">
+<li>Если <span class="math inline">\(\gamma\)</span> - <a
+href="#definition-0">незамкнутая</a>, то <span
+class="math inline">\(\Omega\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-14">линейно
+связно</a>.</li>
+<li>Если <span class="math inline">\(\gamma\)</span> - <a
+href="#definition-0">замкнутая</a>, то <span
+class="math inline">\(\Omega\)</span> состоит из двух <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-25">компонент
+линейной связности</a>.</li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-5"></a> Пусть <span
+class="math inline">\(a, b \in \mathbb{R}^n, \,\,\,\, n &gt; 1\)</span>.
+Множество <span class="math inline">\(\{a + (b - a)\cdot t, \,\,\,\, t
+\in [0, 1]\}\)</span> - <em>отрезок</em>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a>
+<em>Ломаная</em> <span class="math inline">\(L\)</span> в <span
+class="math inline">\(\mathbb{R}^n\)</span> - это последовательность
+точек <span class="math inline">\(\{a_i \in \mathbb{R}\}_{i =
+0}^m\)</span> и последовательность отрезков <span
+class="math inline">\(\{[a_i, a_{i + 1}]\}_{i = 0}^{m -
+1}\)</span>.<br>Если <span class="math inline">\(a_0 = a_m\)</span>, то
+ломаная - <em>замкнутая</em>, иначе ломаная - <em>незамкнутая</em>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(L\)</span> - <a
+href="#definition-2"><strong>незамкнутая</strong></a> <a
+href="#definition-2">ломаная</a>. <span class="math inline">\(L\)</span>
+- <em>ломаная без самопересечений</em>, если никакие два отрезки <span
+class="math inline">\(L\)</span>, кроме <span
+class="math inline">\([a_{i - 1}, a_i] \cap [a_i, a_{i + 1}] = \{a_i\},
+\,\,\,\, i \in \{1, \ldots, m - 1\}\)</span>, не имеют общих точек.<br>
+Все ребра и точки ломаной, кроме <span
+class="math inline">\(a_0\)</span> и <span
+class="math inline">\(a_m\)</span> - <em>внутренность ломаной</em>.
+<br><br> Пусть <span class="math inline">\(L\)</span> - <a
+href="#definition-2"><strong>замкнутая</strong></a> <a
+href="#definition-2">ломаная</a>. <span class="math inline">\(L\)</span>
+- <em>ломаная без самопересечений</em>, если никакие два отрезки <span
+class="math inline">\(L\)</span>, кроме <span
+class="math inline">\([a_{i - 1}, a_i] \cap [a_i, a_{i + 1}] = a_i,
+\,\,\,\, i \in \{1, \ldots, m - 1\}\)</span> и <span
+class="math inline">\([a_{m - 1}, a_m]\cap [a_0, a_1] =
+\{a_0\}\)</span>, не имеют общих точек.<br> Все ребра и точки ломаной -
+<em>внутренность ломаной</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (теорема Жордана
+для ломаных) Пусть <span class="math inline">\(L \subset
+\mathbb{R}^2\)</span> - <a href="#definition-3">ломаная без
+самопересечений</a>. Пусть <span class="math inline">\(\Omega =
+\mathbb{R}^2 \setminus \Gamma\)</span>. Тогда</p>
+<ol type="1">
+<li>Если <span class="math inline">\(L\)</span> - <a
+href="#definition-2">незамкнутая</a>, то <span
+class="math inline">\(\Omega\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-14">линейно
+связно</a>.</li>
+<li>Если <span class="math inline">\(L\)</span> - <a
+href="#definition-2">замкнутая</a>, то <span
+class="math inline">\(\Omega\)</span> состоит из двух <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-25">компонент
+линейной связности</a>.</li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> <a
+href="#theorem-1">Теорема Жордана для ломаных</a> - частный случай <a
+href="#theorem-0">теоремы Жордана</a>.</p>
+<p><em>Доказательство:</em> Построить непрерывную кривую, образом
+которой является ломаная <span class="math inline">\(L \subset
+\mathbb{R}^2 \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span> непустые подмножества <span
+class="math inline">\(\mathbb{R}^n\)</span>. <em>Расстояние между
+подмножествами</em> <span class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span> - это <span
+class="math inline">\(\rho(A, B) = \inf \{\rho(a, b): \,\,\,\, a \in A,
+b \in B\}\)</span>.<br> <em>Расстояние от точки</em> <span
+class="math inline">\(a\)</span> <em>до подмножества</em> <span
+class="math inline">\(A\)</span> - <span
+class="math inline">\(\rho(\{a\}, A)\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\([a_1, b_1]\)</span> и <span
+class="math inline">\([a_2, b_2]\)</span> отрезки в <span
+class="math inline">\(\mathbb{R}^n\)</span>. <span
+class="math inline">\(\rho([a_1, b_1], [a_2, b_2]) = 0 \Leftrightarrow
+[a_1, b_1] \cap [a_2, b_2] \ne \varnothing\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\([a_1, b_1] =
+\{a_1 + (b_1 - a_1)\cdot t_1, \,\,\,\, t_1 \in [0, 1]\}\)</span> и <span
+class="math inline">\([a_2, b_2] = \{a_2 + (b_2 - a_2)\cdot t_2,
+\,\,\,\, t_2 \in [0, 1]\)</span>. Рассмотрим функцию <span
+class="math inline">\(f(t_1, t_2) = \rho(a_1 + (b_1 - a_1)\cdot t_1, a_2
++ (b_2 - a_2)\cdot t_2), \,\,\,\, t_1, t_2 \in [0, 1]\)</span> (здесь
+<span class="math inline">\(\rho\)</span> метрика, а не расстояние между
+подмножествами). <span class="math inline">\(f\)</span> непрерывна, как
+композиция непрерывных. <span class="math inline">\(f\)</span>
+определена на <span class="math inline">\([0, 1]\times[0, 1]\)</span>.
+<span class="math inline">\([0, 1]\times[0, 1]\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#theorem-1">замкнуто
+и ограничено, а значит компакт</a>. <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#statement-16">Непрерывная
+функция на компакте достигает своего наименьшего и наибольшего
+значения</a>. Если <span class="math inline">\([a_1, b_1] \cap [a_2,
+b_2] = \varnothing\)</span>, то <span class="math inline">\(\forall x,
+y: \,\,\,\, x \in [a_1, b_1], \,\,\,\, y \in [a_2, b_2] \,\,\,\, \rho(x,
+y) &gt; 0 \Rightarrow f(t_1, t_2) &gt; 0 \,\,\,\, \forall t_1, t_2 \in
+[0, 1] \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Расстояние
+между ломаными равно нулю тогда и только тогда, когда они
+пересекаются.</p>
+<p><strong>Определение:</strong><a name="definition-6"></a> Любое <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-16">открытое
+покрытие</a> множества - это его <em>окрестность</em>.</p>
+<h2
+id="доказательство-теоремы-жордана-для-замкнутых-ломаных">Доказательство
+теоремы Жордана для замкнутых ломаных</h2>
+<hr />
+<details>
+<summary>
+<strong>План</strong>
+</summary>
+<ol type="1">
+<li><p>Построить окрестности точек ломаной, такие, что выбрасыванием из
+построенной окрестности точек ломаной получим пространство, состоящее из
+двух компонент линейной связности.</p></li>
+<li><p>Пусть <span class="math inline">\(p\)</span> точка, принадлежащая
+ломаной, а <span class="math inline">\(U(p)\)</span>, окрестность <span
+class="math inline">\(a\)</span>, построенная в первом пункте. Хотим
+доказать, что любую точку из <span class="math inline">\(U(p) \setminus
+L\)</span> можно соединить нерпрерывной кривой с точкой из <span
+class="math inline">\(U(a_0)\setminus L\)</span>.</p></li>
+<li><p>Хотим доказать, что любую точку из <span
+class="math inline">\(\mathbb{R}^2 / L\)</span> можно соединить
+непрерывной кривой, не пересекающей <span
+class="math inline">\(L\)</span>, с точкой из <span
+class="math inline">\(U(a_0)\setminus L\)</span>.</p></li>
+<li><p>Хотим построить локально постоянную фунцию, принимающую два
+значения на множестве <span class="math inline">\(\mathbb{R}^2 \setminus
+L\)</span>.</p></li>
+</ol>
+</details>
+<ol type="1">
+<li><p>Пусть <span class="math inline">\(p \in L\)</span>. <span
+class="math inline">\(\varepsilon_p = \min\{\rho(p, e_i)| \,\,\,\, p
+\not\in e_i, \,\,\,\, i \in \{0, \ldots, m - 1\}\}\)</span>. <span
+class="math inline">\(\varepsilon_p &gt; 0\)</span>, так как принадлежит
+множеству положительных величин. Пусть <span class="math inline">\(U(p)
+= O_{\varepsilon_p}(p)\)</span>. <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/cool-problems#exercise-4">По
+задаче</a> <span class="math inline">\(U(p) \setminus L\)</span> состоит
+из двух компонент линейной связности.</p></li>
+<li><p>Докажем, что любую точку из окрестности <span
+class="math inline">\(L \subset \mathbb{R}^2\)</span> можно соединить
+ломаной, не пересекающей <span class="math inline">\(L\)</span> с точкой
+из <span class="math inline">\(U(a_0)\setminus L\)</span>.</p></li>
+</ol>
+<center>
+<object data="img/good-segments.svg" width="700" height="300">
+</object>
+</center>
+<center>
+<object data="img/in-vertex.svg" width="700" height="300">
+</object>
+</center>
+<center>
+<object data="img/side.svg" width="700" height="300">
+</object>
+</center>
+<ol start="3" type="1">
+<li>Докажем, что любую точку из <span class="math inline">\(\mathbb{R}^2
+\setminus L\)</span> можно соединить ломаной с точкой из <span
+class="math inline">\(U(a_0)\setminus L\)</span>.
+<center>
+<object data="img/last.svg" width="700" height="300">
+</object>
+</center></li>
+</ol>
+<p>Таким образом, получили, что компонент линейной связности у
+множетства <span class="math inline">\(\mathbb{R}^2 \setminus L\)</span>
+не более двух, так как <span class="math inline">\(U(a_0)\setminus
+L\)</span> состоит из двух компонент.</p>
+<ol start="4" type="1">
+<li>Хотим доказать, что компонент ровно две. Для этого построим локально
+постоянную функцию на <span class="math inline">\(\mathbb{R}^2 \setminus
+L\)</span> равную <span class="math inline">\(1\)</span> для точек
+“внутри” ломаной, и <span class="math inline">\(0\)</span> для точек
+“снаружи”.</li>
+</ol>
+<p>Выберем на плоскости декартову систему координат, так, чтобы все
+точки ломаной имели разные абсциссы(координаты по оси <span
+class="math inline">\(x\)</span>), это возможно, так как ломаная состоит
+из конечного числа точек, то есть запрещено конечное число направлений.
+Пусть <span class="math inline">\(p \in \mathbb{R}^2 \setminus
+L\)</span>. Проведем из <span class="math inline">\(p\)</span> луч <span
+class="math inline">\(l_p\)</span> сонаправленный с осью <span
+class="math inline">\(y\)</span>. <span class="math inline">\(|l_p \cap
+e| \le 1\)</span> (пересечение луча <span
+class="math inline">\(l_p\)</span> с произвольным ребром <span
+class="math inline">\(L\)</span> состоит не более чем из одной
+точки).</p>
+<p>Пусть <span class="math inline">\(l_p\)</span> пересекает <span
+class="math inline">\(e\)</span> по точке <span
+class="math inline">\(Q\)</span>. <span class="math inline">\(Q\)</span>
+- <em>прикольная</em>, если</p>
+<ol type="1">
+<li><span class="math inline">\(Q\)</span> не является концом <span
+class="math inline">\(e\)</span>.</li>
+<li><span class="math inline">\(Q\)</span> является вершиной ломаной
+(концом ребра) и ребра, выходящие из <span
+class="math inline">\(Q\)</span>, лежат в разных полуплоскостях
+относительно прямой, проходящей через <span
+class="math inline">\(l_p\)</span>.</li>
+</ol>
+<center>
+<object data="img/valuable-dots.svg" width="300" height="300">
+</object>
+</center>
+<p>На картинке прикольные точки - оранжевые.</p>
+<p>Пусть <span class="math inline">\(\eta(p) = \begin{cases}  0,
+&amp;\text{ число прикольных пересечений $p$ с ломаной чётно }\\  1,
+&amp;\text{ иначе } \end{cases}\)</span></p>
+<p>(<span class="math inline">\(\eta\)</span> равна нулю “снаружи”
+ломаной и одному “внутри”)</p>
+<p>Докажем, что <span class="math inline">\(\eta\)</span> - локально
+постоянная функция.</p>
+<p>Пусть <span class="math inline">\(l_p\)</span> пересекает ломаную по
+точкам <span class="math inline">\(q_1, \ldots, q_m\)</span>(их конечное
+число, так как точек ломаной конечно) и <span class="math inline">\(m
+\ge 1\)</span>. Рассмотрим окрестность <span
+class="math inline">\(U(p)\)</span> точки <span
+class="math inline">\(p\)</span> радиуса <span
+class="math inline">\(\min\{\varepsilon_{q_i}, \,\,\,\, i \in \{1,
+\ldots, m\}\}\)</span> (<span
+class="math inline">\(\varepsilon_i\)</span> - радиус окрестности,
+полученный в пукте <span class="math inline">\(1\)</span>).</p>
+<ol type="1">
+<li>Пусть <span class="math inline">\(q_i\)</span> прикольная точка.
+<span class="math inline">\(\forall p’ \in U(p) \,\,\,\, l_{p’}\)</span>
+будет пересекать ломаную по прикольной точке.</li>
+<li>Пусть <span class="math inline">\(q_i\)</span> не является
+прикольной точкой. Пусть <span class="math inline">\(p’ \in
+U(p)\)</span>. Тогда <span class="math inline">\(l_{p’}\)</span> может
+пересекать ломаную по двум прикольным точкам или не пересекать ломаную
+совсем. То есть вклад в четность прикольных пересечений не
+изменится.</li>
+</ol>
+<p>Если <span class="math inline">\(m = 0\)</span>, то можно выбрать
+окрестность точки <span class="math inline">\(p\)</span>, так, чтобы для
+любой точки <span class="math inline">\(p’\)</span> из окрестности <span
+class="math inline">\(l_{p’}\)</span> не пересекал ломаную.</p>
+<p>Очевидно, <span class="math inline">\(\eta\)</span> принимает на
+<span class="math inline">\(\mathbb{R}^2 \setminus L\)</span> хотя бы
+два значения. Тогда <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#statement-21">по
+утверждению</a> <span class="math inline">\(\mathbb{R}^2 \setminus
+L\)</span> состоит не менее чем из двух компонент линейной
+связности.</p>
+<p>Теорема Жордана для ломаных доказана <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2
+id="доказательство-теоремы-жордана-для-незамкнутых-ломаных">Доказательство
+теоремы Жордана для незамкнутых ломаных</h2>
+<hr />
+<p>Все приведенные выше рассуждения остается неизменными, только <span
+class="math inline">\(U(a_0)\setminus L\)</span> линейно связно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="следствие-про-четыре-точки-на-ломаной">Следствие про четыре
+точки на ломаной</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
+class="math inline">\(L \subset \mathbb{R}^2\)</span> <a
+href="#definition-2">замкнутая</a> <a href="#definition-2">ломаная</a>
+<a href="#definition-3">без самопересечений</a>. Пусть <span
+class="math inline">\(a, b, c, d\)</span> точки на ломаной,
+расположенные именно в таком порядке. Пусть <span
+class="math inline">\(L_{ac}\)</span> - ломаная, соединяющая точки <span
+class="math inline">\(a\)</span> и <span
+class="math inline">\(c\)</span>, <span
+class="math inline">\(L_{bd}\)</span> - ломаная, соединяющая точки <span
+class="math inline">\(b\)</span> и <span
+class="math inline">\(d\)</span>. Пусть <a
+href="#definition-3">внутренности</a> ломаных <span
+class="math inline">\(L_{ac}\)</span> и <span
+class="math inline">\(L_{bd}\)</span> лежат в одной <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-25">компоненте
+линейной связности связности</a> <span
+class="math inline">\(\mathbb{R}^2 \setminus L\)</span>.</p>
+<p><em>Доказательство:</em> бла-бла-бла… ура <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-7"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2">Простой</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">граф</a>
+с <span class="math inline">\(n\)</span> вершинами - <em>полный</em>,
+если любые две его вершины соединены
+ребром..<br><strong>Обозначается:</strong> <span
+class="math inline">\(K_n\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-8"></a> Пусть <span
+class="math inline">\(G = (E, V, \sigma)\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2">простой</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">граф</a>,
+<span class="math inline">\(|V| = n\)</span>. <span
+class="math inline">\(V_1 \subset V, \,\,\,\, V_2 \subset V, \,\,\,\,
+V_1\cap V_2 = \varnothing, \,\,\,\, V_1\cup V_2 = V\)</span>. <span
+class="math inline">\(|V_1| = n_1, \,\,\,\, |V_2| = n_2\)</span>. Если
+любые две вершины из <span class="math inline">\(V_1\)</span> и <span
+class="math inline">\(V_2\)</span> соединены ребром, то граф <span
+class="math inline">\(G\)</span> - <em>полный двудольный граф</em>, а
+множества <span class="math inline">\(V_1\)</span> и <span
+class="math inline">\(V_2\)</span> -
+<em>доли</em>.<br><strong>Обозначается:</strong> <span
+class="math inline">\(K_{n_1,n_2}\)</span>.</p>
+<h3 id="топологичекий-граф">Топологичекий граф</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-9"></a> Пусть <span
+class="math inline">\(G = (E, V, \sigma)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">граф</a>.
+Каждому ребру <span class="math inline">\(e \in E\)</span> поставим в
+соответствие отрезок <span class="math inline">\([a_e, b_e]\)</span>,
+так, чтобы полученные отрезки для различных ребер не пересекались.
+Рассмотрим <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-24">дизъюнктивное
+объединение</a> <span class="math inline">\(\displaystyle\sqcup_{e \in
+E}[a_e, b_e]\)</span>. Сопоставим каждой вершине графа точку, так чтобы
+для различных вершин точки не совпадали. Рассмотрим множество <span
+class="math inline">\((\displaystyle\sqcup_{v \in V}\{x_v\}) \cup
+(\displaystyle\sqcup_{e \in E}[a_e, b_e])\)</span>. <span
+class="math inline">\(\forall e \in E\)</span>, если <span
+class="math inline">\(\sigma^{-1}(e)\)</span> состоит из одной вершины
+<span class="math inline">\(v\)</span>, то <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-20">склеим
+концы отрезка</a> <span class="math inline">\([a_e, b_e]\)</span> с
+вершиной <span class="math inline">\(v\)</span>. Если <span
+class="math inline">\(\sigma^{-1}(e)\)</span> состоит из двух вершин
+<span class="math inline">\(v_1\)</span> и <span
+class="math inline">\(v_2\)</span>, то склеим <span
+class="math inline">\(v_1\)</span> и <span
+class="math inline">\(a_e\)</span>, <span
+class="math inline">\(v_2\)</span> и <span
+class="math inline">\(b_e\)</span>. Полученное <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a> <span class="math inline">\(X_G\)</span> -
+<em>топологический граф</em>.</p>
+<p><strong>Определение:</strong><a name="definition-10"></a> Пусть <span
+class="math inline">\(Y\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-1">топологическое
+пространство</a>. <span class="math inline">\(X_G\)</span> - <a
+href="#definition-9">топологический граф</a>. <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-9">Непрерывное</a>
+взаимнооднозначное отображение <span class="math inline">\(f: X_G \to
+Y\)</span> - <em>вложение графа</em> <span
+class="math inline">\(G\)</span> <em>в пространство</em> <span
+class="math inline">\(Y\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">Граф</a>
+<span class="math inline">\(K_{3, 3}\)</span> нельзя <a
+href="#definition-0">вложить</a> в плоскость.</p>
+<p><em>Доказательство:</em> <a href="#statement-2">см.лемму о <span
+class="math inline">\(4\)</span>-х точках</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Если граф
+вложим в плоскость, то он вложим так, чтобы все непрерывные кривые
+соответствующие ребрам были ломаными.</p>
+<p><em>Доказательство:</em></p>
+<center>
+<object data="img/plane-graph.svg" width="300" height="300">
+</object>
+</center>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> Пусть образ
+непрерывной кривой <span class="math inline">\(\gamma: [a, b] \to
+\mathbb{R}^2\)</span> содержится в некоторой открытой окрестности <span
+class="math inline">\(U\)</span>. Тогда <span
+class="math inline">\(\exists\)</span> ломаная <span
+class="math inline">\(L \subset U\)</span>, соединяющая <span
+class="math inline">\(\gamma(a)\)</span> и <span
+class="math inline">\(\gamma(b)\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<center>
+<object data="img/caterpillar.svg" width="300" height="300">
+</object>
+</center>
+<center>
+<object data="img/curve-line.svg" width="300" height="300">
+</object>
+</center>
+<h2 id="теорема-жордана-для-кривых-компонент-не-меньше-двух">Теорема
+Жордана для кривых: компонент не меньше двух</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-6"></a> Пусть <span
+class="math inline">\(\gamma: [a, b] \to \mathbb{R}^2\)</span> - <a
+href="#definition-0">замкнутая</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-13">непрерывная</a>
+<a href="#definition-1">кривая без самопересечений</a>. Пусть <span
+class="math inline">\(\Gamma = \gamma([a, b])\)</span> - образ
+отображения <span class="math inline">\(\gamma\)</span> и <span
+class="math inline">\(\Omega = \mathbb{R}^2 \setminus \Gamma\)</span>.
+Тогда <span class="math inline">\(\Omega\)</span> не является линейно
+связным.</p>
+<p><em>Доказательство:</em></p>
+<center>
+<object data="img/jordan-two.svg" width="300" height="300">
+</object>
+</center>
+<h2 id="теорема-жордана-для-ломаных-компонент-ровно-две">Теорема Жордана
+для ломаных: компонент ровно две</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-7"></a> Пусть <span
+class="math inline">\(f: X_G \to \mathbb{R}^2\)</span> <a
+href="#definition-0">вложение графа в</a> плоскость. Пусть <span
+class="math inline">\(\Gamma = f(X_G)\)</span> - образ графа при
+отображении <span class="math inline">\(f\)</span>. Тогда <span
+class="math inline">\(\mathbb{R}^2\setminus \Gamma\)</span> содержит
+ровно одну неограниченную <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-25">компоненту
+линейной связности</a>.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Утверждение:</strong><a name="statement-8"></a> Пусть <span
+class="math inline">\(\gamma: [a, b] \to \mathbb{R}^2\)</span> <a
+href="#definition-2">незамкнутая</a> <a href="#definition-3">ломаная без
+самопересечений</a>. Пусть <span class="math inline">\(\Gamma =
+\gamma([a, b])\)</span> - образ отображения <span
+class="math inline">\(\gamma\)</span>. Тогда <span
+class="math inline">\(\mathbb{R}^2\setminus \Gamma\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-14">линейно
+связно</a>.</p>
+<p><em>Доказательство:</em></p>
+<center>
+<object data="img/exactly-two-1.svg" width="300" height="300">
+</object>
+</center>
+<p><strong>Утверждение:</strong><a name="statement-9"></a> Пусть <span
+class="math inline">\(\gamma: [a, b] \to \mathbb{R}^2\)</span> <a
+href="#definition-2">замкнутая</a> <a href="#definition-3">ломаная без
+самопересечений</a>. Пусть <span class="math inline">\(\Gamma =
+\gamma([a, b])\)</span> - образ отображения <span
+class="math inline">\(\gamma\)</span>. Пусть <span
+class="math inline">\(A\)</span> одна из <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-25">компонент
+линейной связности</a> <span class="math inline">\(\mathbb{R}^2\setminus
+\Gamma\)</span>. Тогда <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-8">граница</a>
+<span class="math inline">\(\partial A\)</span> содержит <span
+class="math inline">\(\Gamma\)</span>.</p>
+<p><em>Доказательство:</em> непонятно</p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

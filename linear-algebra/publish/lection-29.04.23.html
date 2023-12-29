@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#аффинно-квадратичные-функции"
+id="toc-аффинно-квадратичные-функции">Аффинно-квадратичные функции</a>
+<ul>
+<li><a href="#координатная-запись-аффинно-квадратичной-функции"
+id="toc-координатная-запись-аффинно-квадратичной-функции">Координатная
+запись аффинно-квадратичной функции</a>
+<ul>
+<li><a
+href="#изменение-матрицы-аффинно-квадратичной-функции-при-переходе-от-одной-аффинной-системы-координат-к-другой"
+id="toc-изменение-матрицы-аффинно-квадратичной-функции-при-переходе-от-одной-аффинной-системы-координат-к-другой">Изменение
+матрицы аффинно-квадратичной функции при переходе от одной аффинной
+системы координат к другой</a></li>
+</ul></li>
+<li><a href="#центр-аффинно-квадратичной-функции"
+id="toc-центр-аффинно-квадратичной-функции">Центр аффинно-квадратичной
+функции</a>
+<ul>
+<li><a href="#инварианты-аффинно-квадратичной-функции"
+id="toc-инварианты-аффинно-квадратичной-функции">Инварианты
+аффинно-квадратичной функции</a></li>
+</ul></li>
+<li><a href="#канонический-вид-аффинно-квадратичной-функции"
+id="toc-канонический-вид-аффинно-квадратичной-функции">Канонический вид
+аффинно-квадратичной функции</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="аффинно-квадратичные-функции">Аффинно-квадратичные функции</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\((\mathbb{A}, V)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>, <span class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">векторное
+пространство</a> над полем <span class="math inline">\(F\)</span>.
+Отображение <span class="math inline">\(L: \mathbb{A} \to F\)</span> -
+<em>аффинно-линейное</em>, если существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0">линейная
+функция</a> <span class="math inline">\(l: V \to F\)</span>, такая, что
+<span class="math inline">\(L(a) = L(b) + l(\overline{ba})\,\,\,\,
+\forall a, b \in \mathbb{A}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Отображение
+<span class="math inline">\(Q: \mathbb{A} \to F\)</span> -
+<em>аффинно-квадратичная функция</em>, если существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-18.02.23#definition-0">линейная
+функция</a> <span class="math inline">\(l: V \to F\)</span> и <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3">квадратичная
+форма</a> <span class="math inline">\(q: V \to F\)</span>, такие, что
+<span class="math inline">\(\forall a, b \in \mathbb{A} \,\,\,\, Q(b) =
+Q(a) + q(\overline{ab}) + 2l(\overline{ab})\)</span>.</p>
+<h3 id="координатная-запись-аффинно-квадратичной-функции">Координатная
+запись аффинно-квадратичной функции</h3>
+<hr />
+<p>Пусть <span class="math inline">\((O, e)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3">аффинная
+система координат</a>. <span class="math inline">\(Q\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">аффинно-квадратичная
+функция</a>.</p>
+<p><span class="math display">\[\forall a \in \mathbb{A} \,\,\,\, Q(a) =
+Q(O) + q(\overline{Oa}) + 2 l(\overline{Oa})\]</span> <span
+class="math display">\[Q(a) = Q(O) + \displaystyle \sum_{i, j =
+1}^{n}b_{ij}x_ix_j + 2 \displaystyle \sum_{i = 1}^{n}s_i x_i\]</span>
+<span class="math display">\[Q(a) = Q(O) + X^T B X + 2 X^T S\]</span>
+<span class="math display">\[Q(a) = Q(O) + X^T B X + X^T S + S^T
+X\]</span></p>
+<p><span class="math inline">\(S\)</span> - столбец коэффицентов
+линейной части <span class="math inline">\(Q\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> <span
+class="math inline">\(\tilde{B} = \left(\begin{array}{c|c} B &amp; S
+\\\hline S^T &amp; Q(O)\end{array}\right)\)</span> - <em>матрица
+аффинно-квадратичной функции</em> <span class="math inline">\(Q\)</span>
+в базисе <span class="math inline">\((O, e)\)</span>.</p>
+<p><span class="math display">\[\tilde{X} =
+\left(\begin{array}{c}X\\\hline 1\end{array}\right)\]</span></p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> <span
+class="math display">\[Q(a) = \tilde{X}^T\tilde{B}\tilde{X}\]</span></p>
+<p>Пусть <span class="math inline">\((O’, e’)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3">аффинная
+система координат</a>. Матрица перехода от <span
+class="math inline">\(e\)</span> к <span
+class="math inline">\(e’\)</span> - <span class="math inline">\(C_{e \to
+e’}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> <span
+class="math inline">\(\tilde{C} = \left(\begin{array}{ccc|c} &amp; &amp;
+&amp; v_1\\ &amp; C_{e \to e’} &amp; &amp; \vdots\\&amp; &amp; &amp; v_n
+\\\hline 0 &amp; \dots &amp; 0 &amp; 1\end{array}\right)\)</span> -
+<em>матрица перехода от аффинной системы координат</em> <span
+class="math inline">\((O, e)\)</span> <em>к аффинной системе
+координат</em> <span class="math inline">\((O’, e’)\)</span>, <span
+class="math inline">\(w_1, \ldots, w_n\)</span> координаты <span
+class="math inline">\(\overline{OO’}\)</span> в <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7">базисе</a>
+<span class="math inline">\(e\)</span>.</p>
+<h4
+id="изменение-матрицы-аффинно-квадратичной-функции-при-переходе-от-одной-аффинной-системы-координат-к-другой">Изменение
+матрицы аффинно-квадратичной функции при переходе от одной аффинной
+системы координат к другой</h4>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-1"></a></p>
+<p><span class="math display">\[B’ = C_{e \to e’}^T B C_{e \to
+e’}\]</span> <span class="math display">\[S’ = C_{e \to e’}^T(B W +
+S)\]</span> <span class="math inline">\(W\)</span> - столбец координат
+вектора <span class="math inline">\(\overline{OO’}\)</span> (догадайтесь
+в каком базисе) <span class="math inline">\(S\)</span> - столбец <span
+class="math inline">\(l(e_i)\)</span>, где <span
+class="math inline">\(e_i\)</span> - базисный вектор. <span
+class="math display">\[Q(O’) = W^T B W + S^T W + W^T S +
+Q(O)\]</span></p>
+<p>лень</p>
+<h3 id="центр-аффинно-квадратичной-функции">Центр аффинно-квадратичной
+функции</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(W\)</span> - столбец координат вектора <span
+class="math inline">\(\overline{OO’}\)</span>, таков, что <span
+class="math inline">\(B W + S = 0\)</span>. Тогда <span
+class="math inline">\(S’ = 0\)</span> и <span class="math inline">\(Q(O’
++ v) = q(v) + Q(O’) = Q(O’ - v) \,\,\,\, \forall v \in V\)</span>. Точка
+<span class="math inline">\(O’\)</span> - <em>центр аффинно-квадратичной
+функции</em> <span class="math inline">\(Q\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Множество <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-4">центров</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">аффинно-квадратичной
+функции</a> либо <span class="math inline">\(\varnothing\)</span>, либо
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскость</a>.</p>
+<p><em>Доказательство:</em></p>
+<p>Если система <span class="math inline">\(BW + S = 0\)</span>
+разрешима относительно <span class="math inline">\(W\)</span>(столбец
+координат вектора <span class="math inline">\(\overline{OO’}\)</span>),
+то <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#statement-0">по
+утверждению</a> получаем плоскость, иначе пустое множество <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-5"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">Аффинно-квадратичная
+функция</a> <span class="math inline">\(Q\)</span> <em>невырождена</em>,
+если существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3">аффинная
+система координат</a> <span class="math inline">\((O, e)\)</span>, в
+которой <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-2">матрица</a>
+<span class="math inline">\(\tilde{B}\)</span> невырождена.</p>
+<h4 id="инварианты-аффинно-квадратичной-функции">Инварианты
+аффинно-квадратичной функции</h4>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(Q: \mathbb{A} \to F\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">аффинно-квадратичная
+функция</a>, <span class="math inline">\(\tilde{B}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-2">матрица</a>
+<span class="math inline">\(Q\)</span>, <span
+class="math inline">\(B\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3">матрица</a>
+<span class="math inline">\(q\)</span>. Тогда следующие величины
+инварианты <span class="math inline">\(Q\)</span>, то есть не зависят от
+системы координат:</p>
+<ol type="1">
+<li><span class="math inline">\(\operatorname{rk} B\)</span></li>
+<li><span class="math inline">\(\operatorname{rk}
+\tilde{B}\)</span></li>
+<li>Если <span class="math inline">\(F = \mathbb{R}\)</span>, то <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-0">положительный</a>
+и <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.03.23#definition-0">отрицательный
+индексы</a> инерции <span class="math inline">\(q\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em> Следует из соответствующих теорем :) <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="канонический-вид-аффинно-квадратичной-функции">Канонический вид
+аффинно-квадратичной функции</h3>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(Q: \mathbb{A} \to F\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">аффинно-квадратичная
+функция</a>, не являющаяся <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-0">аффинно-линейной</a>.
+Тогда существует аффинная система координат, в которой <span
+class="math inline">\(Q\)</span> имеет вид:</p>
+<p><span class="math display">\[Q(a) = \lambda_1 x^2_1 + \ldots +
+\lambda_r x^2_r + \lambda_{r + 1}\]</span></p>
+<p>или</p>
+<p><span class="math display">\[Q(a) = \lambda_1 x^2_1 + \ldots +
+\lambda_r x^2_r + 2 x_{r + 1}\]</span></p>
+<p><span class="math inline">\(\lambda_1, \ldots, \lambda_r\)</span> не
+равны <span class="math inline">\(0\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Приведем <span class="math inline">\(q\)</span> к диагональному виду,
+и по-заменяем <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

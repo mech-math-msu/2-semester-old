@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#функции" id="toc-функции">Функции</a></li>
+<li><a href="#локальные-свойства-предела"
+id="toc-локальные-свойства-предела">Локальные свойства предела</a></li>
+<li><a href="#непрерывные-функции"
+id="toc-непрерывные-функции">Непрерывные функции</a>
+<ul>
+<li><a href="#локальные-свойства-непрерывных-функций"
+id="toc-локальные-свойства-непрерывных-функций">Локальные свойства
+непрерывных функций</a></li>
+</ul></li>
+<li><a href="#глобальные-свойства-непрерывных-функций"
+id="toc-глобальные-свойства-непрерывных-функций">Глобальные свойства
+непрерывных функций</a></li>
+</ul>
+</nav>
+</details>
+<h2 id="функции">Функции</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(f\)</span> - функция в <span
+class="math inline">\(\mathbb{R}^n\)</span>. Множество <span
+class="math inline">\(A = \{x \in \mathbb{R}^n: \,\,\,\, f(x) =
+c\}\)</span> - <em>линия уровня</em> (для константы <span
+class="math inline">\(c\)</span>).</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Если <span
+class="math inline">\(x_0 \in D_f’\)</span> (множество предельных точек
+области определения) и <span class="math inline">\(\exists a \in
+\mathbb{R}: \,\,\,\, \forall \varepsilon &gt; 0 \,\,\,\, \exists \delta
+&gt; 0: \,\,\,\, \forall x \in \mathring{O}_{\delta}(x_0) \cap D_f
+\,\,\,\, |f(x) - a| &lt; \varepsilon\)</span>, то <span
+class="math inline">\(a\)</span> - <em>предел функции</em> <span
+class="math inline">\(f(x)\)</span> в точке <span
+class="math inline">\(x_0\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a>
+Сформулируйте определение по Гейне для функции многих переменных.</p>
+<h2 id="локальные-свойства-предела">Локальные свойства предела</h2>
+<hr />
+<p>Предел суммы, произведения, частного, отделимость, предельный переход
+в неравенствах, ограниченность функции, имеющей предел, критерий
+Коши.</p>
+<p>Все, что выше надо уметь доказывать.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Если <span
+class="math inline">\(x_0 \in D_f’\)</span> (множество предельных точек
+области определения), <span class="math inline">\(\gamma(t)\)</span> -
+непрерывная кривая, <span class="math inline">\(\gamma(t_0) =
+x_0\)</span>, если <span class="math inline">\(\exists a \in \mathbb{R}:
+\,\,\,\, \forall \varepsilon &gt; 0 \,\,\,\, \exists \delta &gt; 0:
+\,\,\,\, \forall t \in (t_0 - \delta, t_0) \cup (t_0, t_0 + \delta)
+\,\,\,\, |f(x) - a| &lt; \varepsilon\)</span>, то <span
+class="math inline">\(a\)</span> - <em>предел функции</em> <span
+class="math inline">\(f(x)\)</span> <em>вдоль кривой</em> <span
+class="math inline">\(\gamma\)</span> в точке <span
+class="math inline">\(x_0\)</span>.</p>
+<h2 id="непрерывные-функции">Непрерывные функции</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Если <span
+class="math inline">\(x_0 \in D_f’\)</span> (множество предельных точек
+области определения). Если существует <span
+class="math inline">\(\displaystyle \lim_{x\to x_0}f(x) = x_0\)</span>,
+то функция <span class="math inline">\(f(x)\)</span> <em>непрерывна</em>
+в точке <span class="math inline">\(x_0\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> Множество
+всех непрерывных на <span class="math inline">\(A \subset
+\mathbb{R}^n\)</span> функций обозначается <span
+class="math inline">\(C(A)\)</span>.</p>
+<h3 id="локальные-свойства-непрерывных-функций">Локальные свойства
+непрерывных функций</h3>
+<hr />
+<p>Сумма, произведение и частное непрерывных функций - непрерывная
+функция, композиция непрерывных функций непрерывная функция, …</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Композиция
+непрерывных функций непрерывна.</p>
+<p><em>Доказательство:</em></p>
+<h2 id="глобальные-свойства-непрерывных-функций">Глобальные свойства
+непрерывных функций</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (Первая теорема
+Вейерштрасса) Пусть <span class="math inline">\(A \subset
+\mathbb{R}^n\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-0">компакт</a>,
+<span class="math inline">\(f(x) \in C(A)\)</span>. Тогда <span
+class="math inline">\(f(x)\)</span> ограничена на <span
+class="math inline">\(A\)</span>.</p>
+<p><em>Доказательство:</em> как будто ничего не изменилось (не, теперь
+компакт, потому что в <span class="math inline">\(\mathbb{R}^n\)</span>
+не только отрезок компакт).</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (Вторая теорема
+Вейерштрасса) Пусть <span class="math inline">\(A \subset
+\mathbb{R}^n\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-0">компакт</a>,
+<span class="math inline">\(f(x) \in C(A)\)</span>. Тогда <span
+class="math inline">\(\exists x_{min}, x_{max} \in A: \,\,\,\,
+f(x_{min}) = \displaystyle\inf_Af(x) \,\,\,\, f(x_{max}) =
+\displaystyle\sup_Af(x)\)</span>.</p>
+<p><em>Доказательство:</em> см. выше.</p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

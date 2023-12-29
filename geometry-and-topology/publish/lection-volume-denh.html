@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#равновеликость-и-равносоставленность"
+id="toc-равновеликость-и-равносоставленность">Равновеликость и
+равносоставленность</a>
+<ul>
+<li><a
+href="#инварианты-дена-и-критерий-равносоставленности-многогранников"
+id="toc-инварианты-дена-и-критерий-равносоставленности-многогранников">Инварианты
+Дена и критерий равносоставленности многогранников</a>
+<ul>
+<li><a href="#инварианты-дена-для-куба-и-призмы"
+id="toc-инварианты-дена-для-куба-и-призмы">Инварианты Дена для куба и
+призмы</a></li>
+<li><a
+href="#необходимое-условие-равносоставленности-многогранников-теорема-дена"
+id="toc-необходимое-условие-равносоставленности-многогранников-теорема-дена">Необходимое
+условие равносоставленности многогранников (теорема Дена)</a></li>
+<li><a href="#применения-теоремы-дена"
+id="toc-применения-теоремы-дена">Применения теоремы Дена</a></li>
+</ul></li>
+<li><a href="#решение-третьей-проблемы-гильберта"
+id="toc-решение-третьей-проблемы-гильберта">Решение третьей проблемы
+Гильберта</a>
+<ul>
+<li><a href="#тетраэдр-хилла" id="toc-тетраэдр-хилла">Тетраэдр
+Хилла</a></li>
+</ul></li>
+<li><a href="#достаточное-условие-равносоставленности-многогранников"
+id="toc-достаточное-условие-равносоставленности-многогранников">Достаточное
+условие равносоставленности многогранников</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="равновеликость-и-равносоставленность">Равновеликость и
+равносоставленность</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(F\)</span> и <span class="math inline">\(F_1,
+\ldots, F_m\)</span> - многоугольники, для которых выполнено:<br> <span
+class="math inline">\(\forall i \ne j \,\,\,\, F_i \cap F_j =
+\varnothing\)</span>.<br> <span class="math inline">\(F = \cup_{i = 1}^m
+F_i\)</span>.<br> Тогда многоугольник <span
+class="math inline">\(F\)</span> <em>разрезан на многоугольники</em>
+<span class="math inline">\(F_i\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(F\)</span> и <span
+class="math inline">\(G\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-0">многоугольники</a>.
+Пусть <span class="math inline">\(F\)</span> <a
+href="#definition-0">разрезан на многоугольники</a> <span
+class="math inline">\(F_1, \ldots, F_s\)</span> и <span
+class="math inline">\(G\)</span> <a href="#definition-0">разрезан на
+многоугольники</a> <span class="math inline">\(G_1, \ldots,
+G_s\)</span>. Если <span class="math inline">\(\forall i \in \{1,
+\ldots, s\} \,\,\,\, G_i = F_i\)</span>, то многоугольники <span
+class="math inline">\(F\)</span> и <span
+class="math inline">\(G\)</span> - <em>равносоставлены</em>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-0">Многоугольники</a>
+<em>равновеликие</em>, если они имеют одинаковую площадь.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a>
+(Бойяи-Уоллес-Гервин) Если многоугольники равновелики, то они
+равносоставлены.</p>
+<p><em>Доказательство:</em> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/cool-problems#exercise-19">см.
+упражнение</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(F\)</span> и <span class="math inline">\(F_1,
+\ldots, F_m\)</span> - многогранники, для которых выполнено:<br> <span
+class="math inline">\(\forall i \ne j \,\,\,\, F_i \cap F_j =
+\varnothing\)</span>.<br> <span class="math inline">\(F = \cup_{i = 1}^m
+F_i\)</span>.<br> Тогда многоугольник <span
+class="math inline">\(F\)</span> <em>разрезан на многогранники</em>
+<span class="math inline">\(F_i\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(F\)</span> и <span
+class="math inline">\(G\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5">многогранники</a>.
+Пусть <span class="math inline">\(F\)</span> <a
+href="#definition-3">разрезан на многогранники</a> <span
+class="math inline">\(F_1, \ldots, F_s\)</span> и <span
+class="math inline">\(G\)</span> <a href="#definition-3">разрезан на
+многогранники</a> <span class="math inline">\(G_1, \ldots, G_s\)</span>.
+Если <span class="math inline">\(\forall i \in \{1, \ldots, s\} \,\,\,\,
+G_i = F_i\)</span>, то многогранники <span
+class="math inline">\(F\)</span> и <span
+class="math inline">\(G\)</span> - <em>равносоставлены</em>.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a>
+Многогранники <em>равновеликие</em>, если их объемы равны.</p>
+<h2
+id="инварианты-дена-и-критерий-равносоставленности-многогранников">Инварианты
+Дена и критерий равносоставленности многогранников</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-6"></a> Рассмотрим
+множество вещественных чисел <span
+class="math inline">\(\mathbb{R}\)</span>, как векторное пространство
+над полем <span class="math inline">\(\mathbb{Q}\)</span>. Обозначим
+полученное пространство <span
+class="math inline">\(\mathbb{R}_{Q}\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Векторы
+(числа) <span class="math inline">\(x_1, \ldots, x_n \in
+\mathbb{R}_Q\)</span> линейно независимы <span
+class="math inline">\(\Leftrightarrow \,\,\,\, \exists z_1, \ldots, z_n
+\in \mathbb{Z} (z_1^2 + \ldots z_n^2 \ne 0): \,\,\,\, z_1 x_1 + \ldots
+z_n x_n = 0\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Пример:</strong> <span class="math inline">\(\dim &lt;1,
+\frac13&gt; = 1\)</span>, а <span class="math inline">\(\dim &lt;1,
+\sqrt2&gt; = 2\)</span> (через <span class="math inline">\(&lt;x_1,
+x_2&gt;\)</span> обозначена линейная оболочка векторов <span
+class="math inline">\(x_1, x_2 \in \mathbb{R}_Q\)</span>).</p>
+<p><strong>Лемма:</strong><a name="lemma-1"></a> Пусть <span
+class="math inline">\(X = \{x_i\}\)</span> - конечный набор вещественных
+чисел, <span class="math inline">\(y \in \mathbb{R}\)</span>. Тогда
+любая линейная функция <span class="math inline">\(f: L(X) \to
+\mathbb{R}\)</span> продолжается до линейной функции на множестве <span
+class="math inline">\(L(X \cup \{y\})\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-7"></a> Пусть <span
+class="math inline">\(W\)</span> - многогранник. Пусть <span
+class="math inline">\(E\)</span> множество ребер <span
+class="math inline">\(W\)</span>. Обозначим длину ребра <span
+class="math inline">\(e \in E\)</span>, как <span
+class="math inline">\(|e|\)</span>, а двугранный угол при ребре <span
+class="math inline">\(e\)</span>, как <span
+class="math inline">\(\alpha_e\)</span>. Пусть <span
+class="math inline">\(\alpha(W) = \{\alpha_e: \,\,\,\, e \in
+E\}\)</span>. Пусть <span class="math inline">\(X \subset
+\mathbb{R}\)</span> конечное множество вещественных чисел, содержащее
+<span class="math inline">\(\alpha(W)\)</span> и <span
+class="math inline">\(\pi\)</span>. Обозначим <span
+class="math inline">\(L(X)\)</span> - линейную оболочку <span
+class="math inline">\(X\)</span>.<br>Линейная функция <span
+class="math inline">\(f: L(X) \to \mathbb{R}\)</span>, для которой <span
+class="math inline">\(f(\pi) = 0\)</span> - <em>функция Дена
+многогранника</em> <span class="math inline">\(W\)</span>, а число <span
+class="math inline">\(\Delta_f(W) = \displaystyle \sum_{e \in E}|e|\cdot
+f(\alpha_e)\)</span> - <em>инвариант Дена многогранника</em> <span
+class="math inline">\(W\)</span>.</p>
+<h3 id="инварианты-дена-для-куба-и-призмы">Инварианты Дена для куба и
+призмы</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Каждый
+инвариант Дена для куба равен нулю.</p>
+<p><em>Доказательство:</em> очевидно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Каждый
+инвариант Дена для призмы равен нулю.</p>
+<p><em>Доказательство:</em> вспомнить определение призмы <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3
+id="необходимое-условие-равносоставленности-многогранников-теорема-дена">Необходимое
+условие равносоставленности многогранников (теорема Дена)</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-4"></a> (аддитивность
+инварианта Дена) Пусть <span class="math inline">\(W\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5">многогранник</a>,
+<a href="#definition-3">разрезанный на многогранники</a> <span
+class="math inline">\(W_1, \ldots, W_m\)</span>. Пусть <span
+class="math inline">\(f\)</span> - функция Дена для <span
+class="math inline">\(W\)</span>. <a href="#lemma-1">По лемме</a> можем
+продолжить, так, чтобы <span class="math inline">\(f\)</span> была
+функцией Дена для всех <span class="math inline">\(W_i\)</span>. Тогда
+<span class="math display">\[\Delta_f(W) = \displaystyle \sum_{i =
+1}^{m}\Delta_f(W_i)\]</span></p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(e\)</span>
+ребро одного из многогранников <span class="math inline">\(W, W_1,
+\ldots, W_m\)</span>. Рассмотрим множество <span
+class="math inline">\(X\)</span>, состоящее из всех вершин
+многогранников <span class="math inline">\(W, W_1, \ldots, W_m\)</span>,
+попавших на <span class="math inline">\(e\)</span> и всех точек
+пересечения ребер многогранников <span class="math inline">\(W, W_1,
+\ldots, W_m\)</span> с ребром <span class="math inline">\(e\)</span>
+(как будто вершины тоже точки пересечения). Назовем <em>звеньями</em>
+отрезки, на которые точки из <span class="math inline">\(X\)</span>
+делят <span class="math inline">\(e\)</span>. Пусть <span
+class="math inline">\(\mathcal{E}\)</span> множество всех звеньев,
+находящихся на ребрах многогранника <span
+class="math inline">\(W\)</span>.</p>
+<p>Дальше много сумм <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span> - равносоставленные многогранники, а
+<span class="math inline">\(f\)</span> - функция Дена для <span
+class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span>. Тогда <span
+class="math inline">\(\Delta_f(A) = \Delta_f(B)\)</span>.</p>
+<p><em>Доказательство:</em> <a href="#statement-4">см. утверждение</a>
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="применения-теоремы-дена">Применения теоремы Дена</h3>
+<hr />
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Число <span
+class="math inline">\(\frac1{\pi}\operatorname{arccos}\frac13\)</span>
+иррационально.</p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(\alpha =
+\operatorname{arccos}\frac13\)</span>. Докажем, что при <span
+class="math inline">\(k \in \mathbb{N} \,\,\,\, \cos(k\cdot \alpha) =
+\frac{a_k}{3^k}\)</span>, где <span class="math inline">\(a_k\)</span>
+не делится на <span class="math inline">\(3\)</span>.</p>
+<p>Докажем по индукции.</p>
+<p><strong>База:</strong> <span class="math inline">\(n = 1\)</span>
+верно. <span class="math inline">\(n = 2\)</span> верно, так как <span
+class="math inline">\(\cos(2 \alpha) = 2\cdot \cos^2(\alpha) - 1 =
+-\frac79\)</span></p>
+<p><strong>Шаг:</strong> Пусть для всех <span class="math inline">\(k
+&lt; n\)</span> утверждение верно. Имеем <span
+class="math inline">\(\cos(n \alpha) + \cos((n - 2) \alpha) = 2 \cos((n
+- 1)\alpha)\cos(\alpha) = 2 \cdot \frac{a_{n - 1}}{3^{n - 1}}\cdot
+\frac13\)</span>, то есть <span class="math inline">\(\cos(n \alpha) = 2
+\cdot \frac{a_{n - 1}}{3^n} - \frac{a_{n - 2}}{3^{n - 2}}\)</span>.
+Число <span class="math inline">\(a_{n - 1} - 9 a_{n - 2}\)</span> не
+делится на три, так как <span class="math inline">\(a_{n - 1}\)</span> и
+<span class="math inline">\(a_{n - 2}\)</span> не делятся на три по
+предположению индукции.</p>
+<p>Пусть <span class="math inline">\(\frac1{\pi}\alpha = \frac{p}{q},
+\,\,\,\, p \in \mathbb{Z}, \,\,\,\, q \in \mathbb{N} \Rightarrow \cos(q
+\alpha) = \cos(p \pi) = \pm 1\)</span>, что противоречит доказанному
+выше утверждению <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Правильный
+тетраэдр и куб не равносоставлены.</p>
+<p><em>Доказательство:</em> Все двугранные углы куба равны <span
+class="math inline">\(\frac{\pi}2\)</span>, а все двугранные углы
+правильного тетраэдра равны <span
+class="math inline">\(\operatorname{arccos}\frac13\)</span>. Векторы
+<span class="math inline">\(\pi\)</span> и <span
+class="math inline">\(\operatorname{arccos}\frac13\)</span> линейно
+независимы в <span class="math inline">\(\mathbb{R}_Q\)</span> <a
+href="#lemma-0">по лемме</a>. <span class="math inline">\(\dim
+&lt;\alpha, \pi&gt; = 2, \,\,\,\, \frac{\pi}2 \in &lt;\alpha,
+\pi&gt;\)</span> и <span class="math inline">\(\alpha, \pi\)</span> -
+базис в <span class="math inline">\(&lt;\alpha, \pi&gt;\)</span>. То
+есть <span class="math inline">\(X = \{\alpha, \pi\}\)</span> подходящее
+множество для инварианта Дена. Зададим <span
+class="math inline">\(f\)</span> на <span
+class="math inline">\(&lt;\alpha, \pi&gt;\)</span>: <span
+class="math inline">\(f(\alpha) = 1, \,\,\,\, f(\pi) = 0\)</span>. <span
+class="math inline">\(f\)</span> - функция Дена для куба и тетраэдра. <a
+href="#statement-1">По утверждению</a> <span
+class="math inline">\(\Delta_f(\)</span> куба <span
+class="math inline">\() = 0 \,\,\,\, \forall f\)</span>. Посчитаем
+инвариант Дена для тетраэдра <span class="math inline">\(S\)</span>
+(пусть все его ребра равны <span class="math inline">\(1\)</span>):
+<span class="math inline">\(\Delta_f(S) = \displaystyle \sum_{i =
+1}^{6}1 \cdot f(\alpha) = 6\)</span>. <a href="#theorem-1">По теореме
+тетраэдр и куб не равносоставлены</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="решение-третьей-проблемы-гильберта">Решение третьей проблемы
+Гильберта</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-8"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5">Многогранники</a>
+<span class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span> - <em>равнодополняемые</em>, если
+существуют <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5">многогранники</a>
+<span class="math inline">\(W^A\)</span> и <span
+class="math inline">\(W^B\)</span>, которые можно можно <a
+href="#definition-3">разрезать на многогранники</a> <span
+class="math inline">\(W^A_0, \ldots W^A_n\)</span> и <span
+class="math inline">\(W^B_0, \ldots W^B_n\)</span> соответственно, так,
+чтобы <span class="math inline">\(W^A_0 = A, \,\,\,\, W^B_0 = B\)</span>
+и <span class="math inline">\(W^A_i = W^B_i \,\,\,\, \forall i \in \{1,
+\ldots, n\}\)</span>.</p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> У <a
+href="#definition-8">равнодополняемых</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5">многогранников</a>
+все <a href="#definition-7">инварианты Дена</a> совпадают.</p>
+<p><em>Доказательство:</em> <a href="#statement-4">см. утверждение</a> и
+еще <a href="#theorem-1">теорему</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>третья проблема Гильберта:</strong> Существуют ли не
+равнодополняемые (в частности, не равносоставленные) тетраэдры с
+одинаковыми высотами и основаниями?</p>
+<h3 id="тетраэдр-хилла">Тетраэдр Хилла</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-9"></a> Тетраэдр, в
+основании которого расположен равнобедренный прямоугольный треугольник,
+высота которого падает на один из концов гипотенузы и равна длине катета
+основания - <em>тетраэдр Хилла</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> <a
+href="#definition-9">Тетраэдр Хилла</a> <a
+href="#definition-1">равносоставлен</a> с кубом.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Следствие:</strong><a name="corollary-1"></a> Любой <a
+href="#definition-7">инвариант Дена</a> <a
+href="#definition-9">тетраэдра Хилла</a> равен нулю.</p>
+<p><em>Доказательство:</em> <a href="#statement-1">см. утверждение</a>
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-10"></a>
+<em>Координатный тетраэдр</em> - тетраэдр, координаты которого в
+прямоугольной системе координат равны: <span class="math inline">\((0,
+0, 0, 0), \,\,\,\, (1, 0, 0, 0), \,\,\,\, (0, 1, 0, 0), \,\,\,\, (0, 0,
+0, 1)\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a> Для <a
+href="#definition-10">координатного тетраэдра</a> существует <a
+href="#definition-7">инвариант Дена</a> отличный от нуля.</p>
+<p><em>Доказательство:</em> <a href="#statement-3">аналогично
+доказательству</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-2"></a> <a
+href="#definition-9">Тетраэдр Хилла</a>, у которого катеты основания
+равны <span class="math inline">\(1\)</span>, и <a
+href="#definition-10">координатный тетраэдр</a> <a
+href="#definition-8">неравнодополняемы</a>.</p>
+<p><em>Доказательство:</em> <a href="#corollary-1">это</a>, <a
+href="#statement-6">это</a> и <a href="#corollary-0">это</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2
+id="достаточное-условие-равносоставленности-многогранников">Достаточное
+условие равносоставленности многогранников</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (Ден-Сидлер) <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-polyhedra#definition-5">Многогранники</a>
+<a href="#definition-8">равнодополняемы</a> <span
+class="math inline">\(\Leftrightarrow\)</span> все их <a
+href="#definition-7">инварианты Дена</a> равны и их объемы
+совпадают.</p>
+<p><em>Доказательство:</em> без доказательства <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

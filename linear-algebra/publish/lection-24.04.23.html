@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#движения" id="toc-движения">Движения</a>
+<ul>
+<li><a href="#основная-теорема-о-движении"
+id="toc-основная-теорема-о-движении">Основная теорема о
+движении</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="движения">Движения</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>. Отображение <span class="math inline">\(f: \mathbb{A}
+\to \mathbb{A}\)</span> - <em>движение</em>, если <span
+class="math inline">\(\rho(a, b) = \rho(f(a), f(b)), \,\,\,\, \forall a,
+b \in \mathbb{A}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1">Аффинный
+оператор</a> <span class="math inline">\(\Phi\)</span>
+<em>ортогональный</em>, если его <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0">дифференциал</a>
+- <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-03.04.23#definition-1">ортогональный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-4">Сдвиг
+на вектор</a> - это <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-0">движение</a>
+и <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1">аффинный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-1">ортогональный</a>
+оператор.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Композиция
+движений - это <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-0">движение</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-0">Движение</a>
+- это <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-1">ортогональный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1">аффинный
+оператор</a>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\Leftarrow\]</span> Пусть <span
+class="math inline">\(\Phi\)</span> - ортогональный аффинный оператор.
+<span class="math inline">\(\rho(\Phi(a), \Phi(b)) =
+|\overline{\Phi(a)\Phi(b)}| = |\varphi(\overline{ab})| =\)</span> (<span
+class="math inline">\(\varphi\)</span> - ортогональный линейный
+оператор, а значит сохраняет длину вектора) <span
+class="math inline">\(= |\overline{ab}| = \rho(a, b)
+\,\,\,\,\blacksquare\)</span></p>
+<p><span class="math display">\[\Rightarrow\]</span> Пусть <span
+class="math inline">\(\Phi\)</span> - движение, то есть <span
+class="math inline">\(\rho(\Phi(a), \Phi(b)) = \rho(a, b)\)</span>.
+Пусть <span class="math inline">\(s \in \mathbb{A}\)</span>, <span
+class="math inline">\(u = \overline{s\Phi(s)}\)</span>, <span
+class="math inline">\(\Psi = \left(t_u\right)^{-1}\Phi\)</span>.</p>
+<p>Докажем, что <span class="math inline">\(\Psi\)</span> -
+ортогональный аффинный оператор.</p>
+<p>Пусть <span class="math inline">\(\psi: v \in V \mapsto
+\overline{s\Psi(s + v)} \in V\)</span>. <span
+class="math inline">\(\Psi(s) = t_{-u}(\Phi(s)) = \Phi(s) - u =
+s\)</span> Докажем, что <span class="math inline">\(\psi\)</span> -
+ортогональный линейный оператор. <span class="math inline">\(|\psi(v)| =
+|\overline{s\Psi(s + v)}| = \rho(s, \Psi(s + v)) = \rho(\Psi(s), \Psi(s
++ v)) = \rho(s, s + v) = |v|\)</span></p>
+<details>
+<summary>
+Кому-то было плохо (по предыдущей теореме :)
+</summary>
+<p>Пусть <span class="math inline">\(f\)</span> движение, по <a
+href="#theorem-0">предыдущей теореме</a> <span
+class="math inline">\(f\)</span> - ортогональный аффинный оператор.
+Пусть дифференициал <span class="math inline">\(f\)</span> - это <span
+class="math inline">\(\varphi\)</span>(ортогональный линейный оператор).
+Выберем аффинную систему координат <span class="math inline">\((O,
+e)\)</span>, где <span class="math inline">\(e\)</span> -
+ортонормированный базис. Тогда матрица <span
+class="math inline">\(A\)</span> оператора <span
+class="math inline">\(\varphi\)</span> - ортогональна. <span
+class="math inline">\(\forall a \in \mathbb{A} \,\,\,\, f(a) = f(O) +
+\varphi(\overline{Oa})\)</span>. Пусть <span
+class="math inline">\(X_0\)</span> - столбец координат <span
+class="math inline">\(f(O)\)</span> в <span class="math inline">\((O,
+e)\)</span>, <span class="math inline">\(X\)</span> - столбец координат
+<span class="math inline">\(f(a)\)</span>, <span
+class="math inline">\(X_{\overline{Oa}}\)</span> - столбец координат
+вектора <span class="math inline">\(\overline{Oa}\)</span> в <span
+class="math inline">\(e\)</span>. Тогда <span class="math inline">\(X =
+X_0 + A X_{\overline{Oa}}\)</span>.</p>
+</details>
+<p><strong>Определение:</strong><a name="definition-2"></a></p>
+<p>Если <span class="math inline">\(\det A = 1\)</span>, то движение
+<em>собственное</em>.</p>
+<p>Если <span class="math inline">\(\det A = -1\)</span>, то движение
+<em>несобственное</em>.</p>
+<p>Если <span class="math inline">\(f(O) = O\)</span>, то движение -
+<em>поворот</em>.</p>
+<h3 id="основная-теорема-о-движении">Основная теорема о движении</h3>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0">аффинно-евклидово</a>
+пространство над <span class="math inline">\(V\)</span>. Пусть <span
+class="math inline">\(\Phi\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-0">движение</a>
+с <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-0">дифференциалом</a>
+<span class="math inline">\(\varphi\)</span>. Тогда <span
+class="math inline">\(\exists u \in V: \,\,\,\, \varphi(u) = u\)</span>
+и <span class="math inline">\(\exists \Psi\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-0">движение</a>
+с неподвижной точкой, такое, что <span class="math inline">\(\Phi = t_u
+\circ \Psi\)</span> (<span class="math inline">\(t_u\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-4">сдвиг
+на вектор</a>).</p>
+<p><em>Доказательство:</em></p>
+<p>Если у <span class="math inline">\(\varphi\)</span> существует
+собственное значение <span class="math inline">\(1\)</span>, то берем
+вектор <span class="math inline">\(u\)</span> с таким собственным
+значением, иначе <span class="math inline">\(u = 0\)</span>. Пусть <span
+class="math inline">\(\Psi = (t_u)^{-1}\circ \Phi
+\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

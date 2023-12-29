@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#несобственные-интегралы"
+id="toc-несобственные-интегралы">Несобственные интегралы</a>
+<ul>
+<li><a href="#свойства-несобственного-интеграла"
+id="toc-свойства-несобственного-интеграла">Свойства несобственного
+интеграла</a></li>
+</ul></li>
+<li><a href="#признаки-сходимости-несобственного-интеграла"
+id="toc-признаки-сходимости-несобственного-интеграла">Признаки
+сходимости несобственного интеграла</a></li>
+</ul>
+</nav>
+</details>
+<h2 id="несобственные-интегралы">Несобственные интегралы</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть
+функция <span class="math inline">\(f(t)\)</span> определена на
+полуинтервале <span class="math inline">\([a, b)\)</span> и <span
+class="math inline">\(f(t) \in R[a, x]\,\,\,\, \forall x \in [a,
+b)\)</span>. <span class="math inline">\(\displaystyle\lim_{x \to
+b-0}\displaystyle\int\limits_a^x f(t)dt\)</span> - <em>несобственный
+интеграл I рода</em> функции <span class="math inline">\(f(t)\)</span>
+на <span class="math inline">\([a, b)\)</span>.</p>
+<p>Если <span class="math inline">\(\displaystyle\lim_{x \to
+b-0}\displaystyle\int\limits_a^x f(t)dt\)</span> существует, то
+несобственный интеграл I рода - <em>сходящийся</em>.</p>
+<p>Если <span class="math inline">\(\displaystyle\lim_{x \to
+b-0}\displaystyle\int\limits_a^x f(t)dt\)</span> не существует, то
+несобственный интеграл I рода - <em>расходящийся</em>.</p>
+<p>Обозначается: <span
+class="math inline">\(\displaystyle\int\limits_a^b f(t)dt\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть
+функция <span class="math inline">\(f(t)\)</span> определена на <span
+class="math inline">\([a, +\infty)\)</span> и <span
+class="math inline">\(f(t) \in R[a, x]\,\,\,\, \forall x \in [a,
++\infty)\)</span>. <span class="math inline">\(\displaystyle\lim_{x \to
++\infty}\displaystyle\int\limits_a^x f(t)dt\)</span> - <em>несобственный
+интеграл II рода</em> функции <span class="math inline">\(f(t)\)</span>
+на <span class="math inline">\([a, +\infty)\)</span>.</p>
+<p>Если <span class="math inline">\(\displaystyle\lim_{x \to
++\infty}\displaystyle\int\limits_a^x f(t)dt\)</span> существует, то
+несобственный интеграл II рода - <em>сходящийся</em>.</p>
+<p>Если <span class="math inline">\(\displaystyle\lim_{x \to
++\infty}\displaystyle\int\limits_a^x f(t)dt\)</span> не существует, то
+несобственный интеграл II рода - <em>расходящийся</em>.</p>
+<p>Обозначается: <span
+class="math inline">\(\displaystyle\int\limits_a^{+\infty}
+f(t)dt\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (критерий Коши
+существования несобственного интеграла) <span
+class="math display">\[\exists \displaystyle\int\limits_a^{+\infty}
+f(x)dx \Leftrightarrow \forall \varepsilon &gt; 0 \,\,\,\, \exists
+\delta &gt; 0: \,\,\,\, \forall x_1, x_2 &gt; \delta \,\,\,\,
+\left|\displaystyle\int\limits_{x_1}^{x_2} f(x)dx\right| &lt;
+\varepsilon\]</span></p>
+<p><em>Доказательство:</em> критерий Коши для функции <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="свойства-несобственного-интеграла">Свойства несобственного
+интеграла</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a></p>
+<ol type="1">
+<li>(линейность) Пусть <span class="math inline">\(\exists
+\displaystyle\int\limits_a^w f(x)dx\)</span> и <span
+class="math inline">\(\exists \displaystyle\int\limits_a^w
+g(x)dx\)</span>. Тогда <span class="math inline">\(\forall \alpha, \beta
+\in \mathbb{R} \,\,\,\, \exists \alpha \displaystyle\int\limits_a^w
+f(x)dx + \beta \displaystyle\int\limits_a^w g(x)dx\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em> пределы <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<ol start="2" type="1">
+<li>(интегрирование по частям) Пусть существует два из трех: <span
+class="math inline">\(\displaystyle\int\limits_a^w f’(x)g(x)dx\)</span>,
+<span class="math inline">\(\displaystyle\int\limits_a^w
+f(x)g’(x)dx\)</span>, <span class="math inline">\(\displaystyle\lim_{x
+\to w}f(x)g(x)\)</span>. Тогда существует третье и выполнено: <span
+class="math display">\[\displaystyle\int\limits_a^w f’(x)g(x)dx =
+\displaystyle\lim_{x \to w}f(x)g(x) - \displaystyle\int\limits_a^w
+f(x)g’(x)dx\]</span></li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<ol start="3" type="1">
+<li>(замена переменной) Пусть <span class="math inline">\(\exists
+\displaystyle\int\limits_a^w f(x)dx\)</span>, <span
+class="math inline">\(\varphi(t) \in C^1[\alpha, w_1)\)</span>, <span
+class="math inline">\(\varphi(\alpha) = a\)</span>, <span
+class="math inline">\(0 \le \varphi(t) &lt; w_1\)</span>, <span
+class="math inline">\(\displaystyle\lim_{t \to w_1}f(t) = w\)</span>.
+Тогда <span class="math display">\[\displaystyle\int\limits_a^w f(x)dx =
+\displaystyle\int\limits_{\alpha}^{w_1} f(\varphi(t)) \varphi’(t)
+dt\]</span></li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol start="4" type="1">
+<li>(интегрирование неравенств) Пусть <span
+class="math inline">\(\exists \displaystyle\int\limits_a^w
+f(x)dx\)</span> и <span class="math inline">\(\exists
+\displaystyle\int\limits_a^w g(x)dx\)</span>. Пусть <span
+class="math inline">\(f(x) \le g(x) \,\,\,\, \forall x \in [a,
+w)\)</span>. Тогда <span
+class="math display">\[\displaystyle\int\limits_a^w f(x)dx \le
+\displaystyle\int\limits_a^w g(x)dx\]</span></li>
+</ol>
+<p><em>Доказательство:</em> пределы <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<ol start="5" type="1">
+<li>(модуль) Если <span class="math inline">\(\exists
+\displaystyle\int\limits_a^w |f(x)|dx\)</span>, то <span
+class="math inline">\(\exists \displaystyle\int\limits_a^w
+f(x)dx\)</span> и <span
+class="math display">\[\left|\displaystyle\int\limits_a^w f(x)dx\right|
+\le \left|\displaystyle\int\limits_a^w |f(x)|dx\right|\]</span></li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math display">\[\left|\displaystyle\int\limits_{x_1}^{x_2}
+f(x)dx\right| \le \left|\displaystyle\int\limits_{x_1}^{x_2}
+|f(x)|dx\right| &lt; \varepsilon \,\,\,\,\blacksquare\]</span></p>
+<p><strong>Определение:</strong><a name="definition-2"></a></p>
+<p>Если <span class="math inline">\(\exists \displaystyle\int\limits_a^w
+|f(x)|dx\)</span>, то <span
+class="math inline">\(\displaystyle\int\limits_a^w f(x)dx\)</span> -
+<em>абсолютно сходящийся</em>.</p>
+<p>Если <span class="math inline">\(\exists \displaystyle\int\limits_a^w
+f(x)dx\)</span> и <span class="math inline">\(\not\exists
+\displaystyle\int\limits_a^w |f(x)|dx\)</span>, то <span
+class="math inline">\(\displaystyle\int\limits_a^w f(x)dx\)</span> -
+<em>условно сходящийся</em>.</p>
+<h2 id="признаки-сходимости-несобственного-интеграла">Признаки
+сходимости несобственного интеграла</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(0 \le f(x) \le g(x)\)</span>.</p>
+<p>Если <span class="math inline">\(\exists \displaystyle\int\limits_a^w
+g(x)dx\)</span>, то <span class="math inline">\(\exists
+\displaystyle\int\limits_a^w f(x)dx\)</span>.</p>
+<p>Если <span class="math inline">\(\not\exists
+\displaystyle\int\limits_a^w f(x)dx\)</span>, то <span
+class="math inline">\(\not\exists \displaystyle\int\limits_a^w
+g(x)dx\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall b \in
+[a, w) \,\,\,\, 0 \le \displaystyle\int\limits_a^b f(x)dx \le
+\displaystyle\int\limits_a^b g(x)dx\)</span>. Далее переходим к
+пределам, если <span class="math inline">\(\exists
+\displaystyle\int\limits_a^w g(x)dx\)</span>, то <span
+class="math inline">\(F(b) = \displaystyle\int\limits_a^b
+f(x)dx\)</span> ограничена, также <span
+class="math inline">\(F(b)\)</span> монотонна(по аддитивности
+интеграла), а следовательно <span
+class="math inline">\(\exists\displaystyle\int\limits_a^w
+f(x)dx\)</span>(почему?) <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Если <span
+class="math inline">\(\displaystyle\lim_{x \to w}\frac{f(x)}{g(x)} =
+1\)</span> и <span class="math inline">\(f(x), g(x) &gt; 0\)</span>, то
+интегралы <span class="math inline">\(\displaystyle\int\limits_a^w
+g(x)dx\)</span> и <span
+class="math inline">\(\displaystyle\int\limits_a^w f(x)dx\)</span>
+сходятся или расходятся одновременно.</p>
+<p><em>Доказательство:</em> Взять <span
+class="math inline">\(\varepsilon = 1\)</span> для предела и по
+предыдущей теореме.</p>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (признак Дирихле
+<span class="math inline">\((\mathcal{D})\)</span> и Абеля <span
+class="math inline">\((\mathcal{A})\)</span>)</p>
+<p>Пусть <span class="math inline">\(f(x)\)</span> и <span
+class="math inline">\(g(x)\)</span> ограничены на <span
+class="math inline">\([a, w)\)</span>, <span
+class="math inline">\(g(x)\)</span> монотонна на <span
+class="math inline">\([a, w)\)</span>, <span
+class="math inline">\(\forall b \in [a, w) \,\,\,\,
+\displaystyle\int\limits_a^b f(x)dx\)</span> и <span
+class="math inline">\(\displaystyle\int\limits_a^b g(x)dx\)</span> и
+выполнены условия второй теоремы о средних.</p>
+<ol type="1">
+<li><span class="math inline">\((\mathcal{A})\)</span> Если <span
+class="math inline">\(\exists \displaystyle\int\limits_a^w
+f(x)dx\)</span>, то <span class="math inline">\(\exists
+\displaystyle\int\limits_a^w f(x)g(x)dx\)</span>.</li>
+<li><span class="math inline">\((\mathcal{D})\)</span> Если <span
+class="math inline">\(\displaystyle\lim_{x\to w}g(x) = 0\)</span> и
+<span class="math inline">\(\exists M &gt; 0: \,\,\,\, \forall x_1, x_2
+\in [a, w) \,\,\,\, \left|\displaystyle\int\limits_{x_1}^{x_2}
+f(x)dx\right| &lt; M\)</span>, то <span class="math inline">\(\exists
+\displaystyle\int\limits_a^w f(x)g(x)dx\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math display">\[\left|\displaystyle\int\limits_{x_1}^{x_2}
+f(x)g(x)dx\right| = \left|g(x_1)\displaystyle\int\limits_{x_1}^{\xi}
+f(x)dx + g(x_2)\displaystyle\int\limits_{\xi}^{x_2}
+f(x)dx\right|\le\]</span> <span class="math display">\[\le
+|g(x_1)|\left|\displaystyle\int\limits_{x_1}^{\xi} f(x)dx\right| +
+|g(x_2)|\left|\displaystyle\int\limits_{\xi}^{x_2} f(x)dx\right| \le
+\begin{cases}
+(\mathcal{A}) \sup|g(x)|\cdot 2 \varepsilon\\
+(\mathcal{D}) M \cdot 2 \varepsilon    
+\end{cases} \,\,\,\,\blacksquare\]</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

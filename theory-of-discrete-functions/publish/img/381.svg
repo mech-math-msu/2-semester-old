@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<!-- Created by MetaPost 2.02 on 2023.05.10:1958 -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1907.116974" height="741.155640" viewBox="0 0 1907.116974 741.155640">
+<!-- Original BoundingBox: -953.558487 -728.655640 953.558487 12.500000 -->
+  <defs>
+    <g transform="scale(0.009963,0.009963)" id="GLYPHcmr10_48">
+      <path style="fill-rule: evenodd;" d="M460.000000 -320.000000C460.000000 -400.000000,455.000000 -480.000000,420.000000 -554.000000C374.000000 -650.000000,292.000000 -666.000000,250.000000 -666.000000C190.000000 -666.000000,117.000000 -640.000000,76.000000 -547.000000C44.000000 -478.000000,39.000000 -400.000000,39.000000 -320.000000C39.000000 -245.000000,43.000000 -155.000000,84.000000 -79.000000C127.000000 2.000000,200.000000 22.000000,249.000000 22.000000C303.000000 22.000000,379.000000 1.000000,423.000000 -94.000000C455.000000 -163.000000,460.000000 -241.000000,460.000000 -320.000000M249.000000 -0.000000C210.000000 -0.000000,151.000000 -25.000000,133.000000 -121.000000C122.000000 -181.000000,122.000000 -273.000000,122.000000 -332.000000C122.000000 -396.000000,122.000000 -462.000000,130.000000 -516.000000C149.000000 -635.000000,224.000000 -644.000000,249.000000 -644.000000C282.000000 -644.000000,348.000000 -626.000000,367.000000 -527.000000C377.000000 -471.000000,377.000000 -395.000000,377.000000 -332.000000C377.000000 -257.000000,377.000000 -189.000000,366.000000 -125.000000C351.000000 -30.000000,294.000000 -0.000000,249.000000 -0.000000"></path>
+    </g>
+    <g transform="scale(0.009963,0.009963)" id="GLYPHcmr10_49">
+      <path style="fill-rule: evenodd;" d="M294.000000 -640.000000C294.000000 -664.000000,294.000000 -666.000000,271.000000 -666.000000C209.000000 -602.000000,121.000000 -602.000000,89.000000 -602.000000L89.000000 -571.000000C109.000000 -571.000000,168.000000 -571.000000,220.000000 -597.000000L220.000000 -79.000000C220.000000 -43.000000,217.000000 -31.000000,127.000000 -31.000000L95.000000 -31.000000L95.000000 -0.000000C130.000000 -3.000000,217.000000 -3.000000,257.000000 -3.000000C297.000000 -3.000000,384.000000 -3.000000,419.000000 -0.000000L419.000000 -31.000000L387.000000 -31.000000C297.000000 -31.000000,294.000000 -42.000000,294.000000 -79.000000"></path>
+    </g>
+  </defs>
+  <path d="M953.558487 12.500000l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M941.484390 15.735245L470.594925 141.909790" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M473.769897 139.473526L470.594925 141.909790L474.562653 142.432205Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M965.632584 15.735245L1436.522049 141.909790" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1432.554321 142.432205L1436.522049 141.909790L1433.347076 139.473526Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M470.594925 141.909790l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1436.522049 141.909790l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,464.368240 149.935257)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1430.295364 149.935257)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M460.678040 149.519348L220.687668 333.672134" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M222.688568 330.206360L220.687668 333.672134L224.553192 332.636383Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M480.511810 149.519348L720.502182 333.672134" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M716.636658 332.636383L720.502182 333.672134L718.501282 330.206360Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M220.687668 333.672134l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M720.502182 333.672134l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,214.460983 341.697601)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,714.275497 341.697601)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M213.208572 343.687820L101.947708 492.683517" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M102.932495 488.805847L101.947708 492.683517L105.386017 490.638000Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M228.166763 343.687820L339.427628 492.683517" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M335.989319 490.638000L339.427628 492.683517L338.442841 488.805847Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M101.947708 492.683517l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M339.427628 492.683517l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,95.721024 500.708984)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,333.200943 500.708984)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M96.522064 503.944702L47.679810 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M47.904831 601.324753L47.679810 605.319077L50.663376 602.653824Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M107.373352 503.944702L156.215607 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M153.232040 602.653824L156.215607 605.319077L155.990585 601.324753Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M47.679810 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M156.215607 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,41.453125 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,149.988922 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M43.815521 617.206818L23.329453 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M23.016098 676.240417L23.329453 680.228256L25.927750 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M51.544098 617.206818L72.030167 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M69.431870 677.186890L72.030167 680.228256L72.343521 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M23.329453 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M72.030167 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,17.102768 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,65.803482 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M20.601562 692.426895L12.500000 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M11.812637 724.715408L12.500000 728.655640L14.800186 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M26.057343 692.426895L34.158905 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M31.858719 725.383469L34.158905 728.655640L34.846268 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M12.500000 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M34.158905 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,6.273315 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,27.932220 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M69.302277 692.426895L61.200714 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M60.513351 724.715408L61.200714 728.655640L63.500900 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M74.758057 692.426895L82.859619 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M80.559433 725.383469L82.859619 728.655640L83.546982 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M61.200714 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M82.859619 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,54.974030 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,76.632935 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M152.351318 617.206818L131.865250 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M131.551895 676.240417L131.865250 680.228256L134.463547 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M160.079895 617.206818L180.565964 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M177.967667 677.186890L180.565964 680.228256L180.879318 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M131.865250 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M180.565964 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,125.638565 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,174.339279 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M129.137360 692.426895L121.035797 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M120.348434 724.715408L121.035797 728.655640L123.335983 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M134.593140 692.426895L142.694702 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M140.394516 725.383469L142.694702 728.655640L143.382065 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M121.035797 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M142.694702 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,114.809113 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,136.468018 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M177.838074 692.426895L169.736511 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M169.049149 724.715408L169.736511 728.655640L172.036697 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M183.293854 692.426895L191.395416 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M189.095230 725.383469L191.395416 728.655640L192.082779 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M169.736511 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M191.395416 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,163.509827 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,185.168732 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M334.001984 503.944702L285.159729 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M285.384750 601.324753L285.159729 605.319077L288.143295 602.653824Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M344.853271 503.944702L393.695526 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M390.711960 602.653824L393.695526 605.319077L393.470505 601.324753Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M285.159729 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M393.695526 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,278.933044 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,387.468842 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M281.295441 617.206818L260.809372 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M260.496017 676.240417L260.809372 680.228256L263.407669 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M289.024017 617.206818L309.510086 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M306.911789 677.186890L309.510086 680.228256L309.823441 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M260.809372 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M309.510086 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,254.582687 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,303.283401 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M258.081482 692.426895L249.979919 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M249.292557 724.715408L249.979919 728.655640L252.280106 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M263.537262 692.426895L271.638824 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M269.338638 725.383469L271.638824 728.655640L272.326187 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M249.979919 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M271.638824 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,243.753235 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,265.412140 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M306.782196 692.426895L298.680634 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M297.993271 724.715408L298.680634 728.655640L300.980820 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M312.237976 692.426895L320.339539 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M318.039352 725.383469L320.339539 728.655640L321.026901 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M298.680634 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M320.339539 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,292.453949 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,314.112854 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M389.831238 617.206818L369.345169 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M369.031815 676.240417L369.345169 680.228256L371.943466 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M397.559814 617.206818L418.045883 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M415.447586 677.186890L418.045883 680.228256L418.359238 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M369.345169 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M418.045883 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,363.118484 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,411.819199 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M366.617279 692.426895L358.515717 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M357.828354 724.715408L358.515717 728.655640L360.815903 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M372.073059 692.426895L380.174622 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M377.874435 725.383469L380.174622 728.655640L380.861984 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M358.515717 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M380.174622 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,352.289032 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,373.947937 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M415.317993 692.426895L407.216431 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M406.529068 724.715408L407.216431 728.655640L409.516617 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M420.773773 692.426895L428.875336 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M426.575150 725.383469L428.875336 728.655640L429.562698 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M407.216431 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M428.875336 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,400.989746 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,422.648651 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M713.023087 343.687820L601.762222 492.683517" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M602.747009 488.805847L601.762222 492.683517L605.200531 490.638000Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M727.981277 343.687820L839.242142 492.683517" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M835.803833 490.638000L839.242142 492.683517L838.257355 488.805847Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M601.762222 492.683517l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M839.242142 492.683517l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,595.535538 500.708984)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,833.015457 500.708984)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M596.336578 503.944702L547.494324 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M547.719345 601.324753L547.494324 605.319077L550.477890 602.653824Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M607.187866 503.944702L656.030121 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M653.046555 602.653824L656.030121 605.319077L655.805099 601.324753Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M547.494324 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M656.030121 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,541.267639 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,649.803436 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M543.630035 617.206818L523.143967 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M522.830612 676.240417L523.143967 680.228256L525.742264 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M551.358612 617.206818L571.844681 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M569.246384 677.186890L571.844681 680.228256L572.158035 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M523.143967 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M571.844681 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,516.917282 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,565.617996 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M520.416077 692.426895L512.314514 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M511.627151 724.715408L512.314514 728.655640L514.614700 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M525.871857 692.426895L533.973419 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M531.673233 725.383469L533.973419 728.655640L534.660782 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M512.314514 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M533.973419 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,506.087830 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,527.746735 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M569.116791 692.426895L561.015228 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M560.327866 724.715408L561.015228 728.655640L563.315414 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M574.572571 692.426895L582.674133 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M580.373947 725.383469L582.674133 728.655640L583.361496 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M561.015228 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M582.674133 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,554.788544 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,576.447449 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M652.165833 617.206818L631.679764 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M631.366409 676.240417L631.679764 680.228256L634.278061 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M659.894409 617.206818L680.380478 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M677.782181 677.186890L680.380478 680.228256L680.693832 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M631.679764 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M680.380478 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,625.453079 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,674.153793 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M628.951874 692.426895L620.850311 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M620.162949 724.715408L620.850311 728.655640L623.150497 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M634.407654 692.426895L642.509216 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M640.209030 725.383469L642.509216 728.655640L643.196579 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M620.850311 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M642.509216 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,614.623627 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,636.282532 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M677.652588 692.426895L669.551025 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M668.863663 724.715408L669.551025 728.655640L671.851212 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M683.108368 692.426895L691.209930 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M688.909744 725.383469L691.209930 728.655640L691.897293 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M669.551025 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M691.209930 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,663.324341 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,684.983246 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M833.816498 503.944702L784.974243 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M785.199265 601.324753L784.974243 605.319077L787.957809 602.653824Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M844.667786 503.944702L893.510040 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M890.526474 602.653824L893.510040 605.319077L893.285019 601.324753Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M784.974243 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M893.510040 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,778.747559 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,887.283356 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M781.109955 617.206818L760.623886 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M760.310532 676.240417L760.623886 680.228256L763.222183 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M788.838531 617.206818L809.324600 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M806.726303 677.186890L809.324600 680.228256L809.637955 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M760.623886 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M809.324600 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,754.397202 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,803.097916 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M757.895996 692.426895L749.794434 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M749.107071 724.715408L749.794434 728.655640L752.094620 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M763.351776 692.426895L771.453339 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M769.153152 725.383469L771.453339 728.655640L772.140701 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M749.794434 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M771.453339 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,743.567749 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,765.226654 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M806.596710 692.426895L798.495148 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M797.807785 724.715408L798.495148 728.655640L800.795334 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M812.052490 692.426895L820.154053 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M817.853867 725.383469L820.154053 728.655640L820.841415 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M798.495148 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M820.154053 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,792.268463 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,813.927368 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M889.645752 617.206818L869.159683 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M868.846329 676.240417L869.159683 680.228256L871.757980 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M897.374329 617.206818L917.860397 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M915.262100 677.186890L917.860397 680.228256L918.173752 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M869.159683 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M917.860397 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,862.932999 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,911.633713 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M866.431793 692.426895L858.330231 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M857.642868 724.715408L858.330231 728.655640L860.630417 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M871.887573 692.426895L879.989136 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M877.688950 725.383469L879.989136 728.655640L880.676498 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M858.330231 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M879.989136 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,852.103546 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,873.762451 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M915.132507 692.426895L907.030945 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M906.343582 724.715408L907.030945 728.655640L909.331131 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M920.588287 692.426895L928.689850 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M926.389664 725.383469L928.689850 728.655640L929.377213 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M907.030945 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M928.689850 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,900.804260 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,922.463165 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1426.605164 149.519348L1186.614792 333.672134" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1188.615692 330.206360L1186.614792 333.672134L1190.480316 332.636383Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1446.438934 149.519348L1686.429306 333.672134" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1682.563782 332.636383L1686.429306 333.672134L1684.428406 330.206360Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1186.614792 333.672134l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1686.429306 333.672134l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1180.388107 341.697601)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1680.202621 341.697601)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1179.135696 343.687820L1067.874832 492.683517" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1068.859619 488.805847L1067.874832 492.683517L1071.313141 490.638000Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1194.093887 343.687820L1305.354752 492.683517" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1301.916443 490.638000L1305.354752 492.683517L1304.369965 488.805847Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1067.874832 492.683517l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1305.354752 492.683517l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1061.648148 500.708984)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1299.128067 500.708984)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M1062.449188 503.944702L1013.606934 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1013.831955 601.324753L1013.606934 605.319077L1016.590500 602.653824Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1073.300476 503.944702L1122.142731 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1119.159164 602.653824L1122.142731 605.319077L1121.917709 601.324753Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1013.606934 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1122.142731 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1007.380249 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1115.916046 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M1009.742645 617.206818L989.256577 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M988.943222 676.240417L989.256577 680.228256L991.854874 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1017.471222 617.206818L1037.957291 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1035.358994 677.186890L1037.957291 680.228256L1038.270645 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M989.256577 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1037.957291 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,983.029892 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1031.730606 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M986.528687 692.426895L978.427124 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M977.739761 724.715408L978.427124 728.655640L980.727310 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M991.984467 692.426895L1000.086029 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M997.785843 725.383469L1000.086029 728.655640L1000.773392 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M978.427124 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1000.086029 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,972.200439 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,993.859344 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1035.229401 692.426895L1027.127838 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1026.440475 724.715408L1027.127838 728.655640L1029.428024 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1040.685181 692.426895L1048.786743 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1046.486557 725.383469L1048.786743 728.655640L1049.474106 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1027.127838 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1048.786743 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1020.901154 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1042.560059 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1118.278442 617.206818L1097.792374 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1097.479019 676.240417L1097.792374 680.228256L1100.390671 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1126.007019 617.206818L1146.493088 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1143.894791 677.186890L1146.493088 680.228256L1146.806442 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1097.792374 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1146.493088 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1091.565689 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1140.266403 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1095.064484 692.426895L1086.962921 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1086.275558 724.715408L1086.962921 728.655640L1089.263107 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1100.520264 692.426895L1108.621826 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1106.321640 725.383469L1108.621826 728.655640L1109.309189 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1086.962921 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1108.621826 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1080.736237 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1102.395142 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1143.765198 692.426895L1135.663635 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1134.976273 724.715408L1135.663635 728.655640L1137.963821 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1149.220978 692.426895L1157.322540 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1155.022354 725.383469L1157.322540 728.655640L1158.009903 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1135.663635 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1157.322540 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1129.436951 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1151.095856 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1299.929108 503.944702L1251.086853 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1251.311874 601.324753L1251.086853 605.319077L1254.070419 602.653824Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1310.780396 503.944702L1359.622650 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1356.639084 602.653824L1359.622650 605.319077L1359.397629 601.324753Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1251.086853 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1359.622650 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1244.860168 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1353.395966 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M1247.222565 617.206818L1226.736496 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1226.423141 676.240417L1226.736496 680.228256L1229.334793 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1254.951141 617.206818L1275.437210 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1272.838913 677.186890L1275.437210 680.228256L1275.750565 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1226.736496 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1275.437210 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1220.509811 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1269.210526 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1224.008606 692.426895L1215.907043 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1215.219681 724.715408L1215.907043 728.655640L1218.207230 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1229.464386 692.426895L1237.565948 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1235.265762 725.383469L1237.565948 728.655640L1238.253311 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1215.907043 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1237.565948 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1209.680359 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1231.339264 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1272.709320 692.426895L1264.607758 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1263.920395 724.715408L1264.607758 728.655640L1266.907944 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1278.165100 692.426895L1286.266663 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1283.966476 725.383469L1286.266663 728.655640L1286.954025 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1264.607758 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1286.266663 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1258.381073 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1280.039978 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1355.758362 617.206818L1335.272293 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1334.958939 676.240417L1335.272293 680.228256L1337.870590 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1363.486938 617.206818L1383.973007 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1381.374710 677.186890L1383.973007 680.228256L1384.286362 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1335.272293 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1383.973007 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1329.045609 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1377.746323 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1332.544403 692.426895L1324.442841 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1323.755478 724.715408L1324.442841 728.655640L1326.743027 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1338.000183 692.426895L1346.101746 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1343.801559 725.383469L1346.101746 728.655640L1346.789108 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1324.442841 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1346.101746 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1318.216156 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1339.875061 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1381.245117 692.426895L1373.143555 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1372.456192 724.715408L1373.143555 728.655640L1375.443741 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1386.700897 692.426895L1394.802460 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1392.502274 725.383469L1394.802460 728.655640L1395.489822 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1373.143555 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1394.802460 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1366.916870 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1388.575775 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1678.950211 343.687820L1567.689346 492.683517" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1568.674133 488.805847L1567.689346 492.683517L1571.127655 490.638000Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1693.908401 343.687820L1805.169266 492.683517" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1801.730957 490.638000L1805.169266 492.683517L1804.184479 488.805847Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1567.689346 492.683517l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1805.169266 492.683517l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1561.462662 500.708984)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1798.942581 500.708984)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M1562.263702 503.944702L1513.421448 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1513.646469 601.324753L1513.421448 605.319077L1516.405014 602.653824Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1573.114990 503.944702L1621.957245 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1618.973679 602.653824L1621.957245 605.319077L1621.732224 601.324753Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1513.421448 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1621.957245 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1507.194763 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1615.730560 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M1509.557159 617.206818L1489.071091 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1488.757736 676.240417L1489.071091 680.228256L1491.669388 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1517.285736 617.206818L1537.771805 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1535.173508 677.186890L1537.771805 680.228256L1538.085159 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1489.071091 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1537.771805 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1482.844406 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1531.545120 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1486.343201 692.426895L1478.241638 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1477.554276 724.715408L1478.241638 728.655640L1480.541824 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1491.798981 692.426895L1499.900543 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1497.600357 725.383469L1499.900543 728.655640L1500.587906 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1478.241638 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1499.900543 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1472.014954 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1493.673859 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1535.043915 692.426895L1526.942352 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1526.254990 724.715408L1526.942352 728.655640L1529.242538 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1540.499695 692.426895L1548.601257 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1546.301071 725.383469L1548.601257 728.655640L1549.288620 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1526.942352 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1548.601257 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1520.715668 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1542.374573 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1618.092957 617.206818L1597.606888 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1597.293533 676.240417L1597.606888 680.228256L1600.205185 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1625.821533 617.206818L1646.307602 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1643.709305 677.186890L1646.307602 680.228256L1646.620956 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1597.606888 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1646.307602 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1591.380203 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1640.080917 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1594.878998 692.426895L1586.777435 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1586.090073 724.715408L1586.777435 728.655640L1589.077621 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1600.334778 692.426895L1608.436340 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1606.136154 725.383469L1608.436340 728.655640L1609.123703 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1586.777435 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1608.436340 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1580.550751 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1602.209656 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1643.579712 692.426895L1635.478149 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1634.790787 724.715408L1635.478149 728.655640L1637.778336 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1649.035492 692.426895L1657.137054 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1654.836868 725.383469L1657.137054 728.655640L1657.824417 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1635.478149 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1657.137054 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1629.251465 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1650.910370 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1799.743622 503.944702L1750.901367 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1751.126389 601.324753L1750.901367 605.319077L1753.884933 602.653824Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1810.594910 503.944702L1859.437164 605.319077" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1856.453598 602.653824L1859.437164 605.319077L1859.212143 601.324753Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1750.901367 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1859.437164 605.319077l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1744.674683 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1853.210480 613.344543)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <path d="M1747.037079 617.206818L1726.551010 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1726.237656 676.240417L1726.551010 680.228256L1729.149307 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1754.765656 617.206818L1775.251724 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1772.653427 677.186890L1775.251724 680.228256L1775.565079 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1726.551010 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1775.251724 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1720.324326 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1769.025040 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1723.823120 692.426895L1715.721558 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1715.034195 724.715408L1715.721558 728.655640L1718.021744 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1729.278900 692.426895L1737.380463 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1735.080276 725.383469L1737.380463 728.655640L1738.067825 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1715.721558 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1737.380463 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1709.494873 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1731.153778 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1772.523834 692.426895L1764.422272 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1763.734909 724.715408L1764.422272 728.655640L1766.722458 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1777.979614 692.426895L1786.081177 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1783.780991 725.383469L1786.081177 728.655640L1786.768539 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1764.422272 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1786.081177 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1758.195587 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1779.854492 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1855.572876 617.206818L1835.086807 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1834.773453 676.240417L1835.086807 680.228256L1837.685104 677.186890Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1863.301453 617.206818L1883.787521 680.228256" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1881.189224 677.186890L1883.787521 680.228256L1884.100876 676.240417Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1835.086807 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1883.787521 680.228256l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1828.860123 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1877.560837 688.253723)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1832.358917 692.426895L1824.257355 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1823.569992 724.715408L1824.257355 728.655640L1826.557541 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1837.814697 692.426895L1845.916260 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1843.616074 725.383469L1845.916260 728.655640L1846.603622 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1824.257355 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1845.916260 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1818.030670 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1839.689575 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+  <path d="M1881.059631 692.426895L1872.958069 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1872.270706 724.715408L1872.958069 728.655640L1875.258255 725.383469Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1886.515411 692.426895L1894.616974 728.655640" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1892.316788 725.383469L1894.616974 728.655640L1895.304337 724.715408Z" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 3.000000;fill: rgb(33.332825%,75.686646%,65.490723%);"></path>
+  <path d="M1872.958069 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M1894.616974 728.655640l0 0" style="stroke:rgb(33.332825%,75.686646%,65.490723%); stroke-width: 25.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1866.731384 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_48"></use>
+  </g>
+  <g transform="matrix(2.500000,-0.000000,-0.000000,2.500000,1888.390289 736.681107)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <use xlink:href="#GLYPHcmr10_49"></use>
+  </g>
+</svg>

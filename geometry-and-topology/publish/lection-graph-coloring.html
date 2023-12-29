@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#раскраски-плоских-графов"
+id="toc-раскраски-плоских-графов">Раскраски плоских графов</a>
+<ul>
+<li><a href="#лемма-шпернера" id="toc-лемма-шпернера">Лемма
+Шпернера</a></li>
+<li><a href="#как-разрезать-пирог-чтобы-никто-не-обиделся"
+id="toc-как-разрезать-пирог-чтобы-никто-не-обиделся">Как разрезать
+пирог, чтобы никто не обиделся?</a></li>
+<li><a href="#теорема-брауэра" id="toc-теорема-брауэра">Теорема
+Брауэра</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="раскраски-плоских-графов">Раскраски плоских графов</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(\mathcal{C} = \{\operatorname{Col}_i\}\)</span>
+некоторое множество, элементы которого назовем <em>цветами</em> или
+<em>красками</em>. Пусть <span class="math inline">\(G = (V, E,
+\partial)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">граф</a>.
+Отображение <span class="math inline">\(\nu: V \to \mathcal{C}\)</span>
+- <em>раскраска</em> графа <span class="math inline">\(G\)</span>
+<em>цветами из множества</em> <span
+class="math inline">\(\mathcal{C}\)</span>. При этом <em>вершина</em>
+<span class="math inline">\(v\)</span> <em>покрашена в цвет</em> <span
+class="math inline">\(\nu(v)\)</span>. Раскраска графа
+<em>правильная</em>, если соседние вершины покрашены в различные цвета.
+Минимальное количество красок, необходимое для правильной раскраски
+графа - <em>хроматическое число</em> графа <span
+class="math inline">\(G\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(G = (V, E, \partial)\)</span> - граф. <span
+class="math inline">\(v \in V\)</span>. Подграф графа <span
+class="math inline">\(G\)</span>, состоящий из инцидентных <span
+class="math inline">\(v\)</span> вершин и ребер - <em>линк</em> вершины
+<span class="math inline">\(v\)</span>. <strong>Обозначается:</strong>
+<span class="math inline">\(L(v)\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(G\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2">простой</a>
+конечный <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-5">плоский
+граф</a>. Тогда у графа <span class="math inline">\(G\)</span>
+существует вершина степени не больше пяти.</p>
+<p><em>Доказательство:</em> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/cool-problems">сакраментальные
+формулы</a> + формула Эйлера <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (Хивуда о пяти
+красках) Пусть <span class="math inline">\(G\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2">простой</a>
+конечный <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-5">плоский
+граф</a>. Тогда хроматическое число графа <span
+class="math inline">\(G\)</span> не превосходит <span
+class="math inline">\(5\)</span>.</p>
+<p><em>Доказательство:</em> Докажем по индукции по количеству
+вершин.</p>
+<p><strong>База:</strong> Для <span class="math inline">\(n \le
+5\)</span> очевидно <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Шаг:</strong> <a href="#statement-0">По утверждению</a> в
+<span class="math inline">\(G\)</span> есть вершина <span
+class="math inline">\(v\)</span> степени не больше пяти. Пусть <span
+class="math inline">\(G’\)</span> - граф, полученный выбрасыванием <span
+class="math inline">\(v\)</span> и смежных с ней ребер. Вершины графа
+<span class="math inline">\(G’\)</span> можем раскрасить по
+предположению индукции.</p>
+<p>Если <span class="math inline">\(\operatorname{deg}v \ne 5\)</span>,
+то покрасим <span class="math inline">\(v\)</span> в цвет отличный от
+цветов смежных с <span class="math inline">\(v\)</span> вершин.</p>
+<p>Пусть <span class="math inline">\(\operatorname{deg}v =
+5\)</span>.</p>
+<p>Если вершины из линка <span class="math inline">\(L(v)\)</span>
+вершины <span class="math inline">\(v\)</span> покрашены менее чем в
+пять цветов, то покрасим <span class="math inline">\(v\)</span> в
+оставшийся.</p>
+<center>
+<object data="img/graph-coloring.svg" width="400" height="400">
+</object>
+</center>
+<p>Занумеруем вершины смежные с <span class="math inline">\(v\)</span> и
+если надо переобозначим цвета, так, чтобы вершина <span
+class="math inline">\(v_i\)</span> была покрашена в цвет <span
+class="math inline">\(\operatorname{Col_i}\)</span>. Рассмотрим
+множество <span class="math inline">\(X\)</span> вершин, в которые
+существует путь из вершины <span class="math inline">\(v_1\)</span>,
+проходящий только по вершинам, покрашенным в цвета <span
+class="math inline">\(\operatorname{Col_1}\)</span> и <span
+class="math inline">\(\operatorname{Col_3}\)</span>. Если <span
+class="math inline">\(v_3 \not\in X\)</span>, то перекрасим вершины
+множества <span class="math inline">\(X\)</span>: вершину цвета <span
+class="math inline">\(\operatorname{Col}_1\)</span> в <span
+class="math inline">\(\operatorname{Col}_3\)</span> и вершины цвета
+<span class="math inline">\(\operatorname{Col}_3\)</span> в <span
+class="math inline">\(\operatorname{Col}_1\)</span>, а <span
+class="math inline">\(v\)</span> покрасим в <span
+class="math inline">\(\operatorname{Col}_1\)</span>.</p>
+<center>
+<object data="img/graph-coloring-2.svg" width="400" height="400">
+</object>
+</center>
+<p>Если <span class="math inline">\(v \in X\)</span>, то существует
+маршрут из <span class="math inline">\(v_1\)</span> в <span
+class="math inline">\(v_3\)</span>, проходящий только по вершинам цветов
+<span class="math inline">\(\operatorname{Col}_1\)</span> и <span
+class="math inline">\(\operatorname{Col}_3\)</span>. Добавив к нему
+вершину <span class="math inline">\(v\)</span> и ребра <span
+class="math inline">\(v_1v\)</span> и <span
+class="math inline">\(v_3v\)</span>, получим цикл <span
+class="math inline">\(C\)</span>. По теореме Жордана этот цикл разбивает
+плоскость на две компоненты, причем точки <span
+class="math inline">\(v_2\)</span> и <span
+class="math inline">\(v_4\)</span> лежат в разных компонентах, то есть
+их нельзя соединить ломаной, не пересекающей <span
+class="math inline">\(C\)</span>. Рассмотрим множество <span
+class="math inline">\(Y\)</span> вершин, в которые существует путь из
+вершины <span class="math inline">\(v_2\)</span>, проходящий только по
+вершинам, покрашенным в цвета <span
+class="math inline">\(\operatorname{Col_2}\)</span> и <span
+class="math inline">\(\operatorname{Col_4}\)</span>. <span
+class="math inline">\(v_4 \not\in Y\)</span>, так как <span
+class="math inline">\(v_2\)</span> и <span
+class="math inline">\(v_4\)</span> нельзя соединить ломаной, не
+пересекающей <span class="math inline">\(C
+\,\,\,\,\blacksquare\)</span></p>
+<h2 id="лемма-шпернера">Лемма Шпернера</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(\Gamma\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-5">связный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-2">простой</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-5">плоский</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">граф</a>,
+и выполнены следующие условия: <br><br>1. Любое ребро входит в границу
+<span class="math inline">\(2\)</span>-x <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-plane-graphs#definition-6">граней</a>.<br>2.
+Любая конечная грань ограничена <span class="math inline">\(3\)</span>
+ребрами (такая грань - <em>треугольник</em>).<br>3. Объединение конечных
+граней <span class="math inline">\(W\)</span> - ограничено простой
+замкнутой ломаной.<br>Тогда <span class="math inline">\(G\)</span> -
+<em>триангуляция</em> <span class="math inline">\(W\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (лемма Шпернера)
+Пусть <span class="math inline">\(W\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-0">треугольник</a>,
+<span class="math inline">\(\Gamma\)</span> - его <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-0">триангуляция</a>,
+причем вершины <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-0">треугольника</a>
+являются вершинами графа <span class="math inline">\(G\)</span>. Пусть
+задана <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-0">раскраска</a>
+графа <span class="math inline">\(G\)</span> в три цвета и
+выполнено:</p>
+<ol type="1">
+<li>Вершины треугольника покрашены в разные цвета.</li>
+<li>Вершины треугольника, лежащие на одной стороне, покрашены в два
+цвета.</li>
+</ol>
+<p>Тогда существует треугольник триангуляции, вершины которого покрашены
+в различные цвета, и таких треугольников нечетное число.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> (лемма Шпернера в
+двумерном случае) Пусть <span class="math inline">\(a = t_0 &lt; t_1
+&lt; \ldots &lt; t_{s - 1} &lt; t_s = b\)</span> - разбиение отрезка
+<span class="math inline">\([a, b]\)</span>. И эти точки покрашены в два
+цвета, причем точки <span class="math inline">\(a\)</span> и <span
+class="math inline">\(b\)</span> покрашены в различные цвета. Тогда
+среди отрезков <span class="math inline">\([t_{i - 1}, t_i]\)</span>
+существует отрезок, концы которого покрашены в различные цвета, и таких
+отрезков нечетное число.</p>
+<p><em>Доказательство леммы:</em></p>
+<center>
+<object data="img/lemma-shperner-2d.svg" width="600" height="400">
+</object>
+</center>
+<p><span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<center>
+<object data="img/shperner-2.svg" width="400" height="400">
+</object>
+</center>
+<center>
+<object data="img/shperner-3.svg" width="400" height="400">
+</object>
+</center>
+<center>
+<object data="img/shperner-4.svg" width="400" height="400">
+</object>
+</center>
+<p>картинки лажа, но доказательство понятное <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="как-разрезать-пирог-чтобы-никто-не-обиделся">Как разрезать
+пирог, чтобы никто не обиделся?</h2>
+<hr />
+<p><strong>Упражнение:</strong><a name="exercise-0"></a> Пусть дан
+прямоугольный пирог весом <span class="math inline">\(1\)</span>
+килограмм и три гостя. Нужно разрезать пирог двумя вертикальными
+разрезами, так, чтобы каждый из троих гостей выбрал себе кусок и все
+остались <em>довольны</em>, то есть все получили кусок ненулевой массы
+из замкнутого множества своих предпочтений (пусть множество предпочтений
+не зависит от предпочтений остальных гостей).</p>
+<p><em>Решение:</em> Все возможные разрезы описываются тройками чисел
+<span class="math inline">\((x_1, x_2, x_3)\)</span>, где <span
+class="math inline">\(x_1 + x_2 + x_3 = 1\)</span> и <span
+class="math inline">\(x_i &gt; 0\)</span>. (<span
+class="math inline">\(x_i\)</span> - вес <span
+class="math inline">\(i\)</span>-ого куска).</p>
+<h2 id="теорема-брауэра">Теорема Брауэра</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(f: X \to X\)</span> - отображение. <span
+class="math inline">\(x \in X\)</span> - <em>неподвижная точка
+отображения</em> <span class="math inline">\(f\)</span>, если <span
+class="math inline">\(f(x) = x\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-defs#definition-9">Непрерывное</a>
+отображение замкнутого <span class="math inline">\(n\)</span>-мерного
+шара в себя имеет <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graph-coloring#definition-3">неподвижную
+точку</a>.</p>
+<p><em>Доказательство:</em> Вынос мозга <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

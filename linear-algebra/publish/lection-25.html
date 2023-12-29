@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#аффинно-квадратичные-функции-в-аффинно-евклидовых-пространствах"
+id="toc-аффинно-квадратичные-функции-в-аффинно-евклидовых-пространствах">Аффинно-квадратичные
+функции в аффинно-евклидовых пространствах</a>
+<ul>
+<li><a href="#квадрики" id="toc-квадрики">Квадрики</a></li>
+<li><a href="#пропорциональные-аффинно-квадратичные-функции-и-квадрики"
+id="toc-пропорциональные-аффинно-квадратичные-функции-и-квадрики">Пропорциональные
+аффинно-квадратичные функции и квадрики</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1
+id="аффинно-квадратичные-функции-в-аффинно-евклидовых-пространствах">Аффинно-квадратичные
+функции в аффинно-евклидовых пространствах</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0">аффинно-евклидово</a>
+пространство. <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-3">Аффинная
+система координат</a> <span class="math inline">\((O, e)\)</span>
+<em>прямоугольная</em>, если <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7">базис</a>
+<span class="math inline">\(e\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-8">ортонормирован</a>.</p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0">аффинно-евклидово</a>
+пространство. <span class="math inline">\(Q\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">аффинно-квадратичная
+функция</a>, <span class="math inline">\(q\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3">квадратичная
+форма</a> функции <span class="math inline">\(Q\)</span>. Если <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-18.03.23#definition-3">матрица</a>
+<span class="math inline">\(B\)</span> формы <span
+class="math inline">\(q\)</span> - диагональна в <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-0">прямоугольной
+системе координат</a> <span class="math inline">\((O, e)\)</span>, то
+<span class="math inline">\((O, e)\)</span> - <em>главные оси</em>.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-22.04.23#definition-0">аффинно-евклидово</a>
+пространство. <span class="math inline">\(Q: \mathbb{A} \to
+\mathbb{R}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">аффинно-квадратичная
+функция</a>, которая не является <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-0">аффинно-линейной</a>.
+Тогда существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-0">прямоугольная</a>
+система координат, в которой <span class="math inline">\(Q\)</span>
+имеет вид (такой вид единственен с точностью до перенумерации
+координат):</p>
+<p><span class="math display">\[Q(a) = \lambda_1 x^2_1 + \ldots +
+\lambda_r x^2_r + \lambda\]</span></p>
+<p>или</p>
+<p><span class="math display">\[Q(a) = \lambda_1 x^2_1 + \ldots +
+\lambda_r x^2_r + 2 \lambda_{r + 1} x_{r + 1}\]</span></p>
+<p><span class="math inline">\(\lambda_1, \ldots, \lambda_r\)</span> не
+равны <span class="math inline">\(0\)</span>, <span
+class="math inline">\(\lambda_{r + 1} &gt; 0\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Неприятно и долго <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="квадрики">Квадрики</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a> ассоциированное с <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">векторным
+пространством</a> <span class="math inline">\(V\)</span> над полем <span
+class="math inline">\(F\)</span> и <span
+class="math inline">\(\operatorname{char}F \ne 2\)</span>, <span
+class="math inline">\(Q\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">аффинно-квадратичная
+функция</a>. Множество <span class="math inline">\(\Gamma(Q) = \{a \in
+\mathbb{A}: \,\,\,\, Q(a) = 0\}\)</span>, если оно не пустое и не
+является плоскостью - <em>квадрика</em> или <em>гиперповерхность второго
+порядка</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Любая <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5">прямая</a>
+либо целиком лежит в <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2">квадрике</a>,
+либо пересекается с ней не более, чем в двух <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">точках</a>.</p>
+<p><em>Доказательство:</em></p>
+<p>Прямая - это плоскость размерности <span
+class="math inline">\(1\)</span>, то есть <span class="math inline">\(p
+= a_0 + &lt;v&gt;, \,\,\,\, v \in V\)</span>. Произвольная точка на
+прямой - это <span class="math inline">\(a = a_0 + t v\)</span>.</p>
+<p><span class="math display">\[0 = Q(a) = Q(a_0 + t v) = Q(a_0) + q(tv)
++ 2l(tv) = t^2 q(v) + 2 t l(v) + Q(a_0)
+\,\,\,\,\blacksquare\]</span></p>
+<p><strong>Определение:</strong><a name="definition-3"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-5">Точка</a>
+<span class="math inline">\(O\)</span> <em>центр</em> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2">квадрики</a>
+<span class="math inline">\(\Gamma(Q)\)</span>, если <span
+class="math inline">\(\forall v: \,\,\,\, O + v \in \Gamma(Q) \,\,\,\, O
+- v \in \Gamma(Q)\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\(O\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-3">центр</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2">квадрики</a>
+<span class="math inline">\(\Gamma(Q)\)</span>. Если <span
+class="math inline">\(O \in \Gamma(Q)\)</span>, то <span
+class="math inline">\(O\)</span> - <em>вершина</em> <span
+class="math inline">\(\Gamma(Q)\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(\Gamma(Q)\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2">квадрика</a>,
+<span class="math inline">\(O\)</span> - ее <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-4">вершина</a>,
+<span class="math inline">\(a \in \Gamma(Q), \,\,\,\, a \ne O\)</span>.
+Тогда <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-13.02.23#definition-1">прямая</a>
+<span class="math inline">\(l = O + &lt;\overline{Oa}&gt; \subset
+\Gamma(Q)\)</span>(прямая, проходящая через <span
+class="math inline">\(O\)</span> и <span
+class="math inline">\(a\)</span> лежит в квадрике).</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math inline">\(O\)</span> - вершина, следовательно <span
+class="math inline">\(O -\overline{Oa} \in Q\)</span>. Значит минимум
+три точки прямой лежат на квадрике, следовательно по предыдущему
+утверждению <span class="math inline">\(l \subset \Gamma(Q)
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Любая <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2">квадрика</a>
+содержит <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">точку</a>,
+не являющуюся ее <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-4">вершиной</a>.</p>
+<p><em>Доказательство:</em></p>
+<p>Пусть это неправда. Докажем, что <span
+class="math inline">\(\Gamma(Q)\)</span> в таком случае будет
+плоскостью. Пусть <span class="math inline">\(a \in \Gamma(Q), \,\,\,\,
+U = &lt;\overline{ab}: \,\,\,\, b \in \Gamma(Q)&gt;\)</span>.</p>
+<p>Докажем, что <span class="math inline">\(U\)</span> - векторное
+подпространство <span class="math inline">\(V\)</span>. <span
+class="math inline">\(\forall u_1, u_2 \in U \,\,\,\, \exists b_1, b_2
+\in \Gamma(Q): \,\,\,\, u_1 = \overline{ab_1}\)</span> и <span
+class="math inline">\(u_2 = \overline{ab_2}\)</span>. Так как любая
+точка - вершина <span class="math inline">\(b_1 +
+&lt;\overline{b_1b_2}&gt; \subset \Gamma(Q) \Rightarrow c = b_1 +
+\lambda \overline{b_1b_2} \in \Gamma(Q) \Rightarrow \overline{ac} =
+\overline{ab_1} + \lambda \overline{b_1b_2} \in \Gamma(Q)
+\Rightarrow\)</span> <span class="math inline">\(\Rightarrow u_1 +
+\lambda(u_2 - u_1) \in \Gamma(Q) \,\,\,\,\blacksquare\)</span></p>
+<h2
+id="пропорциональные-аффинно-квадратичные-функции-и-квадрики">Пропорциональные
+аффинно-квадратичные функции и квадрики</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(\Gamma = \Gamma(Q_1) = \Gamma(Q_2)\)</span>, <span
+class="math inline">\(\Gamma\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2">квадрика</a>,
+<span class="math inline">\(Q_1, Q_2\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">аффинно-квадратичные</a>
+функции на аффинном пространстве над бесконечным полем характеристики
+отличной от <span class="math inline">\(2\)</span>. Тогда <span
+class="math inline">\(Q_1\)</span> пропорциональна <span
+class="math inline">\(Q_2\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>фуу</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2">Квадрики</a>
+<span class="math inline">\(\Gamma_1\)</span> и <span
+class="math inline">\(\Gamma_2\)</span> <em>аффинно-эквивалентны</em>
+(<span
+class="math inline">\(\operatorname{GA}\)</span>-<em>эквивалентны</em>),
+если существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-17.04.23#definition-1">аффинный
+оператор</a> <span class="math inline">\(\Phi\)</span>, такой, что <span
+class="math inline">\(\Phi(\Gamma_1) = \Gamma_2\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-2"></a> Пусть <span
+class="math inline">\(Q_1, Q_2\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">аффинно-квадратичные
+функции</a> на аффинном пространстве над бесконечным полем
+характеристики отличной от <span class="math inline">\(2\)</span>. <span
+class="math inline">\(Q_1\)</span> и <span
+class="math inline">\(Q_2\)</span> задают <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-5">аффинно-эквивалентные</a>
+квадрики <span class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\(Q_1\)</span> пропорциональна <span
+class="math inline">\(Q_2\)</span> в некоторых системах координат.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-6"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-2">Квадрики</a>
+<span class="math inline">\(\Gamma_1\)</span> и <span
+class="math inline">\(\Gamma_2\)</span> <em>изометрически
+эквивалентны</em> (<span
+class="math inline">\(\operatorname{Isom}\)</span>-<em>эквивалентны</em>),
+если существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-24.04.23#definition-1">ортогональный
+аффинный оператор</a> <span class="math inline">\(\Phi\)</span>, такой,
+что <span class="math inline">\(\Phi(\Gamma_1) = \Gamma_2\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> Пусть <span
+class="math inline">\(Q_1, Q_2\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-29.04.23#definition-1">аффинно-квадратичные
+функции</a> на аффинном пространстве над бесконечным полем
+характеристики отличной от <span class="math inline">\(2\)</span>. <span
+class="math inline">\(Q_1\)</span> и <span
+class="math inline">\(Q_2\)</span> задают <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-6">изометрически
+эквивалентные</a> квадрики <span
+class="math inline">\(\Leftrightarrow\)</span> <span
+class="math inline">\(Q_1\)</span> пропорциональна <span
+class="math inline">\(Q_2\)</span> в некоторых <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25#definition-0">прямоугольных</a>
+системах координат.</p>
+<p><em>Доказательство:</em></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+[
+    {
+        "keyword": "",
+        "data": "Если $f$ и все частные производные до $k - 1$ порядка дифференцируемы в окрестности точки $x_0$ и все $k$ производные непрерывны в точке $x_0$, то $f \\in C^k(x_0)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-02.05.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-02.05.23#definition-0\">Определение:</a></strong><p>Если <span class=\"math inline\">\\(f\\)</span> и все частные производные\nдо <span class=\"math inline\">\\(k - 1\\)</span> порядка дифференцируемы в\nокрестности точки <span class=\"math inline\">\\(x_0\\)</span> и все <span\nclass=\"math inline\">\\(k\\)</span> производные непрерывны в точке <span\nclass=\"math inline\">\\(x_0\\)</span>, то <span class=\"math inline\">\\(f \\in\nC^k(x_0)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "касательная плоскость",
+        "data": "Пусть $f$ определена в $B(x_0)$ и $\\exists \\operatorname{grad}f_{|_{x=x_0}}$. Если угол между направляющим вектором секущей к графику, проходящей через точки $(x_{01}, \\ldots, x_{0n}, f(x_0))$ и $(x_{1}, \\ldots, x_{n}, f(x))$ и вектором $\\left(\\frac{\\partial f}{\\partial x_1}_{|_{x = x_0}}, \\ldots, \\frac{\\partial f}{\\partial x_n}_{|_{x = x_0}}, -1\\right)$ стремится к $\\frac{\\pi}{2}$ при $\\rho \\to 0$, то плоскость $Y = f(x_0) + \\displaystyle \\sum_{i = 1}^{n} \\frac{\\partial f}{\\partial x_i}_{|_{x = x_0}} (x_i - x_{0i})$ - *касательная плоскость* к графику $f$ в точке $x_0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-02.05.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-02.05.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f\\)</span> определена в <span\nclass=\"math inline\">\\(B(x_0)\\)</span> и <span\nclass=\"math inline\">\\(\\exists \\operatorname{grad}f_{|_{x=x_0}}\\)</span>.\nЕсли угол между направляющим вектором секущей к графику, проходящей\nчерез точки <span class=\"math inline\">\\((x_{01}, \\ldots, x_{0n},\nf(x_0))\\)</span> и <span class=\"math inline\">\\((x_{1}, \\ldots, x_{n},\nf(x))\\)</span> и вектором <span\nclass=\"math inline\">\\(\\left(\\frac{\\partial f}{\\partial x_1}_{|_{x =\nx_0}}, \\ldots, \\frac{\\partial f}{\\partial x_n}_{|_{x = x_0}},\n-1\\right)\\)</span> стремится к <span\nclass=\"math inline\">\\(\\frac{\\pi}{2}\\)</span> при <span\nclass=\"math inline\">\\(\\rho \\to 0\\)</span>, то плоскость <span\nclass=\"math inline\">\\(Y = f(x_0) + \\displaystyle \\sum_{i = 1}^{n}\n\\frac{\\partial f}{\\partial x_i}_{|_{x = x_0}} (x_i - x_{0i})\\)</span> -\n<em>касательная плоскость</em> к графику <span\nclass=\"math inline\">\\(f\\)</span> в точке <span\nclass=\"math inline\">\\(x_0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "(непрерывная) кривая",
+        "data": "Непрерывное отображение $\\gamma: [a, b] \\to \\mathbb{R}^n$ - это *(непрерывная) кривая*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-03.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-03.03.23#definition-0\">Определение:</a></strong><p>Непрерывное отображение <span class=\"math inline\">\\(\\gamma: [a, b]\n\\to \\mathbb{R}^n\\)</span> - это <em>(непрерывная) кривая</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $\\mathcal{T} = \\{t_i\\}_{i = 0}^k$ разбиение $[a, b]$, $\\gamma$ - кривая.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-03.03.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-03.03.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{T} = \\{t_i\\}_{i =\n0}^k\\)</span> разбиение <span class=\"math inline\">\\([a, b]\\)</span>,\n<span class=\"math inline\">\\(\\gamma\\)</span> - кривая.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "спрямляемая длина кривой",
+        "data": "Пусть $\\gamma$ - кривая. Если множество $\\{|l_{\\gamma}(\\mathcal{T})|\\}_{\\mathcal{T}}$ ограничено сверху, то $\\gamma$ *спрямляемая* и $\\sup \\{|l_{\\gamma}(\\mathcal{T})|\\}_{\\mathcal{T}} = |\\gamma|$ - *длина кривой* $\\gamma$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-03.03.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-03.03.23#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\gamma\\)</span> - кривая. Если\nмножество <span\nclass=\"math inline\">\\(\\{|l_{\\gamma}(\\mathcal{T})|\\}_{\\mathcal{T}}\\)</span>\nограничено сверху, то <span class=\"math inline\">\\(\\gamma\\)</span>\n<em>спрямляемая</em> и <span class=\"math inline\">\\(\\sup\n\\{|l_{\\gamma}(\\mathcal{T})|\\}_{\\mathcal{T}} = |\\gamma|\\)</span> -\n<em>длина кривой</em> <span class=\"math inline\">\\(\\gamma\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "первообразная",
+        "data": "Пусть $f(x)$ определена на $(a, b)$. Пусть $F(x)$, такова что $F’(x) = f(x) \\,\\,\\,\\, \\forall x \\in (a, b)$. Тогда $F(x)$ *первообразная* $f(x)$ на $(a, b)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-1-07.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-1-07.02.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> определена на <span\nclass=\"math inline\">\\((a, b)\\)</span>. Пусть <span\nclass=\"math inline\">\\(F(x)\\)</span>, такова что <span\nclass=\"math inline\">\\(F’(x) = f(x) \\,\\,\\,\\, \\forall x \\in (a,\nb)\\)</span>. Тогда <span class=\"math inline\">\\(F(x)\\)</span>\n<em>первообразная</em> <span class=\"math inline\">\\(f(x)\\)</span> на\n<span class=\"math inline\">\\((a, b)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Неопределенный интеграл",
+        "data": "*Неопределенный интеграл* $f(x)$ на $(a, b)$ - это множество всех первообразных $f(x)$ на $(a, b)$. Обозначается $\\displaystyle \\int f(x)dx$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-1-07.02.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-1-07.02.23#definition-1\">Определение:</a></strong><p><em>Неопределенный интеграл</em> <span\nclass=\"math inline\">\\(f(x)\\)</span> на <span class=\"math inline\">\\((a,\nb)\\)</span> - это множество всех первообразных <span\nclass=\"math inline\">\\(f(x)\\)</span> на <span class=\"math inline\">\\((a,\nb)\\)</span>. Обозначается <span class=\"math inline\">\\(\\displaystyle \\int\nf(x)dx\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $f(x)$ ограничена на отрезке $[a, b]$. $\\mathcal{T}_{[a, b]}^{+}$ - некоторое разбиение отрезка $[a, b]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-1-14.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-1-14.02.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> ограничена на отрезке\n<span class=\"math inline\">\\([a, b]\\)</span>. <span\nclass=\"math inline\">\\(\\mathcal{T}_{[a, b]}^{+}\\)</span> - некоторое\nразбиение отрезка <span class=\"math inline\">\\([a, b]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-1-14.02.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-1-14.02.23#definition-1\">Определение:</a></strong>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "плоская фигура",
+        "data": "$A \\subset \\mathbb{R}^2$ - *плоская фигура*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-10.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-10.03.23#definition-0\">Определение:</a></strong><p><span class=\"math inline\">\\(A \\subset \\mathbb{R}^2\\)</span> -\n<em>плоская фигура</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "площадь",
+        "data": "Пусть $\\{A_{\\alpha}\\}_{\\alpha}$ - множество плоских фигур. \nОтображение $\\mu: \\,\\,\\,\\, \\{A_{\\alpha}\\}_{\\alpha} \\to \\mathbb{R}$ - *площадь* фигуры, если:",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-10.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-10.03.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\{A_{\\alpha}\\}_{\\alpha}\\)</span> -\nмножество плоских фигур. Отображение <span class=\"math inline\">\\(\\mu:\n\\,\\,\\,\\, \\{A_{\\alpha}\\}_{\\alpha} \\to \\mathbb{R}\\)</span> -\n<em>площадь</em> фигуры, если:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "многоугольная фигура",
+        "data": "Плоская фигура, состоящая из непересекающихся треугольников - *многоугольная фигура*. Пустое множество является многоугольной фигурой по определению.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-10.03.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-10.03.23#definition-2\">Определение:</a></strong><p>Плоская фигура, состоящая из непересекающихся треугольников -\n<em>многоугольная фигура</em>. Пустое множество является многоугольной\nфигурой по определению.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $A \\subset \\mathbb{R}^2$ - плоская фигура.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-10.03.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-10.03.23#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(A \\subset \\mathbb{R}^2\\)</span> -\nплоская фигура.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $A$ - ограниченная плоская фигура, $\\{P\\}$ - множество всех описанных около нее фигур, $\\{Q\\}$ - множество всех вписанных в нее фигур.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-10.03.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-10.03.23#definition-4\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(A\\)</span> - ограниченная плоская\nфигура, <span class=\"math inline\">\\(\\{P\\}\\)</span> - множество всех\nописанных около нее фигур, <span class=\"math inline\">\\(\\{Q\\}\\)</span> -\nмножество всех вписанных в нее фигур.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "несобственный интеграл I рода",
+        "data": "Пусть функция $f(t)$ определена на полуинтервале $[a, b)$ и $f(t) \\in R[a, x]\\,\\,\\,\\, \\forall x \\in [a, b)$. $\\displaystyle\\lim_{x \\to b-0}\\displaystyle\\int\\limits_a^x f(t)dt$ - *несобственный интеграл I рода* функции $f(t)$ на $[a, b)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-14.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-14.03.23#definition-0\">Определение:</a></strong><p>Пусть функция <span class=\"math inline\">\\(f(t)\\)</span> определена на\nполуинтервале <span class=\"math inline\">\\([a, b)\\)</span> и <span\nclass=\"math inline\">\\(f(t) \\in R[a, x]\\,\\,\\,\\, \\forall x \\in [a,\nb)\\)</span>. <span class=\"math inline\">\\(\\displaystyle\\lim_{x \\to\nb-0}\\displaystyle\\int\\limits_a^x f(t)dt\\)</span> - <em>несобственный\nинтеграл I рода</em> функции <span class=\"math inline\">\\(f(t)\\)</span>\nна <span class=\"math inline\">\\([a, b)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "несобственный интеграл II рода",
+        "data": "Пусть функция $f(t)$ определена на $[a, +\\infty)$ и $f(t) \\in R[a, x]\\,\\,\\,\\, \\forall x \\in [a, +\\infty)$. $\\displaystyle\\lim_{x \\to +\\infty}\\displaystyle\\int\\limits_a^x f(t)dt$ - *несобственный интеграл II рода* функции $f(t)$ на $[a, +\\infty)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-14.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-14.03.23#definition-1\">Определение:</a></strong><p>Пусть функция <span class=\"math inline\">\\(f(t)\\)</span> определена на\n<span class=\"math inline\">\\([a, +\\infty)\\)</span> и <span\nclass=\"math inline\">\\(f(t) \\in R[a, x]\\,\\,\\,\\, \\forall x \\in [a,\n+\\infty)\\)</span>. <span class=\"math inline\">\\(\\displaystyle\\lim_{x \\to\n+\\infty}\\displaystyle\\int\\limits_a^x f(t)dt\\)</span> - <em>несобственный\nинтеграл II рода</em> функции <span class=\"math inline\">\\(f(t)\\)</span>\nна <span class=\"math inline\">\\([a, +\\infty)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-14.03.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-14.03.23#definition-2\">Определение:</a></strong>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "главное значение интеграла в смысле Коши",
+        "data": "Пусть $f(x)$ определена на $[a, b]$ и не ограничена в точке $c \\in (a, b)$. Если $\\exists \\displaystyle\\lim_{\\varepsilon \\to 0+0}\\left(\\displaystyle\\int\\limits_a^{c - \\varepsilon} f(x)dx + \\displaystyle\\int\\limits_{c + \\varepsilon}^b f(x)dx \\right)$, то он обозначается $v.p.\\displaystyle\\int\\limits_a^b f(x)dx$ и называется *главное значение интеграла* $\\displaystyle\\int\\limits_a^b f(x)dx$ *в смысле Коши*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-17.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-17.03.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> определена на <span\nclass=\"math inline\">\\([a, b]\\)</span> и не ограничена в точке <span\nclass=\"math inline\">\\(c \\in (a, b)\\)</span>. Если <span\nclass=\"math inline\">\\(\\exists \\displaystyle\\lim_{\\varepsilon \\to\n0+0}\\left(\\displaystyle\\int\\limits_a^{c - \\varepsilon} f(x)dx +\n\\displaystyle\\int\\limits_{c + \\varepsilon}^b f(x)dx \\right)\\)</span>, то\nон обозначается <span\nclass=\"math inline\">\\(v.p.\\displaystyle\\int\\limits_a^b f(x)dx\\)</span> и\nназывается <em>главное значение интеграла</em> <span\nclass=\"math inline\">\\(\\displaystyle\\int\\limits_a^b f(x)dx\\)</span> <em>в\nсмысле Коши</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "главное значение интеграла в смысле Коши",
+        "data": "Пусть $f(x)$ определена на $\\mathbb{R}$ и не ограничена. Если $\\exists \\displaystyle\\lim_{a \\to +\\infty}\\displaystyle\\int\\limits_{-a}^{a} f(x)dx$, то он обозначается $v.p.\\displaystyle\\int\\limits_{-\\infty}^{+\\infty} f(x)dx$ и называется *главное значение интеграла* $\\displaystyle\\int\\limits_{-\\infty}^{+\\infty} f(x)dx$ *в смысле Коши*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-17.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-17.03.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> определена на <span\nclass=\"math inline\">\\(\\mathbb{R}\\)</span> и не ограничена. Если <span\nclass=\"math inline\">\\(\\exists \\displaystyle\\lim_{a \\to\n+\\infty}\\displaystyle\\int\\limits_{-a}^{a} f(x)dx\\)</span>, то он\nобозначается <span\nclass=\"math inline\">\\(v.p.\\displaystyle\\int\\limits_{-\\infty}^{+\\infty}\nf(x)dx\\)</span> и называется <em>главное значение интеграла</em> <span\nclass=\"math inline\">\\(\\displaystyle\\int\\limits_{-\\infty}^{+\\infty}\nf(x)dx\\)</span> <em>в смысле Коши</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $\\mathcal{T} = \\{x_i\\}_{i = 0}^n$ разбиение отрезка $[a, b]$. $f(x)$ определена на $[a, b]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-17.03.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-17.03.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\mathcal{T} = \\{x_i\\}_{i =\n0}^n\\)</span> разбиение отрезка <span class=\"math inline\">\\([a,\nb]\\)</span>. <span class=\"math inline\">\\(f(x)\\)</span> определена на\n<span class=\"math inline\">\\([a, b]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $f(x)$ определена на $[a, b]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-17.03.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-17.03.23#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> определена на <span\nclass=\"math inline\">\\([a, b]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "компакт",
+        "data": "$A \\subset \\mathbb{R}^n$ - *компакт*, если из любого откытого покрытия $A$ можно выделить конечное подпокрытие.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-0\">Определение:</a></strong><p><span class=\"math inline\">\\(A \\subset \\mathbb{R}^n\\)</span> -\n<em>компакт</em>, если из любого откытого покрытия <span\nclass=\"math inline\">\\(A\\)</span> можно выделить конечное\nподпокрытие.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "секвенциальный компакт",
+        "data": "$A \\subset \\mathbb{R}^n$ - *секвенциальный компакт*, если у любой последовательности из $A$ существует сходящаяся подпоследовательность.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-1\">Определение:</a></strong><p><span class=\"math inline\">\\(A \\subset \\mathbb{R}^n\\)</span> -\n<em>секвенциальный компакт</em>, если у любой последовательности из\n<span class=\"math inline\">\\(A\\)</span> существует сходящаяся\nподпоследовательность.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линейно связно",
+        "data": "$A \\subset \\mathbb{R}^n$ - *линейно связно*, если любые две точки из $A$ можно соединить непрерывной кривой.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-2\">Определение:</a></strong><p><span class=\"math inline\">\\(A \\subset \\mathbb{R}^n\\)</span> -\n<em>линейно связно</em>, если любые две точки из <span\nclass=\"math inline\">\\(A\\)</span> можно соединить непрерывной кривой.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "область",
+        "data": "Если $A \\subset \\mathbb{R}^n$ - открыто и линейно связно, то $A$ - *область*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-3\">Определение:</a></strong><p>Если <span class=\"math inline\">\\(A \\subset \\mathbb{R}^n\\)</span> -\nоткрыто и линейно связно, то <span class=\"math inline\">\\(A\\)</span> -\n<em>область</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "замкнутая область",
+        "data": "Замыкание области - *замкнутая область*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-4\">Определение:</a></strong><p>Замыкание области - <em>замкнутая область</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "-й дифференциал",
+        "data": "Пусть $f(x) \\in C^2(B(x_0))$. Запишем первый [дифференциал](https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-2) $f(x)$ в точке $x_0$. $$df(x)_{|_{x_0}} = \\displaystyle \\sum_{i = 1}^{n}\\frac{\\partial f}{\\partial x_i}_{|_{x_0}}dx_i$$ Продифференцируем $df(x):$$$d(df(x)) = \\displaystyle \\sum_{j = 1}^{n}\\frac{\\partial \\left(\\displaystyle \\sum_{i = 1}^{n}\\frac{\\partial f}{\\partial x_i}_{|_{x_0}}dx_i\\right)}{\\partial x_j}dx_j = \\displaystyle \\sum_{i, j = 0}^{n}\\frac{\\partial^2 f}{\\partial x_i \\partial x_j}d x_i d x_j$$ - это $2$*-й дифференциал* $f(x)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x) \\in C^2(B(x_0))\\)</span>.\nЗапишем первый <a\nhref=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-2\">дифференциал</a>\n<span class=\"math inline\">\\(f(x)\\)</span> в точке <span\nclass=\"math inline\">\\(x_0\\)</span>. <span\nclass=\"math display\">\\[df(x)_{|_{x_0}} = \\displaystyle \\sum_{i =\n1}^{n}\\frac{\\partial f}{\\partial x_i}_{|_{x_0}}dx_i\\]</span>\nПродифференцируем <span class=\"math inline\">\\(df(x):\\)</span><span\nclass=\"math display\">\\[d(df(x)) = \\displaystyle \\sum_{j =\n1}^{n}\\frac{\\partial \\left(\\displaystyle \\sum_{i = 1}^{n}\\frac{\\partial\nf}{\\partial x_i}_{|_{x_0}}dx_i\\right)}{\\partial x_j}dx_j = \\displaystyle\n\\sum_{i, j = 0}^{n}\\frac{\\partial^2 f}{\\partial x_i \\partial x_j}d x_i d\nx_j\\]</span> - это <span class=\"math inline\">\\(2\\)</span><em>-й\nдифференциал</em> <span class=\"math inline\">\\(f(x)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Положительное разбиение",
+        "data": "*Положительное разбиение* отрезка $[a, b]$ - это множество точек $\\{x_i\\}_{i = 0}^{n}$, таких что $a = x_0 < x_1 < \\ldots < x_{n - 1} < x_n = b$. \nОбозначается: $\\mathcal{T}_{[a, b]}^{+}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-0\">Определение:</a></strong><p><em>Положительное разбиение</em> отрезка <span\nclass=\"math inline\">\\([a, b]\\)</span> - это множество точек <span\nclass=\"math inline\">\\(\\{x_i\\}_{i = 0}^{n}\\)</span>, таких что <span\nclass=\"math inline\">\\(a = x_0 &lt; x_1 &lt; \\ldots &lt; x_{n - 1} &lt;\nx_n = b\\)</span>. Обозначается: <span\nclass=\"math inline\">\\(\\mathcal{T}_{[a, b]}^{+}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Отрицательное разбиение",
+        "data": "*Отрицательное разбиение* отрезка $[a, b]$ - это множество точек $\\{x_i\\}_{i = 0}^{n}$, таких что $b = x_0 > x_1 > \\ldots > x_{n - 1} > x_n = a$. \nОбозначается: $\\mathcal{T}_{[a, b]}^{-}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-1\">Определение:</a></strong><p><em>Отрицательное разбиение</em> отрезка <span\nclass=\"math inline\">\\([a, b]\\)</span> - это множество точек <span\nclass=\"math inline\">\\(\\{x_i\\}_{i = 0}^{n}\\)</span>, таких что <span\nclass=\"math inline\">\\(b = x_0 &gt; x_1 &gt; \\ldots &gt; x_{n - 1} &gt;\nx_n = a\\)</span>. Обозначается: <span\nclass=\"math inline\">\\(\\mathcal{T}_{[a, b]}^{-}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть дано разбиение $\\mathcal{T}_{[a, b]} = \\{x_i\\}_{i = 0}^{n}$ отрезка $[a, b]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-2\">Определение:</a></strong><p>Пусть дано разбиение <span class=\"math inline\">\\(\\mathcal{T}_{[a, b]}\n= \\{x_i\\}_{i = 0}^{n}\\)</span> отрезка <span class=\"math inline\">\\([a,\nb]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Разметка",
+        "data": "Пусть дано разбиение $\\mathcal{T}_{[a, b]} = \\{x_i\\}_{i = 0}^{n}$ отрезка $[a, b]$.\n*Разметка* $\\mathcal{T}_{[a, b]}$ - это множество точек $\\xi = \\{\\xi_1, \\xi_2, \\ldots, \\xi_n\\}$, таких что $\\xi_i \\in \\Delta_i$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-3\">Определение:</a></strong><p>Пусть дано разбиение <span class=\"math inline\">\\(\\mathcal{T}_{[a, b]}\n= \\{x_i\\}_{i = 0}^{n}\\)</span> отрезка <span class=\"math inline\">\\([a,\nb]\\)</span>. <em>Разметка</em> <span\nclass=\"math inline\">\\(\\mathcal{T}_{[a, b]}\\)</span> - это множество\nточек <span class=\"math inline\">\\(\\xi = \\{\\xi_1, \\xi_2, \\ldots,\n\\xi_n\\}\\)</span>, таких что <span class=\"math inline\">\\(\\xi_i \\in\n\\Delta_i\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "Интегральная сумма",
+        "data": "*Интегральная сумма* - это $\\sigma_{f}(\\mathcal{T}(\\xi)) = \\displaystyle \\sum_{i = 1}^{n}f(\\xi_i)\\cdot(x_i - x_{i - 1})$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-4\">Определение:</a></strong><p><em>Интегральная сумма</em> - это <span\nclass=\"math inline\">\\(\\sigma_{f}(\\mathcal{T}(\\xi)) = \\displaystyle\n\\sum_{i = 1}^{n}f(\\xi_i)\\cdot(x_i - x_{i - 1})\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $f(x)$ определена на $[a, b]$. Если $\\exists I \\in \\mathbb{R}$, такое что \n$$\\forall \\varepsilon > 0 \\,\\,\\,\\, \\exists \\delta > 0: \\,\\,\\,\\, \\forall \\mathcal{T}_{[a, b]}^{+}(\\xi) \\left(d(\\mathcal{T}_{[a, b]}^{+}) < \\delta\\right) \\,\\,\\,\\, |\\sigma_{f}(\\mathcal{T}(\\xi)) - I| < \\varepsilon,$$",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-5\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> определена на <span\nclass=\"math inline\">\\([a, b]\\)</span>. Если <span\nclass=\"math inline\">\\(\\exists I \\in \\mathbb{R}\\)</span>, такое что <span\nclass=\"math display\">\\[\\forall \\varepsilon &gt; 0 \\,\\,\\,\\, \\exists\n\\delta &gt; 0: \\,\\,\\,\\, \\forall \\mathcal{T}_{[a, b]}^{+}(\\xi)\n\\left(d(\\mathcal{T}_{[a, b]}^{+}) &lt; \\delta\\right) \\,\\,\\,\\,\n|\\sigma_{f}(\\mathcal{T}(\\xi)) - I| &lt; \\varepsilon,\\]</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $f(x)$ определена на $[a, b]$. Если $\\exists I \\in \\mathbb{R}$, такое что \n$$\\forall \\varepsilon > 0 \\,\\,\\,\\, \\exists \\delta > 0: \\,\\,\\,\\, \\forall \\mathcal{T}_{[a, b]}^{-}(\\xi) \\left(d(\\mathcal{T}_{[a, b]}^{-}) < \\delta\\right) \\,\\,\\,\\, |\\sigma_{f}(\\mathcal{T}(\\xi)) - I| < \\varepsilon,$$",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-6\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> определена на <span\nclass=\"math inline\">\\([a, b]\\)</span>. Если <span\nclass=\"math inline\">\\(\\exists I \\in \\mathbb{R}\\)</span>, такое что <span\nclass=\"math display\">\\[\\forall \\varepsilon &gt; 0 \\,\\,\\,\\, \\exists\n\\delta &gt; 0: \\,\\,\\,\\, \\forall \\mathcal{T}_{[a, b]}^{-}(\\xi)\n\\left(d(\\mathcal{T}_{[a, b]}^{-}) &lt; \\delta\\right) \\,\\,\\,\\,\n|\\sigma_{f}(\\mathcal{T}(\\xi)) - I| &lt; \\varepsilon,\\]</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех функций интегрируемых по Риману на отрезке $[a, b]$ обозначается $\\mathcal{R}[a, b]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-7",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-10.02.23#definition-7\">Определение:</a></strong><p>Множество всех функций интегрируемых по Риману на отрезке <span\nclass=\"math inline\">\\([a, b]\\)</span> обозначается <span\nclass=\"math inline\">\\(\\mathcal{R}[a, b]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "имеет лебегову меру",
+        "data": "Множество $A \\subset \\mathbb{R}$ *имеет лебегову меру* $0$, если $\\forall \\varepsilon \\,\\,\\,\\, \\exists \\{(a_i, b_i)\\}_i: \\,\\,\\,\\, A \\subset \\displaystyle\\cup_i (a_i, b_i) \\,\\,\\,\\, \\displaystyle\\sup_{N < \\infty}\\displaystyle \\sum_{i = 1}^{N}|b_i - a_i| < \\varepsilon$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-17.02.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-2-17.02.23#definition-0\">Определение:</a></strong><p>Множество <span class=\"math inline\">\\(A \\subset \\mathbb{R}\\)</span>\n<em>имеет лебегову меру</em> <span class=\"math inline\">\\(0\\)</span>,\nесли <span class=\"math inline\">\\(\\forall \\varepsilon \\,\\,\\,\\, \\exists\n\\{(a_i, b_i)\\}_i: \\,\\,\\,\\, A \\subset \\displaystyle\\cup_i (a_i, b_i)\n\\,\\,\\,\\, \\displaystyle\\sup_{N &lt; \\infty}\\displaystyle \\sum_{i =\n1}^{N}|b_i - a_i| &lt; \\varepsilon\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $f(x)$ и $g(x)$ определена на $[a, b]$. Для $\\mathcal{T}_{[a, b]}(\\xi)$ сумма:\n $$\\sigma_f(g, \\mathcal{T}(\\xi)) = \\displaystyle \\sum_{i  = 1}^{n}f(\\xi_i)(g(x_i) - g(x_{i - 1}))$$",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.03.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> и <span\nclass=\"math inline\">\\(g(x)\\)</span> определена на <span\nclass=\"math inline\">\\([a, b]\\)</span>. Для <span\nclass=\"math inline\">\\(\\mathcal{T}_{[a, b]}(\\xi)\\)</span> сумма: <span\nclass=\"math display\">\\[\\sigma_f(g, \\mathcal{T}(\\xi)) = \\displaystyle\n\\sum_{i  = 1}^{n}f(\\xi_i)(g(x_i) - g(x_{i - 1}))\\]</span></p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "интегрируема по",
+        "data": "Если $\\forall \\varepsilon > 0 \\,\\,\\,\\, \\exists \\delta > 0: \\,\\,\\,\\, \\forall \\mathcal{T}(\\xi) (d(\\mathcal{T}(\\xi)) < \\delta)$\n$|\\sigma_f(g, \\mathcal{T}(\\xi)) - I| < \\varepsilon$, то $f(x)$ *интегрируема по* $g(x)$ на $[a, b]$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.03.23#definition-1\">Определение:</a></strong><p>Если <span class=\"math inline\">\\(\\forall \\varepsilon &gt; 0 \\,\\,\\,\\,\n\\exists \\delta &gt; 0: \\,\\,\\,\\, \\forall \\mathcal{T}(\\xi)\n(d(\\mathcal{T}(\\xi)) &lt; \\delta)\\)</span> <span\nclass=\"math inline\">\\(|\\sigma_f(g, \\mathcal{T}(\\xi)) - I| &lt;\n\\varepsilon\\)</span>, то <span class=\"math inline\">\\(f(x)\\)</span>\n<em>интегрируема по</em> <span class=\"math inline\">\\(g(x)\\)</span> на\n<span class=\"math inline\">\\([a, b]\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "линия уровня",
+        "data": "Пусть $f$ - функция в $\\mathbb{R}^n$. Множество $A = \\{x \\in \\mathbb{R}^n: \\,\\,\\,\\, f(x) = c\\}$ - *линия уровня* (для константы $c$).",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f\\)</span> - функция в <span\nclass=\"math inline\">\\(\\mathbb{R}^n\\)</span>. Множество <span\nclass=\"math inline\">\\(A = \\{x \\in \\mathbb{R}^n: \\,\\,\\,\\, f(x) =\nc\\}\\)</span> - <em>линия уровня</em> (для константы <span\nclass=\"math inline\">\\(c\\)</span>).</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "предел функции",
+        "data": "Если $x_0 \\in D_f’$ (множество предельных точек области определения) и $\\exists a \\in \\mathbb{R}: \\,\\,\\,\\, \\forall \\varepsilon > 0 \\,\\,\\,\\, \\exists \\delta > 0: \\,\\,\\,\\, \\forall x \\in \\mathring{O}_{\\delta}(x_0) \\cap D_f \\,\\,\\,\\, |f(x) - a| < \\varepsilon$, то $a$ - *предел функции* $f(x)$ в точке $x_0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-1\">Определение:</a></strong><p>Если <span class=\"math inline\">\\(x_0 \\in D_f’\\)</span> (множество\nпредельных точек области определения) и <span\nclass=\"math inline\">\\(\\exists a \\in \\mathbb{R}: \\,\\,\\,\\, \\forall\n\\varepsilon &gt; 0 \\,\\,\\,\\, \\exists \\delta &gt; 0: \\,\\,\\,\\, \\forall x\n\\in \\mathring{O}_{\\delta}(x_0) \\cap D_f \\,\\,\\,\\, |f(x) - a| &lt;\n\\varepsilon\\)</span>, то <span class=\"math inline\">\\(a\\)</span> -\n<em>предел функции</em> <span class=\"math inline\">\\(f(x)\\)</span> в\nточке <span class=\"math inline\">\\(x_0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Сформулируйте определение по Гейне для функции многих переменных.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-2\">Определение:</a></strong><p>Сформулируйте определение по Гейне для функции многих переменных.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "предел функции вдоль кривой",
+        "data": "Если $x_0 \\in D_f’$ (множество предельных точек области определения), $\\gamma(t)$ - непрерывная кривая, $\\gamma(t_0) = x_0$, если $\\exists a \\in \\mathbb{R}: \\,\\,\\,\\, \\forall \\varepsilon > 0 \\,\\,\\,\\, \\exists \\delta > 0: \\,\\,\\,\\, \\forall t \\in (t_0 - \\delta, t_0) \\cup (t_0, t_0 + \\delta) \\,\\,\\,\\, |f(x) - a| < \\varepsilon$, то $a$ - *предел функции* $f(x)$ *вдоль кривой* $\\gamma$ в точке $x_0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-3\">Определение:</a></strong><p>Если <span class=\"math inline\">\\(x_0 \\in D_f’\\)</span> (множество\nпредельных точек области определения), <span\nclass=\"math inline\">\\(\\gamma(t)\\)</span> - непрерывная кривая, <span\nclass=\"math inline\">\\(\\gamma(t_0) = x_0\\)</span>, если <span\nclass=\"math inline\">\\(\\exists a \\in \\mathbb{R}: \\,\\,\\,\\, \\forall\n\\varepsilon &gt; 0 \\,\\,\\,\\, \\exists \\delta &gt; 0: \\,\\,\\,\\, \\forall t\n\\in (t_0 - \\delta, t_0) \\cup (t_0, t_0 + \\delta) \\,\\,\\,\\, |f(x) - a|\n&lt; \\varepsilon\\)</span>, то <span class=\"math inline\">\\(a\\)</span> -\n<em>предел функции</em> <span class=\"math inline\">\\(f(x)\\)</span>\n<em>вдоль кривой</em> <span class=\"math inline\">\\(\\gamma\\)</span> в\nточке <span class=\"math inline\">\\(x_0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "непрерывна",
+        "data": "Если $x_0 \\in D_f’$ (множество предельных точек области определения). Если существует $\\displaystyle \\lim_{x\\to x_0}f(x) = x_0$, то функция $f(x)$ *непрерывна* в точке $x_0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-4\">Определение:</a></strong><p>Если <span class=\"math inline\">\\(x_0 \\in D_f’\\)</span> (множество\nпредельных точек области определения). Если существует <span\nclass=\"math inline\">\\(\\displaystyle \\lim_{x\\to x_0}f(x) = x_0\\)</span>,\nто функция <span class=\"math inline\">\\(f(x)\\)</span> <em>непрерывна</em>\nв точке <span class=\"math inline\">\\(x_0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Множество всех непрерывных на $A \\subset \\mathbb{R}^n$ функций обозначается $C(A)$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-21.04.23#definition-5\">Определение:</a></strong><p>Множество всех непрерывных на <span class=\"math inline\">\\(A \\subset\n\\mathbb{R}^n\\)</span> функций обозначается <span\nclass=\"math inline\">\\(C(A)\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "липшицева",
+        "data": "Пусть $f(x)$ определена на $[a, b]$. Если $\\exists M > 0$, такое что $\\forall x, y \\in [a, b] \\,\\,\\,\\, |f(x) - f(y)| < M \\cdot |x - y|$, то $f(x)$ - *липшицева* функция.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.03.23#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> определена на <span\nclass=\"math inline\">\\([a, b]\\)</span>. Если <span\nclass=\"math inline\">\\(\\exists M &gt; 0\\)</span>, такое что <span\nclass=\"math inline\">\\(\\forall x, y \\in [a, b] \\,\\,\\,\\, |f(x) - f(y)|\n&lt; M \\cdot |x - y|\\)</span>, то <span\nclass=\"math inline\">\\(f(x)\\)</span> - <em>липшицева</em> функция.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "гёльдерова",
+        "data": "Пусть $f(x)$ определена на $[a, b]$. Если $\\exists M > 0$ и $\\exists \\alpha \\in (0, 1)$, такие что $\\forall x, y \\in [a, b] \\,\\,\\,\\, |f(x) - f(y)| < M \\cdot |x - y|^{\\alpha}$, то $f(x)$ - *гёльдерова* функция.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.03.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.03.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> определена на <span\nclass=\"math inline\">\\([a, b]\\)</span>. Если <span\nclass=\"math inline\">\\(\\exists M &gt; 0\\)</span> и <span\nclass=\"math inline\">\\(\\exists \\alpha \\in (0, 1)\\)</span>, такие что\n<span class=\"math inline\">\\(\\forall x, y \\in [a, b] \\,\\,\\,\\, |f(x) -\nf(y)| &lt; M \\cdot |x - y|^{\\alpha}\\)</span>, то <span\nclass=\"math inline\">\\(f(x)\\)</span> - <em>гёльдерова</em> функция.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Как было так и осталось.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-0\">Определение:</a></strong><p>Как было так и осталось.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "частная производная",
+        "data": "Пусть $f(x)$ определена в $O(x_0)$. Если $\\exists \\displaystyle \\lim_{\\Delta x_i\\to x_0}\\frac{f(x_{01}, \\ldots, x_{0i} + \\Delta x_i, \\ldots, x_n) - f(x_0)}{\\Delta x_i} := f’_{x_i} := \\frac{\\partial f}{\\partial x_i}_{|_{x = x_0}}$, то $f’_{x_i}$ - *частная производная* $f(x)$ по переменной $x_i$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> определена в <span\nclass=\"math inline\">\\(O(x_0)\\)</span>. Если <span\nclass=\"math inline\">\\(\\exists \\displaystyle \\lim_{\\Delta x_i\\to\nx_0}\\frac{f(x_{01}, \\ldots, x_{0i} + \\Delta x_i, \\ldots, x_n) -\nf(x_0)}{\\Delta x_i} := f’_{x_i} := \\frac{\\partial f}{\\partial x_i}_{|_{x\n= x_0}}\\)</span>, то <span class=\"math inline\">\\(f’_{x_i}\\)</span> -\n<em>частная производная</em> <span class=\"math inline\">\\(f(x)\\)</span>\nпо переменной <span class=\"math inline\">\\(x_i\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "дифференцируема дифференциал",
+        "data": "Пусть $f(x)$ определена в $O(x_0)$. Если $\\exists \\{A_i\\}_{i = 1}^n: \\,\\,\\,\\,$$$f(x) - f(x_0) = \\displaystyle \\sum_{i = 1}^{n}A_i(x_i - x_{0i}) + \\overline{\\overline{o}}(\\rho(x, x_0)), \\,\\,\\,\\, x \\to x_0,$$то $f(x)$ *дифференцируема* в точке $x_0$ и *дифференциал* $df_{|_{x_0}} = \\sum_{i = 1}^{n}A_i(x_i - x_{0i})$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-2\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> определена в <span\nclass=\"math inline\">\\(O(x_0)\\)</span>. Если <span\nclass=\"math inline\">\\(\\exists \\{A_i\\}_{i = 1}^n: \\,\\,\\,\\,\\)</span><span\nclass=\"math display\">\\[f(x) - f(x_0) = \\displaystyle \\sum_{i =\n1}^{n}A_i(x_i - x_{0i}) + \\overline{\\overline{o}}(\\rho(x, x_0)),\n\\,\\,\\,\\, x \\to x_0,\\]</span>то <span class=\"math inline\">\\(f(x)\\)</span>\n<em>дифференцируема</em> в точке <span\nclass=\"math inline\">\\(x_0\\)</span> и <em>дифференциал</em> <span\nclass=\"math inline\">\\(df_{|_{x_0}} = \\sum_{i = 1}^{n}A_i(x_i -\nx_{0i})\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Пусть $f(x)$ дифференцируема в точке $x_0$. Пусть $l = (\\cos \\alpha_1, \\cos \\alpha_2, \\ldots, \\cos \\alpha_n)$ и $||l|| = 1$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-3\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f(x)\\)</span> дифференцируема в\nточке <span class=\"math inline\">\\(x_0\\)</span>. Пусть <span\nclass=\"math inline\">\\(l = (\\cos \\alpha_1, \\cos \\alpha_2, \\ldots, \\cos\n\\alpha_n)\\)</span> и <span class=\"math inline\">\\(||l|| = 1\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "градиент функции",
+        "data": "Вектор (на самом деле ковектор, т.к. вектор из сопряженного пространства) $$\\left(\\frac{\\partial f}{\\partial x_1}, \\ldots, \\frac{\\partial f}{\\partial x_n}\\right)$$ - *градиент функции* $f$. Обозначается: $\\operatorname{grad} f$ или $\\nabla f$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-28.04.23#definition-4\">Определение:</a></strong><p>Вектор (на самом деле ковектор, т.к. вектор из сопряженного\nпространства) <span class=\"math display\">\\[\\left(\\frac{\\partial\nf}{\\partial x_1}, \\ldots, \\frac{\\partial f}{\\partial\nx_n}\\right)\\]</span> - <em>градиент функции</em> <span\nclass=\"math inline\">\\(f\\)</span>. Обозначается: <span\nclass=\"math inline\">\\(\\operatorname{grad} f\\)</span> или <span\nclass=\"math inline\">\\(\\nabla f\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "норма",
+        "data": "Функция $f: \\mathbb{R}^n \\to \\mathbb{R}$ - *норма*, если:",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-0\">Определение:</a></strong><p>Функция <span class=\"math inline\">\\(f: \\mathbb{R}^n \\to\n\\mathbb{R}\\)</span> - <em>норма</em>, если:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "",
+        "data": "Норма на $\\mathbb{R}^n$ задается так: $||x|| = \\sqrt{(x, x)}$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-2",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-2\">Определение:</a></strong><p>Норма на <span class=\"math inline\">\\(\\mathbb{R}^n\\)</span> задается\nтак: <span class=\"math inline\">\\(||x|| = \\sqrt{(x, x)}\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "метрика (функция расстояния)",
+        "data": "Функция $\\rho: \\mathbb{R}^n \\times \\mathbb{R}^n \\to \\mathbb{R}$ - *метрика (функция расстояния)*, если:",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-3\">Определение:</a></strong><p>Функция <span class=\"math inline\">\\(\\rho: \\mathbb{R}^n \\times\n\\mathbb{R}^n \\to \\mathbb{R}\\)</span> - <em>метрика (функция\nрасстояния)</em>, если:</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "сходящаяся (имеет предел)",
+        "data": "Последовательность $\\{x\\}_{k = 1}^{\\infty}$ - *сходящаяся (имеет предел)* равный $a \\in \\mathbb{R}^n$, если $\\forall \\varepsilon > 0 \\,\\,\\,\\, \\exists K \\in N: \\,\\,\\,\\, \\forall k > K \\,\\,\\,\\, \\rho(x_k, a) < \\varepsilon$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-3",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-3\">Определение:</a></strong><p>Последовательность <span class=\"math inline\">\\(\\{x\\}_{k =\n1}^{\\infty}\\)</span> - <em>сходящаяся (имеет предел)</em> равный <span\nclass=\"math inline\">\\(a \\in \\mathbb{R}^n\\)</span>, если <span\nclass=\"math inline\">\\(\\forall \\varepsilon &gt; 0 \\,\\,\\,\\, \\exists K \\in\nN: \\,\\,\\,\\, \\forall k &gt; K \\,\\,\\,\\, \\rho(x_k, a) &lt;\n\\varepsilon\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "ограничено",
+        "data": "Множество $A \\subset \\mathbb{R}^n$ - *ограничено*, если содержится в некотором открытом шаре.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-4",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-4\">Определение:</a></strong><p>Множество <span class=\"math inline\">\\(A \\subset \\mathbb{R}^n\\)</span>\n- <em>ограничено</em>, если содержится в некотором открытом шаре.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "параллелепипед",
+        "data": "Множество $\\Pi_{[a, b]} = \\{x \\in \\mathbb{R}^n: \\,\\,\\,\\, a_i \\le x_i \\le b_i\\}$ - *параллелепипед*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-5",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-5\">Определение:</a></strong><p>Множество <span class=\"math inline\">\\(\\Pi_{[a, b]} = \\{x \\in\n\\mathbb{R}^n: \\,\\,\\,\\, a_i \\le x_i \\le b_i\\}\\)</span> -\n<em>параллелепипед</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "расстояние между множествами",
+        "data": "Пусть $A, B \\subset \\mathbb{R}^n$. Тогда $\\rho(A, B) = \\displaystyle\\inf_{a \\in A, b \\in B}\\rho(a, b)$ - *расстояние между множествами* $A$ и $B$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-6",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-31.03.23#definition-6\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(A, B \\subset \\mathbb{R}^n\\)</span>.\nТогда <span class=\"math inline\">\\(\\rho(A, B) = \\displaystyle\\inf_{a \\in\nA, b \\in B}\\rho(a, b)\\)</span> - <em>расстояние между множествами</em>\n<span class=\"math inline\">\\(A\\)</span> и <span\nclass=\"math inline\">\\(B\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "условный максимум функции уравнения связи",
+        "data": "Пусть $f, f_1, \\ldots, f_m$ определены в $B(\\mathbf{x_0}), \\,\\,\\,\\, \\mathbf{x_0} \\in \\mathbb{R}^n$. Если $\\forall \\mathbf{x} \\in \\{\\mathbf{x} \\in {B}(\\mathbf{x_0}): \\,\\,\\,\\, f_i(\\mathbf{x}) = 0, \\forall i \\in \\{1, \\ldots, m\\}\\} \\,\\,\\,\\, f(\\mathbf{x_0}) > f(\\mathbf{x})$, то $\\mathbf{x_0}$ - *условный максимум функции* $f$. Система уравнений $f_i(\\mathbf{x}) = 0$ - это *уравнения связи*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-con#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-con#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f, f_1, \\ldots, f_m\\)</span>\nопределены в <span class=\"math inline\">\\(B(\\mathbf{x_0}), \\,\\,\\,\\,\n\\mathbf{x_0} \\in \\mathbb{R}^n\\)</span>. Если <span\nclass=\"math inline\">\\(\\forall \\mathbf{x} \\in \\{\\mathbf{x} \\in\n{B}(\\mathbf{x_0}): \\,\\,\\,\\, f_i(\\mathbf{x}) = 0, \\forall i \\in \\{1,\n\\ldots, m\\}\\} \\,\\,\\,\\, f(\\mathbf{x_0}) &gt; f(\\mathbf{x})\\)</span>, то\n<span class=\"math inline\">\\(\\mathbf{x_0}\\)</span> - <em>условный\nмаксимум функции</em> <span class=\"math inline\">\\(f\\)</span>. Система\nуравнений <span class=\"math inline\">\\(f_i(\\mathbf{x}) = 0\\)</span> - это\n<em>уравнения связи</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "функция Лагранжа множители Лагранжа",
+        "data": "Пусть $f, f_1, \\ldots, f_m$ определены в $B(\\mathbf{x_0})$. Функция $\\mathcal{L}(\\lambda_1, \\ldots, \\lambda_m, x_1, \\ldots, x_n) = f(\\mathbf{x}) + \\displaystyle \\sum_{i = 1}^{m}\\lambda_i \\cdot f_i(\\mathbf{x})$ - *функция Лагранжа* системы $f, f_1, \\ldots, f_m$. $\\boldsymbol{\\lambda} = (\\lambda_1, \\ldots, \\lambda_n)$ - *множители Лагранжа*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-con#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-con#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f, f_1, \\ldots, f_m\\)</span>\nопределены в <span class=\"math inline\">\\(B(\\mathbf{x_0})\\)</span>.\nФункция <span class=\"math inline\">\\(\\mathcal{L}(\\lambda_1, \\ldots,\n\\lambda_m, x_1, \\ldots, x_n) = f(\\mathbf{x}) + \\displaystyle \\sum_{i =\n1}^{m}\\lambda_i \\cdot f_i(\\mathbf{x})\\)</span> - <em>функция\nЛагранжа</em> системы <span class=\"math inline\">\\(f, f_1, \\ldots,\nf_m\\)</span>. <span class=\"math inline\">\\(\\boldsymbol{\\lambda} =\n(\\lambda_1, \\ldots, \\lambda_n)\\)</span> - <em>множители\nЛагранжа</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "функционально зависимы функционально зависима",
+        "data": "Пусть $\\Omega \\subset \\mathbb{R}^n$ - [область](https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-3). $\\{\\varphi_i: \\mathbb{R}^n \\to \\mathbb{R}, \\,\\,\\,\\, \\varphi_i \\in C^1(\\Omega)\\}_{i = 1}^m$. Пусть $\\hat{\\Omega} \\subset \\displaystyle\\bigtimes_{i = 1}^{m - 1}\\varphi_i(\\Omega) \\subset R^{m - 1}$. Если $\\exists \\Phi: \\mathbb{R}^{m - 1} \\to \\mathbb{R}, \\,\\,\\,\\, \\Phi \\in C^1(\\hat{\\Omega})$, такое, что $\\varphi_m(\\mathbf{x}) = \\Phi(\\varphi_1(\\mathbf{x}), \\ldots, \\varphi_{m - 1}(\\mathbf{x})) \\,\\,\\,\\, \\forall \\mathbf{x} \\in \\Omega$, то функции $\\varphi_1, \\ldots, \\varphi_{m - 1}$ *функционально зависимы* от функции $\\varphi_m$. Если $\\exists \\varphi_i$ функционально зависящая от остальных функций, то система $\\varphi_1, \\ldots, \\varphi_m$ - *функционально зависима*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-dependency#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-dependency#definition-0\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(\\Omega \\subset\n\\mathbb{R}^n\\)</span> - <a\nhref=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-18.04.23#definition-3\">область</a>.\n<span class=\"math inline\">\\(\\{\\varphi_i: \\mathbb{R}^n \\to \\mathbb{R},\n\\,\\,\\,\\, \\varphi_i \\in C^1(\\Omega)\\}_{i = 1}^m\\)</span>. Пусть <span\nclass=\"math inline\">\\(\\hat{\\Omega} \\subset \\displaystyle\\bigtimes_{i =\n1}^{m - 1}\\varphi_i(\\Omega) \\subset R^{m - 1}\\)</span>. Если <span\nclass=\"math inline\">\\(\\exists \\Phi: \\mathbb{R}^{m - 1} \\to \\mathbb{R},\n\\,\\,\\,\\, \\Phi \\in C^1(\\hat{\\Omega})\\)</span>, такое, что <span\nclass=\"math inline\">\\(\\varphi_m(\\mathbf{x}) =\n\\Phi(\\varphi_1(\\mathbf{x}), \\ldots, \\varphi_{m - 1}(\\mathbf{x}))\n\\,\\,\\,\\, \\forall \\mathbf{x} \\in \\Omega\\)</span>, то функции <span\nclass=\"math inline\">\\(\\varphi_1, \\ldots, \\varphi_{m - 1}\\)</span>\n<em>функционально зависимы</em> от функции <span\nclass=\"math inline\">\\(\\varphi_m\\)</span>. Если <span\nclass=\"math inline\">\\(\\exists \\varphi_i\\)</span> функционально зависящая\nот остальных функций, то система <span class=\"math inline\">\\(\\varphi_1,\n\\ldots, \\varphi_m\\)</span> - <em>функционально зависима</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "дифференцируемо",
+        "data": "Отображение $f: \\mathbb{R}^n \\to \\mathbb{R}^m$ *дифференцируемо* в точке $x_0$, если существует линейное отображение $\\varphi: \\mathbb{R}^n \\to \\mathbb{R}^m$, такое, что $f(\\mathbf{x_0} + \\Delta \\mathbf{x}) - f(\\mathbf{x_0}) = \\varphi(\\Delta \\mathbf{x}) + \\overline{\\overline{o}}(\\mathbf{x_0}, \\mathbf{x_0} + \\Delta \\mathbf{x}), \\,\\,\\,\\, \\rho(\\mathbf{x_0}, \\mathbf{x_0} + \\Delta \\mathbf{x}) \\to 0$.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-implicit#definition-0",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-implicit#definition-0\">Определение:</a></strong><p>Отображение <span class=\"math inline\">\\(f: \\mathbb{R}^n \\to\n\\mathbb{R}^m\\)</span> <em>дифференцируемо</em> в точке <span\nclass=\"math inline\">\\(x_0\\)</span>, если существует линейное отображение\n<span class=\"math inline\">\\(\\varphi: \\mathbb{R}^n \\to\n\\mathbb{R}^m\\)</span>, такое, что <span\nclass=\"math inline\">\\(f(\\mathbf{x_0} + \\Delta \\mathbf{x}) -\nf(\\mathbf{x_0}) = \\varphi(\\Delta \\mathbf{x}) +\n\\overline{\\overline{o}}(\\mathbf{x_0}, \\mathbf{x_0} + \\Delta \\mathbf{x}),\n\\,\\,\\,\\, \\rho(\\mathbf{x_0}, \\mathbf{x_0} + \\Delta \\mathbf{x}) \\to\n0\\)</span>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    },
+    {
+        "keyword": "матрица Якоби якобиан",
+        "data": "Пусть $f: \\mathbb{R}^n \\to \\mathbb{R}^m, \\,\\,\\,\\, f(\\mathbf{x}) = \\left(\\begin{array}{c}f_1(\\mathbf{x})\\\\\\vdots\\\\f_m(\\mathbf{x})\\end{array}\\right), \\,\\,\\,\\, \\forall \\mathbf{x} \\in \\mathbb{R}^n$. Пусть $f(\\mathbf{x})$ [дифференцируемо](https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-implicit#definition-0) в $B(\\mathbf{x_0})$. Матрица $$\\left(\\begin{array}{ccc} \\frac{\\partial f_1}{\\partial x_1} & \\dots & \\frac{\\partial f_1}{\\partial x_n} \\\\ \\vdots & \\ddots & \\vdots \\\\ \\frac{\\partial f_m}{\\partial x_1} & \\dots & \\frac{\\partial f_m}{\\partial x_n} \\end{array}\\right)$$ - *матрица Якоби* $f$. Если $m = n$, то определитель матрицы Якоби - *якобиан*.",
+        "url": "https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-implicit#definition-1",
+        "html": "<strong><a href=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-implicit#definition-1\">Определение:</a></strong><p>Пусть <span class=\"math inline\">\\(f: \\mathbb{R}^n \\to \\mathbb{R}^m,\n\\,\\,\\,\\, f(\\mathbf{x}) =\n\\left(\\begin{array}{c}f_1(\\mathbf{x})\\\\\\vdots\\\\f_m(\\mathbf{x})\\end{array}\\right),\n\\,\\,\\,\\, \\forall \\mathbf{x} \\in \\mathbb{R}^n\\)</span>. Пусть <span\nclass=\"math inline\">\\(f(\\mathbf{x})\\)</span> <a\nhref=\"https://mech-math-msu.github.io/2-semester/math-analysis/publish/lection-implicit#definition-0\">дифференцируемо</a>\nв <span class=\"math inline\">\\(B(\\mathbf{x_0})\\)</span>. Матрица <span\nclass=\"math display\">\\[\\left(\\begin{array}{ccc} \\frac{\\partial\nf_1}{\\partial x_1} &amp; \\dots &amp; \\frac{\\partial f_1}{\\partial x_n}\n\\\\ \\vdots &amp; \\ddots &amp; \\vdots \\\\ \\frac{\\partial f_m}{\\partial x_1}\n&amp; \\dots &amp; \\frac{\\partial f_m}{\\partial x_n}\n\\end{array}\\right)\\]</span> - <em>матрица Якоби</em> <span\nclass=\"math inline\">\\(f\\)</span>. Если <span class=\"math inline\">\\(m =\nn\\)</span>, то определитель матрицы Якоби - <em>якобиан</em>.</p>",
+        "statement_html": "",
+        "proof_html": ""
+    }
+]

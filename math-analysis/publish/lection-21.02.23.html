@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#свойства-интеграла-римана"
+id="toc-свойства-интеграла-римана">Свойства интеграла Римана</a></li>
+<li><a href="#первая-теорема-о-среднем"
+id="toc-первая-теорема-о-среднем">Первая теорема о среднем</a></li>
+</ul>
+</nav>
+</details>
+<h2 id="свойства-интеграла-римана">Свойства интеграла Римана</h2>
+<hr />
+<ol start="4" type="1">
+<li><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(f(x) \in R[a, b]\)</span>. Тогда <span
+class="math display">\[\displaystyle\int\limits_a^b f(x)dx \le
+\displaystyle\sup_{[a, b]} |f(x)| |b - a|\]</span></li>
+</ol>
+<p><em>Доказательство:</em> <span class="math display">\[\forall
+\mathcal{T}(\xi) \,\,\,\, |\sigma_f(\mathcal{T}(\xi))| =
+\left|\displaystyle \sum_{i = 1}^{n}f(\xi_i)(x_{i} - x_{i - 1})\right|
+\le \left|\displaystyle \sum_{i = 1}^{n}\sup_{[a, b]} |f(x)| (x_{i} -
+x_{i - 1})\right| = \displaystyle\sup_{[a, b]} |f(x)| |b - a|
+\,\,\,\,\blacksquare\]</span></p>
+<ol start="5" type="1">
+<li><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(f(x) \in R[a, b]\)</span>. Тогда <span
+class="math inline">\(|f(x)| \in R[a, b]\)</span> и <span
+class="math display">\[\left|\displaystyle\int\limits_a^b f(x)dx\right|
+\le \displaystyle\int\limits_a^b |f(x)|dx\]</span></li>
+</ol>
+<p><em>Доказательство:</em> <span class="math display">\[||f(x_2)| -
+|f(x_1)|| \le |f(x_2) - f(x_1)|\]</span> Перейдем к супремуму: <span
+class="math display">\[\displaystyle \sup_{[a, b]}||f(x_2)| - |f(x_1)||
+\le \displaystyle\sup_{[a, b]}|f(x_2) - f(x_1)|\]</span> Так как <span
+class="math inline">\(\displaystyle\sup_{x, x’ \in [a, b]}|f(x) - f(x’)|
+= \displaystyle\sup_{[a, b]}f(x) - \displaystyle\inf_{[a,
+b]}f(x)\)</span>, получаем: <span class="math display">\[\displaystyle
+\sup_{[a, b]}|f(x_2)| - \displaystyle\inf_{[a, b]}|f(x_1)| \le
+\displaystyle \sup_{[a, b]}f(x_2) - \displaystyle\inf_{[a,
+b]}f(x_1)\]</span> <span class="math display">\[\Downarrow\]</span>
+<span class="math display">\[S_{|f|}(\mathcal{T}) - s_{|f|}(\mathcal{T})
+\le S_f(\mathcal{T}) - s_f(\mathcal{T}) &lt;
+\varepsilon  \,\,\,\,\blacksquare\]</span></p>
+<ol start="6" type="1">
+<li><strong>Утверждение:</strong><a name="statement-2"></a> <span
+class="math display">\[f(x) \ge 0 \Rightarrow
+\displaystyle\int\limits_a^b f(x)dx \ge 0\]</span></li>
+</ol>
+<p><em>Доказательство:</em> <span class="math display">\[\forall
+\mathcal{T}(\xi) \,\,\,\, \sigma_f(\mathcal{T}(\xi)) \ge 0
+\,\,\,\,\blacksquare\]</span></p>
+<ol start="7" type="1">
+<li><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(f(x) \in R[a, b], \,\,\,\, f(x) \ge 0 \,\,\,\,
+\forall x \in [a, b], \,\,\,\, \exists c \in [a, b]: \,\,\,\, f(c) &gt;
+0\)</span> и <span class="math inline">\(f(x)\)</span> непрерывна в
+точке <span class="math inline">\(c\)</span>. Тогда <span
+class="math display">\[\displaystyle\int\limits_a^b f(x)dx &gt;
+0\]</span></li>
+</ol>
+<p><em>Доказательство:</em> <span class="math display">\[\forall
+\varepsilon &gt; 0 \,\,\,\, \exists \delta &gt; 0: \,\,\,\, \forall x: 0
+&lt; |x - c| &lt; \delta \,\,\,\, |f(x) - f(c)| &lt;
+\varepsilon\]</span> Пусть <span class="math inline">\(\varepsilon =
+\frac{f(c)}{2} \Rightarrow \forall x \in (c - \delta, c + \delta)
+\,\,\,\, f(x) &gt; \frac{f(c)}{2} \Rightarrow
+\displaystyle\int\limits_{c - \delta}^{c + \delta} f(x)dx &gt;
+\frac{f(c)}{2} &gt; 0 \Rightarrow \displaystyle\int\limits_a^b f(x)dx
+&gt; 0 \,\,\,\,\blacksquare\)</span></p>
+<ol start="8" type="1">
+<li><strong>Утверждение:</strong><a name="statement-4"></a> <span
+class="math display">\[f(x), g(x) \in R[a, b] \Rightarrow f(x)g(x) \in
+R[a, b]\]</span></li>
+</ol>
+<p><em>Доказательство:</em> <span class="math inline">\(|f(x_2)g(x_2) -
+f(x_1)g(x_1)| = |f(x_2)||g(x_2) - g(x_1)| + |g(x_1)||f(x_2) - f(x_1)|
+\,\,\,\,\blacksquare\)</span></p>
+<ol start="9" type="1">
+<li><strong>Утверждение:</strong><a name="statement-5"></a> Пусть <span
+class="math inline">\(f(x) \in R[a, b]\)</span> и <span
+class="math inline">\(\exists \delta &gt; 0: \,\,\,\, \forall x \in [a,
+b] \,\,\,\, f(x) &gt; \delta\)</span>. Тогда <span
+class="math inline">\(\frac{1}{f(x)} \in R[a, b]\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em> <span class="math display">\[\frac{1}{f(x)}
+\le \frac{1}{\delta}\]</span> <span
+class="math display">\[\left|\frac{1}{f(x_2)} - \frac{1}{f(x_1)}\right|
+\le \frac{1}{\delta^2}|f(x_2) - f(x_1)|
+\,\,\,\,\blacksquare\]</span></p>
+<h2 id="первая-теорема-о-среднем">Первая теорема о среднем</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(f(x), g(x) \in R[a, b], \,\,\,\, g(x) \ge 0,
+\,\,\,\, m = \displaystyle\inf_{[a, b]} f(x), \,\,\,\, M =
+\displaystyle\sup_{[a, b]} f(x)\)</span>. Тогда <span
+class="math display">\[\exists \mu \in [m, M]: \,\,\,\,
+\displaystyle\int\limits_a^b f(x)g(x)dx =
+\mu\displaystyle\int\limits_a^b g(x)dx\]</span></p>
+<p><em>Доказательство:</em> <span class="math display">\[m g(x) \le
+g(x)f(x) \le M g(x) \Rightarrow\]</span> <span class="math display">\[m
+\displaystyle\int\limits_a^b g(x)dx \le \displaystyle\int\limits_a^b
+f(x)g(x)dx \le M\displaystyle\int\limits_a^b g(x)dx\]</span> Если <span
+class="math inline">\(\displaystyle\int\limits_a^b g(x)dx \ne
+0\)</span>, то возьмем в качестве <span class="math inline">\(\mu =
+\,\,\,\, \frac{\displaystyle\int\limits_a^b
+f(x)g(x)dx}{\displaystyle\int\limits_a^b g(x)dx}\)</span>.</p>
+<p>Иначе, любое <span class="math inline">\(\mu\)</span> подходит <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

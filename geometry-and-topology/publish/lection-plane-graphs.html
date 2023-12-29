@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#планарные-графы" id="toc-планарные-графы">Планарные
+графы</a>
+<ul>
+<li><a href="#формула-эйлера-для-плоских-графов"
+id="toc-формула-эйлера-для-плоских-графов">Формула Эйлера для плоских
+графов</a></li>
+<li><a
+href="#критерий-планарности-графа-теорема-понтрягина-куратовского"
+id="toc-критерий-планарности-графа-теорема-понтрягина-куратовского">Критерий
+планарности графа (теорема Понтрягина-Куратовского)</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="планарные-графы">Планарные графы</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\(A\)</span> и <span
+class="math inline">\(B\)</span> подмножества множества <span
+class="math inline">\(C\)</span>. <span class="math inline">\(A \sqcup
+B\)</span> обозначает, что <span class="math inline">\(A \cap B =
+\varnothing\)</span> и <span class="math inline">\(C = A \cup
+B\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(G = (V, E, \partial)\)</span> и <span
+class="math inline">\(G’ = (V’, E’, \partial’)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">графы</a>.
+<em>Отображение графа</em> <span class="math inline">\(G\)</span> <em>в
+граф</em> <span class="math inline">\(G’\)</span> - это <span
+class="math inline">\(f: V \sqcup E \to V’ \sqcup E’\)</span>, такое,
+что <span class="math inline">\(f(V) \subset V’\)</span>, <span
+class="math inline">\(f(E) \subset E’\)</span> и <span
+class="math inline">\(f(\partial(e)) = \partial’(f(e))\,\,\,\, \forall e
+\in E\)</span>. Если отображение <span class="math inline">\(f\)</span>
+графов <span class="math inline">\(G\)</span> и <span
+class="math inline">\(G’\)</span> взаимнооднозначно, то <span
+class="math inline">\(f\)</span> - <em>изоморфизм</em> графов <span
+class="math inline">\(G\)</span> и <span
+class="math inline">\(G’\)</span>, а графы <span
+class="math inline">\(G\)</span> и <span
+class="math inline">\(G’\)</span> - <em>изоморфные</em>.<br>
+<strong>Обозначается:</strong> <span class="math inline">\(G \cong
+G’\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">Граф</a>
+<span class="math inline">\(G = (V, E, \partial)\)</span> иногда
+называют <em>комбинаторным</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Отношение <a
+href="#definition-0">изоморфности</a> на <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">графах</a>
+- <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-1">отношение
+эквивалентности</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(G \cong G’\)</span>. Тогда <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-9">топологические
+графы</a> <span class="math inline">\(X_{G}\)</span> и <span
+class="math inline">\(X_{G’}\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9">гомеоморфны</a>.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(f: X_G \to Y\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-10">вложение
+графа</a> <span class="math inline">\(G\)</span> в пространство <span
+class="math inline">\(Y\)</span>. Образ <span
+class="math inline">\(f(X_G) \subset Y\)</span> - <em>геометрическая
+реализация</em> графа <span class="math inline">\(G\)</span>. <span
+class="math inline">\(f\)</span>-образы вершин и ребер графа <span
+class="math inline">\(X_G\)</span> - <em>вершины и ребра геометрической
+реализации</em>. Существует взаимнооднозначное соответствие между
+вершинами и ребрами реализации и вершинами и ребрами графа, поэтому их
+можно отождествить и смотреть на геометрическую реализацию, как на
+множество точек(вершин) <span class="math inline">\(Y\)</span>,
+соединенных непрерывными кривыми без самопересечений. В таком случае
+отображение инцидентности переводит кривую в множество ее концевых
+точек.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">Граф</a>
+- <em>планарный</em>, если существует его <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-10">вложение</a>
+в плоскость.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> <a
+href="#definition-3">Геометрическая реализация</a> <a
+href="#definition-4">планарного</a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">графа</a>
+- <em>плоский граф</em>.</p>
+<p><strong>Определение:</strong><a name="definition-6"></a> Пусть <span
+class="math inline">\(\Gamma \subset \mathbb{R}^2\)</span> - <a
+href="#definition-5">плоский граф</a>. <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4">Компоненты
+линейной связности</a> <span class="math inline">\(\mathbb{R}^2\setminus
+\Gamma\)</span> - <em>грани</em> <span
+class="math inline">\(\Gamma\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-7"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">Граф</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-4">без
+циклов</a> - <em>лес</em>.</p>
+<p><strong>Определение:</strong><a name="definition-8"></a>
+<em>Подразбиение ребра</em> графа <span class="math inline">\(G\)</span>
+- это …</p>
+<h2 id="формула-эйлера-для-плоских-графов">Формула Эйлера для плоских
+графов</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> (формула Эйлера)
+Пусть <span class="math inline">\(G\)</span> - конечный <a
+href="#definition-5">плоский граф</a>. <span class="math inline">\(v, e,
+f, k\)</span> - количество его вершин, ребер, граней и <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-14">компонет
+связности</a>. Тогда справедлива формула: <span class="math display">\[v
+- e + f = 1 + k\]</span></p>
+<p><em>Доказательство:</em></p>
+<p>Можно доказывать для графа, все ребра которого отрезки, так как по
+утверждению можем построить граф, все ребра которого ломаные, а добавив
+в граф в качестве вершин точки ломаных, и вместо ребра-ломаной отдельные
+ребра для каждого звена ломаной, получим граф, для которого формула
+элера будет верна, если она была верна для исходного, и неверна
+иначе.</p>
+<p>Индукция по количеству ребер <span
+class="math inline">\(e\)</span>.</p>
+<p><strong>База:</strong> <span class="math inline">\(e = 0\)</span>.
+Тогда <span class="math inline">\(k = v\)</span> и <span
+class="math inline">\(f = 1 \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Шаг:</strong> Разберем два случая.</p>
+<ol type="1">
+<li>Пусть <span class="math inline">\(G\)</span> содержит цикл <span
+class="math inline">\(C = v_{i_1}v_{i_2}\ldots v_{i_s}\)</span> (<span
+class="math inline">\(v_{i_1} = v_{i_k}\)</span>). Пусть ребро <span
+class="math inline">\(e\)</span> содержится в цикле. При выбрасывании
+<span class="math inline">\(e\)</span> количество ребер уменьшится на
+<span class="math inline">\(1\)</span>, количество вершин и компонент
+связности графа не изменится. Докажем, что количество <a
+href="#definition-6">граней</a> также не изменится.</li>
+</ol>
+<p>По теореме Жордана <span class="math inline">\(\mathbb{R}^2 \setminus
+C\)</span> состоит из двух компонент линейной связности. Пусть <span
+class="math inline">\(p\)</span> произвольная внутренняя точка на ребре
+<span class="math inline">\(e\)</span>. Пусть <span
+class="math inline">\(U(p)\)</span> окрестность <span
+class="math inline">\(p\)</span>, такая, что <span
+class="math inline">\(U(p)\cap (G \setminus e) = \varnothing\)</span>.
+Ломаная <span class="math inline">\(C\)</span> разбивает <span
+class="math inline">\(U(p)\)</span> на две компоненты линейной
+связности. Возьмем точки в разных компонентах <span
+class="math inline">\(U(p)\setminus G\)</span>. До выбрасывания ребра
+<span class="math inline">\(e\)</span> они лежали в разных компонентах
+линейной связности <span class="math inline">\(\mathbb{R}^2 \setminus
+C\)</span>. После выбрасывания они находятся в одной и той же
+компоненте. То есть количество граней уменьшилось хотя бы на <span
+class="math inline">\(1\)</span>.</p>
+<p>Докажем, что количество граней уменьшилось ровно на <span
+class="math inline">\(1\)</span>. Пусть точки <span
+class="math inline">\(a\)</span> и <span
+class="math inline">\(b\)</span> до выбрасывания ребра <span
+class="math inline">\(e\)</span> были в одной грани, а после
+выбрасывания оказались в разных. Тогда можно соединить каждую из этих
+точек с <span class="math inline">\(U(p)\setminus G\)</span> ломаной, не
+пересекающей <span class="math inline">\(G\)</span>, то есть точки до
+выбрасывания лежали в гранях, примыкающих к ребру <span
+class="math inline">\(e\)</span>.</p>
+<center>
+<object data="img/euler-formula.svg" width="900" height="800">
+</object>
+</center>
+<ol start="2" type="1">
+<li>Пусть <span class="math inline">\(G\)</span> не содержит циклов.
+Тогда в нем есть компонента связности - дерево. Рассмотрим в нем вершину
+<span class="math inline">\(v\)</span> степени <span
+class="math inline">\(1\)</span>. Пусть <span
+class="math inline">\(e\)</span> ребро инцидентное <span
+class="math inline">\(v\)</span>. При выбрасывании <span
+class="math inline">\(e\)</span> количество ребер и вершин уменьшится на
+<span class="math inline">\(1\)</span>, количество компонент связности
+графа не изменится. Докажем, что количество <a
+href="#definition-6">граней</a> также не изменится.</li>
+</ol>
+<p>Пусть точки <span class="math inline">\(a\)</span> и <span
+class="math inline">\(b\)</span> можно соединить ломаной, не
+пересекающей <span class="math inline">\(G \setminus e\)</span>.</p>
+<p><span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2
+id="критерий-планарности-графа-теорема-понтрягина-куратовского">Критерий
+планарности графа (теорема Понтрягина-Куратовского)</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-9"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">Графы</a>
+<em>гомеоморфны</em>, если <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-topology-construct#definition-9">гомеоморфны</a>
+их <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#definition-9">топологические
+графы</a>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-1">Граф</a>
+<span class="math inline">\(G\)</span> - <a
+href="#definition-4">планарен</a> <span
+class="math inline">\(\Leftrightarrow\)</span> никакой <a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-graphs#definition-10">подграф</a>
+графа <span class="math inline">\(G\)</span> не <a
+href="#definition-9">гомеоморфен</a> <span class="math inline">\(K_{3,
+3}\)</span> или <span class="math inline">\(K_5\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span></p>
+<p><a
+href="https://mech-math-msu.github.io/2-semester/geometry-and-topology/publish/lection-jordan#statement-3">Графы
+<span class="math inline">\(K_{3, 3}\)</span> и <span
+class="math inline">\(K_5\)</span> непланарны</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><span class="math display">\[\Leftarrow\]</span></p>
+<p>сложно</p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

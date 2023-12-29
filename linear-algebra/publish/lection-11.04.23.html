@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#аффинные-пространства"
+id="toc-аффинные-пространства">Аффинные пространства</a>
+<ul>
+<li><a href="#простейшие-свойства-аффинных-пространств"
+id="toc-простейшие-свойства-аффинных-пространств">Простейшие свойства
+аффинных пространств</a></li>
+<li><a href="#изоморфизм-аффинных-пространств"
+id="toc-изоморфизм-аффинных-пространств">Изоморфизм аффинных
+пространств</a></li>
+<li><a href="#переход-от-одной-системы-координат-к-другой"
+id="toc-переход-от-одной-системы-координат-к-другой">Переход от одной
+системы координат к другой</a></li>
+<li><a href="#аффинные-подпространства"
+id="toc-аффинные-подпространства">Аффинные подпространства</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="аффинные-пространства">Аффинные пространства</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - множество, элементы которого
+называются <em>точки</em>, <span class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">векторное
+пространство</a>. Пара <span class="math inline">\((\mathbb{A},
+V)\)</span> (обозначается <span
+class="math inline">\(\mathbb{A}\)</span>) - <em>аффинное
+пространство</em>, если существует отображение <span
+class="math inline">\(f: (a, b) \mapsto v = \overline{ab}\)</span> из
+множества упорядоченных пар точек из <span
+class="math inline">\(\mathbb{A}\)</span> в множество векторов из <span
+class="math inline">\(V\)</span>, такое, что:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall v \in V, \,\,\,\,\forall a \in
+\mathbb{A} \,\,\,\, \exists ! b \in \mathbb{A}: \,\,\,\, \overline{ab} =
+v\)</span>. <strong>Обозначение:</strong> <span class="math inline">\(b
+= a + v\)</span>.</li>
+<li><span class="math inline">\(\forall a, b, c \in \mathbb{A} \,\,\,\,
+\overline{ab} + \overline{bc} = \overline{ac}\)</span>.</li>
+</ol>
+<h2 id="простейшие-свойства-аффинных-пространств">Простейшие свойства
+аффинных пространств</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(\mathbb{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(\forall a \in \mathbb{A} \,\,\,\,
+\overline{aa} = 0\)</span></li>
+<li><span class="math inline">\(\forall a, b \in \mathbb{A} \,\,\,\,
+\overline{ab} = -\overline{ba}\)</span></li>
+<li><span class="math inline">\(\forall a, b \in \mathbb{A} \,\,\,\,
+\overline{ab} = 0 \Leftrightarrow a = b\)</span></li>
+<li><span class="math inline">\(\forall a \in \mathbb{A}, v_1, v_2 \in V
+\,\,\,\, (a + v_1) + v_2 = a + (v_1 + v_2)\)</span></li>
+</ol>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li><span class="math inline">\(\overline{aa} + \overline{aa} =
+\overline{aa} \,\,\,\,\blacksquare\)</span></li>
+<li><span class="math inline">\(\overline{ab} + \overline{ba} =
+\overline{aa} = 0 \,\,\,\,\blacksquare\)</span></li>
+<li><span class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+<li><span class="math inline">\(b = a + v_1, \,\,\,\, c = a + (v_1 +
+v_2)\)</span> <span class="math display">\[\overline{ab} = v_1, \,\,\,\,
+\overline{ac} = v_1 + v_2\]</span> <span
+class="math display">\[\Downarrow\]</span> <span
+class="math display">\[v_2 = \overline{bc}
+\,\,\,\,\blacksquare\]</span></li>
+</ol>
+<h2 id="изоморфизм-аффинных-пространств">Изоморфизм аффинных
+пространств</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> Пусть <span
+class="math inline">\((\mathbb{A}_1, V_1)\)</span> и <span
+class="math inline">\((\mathbb{A}_2, V_2)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинные
+пространства</a>, причем <span class="math inline">\(V_1\)</span> и
+<span class="math inline">\(V_2\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">векторные
+пространства</a> над одним и тем же полем <span
+class="math inline">\(F\)</span>. <span class="math inline">\(\Phi:
+\mathbb{A}_1 \to \mathbb{A}_2\)</span> - <em>аффинное отображение</em>,
+если существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-20.02.23#definition-1">линейное
+отображение</a> <span class="math inline">\(\varphi: V_1 \to
+V_2\)</span>: <span class="math display">\[\overline{\Phi(a)\Phi(b)} =
+\varphi(\overline{ab})\]</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> <span
+class="math display">\[\Phi(b) = \Phi(a) +
+\varphi(\overline{ab})\]</span></p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\((\mathbb{A}_1, V_1)\)</span> и <span
+class="math inline">\((\mathbb{A}_2, V_2)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинные
+пространства</a>, причем <span class="math inline">\(V_1\)</span> и
+<span class="math inline">\(V_2\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-0">векторные
+пространства</a> над одним и тем же полем <span
+class="math inline">\(F\)</span>. Аффинные пространства <span
+class="math inline">\(\mathbb{A}_1\)</span> и <span
+class="math inline">\(\mathbb{A}_2\)</span> - <em>изоморфны</em>, если
+существует биективное <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1">аффинное
+отображение</a> <span class="math inline">\(\Phi: \mathbb{A}_1 \to
+\mathbb{A}_2\)</span>.</p>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-1">Аффинное
+отображение</a> <span class="math inline">\(\Phi: \mathbb{A}_1 \to
+\mathbb{A}_2\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-2">изоморфизм</a>
+<span class="math inline">\(\mathbb{A}_1\)</span> и <span
+class="math inline">\(\mathbb{A}_2\)</span> (биекция) <span
+class="math inline">\(\Leftrightarrow \varphi: V_1 \to V_2\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-9">изоморфизм</a>
+<span class="math inline">\(V_1\)</span> и <span
+class="math inline">\(V_2\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\Leftarrow\]</span> Рассмотрим
+отображение с дифференциалом <span
+class="math inline">\(\varphi\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
+class="math inline">\(\mathbb{A}_1\)</span> и <span
+class="math inline">\(\mathbb{A}_2\)</span> конечномерные <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинные
+пространства</a>. Тогда <span class="math inline">\(\mathbb{A}_1 \cong
+\mathbb{A}_2 \Leftrightarrow \dim \mathbb{A}_1 = \dim
+\mathbb{A}_2\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\((\mathbb{A}, V)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>. <em>Аффинная система координат</em> - это пара <span
+class="math inline">\((O, e)\)</span>, где <span class="math inline">\(O
+\in \mathbb{A}\)</span>(<em>начало координат</em>), <span
+class="math inline">\(e\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7">базис</a>
+в <span class="math inline">\(V\)</span>.<br> <em>Координаты точки</em>
+<span class="math inline">\(a \in \mathbb{A}\)</span> в системе
+координат <span class="math inline">\((O, e)\)</span> - это координаты
+вектора <span class="math inline">\(\overline{Oa}\)</span> в <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7">базисе</a>
+<span class="math inline">\(e\)</span>ю</p>
+<h2 id="переход-от-одной-системы-координат-к-другой">Переход от одной
+системы координат к другой</h2>
+<hr />
+<p>это было так много раз, что я не буду писать</p>
+<h2 id="аффинные-подпространства">Аффинные подпространства</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\((\mathbb{A}, V)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>, <span class="math inline">\(a \in \mathbb{A}\)</span>,
+<span class="math inline">\(U\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2">подпространство</a>
+<span class="math inline">\(V\)</span>. Множество <span
+class="math inline">\(\pi = a + U = \{a + v| \,\,\,\, v \in U\}\)</span>
+- <em>плоскость</em>. <span class="math inline">\(U\)</span> -
+<em>направляющее подпространство</em> плоскости <span
+class="math inline">\(\pi\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a>
+(<em>размерность плоскости</em>) <span class="math inline">\(\dim \pi =
+\dim U\)</span>. Нульмерная <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскость</a>
+- <em>точка</em>, одномерная <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскость</a>
+- <em>прямая</em>, <span class="math inline">\(n - 1\)</span> - мерная
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскость</a>
+- <em>гиперплоскость</em>.</p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> Пусть <span
+class="math inline">\(\pi = a + U\)</span>, <span
+class="math inline">\(b \in \pi\)</span>. Тогда <span
+class="math inline">\(\pi = b + U\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p>Докажем включение туда и обратно.</p>
+<p><span class="math inline">\(b \in \pi \Rightarrow \exists v \in U:
+\,\,\,\, b = a + v\)</span> <span class="math inline">\(c = b + u = a +
+v + u \in \pi\)</span> <span class="math inline">\(a + u = b + (-v) + u
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-6"></a> Пусть <span
+class="math inline">\((\mathbb{A}, V)\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>. Непустое <span class="math inline">\(B \subset
+\mathbb{A}\)</span> - <em>аффинное подпространство</em>, если <span
+class="math inline">\(\{\overline{pq}\,\,\,\, p, q \in B\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2">подпространство</a>
+<span class="math inline">\(V\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-6">Аффинное
+подпространство</a> - это <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-0">аффинное
+пространство</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-6">Аффинное
+подпространство</a> - это <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-11.04.23#definition-4">плоскость</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

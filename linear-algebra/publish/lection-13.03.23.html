@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#корневые-подпространства"
+id="toc-корневые-подпространства">Корневые подпространства</a>
+<ul>
+<li><a href="#билинейные-функции" id="toc-билинейные-функции">Билинейные
+функции</a>
+<ul>
+<li><a href="#матрица-билинейной-функции"
+id="toc-матрица-билинейной-функции">Матрица билинейной функции</a></li>
+<li><a
+href="#изменение-матрицы-билинейной-функции-при-переходе-от-одного-базиса-к-другому"
+id="toc-изменение-матрицы-билинейной-функции-при-переходе-от-одного-базиса-к-другому">Изменение
+матрицы билинейной функции при переходе от одного базиса к
+другому</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="корневые-подпространства">Корневые подпространства</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(V\)</span> - конечномерное векторное пространство,
+<span class="math inline">\(\mathcal{A}\)</span> - линейный оператор на
+<span class="math inline">\(V\)</span>. <span class="math inline">\(v
+\in V\)</span> - <em>корневой вектор</em> линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span>, <em>отвечающий</em>
+собственному значению <span class="math inline">\(\lambda\)</span>, если
+<span class="math inline">\(\exists m \in \mathbb{N}: \,\,\,\,
+(\mathcal{A} - \lambda \mathcal{I})^m(v) = 0\)</span>.</p>
+<p>(<span class="math inline">\((\mathcal{A} - \lambda \mathcal{I})^m(v)
+= (\mathcal{A} - \lambda \mathcal{I})((\mathcal{A} - \lambda
+\mathcal{I})^{m - 1}(v)) = (\mathcal{A} - \lambda \mathcal{I})(y) = 0
+\Rightarrow \lambda\)</span> действительно собственное значение
+линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span>)</p>
+<p>Так как <span class="math inline">\(V\)</span> конечномерно, у любого
+корневого вектора <span class="math inline">\(x\)</span> существует
+минимальное значение <span class="math inline">\(m\)</span>, такое что
+<span class="math inline">\((\mathcal{A} - \lambda \mathcal{I})^m(x) =
+0\)</span>. Такое минимальное <span class="math inline">\(m\)</span> -
+<em>высота</em> корневого вектора.</p>
+<p><strong>Пример:</strong> Собственный вектор - это корневой вектор с
+высотой <span class="math inline">\(1\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(V\)</span> - конечномерное векторное пространство,
+<span class="math inline">\(\mathcal{A}\)</span> - линейный оператор на
+<span class="math inline">\(V\)</span>, <span
+class="math inline">\(\lambda\)</span> - собственное значение <span
+class="math inline">\(\mathcal{A}\)</span>. Тогда <span
+class="math inline">\(V(\lambda) = \{v \in V| \,\,\,\, \exists m \in
+\mathbb{N}: \,\,\,\, (\mathcal{A} - \lambda \mathcal{I})(v) =
+0\}\)</span> - подпространство в <span
+class="math inline">\(V\)</span>.</p>
+<p><em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-1"></a> <span
+class="math inline">\(V(\lambda)\)</span> - <em>корневое</em>
+подпространство <span class="math inline">\(V\)</span>, отвечающее
+собственному значению <span class="math inline">\(\lambda\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(V\)</span> - конечномерное векторное пространство,
+<span class="math inline">\(\mathcal{A}\)</span> - линейный оператор на
+<span class="math inline">\(V\)</span>, <span
+class="math inline">\(\lambda\)</span> - собственное значение <span
+class="math inline">\(\mathcal{A}\)</span>. Тогда <span
+class="math inline">\(V(\lambda)\)</span> инвариантное подпространство
+оператора <span class="math inline">\(\mathcal{A}\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall v \in
+V(\lambda) \,\,\,\, \exists m \in \mathbb{N}: \,\,\,\, (\mathcal{A} -
+\lambda \mathcal{I})^m(v) = 0\)</span> (ничего непонятно)</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
+class="math inline">\(V\)</span> - конечномерное векторное пространство,
+<span class="math inline">\(\mathcal{A}\)</span> - линейный оператор на
+<span class="math inline">\(V\)</span>, <span
+class="math inline">\(\lambda_1, \ldots, \lambda_s\)</span> - все
+собственные значения <span class="math inline">\(\mathcal{A}\)</span>.
+Тогда все пространство <span class="math inline">\(V\)</span>
+разбивается на прямую сумму корневых подпространств, отвечающих
+значениям <span class="math inline">\(\lambda_1, \ldots,
+\lambda_s\)</span>.</p>
+<p><em>Доказательство:</em> Так как поле алгебраически замкнуто,
+существует базис, в котором матрица <span
+class="math inline">\(A\)</span> линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span> жорданова. Базис жордановой
+матрицы - это объединение базисов ее клеток. Пусть жорданов базис <span
+class="math inline">\(\mathcal{A}\)</span> - это <span
+class="math inline">\(e = \{e_{1 \lambda_1}, \ldots, e_{k_1 \lambda_1}\}
+\cup \ldots \cup \{e_{1 \lambda_s}, \ldots, e_{k_s
+\lambda_s}\}\)</span>, где <span class="math inline">\(e_{1 \lambda_i},
+\ldots, e_{k_i \lambda_i}\)</span> базис всех клеток с <span
+class="math inline">\(\lambda_i\)</span> на диагонали. <span
+class="math inline">\(U_i = &lt; e_{1 \lambda_i}, \ldots, e_{k_i
+\lambda_i}&gt;\)</span>. <span class="math inline">\(V = U_1 \oplus
+\ldots \oplus U_s\)</span> (почему сумма прямая?). Докажем, что <span
+class="math inline">\(U_i = V(\lambda_i)\)</span>. <span
+class="math inline">\(U_i\)</span> состоит из линейных комбинаций
+векторов жорданова базиса, каждый из которых является корневым(почему?),
+отвечающим значению <span class="math inline">\(\lambda_i\)</span>, а
+значит <span class="math inline">\(U_i \subset V(\lambda_i)\)</span>.
+Пусть <span class="math inline">\(x \in V(\lambda_i)\)</span>. Тогда
+<span class="math inline">\(x = x_i + \tilde{x}\)</span>, где <span
+class="math inline">\(x_i \in U_i\)</span>, <span
+class="math inline">\(\tilde{x} \in U_1 \oplus \ldots \oplus U_{i - 1}
+\oplus U_{i + 1} \oplus \ldots \oplus U_s\)</span>. <span
+class="math inline">\(\tilde{x} = x - x_i \in U_i\)</span>, то есть
+<span class="math inline">\(\exists m \in \mathbb{N}: \,\,\,\, \tilde{x}
+= (\mathcal{A} - \lambda_i \mathcal{I})^m(\tilde{x}) = 0\)</span>.
+Ограничение <span class="math inline">\(\mathcal{A} - \lambda_i
+\mathcal{I}\)</span> на <span class="math inline">\(U_1 \oplus \ldots
+\oplus U_{i - 1} \oplus U_{i + 1} \oplus \ldots \oplus U_s\)</span>
+невырождено (<strong>почему?</strong>), а следовательно <span
+class="math inline">\(\tilde{x} = 0 \Rightarrow x = x_i
+\,\,\,\,\blacksquare\)</span></p>
+<h2 id="билинейные-функции">Билинейные функции</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над полем
+<span class="math inline">\(F\)</span>. Отображение <span
+class="math inline">\(\beta: \,\,\,\, V \times V \to F\)</span> -
+<em>билинейная функция</em>, если:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall x, y, z \in V, \,\,\,\, \lambda
+\in F \,\,\,\, \beta(x + y, \lambda z) = \lambda \beta(x, z) + \lambda
+\beta(y, z)\)</span></li>
+<li><span class="math inline">\(\forall x, y, z \in V, \,\,\,\, \lambda
+\in F \,\,\,\, \beta(\lambda x, y + z) = \lambda \beta(x, y) + \lambda
+\beta(x, z)\)</span></li>
+</ol>
+<h4 id="матрица-билинейной-функции">Матрица билинейной функции</h4>
+<p>Пусть <span class="math inline">\(V\)</span> - векторное пространство
+размерности <span class="math inline">\(n\)</span> над полем <span
+class="math inline">\(F\)</span>, <span class="math inline">\(e = \{e_1,
+\ldots, e_n\}\)</span> - базис <span class="math inline">\(V\)</span>,
+<span class="math inline">\(\beta\)</span> - билинейная функция.</p>
+<p><span class="math display">\[\forall x, y \in V \,\,\,\, \beta(x, y)
+= \beta(\displaystyle \sum_{i = 1}^{n}x_i e_i, \displaystyle \sum_{i =
+1}^{n}y_i e_i) = \displaystyle \sum_{i = 1, j = 1}^{n}x_i \beta(e_i,
+e_j) y_i\]</span></p>
+<p>Обозначим <span class="math inline">\(\beta(e_i, e_j) =
+b_{ij}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> <span
+class="math inline">\(B = \left(\begin{array}{ccc}b_{11} &amp; \dots
+&amp; b_{1n}\\ \vdots &amp; \ddots &amp; \vdots\\ b_{n1} &amp; \dots
+&amp; b_{nn}\end{array}\right)\)</span> - <em>матрица билинейной
+функции</em> <span class="math inline">\(\beta\)</span> <em>в
+базисе</em> <span class="math inline">\(e\)</span>.</p>
+<p><span class="math inline">\(\beta(x, y) = X^T B Y\)</span>, где <span
+class="math inline">\(X, Y\)</span> столбцы координат векторов <span
+class="math inline">\(x, y\)</span> соответственно.</p>
+<h3
+id="изменение-матрицы-билинейной-функции-при-переходе-от-одного-базиса-к-другому">Изменение
+матрицы билинейной функции при переходе от одного базиса к другому</h3>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство размерности
+<span class="math inline">\(n\)</span> над полем <span
+class="math inline">\(F\)</span>, <span class="math inline">\(e,
+\tilde{e}\)</span> - базисы <span class="math inline">\(V\)</span>,
+<span class="math inline">\(\beta\)</span> - билинейная функция, <span
+class="math inline">\(B, \tilde{B}\)</span> - ее матрицы в базисах <span
+class="math inline">\(e\)</span> и <span
+class="math inline">\(\tilde{e}\)</span> соответственно. Тогда <span
+class="math display">\[\tilde{B} = C_{e \to \tilde{e}}^TB C_{e \to
+\tilde{e}}\]</span></p>
+<p><em>Доказательство:</em> записать все и подставить одно в другое
+<span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

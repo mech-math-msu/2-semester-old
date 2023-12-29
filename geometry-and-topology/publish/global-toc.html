@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<div style="display: none;">
+<span class="math inline">\(\heartsuit\)</span>
+</div>
+<nav id="TOC" role="doc-toc">
+<ul>
+<nav id="TOC_cool-problems" role="doc-toc">
+<ul>
+<li><a href="cool-problems.html#решения-избранных-задач"
+id="toc-решения-избранных-задач">Решения избранных задач</a>
+<ul>
+<li><a href="cool-problems.html#элементы-теории-графов"
+id="toc-элементы-теории-графов">Элементы теории графов</a></li>
+<li><a href="cool-problems.html#элементы-топологии" id="toc-элементы-топологии">Элементы
+топологии</a></li>
+<li><a href="cool-problems.html#теорема-жордана" id="toc-теорема-жордана">Теорема
+Жордана</a></li>
+<li><a href="cool-problems.html#планарные-графы" id="toc-планарные-графы">Планарные
+графы</a></li>
+<li><a href="cool-problems.html#многогранники"
+id="toc-многогранники">Многогранники</a></li>
+<li><a href="cool-problems.html#замкнутые-двумерные-поверхности"
+id="toc-замкнутые-двумерные-поверхности">Замкнутые двумерные
+поверхности</a></li>
+</ul></li>
+</ul>
+</nav>
+<nav id="TOC_lection-graphs" role="doc-toc">
+<ul>
+<li><a href="lection-graphs.html#граф-определения" id="toc-граф-определения">Граф:
+определения</a>
+<ul>
+<li><a href="lection-graphs.html#эйлеров-граф" id="toc-эйлеров-граф">Эйлеров граф</a></li>
+<li><a href="lection-graphs.html#гамильтонов-граф" id="toc-гамильтонов-граф">Гамильтонов
+граф</a></li>
+<li><a href="lection-graphs.html#подграфы" id="toc-подграфы">Подграфы</a></li>
+</ul></li>
+</ul>
+</nav>
+<nav id="TOC_lection-trees" role="doc-toc">
+<ul>
+<li><a href="lection-trees.html#деревья" id="toc-деревья">Деревья</a></li>
+</ul>
+</nav>
+<nav id="TOC_lection-topology-defs" role="doc-toc">
+<ul>
+<li><a href="lection-topology-defs.html#топология-и-топологическое-пространство"
+id="toc-топология-и-топологическое-пространство">Топология и
+топологическое пространство</a>
+<ul>
+<li><a href="lection-topology-defs.html#метрическая-топология"
+id="toc-метрическая-топология">Метрическая топология</a></li>
+<li><a href="lection-topology-defs.html#топология-на-базе-окрестностей"
+id="toc-топология-на-базе-окрестностей">Топология на базе
+окрестностей</a></li>
+<li><a href="lection-topology-defs.html#замкнутые-подмножества"
+id="toc-замкнутые-подмножества">Замкнутые подмножества</a></li>
+<li><a href="lection-topology-defs.html#топологические-внутренность-и-замыкание"
+id="toc-топологические-внутренность-и-замыкание">Топологические
+внутренность и замыкание</a></li>
+<li><a href="lection-topology-defs.html#непрерывные-отображения"
+id="toc-непрерывные-отображения">Непрерывные отображения</a></li>
+<li><a href="lection-topology-defs.html#непрерывность-по-базе-топологии"
+id="toc-непрерывность-по-базе-топологии">Непрерывность по базе
+топологии</a></li>
+</ul></li>
+</ul>
+</nav>
+<nav id="TOC_lection-topology-construct" role="doc-toc">
+<ul>
+<li><a href="lection-topology-construct.html#конструкции-как-получить-новую-топологию-из-уже-существующих"
+id="toc-конструкции-как-получить-новую-топологию-из-уже-существующих">Конструкции
+(как получить новую топологию из уже существующих)</a>
+<ul>
+<li><a href="lection-topology-construct.html#дизъюнктивное-объединение"
+id="toc-дизъюнктивное-объединение">Дизъюнктивное объединение</a></li>
+<li><a href="lection-topology-construct.html#индуцированная-топология"
+id="toc-индуцированная-топология">Индуцированная топология</a></li>
+<li><a href="lection-topology-construct.html#фактор-топология"
+id="toc-фактор-топология">Фактор-топология</a>
+<ul>
+<li><a href="lection-topology-construct.html#факторизация-по-подмножеству"
+id="toc-факторизация-по-подмножеству">Факторизация по
+подмножеству</a></li>
+<li><a href="lection-topology-construct.html#склеивание-пары-точек"
+id="toc-склеивание-пары-точек">Склеивание пары точек</a></li>
+<li><a href="lection-topology-construct.html#склеивание-концов-отрезка"
+id="toc-склеивание-концов-отрезка">Склеивание концов отрезка</a></li>
+<li><a href="lection-topology-construct.html#букет" id="toc-букет">Букет</a></li>
+<li><a href="lection-topology-construct.html#фактор-по-сюръекции" id="toc-фактор-по-сюръекции">Фактор
+по сюръекции</a></li>
+</ul></li>
+<li><a href="lection-topology-construct.html#гомеоморфизм" id="toc-гомеоморфизм">Гомеоморфизм</a></li>
+<li><a href="lection-topology-construct.html#связность-и-линейная-связность-компоненты-связности"
+id="toc-связность-и-линейная-связность-компоненты-связности">Связность и
+линейная связность, компоненты связности</a>
+<ul>
+<li><a href="lection-topology-construct.html#достаточное-условие-связности"
+id="toc-достаточное-условие-связности">Достаточное условие
+связности</a></li>
+<li><a href="lection-topology-construct.html#линейная-связность" id="toc-линейная-связность">Линейная
+связность</a></li>
+</ul></li>
+<li><a href="lection-topology-construct.html#хаусдорфовость"
+id="toc-хаусдорфовость">Хаусдорфовость</a></li>
+<li><a href="lection-topology-construct.html#компактность" id="toc-компактность">Компактность</a>
+<ul>
+<li><a href="lection-topology-construct.html#способы-доказательства-гомеоморфности"
+id="toc-способы-доказательства-гомеоморфности">Способы доказательства
+гомеоморфности</a></li>
+</ul></li>
+<li><a href="lection-topology-construct.html#локально-постоянные-функции"
+id="toc-локально-постоянные-функции">Локально постоянные
+функции</a></li>
+<li><a href="lection-topology-construct.html#пределы" id="toc-пределы">Пределы</a></li>
+</ul></li>
+</ul>
+</nav>
+<nav id="TOC_lection-jordan" role="doc-toc">
+<ul>
+<li><a href="lection-jordan.html#теорема-жордана" id="toc-теорема-жордана">Теорема
+Жордана</a>
+<ul>
+<li><a href="lection-jordan.html#доказательство-теоремы-жордана-для-замкнутых-ломаных"
+id="toc-доказательство-теоремы-жордана-для-замкнутых-ломаных">Доказательство
+теоремы Жордана для замкнутых ломаных</a></li>
+<li><a href="lection-jordan.html#доказательство-теоремы-жордана-для-незамкнутых-ломаных"
+id="toc-доказательство-теоремы-жордана-для-незамкнутых-ломаных">Доказательство
+теоремы Жордана для незамкнутых ломаных</a></li>
+<li><a href="lection-jordan.html#следствие-про-четыре-точки-на-ломаной"
+id="toc-следствие-про-четыре-точки-на-ломаной">Следствие про четыре
+точки на ломаной</a>
+<ul>
+<li><a href="lection-jordan.html#топологичекий-граф"
+id="toc-топологичекий-граф">Топологичекий граф</a></li>
+</ul></li>
+<li><a href="lection-jordan.html#теорема-жордана-для-кривых-компонент-не-меньше-двух"
+id="toc-теорема-жордана-для-кривых-компонент-не-меньше-двух">Теорема
+Жордана для кривых: компонент не меньше двух</a></li>
+<li><a href="lection-jordan.html#теорема-жордана-для-ломаных-компонент-ровно-две"
+id="toc-теорема-жордана-для-ломаных-компонент-ровно-две">Теорема Жордана
+для ломаных: компонент ровно две</a></li>
+</ul></li>
+</ul>
+</nav>
+<nav id="TOC_lection-plane-graphs" role="doc-toc">
+<ul>
+<li><a href="lection-plane-graphs.html#планарные-графы" id="toc-планарные-графы">Планарные
+графы</a>
+<ul>
+<li><a href="lection-plane-graphs.html#формула-эйлера-для-плоских-графов"
+id="toc-формула-эйлера-для-плоских-графов">Формула Эйлера для плоских
+графов</a></li>
+<li><a href="lection-plane-graphs.html#критерий-планарности-графа-теорема-понтрягина-куратовского"
+id="toc-критерий-планарности-графа-теорема-понтрягина-куратовского">Критерий
+планарности графа (теорема Понтрягина-Куратовского)</a></li>
+</ul></li>
+</ul>
+</nav>
+<nav id="TOC_lection-graph-coloring" role="doc-toc">
+<ul>
+<li><a href="lection-graph-coloring.html#раскраски-плоских-графов"
+id="toc-раскраски-плоских-графов">Раскраски плоских графов</a>
+<ul>
+<li><a href="lection-graph-coloring.html#лемма-шпернера" id="toc-лемма-шпернера">Лемма
+Шпернера</a></li>
+<li><a href="lection-graph-coloring.html#как-разрезать-пирог-чтобы-никто-не-обиделся"
+id="toc-как-разрезать-пирог-чтобы-никто-не-обиделся">Как разрезать
+пирог, чтобы никто не обиделся?</a></li>
+<li><a href="lection-graph-coloring.html#теорема-брауэра" id="toc-теорема-брауэра">Теорема
+Брауэра</a></li>
+</ul></li>
+</ul>
+</nav>
+<nav id="TOC_lection-polyhedra" role="doc-toc">
+<ul>
+<li><a href="lection-polyhedra.html#многоугольники" id="toc-многоугольники">Многоугольники</a>
+<ul>
+<li><a href="lection-polyhedra.html#многогранные-поверхности-и-многогранники"
+id="toc-многогранные-поверхности-и-многогранники">Многогранные
+поверхности и многогранники</a></li>
+<li><a href="lection-polyhedra.html#графы-многогранной-поверхности"
+id="toc-графы-многогранной-поверхности">Графы многогранной
+поверхности</a></li>
+<li><a href="lection-polyhedra.html#выпуклые-многогранники"
+id="toc-выпуклые-многогранники">Выпуклые многогранники</a></li>
+<li><a href="lection-polyhedra.html#планарность-графа-выпуклого-многогранника"
+id="toc-планарность-графа-выпуклого-многогранника">Планарность графа
+выпуклого многогранника</a></li>
+<li><a href="lection-polyhedra.html#формула-эйлера-для-многогранников"
+id="toc-формула-эйлера-для-многогранников">Формула Эйлера для
+многогранников</a></li>
+<li><a href="lection-polyhedra.html#правильные-многогранники"
+id="toc-правильные-многогранники">Правильные многогранники</a></li>
+<li><a href="lection-polyhedra.html#теорема-минковского-о-еже"
+id="toc-теорема-минковского-о-еже">Теорема Минковского о «еже»</a></li>
+</ul></li>
+</ul>
+</nav>
+<nav id="TOC_lection-volume-denh" role="doc-toc">
+<ul>
+<li><a href="lection-volume-denh.html#равновеликость-и-равносоставленность"
+id="toc-равновеликость-и-равносоставленность">Равновеликость и
+равносоставленность</a>
+<ul>
+<li><a href="lection-volume-denh.html#инварианты-дена-и-критерий-равносоставленности-многогранников"
+id="toc-инварианты-дена-и-критерий-равносоставленности-многогранников">Инварианты
+Дена и критерий равносоставленности многогранников</a>
+<ul>
+<li><a href="lection-volume-denh.html#инварианты-дена-для-куба-и-призмы"
+id="toc-инварианты-дена-для-куба-и-призмы">Инварианты Дена для куба и
+призмы</a></li>
+<li><a href="lection-volume-denh.html#необходимое-условие-равносоставленности-многогранников-теорема-дена"
+id="toc-необходимое-условие-равносоставленности-многогранников-теорема-дена">Необходимое
+условие равносоставленности многогранников (теорема Дена)</a></li>
+<li><a href="lection-volume-denh.html#применения-теоремы-дена"
+id="toc-применения-теоремы-дена">Применения теоремы Дена</a></li>
+</ul></li>
+<li><a href="lection-volume-denh.html#решение-третьей-проблемы-гильберта"
+id="toc-решение-третьей-проблемы-гильберта">Решение третьей проблемы
+Гильберта</a>
+<ul>
+<li><a href="lection-volume-denh.html#тетраэдр-хилла" id="toc-тетраэдр-хилла">Тетраэдр
+Хилла</a></li>
+</ul></li>
+<li><a href="lection-volume-denh.html#достаточное-условие-равносоставленности-многогранников"
+id="toc-достаточное-условие-равносоставленности-многогранников">Достаточное
+условие равносоставленности многогранников</a></li>
+</ul></li>
+</ul>
+</nav>
+<nav id="TOC_lection-3d-surface-classification" role="doc-toc">
+<ul>
+<li><a href="lection-3d-surface-classification.html#топологическая-классификация-многогранных-поверхностей"
+id="toc-топологическая-классификация-многогранных-поверхностей">Топологическая
+классификация многогранных поверхностей</a>
+<ul>
+<li><a href="lection-3d-surface-classification.html#модельные-поверхности"
+id="toc-модельные-поверхности">Модельные поверхности</a></li>
+<li><a href="lection-3d-surface-classification.html#ориентация-многогранных-поверхностей"
+id="toc-ориентация-многогранных-поверхностей">Ориентация многогранных
+поверхностей</a></li>
+<li><a href="lection-3d-surface-classification.html#эйлерова-характеристика"
+id="toc-эйлерова-характеристика">Эйлерова характеристика</a></li>
+</ul></li>
+</ul>
+</nav>
+</ul>
+</nav>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+<script src="utils/prism.js"></script>
+<script src="utils/copy_code.js"></script>
+</body>
+</html>

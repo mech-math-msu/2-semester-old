@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Математический анализ</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#вторая-теорема-о-средних"
+id="toc-вторая-теорема-о-средних">Вторая теорема о средних</a></li>
+<li><a href="#кривые" id="toc-кривые">Кривые</a></li>
+</ul>
+</nav>
+</details>
+<h2 id="вторая-теорема-о-средних">Вторая теорема о средних</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(f(x) \in C[a, b], \,\,\,\, g(x) \in C^1[a, b],
+\,\,\,\, g(x)\)</span> - монотонно возрастает. Тогда <span
+class="math inline">\(\exists c \in [a, b]\)</span>:</p>
+<p><span class="math display">\[\displaystyle\int\limits_a^b f(x)g(x)dx
+= g(a)\displaystyle\int\limits_a^c f(x)dx +
+g(b)\displaystyle\int\limits_c^b f(x)dx\]</span></p>
+<p><em>Доказательство:</em> <span class="math inline">\(F(x) =
+\displaystyle\int\limits_x^b f(t)dt\)</span></p>
+<p><span class="math display">\[\displaystyle\int\limits_a^b f(x)g(x)dx
+= -\displaystyle\int\limits_a^b g(x)dF(x) =
+-\left.g(x)F(x)\right|_{a}^{b} + \displaystyle\int\limits_a^b
+F(x)g’(x)dx=\]</span> <span class="math display">\[= g(a)
+\displaystyle\int\limits_a^b f(x)dx + F(c) \displaystyle\int\limits_a^b
+g’(x)dx=\]</span> <span class="math display">\[= g(a)
+\displaystyle\int\limits_a^b f(x)dx + \displaystyle\int\limits_c^b
+f(x)dx (g(b) - g(a))=\]</span> <span class="math display">\[=
+g(a)\displaystyle\int\limits_a^c f(x)dx +
+g(b)\displaystyle\int\limits_c^b f(x)dx
+\,\,\,\,\blacksquare\]</span></p>
+<h2 id="кривые">Кривые</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Отображение
+<span class="math inline">\(\gamma: [a, b] \to \mathbb{R}^n, \,\,\,\,
+\gamma(t): t \in [a, b] \mapsto (x_1(t), \ldots, x_n(t))\)</span> -
+непрерывно на <span class="math inline">\([a, b]\)</span>, тогда и
+только тогда, когда <span class="math inline">\(x_i(t)\)</span> -
+непрерывно на <span class="math inline">\([a, b] \,\,\,\, \forall i \in
+\{1, \ldots, n\}\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-0"></a> Непрерывное
+отображение <span class="math inline">\(\gamma: [a, b] \to
+\mathbb{R}^n\)</span> - это <em>(непрерывная) кривая</em>.</p>
+<p><span class="math inline">\(t \in [a, b] \,\,\,\, \gamma(t) =
+(x_1(t), \ldots, x_n(t))\)</span>, где <span
+class="math inline">\(x_1(t)\)</span> - <em>первая координата</em>…</p>
+<p><span class="math inline">\(\forall t \in [a, b] \,\,\,\, M =
+\gamma(t)\)</span> - <em>точка</em> кривой <span
+class="math inline">\(\gamma\)</span>.</p>
+<p>Если <span class="math inline">\(\exists t_1 \ne t_2 (t_1, t_2 \in
+[a, b]): \,\,\,\, M = \gamma(t_1) = \gamma(t_2)\)</span>, то <span
+class="math inline">\(M\)</span> <em>точка самопересечения</em> кривой
+<span class="math inline">\(\gamma\)</span>.</p>
+<p><span class="math inline">\(\operatorname{card}\{t: \,\,\,\, M =
+\gamma(t), \,\,\,\, t \in [a, b]\}\)</span> - <em>кратность</em> точки
+<span class="math inline">\(M\)</span>.</p>
+<p>Если точек самопересечения нет, то кривая <span
+class="math inline">\(\gamma\)</span> - <em>простая</em>.</p>
+<p>Если существует единственная точка самопересечения и ее кратность
+равна <span class="math inline">\(2\)</span>, то кривая <span
+class="math inline">\(\gamma\)</span> - <em>простая замкнутая</em>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\(\mathcal{T} = \{t_i\}_{i = 0}^k\)</span> разбиение
+<span class="math inline">\([a, b]\)</span>, <span
+class="math inline">\(\gamma\)</span> - кривая.</p>
+<p><span class="math inline">\(|l_{\gamma}(\mathcal{T})| = \displaystyle
+\sum_{i = 1}^{k}|\gamma(t_i) - \gamma(t_{i - 1})|\)</span> - <em>длина
+ломаной</em>, отвечающей разметке <span
+class="math inline">\(\mathcal{T}\)</span>.</p>
+<p><strong>Лемма:</strong><a name="lemma-0"></a> Если <span
+class="math inline">\(\mathcal{T}_1 \subset \mathcal{T}_2\)</span>, то
+<span class="math display">\[|l_{\gamma}(\mathcal{T}_1)| \le
+|l_{\gamma}(\mathcal{T}_2)|\]</span></p>
+<p><em>Доказательство:</em> <span class="math inline">\(\mathcal{T}_2
+\setminus \mathcal{T}_1 = \{t^{*}\}, \,\,\,\, t_{j - 1} &lt; t^{*} &lt;
+t_j\)</span>. <br><span
+class="math inline">\(|l_{\gamma}(\mathcal{T}_2)| -
+|l_{\gamma}(\mathcal{T}_1)| \ge 0\)</span> - неравенство треугольника в
+плоскости <span class="math inline">\(\{\gamma(t_{j - 1}),
+\gamma(t^{*}), \gamma(t_{j})\} \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\(\gamma\)</span> - кривая. Если множество <span
+class="math inline">\(\{|l_{\gamma}(\mathcal{T})|\}_{\mathcal{T}}\)</span>
+ограничено сверху, то <span class="math inline">\(\gamma\)</span>
+<em>спрямляемая</em> и <span class="math inline">\(\sup
+\{|l_{\gamma}(\mathcal{T})|\}_{\mathcal{T}} = |\gamma|\)</span> -
+<em>длина кривой</em> <span class="math inline">\(\gamma\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(\gamma(t) \in C^1[a, b]\)</span>. Тогда <span
+class="math inline">\(\gamma\)</span> - спрямляемая и <span
+class="math display">\[|\gamma| = \displaystyle\int\limits_a^b
+\sqrt{\displaystyle \sum_{i = 1}^{n} x_i’^2(t)} dt\]</span></p>
+<p><em>Доказательство:</em> Докажем, что <span
+class="math inline">\(\gamma\)</span> спрямляемая, то есть <span
+class="math inline">\(\{|l_{\gamma}(\mathcal{T})|\}_{\mathcal{T}}\)</span>
+ограничено сверху. <span class="math display">\[|l_{\gamma}(t)| =
+\displaystyle \sum_{j = 1}^{m} \sqrt{\displaystyle \sum_{i =
+1}^{n}(x_i(t_j) - x_i(t_{j - 1}))^2} =\]</span> <span
+class="math display">\[=\displaystyle \sum_{j = 1}^{m}
+\sqrt{\displaystyle \sum_{i = 1}^{n}x_i’^2(\xi_{ij}) (t_j - t_{j -
+1})^2} = \displaystyle \sum_{j = 1}^{m} \sqrt{\displaystyle \sum_{i =
+1}^{n}x_i’^2(\xi_{ij})} |t_j - t_{j - 1}|\le\]</span> <span
+class="math display">\[\le M \sqrt{n} (b - a)\]</span> Следовательно,
+<span class="math inline">\(\gamma\)</span> спрямляемая.</p>
+<p><strong>Лемма:</strong><a name="lemma-1"></a> <span
+class="math display">\[\sqrt{\displaystyle \sum_{i = 1}^{n}x_i^2} -
+\sqrt{\displaystyle \sum_{i = 1}^{n}y_i^2} \le \displaystyle \sum_{i =
+1}^{n}|x_i - y_i|\]</span></p>
+<p><em>Доказательство:</em> домножить на сопряженное и поколдовать <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><span class="math inline">\(f(t) = \sqrt{\displaystyle \sum_{i =
+1}^{n} x_i’^2(t)}\)</span> - композиция суммы непрерывных функций
+непрерывна, а следовательно <span class="math display">\[\exists
+\displaystyle\int\limits_a^b \sqrt{\displaystyle \sum_{i = 1}^{n}
+x_i’^2(t)} dt = I\]</span></p>
+<ol type="1">
+<li><span class="math display">\[\forall \varepsilon &gt; 0 \,\,\,\,
+\exists \delta_1 &gt; 0: \,\,\,\, \forall \mathcal{T} (d(\mathcal{T})
+&lt; \delta_1) \,\,\,\, |\sigma_f(\mathcal{T}) - I| &lt;
+\varepsilon\]</span></li>
+<li><span class="math display">\[||l_{\gamma}(\mathcal{T})| -
+\sigma_f(\mathcal{T})| = \left|\displaystyle \sum_{j = 1}^{m}
+\sqrt{\displaystyle \sum_{i = 1}^{n}x_i’^2(\xi_{ij})} |t_j - t_{j - 1}|
+- \sigma_f(\mathcal{T})\right|=\]</span> <span
+class="math display">\[=\left|\displaystyle \sum_{j = 1}^{m}
+\sqrt{\displaystyle \sum_{i = 1}^{n}x_i’^2(\xi_{ij})} |t_j - t_{j - 1}|
+- \displaystyle \sum_{j = 1}^{m}\sqrt{\displaystyle \sum_{i = 1}^{n}
+x_i’^2(\xi_j)}|t_j - t_{j - 1}|\right| \le\]</span> <span
+class="math display">\[\le \left|\displaystyle \sum_{j = 1}^{m}
+\displaystyle \sum_{i = 1}^{n}|x_i’(\xi_{ij}) - x_i’(\xi_j)| |t_j - t_{j
+- 1}|\right|\]</span> <span class="math display">\[\forall \varepsilon
+&gt; 0 \,\,\,\, \exists \delta_2 &gt; 0: \,\,\,\, \forall \xi_{ij},
+\xi_j: \,\,\,\, |\xi_{ij} - \xi_j| &lt; \delta \,\,\,\, |x_i’(\xi_{ij})
+- x_i’(\xi_j)| &lt; \varepsilon \Rightarrow\]</span> <span
+class="math display">\[\forall \frac{\varepsilon}{n(b - a)} \,\,\,\,
+||l_{\gamma}(t)| - \sigma_f(\mathcal{T})| &lt; \varepsilon\]</span></li>
+<li><span class="math display">\[|\gamma| =
+\sup_{\mathcal{T}}\{|l_{\gamma}(\mathcal{T})|\} \Rightarrow |\gamma| -
+|l_{\gamma}(\mathcal{T})| &lt; \varepsilon\]</span></li>
+</ol>
+<p><span class="math display">\[\Downarrow\]</span></p>
+<p><span class="math display">\[|\gamma| - I &lt; \varepsilon
+\Rightarrow I = |\gamma| \,\,\,\,\blacksquare\]</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#ортогональные-и-ортонормированные-базисы-в-унитарном-пространстве"
+id="toc-ортогональные-и-ортонормированные-базисы-в-унитарном-пространстве">Ортогональные
+и ортонормированные базисы в унитарном пространстве</a>
+<ul>
+<li><a href="#изоморфизм-унитарных-пространств"
+id="toc-изоморфизм-унитарных-пространств">Изоморфизм унитарных
+пространств</a></li>
+<li><a href="#линейные-операторы-в-унитарном-пространстве"
+id="toc-линейные-операторы-в-унитарном-пространстве">Линейные операторы
+в унитарном пространстве</a>
+<ul>
+<li><a href="#эрмитов-линейный-оператор"
+id="toc-эрмитов-линейный-оператор">Эрмитов линейный оператор</a>
+<ul>
+<li><a href="#канонический-вид-эрмитова-линейного-оператора"
+id="toc-канонический-вид-эрмитова-линейного-оператора">Канонический вид
+эрмитова линейного оператора</a></li>
+</ul></li>
+<li><a href="#унитарный-линейный-оператор"
+id="toc-унитарный-линейный-оператор">Унитарный линейный оператор</a>
+<ul>
+<li><a href="#канонический-вид-унитарного-линейного-оператора"
+id="toc-канонический-вид-унитарного-линейного-оператора">Канонический
+вид унитарного линейного оператора</a></li>
+</ul></li>
+</ul></li>
+<li><a
+href="#получение-унитарного-пространства-при-комплексификации-евклидова"
+id="toc-получение-унитарного-пространства-при-комплексификации-евклидова">Получение
+унитарного пространства при комплексификации евклидова</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1
+id="ортогональные-и-ортонормированные-базисы-в-унитарном-пространстве">Ортогональные
+и ортонормированные базисы в унитарном пространстве</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарное</a>
+пространство. Векторы <span class="math inline">\(x, y \in V, \,\,\,\, x
+\ne 0, \,\,\,\, y \ne 0\)</span> - <em>ортогональны</em>, если <span
+class="math inline">\((x, y) = 0\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарное</a>
+пространство, <span class="math inline">\(e_1, \ldots, e_k\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-0">ортогональные</a>
+векторы. Тогда <span class="math inline">\(e_1, \ldots, e_k\)</span> -
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-5">линейно
+независимы</a>.</p>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[\lambda_1 e_1 + \ldots + \lambda_n e_n =
+0\]</span> <span class="math display">\[(\lambda_1 e_1 + \ldots +
+\lambda_n e_n, e_1) = (0, e_1)\]</span> <span
+class="math display">\[\Downarrow\]</span> <span
+class="math display">\[\lambda_1 (e_1, e_1) + \ldots + \lambda_n(e_n,
+e_1) = 0\]</span> <span class="math display">\[\Downarrow\]</span> <span
+class="math display">\[\lambda_1 = 0 \,\,\,\,\blacksquare\]</span></p>
+<p><strong>Определение:</strong><a name="definition-1"></a> Базис <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарного</a>
+пространства, состоящий из ортогональных векторов -
+<em>ортогональный</em>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-1">Ортогональный</a>
+базис <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарного</a>
+пространства, состоящий из единичных векторов -
+<em>ортонормированный</em>.</p>
+<p><strong>Определение:</strong><a name="definition-4"></a> Квадратная
+матрица <span class="math inline">\(A\)</span> - <em>унитарная</em>,
+если <span class="math inline">\(A^T\overline{A} = E\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> (свойства
+ортонормированного базиса)</p>
+<ol type="1">
+<li><span class="math inline">\((x, y) = x_1 \overline{y}_1 + \ldots +
+x_n \overline{y}_n\)</span>.</li>
+<li><span class="math inline">\((x, e_i) = x_i\)</span>.</li>
+<li>Матрица перехода от одного <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-2">ортонормированного</a>
+базиса к другому - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-4">унитарная</a>.</li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> В
+конечномерном унитарном пространстве существует ортогональный базис.</p>
+<p><em>Доказательство:</em> процесс ортогонализации Грама-Шмидта для
+унитарного пространства.</p>
+<h2 id="изоморфизм-унитарных-пространств">Изоморфизм унитарных
+пространств</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-3"></a> Унитарные
+пространства <span class="math inline">\(U\)</span> и <span
+class="math inline">\(W\)</span> <em>изоморфны</em>, если <span
+class="math inline">\(\exists \varphi: U \to W\)</span>:</p>
+<ol type="1">
+<li><span class="math inline">\(\varphi\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-9">изоморфизм</a>
+<span class="math inline">\(U\)</span> и <span
+class="math inline">\(W\)</span>, как векторных пространств.</li>
+<li><span class="math inline">\((\varphi(x), \varphi(y)) = (x, y)
+\,\,\,\, \forall x, y \in U\)</span>.</li>
+</ol>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(U\)</span> и <span
+class="math inline">\(W\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарные</a>
+пространства. Тогда <span class="math inline">\(U\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-3">изоморфно</a>
+<span class="math inline">\(W \,\,\,\, \Leftrightarrow \,\,\,\, \dim U =
+\dim W\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-5"></a> Пусть <span
+class="math inline">\(U\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2">подпространство</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарного</a>
+пространства <span class="math inline">\(V\)</span>. <span
+class="math inline">\(U^{\perp} = \{x \in V: \,\,\,\, (x, u) = 0
+\,\,\,\, \forall u \in U\}\)</span> - <em>ортогональное дополнение</em>
+<span class="math inline">\(U\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Пусть <span
+class="math inline">\(V\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарное</a>
+пространство, <span class="math inline">\(U\)</span> - его <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-2">подпространство</a>.
+Тогда <span class="math inline">\(V = U \oplus U^{\perp}\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="линейные-операторы-в-унитарном-пространстве">Линейные операторы
+в унитарном пространстве</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-5"></a> <span
+class="math inline">\(\beta\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1">полуторалинейная</a>
+функция, <span class="math inline">\(\mathcal{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a>. <span class="math inline">\(\beta(x, y) = (x,
+\mathcal{A}(y))\)</span> - взаимнооднозначное соответствие между
+линейными операторами и полуторалинейными функциями.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="эрмитов-линейный-оператор">Эрмитов линейный оператор</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-6"></a> Линейный
+оператор <span class="math inline">\(\mathcal{A}\)</span> на унитарном
+пространстве - <em>эрмитов</em>, если <span
+class="math inline">\(\forall x, y \in V \,\,\,\, (\mathcal{A}(x), y) =
+(x, \mathcal{A}(y))\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">Линейный
+оператор</a> <span class="math inline">\(\mathcal{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-6">эрмитов</a>
+<span class="math inline">\(\Leftrightarrow\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-2">матрица</a>
+<span class="math inline">\(A\)</span> линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span> в <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-2">ортонормированном</a>
+базисе <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-4">эрмитова</a>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\((\mathcal{A}(x),
+y) = (AX)^T\bar{Y} = X^TA^T\bar{Y} = (x, \mathcal{A}(y)) =
+X^T\bar{A}\bar{Y} \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-7"></a> Пусть <span
+class="math inline">\(v\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-0">собственный
+вектор</a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-6">эрмитова</a>
+линейного <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">оператора</a>
+с собственным значением <span class="math inline">\(\lambda\)</span>.
+Тогда <span class="math inline">\(\lambda \in \mathbb{R}\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h4 id="канонический-вид-эрмитова-линейного-оператора">Канонический вид
+эрмитова линейного оператора</h4>
+<p><strong>Утверждение:</strong><a name="statement-8"></a> Пусть <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-8">конечномерное</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарное</a>
+пространство, <span class="math inline">\(\mathcal{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-6">эрмитов</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">оператор</a>
+на <span class="math inline">\(V\)</span>. Тогда существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-2">ортонормированный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7">базис</a>,
+в котором <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-2">матрица
+линейного оператора</a> <span class="math inline">\(\mathcal{A}\)</span>
+диагональна с вещественными числами на диагонали.</p>
+<p><em>Доказательство:</em></p>
+<p>По индукции. <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h3 id="унитарный-линейный-оператор">Унитарный линейный оператор</h3>
+<hr />
+<p><strong>Определение:</strong><a name="definition-7"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">Линейный
+оператор</a> <span class="math inline">\(\mathcal{A}\)</span> на
+унитарном пространстве - <em>унитарный</em>, если <span
+class="math inline">\(\forall x, y \in V \,\,\,\, (\mathcal{A}(x),
+\mathcal{A}(y)) = (x, y)\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-9"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">Линейный
+оператор</a> <span class="math inline">\(\mathcal{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-7">унитарный</a>
+<span class="math inline">\(\Leftrightarrow\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-2">матрица</a>
+<span class="math inline">\(A\)</span> линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span> в <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-2">ортонормированном</a>
+базисе <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-4">унитарная</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-10"></a> Пусть <span
+class="math inline">\(v\)</span> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-27.02.23#definition-0">собственный
+вектор</a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-7">унитарного</a>
+линейного <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">оператора</a>
+с собственным значением <span class="math inline">\(\lambda\)</span>.
+Тогда <span class="math inline">\(|\lambda| = 1\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h4 id="канонический-вид-унитарного-линейного-оператора">Канонический
+вид унитарного линейного оператора</h4>
+<p><strong>Утверждение:</strong><a name="statement-11"></a> Пусть <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-8">конечномерное</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарное</a>
+пространство, <span class="math inline">\(\mathcal{A}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-7">унитарный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">оператор</a>
+на <span class="math inline">\(V\)</span>. Тогда существует <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-2">ортонормированный</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-7">базис</a>,
+в котором <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-2">матрица
+линейного оператора</a> <span class="math inline">\(\mathcal{A}\)</span>
+диагональна с числами на диагонали по модулю равными <span
+class="math inline">\(1\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарное</a>
+пространство. <span class="math inline">\(\dim V = n\)</span>. <span
+class="math inline">\(q\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-5">эрмитова
+квадратичная форма</a>. Тогда существует ортонормированный базис, в
+котором <span class="math inline">\(q(x) = \lambda_1 x_1 \overline{x}_1
++ \ldots + \lambda_n x_n \overline{x}_n\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-8"></a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">Линейный
+оператор</a> <span class="math inline">\(\mathcal{A}\)</span> на <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарном</a>
+пространстве <em>положительно определен</em>, если он <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-6">эрмитов</a>
+и <span class="math inline">\((x, \mathcal{A}(x)) &gt; 0 \,\,\,\,
+\forall x \in V\)</span>.</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (о полярном
+разложении) В <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-1-11.02.23#definition-8">конечномерном</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-7">унитарном</a>
+пространстве любой невырожденный <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.02.23#definition-1">линейный
+оператор</a> <span class="math inline">\(\mathcal{A}\)</span>
+единственным образом представляется в виде композиции <span
+class="math inline">\(\mathcal{A} = \mathcal{S} \mathcal{R}\)</span>,
+где <span class="math inline">\(S\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-8">положительно
+определенный</a> линейный оператор, а <span
+class="math inline">\(\mathcal{R}\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-10.04.23#definition-7">унитарный</a>
+линейный оператор.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2
+id="получение-унитарного-пространства-при-комплексификации-евклидова">Получение
+унитарного пространства при комплексификации евклидова</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-12"></a> Пусть <span
+class="math inline">\(V\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-25.03.23#definition-1">евклидово</a>
+пространство. Тогда <span class="math inline">\((x + i y, a + i b) = (x,
+a) + (y, b) + i ((y, a) - (x, b))\)</span> - <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-3">эрмитова</a>
+<a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-8">положительно
+определенная</a> <a
+href="https://mech-math-msu.github.io/2-semester/linear-algebra/publish/lection-08.04.23#definition-1">полуторалинейная</a>
+функция.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

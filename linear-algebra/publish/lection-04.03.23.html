@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Линейная алгебра</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Линейная алгебра</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#комплексификация"
+id="toc-комплексификация">Комплексификация</a>
+<ul>
+<li><a
+href="#приведение-матрицы-линейного-оператора-к-треугольному-виду"
+id="toc-приведение-матрицы-линейного-оператора-к-треугольному-виду">Приведение
+матрицы линейного оператора к треугольному виду</a></li>
+<li><a href="#теорема-гамильтона-кэли"
+id="toc-теорема-гамильтона-кэли">Теорема Гамильтона-Кэли</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="комплексификация">Комплексификация</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над <span
+class="math inline">\(\mathbb{R}\)</span>. Рассмотрим множество <span
+class="math inline">\(V(\mathbb{C}) = \{(v_1, v_2)| v_1, v_2 \in
+V\}\)</span>. Определим</p>
+<p>сложение: <span class="math inline">\(\forall (v_1, v_2),
+(\tilde{v}_1, \tilde{v}_2) \in V(\mathbb{C}) \,\,\,\,\,\,\,\, (v_1, v_2)
++ (\tilde{v}_1, \tilde{v}_2) = (v_1 + \tilde{v}_1, v_2 +
+\tilde{v}_2)\)</span>,</p>
+<p>умножение на числа из <span
+class="math inline">\(\mathbb{C}\)</span>: <span
+class="math inline">\(\forall (\alpha + i \beta) \in \mathbb{C},
+\,\,\,\, \alpha, \beta \in \mathbb{R},\,\,\,\, (v_1, v_2) \in
+V(\mathbb{C}) \,\,\,\,\,\,\,\, (\alpha + i \beta)(v_1, v_2) = (\alpha
+v_1 - \beta v_2, \beta v_1 + \alpha v_2)\)</span>.</p>
+<p>Будем обозначать пару <span class="math inline">\((v, 0) \in
+V(\mathbb{C})\)</span>, как <span class="math inline">\(v\)</span>.
+Заметим, что <span class="math inline">\(i(v, 0) = (0, v)\)</span>, а
+следовательно <span class="math inline">\((v_1, v_2)\)</span>
+записывается так: <span class="math inline">\(v_1 + i v_2\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над <span
+class="math inline">\(\mathbb{R}\)</span>. Тогда <span
+class="math inline">\(V(\mathbb{C})\)</span> - векторное пространство
+над <span class="math inline">\(\mathbb{C}\)</span>.</p>
+<p><em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над <span
+class="math inline">\(\mathbb{R}\)</span>. Тогда любой базис <span
+class="math inline">\(V\)</span> является базисом в <span
+class="math inline">\(V(\mathbb{C})\)</span>.</p>
+<p><em>Доказательство:</em> не очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над <span
+class="math inline">\(\mathbb{R}\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Определим отображение <span
+class="math inline">\(\mathcal{A}_{\mathbb{C}}: V(\mathbb{C}) \to
+V(\mathbb{C}) \,\,\,\,\,\,\,\, v_1 + i v_2 \in V(\mathbb{C}) \mapsto
+\mathcal{A}(v_1) + i \mathcal{A}(v_2)\)</span>. Тогда <span
+class="math inline">\(\mathcal{A}_{\mathbb{C}}\)</span> линейный
+оператор на <span class="math inline">\(V(\mathbb{C})\)</span>.</p>
+<p><em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над <span
+class="math inline">\(\mathbb{R}\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>, <span class="math inline">\(B\)</span>
+- базис в <span class="math inline">\(V\)</span>. Тогда матрица
+линейного оператора <span
+class="math inline">\(\mathcal{A}_{\mathbb{C}}\)</span> в базисе <span
+class="math inline">\(B\)</span> совпадает с матрицей линейного
+оператора <span class="math inline">\(\mathcal{A}\)</span> в базисе
+<span class="math inline">\(B\)</span>.</p>
+<p><em>Доказательство:</em> очев <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над <span
+class="math inline">\(\mathbb{R}\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Тогда линейный оператор <span
+class="math inline">\(\mathcal{A}_{\mathbb{C}}\)</span> имеет
+собственный вектор <span class="math inline">\(x + i y\)</span> с
+собственным значением <span class="math inline">\(\lambda = \alpha + i
+\beta\)</span> <span class="math display">\[\Downarrow\]</span> <span
+class="math display">\[\begin{cases}
+    \mathcal{A}(x) = \alpha x - \beta y\\
+    \mathcal{A}(y) = \beta x + \alpha y
+\end{cases}\]</span></p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\Rightarrow\]</span> <span
+class="math display">\[\mathcal{A}_{\mathbb{C}}(x + i y) = (\alpha + i
+\beta)(x + i y) = \alpha x - \beta y + i (\beta x + \alpha y) =
+\mathcal{A}(x) + i \mathcal{A}(y) \,\,\,\,\blacksquare\]</span> <span
+class="math display">\[\Leftarrow\]</span> То же самое в обратную
+сторону.</p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство над <span
+class="math inline">\(\mathbb{R}\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>. Линейный оператор <span
+class="math inline">\(\mathcal{A}_{\mathbb{C}}\)</span> имеет
+собственный вектор <span class="math inline">\(x + i y\)</span> с
+собственным значением <span class="math inline">\(\lambda = \alpha + i
+\beta\)</span>. Тогда <span class="math inline">\(&lt;x , y
+&gt;\)</span> - двумерное инвариантное подпространство линейного
+оператора <span class="math inline">\(\mathcal{A}\)</span>.</p>
+<p><em>Доказательство:</em></p>
+<h2
+id="приведение-матрицы-линейного-оператора-к-треугольному-виду">Приведение
+матрицы линейного оператора к треугольному виду</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-1"></a> Поле <span
+class="math inline">\(F\)</span> <em>алгебраически замкнуто</em>, если
+любой многочлен над <span class="math inline">\(F\)</span> имеет хотя бы
+один корень.</p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство размерности
+<span class="math inline">\(n\)</span> над алгебраически замкнутым полем
+<span class="math inline">\(F\)</span>, <span
+class="math inline">\(\mathcal{A}\)</span> - линейный оператор на <span
+class="math inline">\(V\)</span>, <span class="math inline">\(A\)</span>
+- матрица <span class="math inline">\(\mathcal{A}\)</span> в некотором
+базисе. Тогда <span class="math inline">\(\exists\)</span> такой базис,
+что матрица линейного оператора <span
+class="math inline">\(\mathcal{A}\)</span> в нем верхнетреугольная.</p>
+<p><strong>Эквивалентная формулировка:</strong> Пусть <span
+class="math inline">\(F\)</span> - алгебраически замкнуто, <span
+class="math inline">\(A \in M_n(F)\)</span>. Тогда <span
+class="math display">\[\exists C \in M_n(F), \,\,\,\, \det(C) \ne 0:
+\,\,\,\, C^{-1}AC = \left(\begin{array}{cccc}
+\star &amp; \star &amp; \dots &amp; \star\\
+0 &amp; \star &amp; \dots &amp; \star\\
+\vdots &amp; \ddots &amp; \ddots &amp; \vdots\\
+0 &amp; \dots &amp; 0 &amp; \star
+\end{array}\right)\]</span></p>
+<p><em>Доказательство:</em> (индукция по <span
+class="math inline">\(n\)</span>) Пусть утверждение верно для <span
+class="math inline">\(n - 1\)</span>, докажем, что оно верно для <span
+class="math inline">\(n\)</span>. <span class="math inline">\(F\)</span>
+- алгебраически замкнуто, то есть характеристический многочлен <span
+class="math inline">\(\chi(t)\)</span> имеет хотя бы одни корень, а
+значит у <span class="math inline">\(\mathcal{A}\)</span> существует
+собственный вектор <span class="math inline">\(e_1 \ne 0\)</span>,
+отвечающий собственному значению <span
+class="math inline">\(\lambda\)</span>. Дополним его до базиса <span
+class="math inline">\(V \Rightarrow \mathcal{e} = \{e_1, \ldots,
+e_n\}\)</span>. Матрица <span class="math inline">\(\mathcal{A}\)</span>
+в базисе <span class="math inline">\(\mathcal{e}\)</span> имеет вид
+<span class="math inline">\(A_{\mathcal{e}} = \left(\begin{array}{c|ccc}
+\lambda &amp; \star &amp; \dots &amp; \star\\ \hline 0\\ \vdots &amp;
+\,\,\,\, &amp; B\\ 0\\ \end{array}\right)\)</span>, где <span
+class="math inline">\(B\)</span> - матрица размера <span
+class="math inline">\(n - 1\)</span>, а значит по предположению индукции
+существует <span class="math inline">\(S: \,\,\,\, S^{-1}BS\)</span> -
+верхнетреугольная матрица. Рассмотрим матрицу <span
+class="math inline">\(C = \left(\begin{array}{c|ccc} 1 &amp; 0 &amp;
+\dots &amp; 0\\ \hline 0\\ \vdots &amp; \,\,\,\, &amp; S\\ 0\\
+\end{array}\right)\)</span>. <span class="math display">\[C^{-1}AC =
+\left(\begin{array}{c|ccc}
+1 &amp; 0 &amp; \dots &amp; 0\\
+\hline
+0\\
+\vdots &amp; \,\,\,\, &amp; S^{-1}\\
+0\\
+\end{array}\right)\left(\begin{array}{c|ccc}
+\lambda &amp; \star &amp; \dots &amp; \star\\
+\hline
+0\\
+\vdots &amp; \,\,\,\, &amp; B\\
+0\\
+\end{array}\right)\left(\begin{array}{c|ccc}
+1 &amp; 0 &amp; \dots &amp; 0\\
+\hline
+0\\
+\vdots &amp; \,\,\,\, &amp; S\\
+0\\
+\end{array}\right)=\]</span> <span class="math display">\[=
+\left(\begin{array}{c|ccc}
+\lambda &amp; \star &amp; \dots &amp; \star\\
+\hline
+0\\
+\vdots &amp; \,\,\,\, &amp; S^{-1}BS\\
+0\\
+\end{array}\right) \,\,\,\,\blacksquare\]</span></p>
+<h2 id="теорема-гамильтона-кэли">Теорема Гамильтона-Кэли</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (Теорема
+Гамильтона-Кэли) Пусть <span class="math inline">\(\mathcal{A}\)</span>
+линейный оператор на векторном пространстве <span
+class="math inline">\(V\)</span> размерности <span
+class="math inline">\(n\)</span> над полем <span
+class="math inline">\(F\)</span>. Тогда <span
+class="math inline">\(A\)</span> является корнем своего
+характеристического многочлена.</p>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Пусть <span class="math inline">\(F\)</span> - алгебраически
+замкнуто. Тогда в <span class="math inline">\(V\)</span> существует
+базис, в котором матрица линейного оператора <span
+class="math inline">\(A\)</span> является верхнетреугольной. <span
+class="math display">\[A = \left(\begin{array}{cccc}
+a_{11} &amp; \star &amp; \dots &amp; \star\\
+0 &amp; a_{22} &amp; \dots &amp; \star\\
+\vdots &amp; \ddots &amp; \ddots &amp; \vdots\\
+0 &amp; \dots &amp; 0 &amp; a_{nn}
+\end{array}\right)\]</span> <span
+class="math display">\[\chi_{\mathcal{A}}(t) = \det (A - tE) = (a_{11} -
+t)\cdot \ldots \cdot (a_{nn} - t)\]</span> <span
+class="math display">\[\chi_{\mathcal{A}}(A) = (-1)^n(A - a_{11}E)\cdot
+\ldots \cdot (A - a_{nn}E)=\]</span> <span class="math display">\[=
+\left(\begin{array}{c|ccc}
+0 &amp; \star &amp; \dots &amp; \star\\
+\hline
+0\\
+\vdots &amp; C - a_{11}E\\
+0\\
+\end{array}\right)\cdot\ldots\cdot\left(\begin{array}{c|ccc}
+a_{11} - a_{nn} &amp; \star &amp; \dots &amp; \star\\
+\hline
+0\\
+\vdots &amp; C - a_{nn}E\\
+0\\
+\end{array}\right)=\]</span> <span class="math inline">\((C -
+a_{22}E)\cdot\ldots\cdot(C - a_{nn}E) = 0\)</span> по предположению
+индукции (многочлен степени <span class="math inline">\(n -
+1\)</span>).</li>
+</ol>
+<p><span class="math display">\[=\left(\begin{array}{c|ccc}
+0 &amp; \star &amp; \dots &amp; \star\\
+\hline
+0\\
+\vdots &amp; \,\,\,\, &amp; C - a_{11}E\\
+0\\
+\end{array}\right)\cdot\left(\begin{array}{c|ccc}
+\displaystyle \prod_{i = 2}^{n}(a_{11} - a_{ii}) &amp; \star &amp; \dots
+&amp; \star\\
+\hline
+0\\
+\vdots &amp; \,\,\,\, &amp; 0\\
+0\\
+\end{array}\right) = \left(0\right)\]</span></p>
+<ol start="2" type="1">
+<li>Пусть поле <span class="math inline">\(F\)</span> алгебраически не
+замкнуто. Тогда по теореме, которая будет доказана в неопределенном
+будущем <span class="math inline">\(F\)</span> является подполем
+некоторого алгебраически замкнутого поля <span
+class="math inline">\(F’\)</span>. <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <title>Введение в введение в топологию</title>
+  <p><link rel="stylesheet" href="utils/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair:opsz@5..1200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></p>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Введение в введение в топологию</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#топология-и-топологическое-пространство"
+id="toc-топология-и-топологическое-пространство">Топология и
+топологическое пространство</a>
+<ul>
+<li><a href="#метрическая-топология"
+id="toc-метрическая-топология">Метрическая топология</a></li>
+<li><a href="#топология-на-базе-окрестностей"
+id="toc-топология-на-базе-окрестностей">Топология на базе
+окрестностей</a></li>
+<li><a href="#замкнутые-подмножества"
+id="toc-замкнутые-подмножества">Замкнутые подмножества</a></li>
+<li><a href="#топологические-внутренность-и-замыкание"
+id="toc-топологические-внутренность-и-замыкание">Топологические
+внутренность и замыкание</a></li>
+<li><a href="#непрерывные-отображения"
+id="toc-непрерывные-отображения">Непрерывные отображения</a></li>
+<li><a href="#непрерывность-по-базе-топологии"
+id="toc-непрерывность-по-базе-топологии">Непрерывность по базе
+топологии</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+<h1 id="топология-и-топологическое-пространство">Топология и
+топологическое пространство</h1>
+<hr />
+<p><strong>Определение:</strong><a name="definition-0"></a> Пусть задано
+множество <span class="math inline">\(X\)</span> и некоторое семейство
+его подмножеств <span class="math inline">\(\tau\)</span>. Тогда <span
+class="math inline">\(\tau\)</span> - <em>топология</em> на множестве
+<span class="math inline">\(X\)</span>, если выполнены следующие
+аксиомы:</p>
+<ol type="1">
+<li><span class="math inline">\(\varnothing \in \tau\)</span> и <span
+class="math inline">\(X \in \tau\)</span>.</li>
+<li>Любое объединение множеств из <span
+class="math inline">\(\tau\)</span> является элементом <span
+class="math inline">\(\tau\)</span>.</li>
+<li>Любое конечное пересечение множеств из <span
+class="math inline">\(\tau\)</span> является элементом <span
+class="math inline">\(\tau\)</span>.</li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-1"></a> Пара <span
+class="math inline">\((X, \tau)\)</span>, где <span
+class="math inline">\(X\)</span> - множество, а <span
+class="math inline">\(\tau\)</span> - <a
+href="#definition-0">топология</a> на нем - <em>топологическое
+пространство</em>.</p>
+<p><strong>Определение:</strong><a name="definition-2"></a> Пусть <span
+class="math inline">\((X, \tau)\)</span> - <a
+href="#definition-1">топологическое пространство</a>. Элементы множества
+<span class="math inline">\(X\)</span> - <em>точки</em>.</p>
+<p><strong>Определение:</strong><a name="definition-3"></a> Пусть <span
+class="math inline">\((X, \tau)\)</span> - <a
+href="#definition-1">топологическое пространство</a>. Множество <span
+class="math inline">\(U \in \tau\)</span> - <em>окрестность точки</em>
+<span class="math inline">\(x \in X\)</span>, если <span
+class="math inline">\(x \in U\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-10"></a> Пусть <span
+class="math inline">\((X, \tau)\)</span> - <a
+href="#definition-1">топологическое пространство</a>. Множества <span
+class="math inline">\(U \in \tau\)</span> - <em>открытые</em> в
+топологическом пространстве <span class="math inline">\((X,
+\tau)\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-0"></a> Множество
+всех подмножеств <span class="math inline">\(X\)</span> - это <a
+href="#definition-0">топология</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-7"></a> Такая <a
+href="#definition-0">топология</a> называется <em>дискретной</em> и
+обозначается <span class="math inline">\(\tau_d\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-8"></a> <a
+href="#definition-0">Топология</a>, состоящая из самого множества <span
+class="math inline">\(X\)</span> и пустого множества <span
+class="math inline">\(\varnothing\)</span> называется
+<em>тривиальная</em> и обознаяается <span
+class="math inline">\(\tau_0\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-21"></a> Система
+множеств на множестве <span class="math inline">\(X\)</span>, состоящая
+из пустого множества, а также из всех подмножеств множества <span
+class="math inline">\(X\)</span>, дополнения до которых конечны -
+<em>топология Зарисского</em>. Обозначается: <span
+class="math inline">\(\tau_z\)</span>.</p>
+<h2 id="метрическая-топология">Метрическая топология</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-9"></a> Пусть <span
+class="math inline">\(X\)</span> - множество. Отображение <span
+class="math inline">\(\rho: X\times X \to \mathbb{R}\)</span> -
+<em>метрика</em>, если:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall x, y \in X \,\,\,\, \rho(x, y)
+\ge 0\)</span>, причем <span class="math inline">\(\rho(x, y) = 0
+\Leftrightarrow x = y\)</span>.</li>
+<li><span class="math inline">\(\forall x, y \in X \,\,\,\, \rho(x, y) =
+\rho(y, x)\)</span>.</li>
+<li><span class="math inline">\(\forall x, y, z \in X \,\,\,\, \rho(x,
+y) + \rho(y, z) \ge \rho(x, z)\)</span>.</li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-11"></a> Пара <span
+class="math inline">\((X, \rho)\)</span>, где <span
+class="math inline">\(X\)</span> - множество, а <span
+class="math inline">\(\rho\)</span> - <a
+href="#definition-9">метрика</a> на нем - <em>метрическое
+пространство</em>, элементы множества <span
+class="math inline">\(X\)</span> - <em>точки</em>, <span
+class="math inline">\(\forall x, y \in X \,\,\,\, \rho(x, y)\)</span> -
+<em>расстояние между точками</em> <span class="math inline">\(x\)</span>
+и <span class="math inline">\(y\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-13"></a> Пусть <span
+class="math inline">\(V\)</span> - линейное пространство над полем <span
+class="math inline">\(\mathbb{R}\)</span>. Отображение <span
+class="math inline">\(h: V \to \mathbb{R}\)</span> - <em>норма</em>,
+если:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall x \in V \,\,\,\, h(x) \ge
+0\)</span>, причем <span class="math inline">\(h(x) = 0 \Leftrightarrow
+x = 0\)</span>.</li>
+<li><span class="math inline">\(\forall x \in V, \,\,\,\, \lambda \in
+\mathbb{R} \,\,\,\, |\lambda| h(x) = h(\lambda x)\)</span>.</li>
+<li><span class="math inline">\(\forall x, y \in V \,\,\,\, h(x + y) \le
+h(x) + h(y)\)</span>.</li>
+</ol>
+<p><strong>Определение:</strong><a name="definition-12"></a> Пусть <span
+class="math inline">\((X, \rho)\)</span> - <a
+href="#definition-1">метрическое пространство</a>.<br> <em>Открытый шар
+радиуса</em> <span class="math inline">\(\varepsilon\)</span> <em>с
+центром в точке</em> <span class="math inline">\(x \in X\)</span> - это
+множество <span class="math inline">\(\{y \in X| \,\,\,\, \rho(x, y)
+&lt; \varepsilon\}\)</span>. Обозначается: <span
+class="math inline">\(O_{\varepsilon}(x)\)</span>. Пусть <span
+class="math inline">\(A \subset X\)</span>.<br> Точка <span
+class="math inline">\(x\)</span> - <em>внутренняя точка</em> множества
+<span class="math inline">\(A\)</span>, если <span
+class="math inline">\(\exists O_{\varepsilon}(x) \subset A\)</span>.<br>
+Множество всех внутренних точек <span class="math inline">\(A\)</span> -
+<em>внутренность</em> <span class="math inline">\(A\)</span>.
+Обозначается: <span class="math inline">\(\operatorname{Int}
+A\)</span>.<br> Множество <span class="math inline">\(A\)</span> -
+<em>открыто</em> в метрическом пространстве <span
+class="math inline">\((X, \rho)\)</span>, если <span
+class="math inline">\(\operatorname{Int} A = A\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-1"></a> Пусть <span
+class="math inline">\((X, \rho)\)</span> - <a
+href="#definition-1">метрическое пространство</a>. Тогда любое
+объединение <a href="#definition-2">открытых</a> в <span
+class="math inline">\((X, \rho)\)</span> множеств открыто в <span
+class="math inline">\((X, \rho)\)</span>, а любое конечное пересечение
+открытых в <span class="math inline">\((X, \rho)\)</span> множеств
+открыто в <span class="math inline">\((X, \rho)\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Упражнение:</strong><a name="exercise-0"></a> Почему любое
+пересечение открытых множеств не является открытым?</p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Пусть <span
+class="math inline">\((X, \rho)\)</span> - метрическое пространство.
+Тогда семейство всех открытых в <span class="math inline">\((X,
+\rho)\)</span> множеств - топология на <span
+class="math inline">\(X\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-14"></a> Пусть <span
+class="math inline">\((X, \rho)\)</span> - метрическое пространство.
+Топология, состоящая из всех открытых в <span class="math inline">\((X,
+\rho)\)</span> множеств называется <em>метрической</em> и обозночается
+<span class="math inline">\(\tau_{\rho}\)</span>.</p>
+<h2 id="топология-на-базе-окрестностей">Топология на базе
+окрестностей</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-15"></a> Пусть <span
+class="math inline">\(X\)</span> - множество. Тогда семейство <span
+class="math inline">\(\beta\)</span> его подмножеств - <em>база
+окрестностей</em>, если:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall x \in X \,\,\,\, \exists U \in
+\beta: \,\,\,\, x \in U\)</span>.</li>
+<li><span class="math inline">\(\forall U, W \in \beta: \,\,\,\, \exists
+x \in X, \,\,\,\, x \in U \cap W \,\,\,\, \exists V \in \beta: \,\,\,\,
+x \in V \subset U \cap W\)</span>.</li>
+</ol>
+<p>Элементы множества <span class="math inline">\(X\)</span> -
+<em>точки</em>.</p>
+<p>Любое множество <span class="math inline">\(U \in \beta: \,\,\,\, x
+\in U\)</span> - <span
+class="math inline">\(\beta\)</span>-<em>окрестность точки</em> <span
+class="math inline">\(x\)</span>.</p>
+<p>Подмножество <span class="math inline">\(A\)</span> множества <span
+class="math inline">\(X\)</span> - <em>открыто</em>, если каждая его
+точка содержится в <span class="math inline">\(A\)</span> вместе с
+какой-то своей <span class="math inline">\(\beta\)</span>-окрестностью.
+Пустое множество открыто по определению.</p>
+<p><strong>Утверждение:</strong><a name="statement-2"></a> Каждый
+элемент базы окрестностей открытое множество для этой базы.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Для любого
+непустого конечного пересечения элементов <a
+href="#definition-15">базы</a> и любого элемента этого пересечения
+существует элемент базы, содержащийся в этом пересечении и содержащий
+элемент пересечения. (Интересно, это возможно понять? можно)</p>
+<p><em>Доказательство:</em> индукция по количеству элементов в
+пересечении с базой пункт <span class="math inline">\(2\)</span> <a
+href="#definition-15">определения базы</a> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-4"></a> Пусть задано
+множество <span class="math inline">\(X\)</span> и его <a
+href="#definition-15">база окрестностей</a> <span
+class="math inline">\(\beta\)</span>. Множество <span
+class="math inline">\(A \subset X\)</span> - открыто <span
+class="math inline">\(\Leftrightarrow A = \displaystyle\cup U_{\alpha},
+\,\,\,\, U_{\alpha} \in \beta\)</span>.</p>
+<p><em>Доказательство:</em> Пусть множество открыто. Тогда оно является
+объединением окрестностей своих точек. Обратно, каждая окрестность
+открытое множество, а их объединение открыто <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-5"></a> Пусть задано
+множество <span class="math inline">\(X\)</span> и его база окрестностей
+<span class="math inline">\(\beta\)</span>. Тогда множество <span
+class="math inline">\(\tau_{\beta}\)</span> всех открытых относительно
+базы <span class="math inline">\(\beta\)</span> множеств - топология на
+<span class="math inline">\(X\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-16"></a> <span
+class="math inline">\(\tau_{\beta}\)</span> - <em>топология с базой</em>
+<span class="math inline">\(\beta\)</span>.</p>
+<h2 id="замкнутые-подмножества">Замкнутые подмножества</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-17"></a> Пусть
+задано <a href="#definition-1">топологическое пространство</a> <span
+class="math inline">\((X, \tau)\)</span>. <span class="math inline">\(A
+\subset X\)</span> - <em>замкнуто</em>, если его <em>дополнение</em>
+<span class="math inline">\(X \setminus A\)</span> открыто.</p>
+<p><strong>Утверждение:</strong><a name="statement-6"></a> (свойства
+замкнутых подмножеств) Пусть задано <a
+href="#definition-1">топологическое пространство</a> <span
+class="math inline">\((X, \tau)\)</span>. Тогда</p>
+<ol type="1">
+<li><span class="math inline">\(\varnothing\)</span> и <span
+class="math inline">\(X\)</span> <a
+href="#definition-17">замкнуты</a>.</li>
+<li>Любое пересечение замкнутых множеств замкнуто.</li>
+<li>Любое конечное объединение замкнутых множеств замкнуто.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<p><strong>Определение:</strong><a name="definition-18"></a> Пусть
+задано <a href="#definition-1">метрическое пространство</a> <span
+class="math inline">\((X, \rho)\)</span>.<br>Точка <span
+class="math inline">\(X \in X\)</span> - <em>точка прикосновения</em>
+множества <span class="math inline">\(A \subset X\)</span>, если <span
+class="math inline">\(\forall O_{\varepsilon}(x) \,\,\,\,
+O_{\varepsilon}(x) \cap A \ne \varnothing\)</span>.<br><br>Множество
+всех точек прикосновения множества <span class="math inline">\(A \subset
+X\)</span> - <em>замыкание</em> <span class="math inline">\(A\)</span>.
+Обозначается: <span
+class="math inline">\(\operatorname{Cl}A\)</span>.<br><br>Множество
+<span class="math inline">\(A \subset X\)</span> - <em>замкнуто</em>,
+если <span class="math inline">\(\operatorname{Cl}A = A\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-7"></a> Пусть задано
+<a href="#definition-1">метрическое пространство</a> <span
+class="math inline">\((X, \rho)\)</span>. Тогда множество <span
+class="math inline">\(A \subset X\)</span> <a
+href="#definition-2">открыто</a> <span
+class="math inline">\(\Leftrightarrow X \setminus A\)</span> <a
+href="#definition-18">замкнуто</a>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="топологические-внутренность-и-замыкание">Топологические
+внутренность и замыкание</h2>
+<hr />
+<p><strong>Определение:</strong><a name="definition-4"></a> Пусть <span
+class="math inline">\((X, \tau)\)</span> - топологическое пространство,
+<span class="math inline">\(A \subset X\)</span>.<br>Точка <span
+class="math inline">\(x \in X\)</span> <em>внутренняя (точка)</em>
+множества <span class="math inline">\(A\)</span>, если существует ее <a
+href="#definition-3">окрестность</a>, содержащаяся в <span
+class="math inline">\(A\)</span>.<br>Точка <span class="math inline">\(x
+\in X\)</span> <em>точка прикосновения</em> множества <span
+class="math inline">\(A\)</span>, если пересечение любой ее окрестности
+с <span class="math inline">\(A\)</span> непусто.</p>
+<p><strong>Определение:</strong><a name="definition-5"></a> Пусть <span
+class="math inline">\((X, \tau)\)</span> - топологическое пространство,
+<span class="math inline">\(A \subset X\)</span>. <br>Множество всех
+внутренних точек <span class="math inline">\(A\)</span> -
+<em>внутренность</em> <span
+class="math inline">\(A\)</span>.<br>Обозначается: <span
+class="math inline">\(\operatorname{Int} A\)</span>.<br><br>Множество
+всех точек прикосновения <span class="math inline">\(A\)</span> -
+<em>замыкание</em> <span
+class="math inline">\(A\)</span>.<br>Обозначается: <span
+class="math inline">\(\operatorname{Cl} A\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-8"></a> Пусть <span
+class="math inline">\((X, \tau)\)</span> - <a
+href="#definition-1">топологическое пространство</a>, <span
+class="math inline">\(A \subset X\)</span>. Тогда</p>
+<p><span class="math inline">\(A\)</span> замкнуто <span
+class="math inline">\(\Leftrightarrow \operatorname{Cl}A =
+A\)</span>.</p>
+<p><span class="math inline">\(A\)</span> открыто <span
+class="math inline">\(\Leftrightarrow \operatorname{Int}A =
+A\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Утверждение:</strong><a name="statement-9"></a> Пусть <a
+href="#definition-0">топология</a> на <span
+class="math inline">\(X\)</span> задана с помощью <a
+href="#definition-15">базы окрестностей</a> <span
+class="math inline">\(\beta\)</span>. Тогда</p>
+<p><span class="math inline">\(x \in X\)</span> - внутренняя точка <span
+class="math inline">\(A \subset X \Leftrightarrow \exists U \in \beta:
+\,\,\,\, x \in U \subset A\)</span>,</p>
+<p><span class="math inline">\(x \in X\)</span> - <a
+href="#definition-18">точка прикосновения</a> <span
+class="math inline">\(A \subset X \Leftrightarrow \forall U \in \beta:
+\,\,\,\, x \in U \,\,\,\, U \cap A \ne \varnothing\)</span>.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Определение:</strong><a name="definition-18"></a>
+Топологическая <em>граница</em> множества <span class="math inline">\(A
+\subset X\)</span> - это <span class="math inline">\(\operatorname{Cl}A
+\setminus \operatorname{Int}A\)</span>.</p>
+<h2 id="непрерывные-отображения">Непрерывные отображения</h2>
+<hr />
+<p><img src="img/continous.png" /></p>
+<p><strong>Определение:</strong><a name="definition-19"></a> Пусть
+заданы <a href="#definition-1">топологические пространства</a> <span
+class="math inline">\((X, \tau_x)\)</span> и <span
+class="math inline">\((Y, \tau_y)\)</span>. Отображение <span
+class="math inline">\(f: X \to Y\)</span> <em>непрерывно в точке</em>
+<span class="math inline">\(x_0 \in X\)</span>, если для каждой
+окрестности <span class="math inline">\(V\)</span> точки <span
+class="math inline">\(f(x_0)\)</span> в <span
+class="math inline">\(Y\)</span> существует <a
+href="#definition-3">окрестность</a> <span
+class="math inline">\(U\)</span> точки <span
+class="math inline">\(x_0\)</span> в <span
+class="math inline">\(X\)</span>, такая что <span
+class="math inline">\(f(U) \subset V\)</span>.</p>
+<p><span class="math inline">\(f\)</span> <em>непрерывно</em>, если оно
+непрерывно в каждой точке <span class="math inline">\(x \in
+X\)</span>.</p>
+<p><strong>Определение:</strong><a name="definition-20"></a> Пусть
+заданы топологические пространства <span class="math inline">\((X,
+\tau_x)\)</span> и <span class="math inline">\((Y, \tau_y)\)</span>, <a
+href="#definition-19">непрерывное</a> отображение <span
+class="math inline">\(f: X \to Y\)</span>. <br><span
+class="math inline">\(x \in X\)</span> <em>прообраз</em> точки <span
+class="math inline">\(y \in Y\)</span>, если <span
+class="math inline">\(f(x) = y\)</span>.<br><span
+class="math inline">\(f^{-1}(y) = \{x \in X: \,\,\,\, f(x) =
+y\}\)</span> - <em>полный прообраз</em> точки <span
+class="math inline">\(y in Y\)</span>.<br><span class="math inline">\(A
+\subset Y, \,\,\,\, f^{-1}(A) = \{x \in X: \,\,\,\, f(x) \in
+A\}\)</span> - <em>прообраз множества</em> <span
+class="math inline">\(A\)</span>.</p>
+<p><strong>Утверждение:</strong><a name="statement-10"></a> (простейшие
+свойства прообраза) Пусть заданы <a href="#definition-1">топологические
+пространства</a> <span class="math inline">\((X, \tau_x)\)</span> и
+<span class="math inline">\((Y, \tau_y)\)</span>, <a
+href="#definition-19">непрерывное отображение</a> <span
+class="math inline">\(f: X \to Y\)</span>, <span
+class="math inline">\(\{A_{\alpha}\}\)</span> - семейство подмножеств
+<span class="math inline">\(Y\)</span>.</p>
+<ol type="1">
+<li><span class="math inline">\(f^{-1}(\varnothing) =
+\varnothing\)</span> и <span class="math inline">\(f^{-1}(Y) =
+X\)</span>.</li>
+<li><span class="math inline">\(f^{-1}(\displaystyle\cup_{\alpha}
+A_{\alpha}) = \displaystyle\cup_{\alpha}f^{-1}A_{\alpha}\)</span>.</li>
+<li><span class="math inline">\(f^{-1}(\displaystyle\cap_{\alpha}
+A_{\alpha}) = \displaystyle\cap_{\alpha}f^{-1}A_{\alpha}\)</span>.</li>
+<li><span class="math inline">\(f^{-1}(Y \setminus A) = X \setminus
+f^{-1}A\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть заданы <a
+href="#definition-1">топологические пространства</a> <span
+class="math inline">\((X, \tau_x)\)</span> и <span
+class="math inline">\((Y, \tau_y).\)</span> Тогда следующие условия
+эквивалентны:</p>
+<ol type="1">
+<li>Отображение <span class="math inline">\(f: X \to Y\)</span> <a
+href="#definition-19">непрерывно</a>.</li>
+<li><a href="#definition-20">Прообраз</a> любого <a
+href="#definition-10">открытого</a> в <span
+class="math inline">\(Y\)</span> множества открыт в <span
+class="math inline">\(X\)</span>.</li>
+<li><a href="#definition-20">Прообраз</a> любого <a
+href="#definition-17">замкнутого</a> в <span
+class="math inline">\(Y\)</span> множества замкнут в <span
+class="math inline">\(X\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em></p>
+<p><span class="math display">\[1 \Rightarrow 2\]</span></p>
+<p>Отображение <span class="math inline">\(f\)</span> непрерывно <span
+class="math inline">\(\Rightarrow \forall U(f(x)) \,\,\,\, \exists U(x):
+\,\,\,\, f(U(x)) \subset U(f(x))\)</span>.</p>
+<p>Пусть <span class="math inline">\(V\)</span> открыто в <span
+class="math inline">\(Y\)</span>. Тогда <span
+class="math inline">\(\forall y \in V \,\,\,\, \exists U(y) \subset
+V\)</span>. Пусть <span class="math inline">\(W = f^{-1}(V)\)</span>.
+лень <span class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-1"></a> Композиция
+непрерывных отображений непрерывна.</p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<h2 id="непрерывность-по-базе-топологии">Непрерывность по базе
+топологии</h2>
+<hr />
+<p><strong>Утверждение:</strong><a name="statement-11"></a> Пусть <span
+class="math inline">\((X, \tau_x)\)</span> и <span
+class="math inline">\((Y, \tau_y)\)</span> - топологические
+пространства, заданные с помощью баз <span
+class="math inline">\(\beta_x\)</span> и <span
+class="math inline">\(\beta_y\)</span> соответственно. Тогда следующие
+утверждения эквивалентны:</p>
+<ol type="1">
+<li><span class="math inline">\(f: \,\,\,\, X \to Y\)</span> непрерывно
+в точке <span class="math inline">\(x_0 \in X\)</span>.</li>
+<li>Для любой базовой окрестности <span class="math inline">\(U \in
+\beta_y\)</span> точки <span class="math inline">\(f(x_0)\)</span>
+существует такая базовая окрестность <span class="math inline">\(V \in
+\beta_x\)</span> точки <span class="math inline">\(x_0\)</span>, что
+<span class="math inline">\(f(V) \subset U\)</span>.</li>
+<li>Прообраз любой базовой окрестности точки <span
+class="math inline">\(f(x_0)\)</span> открыт в <span
+class="math inline">\(\tau_x\)</span>.</li>
+</ol>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<a href="random.html" id="random_button" ><i class="fa-solid fa-ghost fa-lg" style="color: #363636;"></i></a>
+<a href="search.html" id="search_button" ><i class="fa-solid fa-search fa-lg" style="color: #363636;"></i></a>
+<a href="global-toc.html" id="back_button" ><i class="fa-solid fa-book fa-lg" style="color: #363636;"></i></a>
+<script src="https://kit.fontawesome.com/4b37446228.js" crossorigin="anonymous"></script>
+</body>
+</html>
